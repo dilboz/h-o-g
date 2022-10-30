@@ -58,7 +58,7 @@
             this.sevices_to_users = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.groupControl4 = new DevExpress.XtraEditors.GroupControl();
-            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.label_info = new DevExpress.XtraEditors.LabelControl();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
             this.splitContainerControl1.SuspendLayout();
@@ -93,9 +93,9 @@
             this.tableLayoutPanel1.Location = new System.Drawing.Point(20, 20);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 69.70684F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30.29316F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1171, 577);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 64.09396F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 35.90604F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1171, 596);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // splitContainerControl1
@@ -110,7 +110,7 @@
             this.splitContainerControl1.Panel1.Text = "Panel1";
             this.splitContainerControl1.Panel2.Controls.Add(this.splitContainerControl2);
             this.splitContainerControl1.Panel2.Text = "Panel2";
-            this.splitContainerControl1.Size = new System.Drawing.Size(1165, 396);
+            this.splitContainerControl1.Size = new System.Drawing.Size(1165, 376);
             this.splitContainerControl1.SplitterPosition = 300;
             this.splitContainerControl1.TabIndex = 1;
             // 
@@ -121,7 +121,7 @@
             this.groupControl1.Location = new System.Drawing.Point(10, 10);
             this.groupControl1.Name = "groupControl1";
             this.groupControl1.Padding = new System.Windows.Forms.Padding(5);
-            this.groupControl1.Size = new System.Drawing.Size(280, 335);
+            this.groupControl1.Size = new System.Drawing.Size(280, 315);
             this.groupControl1.TabIndex = 25;
             this.groupControl1.Text = "Спитсалистҳо";
             // 
@@ -131,7 +131,7 @@
             this.list_sipsalist.Dock = System.Windows.Forms.DockStyle.Fill;
             this.list_sipsalist.Location = new System.Drawing.Point(7, 28);
             this.list_sipsalist.Name = "list_sipsalist";
-            this.list_sipsalist.Size = new System.Drawing.Size(266, 300);
+            this.list_sipsalist.Size = new System.Drawing.Size(266, 280);
             this.list_sipsalist.TabIndex = 0;
             this.list_sipsalist.Click += new System.EventHandler(this.list_sipsalist_Click);
             // 
@@ -171,7 +171,7 @@
             this.panel_botton.Controls.Add(this.btn_hide);
             this.panel_botton.Controls.Add(this.btn_creat);
             this.panel_botton.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel_botton.Location = new System.Drawing.Point(10, 345);
+            this.panel_botton.Location = new System.Drawing.Point(10, 325);
             this.panel_botton.Name = "panel_botton";
             this.panel_botton.Padding = new System.Windows.Forms.Padding(8);
             this.panel_botton.Size = new System.Drawing.Size(280, 41);
@@ -224,7 +224,7 @@
             this.splitContainerControl2.Panel2.MinSize = 500;
             this.splitContainerControl2.Panel2.Padding = new System.Windows.Forms.Padding(10);
             this.splitContainerControl2.Panel2.Text = "Panel2";
-            this.splitContainerControl2.Size = new System.Drawing.Size(855, 396);
+            this.splitContainerControl2.Size = new System.Drawing.Size(855, 376);
             this.splitContainerControl2.SplitterPosition = 430;
             this.splitContainerControl2.TabIndex = 0;
             // 
@@ -235,7 +235,7 @@
             this.groupControl2.Location = new System.Drawing.Point(10, 10);
             this.groupControl2.Name = "groupControl2";
             this.groupControl2.Padding = new System.Windows.Forms.Padding(5);
-            this.groupControl2.Size = new System.Drawing.Size(325, 335);
+            this.groupControl2.Size = new System.Drawing.Size(325, 315);
             this.groupControl2.TabIndex = 27;
             this.groupControl2.Text = "Хизматрасонии спитсалист";
             // 
@@ -244,7 +244,7 @@
             this.list_services_users.Dock = System.Windows.Forms.DockStyle.Fill;
             this.list_services_users.Location = new System.Drawing.Point(7, 28);
             this.list_services_users.Name = "list_services_users";
-            this.list_services_users.Size = new System.Drawing.Size(311, 300);
+            this.list_services_users.Size = new System.Drawing.Size(311, 280);
             this.list_services_users.TabIndex = 0;
             // 
             // panel1
@@ -252,7 +252,7 @@
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.delete_service_user);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(10, 345);
+            this.panel1.Location = new System.Drawing.Point(10, 325);
             this.panel1.Name = "panel1";
             this.panel1.Padding = new System.Windows.Forms.Padding(8);
             this.panel1.Size = new System.Drawing.Size(325, 41);
@@ -281,7 +281,7 @@
             this.groupControl3.Location = new System.Drawing.Point(10, 10);
             this.groupControl3.Name = "groupControl3";
             this.groupControl3.Padding = new System.Windows.Forms.Padding(5);
-            this.groupControl3.Size = new System.Drawing.Size(480, 335);
+            this.groupControl3.Size = new System.Drawing.Size(480, 315);
             this.groupControl3.TabIndex = 29;
             this.groupControl3.Text = "Хизматрасонии спитсалист";
             // 
@@ -291,8 +291,9 @@
             this.list_services.Dock = System.Windows.Forms.DockStyle.Fill;
             this.list_services.Location = new System.Drawing.Point(7, 28);
             this.list_services.Name = "list_services";
-            this.list_services.Size = new System.Drawing.Size(466, 300);
+            this.list_services.Size = new System.Drawing.Size(466, 280);
             this.list_services.TabIndex = 0;
+            this.list_services.Click += new System.EventHandler(this.list_services_Click);
             // 
             // context_menu_list_services
             // 
@@ -332,7 +333,7 @@
             this.panel2.Controls.Add(this.add_services_btn);
             this.panel2.Controls.Add(this.sevices_to_users);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(10, 345);
+            this.panel2.Location = new System.Drawing.Point(10, 325);
             this.panel2.Name = "panel2";
             this.panel2.Padding = new System.Windows.Forms.Padding(8);
             this.panel2.Size = new System.Drawing.Size(480, 41);
@@ -399,40 +400,42 @@
             // 
             this.panel3.Controls.Add(this.groupControl4);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(3, 405);
+            this.panel3.Location = new System.Drawing.Point(3, 385);
             this.panel3.Name = "panel3";
             this.panel3.Padding = new System.Windows.Forms.Padding(10);
-            this.panel3.Size = new System.Drawing.Size(1165, 169);
+            this.panel3.Size = new System.Drawing.Size(1165, 208);
             this.panel3.TabIndex = 2;
             // 
             // groupControl4
             // 
-            this.groupControl4.Controls.Add(this.labelControl1);
+            this.groupControl4.Controls.Add(this.label_info);
             this.groupControl4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupControl4.Location = new System.Drawing.Point(10, 10);
             this.groupControl4.Name = "groupControl4";
             this.groupControl4.Padding = new System.Windows.Forms.Padding(10);
-            this.groupControl4.Size = new System.Drawing.Size(1145, 149);
+            this.groupControl4.Size = new System.Drawing.Size(1145, 188);
             this.groupControl4.TabIndex = 3;
             this.groupControl4.Text = "Малумот оиди спитсалист";
             // 
-            // labelControl1
+            // label_info
             // 
-            this.labelControl1.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelControl1.LineLocation = DevExpress.XtraEditors.LineLocation.Bottom;
-            this.labelControl1.LineVisible = true;
-            this.labelControl1.Location = new System.Drawing.Point(12, 33);
-            this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(1121, 104);
-            this.labelControl1.TabIndex = 0;
+            this.label_info.AllowHtmlString = true;
+            this.label_info.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.Vertical;
+            this.label_info.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label_info.LineLocation = DevExpress.XtraEditors.LineLocation.Bottom;
+            this.label_info.LineVisible = true;
+            this.label_info.Location = new System.Drawing.Point(12, 33);
+            this.label_info.Name = "label_info";
+            this.label_info.Size = new System.Drawing.Size(1121, 16);
+            this.label_info.TabIndex = 0;
+            this.label_info.Text = "labelControl1";
             // 
             // ServicesFormDisplay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.ClientSize = new System.Drawing.Size(1211, 617);
+            this.ClientSize = new System.Drawing.Size(1211, 636);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -492,7 +495,6 @@
         private System.Windows.Forms.Button sevices_to_users;
         private System.Windows.Forms.Panel panel3;
         private DevExpress.XtraEditors.GroupControl groupControl4;
-        private DevExpress.XtraEditors.LabelControl labelControl1;
         private System.Windows.Forms.ContextMenuStrip context_menu_list_services;
         private System.Windows.Forms.ToolStripMenuItem con_menu_add_services;
         private System.Windows.Forms.ToolStripMenuItem con_menu_edit_services;
@@ -501,5 +503,6 @@
         private System.Windows.Forms.ToolStripMenuItem tool_add_spitalist;
         private System.Windows.Forms.ToolStripMenuItem tool_edit_spitsalist;
         private System.Windows.Forms.ToolStripMenuItem tool_delete_sipitsalist;
+        private DevExpress.XtraEditors.LabelControl label_info;
     }
 }

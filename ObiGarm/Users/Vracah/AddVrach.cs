@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace ObiGarm.Users.Vracah
 {
-    public partial class AddVrach : Form
+    public partial class AddVrach : DevExpress.XtraEditors.XtraForm
     {
         SqlConfiguration sqlConfiguration;
         private readonly VrachFormDisplay vrachFormDisplay_form;
@@ -62,8 +62,8 @@ namespace ObiGarm.Users.Vracah
                     txt_password.Text = dataTable.Rows[0]["password"].ToString();
                     txt_cheng_password.Text = dataTable.Rows[0]["password"].ToString();
                     txt_room_number.Value = Convert.ToDecimal(dataTable.Rows[0]["room_number"].ToString());
-                    txt_time_start_work.Text = dataTable.Rows[0]["work_time_start"].ToString();
-                    txt_time_end_work.Text = dataTable.Rows[0]["work_time_end"].ToString();
+                    txt_time_start_work.EditValue = dataTable.Rows[0]["work_time_start"].ToString();
+                    txt_time_end_work.EditValue = dataTable.Rows[0]["work_time_end"].ToString();
                     cheng_enbled(id);
                 }
                 else
@@ -79,7 +79,8 @@ namespace ObiGarm.Users.Vracah
             {
                 setTextToTextBoxs(this.id_user);
                 btn_creat.Text = "Иваз кардан";
-                lbl_logo.Text = "ИВАЗ КАРДАНИ ВРАЧ";
+                group_add_vrach.Text = "ИВАЗ КАРДАНИ ВРАЧ";
+                this.Text = "ИВАЗ КАРДАНИ ВРАЧ";
             }
         }
 
@@ -105,14 +106,14 @@ namespace ObiGarm.Users.Vracah
             string check_password_vrach = txt_cheng_password.Text;
             string point_vrach = "3";
             string number_room_vrach = Convert.ToString(txt_room_number.Value);
-            string time_start_work = txt_time_start_work.Text;
-            string time_end_work = txt_time_end_work.Text;
+            string time_start_work =Convert.ToDateTime(txt_time_start_work.Text).ToString("HH:mm");
+            string time_end_work = Convert.ToDateTime(txt_time_end_work.Text).ToString("HH:mm");
 
             enbaled_vrach();
             string enaled_vrach = str_enbaled_vrach;
 
 
-            string sql_user_check = "select * from users where login = '" + login_vrach + "' and point= '3'";
+            string sql_user_check = "select * from users where login = '" + login_vrach + "' and point= '3' and deleted is null;";
 
             string sql_add_user = "insert into users (name, surname, login, password, point, room_number, work_time_start, work_time_end, enable) values('" +
                 name_vrach + "', '" +
@@ -130,7 +131,7 @@ namespace ObiGarm.Users.Vracah
             {
                 if (password_vrach.Trim() == check_password_vrach.Trim())
                 {
-                    if (sqlConfiguration.sqlSelectQuery(sql_user_check).Rows.Count == 0)
+                    if (sqlConfiguration.sqlSelectQuery(sql_user_check).Rows.Count != 1)
                     {
                         int result = sqlConfiguration.sqlQuery(sql_add_user);
                         if (result == 500)
@@ -141,7 +142,6 @@ namespace ObiGarm.Users.Vracah
                         {
                             this.Close();
                             vrachFormDisplay_form.display();
-                            //MessageBox.Show("Админ бо муваффакият илова карда шуд!", "Сообщения", MessageBoxButtons.OK, MessageBoxIcon.None);
                         }
                     }
                     else
@@ -177,7 +177,7 @@ namespace ObiGarm.Users.Vracah
             string enaled_spitalist = str_enbaled_vrach;
 
 
-            string sql_user_check = "select * from users where login = '" + login_vrach + "' and point= '3'";
+            string sql_user_check = "select * from users where login = '" + login_vrach + "' and point= '3' and deleted is null;";
 
             string sql_update_user = "update users set " +
                "name = '" + name_vrach + "', " +

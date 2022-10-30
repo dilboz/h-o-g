@@ -134,8 +134,6 @@ namespace ObiGarm.Users.Spitalists
                 time_end_work + "', '" +
                enaled_admin + "');";
 
-            MessageBox.Show(time_end_work.ToString() +" "+ time_start_work.ToString());
-
             if (name_spitalist.Trim() != "" && surname_spitalist.Trim() != "" && login_spitalist.Trim() != "" && password_spitalist.Trim() != "" && check_password_spitalist.Trim() != "" 
                 && (number_room_spitalist.Trim()!="" || number_room_spitalist.Trim()=="0") && time_start_work!="" && time_end_work!="")
             {
@@ -158,7 +156,7 @@ namespace ObiGarm.Users.Spitalists
                             }
                             if (servicesFormDisplay_from!=null)
                             {
-                                servicesFormDisplay_from.loadListServices();
+                                servicesFormDisplay_from.allDisplayList();
                             }
                             
                             //MessageBox.Show("Админ бо муваффакият илова карда шуд!", "Сообщения", MessageBoxButtons.OK, MessageBoxIcon.None);
@@ -233,7 +231,7 @@ namespace ObiGarm.Users.Spitalists
                             }
                             if (servicesFormDisplay_from != null)
                             {
-                                servicesFormDisplay_from.loadListSpitsqlist();
+                                servicesFormDisplay_from.allDisplayList();
                             }
                             //MessageBox.Show("Админ бо муваффакият илова карда шуд!", "Сообщения", MessageBoxButtons.OK, MessageBoxIcon.None);
                         }

@@ -180,11 +180,15 @@ namespace ObiGarm.ClassDatabase
                 dataAdapter.SelectCommand = cmd;
                 dataAdapter.Fill(dataTable);
 
+                if (dataTable.Rows.Count!=null || dataTable.Rows.Count != null)
+                {
+                    combo.DataSource = dataTable;
 
-                combo.DataSource = dataTable;
+                    combo.DisplayMember = name_collum;
+                    combo.ValueMember = valus_colum;
+                }
 
-                combo.DisplayMember = name_collum;
-                combo.ValueMember = valus_colum;
+               
             }
 
             catch (Exception ex)
@@ -215,10 +219,13 @@ namespace ObiGarm.ClassDatabase
                 dataAdapter.Fill(dataTable);
 
 
-                list.DataSource = dataTable;
+                if (dataTable.Rows.Count != null || dataTable.Rows.Count != null)
+                {
+                    list.DataSource = dataTable;
 
-                list.DisplayMember = name_collum;
-                list.ValueMember = valus_colum;
+                    list.DisplayMember = name_collum;
+                    list.ValueMember = valus_colum;
+                }
             }
 
             catch (Exception ex)

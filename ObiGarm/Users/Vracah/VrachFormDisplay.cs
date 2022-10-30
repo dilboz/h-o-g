@@ -24,7 +24,7 @@ namespace ObiGarm.Users.Vracah
 
         public void display()
         {
-            string select_admin = "select id, name, surname, login, room_number, work_time_start, work_time_end, enable from users where point = '3' ";
+            string select_admin = "select id, name, surname, login, room_number, work_time_start, work_time_end, enable from users where point = '3' and deleted is null";
 
             sqlConfiguration.displayList(select_admin, datagridview_admin);
         }
@@ -45,10 +45,10 @@ namespace ObiGarm.Users.Vracah
             if (e.ColumnIndex == delete.Index)
             {
                 string id = datagridview_admin.Rows[e.RowIndex].Cells[2].Value.ToString();
-                DialogResult dialogResult = MessageBox.Show("Шумо дар хакикат " + datagridview_admin.Rows[e.RowIndex].Cells[4].Value + " " + datagridview_admin.Rows[e.RowIndex].Cells[5].Value + " - ро нест кардан мехохед?", "Сообщения", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                DialogResult dialogResult = MessageBox.Show("Шумо дар хакикат " + datagridview_admin.Rows[e.RowIndex].Cells[3].Value + " " + datagridview_admin.Rows[e.RowIndex].Cells[4].Value + " - ро нест кардан мехохед?", "Сообщения", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                 if (dialogResult == DialogResult.Yes)
                 {
-                    string sqlDeleteAdmin = "delete from users where id = '" + id + "'";
+                    string sqlDeleteAdmin = $"update users set deleted= '{DateTime.Now.ToString("yyyy'-'MM'-'dd'_'HH':'mm':'ss")}',  enable='0' where id = '" + id + "'";
                     int res2 = sqlConfiguration.sqlQuery(sqlDeleteAdmin);
                     if (res2 == 1)
                     {

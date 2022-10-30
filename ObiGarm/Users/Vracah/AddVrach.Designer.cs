@@ -29,36 +29,29 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddVrach));
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties5 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties9 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties10 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties11 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties12 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties13 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties14 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties15 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties16 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties17 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties18 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties19 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties20 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            this.panel_main = new Guna.UI2.WinForms.Guna2Panel();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties61 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties62 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties63 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties64 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties65 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties66 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties67 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties68 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties69 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties70 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties71 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties72 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties73 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties74 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties75 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties76 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties77 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties78 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties79 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties80 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            this.formAssistant1 = new DevExpress.XtraBars.FormAssistant();
             this.panel_ful = new System.Windows.Forms.Panel();
-            this.check_enable = new System.Windows.Forms.CheckBox();
-            this.panel_time_work = new System.Windows.Forms.Panel();
-            this.panel_end_time_work = new System.Windows.Forms.Panel();
-            this.txt_time_end_work = new System.Windows.Forms.MaskedTextBox();
-            this.lbl_end_work = new System.Windows.Forms.Label();
-            this.panel_start_work = new System.Windows.Forms.Panel();
-            this.txt_time_start_work = new System.Windows.Forms.MaskedTextBox();
-            this.lbl_start_work = new System.Windows.Forms.Label();
+            this.group_add_vrach = new DevExpress.XtraEditors.GroupControl();
             this.txt_room_number = new Guna.UI2.WinForms.Guna2NumericUpDown();
             this.lbl_room_number = new System.Windows.Forms.Label();
             this.panel_botton = new System.Windows.Forms.Panel();
@@ -75,148 +68,60 @@
             this.lbl_surname = new System.Windows.Forms.Label();
             this.txt_name = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
             this.lbl_name = new System.Windows.Forms.Label();
-            this.panel_left = new System.Windows.Forms.Panel();
-            this.picture_logo = new System.Windows.Forms.PictureBox();
-            this.lbl_logo = new System.Windows.Forms.Label();
-            this.panel_main.SuspendLayout();
+            this.panel_time_work = new System.Windows.Forms.Panel();
+            this.panel_end_time_work = new System.Windows.Forms.Panel();
+            this.txt_time_end_work = new DevExpress.XtraEditors.TimeEdit();
+            this.lbl_end_work = new System.Windows.Forms.Label();
+            this.panel_start_work = new System.Windows.Forms.Panel();
+            this.txt_time_start_work = new DevExpress.XtraEditors.TimeEdit();
+            this.lbl_start_work = new System.Windows.Forms.Label();
+            this.check_enable = new System.Windows.Forms.CheckBox();
             this.panel_ful.SuspendLayout();
-            this.panel_time_work.SuspendLayout();
-            this.panel_end_time_work.SuspendLayout();
-            this.panel_start_work.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.group_add_vrach)).BeginInit();
+            this.group_add_vrach.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txt_room_number)).BeginInit();
             this.panel_botton.SuspendLayout();
-            this.panel_left.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picture_logo)).BeginInit();
+            this.panel_time_work.SuspendLayout();
+            this.panel_end_time_work.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_time_end_work.Properties)).BeginInit();
+            this.panel_start_work.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_time_start_work.Properties)).BeginInit();
             this.SuspendLayout();
-            // 
-            // panel_main
-            // 
-            this.panel_main.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(108)))), ((int)(((byte)(59)))));
-            this.panel_main.BorderThickness = 5;
-            this.panel_main.Controls.Add(this.panel_ful);
-            this.panel_main.Controls.Add(this.panel_left);
-            this.panel_main.Controls.Add(this.lbl_logo);
-            this.panel_main.CustomBorderThickness = new System.Windows.Forms.Padding(10, 0, 10, 10);
-            this.panel_main.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel_main.Location = new System.Drawing.Point(0, 0);
-            this.panel_main.Name = "panel_main";
-            this.panel_main.Padding = new System.Windows.Forms.Padding(10);
-            this.panel_main.Size = new System.Drawing.Size(807, 594);
-            this.panel_main.TabIndex = 0;
             // 
             // panel_ful
             // 
-            this.panel_ful.Controls.Add(this.check_enable);
-            this.panel_ful.Controls.Add(this.panel_time_work);
-            this.panel_ful.Controls.Add(this.txt_room_number);
-            this.panel_ful.Controls.Add(this.lbl_room_number);
-            this.panel_ful.Controls.Add(this.panel_botton);
-            this.panel_ful.Controls.Add(this.txt_cheng_password);
-            this.panel_ful.Controls.Add(this.lbl_change_password);
-            this.panel_ful.Controls.Add(this.txt_password);
-            this.panel_ful.Controls.Add(this.lbl_password);
-            this.panel_ful.Controls.Add(this.txt_login);
-            this.panel_ful.Controls.Add(this.lbl_login);
-            this.panel_ful.Controls.Add(this.txt_surname);
-            this.panel_ful.Controls.Add(this.lbl_surname);
-            this.panel_ful.Controls.Add(this.txt_name);
-            this.panel_ful.Controls.Add(this.lbl_name);
+            this.panel_ful.BackColor = System.Drawing.Color.White;
+            this.panel_ful.Controls.Add(this.group_add_vrach);
             this.panel_ful.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel_ful.Location = new System.Drawing.Point(249, 49);
+            this.panel_ful.Location = new System.Drawing.Point(20, 20);
             this.panel_ful.Name = "panel_ful";
-            this.panel_ful.Padding = new System.Windows.Forms.Padding(10, 20, 10, 20);
-            this.panel_ful.Size = new System.Drawing.Size(548, 535);
-            this.panel_ful.TabIndex = 2;
+            this.panel_ful.Size = new System.Drawing.Size(552, 538);
+            this.panel_ful.TabIndex = 0;
             // 
-            // check_enable
+            // group_add_vrach
             // 
-            this.check_enable.Dock = System.Windows.Forms.DockStyle.Top;
-            this.check_enable.Location = new System.Drawing.Point(10, 437);
-            this.check_enable.Name = "check_enable";
-            this.check_enable.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.check_enable.Size = new System.Drawing.Size(528, 28);
-            this.check_enable.TabIndex = 20;
-            this.check_enable.Text = "Ба кор додан";
-            this.check_enable.UseVisualStyleBackColor = true;
-            // 
-            // panel_time_work
-            // 
-            this.panel_time_work.Controls.Add(this.panel_end_time_work);
-            this.panel_time_work.Controls.Add(this.panel_start_work);
-            this.panel_time_work.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel_time_work.Location = new System.Drawing.Point(10, 381);
-            this.panel_time_work.Name = "panel_time_work";
-            this.panel_time_work.Size = new System.Drawing.Size(528, 56);
-            this.panel_time_work.TabIndex = 19;
-            // 
-            // panel_end_time_work
-            // 
-            this.panel_end_time_work.Controls.Add(this.txt_time_end_work);
-            this.panel_end_time_work.Controls.Add(this.lbl_end_work);
-            this.panel_end_time_work.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel_end_time_work.Location = new System.Drawing.Point(265, 0);
-            this.panel_end_time_work.Name = "panel_end_time_work";
-            this.panel_end_time_work.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
-            this.panel_end_time_work.Size = new System.Drawing.Size(263, 56);
-            this.panel_end_time_work.TabIndex = 14;
-            // 
-            // txt_time_end_work
-            // 
-            this.txt_time_end_work.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txt_time_end_work.Location = new System.Drawing.Point(10, 25);
-            this.txt_time_end_work.Mask = "00:00";
-            this.txt_time_end_work.Name = "txt_time_end_work";
-            this.txt_time_end_work.Size = new System.Drawing.Size(243, 23);
-            this.txt_time_end_work.TabIndex = 11;
-            this.txt_time_end_work.ValidatingType = typeof(System.DateTime);
-            // 
-            // lbl_end_work
-            // 
-            this.lbl_end_work.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lbl_end_work.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_end_work.Location = new System.Drawing.Point(10, 0);
-            this.lbl_end_work.Margin = new System.Windows.Forms.Padding(0);
-            this.lbl_end_work.Name = "lbl_end_work";
-            this.lbl_end_work.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.lbl_end_work.Size = new System.Drawing.Size(243, 25);
-            this.lbl_end_work.TabIndex = 10;
-            this.lbl_end_work.Text = "Вақти анҷоми кор";
-            this.lbl_end_work.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel_start_work
-            // 
-            this.panel_start_work.Controls.Add(this.txt_time_start_work);
-            this.panel_start_work.Controls.Add(this.lbl_start_work);
-            this.panel_start_work.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel_start_work.Location = new System.Drawing.Point(0, 0);
-            this.panel_start_work.Name = "panel_start_work";
-            this.panel_start_work.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
-            this.panel_start_work.Size = new System.Drawing.Size(265, 56);
-            this.panel_start_work.TabIndex = 13;
-            // 
-            // txt_time_start_work
-            // 
-            this.txt_time_start_work.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txt_time_start_work.Location = new System.Drawing.Point(10, 25);
-            this.txt_time_start_work.Mask = "00:00";
-            this.txt_time_start_work.Name = "txt_time_start_work";
-            this.txt_time_start_work.Size = new System.Drawing.Size(245, 23);
-            this.txt_time_start_work.TabIndex = 10;
-            this.txt_time_start_work.Text = "1020";
-            this.txt_time_start_work.ValidatingType = typeof(System.DateTime);
-            // 
-            // lbl_start_work
-            // 
-            this.lbl_start_work.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lbl_start_work.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_start_work.Location = new System.Drawing.Point(10, 0);
-            this.lbl_start_work.Margin = new System.Windows.Forms.Padding(0);
-            this.lbl_start_work.Name = "lbl_start_work";
-            this.lbl_start_work.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.lbl_start_work.Size = new System.Drawing.Size(245, 25);
-            this.lbl_start_work.TabIndex = 9;
-            this.lbl_start_work.Text = "Вақти оғохи кор";
-            this.lbl_start_work.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.group_add_vrach.Controls.Add(this.check_enable);
+            this.group_add_vrach.Controls.Add(this.panel_time_work);
+            this.group_add_vrach.Controls.Add(this.txt_room_number);
+            this.group_add_vrach.Controls.Add(this.lbl_room_number);
+            this.group_add_vrach.Controls.Add(this.panel_botton);
+            this.group_add_vrach.Controls.Add(this.txt_cheng_password);
+            this.group_add_vrach.Controls.Add(this.lbl_change_password);
+            this.group_add_vrach.Controls.Add(this.txt_password);
+            this.group_add_vrach.Controls.Add(this.lbl_password);
+            this.group_add_vrach.Controls.Add(this.txt_login);
+            this.group_add_vrach.Controls.Add(this.lbl_login);
+            this.group_add_vrach.Controls.Add(this.txt_surname);
+            this.group_add_vrach.Controls.Add(this.lbl_surname);
+            this.group_add_vrach.Controls.Add(this.txt_name);
+            this.group_add_vrach.Controls.Add(this.lbl_name);
+            this.group_add_vrach.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.group_add_vrach.Location = new System.Drawing.Point(0, 0);
+            this.group_add_vrach.Name = "group_add_vrach";
+            this.group_add_vrach.Padding = new System.Windows.Forms.Padding(10);
+            this.group_add_vrach.Size = new System.Drawing.Size(552, 538);
+            this.group_add_vrach.TabIndex = 0;
+            this.group_add_vrach.Text = "Сохтани врач";
             // 
             // txt_room_number
             // 
@@ -226,7 +131,7 @@
             this.txt_room_number.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_room_number.Dock = System.Windows.Forms.DockStyle.Top;
             this.txt_room_number.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_room_number.Location = new System.Drawing.Point(10, 345);
+            this.txt_room_number.Location = new System.Drawing.Point(12, 358);
             this.txt_room_number.Maximum = new decimal(new int[] {
             1000,
             0,
@@ -239,7 +144,7 @@
             0});
             this.txt_room_number.Name = "txt_room_number";
             this.txt_room_number.Size = new System.Drawing.Size(528, 36);
-            this.txt_room_number.TabIndex = 18;
+            this.txt_room_number.TabIndex = 33;
             this.txt_room_number.Value = new decimal(new int[] {
             1,
             0,
@@ -250,12 +155,12 @@
             // 
             this.lbl_room_number.Dock = System.Windows.Forms.DockStyle.Top;
             this.lbl_room_number.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_room_number.Location = new System.Drawing.Point(10, 320);
+            this.lbl_room_number.Location = new System.Drawing.Point(12, 333);
             this.lbl_room_number.Margin = new System.Windows.Forms.Padding(0);
             this.lbl_room_number.Name = "lbl_room_number";
             this.lbl_room_number.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.lbl_room_number.Size = new System.Drawing.Size(528, 25);
-            this.lbl_room_number.TabIndex = 16;
+            this.lbl_room_number.TabIndex = 32;
             this.lbl_room_number.Text = "Рақами утоқ";
             this.lbl_room_number.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -265,11 +170,11 @@
             this.panel_botton.Controls.Add(this.lbl_tab);
             this.panel_botton.Controls.Add(this.btn_creat);
             this.panel_botton.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel_botton.Location = new System.Drawing.Point(10, 471);
+            this.panel_botton.Location = new System.Drawing.Point(12, 482);
             this.panel_botton.Name = "panel_botton";
             this.panel_botton.Padding = new System.Windows.Forms.Padding(8);
             this.panel_botton.Size = new System.Drawing.Size(528, 44);
-            this.panel_botton.TabIndex = 11;
+            this.panel_botton.TabIndex = 31;
             // 
             // btn_hide
             // 
@@ -339,32 +244,32 @@
             this.txt_cheng_password.IconRight = null;
             this.txt_cheng_password.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_cheng_password.Lines = new string[0];
-            this.txt_cheng_password.Location = new System.Drawing.Point(10, 285);
+            this.txt_cheng_password.Location = new System.Drawing.Point(12, 298);
             this.txt_cheng_password.MaxLength = 32767;
             this.txt_cheng_password.MinimumSize = new System.Drawing.Size(100, 35);
             this.txt_cheng_password.Modified = false;
             this.txt_cheng_password.Multiline = false;
             this.txt_cheng_password.Name = "txt_cheng_password";
-            stateProperties1.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties1.FillColor = System.Drawing.Color.Empty;
-            stateProperties1.ForeColor = System.Drawing.Color.Empty;
-            stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txt_cheng_password.OnActiveState = stateProperties1;
-            stateProperties2.BorderColor = System.Drawing.Color.Empty;
-            stateProperties2.FillColor = System.Drawing.Color.White;
-            stateProperties2.ForeColor = System.Drawing.Color.Empty;
-            stateProperties2.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.txt_cheng_password.OnDisabledState = stateProperties2;
-            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties3.FillColor = System.Drawing.Color.Empty;
-            stateProperties3.ForeColor = System.Drawing.Color.Empty;
-            stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txt_cheng_password.OnHoverState = stateProperties3;
-            stateProperties4.BorderColor = System.Drawing.Color.Silver;
-            stateProperties4.FillColor = System.Drawing.Color.White;
-            stateProperties4.ForeColor = System.Drawing.Color.Empty;
-            stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txt_cheng_password.OnIdleState = stateProperties4;
+            stateProperties61.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties61.FillColor = System.Drawing.Color.Empty;
+            stateProperties61.ForeColor = System.Drawing.Color.Empty;
+            stateProperties61.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txt_cheng_password.OnActiveState = stateProperties61;
+            stateProperties62.BorderColor = System.Drawing.Color.Empty;
+            stateProperties62.FillColor = System.Drawing.Color.White;
+            stateProperties62.ForeColor = System.Drawing.Color.Empty;
+            stateProperties62.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.txt_cheng_password.OnDisabledState = stateProperties62;
+            stateProperties63.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties63.FillColor = System.Drawing.Color.Empty;
+            stateProperties63.ForeColor = System.Drawing.Color.Empty;
+            stateProperties63.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txt_cheng_password.OnHoverState = stateProperties63;
+            stateProperties64.BorderColor = System.Drawing.Color.Silver;
+            stateProperties64.FillColor = System.Drawing.Color.White;
+            stateProperties64.ForeColor = System.Drawing.Color.Empty;
+            stateProperties64.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txt_cheng_password.OnIdleState = stateProperties64;
             this.txt_cheng_password.PasswordChar = '\0';
             this.txt_cheng_password.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txt_cheng_password.PlaceholderText = "Тасдики рамз";
@@ -376,7 +281,7 @@
             this.txt_cheng_password.ShortcutsEnabled = true;
             this.txt_cheng_password.Size = new System.Drawing.Size(528, 35);
             this.txt_cheng_password.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
-            this.txt_cheng_password.TabIndex = 9;
+            this.txt_cheng_password.TabIndex = 30;
             this.txt_cheng_password.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txt_cheng_password.TextMarginBottom = 0;
             this.txt_cheng_password.TextMarginLeft = 5;
@@ -389,12 +294,12 @@
             // 
             this.lbl_change_password.Dock = System.Windows.Forms.DockStyle.Top;
             this.lbl_change_password.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_change_password.Location = new System.Drawing.Point(10, 260);
+            this.lbl_change_password.Location = new System.Drawing.Point(12, 273);
             this.lbl_change_password.Margin = new System.Windows.Forms.Padding(0);
             this.lbl_change_password.Name = "lbl_change_password";
             this.lbl_change_password.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.lbl_change_password.Size = new System.Drawing.Size(528, 25);
-            this.lbl_change_password.TabIndex = 8;
+            this.lbl_change_password.TabIndex = 29;
             this.lbl_change_password.Text = "Тасдиқи рамз:";
             this.lbl_change_password.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -426,32 +331,32 @@
             this.txt_password.IconRight = null;
             this.txt_password.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_password.Lines = new string[0];
-            this.txt_password.Location = new System.Drawing.Point(10, 225);
+            this.txt_password.Location = new System.Drawing.Point(12, 238);
             this.txt_password.MaxLength = 32767;
             this.txt_password.MinimumSize = new System.Drawing.Size(100, 35);
             this.txt_password.Modified = false;
             this.txt_password.Multiline = false;
             this.txt_password.Name = "txt_password";
-            stateProperties5.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties5.FillColor = System.Drawing.Color.Empty;
-            stateProperties5.ForeColor = System.Drawing.Color.Empty;
-            stateProperties5.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txt_password.OnActiveState = stateProperties5;
-            stateProperties6.BorderColor = System.Drawing.Color.Empty;
-            stateProperties6.FillColor = System.Drawing.Color.White;
-            stateProperties6.ForeColor = System.Drawing.Color.Empty;
-            stateProperties6.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.txt_password.OnDisabledState = stateProperties6;
-            stateProperties7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties7.FillColor = System.Drawing.Color.Empty;
-            stateProperties7.ForeColor = System.Drawing.Color.Empty;
-            stateProperties7.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txt_password.OnHoverState = stateProperties7;
-            stateProperties8.BorderColor = System.Drawing.Color.Silver;
-            stateProperties8.FillColor = System.Drawing.Color.White;
-            stateProperties8.ForeColor = System.Drawing.Color.Empty;
-            stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txt_password.OnIdleState = stateProperties8;
+            stateProperties65.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties65.FillColor = System.Drawing.Color.Empty;
+            stateProperties65.ForeColor = System.Drawing.Color.Empty;
+            stateProperties65.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txt_password.OnActiveState = stateProperties65;
+            stateProperties66.BorderColor = System.Drawing.Color.Empty;
+            stateProperties66.FillColor = System.Drawing.Color.White;
+            stateProperties66.ForeColor = System.Drawing.Color.Empty;
+            stateProperties66.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.txt_password.OnDisabledState = stateProperties66;
+            stateProperties67.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties67.FillColor = System.Drawing.Color.Empty;
+            stateProperties67.ForeColor = System.Drawing.Color.Empty;
+            stateProperties67.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txt_password.OnHoverState = stateProperties67;
+            stateProperties68.BorderColor = System.Drawing.Color.Silver;
+            stateProperties68.FillColor = System.Drawing.Color.White;
+            stateProperties68.ForeColor = System.Drawing.Color.Empty;
+            stateProperties68.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txt_password.OnIdleState = stateProperties68;
             this.txt_password.PasswordChar = '\0';
             this.txt_password.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txt_password.PlaceholderText = "Рамз";
@@ -463,7 +368,7 @@
             this.txt_password.ShortcutsEnabled = true;
             this.txt_password.Size = new System.Drawing.Size(528, 35);
             this.txt_password.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
-            this.txt_password.TabIndex = 7;
+            this.txt_password.TabIndex = 28;
             this.txt_password.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txt_password.TextMarginBottom = 0;
             this.txt_password.TextMarginLeft = 5;
@@ -476,12 +381,12 @@
             // 
             this.lbl_password.Dock = System.Windows.Forms.DockStyle.Top;
             this.lbl_password.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_password.Location = new System.Drawing.Point(10, 200);
+            this.lbl_password.Location = new System.Drawing.Point(12, 213);
             this.lbl_password.Margin = new System.Windows.Forms.Padding(0);
             this.lbl_password.Name = "lbl_password";
             this.lbl_password.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.lbl_password.Size = new System.Drawing.Size(528, 25);
-            this.lbl_password.TabIndex = 6;
+            this.lbl_password.TabIndex = 27;
             this.lbl_password.Text = "Рамз:";
             this.lbl_password.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -513,32 +418,32 @@
             this.txt_login.IconRight = null;
             this.txt_login.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_login.Lines = new string[0];
-            this.txt_login.Location = new System.Drawing.Point(10, 165);
+            this.txt_login.Location = new System.Drawing.Point(12, 178);
             this.txt_login.MaxLength = 32767;
             this.txt_login.MinimumSize = new System.Drawing.Size(100, 35);
             this.txt_login.Modified = false;
             this.txt_login.Multiline = false;
             this.txt_login.Name = "txt_login";
-            stateProperties9.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties9.FillColor = System.Drawing.Color.Empty;
-            stateProperties9.ForeColor = System.Drawing.Color.Empty;
-            stateProperties9.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txt_login.OnActiveState = stateProperties9;
-            stateProperties10.BorderColor = System.Drawing.Color.Empty;
-            stateProperties10.FillColor = System.Drawing.Color.White;
-            stateProperties10.ForeColor = System.Drawing.Color.Empty;
-            stateProperties10.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.txt_login.OnDisabledState = stateProperties10;
-            stateProperties11.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties11.FillColor = System.Drawing.Color.Empty;
-            stateProperties11.ForeColor = System.Drawing.Color.Empty;
-            stateProperties11.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txt_login.OnHoverState = stateProperties11;
-            stateProperties12.BorderColor = System.Drawing.Color.Silver;
-            stateProperties12.FillColor = System.Drawing.Color.White;
-            stateProperties12.ForeColor = System.Drawing.Color.Empty;
-            stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txt_login.OnIdleState = stateProperties12;
+            stateProperties69.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties69.FillColor = System.Drawing.Color.Empty;
+            stateProperties69.ForeColor = System.Drawing.Color.Empty;
+            stateProperties69.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txt_login.OnActiveState = stateProperties69;
+            stateProperties70.BorderColor = System.Drawing.Color.Empty;
+            stateProperties70.FillColor = System.Drawing.Color.White;
+            stateProperties70.ForeColor = System.Drawing.Color.Empty;
+            stateProperties70.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.txt_login.OnDisabledState = stateProperties70;
+            stateProperties71.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties71.FillColor = System.Drawing.Color.Empty;
+            stateProperties71.ForeColor = System.Drawing.Color.Empty;
+            stateProperties71.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txt_login.OnHoverState = stateProperties71;
+            stateProperties72.BorderColor = System.Drawing.Color.Silver;
+            stateProperties72.FillColor = System.Drawing.Color.White;
+            stateProperties72.ForeColor = System.Drawing.Color.Empty;
+            stateProperties72.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txt_login.OnIdleState = stateProperties72;
             this.txt_login.PasswordChar = '\0';
             this.txt_login.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txt_login.PlaceholderText = "Login";
@@ -550,7 +455,7 @@
             this.txt_login.ShortcutsEnabled = true;
             this.txt_login.Size = new System.Drawing.Size(528, 35);
             this.txt_login.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
-            this.txt_login.TabIndex = 5;
+            this.txt_login.TabIndex = 26;
             this.txt_login.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txt_login.TextMarginBottom = 0;
             this.txt_login.TextMarginLeft = 5;
@@ -563,12 +468,12 @@
             // 
             this.lbl_login.Dock = System.Windows.Forms.DockStyle.Top;
             this.lbl_login.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_login.Location = new System.Drawing.Point(10, 140);
+            this.lbl_login.Location = new System.Drawing.Point(12, 153);
             this.lbl_login.Margin = new System.Windows.Forms.Padding(0);
             this.lbl_login.Name = "lbl_login";
             this.lbl_login.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.lbl_login.Size = new System.Drawing.Size(528, 25);
-            this.lbl_login.TabIndex = 4;
+            this.lbl_login.TabIndex = 25;
             this.lbl_login.Text = "Login:";
             this.lbl_login.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -600,32 +505,32 @@
             this.txt_surname.IconRight = null;
             this.txt_surname.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_surname.Lines = new string[0];
-            this.txt_surname.Location = new System.Drawing.Point(10, 105);
+            this.txt_surname.Location = new System.Drawing.Point(12, 118);
             this.txt_surname.MaxLength = 32767;
             this.txt_surname.MinimumSize = new System.Drawing.Size(100, 35);
             this.txt_surname.Modified = false;
             this.txt_surname.Multiline = false;
             this.txt_surname.Name = "txt_surname";
-            stateProperties13.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties13.FillColor = System.Drawing.Color.Empty;
-            stateProperties13.ForeColor = System.Drawing.Color.Empty;
-            stateProperties13.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txt_surname.OnActiveState = stateProperties13;
-            stateProperties14.BorderColor = System.Drawing.Color.Empty;
-            stateProperties14.FillColor = System.Drawing.Color.White;
-            stateProperties14.ForeColor = System.Drawing.Color.Empty;
-            stateProperties14.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.txt_surname.OnDisabledState = stateProperties14;
-            stateProperties15.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties15.FillColor = System.Drawing.Color.Empty;
-            stateProperties15.ForeColor = System.Drawing.Color.Empty;
-            stateProperties15.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txt_surname.OnHoverState = stateProperties15;
-            stateProperties16.BorderColor = System.Drawing.Color.Silver;
-            stateProperties16.FillColor = System.Drawing.Color.White;
-            stateProperties16.ForeColor = System.Drawing.Color.Empty;
-            stateProperties16.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txt_surname.OnIdleState = stateProperties16;
+            stateProperties73.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties73.FillColor = System.Drawing.Color.Empty;
+            stateProperties73.ForeColor = System.Drawing.Color.Empty;
+            stateProperties73.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txt_surname.OnActiveState = stateProperties73;
+            stateProperties74.BorderColor = System.Drawing.Color.Empty;
+            stateProperties74.FillColor = System.Drawing.Color.White;
+            stateProperties74.ForeColor = System.Drawing.Color.Empty;
+            stateProperties74.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.txt_surname.OnDisabledState = stateProperties74;
+            stateProperties75.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties75.FillColor = System.Drawing.Color.Empty;
+            stateProperties75.ForeColor = System.Drawing.Color.Empty;
+            stateProperties75.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txt_surname.OnHoverState = stateProperties75;
+            stateProperties76.BorderColor = System.Drawing.Color.Silver;
+            stateProperties76.FillColor = System.Drawing.Color.White;
+            stateProperties76.ForeColor = System.Drawing.Color.Empty;
+            stateProperties76.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txt_surname.OnIdleState = stateProperties76;
             this.txt_surname.PasswordChar = '\0';
             this.txt_surname.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txt_surname.PlaceholderText = "Насаб";
@@ -637,7 +542,7 @@
             this.txt_surname.ShortcutsEnabled = true;
             this.txt_surname.Size = new System.Drawing.Size(528, 35);
             this.txt_surname.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
-            this.txt_surname.TabIndex = 3;
+            this.txt_surname.TabIndex = 24;
             this.txt_surname.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txt_surname.TextMarginBottom = 0;
             this.txt_surname.TextMarginLeft = 5;
@@ -650,11 +555,11 @@
             // 
             this.lbl_surname.Dock = System.Windows.Forms.DockStyle.Top;
             this.lbl_surname.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_surname.Location = new System.Drawing.Point(10, 80);
+            this.lbl_surname.Location = new System.Drawing.Point(12, 93);
             this.lbl_surname.Name = "lbl_surname";
             this.lbl_surname.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.lbl_surname.Size = new System.Drawing.Size(528, 25);
-            this.lbl_surname.TabIndex = 2;
+            this.lbl_surname.TabIndex = 23;
             this.lbl_surname.Text = "Насаб:";
             this.lbl_surname.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -686,32 +591,32 @@
             this.txt_name.IconRight = null;
             this.txt_name.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_name.Lines = new string[0];
-            this.txt_name.Location = new System.Drawing.Point(10, 45);
+            this.txt_name.Location = new System.Drawing.Point(12, 58);
             this.txt_name.MaxLength = 32767;
             this.txt_name.MinimumSize = new System.Drawing.Size(100, 35);
             this.txt_name.Modified = false;
             this.txt_name.Multiline = false;
             this.txt_name.Name = "txt_name";
-            stateProperties17.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties17.FillColor = System.Drawing.Color.Empty;
-            stateProperties17.ForeColor = System.Drawing.Color.Empty;
-            stateProperties17.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txt_name.OnActiveState = stateProperties17;
-            stateProperties18.BorderColor = System.Drawing.Color.Empty;
-            stateProperties18.FillColor = System.Drawing.Color.White;
-            stateProperties18.ForeColor = System.Drawing.Color.Empty;
-            stateProperties18.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.txt_name.OnDisabledState = stateProperties18;
-            stateProperties19.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties19.FillColor = System.Drawing.Color.Empty;
-            stateProperties19.ForeColor = System.Drawing.Color.Empty;
-            stateProperties19.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txt_name.OnHoverState = stateProperties19;
-            stateProperties20.BorderColor = System.Drawing.Color.Silver;
-            stateProperties20.FillColor = System.Drawing.Color.White;
-            stateProperties20.ForeColor = System.Drawing.Color.Empty;
-            stateProperties20.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txt_name.OnIdleState = stateProperties20;
+            stateProperties77.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties77.FillColor = System.Drawing.Color.Empty;
+            stateProperties77.ForeColor = System.Drawing.Color.Empty;
+            stateProperties77.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txt_name.OnActiveState = stateProperties77;
+            stateProperties78.BorderColor = System.Drawing.Color.Empty;
+            stateProperties78.FillColor = System.Drawing.Color.White;
+            stateProperties78.ForeColor = System.Drawing.Color.Empty;
+            stateProperties78.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.txt_name.OnDisabledState = stateProperties78;
+            stateProperties79.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties79.FillColor = System.Drawing.Color.Empty;
+            stateProperties79.ForeColor = System.Drawing.Color.Empty;
+            stateProperties79.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txt_name.OnHoverState = stateProperties79;
+            stateProperties80.BorderColor = System.Drawing.Color.Silver;
+            stateProperties80.FillColor = System.Drawing.Color.White;
+            stateProperties80.ForeColor = System.Drawing.Color.Empty;
+            stateProperties80.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txt_name.OnIdleState = stateProperties80;
             this.txt_name.PasswordChar = '\0';
             this.txt_name.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txt_name.PlaceholderText = "Ном";
@@ -723,7 +628,7 @@
             this.txt_name.ShortcutsEnabled = true;
             this.txt_name.Size = new System.Drawing.Size(528, 35);
             this.txt_name.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
-            this.txt_name.TabIndex = 1;
+            this.txt_name.TabIndex = 22;
             this.txt_name.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txt_name.TextMarginBottom = 0;
             this.txt_name.TextMarginLeft = 5;
@@ -736,86 +641,159 @@
             // 
             this.lbl_name.Dock = System.Windows.Forms.DockStyle.Top;
             this.lbl_name.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_name.Location = new System.Drawing.Point(10, 20);
+            this.lbl_name.Location = new System.Drawing.Point(12, 33);
             this.lbl_name.Name = "lbl_name";
             this.lbl_name.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.lbl_name.Size = new System.Drawing.Size(528, 25);
-            this.lbl_name.TabIndex = 0;
+            this.lbl_name.TabIndex = 21;
             this.lbl_name.Text = "Ном:";
             this.lbl_name.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // panel_left
+            // panel_time_work
             // 
-            this.panel_left.Controls.Add(this.picture_logo);
-            this.panel_left.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel_left.Location = new System.Drawing.Point(10, 49);
-            this.panel_left.Name = "panel_left";
-            this.panel_left.Padding = new System.Windows.Forms.Padding(30, 170, 30, 170);
-            this.panel_left.Size = new System.Drawing.Size(239, 535);
-            this.panel_left.TabIndex = 1;
+            this.panel_time_work.Controls.Add(this.panel_end_time_work);
+            this.panel_time_work.Controls.Add(this.panel_start_work);
+            this.panel_time_work.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel_time_work.Location = new System.Drawing.Point(12, 394);
+            this.panel_time_work.Name = "panel_time_work";
+            this.panel_time_work.Size = new System.Drawing.Size(528, 56);
+            this.panel_time_work.TabIndex = 36;
             // 
-            // picture_logo
+            // panel_end_time_work
             // 
-            this.picture_logo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.picture_logo.Image = global::ObiGarm.Properties.Resources.add_user;
-            this.picture_logo.Location = new System.Drawing.Point(30, 170);
-            this.picture_logo.Name = "picture_logo";
-            this.picture_logo.Size = new System.Drawing.Size(179, 195);
-            this.picture_logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picture_logo.TabIndex = 0;
-            this.picture_logo.TabStop = false;
+            this.panel_end_time_work.Controls.Add(this.txt_time_end_work);
+            this.panel_end_time_work.Controls.Add(this.lbl_end_work);
+            this.panel_end_time_work.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel_end_time_work.Location = new System.Drawing.Point(265, 0);
+            this.panel_end_time_work.Name = "panel_end_time_work";
+            this.panel_end_time_work.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.panel_end_time_work.Size = new System.Drawing.Size(263, 56);
+            this.panel_end_time_work.TabIndex = 14;
             // 
-            // lbl_logo
+            // txt_time_end_work
             // 
-            this.lbl_logo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(108)))), ((int)(((byte)(59)))));
-            this.lbl_logo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lbl_logo.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_logo.ForeColor = System.Drawing.Color.White;
-            this.lbl_logo.Location = new System.Drawing.Point(10, 10);
-            this.lbl_logo.Name = "lbl_logo";
-            this.lbl_logo.Size = new System.Drawing.Size(787, 39);
-            this.lbl_logo.TabIndex = 0;
-            this.lbl_logo.Text = "СОХТАНИ ВРАЧ";
-            this.lbl_logo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.txt_time_end_work.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txt_time_end_work.EditValue = new System.DateTime(2022, 10, 28, 12, 0, 0, 0);
+            this.txt_time_end_work.Location = new System.Drawing.Point(10, 25);
+            this.txt_time_end_work.Name = "txt_time_end_work";
+            this.txt_time_end_work.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_time_end_work.Properties.Appearance.Options.UseFont = true;
+            this.txt_time_end_work.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.txt_time_end_work.Properties.TimeEditStyle = DevExpress.XtraEditors.Repository.TimeEditStyle.TouchUI;
+            this.txt_time_end_work.Properties.TouchUIMaxValue = new System.DateTime(9999, 12, 31, 11, 59, 0, 0);
+            this.txt_time_end_work.Size = new System.Drawing.Size(243, 26);
+            this.txt_time_end_work.TabIndex = 31;
+            // 
+            // lbl_end_work
+            // 
+            this.lbl_end_work.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lbl_end_work.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_end_work.Location = new System.Drawing.Point(10, 0);
+            this.lbl_end_work.Margin = new System.Windows.Forms.Padding(0);
+            this.lbl_end_work.Name = "lbl_end_work";
+            this.lbl_end_work.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.lbl_end_work.Size = new System.Drawing.Size(243, 25);
+            this.lbl_end_work.TabIndex = 10;
+            this.lbl_end_work.Text = "Вақти анҷоми кор";
+            this.lbl_end_work.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel_start_work
+            // 
+            this.panel_start_work.Controls.Add(this.txt_time_start_work);
+            this.panel_start_work.Controls.Add(this.lbl_start_work);
+            this.panel_start_work.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel_start_work.Location = new System.Drawing.Point(0, 0);
+            this.panel_start_work.Name = "panel_start_work";
+            this.panel_start_work.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.panel_start_work.Size = new System.Drawing.Size(265, 56);
+            this.panel_start_work.TabIndex = 13;
+            // 
+            // txt_time_start_work
+            // 
+            this.txt_time_start_work.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txt_time_start_work.EditValue = new System.DateTime(2022, 10, 28, 12, 0, 0, 0);
+            this.txt_time_start_work.Location = new System.Drawing.Point(10, 25);
+            this.txt_time_start_work.Name = "txt_time_start_work";
+            this.txt_time_start_work.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_time_start_work.Properties.Appearance.Options.UseFont = true;
+            this.txt_time_start_work.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.txt_time_start_work.Properties.TimeEditStyle = DevExpress.XtraEditors.Repository.TimeEditStyle.TouchUI;
+            this.txt_time_start_work.Properties.TouchUIMaxValue = new System.DateTime(9999, 12, 31, 11, 59, 0, 0);
+            this.txt_time_start_work.Size = new System.Drawing.Size(245, 26);
+            this.txt_time_start_work.TabIndex = 29;
+            // 
+            // lbl_start_work
+            // 
+            this.lbl_start_work.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lbl_start_work.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_start_work.Location = new System.Drawing.Point(10, 0);
+            this.lbl_start_work.Margin = new System.Windows.Forms.Padding(0);
+            this.lbl_start_work.Name = "lbl_start_work";
+            this.lbl_start_work.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.lbl_start_work.Size = new System.Drawing.Size(245, 25);
+            this.lbl_start_work.TabIndex = 9;
+            this.lbl_start_work.Text = "Вақти оғохи кор";
+            this.lbl_start_work.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // check_enable
+            // 
+            this.check_enable.Dock = System.Windows.Forms.DockStyle.Top;
+            this.check_enable.Location = new System.Drawing.Point(12, 450);
+            this.check_enable.Name = "check_enable";
+            this.check_enable.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.check_enable.Size = new System.Drawing.Size(528, 28);
+            this.check_enable.TabIndex = 37;
+            this.check_enable.Text = "Ба кор додан";
+            this.check_enable.UseVisualStyleBackColor = true;
             // 
             // AddVrach
             // 
+            this.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Appearance.Options.UseBackColor = true;
+            this.Appearance.Options.UseFont = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(807, 594);
-            this.Controls.Add(this.panel_main);
+            this.ClientSize = new System.Drawing.Size(592, 578);
+            this.Controls.Add(this.panel_ful);
             this.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.IconOptions.ShowIcon = false;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "AddVrach";
-            this.ShowIcon = false;
+            this.Padding = new System.Windows.Forms.Padding(20);
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "AddAdmin";
+            this.Text = "Сохтани варач";
             this.Shown += new System.EventHandler(this.AddVrach_Shown);
-            this.panel_main.ResumeLayout(false);
             this.panel_ful.ResumeLayout(false);
-            this.panel_time_work.ResumeLayout(false);
-            this.panel_end_time_work.ResumeLayout(false);
-            this.panel_end_time_work.PerformLayout();
-            this.panel_start_work.ResumeLayout(false);
-            this.panel_start_work.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.group_add_vrach)).EndInit();
+            this.group_add_vrach.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.txt_room_number)).EndInit();
             this.panel_botton.ResumeLayout(false);
-            this.panel_left.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.picture_logo)).EndInit();
+            this.panel_time_work.ResumeLayout(false);
+            this.panel_end_time_work.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.txt_time_end_work.Properties)).EndInit();
+            this.panel_start_work.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.txt_time_start_work.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2Panel panel_main;
-        private System.Windows.Forms.Label lbl_logo;
+        private DevExpress.XtraBars.FormAssistant formAssistant1;
         private System.Windows.Forms.Panel panel_ful;
+        private DevExpress.XtraEditors.GroupControl group_add_vrach;
+        private Guna.UI2.WinForms.Guna2NumericUpDown txt_room_number;
+        private System.Windows.Forms.Label lbl_room_number;
         private System.Windows.Forms.Panel panel_botton;
+        private System.Windows.Forms.Button btn_hide;
+        private System.Windows.Forms.Label lbl_tab;
+        private System.Windows.Forms.Button btn_creat;
         private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox txt_cheng_password;
         private System.Windows.Forms.Label lbl_change_password;
         private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox txt_password;
@@ -826,20 +804,13 @@
         private System.Windows.Forms.Label lbl_surname;
         private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox txt_name;
         private System.Windows.Forms.Label lbl_name;
-        private System.Windows.Forms.Panel panel_left;
-        private System.Windows.Forms.PictureBox picture_logo;
-        private System.Windows.Forms.Button btn_hide;
-        private System.Windows.Forms.Label lbl_tab;
-        private System.Windows.Forms.Button btn_creat;
-        private Guna.UI2.WinForms.Guna2NumericUpDown txt_room_number;
-        private System.Windows.Forms.Label lbl_room_number;
         private System.Windows.Forms.CheckBox check_enable;
         private System.Windows.Forms.Panel panel_time_work;
         private System.Windows.Forms.Panel panel_end_time_work;
-        private System.Windows.Forms.MaskedTextBox txt_time_end_work;
+        private DevExpress.XtraEditors.TimeEdit txt_time_end_work;
         private System.Windows.Forms.Label lbl_end_work;
         private System.Windows.Forms.Panel panel_start_work;
-        private System.Windows.Forms.MaskedTextBox txt_time_start_work;
+        private DevExpress.XtraEditors.TimeEdit txt_time_start_work;
         private System.Windows.Forms.Label lbl_start_work;
     }
 }

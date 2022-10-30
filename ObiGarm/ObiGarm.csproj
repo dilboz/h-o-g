@@ -218,12 +218,6 @@
     <Compile Include="Users\Services\AddServices.Designer.cs">
       <DependentUpon>AddServices.cs</DependentUpon>
     </Compile>
-    <Compile Include="Users\Services\ServicesFormDisplay.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Users\Services\ServicesFormDisplay.Designer.cs">
-      <DependentUpon>ServicesFormDisplay.cs</DependentUpon>
-    </Compile>
     <Compile Include="SettinsForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -265,6 +259,12 @@
     </Compile>
     <Compile Include="Users\Registar\RegistarFormDisplay.Designer.cs">
       <DependentUpon>RegistarFormDisplay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\Services\ServicesFormDisplay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\Services\ServicesFormDisplay.Designer.cs">
+      <DependentUpon>ServicesFormDisplay.cs</DependentUpon>
     </Compile>
     <Compile Include="Users\Spitalists\AddSpitalist.cs">
       <SubType>Form</SubType>
@@ -328,9 +328,6 @@
     <EmbeddedResource Include="Users\Services\AddServices.resx">
       <DependentUpon>AddServices.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Users\Services\ServicesFormDisplay.resx">
-      <DependentUpon>ServicesFormDisplay.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="SettinsForm.resx">
       <DependentUpon>SettinsForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -351,6 +348,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Users\Registar\RegistarFormDisplay.resx">
       <DependentUpon>RegistarFormDisplay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\Services\ServicesFormDisplay.resx">
+      <DependentUpon>ServicesFormDisplay.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Users\Spitalists\AddSpitalist.resx">
       <DependentUpon>AddSpitalist.cs</DependentUpon>

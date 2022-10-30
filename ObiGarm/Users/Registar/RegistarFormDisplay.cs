@@ -51,7 +51,8 @@ namespace ObiGarm.Users.Registar
             if (e.ColumnIndex == delete.Index)
             {
                 string id = datagridview_admin.Rows[e.RowIndex].Cells[3].Value.ToString();
-                DialogResult dialogResult = MessageBox.Show("Шумо дар хакикат " + datagridview_admin.Rows[e.RowIndex].Cells[4].Value + " " + datagridview_admin.Rows[e.RowIndex].Cells[5].Value + " - ро нест кардан мехохед?", "Сообщения", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+                DialogResult dialogResult = MessageBox.Show("Шумо дар хакикат " +id + datagridview_admin.Rows[e.RowIndex].Cells[4].Value + " " + datagridview_admin.Rows[e.RowIndex].Cells[5].Value + " - ро нест кардан мехохед?", "Сообщения", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                 if (dialogResult == DialogResult.Yes)
                 {
                     string sqlDeleteuser = $"update users set deleted= '{DateTime.Now.ToString("yyyy'-'MM'-'dd'_'HH':'mm':'ss")}',  enable='0' where id = '" + id + "'";
@@ -63,7 +64,7 @@ namespace ObiGarm.Users.Registar
                     }
                     else
                     {
-                        MessageBox.Show("Хатоги хангоми нест кардани Админ!", "Сообщения", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("Хатоги хангоми нест кардани Бақайдгир!", "Сообщения", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
             }

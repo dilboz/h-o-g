@@ -74,15 +74,7 @@ namespace ObiGarm.Users.Registar
             }
         }
 
-        private void AddRegistar_Shown(object sender, EventArgs e)
-        {
-            if (this.id_user != "" && this.text_button != "Сохтан")
-            {
-                setTextToTextBoxs(this.id_user);
-                btn_creat.Text = "Иваз кардан";
-                group_creat_registr.Text = "ИВАЗ КАРДАНИ РЕГИСТР";
-            }
-        }
+
 
         string str_enbaled_register;
         private void enbaled_register()
@@ -224,6 +216,16 @@ namespace ObiGarm.Users.Registar
         private void btn_hide_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void AddRegistar_Shown(object sender, EventArgs e)
+        {
+            if (this.id_user != "" && this.text_button != "Сохтан")
+            {
+                setTextToTextBoxs(this.id_user);
+                btn_creat.Text = "Иваз кардан";
+                group_creat_registr.Text = "ИВАЗ КАРДАНИ РЕГИСТР";
+            }
         }
     }
 }
