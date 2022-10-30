@@ -1,0 +1,179 @@
+﻿using Bunifu.UI.WinForms.BunifuButton;
+using ObiGarm.ClassDatabase;
+using ObiGarm.Services;
+using ObiGarm.Users.Admin;
+using ObiGarm.Users.Frame;
+using ObiGarm.Users.Registar;
+using ObiGarm.Users.Spitalists;
+using ObiGarm.Users.Vracah;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.IO;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace ObiGarm.Users
+{
+    public partial class UserForm : DevExpress.XtraEditors.XtraForm
+    {
+        SqlConfiguration sqlConfiguration;
+        string type_user;
+        public UserForm()
+        {
+            InitializeComponent();
+            sqlConfiguration = new SqlConfiguration();
+            setNameAndType();
+        }
+
+
+        Form activeForm;
+        public void openChildForm(Form childForm)
+        {
+            if (activeForm != null)
+            {
+                activeForm.Close();
+            }
+
+            activeForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            this.panel_child_all.Controls.Add(childForm);
+            this.panel_child_all.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+        }
+
+        public void setNameAndType()
+        {
+            check_type_user();
+            user_info_label.Text = "Истифодабаранда: " + SettingsDatabase.name_user + " " + SettingsDatabase.surname_user +
+                "\nНамуди истифодабаранда: " + type_user;
+        }
+        void  check_type_user()
+        {          
+            if (SettingsDatabase.type_user=="1")
+            {
+                type_user = "Админ";
+            }
+            if (SettingsDatabase.type_user == "2")
+            {
+                type_user = "Врач";
+            }
+            if (SettingsDatabase.type_user == "3")
+            {
+                type_user = "Бақайдгир";
+            }
+        }
+
+
+        private void showHideMenu(int index)
+        {
+            Panel[] panels = new Panel[] {panel_user, servises_frame_panel, panel_reports};
+
+            for (int i = 0; i < panels.Length; i++)
+            {
+                if (panels[i]==panels[index])
+                {
+                    continue;
+                }
+                panels[i].Visible = false;
+            }
+
+            if (panels[index].Visible == false)
+            {
+                panels[index].Visible = true;
+            }
+            else
+            {
+                panels[index].Visible = false;
+            }
+        }
+
+        private void colorsButton(int index)
+        {
+            Button[] bunifuButtons = new Button[] { main_button, user_button, admin_button, vrach_button,
+            registr_button, spitalists_button, reference_button, frame_and_room,servicesis_btn, btn_kort, export_database_button, actions_button, reports_button};
+
+            for (var i = 0; i < bunifuButtons.Length; i++)
+            {
+                bunifuButtons[i].BackColor = Color.FromArgb(70, 70, 70);
+            }
+
+            bunifuButtons[index].BackColor = Color.FromArgb(100, 100, 100);
+        }
+
+        private void user_button_Click(object sender, EventArgs e)
+        {
+            colorsButton(1);
+            showHideMenu(0);
+        }
+
+        private void reports_button_Click(object sender, EventArgs e)
+        {
+            showHideMenu(2);
+        }
+
+        private void UserForm_Load(object sender, EventArgs e)
+        {
+            colorsButton(0);
+        }
+
+        private void main_button_Click(object sender, EventArgs e)
+        {
+            colorsButton(0);
+        }
+
+        private void admin_button_Click(object sender, EventArgs e)
+        {
+            colorsButton(2);
+            openChildForm(new AdminFormDisplay());
+        }
+
+        private void vrach_button_Click(object sender, EventArgs e)
+        {
+            colorsButton(3);
+            openChildForm(new VrachFormDisplay());
+        }
+
+        private void registr_button_Click(object sender, EventArgs e)
+        {
+            colorsButton(4);
+            openChildForm(new RegistarFormDisplay());
+        }
+
+        private void UserForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void spitalists_button_Click(object sender, EventArgs e)
+        {
+            colorsButton(5);
+            openChildForm(new SpitalistFormDisplay());
+        }
+
+        private void service_button_Click(object sender, EventArgs e)
+        {
+            showHideMenu(1);
+            colorsButton(6);
+        }
+
+        private void frame_and_room_Click(object sender, EventArgs e)
+        {
+            colorsButton(7);
+            openChildForm(new ListFrameRoom());
+        }
+
+        private void servicesis_btn_Click(object sender, EventArgs e)
+        {
+            colorsButton(8);
+            openChildForm(new ServicesFormDisplay());
+        }
+    }
+}
