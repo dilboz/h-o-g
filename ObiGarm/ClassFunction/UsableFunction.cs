@@ -10,10 +10,6 @@ namespace InventorySystem1._0.Includes
 {
     class usableFunction
     {
-
-
-        
-
         public void clearTxt(Control container)
         {
             try

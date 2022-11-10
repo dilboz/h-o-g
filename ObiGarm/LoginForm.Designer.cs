@@ -157,7 +157,7 @@
             this.txt_login.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txt_login.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_login.DefaultFont = new System.Drawing.Font("Segoe UI Semibold", 9.75F);
-            this.txt_login.DefaultText = "dilboz_admin";
+            this.txt_login.DefaultText = "dilboz_registar";
             this.txt_login.FillColor = System.Drawing.Color.White;
             this.txt_login.HideSelection = true;
             this.txt_login.IconLeft = null;
@@ -166,7 +166,7 @@
             this.txt_login.IconRight = null;
             this.txt_login.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_login.Lines = new string[] {
-        "dilboz_admin"};
+        "dilboz_registar"};
             this.txt_login.Location = new System.Drawing.Point(24, 54);
             this.txt_login.MaxLength = 32767;
             this.txt_login.MinimumSize = new System.Drawing.Size(100, 35);

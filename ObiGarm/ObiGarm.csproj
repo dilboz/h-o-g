@@ -16,6 +16,21 @@
     <TargetFrameworkProfile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -78,6 +93,7 @@
     <Reference Include="CairoSharp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\DevExpress.CrossPlatform.Printing.DrawingEngine.1.0.13\lib\netstandard2.0\CairoSharp.dll</HintPath>
     </Reference>
+    <Reference Include="DevExpress.CodeParser.v20.1, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.CrossPlatform.Printing.DrawingEngine, Version=1.0.13.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\DevExpress.CrossPlatform.Printing.DrawingEngine.1.0.13\lib\netstandard2.0\DevExpress.CrossPlatform.Printing.DrawingEngine.dll</HintPath>
     </Reference>
@@ -86,9 +102,11 @@
     <Reference Include="DevExpress.Data.v22.1, Version=22.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <HintPath>..\packages\DevExpress.Data.22.1.6\lib\net452\DevExpress.Data.v22.1.dll</HintPath>
     </Reference>
+    <Reference Include="DevExpress.DataAccess.v20.1, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Images.v20.1, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Office.v20.1.Core, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Pdf.v20.1.Core, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.PivotGrid.v20.1.Core, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Printing.v20.1.Core, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.RichEdit.v20.1.Core, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Sparkline.v20.1.Core, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
@@ -97,6 +115,7 @@
     <Reference Include="DevExpress.WinterJoySkin, Version=1.0.2.0, Culture=neutral, PublicKeyToken=95fc6c5621878f0a, processorArchitecture=MSIL">
       <HintPath>..\packages\DevExpress.Win.WinterJoySkin.1.0.2\lib\net452\DevExpress.WinterJoySkin.dll</HintPath>
     </Reference>
+    <Reference Include="DevExpress.Xpo.v20.1, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Xpo.v22.1, Version=22.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <HintPath>..\packages\DevExpress.Xpo.22.1.6\lib\net452\DevExpress.Xpo.v22.1.dll</HintPath>
     </Reference>
@@ -104,11 +123,13 @@
     <Reference Include="DevExpress.XtraEditors.v20.1, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraGrid.v20.1, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraLayout.v20.1, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPivotGrid.v20.1, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraPrinting.v20.1, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraRichEdit.v20.1, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraScheduler.v20.1, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraScheduler.v20.1.Core, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraTreeMap.v20.1, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v20.1, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="GLibSharp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\DevExpress.CrossPlatform.Printing.DrawingEngine.1.0.13\lib\netstandard2.0\GLibSharp.dll</HintPath>
     </Reference>
@@ -206,11 +227,47 @@
     <Compile Include="Regisrarura\AddCllient.Designer.cs">
       <DependentUpon>AddCllient.cs</DependentUpon>
     </Compile>
-    <Compile Include="Regisrarura\Risrarura.cs">
+    <Compile Include="Regisrarura\EdirClient.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Regisrarura\Risrarura.Designer.cs">
-      <DependentUpon>Risrarura.cs</DependentUpon>
+    <Compile Include="Regisrarura\EdirClient.Designer.cs">
+      <DependentUpon>EdirClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Regisrarura\IsClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Regisrarura\IsClient.Designer.cs">
+      <DependentUpon>IsClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Regisrarura\Lists\ListRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Regisrarura\Lists\ListRoom.Designer.cs">
+      <DependentUpon>ListRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Regisrarura\Lists\ListVrach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Regisrarura\Lists\ListVrach.Designer.cs">
+      <DependentUpon>ListVrach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Regisrarura\MoneyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Regisrarura\MoneyForm.Designer.cs">
+      <DependentUpon>MoneyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Regisrarura\NoClientYet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Regisrarura\NoClientYet.Designer.cs">
+      <DependentUpon>NoClientYet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Regisrarura\Ristratura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Regisrarura\Ristratura.Designer.cs">
+      <DependentUpon>Ristratura.cs</DependentUpon>
     </Compile>
     <Compile Include="Users\Services\AddServices.cs">
       <SubType>Form</SubType>
@@ -322,8 +379,26 @@
     <EmbeddedResource Include="Regisrarura\AddCllient.resx">
       <DependentUpon>AddCllient.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Regisrarura\Risrarura.resx">
-      <DependentUpon>Risrarura.cs</DependentUpon>
+    <EmbeddedResource Include="Regisrarura\EdirClient.resx">
+      <DependentUpon>EdirClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Regisrarura\IsClient.resx">
+      <DependentUpon>IsClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Regisrarura\Lists\ListRoom.resx">
+      <DependentUpon>ListRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Regisrarura\Lists\ListVrach.resx">
+      <DependentUpon>ListVrach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Regisrarura\MoneyForm.resx">
+      <DependentUpon>MoneyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Regisrarura\NoClientYet.resx">
+      <DependentUpon>NoClientYet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Regisrarura\Ristratura.resx">
+      <DependentUpon>Ristratura.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Users\Services\AddServices.resx">
       <DependentUpon>AddServices.cs</DependentUpon>
@@ -416,6 +491,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8_edit_26px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_for_grid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_to_varch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete_for_grid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_for_grid_view.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

@@ -136,6 +136,39 @@ namespace ObiGarm.ClassDatabase
         }
 
 
+        public void displayListExpress(string sql, DevExpress.XtraGrid.GridControl dataGridView)
+        {
+            try
+            {
+                openConnection();
+                cmd = new MySqlCommand();
+                dataAdapter = new MySqlDataAdapter();
+                dataTable = new DataTable();
+
+
+                cmd.Connection = connection;
+                cmd.CommandText = sql;
+                dataAdapter.SelectCommand = cmd;
+
+                dataAdapter.Fill(dataTable);
+
+                dataGridView.DataSource = dataTable;
+
+            }
+
+            catch (Exception ex)
+            {
+
+            }
+            finally
+            {
+                closeConnection();
+                cmd = null;
+                dataAdapter = null;
+                dataTable = null;
+            }
+        }
+
         public int sqlQuery(string sql)
         {
 

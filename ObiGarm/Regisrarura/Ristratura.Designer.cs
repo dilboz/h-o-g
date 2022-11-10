@@ -1,6 +1,6 @@
 ﻿namespace ObiGarm.Regisrarura
 {
-    partial class Risrarura
+    partial class Ristratura
     {
         /// <summary>
         /// Required designer variable.
@@ -59,6 +59,7 @@
             this.acrive_client.Text = "Хаммаи одамони ба назди табиб фиристода";
             this.acrive_client.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.acrive_client.UseVisualStyleBackColor = true;
+            this.acrive_client.Click += new System.EventHandler(this.acrive_client_Click);
             // 
             // client_of_bugalter
             // 
@@ -75,6 +76,7 @@
             this.client_of_bugalter.Text = "Одамони ба \r\nбугалтерия рафтги";
             this.client_of_bugalter.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.client_of_bugalter.UseVisualStyleBackColor = true;
+            this.client_of_bugalter.Click += new System.EventHandler(this.client_of_bugalter_Click);
             // 
             // create_clieant
             // 
@@ -93,6 +95,7 @@
             this.create_clieant.Text = "Сохтан";
             this.create_clieant.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.create_clieant.UseVisualStyleBackColor = false;
+            this.create_clieant.Click += new System.EventHandler(this.create_clieant_Click);
             // 
             // panel_menu
             // 
@@ -181,7 +184,7 @@
             this.panel_child_all.Size = new System.Drawing.Size(836, 395);
             this.panel_child_all.TabIndex = 6;
             // 
-            // Risrarura
+            // Ristratura
             // 
             this.Appearance.Options.UseFont = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -193,7 +196,7 @@
             this.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.IconOptions.ShowIcon = false;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.Name = "Risrarura";
+            this.Name = "Ristratura";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AdminForm";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

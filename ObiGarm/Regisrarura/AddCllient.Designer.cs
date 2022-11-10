@@ -53,14 +53,6 @@
             Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties22 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties23 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties24 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties25 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties26 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties27 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties28 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties29 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties30 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties31 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties32 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
             this.panel_ful = new System.Windows.Forms.Panel();
             this.panel_full = new System.Windows.Forms.Panel();
             this.layout_doctor_room_and_kort = new System.Windows.Forms.TableLayoutPanel();
@@ -87,10 +79,6 @@
             this.label8 = new System.Windows.Forms.Label();
             this.layout_days_and_money = new System.Windows.Forms.TableLayoutPanel();
             this.group_money = new DevExpress.XtraEditors.GroupControl();
-            this.txt_commen_money = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
-            this.lbl_com_money = new System.Windows.Forms.Label();
-            this.txt_number_money = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
-            this.label9 = new System.Windows.Forms.Label();
             this.panel_money_top = new System.Windows.Forms.Panel();
             this.radio_no_money = new System.Windows.Forms.RadioButton();
             this.radio_is_money = new System.Windows.Forms.RadioButton();
@@ -100,6 +88,7 @@
             this.date_end_dey = new Bunifu.UI.WinForms.BunifuDatePicker();
             this.lbl_date_end_day = new System.Windows.Forms.Label();
             this.group_first_day = new DevExpress.XtraEditors.GroupControl();
+            this.time_first_dey = new DevExpress.XtraEditors.TimeEdit();
             this.lbl_time_in_day = new System.Windows.Forms.Label();
             this.date_first_dey = new Bunifu.UI.WinForms.BunifuDatePicker();
             this.lbl_day_in_day = new System.Windows.Forms.Label();
@@ -120,7 +109,6 @@
             this.btn_сlear = new System.Windows.Forms.Button();
             this.lbl_tab = new System.Windows.Forms.Label();
             this.btn_creat = new System.Windows.Forms.Button();
-            this.time_first_dey = new DevExpress.XtraEditors.TimeEdit();
             this.panel_ful.SuspendLayout();
             this.panel_full.SuspendLayout();
             this.layout_doctor_room_and_kort.SuspendLayout();
@@ -142,13 +130,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.time_end_dey.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.group_first_day)).BeginInit();
             this.group_first_day.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.time_first_dey.Properties)).BeginInit();
             this.layot_top.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.group_birthday_and_sex)).BeginInit();
             this.group_birthday_and_sex.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groop_pursunal_data)).BeginInit();
             this.groop_pursunal_data.SuspendLayout();
             this.panel_botton.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.time_first_dey.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // panel_ful
@@ -185,7 +173,7 @@
             this.layout_doctor_room_and_kort.Controls.Add(this.group_room, 1, 0);
             this.layout_doctor_room_and_kort.Controls.Add(this.group_doctor, 0, 0);
             this.layout_doctor_room_and_kort.Dock = System.Windows.Forms.DockStyle.Top;
-            this.layout_doctor_room_and_kort.Location = new System.Drawing.Point(0, 393);
+            this.layout_doctor_room_and_kort.Location = new System.Drawing.Point(0, 364);
             this.layout_doctor_room_and_kort.Name = "layout_doctor_room_and_kort";
             this.layout_doctor_room_and_kort.Padding = new System.Windows.Forms.Padding(5);
             this.layout_doctor_room_and_kort.RowCount = 1;
@@ -201,6 +189,7 @@
             this.group_kort.Dock = System.Windows.Forms.DockStyle.Fill;
             this.group_kort.Location = new System.Drawing.Point(738, 8);
             this.group_kort.Name = "group_kort";
+            this.group_kort.Padding = new System.Windows.Forms.Padding(5);
             this.group_kort.Size = new System.Drawing.Size(361, 134);
             this.group_kort.TabIndex = 31;
             this.group_kort.Text = "Корт";
@@ -212,10 +201,10 @@
             this.panel_btn_kort.Controls.Add(this.label_tab_2);
             this.panel_btn_kort.Controls.Add(this.inser_kort);
             this.panel_btn_kort.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel_btn_kort.Location = new System.Drawing.Point(2, 78);
+            this.panel_btn_kort.Location = new System.Drawing.Point(7, 83);
             this.panel_btn_kort.Name = "panel_btn_kort";
             this.panel_btn_kort.Padding = new System.Windows.Forms.Padding(8);
-            this.panel_btn_kort.Size = new System.Drawing.Size(357, 44);
+            this.panel_btn_kort.Size = new System.Drawing.Size(347, 44);
             this.panel_btn_kort.TabIndex = 28;
             // 
             // btn_clear_kort
@@ -226,7 +215,7 @@
             this.btn_clear_kort.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_clear_kort.Font = new System.Drawing.Font("Constantia", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_clear_kort.ForeColor = System.Drawing.Color.White;
-            this.btn_clear_kort.Location = new System.Drawing.Point(62, 8);
+            this.btn_clear_kort.Location = new System.Drawing.Point(52, 8);
             this.btn_clear_kort.Name = "btn_clear_kort";
             this.btn_clear_kort.Size = new System.Drawing.Size(137, 28);
             this.btn_clear_kort.TabIndex = 3;
@@ -236,7 +225,7 @@
             // label_tab_2
             // 
             this.label_tab_2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label_tab_2.Location = new System.Drawing.Point(199, 8);
+            this.label_tab_2.Location = new System.Drawing.Point(189, 8);
             this.label_tab_2.Name = "label_tab_2";
             this.label_tab_2.Size = new System.Drawing.Size(13, 28);
             this.label_tab_2.TabIndex = 2;
@@ -249,7 +238,7 @@
             this.inser_kort.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.inser_kort.Font = new System.Drawing.Font("Constantia", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.inser_kort.ForeColor = System.Drawing.Color.White;
-            this.inser_kort.Location = new System.Drawing.Point(212, 8);
+            this.inser_kort.Location = new System.Drawing.Point(202, 8);
             this.inser_kort.Name = "inser_kort";
             this.inser_kort.Size = new System.Drawing.Size(137, 28);
             this.inser_kort.TabIndex = 1;
@@ -284,7 +273,7 @@
             this.txt_kort.IconRight = null;
             this.txt_kort.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_kort.Lines = new string[0];
-            this.txt_kort.Location = new System.Drawing.Point(2, 48);
+            this.txt_kort.Location = new System.Drawing.Point(7, 53);
             this.txt_kort.MaxLength = 32767;
             this.txt_kort.MinimumSize = new System.Drawing.Size(100, 30);
             this.txt_kort.Modified = false;
@@ -319,7 +308,7 @@
             this.txt_kort.SelectionLength = 0;
             this.txt_kort.SelectionStart = 0;
             this.txt_kort.ShortcutsEnabled = true;
-            this.txt_kort.Size = new System.Drawing.Size(357, 30);
+            this.txt_kort.Size = new System.Drawing.Size(347, 30);
             this.txt_kort.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
             this.txt_kort.TabIndex = 27;
             this.txt_kort.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -334,10 +323,10 @@
             // 
             this.lbl_kort.Dock = System.Windows.Forms.DockStyle.Top;
             this.lbl_kort.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_kort.Location = new System.Drawing.Point(2, 23);
+            this.lbl_kort.Location = new System.Drawing.Point(7, 28);
             this.lbl_kort.Name = "lbl_kort";
             this.lbl_kort.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.lbl_kort.Size = new System.Drawing.Size(357, 25);
+            this.lbl_kort.Size = new System.Drawing.Size(347, 25);
             this.lbl_kort.TabIndex = 26;
             this.lbl_kort.Text = "Малумоти оиди корт";
             this.lbl_kort.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -350,6 +339,7 @@
             this.group_room.Dock = System.Windows.Forms.DockStyle.Fill;
             this.group_room.Location = new System.Drawing.Point(373, 8);
             this.group_room.Name = "group_room";
+            this.group_room.Padding = new System.Windows.Forms.Padding(5);
             this.group_room.Size = new System.Drawing.Size(359, 134);
             this.group_room.TabIndex = 30;
             this.group_room.Text = "Бино ва хуҷра";
@@ -361,10 +351,10 @@
             this.panel_btn_room.Controls.Add(this.label_tab_1);
             this.panel_btn_room.Controls.Add(this.btn_insert_room);
             this.panel_btn_room.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel_btn_room.Location = new System.Drawing.Point(2, 78);
+            this.panel_btn_room.Location = new System.Drawing.Point(7, 83);
             this.panel_btn_room.Name = "panel_btn_room";
             this.panel_btn_room.Padding = new System.Windows.Forms.Padding(8);
-            this.panel_btn_room.Size = new System.Drawing.Size(355, 44);
+            this.panel_btn_room.Size = new System.Drawing.Size(345, 44);
             this.panel_btn_room.TabIndex = 28;
             // 
             // btn_clear_room
@@ -375,17 +365,18 @@
             this.btn_clear_room.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_clear_room.Font = new System.Drawing.Font("Constantia", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_clear_room.ForeColor = System.Drawing.Color.White;
-            this.btn_clear_room.Location = new System.Drawing.Point(60, 8);
+            this.btn_clear_room.Location = new System.Drawing.Point(50, 8);
             this.btn_clear_room.Name = "btn_clear_room";
             this.btn_clear_room.Size = new System.Drawing.Size(137, 28);
             this.btn_clear_room.TabIndex = 3;
             this.btn_clear_room.Text = "Тозакунии бино";
             this.btn_clear_room.UseVisualStyleBackColor = false;
+            this.btn_clear_room.Click += new System.EventHandler(this.btn_clear_room_Click);
             // 
             // label_tab_1
             // 
             this.label_tab_1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label_tab_1.Location = new System.Drawing.Point(197, 8);
+            this.label_tab_1.Location = new System.Drawing.Point(187, 8);
             this.label_tab_1.Name = "label_tab_1";
             this.label_tab_1.Size = new System.Drawing.Size(13, 28);
             this.label_tab_1.TabIndex = 2;
@@ -398,12 +389,13 @@
             this.btn_insert_room.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_insert_room.Font = new System.Drawing.Font("Constantia", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_insert_room.ForeColor = System.Drawing.Color.White;
-            this.btn_insert_room.Location = new System.Drawing.Point(210, 8);
+            this.btn_insert_room.Location = new System.Drawing.Point(200, 8);
             this.btn_insert_room.Name = "btn_insert_room";
             this.btn_insert_room.Size = new System.Drawing.Size(137, 28);
             this.btn_insert_room.TabIndex = 1;
             this.btn_insert_room.Text = "Интихоби бино";
             this.btn_insert_room.UseVisualStyleBackColor = false;
+            this.btn_insert_room.Click += new System.EventHandler(this.btn_insert_room_Click);
             // 
             // txt_room
             // 
@@ -433,7 +425,7 @@
             this.txt_room.IconRight = null;
             this.txt_room.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_room.Lines = new string[0];
-            this.txt_room.Location = new System.Drawing.Point(2, 48);
+            this.txt_room.Location = new System.Drawing.Point(7, 53);
             this.txt_room.MaxLength = 32767;
             this.txt_room.MinimumSize = new System.Drawing.Size(100, 30);
             this.txt_room.Modified = false;
@@ -468,7 +460,7 @@
             this.txt_room.SelectionLength = 0;
             this.txt_room.SelectionStart = 0;
             this.txt_room.ShortcutsEnabled = true;
-            this.txt_room.Size = new System.Drawing.Size(355, 30);
+            this.txt_room.Size = new System.Drawing.Size(345, 30);
             this.txt_room.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
             this.txt_room.TabIndex = 27;
             this.txt_room.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -483,10 +475,10 @@
             // 
             this.lbl_room.Dock = System.Windows.Forms.DockStyle.Top;
             this.lbl_room.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_room.Location = new System.Drawing.Point(2, 23);
+            this.lbl_room.Location = new System.Drawing.Point(7, 28);
             this.lbl_room.Name = "lbl_room";
             this.lbl_room.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.lbl_room.Size = new System.Drawing.Size(355, 25);
+            this.lbl_room.Size = new System.Drawing.Size(345, 25);
             this.lbl_room.TabIndex = 26;
             this.lbl_room.Text = "Рақами бино ва хуҷра";
             this.lbl_room.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -499,6 +491,7 @@
             this.group_doctor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.group_doctor.Location = new System.Drawing.Point(8, 8);
             this.group_doctor.Name = "group_doctor";
+            this.group_doctor.Padding = new System.Windows.Forms.Padding(5);
             this.group_doctor.Size = new System.Drawing.Size(359, 134);
             this.group_doctor.TabIndex = 2;
             this.group_doctor.Text = "Табиб";
@@ -510,10 +503,10 @@
             this.panel_btn_doctor.Controls.Add(this.label7);
             this.panel_btn_doctor.Controls.Add(this.btn_inser_docrot);
             this.panel_btn_doctor.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel_btn_doctor.Location = new System.Drawing.Point(2, 78);
+            this.panel_btn_doctor.Location = new System.Drawing.Point(7, 83);
             this.panel_btn_doctor.Name = "panel_btn_doctor";
             this.panel_btn_doctor.Padding = new System.Windows.Forms.Padding(8);
-            this.panel_btn_doctor.Size = new System.Drawing.Size(355, 44);
+            this.panel_btn_doctor.Size = new System.Drawing.Size(345, 44);
             this.panel_btn_doctor.TabIndex = 25;
             // 
             // btn_clear_doctor
@@ -524,17 +517,18 @@
             this.btn_clear_doctor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_clear_doctor.Font = new System.Drawing.Font("Constantia", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_clear_doctor.ForeColor = System.Drawing.Color.White;
-            this.btn_clear_doctor.Location = new System.Drawing.Point(60, 8);
+            this.btn_clear_doctor.Location = new System.Drawing.Point(50, 8);
             this.btn_clear_doctor.Name = "btn_clear_doctor";
             this.btn_clear_doctor.Size = new System.Drawing.Size(137, 28);
             this.btn_clear_doctor.TabIndex = 3;
             this.btn_clear_doctor.Text = "Тозакунии табиб";
             this.btn_clear_doctor.UseVisualStyleBackColor = false;
+            this.btn_clear_doctor.Click += new System.EventHandler(this.btn_clear_doctor_Click);
             // 
             // label7
             // 
             this.label7.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label7.Location = new System.Drawing.Point(197, 8);
+            this.label7.Location = new System.Drawing.Point(187, 8);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(13, 28);
             this.label7.TabIndex = 2;
@@ -547,12 +541,13 @@
             this.btn_inser_docrot.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_inser_docrot.Font = new System.Drawing.Font("Constantia", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_inser_docrot.ForeColor = System.Drawing.Color.White;
-            this.btn_inser_docrot.Location = new System.Drawing.Point(210, 8);
+            this.btn_inser_docrot.Location = new System.Drawing.Point(200, 8);
             this.btn_inser_docrot.Name = "btn_inser_docrot";
             this.btn_inser_docrot.Size = new System.Drawing.Size(137, 28);
             this.btn_inser_docrot.TabIndex = 1;
             this.btn_inser_docrot.Text = "Интихоби табиб";
             this.btn_inser_docrot.UseVisualStyleBackColor = false;
+            this.btn_inser_docrot.Click += new System.EventHandler(this.btn_inser_docrot_Click);
             // 
             // txt_name_doctor
             // 
@@ -582,7 +577,7 @@
             this.txt_name_doctor.IconRight = null;
             this.txt_name_doctor.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_name_doctor.Lines = new string[0];
-            this.txt_name_doctor.Location = new System.Drawing.Point(2, 48);
+            this.txt_name_doctor.Location = new System.Drawing.Point(7, 53);
             this.txt_name_doctor.MaxLength = 32767;
             this.txt_name_doctor.MinimumSize = new System.Drawing.Size(100, 30);
             this.txt_name_doctor.Modified = false;
@@ -617,7 +612,7 @@
             this.txt_name_doctor.SelectionLength = 0;
             this.txt_name_doctor.SelectionStart = 0;
             this.txt_name_doctor.ShortcutsEnabled = true;
-            this.txt_name_doctor.Size = new System.Drawing.Size(355, 30);
+            this.txt_name_doctor.Size = new System.Drawing.Size(345, 30);
             this.txt_name_doctor.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
             this.txt_name_doctor.TabIndex = 24;
             this.txt_name_doctor.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -632,10 +627,10 @@
             // 
             this.label8.Dock = System.Windows.Forms.DockStyle.Top;
             this.label8.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(2, 23);
+            this.label8.Location = new System.Drawing.Point(7, 28);
             this.label8.Name = "label8";
             this.label8.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.label8.Size = new System.Drawing.Size(355, 25);
+            this.label8.Size = new System.Drawing.Size(345, 25);
             this.label8.TabIndex = 23;
             this.label8.Text = "Насаб ва номи табиб:";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -643,207 +638,30 @@
             // layout_days_and_money
             // 
             this.layout_days_and_money.ColumnCount = 3;
-            this.layout_days_and_money.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.layout_days_and_money.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.layout_days_and_money.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.layout_days_and_money.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 41.56791F));
+            this.layout_days_and_money.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40.20055F));
+            this.layout_days_and_money.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18.3227F));
             this.layout_days_and_money.Controls.Add(this.group_money, 0, 0);
             this.layout_days_and_money.Controls.Add(this.group_en_day, 0, 0);
             this.layout_days_and_money.Controls.Add(this.group_first_day, 0, 0);
             this.layout_days_and_money.Dock = System.Windows.Forms.DockStyle.Top;
-            this.layout_days_and_money.Location = new System.Drawing.Point(0, 208);
+            this.layout_days_and_money.Location = new System.Drawing.Point(0, 210);
             this.layout_days_and_money.Name = "layout_days_and_money";
             this.layout_days_and_money.Padding = new System.Windows.Forms.Padding(5);
             this.layout_days_and_money.RowCount = 1;
             this.layout_days_and_money.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.layout_days_and_money.Size = new System.Drawing.Size(1107, 185);
+            this.layout_days_and_money.Size = new System.Drawing.Size(1107, 154);
             this.layout_days_and_money.TabIndex = 1;
             // 
             // group_money
             // 
-            this.group_money.Controls.Add(this.txt_commen_money);
-            this.group_money.Controls.Add(this.lbl_com_money);
-            this.group_money.Controls.Add(this.txt_number_money);
-            this.group_money.Controls.Add(this.label9);
             this.group_money.Controls.Add(this.panel_money_top);
             this.group_money.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.group_money.Location = new System.Drawing.Point(738, 8);
+            this.group_money.Location = new System.Drawing.Point(903, 8);
             this.group_money.Name = "group_money";
-            this.group_money.Size = new System.Drawing.Size(361, 169);
+            this.group_money.Size = new System.Drawing.Size(196, 138);
             this.group_money.TabIndex = 2;
             this.group_money.Text = "Маблаг";
-            // 
-            // txt_commen_money
-            // 
-            this.txt_commen_money.AcceptsReturn = false;
-            this.txt_commen_money.AcceptsTab = false;
-            this.txt_commen_money.AnimationSpeed = 200;
-            this.txt_commen_money.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.txt_commen_money.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.txt_commen_money.BackColor = System.Drawing.Color.Transparent;
-            this.txt_commen_money.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txt_commen_money.BackgroundImage")));
-            this.txt_commen_money.BorderColorActive = System.Drawing.Color.DodgerBlue;
-            this.txt_commen_money.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(161)))), ((int)(((byte)(161)))));
-            this.txt_commen_money.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.txt_commen_money.BorderColorIdle = System.Drawing.Color.Silver;
-            this.txt_commen_money.BorderRadius = 15;
-            this.txt_commen_money.BorderThickness = 1;
-            this.txt_commen_money.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txt_commen_money.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_commen_money.DefaultFont = new System.Drawing.Font("Segoe UI Semibold", 9.75F);
-            this.txt_commen_money.DefaultText = "";
-            this.txt_commen_money.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txt_commen_money.FillColor = System.Drawing.Color.White;
-            this.txt_commen_money.HideSelection = true;
-            this.txt_commen_money.IconLeft = null;
-            this.txt_commen_money.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_commen_money.IconPadding = 10;
-            this.txt_commen_money.IconRight = null;
-            this.txt_commen_money.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_commen_money.Lines = new string[0];
-            this.txt_commen_money.Location = new System.Drawing.Point(2, 130);
-            this.txt_commen_money.MaxLength = 32767;
-            this.txt_commen_money.MinimumSize = new System.Drawing.Size(100, 30);
-            this.txt_commen_money.Modified = false;
-            this.txt_commen_money.Multiline = false;
-            this.txt_commen_money.Name = "txt_commen_money";
-            stateProperties13.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties13.FillColor = System.Drawing.Color.Empty;
-            stateProperties13.ForeColor = System.Drawing.Color.Empty;
-            stateProperties13.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txt_commen_money.OnActiveState = stateProperties13;
-            stateProperties14.BorderColor = System.Drawing.Color.Empty;
-            stateProperties14.FillColor = System.Drawing.Color.White;
-            stateProperties14.ForeColor = System.Drawing.Color.Empty;
-            stateProperties14.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.txt_commen_money.OnDisabledState = stateProperties14;
-            stateProperties15.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties15.FillColor = System.Drawing.Color.Empty;
-            stateProperties15.ForeColor = System.Drawing.Color.Empty;
-            stateProperties15.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txt_commen_money.OnHoverState = stateProperties15;
-            stateProperties16.BorderColor = System.Drawing.Color.Silver;
-            stateProperties16.FillColor = System.Drawing.Color.White;
-            stateProperties16.ForeColor = System.Drawing.Color.Empty;
-            stateProperties16.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txt_commen_money.OnIdleState = stateProperties16;
-            this.txt_commen_money.PasswordChar = '\0';
-            this.txt_commen_money.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.txt_commen_money.PlaceholderText = "Маълумот";
-            this.txt_commen_money.ReadOnly = false;
-            this.txt_commen_money.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txt_commen_money.SelectedText = "";
-            this.txt_commen_money.SelectionLength = 0;
-            this.txt_commen_money.SelectionStart = 0;
-            this.txt_commen_money.ShortcutsEnabled = true;
-            this.txt_commen_money.Size = new System.Drawing.Size(357, 30);
-            this.txt_commen_money.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
-            this.txt_commen_money.TabIndex = 24;
-            this.txt_commen_money.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txt_commen_money.TextMarginBottom = 0;
-            this.txt_commen_money.TextMarginLeft = 5;
-            this.txt_commen_money.TextMarginTop = 0;
-            this.txt_commen_money.TextPlaceholder = "Маълумот";
-            this.txt_commen_money.UseSystemPasswordChar = false;
-            this.txt_commen_money.WordWrap = true;
-            // 
-            // lbl_com_money
-            // 
-            this.lbl_com_money.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lbl_com_money.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_com_money.Location = new System.Drawing.Point(2, 105);
-            this.lbl_com_money.Name = "lbl_com_money";
-            this.lbl_com_money.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.lbl_com_money.Size = new System.Drawing.Size(357, 25);
-            this.lbl_com_money.TabIndex = 23;
-            this.lbl_com_money.Text = "Малумот оиди маблаг";
-            this.lbl_com_money.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // txt_number_money
-            // 
-            this.txt_number_money.AcceptsReturn = false;
-            this.txt_number_money.AcceptsTab = false;
-            this.txt_number_money.AnimationSpeed = 200;
-            this.txt_number_money.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.txt_number_money.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.txt_number_money.BackColor = System.Drawing.Color.Transparent;
-            this.txt_number_money.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txt_number_money.BackgroundImage")));
-            this.txt_number_money.BorderColorActive = System.Drawing.Color.DodgerBlue;
-            this.txt_number_money.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(161)))), ((int)(((byte)(161)))));
-            this.txt_number_money.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.txt_number_money.BorderColorIdle = System.Drawing.Color.Silver;
-            this.txt_number_money.BorderRadius = 15;
-            this.txt_number_money.BorderThickness = 1;
-            this.txt_number_money.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txt_number_money.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_number_money.DefaultFont = new System.Drawing.Font("Segoe UI Semibold", 9.75F);
-            this.txt_number_money.DefaultText = "";
-            this.txt_number_money.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txt_number_money.FillColor = System.Drawing.Color.White;
-            this.txt_number_money.HideSelection = true;
-            this.txt_number_money.IconLeft = null;
-            this.txt_number_money.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_number_money.IconPadding = 10;
-            this.txt_number_money.IconRight = null;
-            this.txt_number_money.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_number_money.Lines = new string[0];
-            this.txt_number_money.Location = new System.Drawing.Point(2, 75);
-            this.txt_number_money.MaxLength = 32767;
-            this.txt_number_money.MinimumSize = new System.Drawing.Size(100, 30);
-            this.txt_number_money.Modified = false;
-            this.txt_number_money.Multiline = false;
-            this.txt_number_money.Name = "txt_number_money";
-            stateProperties17.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties17.FillColor = System.Drawing.Color.Empty;
-            stateProperties17.ForeColor = System.Drawing.Color.Empty;
-            stateProperties17.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txt_number_money.OnActiveState = stateProperties17;
-            stateProperties18.BorderColor = System.Drawing.Color.Empty;
-            stateProperties18.FillColor = System.Drawing.Color.White;
-            stateProperties18.ForeColor = System.Drawing.Color.Empty;
-            stateProperties18.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.txt_number_money.OnDisabledState = stateProperties18;
-            stateProperties19.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties19.FillColor = System.Drawing.Color.Empty;
-            stateProperties19.ForeColor = System.Drawing.Color.Empty;
-            stateProperties19.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txt_number_money.OnHoverState = stateProperties19;
-            stateProperties20.BorderColor = System.Drawing.Color.Silver;
-            stateProperties20.FillColor = System.Drawing.Color.White;
-            stateProperties20.ForeColor = System.Drawing.Color.Empty;
-            stateProperties20.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txt_number_money.OnIdleState = stateProperties20;
-            this.txt_number_money.PasswordChar = '\0';
-            this.txt_number_money.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.txt_number_money.PlaceholderText = "0";
-            this.txt_number_money.ReadOnly = false;
-            this.txt_number_money.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txt_number_money.SelectedText = "";
-            this.txt_number_money.SelectionLength = 0;
-            this.txt_number_money.SelectionStart = 0;
-            this.txt_number_money.ShortcutsEnabled = true;
-            this.txt_number_money.Size = new System.Drawing.Size(357, 30);
-            this.txt_number_money.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
-            this.txt_number_money.TabIndex = 22;
-            this.txt_number_money.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txt_number_money.TextMarginBottom = 0;
-            this.txt_number_money.TextMarginLeft = 5;
-            this.txt_number_money.TextMarginTop = 0;
-            this.txt_number_money.TextPlaceholder = "0";
-            this.txt_number_money.UseSystemPasswordChar = false;
-            this.txt_number_money.WordWrap = true;
-            this.txt_number_money.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_number_money_KeyPress);
-            // 
-            // label9
-            // 
-            this.label9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label9.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(2, 50);
-            this.label9.Name = "label9";
-            this.label9.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.label9.Size = new System.Drawing.Size(357, 25);
-            this.label9.TabIndex = 21;
-            this.label9.Text = "Миқдори маблаг";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // panel_money_top
             // 
@@ -852,32 +670,35 @@
             this.panel_money_top.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_money_top.Location = new System.Drawing.Point(2, 23);
             this.panel_money_top.Name = "panel_money_top";
-            this.panel_money_top.Size = new System.Drawing.Size(357, 27);
+            this.panel_money_top.Padding = new System.Windows.Forms.Padding(10);
+            this.panel_money_top.Size = new System.Drawing.Size(192, 68);
             this.panel_money_top.TabIndex = 0;
             // 
             // radio_no_money
             // 
             this.radio_no_money.AutoSize = true;
+            this.radio_no_money.Dock = System.Windows.Forms.DockStyle.Top;
             this.radio_no_money.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radio_no_money.Location = new System.Drawing.Point(122, 3);
+            this.radio_no_money.Location = new System.Drawing.Point(10, 33);
             this.radio_no_money.Name = "radio_no_money";
-            this.radio_no_money.Size = new System.Drawing.Size(112, 23);
+            this.radio_no_money.Size = new System.Drawing.Size(172, 23);
             this.radio_no_money.TabIndex = 1;
             this.radio_no_money.TabStop = true;
-            this.radio_no_money.Text = "бе маблағ";
+            this.radio_no_money.Text = "Бе маблағ";
             this.radio_no_money.UseVisualStyleBackColor = true;
             // 
             // radio_is_money
             // 
             this.radio_is_money.AutoSize = true;
             this.radio_is_money.Checked = true;
+            this.radio_is_money.Dock = System.Windows.Forms.DockStyle.Top;
             this.radio_is_money.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radio_is_money.Location = new System.Drawing.Point(3, 3);
+            this.radio_is_money.Location = new System.Drawing.Point(10, 10);
             this.radio_is_money.Name = "radio_is_money";
-            this.radio_is_money.Size = new System.Drawing.Size(112, 23);
+            this.radio_is_money.Size = new System.Drawing.Size(172, 23);
             this.radio_is_money.TabIndex = 0;
             this.radio_is_money.TabStop = true;
-            this.radio_is_money.Text = "бо маблағ";
+            this.radio_is_money.Text = "Бо маблағ";
             this.radio_is_money.UseVisualStyleBackColor = true;
             // 
             // group_en_day
@@ -887,9 +708,10 @@
             this.group_en_day.Controls.Add(this.date_end_dey);
             this.group_en_day.Controls.Add(this.lbl_date_end_day);
             this.group_en_day.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.group_en_day.Location = new System.Drawing.Point(373, 8);
+            this.group_en_day.Location = new System.Drawing.Point(463, 8);
             this.group_en_day.Name = "group_en_day";
-            this.group_en_day.Size = new System.Drawing.Size(359, 169);
+            this.group_en_day.Padding = new System.Windows.Forms.Padding(5);
+            this.group_en_day.Size = new System.Drawing.Size(434, 138);
             this.group_en_day.TabIndex = 1;
             this.group_en_day.Text = "То кай";
             // 
@@ -897,24 +719,24 @@
             // 
             this.time_end_dey.Dock = System.Windows.Forms.DockStyle.Top;
             this.time_end_dey.EditValue = new System.DateTime(2022, 10, 28, 0, 0, 0, 0);
-            this.time_end_dey.Location = new System.Drawing.Point(2, 105);
+            this.time_end_dey.Location = new System.Drawing.Point(7, 110);
             this.time_end_dey.Name = "time_end_dey";
             this.time_end_dey.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.time_end_dey.Properties.Appearance.Options.UseFont = true;
             this.time_end_dey.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.time_end_dey.Properties.TimeEditStyle = DevExpress.XtraEditors.Repository.TimeEditStyle.TouchUI;
-            this.time_end_dey.Size = new System.Drawing.Size(355, 26);
+            this.time_end_dey.Size = new System.Drawing.Size(420, 26);
             this.time_end_dey.TabIndex = 30;
             // 
             // lbl_end_day
             // 
             this.lbl_end_day.Dock = System.Windows.Forms.DockStyle.Top;
             this.lbl_end_day.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_end_day.Location = new System.Drawing.Point(2, 80);
+            this.lbl_end_day.Location = new System.Drawing.Point(7, 85);
             this.lbl_end_day.Name = "lbl_end_day";
             this.lbl_end_day.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.lbl_end_day.Size = new System.Drawing.Size(355, 25);
+            this.lbl_end_day.Size = new System.Drawing.Size(420, 25);
             this.lbl_end_day.TabIndex = 29;
             this.lbl_end_day.Text = "Соат";
             this.lbl_end_day.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -935,20 +757,20 @@
             this.date_end_dey.Icon = ((System.Drawing.Image)(resources.GetObject("date_end_dey.Icon")));
             this.date_end_dey.IconColor = System.Drawing.Color.Black;
             this.date_end_dey.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right;
-            this.date_end_dey.Location = new System.Drawing.Point(2, 48);
+            this.date_end_dey.Location = new System.Drawing.Point(7, 53);
             this.date_end_dey.MinimumSize = new System.Drawing.Size(217, 32);
             this.date_end_dey.Name = "date_end_dey";
-            this.date_end_dey.Size = new System.Drawing.Size(355, 32);
+            this.date_end_dey.Size = new System.Drawing.Size(420, 32);
             this.date_end_dey.TabIndex = 28;
             // 
             // lbl_date_end_day
             // 
             this.lbl_date_end_day.Dock = System.Windows.Forms.DockStyle.Top;
             this.lbl_date_end_day.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_date_end_day.Location = new System.Drawing.Point(2, 23);
+            this.lbl_date_end_day.Location = new System.Drawing.Point(7, 28);
             this.lbl_date_end_day.Name = "lbl_date_end_day";
             this.lbl_date_end_day.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.lbl_date_end_day.Size = new System.Drawing.Size(355, 25);
+            this.lbl_date_end_day.Size = new System.Drawing.Size(420, 25);
             this.lbl_date_end_day.TabIndex = 27;
             this.lbl_date_end_day.Text = "Руз мох ва сол";
             this.lbl_date_end_day.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -962,18 +784,33 @@
             this.group_first_day.Dock = System.Windows.Forms.DockStyle.Fill;
             this.group_first_day.Location = new System.Drawing.Point(8, 8);
             this.group_first_day.Name = "group_first_day";
-            this.group_first_day.Size = new System.Drawing.Size(359, 169);
+            this.group_first_day.Padding = new System.Windows.Forms.Padding(5);
+            this.group_first_day.Size = new System.Drawing.Size(449, 138);
             this.group_first_day.TabIndex = 0;
             this.group_first_day.Text = "Аз кай";
+            // 
+            // time_first_dey
+            // 
+            this.time_first_dey.Dock = System.Windows.Forms.DockStyle.Top;
+            this.time_first_dey.EditValue = new System.DateTime(2022, 10, 28, 0, 0, 0, 0);
+            this.time_first_dey.Location = new System.Drawing.Point(7, 110);
+            this.time_first_dey.Name = "time_first_dey";
+            this.time_first_dey.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.time_first_dey.Properties.Appearance.Options.UseFont = true;
+            this.time_first_dey.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.time_first_dey.Properties.TimeEditStyle = DevExpress.XtraEditors.Repository.TimeEditStyle.TouchUI;
+            this.time_first_dey.Size = new System.Drawing.Size(435, 26);
+            this.time_first_dey.TabIndex = 26;
             // 
             // lbl_time_in_day
             // 
             this.lbl_time_in_day.Dock = System.Windows.Forms.DockStyle.Top;
             this.lbl_time_in_day.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_time_in_day.Location = new System.Drawing.Point(2, 80);
+            this.lbl_time_in_day.Location = new System.Drawing.Point(7, 85);
             this.lbl_time_in_day.Name = "lbl_time_in_day";
             this.lbl_time_in_day.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.lbl_time_in_day.Size = new System.Drawing.Size(355, 25);
+            this.lbl_time_in_day.Size = new System.Drawing.Size(435, 25);
             this.lbl_time_in_day.TabIndex = 25;
             this.lbl_time_in_day.Text = "Соат";
             this.lbl_time_in_day.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -994,20 +831,20 @@
             this.date_first_dey.Icon = ((System.Drawing.Image)(resources.GetObject("date_first_dey.Icon")));
             this.date_first_dey.IconColor = System.Drawing.Color.Black;
             this.date_first_dey.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right;
-            this.date_first_dey.Location = new System.Drawing.Point(2, 48);
+            this.date_first_dey.Location = new System.Drawing.Point(7, 53);
             this.date_first_dey.MinimumSize = new System.Drawing.Size(217, 32);
             this.date_first_dey.Name = "date_first_dey";
-            this.date_first_dey.Size = new System.Drawing.Size(355, 32);
+            this.date_first_dey.Size = new System.Drawing.Size(435, 32);
             this.date_first_dey.TabIndex = 24;
             // 
             // lbl_day_in_day
             // 
             this.lbl_day_in_day.Dock = System.Windows.Forms.DockStyle.Top;
             this.lbl_day_in_day.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_day_in_day.Location = new System.Drawing.Point(2, 23);
+            this.lbl_day_in_day.Location = new System.Drawing.Point(7, 28);
             this.lbl_day_in_day.Name = "lbl_day_in_day";
             this.lbl_day_in_day.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.lbl_day_in_day.Size = new System.Drawing.Size(355, 25);
+            this.lbl_day_in_day.Size = new System.Drawing.Size(435, 25);
             this.lbl_day_in_day.TabIndex = 23;
             this.lbl_day_in_day.Text = "Руз мох ва сол";
             this.lbl_day_in_day.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1025,7 +862,7 @@
             this.layot_top.Padding = new System.Windows.Forms.Padding(5);
             this.layot_top.RowCount = 1;
             this.layot_top.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.layot_top.Size = new System.Drawing.Size(1107, 208);
+            this.layot_top.Size = new System.Drawing.Size(1107, 210);
             this.layot_top.TabIndex = 0;
             // 
             // group_birthday_and_sex
@@ -1037,7 +874,8 @@
             this.group_birthday_and_sex.Dock = System.Windows.Forms.DockStyle.Fill;
             this.group_birthday_and_sex.Location = new System.Drawing.Point(645, 8);
             this.group_birthday_and_sex.Name = "group_birthday_and_sex";
-            this.group_birthday_and_sex.Size = new System.Drawing.Size(454, 192);
+            this.group_birthday_and_sex.Padding = new System.Windows.Forms.Padding(5);
+            this.group_birthday_and_sex.Size = new System.Drawing.Size(454, 194);
             this.group_birthday_and_sex.TabIndex = 1;
             this.group_birthday_and_sex.Text = "Соли таввалуд ва ҷинс";
             // 
@@ -1058,9 +896,9 @@
             this.com_sex.Items.AddRange(new object[] {
             "Мард",
             "Зан"});
-            this.com_sex.Location = new System.Drawing.Point(2, 107);
+            this.com_sex.Location = new System.Drawing.Point(7, 112);
             this.com_sex.Name = "com_sex";
-            this.com_sex.Size = new System.Drawing.Size(450, 36);
+            this.com_sex.Size = new System.Drawing.Size(440, 36);
             this.com_sex.StartIndex = 0;
             this.com_sex.TabIndex = 25;
             // 
@@ -1068,10 +906,10 @@
             // 
             this.lbl_sex.Dock = System.Windows.Forms.DockStyle.Top;
             this.lbl_sex.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_sex.Location = new System.Drawing.Point(2, 82);
+            this.lbl_sex.Location = new System.Drawing.Point(7, 87);
             this.lbl_sex.Name = "lbl_sex";
             this.lbl_sex.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.lbl_sex.Size = new System.Drawing.Size(450, 25);
+            this.lbl_sex.Size = new System.Drawing.Size(440, 25);
             this.lbl_sex.TabIndex = 24;
             this.lbl_sex.Text = "Ҷинс";
             this.lbl_sex.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1092,20 +930,20 @@
             this.date_birthday.Icon = ((System.Drawing.Image)(resources.GetObject("date_birthday.Icon")));
             this.date_birthday.IconColor = System.Drawing.Color.Black;
             this.date_birthday.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right;
-            this.date_birthday.Location = new System.Drawing.Point(2, 50);
+            this.date_birthday.Location = new System.Drawing.Point(7, 55);
             this.date_birthday.MinimumSize = new System.Drawing.Size(217, 32);
             this.date_birthday.Name = "date_birthday";
-            this.date_birthday.Size = new System.Drawing.Size(450, 32);
+            this.date_birthday.Size = new System.Drawing.Size(440, 32);
             this.date_birthday.TabIndex = 23;
             // 
             // lbl_birthday
             // 
             this.lbl_birthday.Dock = System.Windows.Forms.DockStyle.Top;
             this.lbl_birthday.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_birthday.Location = new System.Drawing.Point(2, 23);
+            this.lbl_birthday.Location = new System.Drawing.Point(7, 28);
             this.lbl_birthday.Name = "lbl_birthday";
             this.lbl_birthday.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.lbl_birthday.Size = new System.Drawing.Size(450, 27);
+            this.lbl_birthday.Size = new System.Drawing.Size(440, 27);
             this.lbl_birthday.TabIndex = 22;
             this.lbl_birthday.Text = "Соли таввалуд:";
             this.lbl_birthday.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1121,7 +959,8 @@
             this.groop_pursunal_data.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groop_pursunal_data.Location = new System.Drawing.Point(8, 8);
             this.groop_pursunal_data.Name = "groop_pursunal_data";
-            this.groop_pursunal_data.Size = new System.Drawing.Size(631, 192);
+            this.groop_pursunal_data.Padding = new System.Windows.Forms.Padding(5);
+            this.groop_pursunal_data.Size = new System.Drawing.Size(631, 194);
             this.groop_pursunal_data.TabIndex = 0;
             this.groop_pursunal_data.Text = "Маълумоти шахси";
             // 
@@ -1153,32 +992,32 @@
             this.txt_name_patronymic.IconRight = null;
             this.txt_name_patronymic.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_name_patronymic.Lines = new string[0];
-            this.txt_name_patronymic.Location = new System.Drawing.Point(2, 158);
+            this.txt_name_patronymic.Location = new System.Drawing.Point(7, 163);
             this.txt_name_patronymic.MaxLength = 32767;
             this.txt_name_patronymic.MinimumSize = new System.Drawing.Size(100, 30);
             this.txt_name_patronymic.Modified = false;
             this.txt_name_patronymic.Multiline = false;
             this.txt_name_patronymic.Name = "txt_name_patronymic";
-            stateProperties21.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties21.FillColor = System.Drawing.Color.Empty;
-            stateProperties21.ForeColor = System.Drawing.Color.Empty;
-            stateProperties21.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txt_name_patronymic.OnActiveState = stateProperties21;
-            stateProperties22.BorderColor = System.Drawing.Color.Empty;
-            stateProperties22.FillColor = System.Drawing.Color.White;
-            stateProperties22.ForeColor = System.Drawing.Color.Empty;
-            stateProperties22.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.txt_name_patronymic.OnDisabledState = stateProperties22;
-            stateProperties23.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties23.FillColor = System.Drawing.Color.Empty;
-            stateProperties23.ForeColor = System.Drawing.Color.Empty;
-            stateProperties23.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txt_name_patronymic.OnHoverState = stateProperties23;
-            stateProperties24.BorderColor = System.Drawing.Color.Silver;
-            stateProperties24.FillColor = System.Drawing.Color.White;
-            stateProperties24.ForeColor = System.Drawing.Color.Empty;
-            stateProperties24.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txt_name_patronymic.OnIdleState = stateProperties24;
+            stateProperties13.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties13.FillColor = System.Drawing.Color.Empty;
+            stateProperties13.ForeColor = System.Drawing.Color.Empty;
+            stateProperties13.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txt_name_patronymic.OnActiveState = stateProperties13;
+            stateProperties14.BorderColor = System.Drawing.Color.Empty;
+            stateProperties14.FillColor = System.Drawing.Color.White;
+            stateProperties14.ForeColor = System.Drawing.Color.Empty;
+            stateProperties14.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.txt_name_patronymic.OnDisabledState = stateProperties14;
+            stateProperties15.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties15.FillColor = System.Drawing.Color.Empty;
+            stateProperties15.ForeColor = System.Drawing.Color.Empty;
+            stateProperties15.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txt_name_patronymic.OnHoverState = stateProperties15;
+            stateProperties16.BorderColor = System.Drawing.Color.Silver;
+            stateProperties16.FillColor = System.Drawing.Color.White;
+            stateProperties16.ForeColor = System.Drawing.Color.Empty;
+            stateProperties16.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txt_name_patronymic.OnIdleState = stateProperties16;
             this.txt_name_patronymic.PasswordChar = '\0';
             this.txt_name_patronymic.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txt_name_patronymic.PlaceholderText = "Номи падар";
@@ -1188,7 +1027,7 @@
             this.txt_name_patronymic.SelectionLength = 0;
             this.txt_name_patronymic.SelectionStart = 0;
             this.txt_name_patronymic.ShortcutsEnabled = true;
-            this.txt_name_patronymic.Size = new System.Drawing.Size(627, 30);
+            this.txt_name_patronymic.Size = new System.Drawing.Size(617, 30);
             this.txt_name_patronymic.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
             this.txt_name_patronymic.TabIndex = 24;
             this.txt_name_patronymic.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1203,10 +1042,10 @@
             // 
             this.lbl_patronymic.Dock = System.Windows.Forms.DockStyle.Top;
             this.lbl_patronymic.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_patronymic.Location = new System.Drawing.Point(2, 133);
+            this.lbl_patronymic.Location = new System.Drawing.Point(7, 138);
             this.lbl_patronymic.Name = "lbl_patronymic";
             this.lbl_patronymic.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.lbl_patronymic.Size = new System.Drawing.Size(627, 25);
+            this.lbl_patronymic.Size = new System.Drawing.Size(617, 25);
             this.lbl_patronymic.TabIndex = 23;
             this.lbl_patronymic.Text = "Номи падар:";
             this.lbl_patronymic.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1239,32 +1078,32 @@
             this.txt_name.IconRight = null;
             this.txt_name.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_name.Lines = new string[0];
-            this.txt_name.Location = new System.Drawing.Point(2, 103);
+            this.txt_name.Location = new System.Drawing.Point(7, 108);
             this.txt_name.MaxLength = 32767;
             this.txt_name.MinimumSize = new System.Drawing.Size(100, 30);
             this.txt_name.Modified = false;
             this.txt_name.Multiline = false;
             this.txt_name.Name = "txt_name";
-            stateProperties25.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties25.FillColor = System.Drawing.Color.Empty;
-            stateProperties25.ForeColor = System.Drawing.Color.Empty;
-            stateProperties25.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txt_name.OnActiveState = stateProperties25;
-            stateProperties26.BorderColor = System.Drawing.Color.Empty;
-            stateProperties26.FillColor = System.Drawing.Color.White;
-            stateProperties26.ForeColor = System.Drawing.Color.Empty;
-            stateProperties26.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.txt_name.OnDisabledState = stateProperties26;
-            stateProperties27.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties27.FillColor = System.Drawing.Color.Empty;
-            stateProperties27.ForeColor = System.Drawing.Color.Empty;
-            stateProperties27.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txt_name.OnHoverState = stateProperties27;
-            stateProperties28.BorderColor = System.Drawing.Color.Silver;
-            stateProperties28.FillColor = System.Drawing.Color.White;
-            stateProperties28.ForeColor = System.Drawing.Color.Empty;
-            stateProperties28.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txt_name.OnIdleState = stateProperties28;
+            stateProperties17.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties17.FillColor = System.Drawing.Color.Empty;
+            stateProperties17.ForeColor = System.Drawing.Color.Empty;
+            stateProperties17.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txt_name.OnActiveState = stateProperties17;
+            stateProperties18.BorderColor = System.Drawing.Color.Empty;
+            stateProperties18.FillColor = System.Drawing.Color.White;
+            stateProperties18.ForeColor = System.Drawing.Color.Empty;
+            stateProperties18.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.txt_name.OnDisabledState = stateProperties18;
+            stateProperties19.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties19.FillColor = System.Drawing.Color.Empty;
+            stateProperties19.ForeColor = System.Drawing.Color.Empty;
+            stateProperties19.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txt_name.OnHoverState = stateProperties19;
+            stateProperties20.BorderColor = System.Drawing.Color.Silver;
+            stateProperties20.FillColor = System.Drawing.Color.White;
+            stateProperties20.ForeColor = System.Drawing.Color.Empty;
+            stateProperties20.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txt_name.OnIdleState = stateProperties20;
             this.txt_name.PasswordChar = '\0';
             this.txt_name.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txt_name.PlaceholderText = "Ном";
@@ -1274,7 +1113,7 @@
             this.txt_name.SelectionLength = 0;
             this.txt_name.SelectionStart = 0;
             this.txt_name.ShortcutsEnabled = true;
-            this.txt_name.Size = new System.Drawing.Size(627, 30);
+            this.txt_name.Size = new System.Drawing.Size(617, 30);
             this.txt_name.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
             this.txt_name.TabIndex = 22;
             this.txt_name.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1289,10 +1128,10 @@
             // 
             this.lbl_name.Dock = System.Windows.Forms.DockStyle.Top;
             this.lbl_name.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_name.Location = new System.Drawing.Point(2, 78);
+            this.lbl_name.Location = new System.Drawing.Point(7, 83);
             this.lbl_name.Name = "lbl_name";
             this.lbl_name.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.lbl_name.Size = new System.Drawing.Size(627, 25);
+            this.lbl_name.Size = new System.Drawing.Size(617, 25);
             this.lbl_name.TabIndex = 21;
             this.lbl_name.Text = "Ном:";
             this.lbl_name.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1325,32 +1164,32 @@
             this.txt_surname.IconRight = null;
             this.txt_surname.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_surname.Lines = new string[0];
-            this.txt_surname.Location = new System.Drawing.Point(2, 48);
+            this.txt_surname.Location = new System.Drawing.Point(7, 53);
             this.txt_surname.MaxLength = 32767;
             this.txt_surname.MinimumSize = new System.Drawing.Size(100, 30);
             this.txt_surname.Modified = false;
             this.txt_surname.Multiline = false;
             this.txt_surname.Name = "txt_surname";
-            stateProperties29.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties29.FillColor = System.Drawing.Color.Empty;
-            stateProperties29.ForeColor = System.Drawing.Color.Empty;
-            stateProperties29.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txt_surname.OnActiveState = stateProperties29;
-            stateProperties30.BorderColor = System.Drawing.Color.Empty;
-            stateProperties30.FillColor = System.Drawing.Color.White;
-            stateProperties30.ForeColor = System.Drawing.Color.Empty;
-            stateProperties30.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.txt_surname.OnDisabledState = stateProperties30;
-            stateProperties31.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties31.FillColor = System.Drawing.Color.Empty;
-            stateProperties31.ForeColor = System.Drawing.Color.Empty;
-            stateProperties31.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txt_surname.OnHoverState = stateProperties31;
-            stateProperties32.BorderColor = System.Drawing.Color.Silver;
-            stateProperties32.FillColor = System.Drawing.Color.White;
-            stateProperties32.ForeColor = System.Drawing.Color.Empty;
-            stateProperties32.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txt_surname.OnIdleState = stateProperties32;
+            stateProperties21.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties21.FillColor = System.Drawing.Color.Empty;
+            stateProperties21.ForeColor = System.Drawing.Color.Empty;
+            stateProperties21.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txt_surname.OnActiveState = stateProperties21;
+            stateProperties22.BorderColor = System.Drawing.Color.Empty;
+            stateProperties22.FillColor = System.Drawing.Color.White;
+            stateProperties22.ForeColor = System.Drawing.Color.Empty;
+            stateProperties22.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.txt_surname.OnDisabledState = stateProperties22;
+            stateProperties23.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties23.FillColor = System.Drawing.Color.Empty;
+            stateProperties23.ForeColor = System.Drawing.Color.Empty;
+            stateProperties23.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txt_surname.OnHoverState = stateProperties23;
+            stateProperties24.BorderColor = System.Drawing.Color.Silver;
+            stateProperties24.FillColor = System.Drawing.Color.White;
+            stateProperties24.ForeColor = System.Drawing.Color.Empty;
+            stateProperties24.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txt_surname.OnIdleState = stateProperties24;
             this.txt_surname.PasswordChar = '\0';
             this.txt_surname.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txt_surname.PlaceholderText = "Насаб";
@@ -1360,7 +1199,7 @@
             this.txt_surname.SelectionLength = 0;
             this.txt_surname.SelectionStart = 0;
             this.txt_surname.ShortcutsEnabled = true;
-            this.txt_surname.Size = new System.Drawing.Size(627, 30);
+            this.txt_surname.Size = new System.Drawing.Size(617, 30);
             this.txt_surname.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
             this.txt_surname.TabIndex = 20;
             this.txt_surname.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1375,10 +1214,10 @@
             // 
             this.lbl_surname.Dock = System.Windows.Forms.DockStyle.Top;
             this.lbl_surname.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_surname.Location = new System.Drawing.Point(2, 23);
+            this.lbl_surname.Location = new System.Drawing.Point(7, 28);
             this.lbl_surname.Name = "lbl_surname";
             this.lbl_surname.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.lbl_surname.Size = new System.Drawing.Size(627, 25);
+            this.lbl_surname.Size = new System.Drawing.Size(617, 25);
             this.lbl_surname.TabIndex = 19;
             this.lbl_surname.Text = "Насаб:";
             this.lbl_surname.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1433,20 +1272,7 @@
             this.btn_creat.TabIndex = 1;
             this.btn_creat.Text = "Ба бугалтерия фиристондан";
             this.btn_creat.UseVisualStyleBackColor = false;
-            // 
-            // time_first_dey
-            // 
-            this.time_first_dey.Dock = System.Windows.Forms.DockStyle.Top;
-            this.time_first_dey.EditValue = new System.DateTime(2022, 10, 28, 0, 0, 0, 0);
-            this.time_first_dey.Location = new System.Drawing.Point(2, 105);
-            this.time_first_dey.Name = "time_first_dey";
-            this.time_first_dey.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.time_first_dey.Properties.Appearance.Options.UseFont = true;
-            this.time_first_dey.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.time_first_dey.Properties.TimeEditStyle = DevExpress.XtraEditors.Repository.TimeEditStyle.TouchUI;
-            this.time_first_dey.Size = new System.Drawing.Size(355, 26);
-            this.time_first_dey.TabIndex = 26;
+            this.btn_creat.Click += new System.EventHandler(this.btn_creat_Click);
             // 
             // AddCllient
             // 
@@ -1458,6 +1284,7 @@
             this.Name = "AddCllient";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddCllient";
+            this.Shown += new System.EventHandler(this.AddCllient_Shown);
             this.panel_ful.ResumeLayout(false);
             this.panel_full.ResumeLayout(false);
             this.layout_doctor_room_and_kort.ResumeLayout(false);
@@ -1480,13 +1307,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.time_end_dey.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.group_first_day)).EndInit();
             this.group_first_day.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.time_first_dey.Properties)).EndInit();
             this.layot_top.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.group_birthday_and_sex)).EndInit();
             this.group_birthday_and_sex.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.groop_pursunal_data)).EndInit();
             this.groop_pursunal_data.ResumeLayout(false);
             this.panel_botton.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.time_first_dey.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1526,10 +1353,6 @@
         private System.Windows.Forms.Panel panel_money_top;
         private System.Windows.Forms.RadioButton radio_is_money;
         private System.Windows.Forms.RadioButton radio_no_money;
-        private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox txt_number_money;
-        private System.Windows.Forms.Label label9;
-        private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox txt_commen_money;
-        private System.Windows.Forms.Label lbl_com_money;
         private System.Windows.Forms.TableLayoutPanel layout_doctor_room_and_kort;
         private DevExpress.XtraEditors.GroupControl group_doctor;
         private System.Windows.Forms.Panel panel_btn_doctor;

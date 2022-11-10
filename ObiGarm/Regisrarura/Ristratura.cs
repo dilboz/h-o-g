@@ -11,12 +11,12 @@ using System.Windows.Forms;
 
 namespace ObiGarm.Regisrarura
 {
-    public partial class Risrarura : DevExpress.XtraEditors.XtraForm
+    public partial class Ristratura : DevExpress.XtraEditors.XtraForm
     {
         SqlConfiguration sqlConfiguration;
         string type_user;
 
-        public Risrarura()
+        public Ristratura()
         {
             InitializeComponent();
             sqlConfiguration = new SqlConfiguration();
@@ -87,6 +87,24 @@ namespace ObiGarm.Regisrarura
         private void Risrarura_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void client_of_bugalter_Click(object sender, EventArgs e)
+        {
+            colorsButton(1);
+            openChildForm(new NoClientYet());
+        }
+
+        private void create_clieant_Click(object sender, EventArgs e)
+        {
+            colorsButton(0);
+            openChildForm(new AddCllient());
+        }
+
+        private void acrive_client_Click(object sender, EventArgs e)
+        {
+            colorsButton(2);
+            openChildForm(new IsClient());
         }
     }
 }

@@ -185,7 +185,7 @@ namespace ObiGarm
                         {
                             loaddingFrom loaddingFrom = new loaddingFrom();
                             loaddingFrom.Show();
-                            Risrarura risrarura = new Risrarura();
+                            Ristratura risrarura = new Ristratura();
                             risrarura.Show();
                             this.Hide();
                             loaddingFrom.Close();
