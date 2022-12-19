@@ -157,7 +157,7 @@
             this.txt_login.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txt_login.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_login.DefaultFont = new System.Drawing.Font("Segoe UI Semibold", 9.75F);
-            this.txt_login.DefaultText = "admins";
+            this.txt_login.DefaultText = "admin";
             this.txt_login.FillColor = System.Drawing.Color.White;
             this.txt_login.HideSelection = true;
             this.txt_login.IconLeft = null;
@@ -166,7 +166,7 @@
             this.txt_login.IconRight = null;
             this.txt_login.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_login.Lines = new string[] {
-        "admins"};
+        "admin"};
             this.txt_login.Location = new System.Drawing.Point(24, 54);
             this.txt_login.MaxLength = 32767;
             this.txt_login.MinimumSize = new System.Drawing.Size(100, 35);
@@ -241,7 +241,7 @@
             this.txt_password.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txt_password.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_password.DefaultFont = new System.Drawing.Font("Segoe UI Semibold", 9.75F);
-            this.txt_password.DefaultText = "admins";
+            this.txt_password.DefaultText = "admin";
             this.txt_password.FillColor = System.Drawing.Color.White;
             this.txt_password.HideSelection = true;
             this.txt_password.IconLeft = null;
@@ -250,7 +250,7 @@
             this.txt_password.IconRight = null;
             this.txt_password.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_password.Lines = new string[] {
-        "admins"};
+        "admin"};
             this.txt_password.Location = new System.Drawing.Point(24, 120);
             this.txt_password.MaxLength = 32767;
             this.txt_password.MinimumSize = new System.Drawing.Size(100, 35);

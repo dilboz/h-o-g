@@ -134,7 +134,7 @@ namespace ObiGarm.Users.Bugalter
             {
                 if (password_registar.Trim() == check_password_registarn.Trim())
                 {
-                    if (sqlConfiguration.sqlSelectQuery(sql_user_check).Rows.Count >= 1)
+                    if (sqlConfiguration.sqlSelectQuery(sql_user_check).Rows.Count <= 1)
                     {
                         int result = sqlConfiguration.sqlQuery(sql_update_user);
                         if (result == 500)
@@ -150,7 +150,7 @@ namespace ObiGarm.Users.Bugalter
                     }
                     else
                     {
-                        MessageBox.Show(sqlConfiguration.sqlSelectQuery(sql_user_check).Rows.Count.ToString());
+                        //MessageBox.Show(sqlConfiguration.sqlSelectQuery(sql_user_check).Rows.Count.ToString());
                         MessageBox.Show("Чунин логин дар система вучуд надорад! Логини дигар интихоб кунед!", "Сообщения", MessageBoxButtons.OK, MessageBoxIcon.None);
                     }
                 }

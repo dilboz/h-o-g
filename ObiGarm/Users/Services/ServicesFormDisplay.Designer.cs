@@ -302,26 +302,26 @@
             this.con_menu_edit_services,
             this.tool_delete_services});
             this.context_menu_list_services.Name = "context_menu_list_services";
-            this.context_menu_list_services.Size = new System.Drawing.Size(229, 70);
+            this.context_menu_list_services.Size = new System.Drawing.Size(230, 70);
             // 
             // con_menu_add_services
             // 
             this.con_menu_add_services.Name = "con_menu_add_services";
-            this.con_menu_add_services.Size = new System.Drawing.Size(228, 22);
+            this.con_menu_add_services.Size = new System.Drawing.Size(229, 22);
             this.con_menu_add_services.Text = "Сохтани хизматрасони";
             this.con_menu_add_services.Click += new System.EventHandler(this.con_menu_add_services_Click);
             // 
             // con_menu_edit_services
             // 
             this.con_menu_edit_services.Name = "con_menu_edit_services";
-            this.con_menu_edit_services.Size = new System.Drawing.Size(228, 22);
+            this.con_menu_edit_services.Size = new System.Drawing.Size(229, 22);
             this.con_menu_edit_services.Text = "Тағир додани хизматрасони";
             this.con_menu_edit_services.Click += new System.EventHandler(this.con_menu_edit_services_Click);
             // 
             // tool_delete_services
             // 
             this.tool_delete_services.Name = "tool_delete_services";
-            this.tool_delete_services.Size = new System.Drawing.Size(228, 22);
+            this.tool_delete_services.Size = new System.Drawing.Size(229, 22);
             this.tool_delete_services.Text = "Нест кардани хизматрасони";
             this.tool_delete_services.Click += new System.EventHandler(this.tool_delete_services_Click);
             // 

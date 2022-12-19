@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            DevExpress.XtraCharts.XYDiagram xyDiagram1 = new DevExpress.XtraCharts.XYDiagram();
-            DevExpress.XtraCharts.Series series1 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.StackedLineSeriesView stackedLineSeriesView1 = new DevExpress.XtraCharts.StackedLineSeriesView();
-            DevExpress.XtraCharts.XYDiagram xyDiagram2 = new DevExpress.XtraCharts.XYDiagram();
-            DevExpress.XtraCharts.Series series2 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.SideBySideBarSeriesView sideBySideBarSeriesView1 = new DevExpress.XtraCharts.SideBySideBarSeriesView();
-            DevExpress.XtraCharts.RectangleGradientFillOptions rectangleGradientFillOptions1 = new DevExpress.XtraCharts.RectangleGradientFillOptions();
+            DevExpress.XtraCharts.XYDiagram xyDiagram5 = new DevExpress.XtraCharts.XYDiagram();
+            DevExpress.XtraCharts.Series series5 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.StackedLineSeriesView stackedLineSeriesView3 = new DevExpress.XtraCharts.StackedLineSeriesView();
+            DevExpress.XtraCharts.XYDiagram xyDiagram6 = new DevExpress.XtraCharts.XYDiagram();
+            DevExpress.XtraCharts.Series series6 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.SideBySideBarSeriesView sideBySideBarSeriesView3 = new DevExpress.XtraCharts.SideBySideBarSeriesView();
+            DevExpress.XtraCharts.RectangleGradientFillOptions rectangleGradientFillOptions3 = new DevExpress.XtraCharts.RectangleGradientFillOptions();
             this.panel_top = new System.Windows.Forms.Panel();
             this.label_info_user = new System.Windows.Forms.Label();
             this.panel_grid_control = new System.Windows.Forms.Panel();
@@ -80,7 +80,6 @@
             this.panel_for_edit_sort = new System.Windows.Forms.Panel();
             this.panel_edit_sort = new System.Windows.Forms.Panel();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.listBox1 = new System.Windows.Forms.ListBox();
             this.panel_top.SuspendLayout();
             this.panel_grid_control.SuspendLayout();
             this.panel_grid.SuspendLayout();
@@ -92,16 +91,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.grid_control)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grid_view)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart_control_date)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(xyDiagram1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(stackedLineSeriesView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(xyDiagram5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(stackedLineSeriesView3)).BeginInit();
             this.panel_chart_date_sort_money.SuspendLayout();
             this.table_layout_panel_charts.SuspendLayout();
             this.panel_chart_sort_money.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart_control_money)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(xyDiagram2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(xyDiagram6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesView3)).BeginInit();
             this.table_layout_panel_grid_control.SuspendLayout();
             this.panel_charts.SuspendLayout();
             this.panel_grid_control_and_charts.SuspendLayout();
@@ -128,12 +127,15 @@
             // 
             // label_info_user
             // 
-            this.label_info_user.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.label_info_user.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label_info_user.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(143)))), ((int)(((byte)(78)))));
+            this.label_info_user.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label_info_user.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_info_user.ForeColor = System.Drawing.Color.White;
             this.label_info_user.Location = new System.Drawing.Point(10, 10);
             this.label_info_user.Name = "label_info_user";
-            this.label_info_user.Size = new System.Drawing.Size(323, 18);
+            this.label_info_user.Size = new System.Drawing.Size(1209, 18);
             this.label_info_user.TabIndex = 4;
+            this.label_info_user.Text = "Истифодабаранда: ";
             // 
             // panel_grid_control
             // 
@@ -348,9 +350,9 @@
             // 
             // chart_control_date
             // 
-            xyDiagram1.AxisX.VisibleInPanesSerializable = "-1";
-            xyDiagram1.AxisY.VisibleInPanesSerializable = "-1";
-            this.chart_control_date.Diagram = xyDiagram1;
+            xyDiagram5.AxisX.VisibleInPanesSerializable = "-1";
+            xyDiagram5.AxisY.VisibleInPanesSerializable = "-1";
+            this.chart_control_date.Diagram = xyDiagram5;
             this.chart_control_date.Dock = System.Windows.Forms.DockStyle.Fill;
             this.chart_control_date.Legend.AlignmentHorizontal = DevExpress.XtraCharts.LegendAlignmentHorizontal.Center;
             this.chart_control_date.Legend.AlignmentVertical = DevExpress.XtraCharts.LegendAlignmentVertical.TopOutside;
@@ -358,11 +360,11 @@
             this.chart_control_date.Legend.TextVisible = false;
             this.chart_control_date.Location = new System.Drawing.Point(0, 18);
             this.chart_control_date.Name = "chart_control_date";
-            series1.Name = "series_line";
-            stackedLineSeriesView1.LineMarkerOptions.Size = 8;
-            series1.View = stackedLineSeriesView1;
+            series5.Name = "series_line";
+            stackedLineSeriesView3.LineMarkerOptions.Size = 8;
+            series5.View = stackedLineSeriesView3;
             this.chart_control_date.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
-        series1};
+        series5};
             this.chart_control_date.Size = new System.Drawing.Size(775, 206);
             this.chart_control_date.TabIndex = 1;
             // 
@@ -418,23 +420,23 @@
             // 
             // chart_control_money
             // 
-            xyDiagram2.AxisX.VisibleInPanesSerializable = "-1";
-            xyDiagram2.AxisY.VisibleInPanesSerializable = "-1";
-            this.chart_control_money.Diagram = xyDiagram2;
+            xyDiagram6.AxisX.VisibleInPanesSerializable = "-1";
+            xyDiagram6.AxisY.VisibleInPanesSerializable = "-1";
+            this.chart_control_money.Diagram = xyDiagram6;
             this.chart_control_money.Dock = System.Windows.Forms.DockStyle.Fill;
             this.chart_control_money.Legend.Name = "Default Legend";
             this.chart_control_money.Legend.TextVisible = false;
             this.chart_control_money.Location = new System.Drawing.Point(0, 18);
             this.chart_control_money.Name = "chart_control_money";
             this.chart_control_money.PaletteName = "Green";
-            series2.Name = "Series 1";
-            sideBySideBarSeriesView1.Border.Thickness = 17;
-            sideBySideBarSeriesView1.FillStyle.FillMode = DevExpress.XtraCharts.FillMode.Gradient;
-            rectangleGradientFillOptions1.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(12)))), ((int)(((byte)(12)))));
-            sideBySideBarSeriesView1.FillStyle.Options = rectangleGradientFillOptions1;
-            series2.View = sideBySideBarSeriesView1;
+            series6.Name = "Series 1";
+            sideBySideBarSeriesView3.Border.Thickness = 17;
+            sideBySideBarSeriesView3.FillStyle.FillMode = DevExpress.XtraCharts.FillMode.Gradient;
+            rectangleGradientFillOptions3.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(12)))), ((int)(((byte)(12)))));
+            sideBySideBarSeriesView3.FillStyle.Options = rectangleGradientFillOptions3;
+            series6.View = sideBySideBarSeriesView3;
             this.chart_control_money.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
-        series2};
+        series6};
             this.chart_control_money.Size = new System.Drawing.Size(416, 206);
             this.chart_control_money.TabIndex = 4;
             // 
@@ -488,7 +490,6 @@
             // panel_ino_money
             // 
             this.panel_ino_money.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(163)))), ((int)(((byte)(98)))));
-            this.panel_ino_money.Controls.Add(this.listBox1);
             this.panel_ino_money.Controls.Add(this.label_info);
             this.panel_ino_money.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_ino_money.Location = new System.Drawing.Point(0, 74);
@@ -644,14 +645,6 @@
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
-            // listBox1
-            // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(785, 5);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(297, 56);
-            this.listBox1.TabIndex = 5;
-            // 
             // InfoReportsFromMoney
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -664,6 +657,7 @@
             this.IconOptions.ShowIcon = false;
             this.Name = "InfoReportsFromMoney";
             this.Text = "Малумотҳо оиди маблағ";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.InfoReportsFromMoney_FormClosed);
             this.panel_top.ResumeLayout(false);
             this.panel_grid_control.ResumeLayout(false);
             this.panel_grid.ResumeLayout(false);
@@ -674,16 +668,16 @@
             this.panel_money_grid.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.grid_control)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grid_view)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(xyDiagram1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(stackedLineSeriesView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(xyDiagram5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(stackedLineSeriesView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart_control_date)).EndInit();
             this.panel_chart_date_sort_money.ResumeLayout(false);
             this.table_layout_panel_charts.ResumeLayout(false);
             this.panel_chart_sort_money.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(xyDiagram2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(xyDiagram6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart_control_money)).EndInit();
             this.table_layout_panel_grid_control.ResumeLayout(false);
             this.panel_charts.ResumeLayout(false);
@@ -746,6 +740,5 @@
         private DevExpress.XtraGrid.Columns.GridColumn bank_name;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.Label label_info;
-        private System.Windows.Forms.ListBox listBox1;
     }
 }

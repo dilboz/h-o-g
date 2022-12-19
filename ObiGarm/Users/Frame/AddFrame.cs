@@ -108,7 +108,7 @@ namespace ObiGarm.Users.Frame
 
             if (name_frame.Trim() != "")
             {
-                if (sqlConfiguration.sqlSelectQuery(sql_user_farme).Rows.Count >= 1)
+                if (sqlConfiguration.sqlSelectQuery(sql_user_farme).Rows.Count <= 1)
                 {
                     int result = sqlConfiguration.sqlQuery(sql_update_frame);
                     if (result == 500)

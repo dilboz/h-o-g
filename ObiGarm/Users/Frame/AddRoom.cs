@@ -25,7 +25,6 @@ namespace ObiGarm.Users.Frame
             listFrameRoomForm = listFrameRoom;
             this.id = id;
             this.text_button = text_button;
-            loadCombo();
         }
 
         void loadCombo()
@@ -81,7 +80,7 @@ namespace ObiGarm.Users.Frame
             }
             string id_fmame = combo_frame.SelectedValue.ToString();
             string room = txt_name_room.Text;
-            string sql_check_farme = "select * from room  where id_freme = '" + id_fmame + "' and name ='" + room.Trim() +"';";
+            string sql_check_farme = $"select * from room  where id_freme = ' { id_fmame } ' and name =' { room.Trim() }' and enable ='1';";
 
             string sql_add_room = "insert into room (id_freme, name) values('" +
                id_fmame + "', '"+
@@ -123,7 +122,7 @@ namespace ObiGarm.Users.Frame
             }
             string id_fmame = combo_frame.SelectedValue.ToString();
             string room = txt_name_room.Text;
-            string sql_check_farme = "select * from room  where id_freme = '" + id_fmame + "' and name ='" + room.Trim() + "';";
+            string sql_check_farme = "select * from room  where id_freme = '" + id_fmame + "' and name ='" + room.Trim() + "' deleted is  null;";
 
 
             string sql_update_frame = "update room set " +
@@ -133,7 +132,7 @@ namespace ObiGarm.Users.Frame
 
             if (room.Trim() != "")
             {
-                if (sqlConfiguration.sqlSelectQuery(sql_check_farme).Rows.Count >= 1)
+                if (sqlConfiguration.sqlSelectQuery(sql_check_farme).Rows.Count <= 1)
                 {
                     int result = sqlConfiguration.sqlQuery(sql_update_frame);
                     if (result == 500)

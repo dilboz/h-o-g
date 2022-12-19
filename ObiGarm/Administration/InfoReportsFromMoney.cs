@@ -31,6 +31,7 @@ namespace ObiGarm.Administration
         {
             InitializeComponent();
             sqlConfiguration = new SqlConfiguration();
+            label_info_user.Text = $"Истифодабаранда: {SettingsDatabase.surname_user + " " + SettingsDatabase.name_user}";
             combo_type_money.Text = "Отчёт дар бораи маблағи нақд";
         }
 
@@ -223,6 +224,11 @@ namespace ObiGarm.Administration
             dispaly(combo_type_money.Text,  Convert.ToDateTime (date_edit_start.EditValue), Convert.ToDateTime(date_edit_end.EditValue));
             
 
+        }
+
+        private void InfoReportsFromMoney_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

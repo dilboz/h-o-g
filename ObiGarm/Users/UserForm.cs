@@ -2,9 +2,11 @@
 using ObiGarm.ClassDatabase;
 using ObiGarm.Services;
 using ObiGarm.Users.Admin;
+using ObiGarm.Users.Administration;
 using ObiGarm.Users.Bonk;
 using ObiGarm.Users.Bugalter;
 using ObiGarm.Users.Frame;
+using ObiGarm.Users.Kort;
 using ObiGarm.Users.Registar;
 using ObiGarm.Users.Spitalists;
 using ObiGarm.Users.Vracah;
@@ -100,14 +102,15 @@ namespace ObiGarm.Users
         private void colorsButton(int index)
         {
             Button[] bunifuButtons = new Button[] { main_button, user_button, admin_button, vrach_button,
-            registr_button, spitalists_button,bugalter_button, reference_button, frame_and_room,servicesis_btn, btn_kort, bonk_button, export_database_button, actions_button, reports_button};
+            registr_button, spitalists_button, bugalter_button, reference_button, frame_and_room, servicesis_btn, btn_kort, bonk_button, 
+                export_database_button, actions_button, reports_button, administrator_button};
 
             for (var i = 0; i < bunifuButtons.Length; i++)
             {
                 bunifuButtons[i].BackColor = Color.FromArgb(70, 70, 70);
             }
 
-            if (index==2 || index==3 || index==4 || index==5 || index==6)
+            if (index==2 || index==3 || index==4 || index==5 || index==6 || index == 15)
             {
                 bunifuButtons[1].BackColor = Color.FromArgb(100, 100, 100);
                 bunifuButtons[index].BackColor = Color.FromArgb(100, 100, 100);
@@ -117,11 +120,11 @@ namespace ObiGarm.Users
                 bunifuButtons[7].BackColor = Color.FromArgb(100, 100, 100);
                 bunifuButtons[index].BackColor = Color.FromArgb(100, 100, 100);
             }
-            else if (index == 15 || index == 16 || index == 17 )
-            {
-                bunifuButtons[14].BackColor = Color.FromArgb(100, 100, 100);
-                bunifuButtons[index].BackColor = Color.FromArgb(100, 100, 100);
-            }
+            //else if (index == 15 || index == 16 || index == 17 )
+            //{
+            //    bunifuButtons[14].BackColor = Color.FromArgb(100, 100, 100);
+            //    bunifuButtons[index].BackColor = Color.FromArgb(100, 100, 100);
+            //}
             else
             {
                 bunifuButtons[index].BackColor = Color.FromArgb(100, 100, 100);
@@ -232,6 +235,19 @@ namespace ObiGarm.Users
             loaddingFrom loaddingFrom = new loaddingFrom();
             loaddingFrom.Show();
             this.Hide();
+        }
+
+        private void administrator_button_Click(object sender, EventArgs e)
+        {
+            colorsButton(15);
+            openChildForm(new ListAdministrator());
+             
+        }
+
+        private void btn_kort_Click(object sender, EventArgs e)
+        {
+            colorsButton(10);
+            openChildForm(new ListKort());
         }
     }
 }
