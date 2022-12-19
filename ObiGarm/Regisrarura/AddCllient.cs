@@ -36,6 +36,12 @@ namespace ObiGarm.Regisrarura
             string sql = "select * from sex";
             sqlConfiguration.LoadCombo(sql, "name", "id", com_sex);
         }
+        string sql_add_client;
+
+        void msg(string messeg)
+        {
+            MessageBox.Show(messeg, "Сообщения", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
 
         void addClient()
         {
@@ -44,8 +50,8 @@ namespace ObiGarm.Regisrarura
             string patramic = txt_name_patronymic.Text.Trim();
             string birthday = date_birthday.Value.ToString("dd'-'MM'-'yyyy");
             string id_sex = com_sex.SelectedValue.ToString();
-            string datetime_start = date_first_dey.Value.ToString("MM'/'dd'/'yyyy") + " " + Convert.ToDateTime(time_first_dey.Text).ToString("hh:mm");
-            string datetime_end = date_end_dey.Value.ToString("MM'/'dd'/'yyyy") + " " + Convert.ToDateTime(time_end_dey.Text).ToString("hh:mm");
+            string datetime_start = date_first_dey.Value.ToString("%M/%d/yyyy") + " " + Convert.ToDateTime(time_first_dey.Text).ToString("H:mm");
+            string datetime_end = date_end_dey.Value.ToString("%M/%d/yyyy") + " " + Convert.ToDateTime(time_end_dey.Text).ToString("H:mm");
             string money="0";
             string is_for_vrach = "0";
             if (radio_is_money.Checked == true)
@@ -63,12 +69,18 @@ namespace ObiGarm.Regisrarura
             string kord = id_kort;
 
 
-            string sql_add_client = sql_add_client = "insert into client (surname, name, patromic, birthday, id_sex, date_time_start, date_time_end, money, id_varch, id_room, id_kort, is_for_vrach) " +
-                $"values('{surname}', '{name}', '{patramic}', str_to_date('{birthday}', '%d-%m-%Y'), '{id_sex}', str_to_date('{datetime_start}', '%e/%c/%Y %H:%i'), str_to_date('{datetime_end}', '%e/%c/%Y %H:%i'), '{money}',  '{vrach}',' {room}', '{id_kort}' , '{is_for_vrach}');";
+            sql_add_client = sql_add_client = "insert into client (surname, name, patromic, birthday, id_sex, date_time_start, date_time_end, money, id_varch, id_room, id_kort, is_for_vrach) " +
+                $"values('{surname}', '{name}', '{patramic}', str_to_date('{birthday}', '%d-%m-%Y'), '{id_sex}', str_to_date('{datetime_start}', '%m/%d/%Y %H:%i'), str_to_date('{datetime_end}', '%m/%d/%Y %H:%i'), '{money}',  '{vrach}',' {room}', '{id_kort}' , '{is_for_vrach}');";
 
 
             txt_kort.Text = sql_add_client;
-            if (surname !="" && name!="" && patramic != "" && id_sex != "" && money != "" && vrach != "" && room != "" && kord != "")
+            if (surname == ""){msg("Шумо насаби муштариро дохил накардед!"); return; }
+            else if (name == ""){msg("Шумо номи муштариро дохил накардед!"); return; }
+            else if (patramic == "") { msg("Шумо номи падари муштариро дохил накардед!"); return; }
+            else if (vrach == "") { msg("Шумо ба муштари табиб интихоб накардед!"); return; }
+            else if (room == "") { msg("Шумо ба муштари хучра интихоб накардед!"); return; }
+            else if (kord == "") { msg("Шумо ба муштари корт интихоб накардед!"); return; }
+            else if (surname != "" && name != "" && patramic != "" && id_sex != "" && money != "" && vrach != "" && room != "" && kord != "")
             {
                 int result = sqlConfiguration.sqlQuery(sql_add_client);
                 if (result == 500)
@@ -77,21 +89,21 @@ namespace ObiGarm.Regisrarura
                 }
                 else
                 {
-                    foreach (Control txt in this.Controls)
-                    {
-                        if (txt is Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox)
-                        {
-                            txt.Text = "";
-                        }
-                        id_vrach = "";
-                        id_room = "";
-                        id_kort = "";
-                    }
+                    MessageBox.Show("Шумо бо мувафақият муштариро сабт намудед!", "Сообщения", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    clear_all();
                 }
             }
-
         }
 
+        void clear_all()
+        {
+            txt_name.Clear();
+            txt_surname.Clear();
+            txt_name_patronymic.Clear();
+            txt_name_doctor.Clear();
+            txt_room.Clear();
+            txt_kort.Clear();
+        }
 
         private void btn_creat_Click(object sender, EventArgs e)
         {
@@ -158,6 +170,17 @@ namespace ObiGarm.Regisrarura
                 name_doctor = "";
                 txt_name_doctor.Text = "";
             }
+        }
+
+        private void btn_clear_kort_Click(object sender, EventArgs e)
+        {
+            addClient();
+            MessageBox.Show(sql_add_client);
+        }
+
+        private void btn_сlear_Click(object sender, EventArgs e)
+        {
+            clear_all();
         }
     }
 }

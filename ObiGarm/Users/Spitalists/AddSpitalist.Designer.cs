@@ -50,7 +50,13 @@
             Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties20 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
             this.formAssistant1 = new DevExpress.XtraBars.FormAssistant();
             this.group_sipitsalist = new DevExpress.XtraEditors.GroupControl();
-            this.check_enable = new System.Windows.Forms.CheckBox();
+            this.panel_time_work = new System.Windows.Forms.Panel();
+            this.panel_end_time_work = new System.Windows.Forms.Panel();
+            this.txt_time_end_work = new DevExpress.XtraEditors.TimeEdit();
+            this.lbl_end_work = new System.Windows.Forms.Label();
+            this.panel_start_work = new System.Windows.Forms.Panel();
+            this.txt_time_start_work = new DevExpress.XtraEditors.TimeEdit();
+            this.lbl_start_work = new System.Windows.Forms.Label();
             this.txt_room_number = new Guna.UI2.WinForms.Guna2NumericUpDown();
             this.lbl_room_number = new System.Windows.Forms.Label();
             this.panel_botton = new System.Windows.Forms.Panel();
@@ -67,27 +73,19 @@
             this.lbl_surname = new System.Windows.Forms.Label();
             this.txt_name = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
             this.lbl_name = new System.Windows.Forms.Label();
-            this.panel_start_work = new System.Windows.Forms.Panel();
-            this.lbl_start_work = new System.Windows.Forms.Label();
-            this.txt_time_start_work = new DevExpress.XtraEditors.TimeEdit();
-            this.panel_end_time_work = new System.Windows.Forms.Panel();
-            this.lbl_end_work = new System.Windows.Forms.Label();
-            this.txt_time_end_work = new DevExpress.XtraEditors.TimeEdit();
-            this.panel_time_work = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.group_sipitsalist)).BeginInit();
             this.group_sipitsalist.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_room_number)).BeginInit();
-            this.panel_botton.SuspendLayout();
-            this.panel_start_work.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_time_start_work.Properties)).BeginInit();
+            this.panel_time_work.SuspendLayout();
             this.panel_end_time_work.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txt_time_end_work.Properties)).BeginInit();
-            this.panel_time_work.SuspendLayout();
+            this.panel_start_work.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_time_start_work.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_room_number)).BeginInit();
+            this.panel_botton.SuspendLayout();
             this.SuspendLayout();
             // 
             // group_sipitsalist
             // 
-            this.group_sipitsalist.Controls.Add(this.check_enable);
             this.group_sipitsalist.Controls.Add(this.panel_time_work);
             this.group_sipitsalist.Controls.Add(this.txt_room_number);
             this.group_sipitsalist.Controls.Add(this.lbl_room_number);
@@ -106,20 +104,97 @@
             this.group_sipitsalist.Location = new System.Drawing.Point(15, 15);
             this.group_sipitsalist.Name = "group_sipitsalist";
             this.group_sipitsalist.Padding = new System.Windows.Forms.Padding(10);
-            this.group_sipitsalist.Size = new System.Drawing.Size(554, 523);
+            this.group_sipitsalist.Size = new System.Drawing.Size(554, 491);
             this.group_sipitsalist.TabIndex = 0;
             this.group_sipitsalist.Text = "Сохтани спитсалист";
             // 
-            // check_enable
+            // panel_time_work
             // 
-            this.check_enable.Dock = System.Windows.Forms.DockStyle.Top;
-            this.check_enable.Location = new System.Drawing.Point(12, 419);
-            this.check_enable.Name = "check_enable";
-            this.check_enable.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.check_enable.Size = new System.Drawing.Size(530, 28);
-            this.check_enable.TabIndex = 35;
-            this.check_enable.Text = "Хамчун админи асоси";
-            this.check_enable.UseVisualStyleBackColor = true;
+            this.panel_time_work.Controls.Add(this.panel_end_time_work);
+            this.panel_time_work.Controls.Add(this.panel_start_work);
+            this.panel_time_work.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel_time_work.Location = new System.Drawing.Point(12, 363);
+            this.panel_time_work.Name = "panel_time_work";
+            this.panel_time_work.Size = new System.Drawing.Size(530, 56);
+            this.panel_time_work.TabIndex = 34;
+            // 
+            // panel_end_time_work
+            // 
+            this.panel_end_time_work.Controls.Add(this.txt_time_end_work);
+            this.panel_end_time_work.Controls.Add(this.lbl_end_work);
+            this.panel_end_time_work.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel_end_time_work.Location = new System.Drawing.Point(265, 0);
+            this.panel_end_time_work.Name = "panel_end_time_work";
+            this.panel_end_time_work.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.panel_end_time_work.Size = new System.Drawing.Size(263, 56);
+            this.panel_end_time_work.TabIndex = 14;
+            // 
+            // txt_time_end_work
+            // 
+            this.txt_time_end_work.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txt_time_end_work.EditValue = new System.DateTime(2022, 10, 28, 12, 0, 0, 0);
+            this.txt_time_end_work.Location = new System.Drawing.Point(10, 25);
+            this.txt_time_end_work.Name = "txt_time_end_work";
+            this.txt_time_end_work.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_time_end_work.Properties.Appearance.Options.UseFont = true;
+            this.txt_time_end_work.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.txt_time_end_work.Properties.TimeEditStyle = DevExpress.XtraEditors.Repository.TimeEditStyle.TouchUI;
+            this.txt_time_end_work.Properties.TouchUIMaxValue = new System.DateTime(9999, 12, 31, 11, 59, 0, 0);
+            this.txt_time_end_work.Size = new System.Drawing.Size(243, 26);
+            this.txt_time_end_work.TabIndex = 31;
+            // 
+            // lbl_end_work
+            // 
+            this.lbl_end_work.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lbl_end_work.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_end_work.Location = new System.Drawing.Point(10, 0);
+            this.lbl_end_work.Margin = new System.Windows.Forms.Padding(0);
+            this.lbl_end_work.Name = "lbl_end_work";
+            this.lbl_end_work.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.lbl_end_work.Size = new System.Drawing.Size(243, 25);
+            this.lbl_end_work.TabIndex = 10;
+            this.lbl_end_work.Text = "Вақти анҷоми кор";
+            this.lbl_end_work.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel_start_work
+            // 
+            this.panel_start_work.Controls.Add(this.txt_time_start_work);
+            this.panel_start_work.Controls.Add(this.lbl_start_work);
+            this.panel_start_work.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel_start_work.Location = new System.Drawing.Point(0, 0);
+            this.panel_start_work.Name = "panel_start_work";
+            this.panel_start_work.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.panel_start_work.Size = new System.Drawing.Size(265, 56);
+            this.panel_start_work.TabIndex = 13;
+            // 
+            // txt_time_start_work
+            // 
+            this.txt_time_start_work.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txt_time_start_work.EditValue = new System.DateTime(2022, 10, 28, 12, 0, 0, 0);
+            this.txt_time_start_work.Location = new System.Drawing.Point(10, 25);
+            this.txt_time_start_work.Name = "txt_time_start_work";
+            this.txt_time_start_work.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_time_start_work.Properties.Appearance.Options.UseFont = true;
+            this.txt_time_start_work.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.txt_time_start_work.Properties.TimeEditStyle = DevExpress.XtraEditors.Repository.TimeEditStyle.TouchUI;
+            this.txt_time_start_work.Properties.TouchUIMaxValue = new System.DateTime(9999, 12, 31, 11, 59, 0, 0);
+            this.txt_time_start_work.Size = new System.Drawing.Size(245, 26);
+            this.txt_time_start_work.TabIndex = 29;
+            // 
+            // lbl_start_work
+            // 
+            this.lbl_start_work.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lbl_start_work.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_start_work.Location = new System.Drawing.Point(10, 0);
+            this.lbl_start_work.Margin = new System.Windows.Forms.Padding(0);
+            this.lbl_start_work.Name = "lbl_start_work";
+            this.lbl_start_work.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.lbl_start_work.Size = new System.Drawing.Size(245, 25);
+            this.lbl_start_work.TabIndex = 9;
+            this.lbl_start_work.Text = "Вақти оғохи кор";
+            this.lbl_start_work.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // txt_room_number
             // 
@@ -168,7 +243,7 @@
             this.panel_botton.Controls.Add(this.lbl_tab);
             this.panel_botton.Controls.Add(this.btn_creat);
             this.panel_botton.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel_botton.Location = new System.Drawing.Point(12, 467);
+            this.panel_botton.Location = new System.Drawing.Point(12, 435);
             this.panel_botton.Name = "panel_botton";
             this.panel_botton.Padding = new System.Windows.Forms.Padding(8);
             this.panel_botton.Size = new System.Drawing.Size(530, 44);
@@ -646,94 +721,6 @@
             this.lbl_name.Text = "Ном:";
             this.lbl_name.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // panel_start_work
-            // 
-            this.panel_start_work.Controls.Add(this.txt_time_start_work);
-            this.panel_start_work.Controls.Add(this.lbl_start_work);
-            this.panel_start_work.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel_start_work.Location = new System.Drawing.Point(0, 0);
-            this.panel_start_work.Name = "panel_start_work";
-            this.panel_start_work.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
-            this.panel_start_work.Size = new System.Drawing.Size(265, 56);
-            this.panel_start_work.TabIndex = 13;
-            // 
-            // lbl_start_work
-            // 
-            this.lbl_start_work.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lbl_start_work.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_start_work.Location = new System.Drawing.Point(10, 0);
-            this.lbl_start_work.Margin = new System.Windows.Forms.Padding(0);
-            this.lbl_start_work.Name = "lbl_start_work";
-            this.lbl_start_work.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.lbl_start_work.Size = new System.Drawing.Size(245, 25);
-            this.lbl_start_work.TabIndex = 9;
-            this.lbl_start_work.Text = "Вақти оғохи кор";
-            this.lbl_start_work.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // txt_time_start_work
-            // 
-            this.txt_time_start_work.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txt_time_start_work.EditValue = new System.DateTime(2022, 10, 28, 12, 0, 0, 0);
-            this.txt_time_start_work.Location = new System.Drawing.Point(10, 25);
-            this.txt_time_start_work.Name = "txt_time_start_work";
-            this.txt_time_start_work.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_time_start_work.Properties.Appearance.Options.UseFont = true;
-            this.txt_time_start_work.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.txt_time_start_work.Properties.TimeEditStyle = DevExpress.XtraEditors.Repository.TimeEditStyle.TouchUI;
-            this.txt_time_start_work.Properties.TouchUIMaxValue = new System.DateTime(9999, 12, 31, 11, 59, 0, 0);
-            this.txt_time_start_work.Size = new System.Drawing.Size(245, 26);
-            this.txt_time_start_work.TabIndex = 29;
-            // 
-            // panel_end_time_work
-            // 
-            this.panel_end_time_work.Controls.Add(this.txt_time_end_work);
-            this.panel_end_time_work.Controls.Add(this.lbl_end_work);
-            this.panel_end_time_work.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel_end_time_work.Location = new System.Drawing.Point(265, 0);
-            this.panel_end_time_work.Name = "panel_end_time_work";
-            this.panel_end_time_work.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
-            this.panel_end_time_work.Size = new System.Drawing.Size(263, 56);
-            this.panel_end_time_work.TabIndex = 14;
-            // 
-            // lbl_end_work
-            // 
-            this.lbl_end_work.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lbl_end_work.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_end_work.Location = new System.Drawing.Point(10, 0);
-            this.lbl_end_work.Margin = new System.Windows.Forms.Padding(0);
-            this.lbl_end_work.Name = "lbl_end_work";
-            this.lbl_end_work.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.lbl_end_work.Size = new System.Drawing.Size(243, 25);
-            this.lbl_end_work.TabIndex = 10;
-            this.lbl_end_work.Text = "Вақти анҷоми кор";
-            this.lbl_end_work.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // txt_time_end_work
-            // 
-            this.txt_time_end_work.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txt_time_end_work.EditValue = new System.DateTime(2022, 10, 28, 12, 0, 0, 0);
-            this.txt_time_end_work.Location = new System.Drawing.Point(10, 25);
-            this.txt_time_end_work.Name = "txt_time_end_work";
-            this.txt_time_end_work.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_time_end_work.Properties.Appearance.Options.UseFont = true;
-            this.txt_time_end_work.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.txt_time_end_work.Properties.TimeEditStyle = DevExpress.XtraEditors.Repository.TimeEditStyle.TouchUI;
-            this.txt_time_end_work.Properties.TouchUIMaxValue = new System.DateTime(9999, 12, 31, 11, 59, 0, 0);
-            this.txt_time_end_work.Size = new System.Drawing.Size(243, 26);
-            this.txt_time_end_work.TabIndex = 31;
-            // 
-            // panel_time_work
-            // 
-            this.panel_time_work.Controls.Add(this.panel_end_time_work);
-            this.panel_time_work.Controls.Add(this.panel_start_work);
-            this.panel_time_work.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel_time_work.Location = new System.Drawing.Point(12, 363);
-            this.panel_time_work.Name = "panel_time_work";
-            this.panel_time_work.Size = new System.Drawing.Size(530, 56);
-            this.panel_time_work.TabIndex = 34;
-            // 
             // AddSpitalist
             // 
             this.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -741,7 +728,7 @@
             this.Appearance.Options.UseFont = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(584, 553);
+            this.ClientSize = new System.Drawing.Size(584, 521);
             this.Controls.Add(this.group_sipitsalist);
             this.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -757,13 +744,13 @@
             this.Shown += new System.EventHandler(this.AddSpitalist_Shown);
             ((System.ComponentModel.ISupportInitialize)(this.group_sipitsalist)).EndInit();
             this.group_sipitsalist.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.txt_room_number)).EndInit();
-            this.panel_botton.ResumeLayout(false);
-            this.panel_start_work.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.txt_time_start_work.Properties)).EndInit();
+            this.panel_time_work.ResumeLayout(false);
             this.panel_end_time_work.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.txt_time_end_work.Properties)).EndInit();
-            this.panel_time_work.ResumeLayout(false);
+            this.panel_start_work.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.txt_time_start_work.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_room_number)).EndInit();
+            this.panel_botton.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -788,7 +775,6 @@
         private System.Windows.Forms.Label lbl_surname;
         private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox txt_name;
         private System.Windows.Forms.Label lbl_name;
-        private System.Windows.Forms.CheckBox check_enable;
         private System.Windows.Forms.Panel panel_time_work;
         private System.Windows.Forms.Panel panel_end_time_work;
         private DevExpress.XtraEditors.TimeEdit txt_time_end_work;

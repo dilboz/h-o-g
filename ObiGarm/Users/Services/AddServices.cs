@@ -28,7 +28,7 @@ namespace ObiGarm.Services
         }
         private void setTextToTextBoxs(string id)
         {
-            string sql = "select name, time_services from services";
+            string sql = "select * from services where id = '" + id + "'";
             DataTable dataTable = sqlConfiguration.sqlSelectQuery(sql);
 
             if (dataTable == null)
@@ -45,11 +45,10 @@ namespace ObiGarm.Services
                 }
                 else
                 {
-                    MessageBox.Show("Хангоми ёфтани коргар хатоги ба вучуд омад!", "Сообщения", MessageBoxButtons.OK, MessageBoxIcon.None);
+                    MessageBox.Show("Хангоми ёфтани хизматрасони хатоги ба вучуд омад!", "Сообщения", MessageBoxButtons.OK, MessageBoxIcon.None);
                 }
             }
         }
-
         void addServices()
         {
             string name_services = txt_name.Text.Trim();
@@ -72,7 +71,7 @@ namespace ObiGarm.Services
                     }
                     else
                     {
-                        servicesFormDisplayForm.loadListServices();
+                        servicesFormDisplayForm.allDisplayList();
                         this.Close();
                     }
                 }
@@ -91,7 +90,7 @@ namespace ObiGarm.Services
             string name_services = txt_name.Text.Trim();
             string time_setvices = Convert.ToDateTime(txt_time_services.Text).ToString("HH:mm");
 
-            string sql_chage_services = "select* from services where id = '" + id +"';";
+            string sql_chage_services = "select * from services where id = '" + id +"';";
 
             
 
@@ -111,7 +110,7 @@ namespace ObiGarm.Services
                     }
                     else
                     {
-                        servicesFormDisplayForm.loadListServices();
+                        servicesFormDisplayForm.allDisplayList();
                         this.Close();
                     }
                 }
@@ -125,7 +124,6 @@ namespace ObiGarm.Services
                 MessageBox.Show("Шумо номи хизматрамони дохил накаред!", "Сообщения", MessageBoxButtons.OK, MessageBoxIcon.None);
             }
         }
-
         private void btn_creat_Click(object sender, EventArgs e)
         {
             if (this.id == "" && this.text_button == "Сохтан")
@@ -137,7 +135,6 @@ namespace ObiGarm.Services
                 updateServices(this.id);
             }
         }
-
         private void AddServices_Shown(object sender, EventArgs e)
         {
             if (this.id != "" && this.text_button != "Сохтан")

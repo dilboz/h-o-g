@@ -58,7 +58,7 @@
             this.panel1.Margin = new System.Windows.Forms.Padding(0);
             this.panel1.Name = "panel1";
             this.panel1.Padding = new System.Windows.Forms.Padding(10);
-            this.panel1.Size = new System.Drawing.Size(931, 54);
+            this.panel1.Size = new System.Drawing.Size(931, 44);
             this.panel1.TabIndex = 0;
             // 
             // btn_add
@@ -71,7 +71,7 @@
             this.btn_add.ForeColor = System.Drawing.Color.White;
             this.btn_add.Location = new System.Drawing.Point(801, 10);
             this.btn_add.Name = "btn_add";
-            this.btn_add.Size = new System.Drawing.Size(120, 34);
+            this.btn_add.Size = new System.Drawing.Size(120, 24);
             this.btn_add.TabIndex = 0;
             this.btn_add.Text = "Сохтан";
             this.btn_add.UseVisualStyleBackColor = false;
@@ -79,15 +79,13 @@
             // 
             // panel2
             // 
-            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.Controls.Add(this.datagridview_admin);
-            this.panel2.Location = new System.Drawing.Point(10, 81);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(10, 54);
             this.panel2.Name = "panel2";
             this.panel2.Padding = new System.Windows.Forms.Padding(10);
-            this.panel2.Size = new System.Drawing.Size(931, 363);
+            this.panel2.Size = new System.Drawing.Size(931, 393);
             this.panel2.TabIndex = 1;
             // 
             // datagridview_admin
@@ -129,7 +127,7 @@
             this.datagridview_admin.Name = "datagridview_admin";
             this.datagridview_admin.ReadOnly = true;
             this.datagridview_admin.RowHeadersVisible = false;
-            this.datagridview_admin.Size = new System.Drawing.Size(911, 343);
+            this.datagridview_admin.Size = new System.Drawing.Size(911, 373);
             this.datagridview_admin.TabIndex = 0;
             this.datagridview_admin.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.datagridview_admin.ThemeStyle.AlternatingRowsStyle.Font = null;

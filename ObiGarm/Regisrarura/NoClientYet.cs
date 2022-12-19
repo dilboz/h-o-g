@@ -42,10 +42,8 @@ namespace ObiGarm.Regisrarura
             display();
         }
 
-
-        private void to_vrach_ButtonClick(object sender, DevExpress.XtraEditors.Controls.ButtonPressedEventArgs e)
+        private void to_vrach_ButtonClick_1(object sender, DevExpress.XtraEditors.Controls.ButtonPressedEventArgs e)
         {
-
             string id = grid_view_yet_no_client.GetRowCellValue(grid_view_yet_no_client.FocusedRowHandle, grid_view_yet_no_client.Columns["id"]).ToString();
             if (id == null)
             {

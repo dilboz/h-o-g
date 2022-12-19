@@ -2,6 +2,8 @@
 using ObiGarm.ClassDatabase;
 using ObiGarm.Services;
 using ObiGarm.Users.Admin;
+using ObiGarm.Users.Bonk;
+using ObiGarm.Users.Bugalter;
 using ObiGarm.Users.Frame;
 using ObiGarm.Users.Registar;
 using ObiGarm.Users.Spitalists;
@@ -98,14 +100,34 @@ namespace ObiGarm.Users
         private void colorsButton(int index)
         {
             Button[] bunifuButtons = new Button[] { main_button, user_button, admin_button, vrach_button,
-            registr_button, spitalists_button, reference_button, frame_and_room,servicesis_btn, btn_kort, export_database_button, actions_button, reports_button};
+            registr_button, spitalists_button,bugalter_button, reference_button, frame_and_room,servicesis_btn, btn_kort, bonk_button, export_database_button, actions_button, reports_button};
 
             for (var i = 0; i < bunifuButtons.Length; i++)
             {
                 bunifuButtons[i].BackColor = Color.FromArgb(70, 70, 70);
             }
 
-            bunifuButtons[index].BackColor = Color.FromArgb(100, 100, 100);
+            if (index==2 || index==3 || index==4 || index==5 || index==6)
+            {
+                bunifuButtons[1].BackColor = Color.FromArgb(100, 100, 100);
+                bunifuButtons[index].BackColor = Color.FromArgb(100, 100, 100);
+            }
+            else if (index == 8 || index == 9 || index == 10 || index == 11 )
+            {
+                bunifuButtons[7].BackColor = Color.FromArgb(100, 100, 100);
+                bunifuButtons[index].BackColor = Color.FromArgb(100, 100, 100);
+            }
+            else if (index == 15 || index == 16 || index == 17 )
+            {
+                bunifuButtons[14].BackColor = Color.FromArgb(100, 100, 100);
+                bunifuButtons[index].BackColor = Color.FromArgb(100, 100, 100);
+            }
+            else
+            {
+                bunifuButtons[index].BackColor = Color.FromArgb(100, 100, 100);
+            }
+
+
         }
 
         private void user_button_Click(object sender, EventArgs e)
@@ -116,11 +138,13 @@ namespace ObiGarm.Users
 
         private void reports_button_Click(object sender, EventArgs e)
         {
+
             showHideMenu(2);
         }
 
         private void UserForm_Load(object sender, EventArgs e)
         {
+            colorsButton(14);
             colorsButton(0);
         }
 
@@ -161,19 +185,53 @@ namespace ObiGarm.Users
         private void service_button_Click(object sender, EventArgs e)
         {
             showHideMenu(1);
-            colorsButton(6);
+            colorsButton(7);
         }
 
         private void frame_and_room_Click(object sender, EventArgs e)
         {
-            colorsButton(7);
+            colorsButton(8);
             openChildForm(new ListFrameRoom());
         }
 
         private void servicesis_btn_Click(object sender, EventArgs e)
         {
-            colorsButton(8);
+            colorsButton(9);
             openChildForm(new ServicesFormDisplay());
+        }
+
+        private void bugalter_button_Click(object sender, EventArgs e)
+        {
+            colorsButton(6);
+            openChildForm(new ListBugalter());
+        }
+
+        private void report_a_Click(object sender, EventArgs e)
+        {
+            colorsButton(15);
+        }
+
+        private void report_b_Click(object sender, EventArgs e)
+        {
+            colorsButton(16);
+        }
+
+        private void report_c_Click(object sender, EventArgs e)
+        {
+            colorsButton(17);
+        }
+
+        private void bonk_button_Click(object sender, EventArgs e)
+        {
+            colorsButton(11);
+            openChildForm(new ListBonk());
+        }
+
+        private void logout_button_Click(object sender, EventArgs e)
+        {
+            loaddingFrom loaddingFrom = new loaddingFrom();
+            loaddingFrom.Show();
+            this.Hide();
         }
     }
 }

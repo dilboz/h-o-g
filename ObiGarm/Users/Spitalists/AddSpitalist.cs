@@ -37,21 +37,7 @@ namespace ObiGarm.Users.Spitalists
             this.text_button = text_button;
             InitializeComponent();
         }
-
-        public void cheng_enbled(string id)
-        {
-
-            string sql = "select * from users where id = '" + id + "'";
-            DataTable dataTable = sqlConfiguration.sqlSelectQuery(sql);
-            if (dataTable.Rows[0]["enable"].ToString() == "1")
-            {
-                check_enable.Checked = true;
-            }
-            else
-            {
-                check_enable.Checked = false;
-            }
-        }
+        
         private void setTextToTextBoxs(string id)
         {
             string sql = "select * from users where id = '" + id + "'";
@@ -74,7 +60,6 @@ namespace ObiGarm.Users.Spitalists
                     txt_room_number.Value=Convert.ToDecimal(dataTable.Rows[0]["room_number"].ToString());
                     txt_time_start_work.EditValue= dataTable.Rows[0]["work_time_start"].ToString();
                     txt_time_end_work.EditValue= dataTable.Rows[0]["work_time_end"].ToString();
-                    cheng_enbled(id);
                 }
                 else
                 {
@@ -83,17 +68,7 @@ namespace ObiGarm.Users.Spitalists
             }
         }
         string str_enbaled_admin;
-        private void enbaled_admin()
-        {
-            if (check_enable.Checked == true)
-            {
-                str_enbaled_admin = "1";
-            }
-            else
-            {
-                str_enbaled_admin = "0";
-            }
-        }
+        
         private void AddSpitalist_Shown(object sender, EventArgs e)
         {
             if (this.id_user != "" && this.text_button != "Сохтан")
@@ -117,13 +92,12 @@ namespace ObiGarm.Users.Spitalists
             string number_room_spitalist = Convert.ToString(txt_room_number.Value);
             string time_start_work =Convert.ToDateTime(txt_time_start_work.Text).ToString("HH:mm");
             string time_end_work = Convert.ToDateTime(txt_time_end_work.Text).ToString("HH:mm");
-            enbaled_admin();
-            string enaled_admin = str_enbaled_admin;
+            
 
 
             string sql_user_check = "select * from users where login = '" + login_spitalist + "' and point= '2' and deleted is null";
 
-            string sql_add_user = "insert into users (name, surname, login, password, point, room_number, work_time_start, work_time_end, enable) values('" +
+            string sql_add_user = "insert into users (name, surname, login, password, point, room_number, work_time_start, work_time_end) values('" +
                 name_spitalist + "', '" +
                 surname_spitalist + "', '" +
                 login_spitalist + "', '" +
@@ -131,8 +105,7 @@ namespace ObiGarm.Users.Spitalists
                 point_spitalist + "', '" +
                 number_room_spitalist + "', '" +
                 time_start_work + "', '" +
-                time_end_work + "', '" +
-               enaled_admin + "');";
+                time_end_work + "');";
 
             if (name_spitalist.Trim() != "" && surname_spitalist.Trim() != "" && login_spitalist.Trim() != "" && password_spitalist.Trim() != "" && check_password_spitalist.Trim() != "" 
                 && (number_room_spitalist.Trim()!="" || number_room_spitalist.Trim()=="0") && time_start_work!="" && time_end_work!="")
@@ -190,8 +163,7 @@ namespace ObiGarm.Users.Spitalists
             string number_room_spitalist = Convert.ToString(txt_room_number.Value);
             string time_start_work = Convert.ToDateTime(txt_time_start_work.Text).ToString("HH:mm");
             string time_end_work = Convert.ToDateTime(txt_time_end_work.Text).ToString("HH:mm");
-            enbaled_admin();
-            string enaled_admin = str_enbaled_admin;
+            
 
 
             string sql_user_check = "select * from users where login = '" + login_spitalist + "' and point= '2' and deleted is null";
@@ -204,8 +176,7 @@ namespace ObiGarm.Users.Spitalists
                "point = '" + point_spitalist + "', " +
                "room_number = '" + number_room_spitalist + "', " +
                "work_time_start = '" + time_start_work + "', " +
-               "work_time_end = '" + time_end_work +  "', " +
-                "enable = '" + enaled_admin + "' " +
+               "work_time_end = '" + time_end_work +  "' " +
               " where id = '" + id + "'";
 
 

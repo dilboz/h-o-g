@@ -154,6 +154,7 @@ namespace ObiGarm.Services
         private void con_menu_edit_services_Click(object sender, EventArgs e)
         {
             string id;
+           
             if (list_services.SelectedValue.ToString()!=null)
             {
                 id= list_services.SelectedValue.ToString();
@@ -162,7 +163,6 @@ namespace ObiGarm.Services
             {
                 return;
             }
-            
             AddServices addServices = new AddServices(this, id, "Иваз кардан");
             addServices.Show();
         }
@@ -285,7 +285,7 @@ namespace ObiGarm.Services
             string sql = $"select * from services s where id ='{id}'";
 
             DataTable dataTable = sqlConfiguration.sqlSelectQuery(sql);
-
+            
             label_info.Text += $"<b>Номи хизматрасони:</b>  <color=0, 0, 255>-{dataTable.Rows[0]["name"].ToString()} -</color> <br>" +
                           $"<b>Вақти таъиншудаи хзматрасони:</b>  <color=0, 0, 255>-{dataTable.Rows[0]["time_services"].ToString()}-</color><br>"; ;
 

@@ -46,7 +46,7 @@ namespace ObiGarm.Users.Frame
                 }
                 else
                 {
-                    MessageBox.Show("Хангоми ёфтани коргар хатоги ба вучуд омад!", "Сообщения", MessageBoxButtons.OK, MessageBoxIcon.None);
+                    MessageBox.Show("Хангоми ёфтани бино хатоги ба вучуд омад!", "Сообщения", MessageBoxButtons.OK, MessageBoxIcon.None);
                 }
             }
         }

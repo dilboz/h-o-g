@@ -93,25 +93,34 @@
     <Reference Include="CairoSharp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\DevExpress.CrossPlatform.Printing.DrawingEngine.1.0.13\lib\netstandard2.0\CairoSharp.dll</HintPath>
     </Reference>
+    <Reference Include="DevExpress.Charts.v20.1.Core, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.CodeParser.v20.1, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.CrossPlatform.Printing.DrawingEngine, Version=1.0.13.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\DevExpress.CrossPlatform.Printing.DrawingEngine.1.0.13\lib\netstandard2.0\DevExpress.CrossPlatform.Printing.DrawingEngine.dll</HintPath>
     </Reference>
+    <Reference Include="DevExpress.Dashboard.v20.1.Core, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Dashboard.v20.1.Win, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Data.Desktop.v20.1, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Data.v20.1, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Data.v22.1, Version=22.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <HintPath>..\packages\DevExpress.Data.22.1.6\lib\net452\DevExpress.Data.v22.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.DataAccess.v20.1, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v20.1.UI, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.ExpressApp.v20.1, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Images.v20.1, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Map.v20.1.Core, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Office.v20.1.Core, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Pdf.v20.1.Core, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Persistent.Base.v20.1, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.PivotGrid.v20.1.Core, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Printing.v20.1.Core, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.RichEdit.v20.1.Core, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Sparkline.v20.1.Core, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Spreadsheet.v20.1.Core, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.TreeMap.v20.1.Core, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Utils.v20.1, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v20.1.UI, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.WinterJoySkin, Version=1.0.2.0, Culture=neutral, PublicKeyToken=95fc6c5621878f0a, processorArchitecture=MSIL">
       <HintPath>..\packages\DevExpress.Win.WinterJoySkin.1.0.2\lib\net452\DevExpress.WinterJoySkin.dll</HintPath>
     </Reference>
@@ -120,14 +129,25 @@
       <HintPath>..\packages\DevExpress.Xpo.22.1.6\lib\net452\DevExpress.Xpo.v22.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraBars.v20.1, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v20.1, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v20.1.UI, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v20.1.Wizard, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraEditors.v20.1, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v20.1.Core, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGauges.v20.1.Presets, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGauges.v20.1.Win, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraGrid.v20.1, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraLayout.v20.1, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraMap.v20.1, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraNavBar.v20.1, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraPivotGrid.v20.1, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraPrinting.v20.1, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v20.1, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraRichEdit.v20.1, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraScheduler.v20.1, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraScheduler.v20.1.Core, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraSpreadsheet.v20.1, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v20.1, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraTreeMap.v20.1, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraVerticalGrid.v20.1, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="GLibSharp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -203,6 +223,84 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Accounting\AccountingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accounting\AccountingForm.Designer.cs">
+      <DependentUpon>AccountingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Accounting\ConsumptionMoney\ConsumptionMoneyanBank\ConsuptionAddMoneyBank.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accounting\ConsumptionMoney\ConsumptionMoneyanBank\ConsuptionAddMoneyBank.Designer.cs">
+      <DependentUpon>ConsuptionAddMoneyBank.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Accounting\ConsumptionMoney\ConsumptionMoneyanBank\ConsuptionListMoneyBank.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accounting\ConsumptionMoney\ConsumptionMoneyanBank\ConsuptionListMoneyBank.Designer.cs">
+      <DependentUpon>ConsuptionListMoneyBank.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Accounting\ConsumptionMoney\ConsumptionMoneyanKassa\ConsuptionAddMoneyKassa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accounting\ConsumptionMoney\ConsumptionMoneyanKassa\ConsuptionAddMoneyKassa.Designer.cs">
+      <DependentUpon>ConsuptionAddMoneyKassa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Accounting\ConsumptionMoney\ConsumptionMoneyanKassa\ConsuptionListMoneyKassa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accounting\ConsumptionMoney\ConsumptionMoneyanKassa\ConsuptionListMoneyKassa.Designer.cs">
+      <DependentUpon>ConsuptionListMoneyKassa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Accounting\GetMoneyInBank\AddGetMoneyInBank.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accounting\GetMoneyInBank\AddGetMoneyInBank.Designer.cs">
+      <DependentUpon>AddGetMoneyInBank.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Accounting\GetMoneyInBank\ListGetMoneyInBank.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accounting\GetMoneyInBank\ListGetMoneyInBank.Designer.cs">
+      <DependentUpon>ListGetMoneyInBank.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Accounting\GetMoneyInKassa\AddGetMoney.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accounting\GetMoneyInKassa\AddGetMoney.Designer.cs">
+      <DependentUpon>AddGetMoney.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Accounting\GetMoneyInKassa\ListGetMoney.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accounting\GetMoneyInKassa\ListGetMoney.Designer.cs">
+      <DependentUpon>ListGetMoney.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\InfoReportsFromMoney.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administration\InfoReportsFromMoney.Designer.cs">
+      <DependentUpon>InfoReportsFromMoney.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\ListReportsAllMoney.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administration\ListReportsAllMoney.Designer.cs">
+      <DependentUpon>ListReportsAllMoney.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\ListReportsIsMoney.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administration\ListReportsIsMoney.Designer.cs">
+      <DependentUpon>ListReportsIsMoney.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\ListReportsMoney.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administration\ListReportsMoney.Designer.cs">
+      <DependentUpon>ListReportsMoney.cs</DependentUpon>
+    </Compile>
     <Compile Include="ClassDatabase\SettingsDatabase.cs" />
     <Compile Include="ClassDatabase\SqlConfiguration.cs" />
     <Compile Include="ClassFunction\UsableFunction.cs" />
@@ -268,6 +366,42 @@
     </Compile>
     <Compile Include="Regisrarura\Ristratura.Designer.cs">
       <DependentUpon>Ristratura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\Bonk\AddBonk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\Bonk\AddBonk.Designer.cs">
+      <DependentUpon>AddBonk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\Bonk\ListBonk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\Bonk\ListBonk.Designer.cs">
+      <DependentUpon>ListBonk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\Bugalter\AddBugalter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\Bugalter\AddBugalter.Designer.cs">
+      <DependentUpon>AddBugalter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\Bugalter\ListBugalter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\Bugalter\ListBugalter.Designer.cs">
+      <DependentUpon>ListBugalter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\Kort\AddKort.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\Kort\AddKort.Designer.cs">
+      <DependentUpon>AddKort.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\Kort\ListKort.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\Kort\ListKort.Designer.cs">
+      <DependentUpon>ListKort.cs</DependentUpon>
     </Compile>
     <Compile Include="Users\Services\AddServices.cs">
       <SubType>Form</SubType>
@@ -359,6 +493,51 @@
     <Compile Include="Users\Vracah\VrachFormDisplay.Designer.cs">
       <DependentUpon>VrachFormDisplay.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vrach\AddServicesForClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vrach\AddServicesForClient.Designer.cs">
+      <DependentUpon>AddServicesForClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vrach\MainFormVrach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vrach\MainFormVrach.Designer.cs">
+      <DependentUpon>MainFormVrach.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Accounting\AccountingForm.resx">
+      <DependentUpon>AccountingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Accounting\ConsumptionMoney\ConsumptionMoneyanBank\ConsuptionAddMoneyBank.resx">
+      <DependentUpon>ConsuptionAddMoneyBank.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Accounting\ConsumptionMoney\ConsumptionMoneyanBank\ConsuptionListMoneyBank.resx">
+      <DependentUpon>ConsuptionListMoneyBank.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Accounting\ConsumptionMoney\ConsumptionMoneyanKassa\ConsuptionAddMoneyKassa.resx">
+      <DependentUpon>ConsuptionAddMoneyKassa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Accounting\ConsumptionMoney\ConsumptionMoneyanKassa\ConsuptionListMoneyKassa.resx">
+      <DependentUpon>ConsuptionListMoneyKassa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Accounting\GetMoneyInBank\AddGetMoneyInBank.resx">
+      <DependentUpon>AddGetMoneyInBank.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Accounting\GetMoneyInBank\ListGetMoneyInBank.resx">
+      <DependentUpon>ListGetMoneyInBank.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Accounting\GetMoneyInKassa\AddGetMoney.resx">
+      <DependentUpon>AddGetMoney.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Accounting\GetMoneyInKassa\ListGetMoney.resx">
+      <DependentUpon>ListGetMoney.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administration\InfoReportsFromMoney.resx">
+      <DependentUpon>InfoReportsFromMoney.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administration\ListReportsAllMoney.resx">
+      <DependentUpon>ListReportsAllMoney.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="loaddingFrom.resx">
       <DependentUpon>loaddingFrom.cs</DependentUpon>
     </EmbeddedResource>
@@ -399,6 +578,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Regisrarura\Ristratura.resx">
       <DependentUpon>Ristratura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\Bonk\AddBonk.resx">
+      <DependentUpon>AddBonk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\Bonk\ListBonk.resx">
+      <DependentUpon>ListBonk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\Bugalter\AddBugalter.resx">
+      <DependentUpon>AddBugalter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\Bugalter\ListBugalter.resx">
+      <DependentUpon>ListBugalter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\Kort\AddKort.resx">
+      <DependentUpon>AddKort.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\Kort\ListKort.resx">
+      <DependentUpon>ListKort.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Users\Services\AddServices.resx">
       <DependentUpon>AddServices.cs</DependentUpon>
@@ -444,6 +641,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Users\Vracah\VrachFormDisplay.resx">
       <DependentUpon>VrachFormDisplay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vrach\AddServicesForClient.resx">
+      <DependentUpon>AddServicesForClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vrach\MainFormVrach.resx">
+      <DependentUpon>MainFormVrach.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -516,6 +719,7 @@
   <ItemGroup>
     <None Include="Resources\edit_for_grid_view.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

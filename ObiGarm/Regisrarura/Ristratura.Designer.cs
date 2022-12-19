@@ -129,7 +129,6 @@
             this.logo_label.Name = "logo_label";
             this.logo_label.Size = new System.Drawing.Size(216, 55);
             this.logo_label.TabIndex = 0;
-            this.logo_label.Text = "ОБИ ГАРМ";
             this.logo_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel_top

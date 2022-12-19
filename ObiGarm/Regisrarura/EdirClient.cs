@@ -19,6 +19,7 @@ namespace ObiGarm.Regisrarura
         private readonly IsClient isClientFrom;
         public string id_client;
         private DataTable dataTable_me;
+        private bool is_not_money;
         private string id_vrach_me;
         private string id_room;
         private string id_kort;
@@ -50,14 +51,33 @@ namespace ObiGarm.Regisrarura
             if (radio_is_money.Checked==true)
             {
                 panel3.Visible = true;
+                is_not_money = true;
+
                 txt_number_money.Text = dataTable_me.Rows[0]["nuber_money"].ToString(); ;
-                txt_number_money.Text = dataTable_me.Rows[0]["comment_money"].ToString();
+                txt_commen_money.Text = dataTable_me.Rows[0]["comment_money"].ToString();
             }
             if (radio_no_money.Checked == true)
             {
                 panel3.Visible = false;
-                txt_number_money.Text ="";
-                txt_number_money.Text ="";
+                is_not_money = true;
+            }
+        }
+
+        void money_change(int money_my_id)
+        {
+            if (money_my_id == 1)
+            {
+                is_not_money = true;
+                panel3.Visible = true;
+                radio_is_money.Checked = true;
+                radio_no_money.Checked = false;
+            }
+            else
+            {
+                is_not_money = false;
+                panel3.Visible = false;
+                radio_is_money.Checked = false;
+                radio_no_money.Checked = true;
             }
         }
 
@@ -123,14 +143,15 @@ namespace ObiGarm.Regisrarura
                     txt_surname.Text = dataTable.Rows[0]["surname"].ToString();
                     txt_name.Text = dataTable.Rows[0]["name"].ToString();
                     txt_name_patronymic.Text = dataTable.Rows[0]["patromic"].ToString();
-                    date_birthday.Value = DateTime.ParseExact(dataTable.Rows[0]["birthday"].ToString(), "yyyy-mm-dd", CultureInfo.InvariantCulture);
+                    date_birthday.Value = Convert.ToDateTime(dataTable.Rows[0]["birthday"].ToString());
                     com_sex.Text = setsex(dataTable.Rows[0]["id_sex"].ToString());
-                    date_first_dey.Value= DateTime.ParseExact(dataTable.Rows[0]["date_time_start"].ToString(), "yyyy-mm-dd", CultureInfo.InvariantCulture);
-                    time_first_dey.EditValue= DateTime.ParseExact(dataTable.Rows[0]["date_time_start"].ToString(), "HH:mm:ss tt", CultureInfo.InvariantCulture);                    
-                    date_end_dey.Value= DateTime.ParseExact(dataTable.Rows[0]["date_time_end"].ToString(), "yyyy-mm-dd", CultureInfo.InvariantCulture);
-                    time_end_dey.EditValue = DateTime.ParseExact(dataTable.Rows[0]["date_time_end"].ToString(), "HH:mm:ss tt", CultureInfo.InvariantCulture);
+                    date_first_dey.Value= Convert.ToDateTime(dataTable.Rows[0]["date_time_start"].ToString());
+                    time_first_dey.EditValue= Convert.ToDateTime(dataTable.Rows[0]["date_time_start"].ToString());                    
+                    date_end_dey.Value= Convert.ToDateTime(dataTable.Rows[0]["date_time_end"].ToString());
+                    time_end_dey.EditValue = Convert.ToDateTime(dataTable.Rows[0]["date_time_end"].ToString());
                     setmoney(dataTable.Rows[0]["money"].ToString());
                     txt_name_doctor.Text = name_vrach(dataTable.Rows[0]["id_varch"].ToString());
+                    txt_room.Text = room(dataTable.Rows[0]["id_room"].ToString());
                     txt_kort.Text = kort(dataTable.Rows[0]["id_kort"].ToString());
                 }
                 else
@@ -144,6 +165,31 @@ namespace ObiGarm.Regisrarura
         void updateClient(string id)
         {
 
+        }
+
+        private void btn_edit_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radio_is_money_CheckedChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void radio_no_money_CheckedChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void radio_no_money_Click(object sender, EventArgs e)
+        {
+            money_change(0);
+        }
+
+        private void radio_is_money_Click(object sender, EventArgs e)
+        {
+            money_change(1);
         }
     }
 }

@@ -31,20 +31,6 @@ namespace ObiGarm.Users.Registar
             InitializeComponent();
         }
 
-        public void cheng_enbled(string id)
-        {
-
-            string sql = "select * from users where id = '" + id + "' ";
-            DataTable dataTable = sqlConfiguration.sqlSelectQuery(sql);
-            if (dataTable.Rows[0]["enable"].ToString() == "1")
-            {
-                check_enable.Checked = true;
-            }
-            else
-            {
-                check_enable.Checked = false;
-            }
-        }
 
         private void setTextToTextBoxs(string id)
         {
@@ -65,7 +51,6 @@ namespace ObiGarm.Users.Registar
                     txt_login.Text = dataTable.Rows[0]["login"].ToString();
                     txt_password.Text = dataTable.Rows[0]["password"].ToString();
                     txt_cheng_password.Text = dataTable.Rows[0]["password"].ToString();
-                    cheng_enbled(id);
                 }
                 else
                 {
@@ -73,21 +58,8 @@ namespace ObiGarm.Users.Registar
                 }
             }
         }
+        
 
-
-
-        string str_enbaled_register;
-        private void enbaled_register()
-        {
-            if (check_enable.Checked == true)
-            {
-                str_enbaled_register = "1";
-            }
-            else
-            {
-                str_enbaled_register = "0";
-            }
-        }
 
         private void addRegistar()
         {
@@ -97,8 +69,7 @@ namespace ObiGarm.Users.Registar
             string password_registar= txt_password.Text;
             string check_password_register = txt_cheng_password.Text;
             string point_register = "4";
-            enbaled_register();
-            string enaled_admin = str_enbaled_register;
+            string enaled_admin = "1";
 
             string sql_user_check = "select * from users where login = '" + login_registar + "' and point= '4' and deleted IS NULL";
 
@@ -152,8 +123,7 @@ namespace ObiGarm.Users.Registar
             string password_registar = txt_password.Text;
             string check_password_registarn = txt_cheng_password.Text;
             string point_registar = "4";
-            enbaled_register();
-            string enaled_registar = str_enbaled_register;
+            string enaled_registar = "1";
 
             string sql_user_check = "select * from users where login = '" + login_registar + "' and point= '4' and deleted IS NULL";
 

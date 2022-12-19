@@ -52,7 +52,6 @@
             this.formAssistant1 = new DevExpress.XtraBars.FormAssistant();
             this.panel_full = new System.Windows.Forms.Panel();
             this.group_creat_registr = new DevExpress.XtraEditors.GroupControl();
-            this.check_enable = new System.Windows.Forms.CheckBox();
             this.txt_cheng_password = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
             this.lbl_change_password = new System.Windows.Forms.Label();
             this.txt_password = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
@@ -82,12 +81,11 @@
             this.panel_full.Location = new System.Drawing.Point(20, 20);
             this.panel_full.Name = "panel_full";
             this.panel_full.Padding = new System.Windows.Forms.Padding(10);
-            this.panel_full.Size = new System.Drawing.Size(676, 446);
+            this.panel_full.Size = new System.Drawing.Size(676, 424);
             this.panel_full.TabIndex = 0;
             // 
             // group_creat_registr
             // 
-            this.group_creat_registr.Controls.Add(this.check_enable);
             this.group_creat_registr.Controls.Add(this.txt_cheng_password);
             this.group_creat_registr.Controls.Add(this.lbl_change_password);
             this.group_creat_registr.Controls.Add(this.txt_password);
@@ -102,20 +100,9 @@
             this.group_creat_registr.Location = new System.Drawing.Point(10, 10);
             this.group_creat_registr.Name = "group_creat_registr";
             this.group_creat_registr.Padding = new System.Windows.Forms.Padding(10);
-            this.group_creat_registr.Size = new System.Drawing.Size(656, 370);
+            this.group_creat_registr.Size = new System.Drawing.Size(656, 346);
             this.group_creat_registr.TabIndex = 13;
             this.group_creat_registr.Text = "Сохтани бақайдит";
-            // 
-            // check_enable
-            // 
-            this.check_enable.Dock = System.Windows.Forms.DockStyle.Top;
-            this.check_enable.Location = new System.Drawing.Point(12, 333);
-            this.check_enable.Name = "check_enable";
-            this.check_enable.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.check_enable.Size = new System.Drawing.Size(632, 28);
-            this.check_enable.TabIndex = 21;
-            this.check_enable.Text = "Ба кор додан";
-            this.check_enable.UseVisualStyleBackColor = true;
             // 
             // txt_cheng_password
             // 
@@ -557,7 +544,7 @@
             this.panel_botton.Controls.Add(this.lbl_tab);
             this.panel_botton.Controls.Add(this.btn_creat);
             this.panel_botton.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel_botton.Location = new System.Drawing.Point(10, 392);
+            this.panel_botton.Location = new System.Drawing.Point(10, 370);
             this.panel_botton.Name = "panel_botton";
             this.panel_botton.Padding = new System.Windows.Forms.Padding(8);
             this.panel_botton.Size = new System.Drawing.Size(656, 44);
@@ -610,7 +597,7 @@
             this.Appearance.Options.UseFont = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(716, 486);
+            this.ClientSize = new System.Drawing.Size(716, 464);
             this.Controls.Add(this.panel_full);
             this.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -651,6 +638,5 @@
         private System.Windows.Forms.Button btn_hide;
         private System.Windows.Forms.Label lbl_tab;
         private System.Windows.Forms.Button btn_creat;
-        private System.Windows.Forms.CheckBox check_enable;
     }
 }

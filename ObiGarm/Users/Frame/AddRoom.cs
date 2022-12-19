@@ -164,7 +164,7 @@ namespace ObiGarm.Users.Frame
             {
                 setTextToTextBoxs(this.id);
                 btn_creat.Text = "Иваз кардан";
-                group_name_frame.Text = "ИВАЗ КАРДАНИ АДМИН";
+                group_name_frame.Text = "ИВАЗ КАРДАН";
             }
         }
 

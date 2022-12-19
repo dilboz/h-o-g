@@ -45,7 +45,7 @@
             this.vrach = new DevExpress.XtraGrid.Columns.GridColumn();
             this.room = new DevExpress.XtraGrid.Columns.GridColumn();
             this.type_kort = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.button = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.to_vrach_column = new DevExpress.XtraGrid.Columns.GridColumn();
             this.to_vrach = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
             ((System.ComponentModel.ISupportInitialize)(this.grid_yet_not_client)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grid_view_yet_no_client)).BeginInit();
@@ -77,7 +77,7 @@
             this.vrach,
             this.room,
             this.type_kort,
-            this.button});
+            this.to_vrach_column});
             this.grid_view_yet_no_client.GridControl = this.grid_yet_not_client;
             this.grid_view_yet_no_client.Name = "grid_view_yet_no_client";
             this.grid_view_yet_no_client.OptionsFind.AlwaysVisible = true;
@@ -183,17 +183,16 @@
             this.type_kort.VisibleIndex = 7;
             this.type_kort.Width = 120;
             // 
-            // button
+            // to_vrach_column
             // 
-            this.button.ColumnEdit = this.to_vrach;
-            this.button.MaxWidth = 30;
-            this.button.MinWidth = 30;
-            this.button.Name = "button";
-            this.button.OptionsColumn.AllowEdit = false;
-            this.button.OptionsFilter.AllowAutoFilter = false;
-            this.button.Visible = true;
-            this.button.VisibleIndex = 8;
-            this.button.Width = 30;
+            this.to_vrach_column.ColumnEdit = this.to_vrach;
+            this.to_vrach_column.MaxWidth = 32;
+            this.to_vrach_column.MinWidth = 32;
+            this.to_vrach_column.Name = "to_vrach_column";
+            this.to_vrach_column.OptionsFilter.AllowAutoFilter = false;
+            this.to_vrach_column.Visible = true;
+            this.to_vrach_column.VisibleIndex = 8;
+            this.to_vrach_column.Width = 32;
             // 
             // to_vrach
             // 
@@ -203,7 +202,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions1, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, serializableAppearanceObject2, serializableAppearanceObject3, serializableAppearanceObject4, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.to_vrach.Name = "to_vrach";
             this.to_vrach.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
-            this.to_vrach.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.to_vrach_ButtonClick);
+            this.to_vrach.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.to_vrach_ButtonClick_1);
             // 
             // NoClientYet
             // 
@@ -239,7 +238,7 @@
         private DevExpress.XtraGrid.Columns.GridColumn vrach;
         private DevExpress.XtraGrid.Columns.GridColumn room;
         private DevExpress.XtraGrid.Columns.GridColumn type_kort;
-        private DevExpress.XtraGrid.Columns.GridColumn button;
+        private DevExpress.XtraGrid.Columns.GridColumn to_vrach_column;
         private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit to_vrach;
     }
 }

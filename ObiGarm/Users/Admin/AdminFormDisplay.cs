@@ -34,29 +34,6 @@ namespace ObiGarm.Users.Admin
             display();
         }
 
-
-        private void datagridview_admin_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
-        {
-            if (datagridview_admin.Columns[e.ColumnIndex].Name == "active")
-            {
-                if (e.Value.ToString() != "System.Drawing.Bitmap")
-                {
-                    if (e.Value.ToString()=="1")
-                    {
-                        e.Value =Properties.Resources.tick_mark;
-                    }
-                    else
-                    {
-                        e.Value = Properties.Resources.no_entry;
-                    }
-                }
-                else
-                {
-                    return;
-                }
-            }
-        }
-
         private void btn_add_admin_Click(object sender, EventArgs e)
         {
             AddAdmin addAdmin = new AddAdmin(this, "" , "Сохтан");

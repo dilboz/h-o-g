@@ -27,21 +27,6 @@ namespace ObiGarm.Users.Vracah
             InitializeComponent();
         }
 
-        public void cheng_enbled(string id)
-        {
-
-            string sql = "select * from users where id = '" + id + "'";
-            DataTable dataTable = sqlConfiguration.sqlSelectQuery(sql);
-            if (dataTable.Rows[0]["enable"].ToString() == "1")
-            {
-                check_enable.Checked = true;
-            }
-            else
-            {
-                check_enable.Checked = false;
-            }
-        }
-
         private void setTextToTextBoxs(string id)
         {
             string sql = "select * from users where id = '" + id + "'";
@@ -64,7 +49,6 @@ namespace ObiGarm.Users.Vracah
                     txt_room_number.Value = Convert.ToDecimal(dataTable.Rows[0]["room_number"].ToString());
                     txt_time_start_work.EditValue = dataTable.Rows[0]["work_time_start"].ToString();
                     txt_time_end_work.EditValue = dataTable.Rows[0]["work_time_end"].ToString();
-                    cheng_enbled(id);
                 }
                 else
                 {
@@ -84,19 +68,6 @@ namespace ObiGarm.Users.Vracah
             }
         }
 
-        string str_enbaled_vrach;
-        private void enbaled_vrach()
-        {
-            if (check_enable.Checked == true)
-            {
-                str_enbaled_vrach = "1";
-            }
-            else
-            {
-                str_enbaled_vrach = "0";
-            }
-        }
-
         private void addVrach()
         {
             string name_vrach = txt_name.Text;
@@ -108,11 +79,7 @@ namespace ObiGarm.Users.Vracah
             string number_room_vrach = Convert.ToString(txt_room_number.Value);
             string time_start_work =Convert.ToDateTime(txt_time_start_work.Text).ToString("HH:mm");
             string time_end_work = Convert.ToDateTime(txt_time_end_work.Text).ToString("HH:mm");
-
-            enbaled_vrach();
-            string enaled_vrach = str_enbaled_vrach;
-
-
+            
             string sql_user_check = "select * from users where login = '" + login_vrach + "' and point= '3' and deleted is null;";
 
             string sql_add_user = "insert into users (name, surname, login, password, point, room_number, work_time_start, work_time_end, enable) values('" +
@@ -123,8 +90,7 @@ namespace ObiGarm.Users.Vracah
                 point_vrach + "', '" +
                 number_room_vrach + "', '" +
                 time_start_work + "', '" +
-                time_end_work + "', '" +
-                enaled_vrach + "');";
+                time_end_work +"');";
 
             if (name_vrach.Trim() != "" && surname_vrach.Trim() != "" && login_vrach.Trim() != "" && password_vrach.Trim() != "" && check_password_vrach.Trim() != ""
                 && (number_room_vrach.Trim() != "" || number_room_vrach.Trim() == "0") && time_start_work != "" && time_end_work != "")
@@ -170,13 +136,10 @@ namespace ObiGarm.Users.Vracah
             string check_password_vrach = txt_cheng_password.Text;
             string point_vrach = "3";
             string number_room_vrach = Convert.ToString(txt_room_number.Value);
-            string time_start_work = txt_time_start_work.Text;
-            string time_end_work = txt_time_end_work.Text;
+            string time_start_work = Convert.ToDateTime(txt_time_start_work.Text).ToString("HH:mm");
+            string time_end_work = Convert.ToDateTime(txt_time_end_work.Text).ToString("HH:mm");
 
-            enbaled_vrach();
-            string enaled_spitalist = str_enbaled_vrach;
-
-
+            
             string sql_user_check = "select * from users where login = '" + login_vrach + "' and point= '3' and deleted is null;";
 
             string sql_update_user = "update users set " +
@@ -187,8 +150,7 @@ namespace ObiGarm.Users.Vracah
                "point = '" + point_vrach + "', " +
                "room_number = '" + number_room_vrach + "', " +
                "work_time_start = '" + time_start_work + "', " +
-               "work_time_end = '" + time_end_work + "', " +
-               "enable = '" + enaled_spitalist + "' " +
+               "work_time_end = '" + time_end_work +  "' " +
               " where id = '" + id + "'";
 
 

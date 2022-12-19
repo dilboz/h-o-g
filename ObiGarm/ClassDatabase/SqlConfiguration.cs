@@ -236,6 +236,7 @@ namespace ObiGarm.ClassDatabase
                 dataTable = null;
             }
         }
+        
         public void LoadList(string sql, string name_collum, string valus_colum, DevExpress.XtraEditors.ListBoxControl list)
         {
             try

@@ -29,23 +29,6 @@ namespace ObiGarm.Users.Admin
             InitializeComponent();
         }
 
-
-
-
-        public void cheng_enbled(string id) {
-
-            string sql = "select * from users where id = '" + id + "'";
-            DataTable dataTable = sqlConfiguration.sqlSelectQuery(sql);
-            if (dataTable.Rows[0]["enable"].ToString() == "1")
-            {
-                check_enable.Checked = true;
-            }
-            else
-            {
-                check_enable.Checked = false;
-            }
-        }
-
         private void setTextToTextBoxs(string id)
         {
             string sql = "select * from users where id = '" + id + "'";
@@ -65,7 +48,6 @@ namespace ObiGarm.Users.Admin
                     txt_login.Text = dataTable.Rows[0]["login"].ToString();
                     txt_password.Text = dataTable.Rows[0]["password"].ToString();
                     txt_cheng_password.Text = dataTable.Rows[0]["password"].ToString();
-                    cheng_enbled(id);
                 }
                 else
                 {
@@ -84,18 +66,7 @@ namespace ObiGarm.Users.Admin
             }
         }
 
-        string str_enbaled_admin;
-        private void enbaled_admin()
-        {
-            if (check_enable.Checked==true)
-            {
-                str_enbaled_admin = "1";
-            }
-            else
-            {
-                str_enbaled_admin = "0";
-            }
-        }
+        
 
         private void addAdmin()
         {
@@ -106,19 +77,16 @@ namespace ObiGarm.Users.Admin
             string password_admin=txt_password.Text;
             string check_password_admin= txt_cheng_password.Text;
             string point_admin = "1";
-            enbaled_admin();
-            string enaled_admin = str_enbaled_admin;
 
 
             string sql_user_check = "select * from users where login = '" + login_admin + "' and point= '1' and deleted IS NULL";
 
-            string sql_add_user = "insert into users (name, surname, login, password, point, enable) values('" +
+            string sql_add_user = "insert into users (name, surname, login, password, point) values('" +
                 name_admin + "', '" +
                 surname_admin + "', '" +
                 login_admin + "', '" +
                 password_admin + "', '" +
-                point_admin + "', '" +
-                enaled_admin + "');";
+                point_admin + "');";
 
             if (name_admin.Trim()!="" && surname_admin.Trim() != ""  && login_admin.Trim()!="" && password_admin.Trim()!="" && check_password_admin.Trim()!="") 
             {
@@ -163,9 +131,6 @@ namespace ObiGarm.Users.Admin
             string password_admin = txt_password.Text;
             string check_password_admin = txt_cheng_password.Text;
             string point_admin = "1";
-            enbaled_admin();
-            string enaled_admin = str_enbaled_admin;
-
             string sql_user_check = "select * from users where login = '" + login_admin + "' and point= '1' and deleted IS NULL";
 
             string sql_update_user = "update users set " +
@@ -173,20 +138,20 @@ namespace ObiGarm.Users.Admin
                 "surname = '" + surname_admin + "', " +
                 "login = '" + login_admin + "', " +
                 "password = '" + password_admin + "', " +
-                "point = '" + point_admin +  "', " +
-                "enable = '" + enaled_admin + "' " +
+                "point = '" + point_admin +  "' " +
                " where id = '" + id + "'";
 
             if (name_admin.Trim() != "" && surname_admin.Trim() != "" && login_admin.Trim() != "" && password_admin.Trim() != "" && check_password_admin.Trim() != "")
             {
                 if (password_admin.Trim() == check_password_admin.Trim())
                 {
-                    if (sqlConfiguration.sqlSelectQuery(sql_user_check).Rows.Count >= 1)
-                    {
+                    
                         int result = sqlConfiguration.sqlQuery(sql_update_user);
                         if (result == 500)
                         {
-                            MessageBox.Show("Хатоги ба вучуд омад!", "Сообщения", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                        txt_name.Text = sql_update_user;
+                        MessageBox.Show("Хатоги ба вучуд омад!", "Сообщения", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
                         else
                         {
@@ -194,11 +159,8 @@ namespace ObiGarm.Users.Admin
                             adminFormDisplay_from.display();
                             //MessageBox.Show("Админ бо муваффакият илова карда шуд!", "Сообщения", MessageBoxButtons.OK, MessageBoxIcon.None);
                         }
-                    }
-                    else
-                    {
-                        MessageBox.Show("Чунин логин дар система вучуд надорад! Логини дигар интихоб кунед!", "Сообщения", MessageBoxButtons.OK, MessageBoxIcon.None);
-                    }
+                    
+                    
                 }
                 else
                 {

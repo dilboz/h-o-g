@@ -33,8 +33,9 @@ namespace ObiGarm.Regisrarura
                              "inner join frame on room.id_freme = frame.id " +
                              "inner join kort on client.id_kort = kort.id " +
                              "inner join type_kort on kort.id_type_kort = type_kort.id " +
-                             "where client.is_for_vrach=1 and client.enable=1 and client.deleted is null";
-            sqlConfiguration.displayListExpress(sql, grid_yet_not_client);
+                             "where client.is_for_vrach=1 and client.enable=1 and client.deleted is null "+
+                             "order by id desc";
+            sqlConfiguration.displayListExpress(sql, grid_control_is_client);
         }
 
         private void IsClient_Shown(object sender, EventArgs e)
@@ -42,49 +43,10 @@ namespace ObiGarm.Regisrarura
             display();
         }
 
-        private void repositoryItemButtonEdit1_ButtonClick(object sender, DevExpress.XtraEditors.Controls.ButtonPressedEventArgs e)
+
+        private void edit_Click(object sender, EventArgs e)
         {
-            string id = grid_view_yet_no_client.GetRowCellValue(grid_view_yet_no_client.FocusedRowHandle, grid_view_yet_no_client.Columns["id"]).ToString();
-            DialogResult dialogResult = MessageBox.Show("Шумо дар хакикат " + grid_view_yet_no_client.GetRowCellValue(grid_view_yet_no_client.FocusedRowHandle, grid_view_yet_no_client.Columns["full_name"]).ToString() + " - ро нест кардан мехохед?", "Сообщения", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-            if (dialogResult == DialogResult.Yes)
-            {
-                string sqlDeleteAdmin = $"update client set deleted= '{DateTime.Now.ToString("yyyy'-'MM'-'dd'_'HH':'mm':'ss")}',  enable='0' where id = '" + id + "'";
-                int res2 = sqlConfiguration.sqlQuery(sqlDeleteAdmin);
-                if (res2 == 1)
-                {
-                    display();
-
-                }
-                else
-                {
-                    MessageBox.Show("Хатоги хангоми нест кардани Админ!", "Сообщения", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-            }
-        }
-
-        private void btn_delete_ButtonClick(object sender, DevExpress.XtraEditors.Controls.ButtonPressedEventArgs e)
-        {
-            string id = grid_view_yet_no_client.GetRowCellValue(grid_view_yet_no_client.FocusedRowHandle, grid_view_yet_no_client.Columns["id"]).ToString();
-            DialogResult dialogResult = MessageBox.Show("Шумо дар хакикат " + grid_view_yet_no_client.GetRowCellValue(grid_view_yet_no_client.FocusedRowHandle, grid_view_yet_no_client.Columns["full_name"]).ToString() + " - ро нест кардан мехохед?", "Сообщения", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-            if (dialogResult == DialogResult.Yes)
-            {
-                string sqlDeleteAdmin = $"update client set deleted= '{DateTime.Now.ToString("yyyy'-'MM'-'dd'_'HH':'mm':'ss")}',  enable='0' where id = '" + id + "'";
-                int res2 = sqlConfiguration.sqlQuery(sqlDeleteAdmin);
-                if (res2 == 1)
-                {
-                    display();
-
-                }
-                else
-                {
-                    MessageBox.Show("Хатоги хангоми нест кардани Админ!", "Сообщения", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-            }
-        }
-
-        private void btn_edit_ButtonClick(object sender, DevExpress.XtraEditors.Controls.ButtonPressedEventArgs e)
-        {
-            string id_client = grid_view_yet_no_client.GetRowCellValue(grid_view_yet_no_client.FocusedRowHandle, grid_view_yet_no_client.Columns["id"]).ToString();
+            string id_client = grid_view_is_client.GetRowCellValue(grid_view_is_client.FocusedRowHandle, grid_view_is_client.Columns["id"]).ToString();
 
             if (id_client == null)
             {
@@ -94,6 +56,26 @@ namespace ObiGarm.Regisrarura
             {
                 EdirClient edirClient = new EdirClient(this, id_client);
                 edirClient.ShowDialog();
+            }
+        }
+
+        private void delete_Click(object sender, EventArgs e)
+        {
+            string id = grid_view_is_client.GetRowCellValue(grid_view_is_client.FocusedRowHandle, grid_view_is_client.Columns["id"]).ToString();
+            DialogResult dialogResult = MessageBox.Show("Шумо дар хакикат " + grid_view_is_client.GetRowCellValue(grid_view_is_client.FocusedRowHandle, grid_view_is_client.Columns["full_name"]).ToString() + " - ро нест кардан мехохед?", "Сообщения", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (dialogResult == DialogResult.Yes)
+            {
+                string sqlDeleteAdmin = $"update client set deleted= '{DateTime.Now.ToString("yyyy'-'MM'-'dd'_'HH':'mm':'ss")}',  enable='0' where id = '" + id + "'";
+                int res2 = sqlConfiguration.sqlQuery(sqlDeleteAdmin);
+                if (res2 == 1)
+                {
+                    display();
+
+                }
+                else
+                {
+                    MessageBox.Show("Хатоги хангоми нест кардани Админ!", "Сообщения", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
     }

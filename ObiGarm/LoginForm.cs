@@ -1,6 +1,9 @@
-﻿using ObiGarm.ClassDatabase;
+﻿using ObiGarm.Accounting;
+using ObiGarm.Administration;
+using ObiGarm.ClassDatabase;
 using ObiGarm.Regisrarura;
 using ObiGarm.Users;
+using ObiGarm.Vrach;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -181,23 +184,38 @@ namespace ObiGarm
                         SettingsDatabase.surname_user = tabel_select_user.Rows[0]["surname"].ToString();
                         SettingsDatabase.type_user = tabel_select_user.Rows[0]["point"].ToString();
 
+                        if (tabel_select_user.Rows[0]["point"].ToString() == "6")
+                        {
+                            InfoReportsFromMoney infoReportsFromMoney = new InfoReportsFromMoney();
+                            infoReportsFromMoney.Show();
+                            this.Hide();
+                            
+                        }
+
+                        if (tabel_select_user.Rows[0]["point"].ToString() == "5")
+                        {
+                            AccountingForm accountingForm = new AccountingForm();
+                            accountingForm.Show();
+                            this.Hide();
+                        }
+
                         if (tabel_select_user.Rows[0]["point"].ToString()== "4" )
                         {
-                            loaddingFrom loaddingFrom = new loaddingFrom();
-                            loaddingFrom.Show();
                             Ristratura risrarura = new Ristratura();
                             risrarura.Show();
                             this.Hide();
-                            loaddingFrom.Close();
+                        }
+                        if (tabel_select_user.Rows[0]["point"].ToString() == "3")
+                        {
+                            MainFormVrach mainFormVrach = new MainFormVrach();
+                            mainFormVrach.Show();
+                            this.Hide();
                         }
                         if (tabel_select_user.Rows[0]["point"].ToString() == "1")
                         {
-                            loaddingFrom loaddingFrom = new loaddingFrom();
-                            loaddingFrom.Show();
                             UserForm adminForm = new UserForm();
                             adminForm.Show();
                             this.Hide();
-                            loaddingFrom.Close();
                         }
                         
                     }

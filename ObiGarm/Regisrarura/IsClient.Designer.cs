@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions1 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(IsClient));
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject2 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject3 = new DevExpress.Utils.SerializableAppearanceObject();
@@ -44,71 +45,83 @@
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject11 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject12 = new DevExpress.Utils.SerializableAppearanceObject();
             this.formAssistant1 = new DevExpress.XtraBars.FormAssistant();
-            this.grid_yet_not_client = new DevExpress.XtraGrid.GridControl();
-            this.grid_view_yet_no_client = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.repositoryItemButtonEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
+            this.edit = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
+            this.delete = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
+            this.grid_view_is_client = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.id = new DevExpress.XtraGrid.Columns.GridColumn();
             this.full_name = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.birthday = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.burthday = new DevExpress.XtraGrid.Columns.GridColumn();
             this.sex = new DevExpress.XtraGrid.Columns.GridColumn();
             this.date_time_start = new DevExpress.XtraGrid.Columns.GridColumn();
             this.date_time_end = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.number_money = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.nuber_money = new DevExpress.XtraGrid.Columns.GridColumn();
             this.comment_money = new DevExpress.XtraGrid.Columns.GridColumn();
             this.vrach = new DevExpress.XtraGrid.Columns.GridColumn();
             this.room = new DevExpress.XtraGrid.Columns.GridColumn();
             this.type_kort = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.edit = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.btn_edit = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
-            this.delete = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.btn_delete = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
-            this.repositoryItemButtonEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
-            ((System.ComponentModel.ISupportInitialize)(this.grid_yet_not_client)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.grid_view_yet_no_client)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_edit)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_delete)).BeginInit();
+            this.btn_edit = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.btn_delete = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.grid_control_is_client = new DevExpress.XtraGrid.GridControl();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemButtonEdit1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.edit)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.delete)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grid_view_is_client)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grid_control_is_client)).BeginInit();
             this.SuspendLayout();
             // 
-            // grid_yet_not_client
+            // repositoryItemButtonEdit1
             // 
-            this.grid_yet_not_client.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.grid_yet_not_client.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.grid_yet_not_client.Location = new System.Drawing.Point(20, 20);
-            this.grid_yet_not_client.MainView = this.grid_view_yet_no_client;
-            this.grid_yet_not_client.Name = "grid_yet_not_client";
-            this.grid_yet_not_client.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
-            this.btn_edit,
-            this.btn_delete});
-            this.grid_yet_not_client.Size = new System.Drawing.Size(1377, 453);
-            this.grid_yet_not_client.TabIndex = 1;
-            this.grid_yet_not_client.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.grid_view_yet_no_client});
+            this.repositoryItemButtonEdit1.AutoHeight = false;
+            editorButtonImageOptions1.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions1.Image")));
+            this.repositoryItemButtonEdit1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions1, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, serializableAppearanceObject2, serializableAppearanceObject3, serializableAppearanceObject4, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            this.repositoryItemButtonEdit1.Name = "repositoryItemButtonEdit1";
+            this.repositoryItemButtonEdit1.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
             // 
-            // grid_view_yet_no_client
+            // edit
             // 
-            this.grid_view_yet_no_client.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.edit.AutoHeight = false;
+            editorButtonImageOptions2.Image = global::ObiGarm.Properties.Resources.edit_for_grid_view;
+            this.edit.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions2, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject5, serializableAppearanceObject6, serializableAppearanceObject7, serializableAppearanceObject8, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            this.edit.Name = "edit";
+            this.edit.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
+            this.edit.Click += new System.EventHandler(this.edit_Click);
+            // 
+            // delete
+            // 
+            this.delete.AutoHeight = false;
+            editorButtonImageOptions3.Image = global::ObiGarm.Properties.Resources.delete_for_grid;
+            this.delete.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions3, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject9, serializableAppearanceObject10, serializableAppearanceObject11, serializableAppearanceObject12, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            this.delete.Name = "delete";
+            this.delete.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
+            this.delete.Click += new System.EventHandler(this.delete_Click);
+            // 
+            // grid_view_is_client
+            // 
+            this.grid_view_is_client.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.id,
             this.full_name,
-            this.birthday,
+            this.burthday,
             this.sex,
             this.date_time_start,
             this.date_time_end,
-            this.number_money,
+            this.nuber_money,
             this.comment_money,
             this.vrach,
             this.room,
             this.type_kort,
-            this.edit,
-            this.delete});
-            this.grid_view_yet_no_client.GridControl = this.grid_yet_not_client;
-            this.grid_view_yet_no_client.Name = "grid_view_yet_no_client";
-            this.grid_view_yet_no_client.OptionsFind.AlwaysVisible = true;
+            this.btn_edit,
+            this.btn_delete});
+            this.grid_view_is_client.GridControl = this.grid_control_is_client;
+            this.grid_view_is_client.Name = "grid_view_is_client";
             // 
             // id
             // 
             this.id.Caption = "ID";
             this.id.FieldName = "id";
-            this.id.MaxWidth = 25;
             this.id.MinWidth = 25;
             this.id.Name = "id";
             this.id.OptionsColumn.AllowEdit = false;
@@ -126,16 +139,16 @@
             this.full_name.VisibleIndex = 0;
             this.full_name.Width = 250;
             // 
-            // birthday
+            // burthday
             // 
-            this.birthday.Caption = "Соли таввалуд";
-            this.birthday.FieldName = "birthday";
-            this.birthday.MinWidth = 85;
-            this.birthday.Name = "birthday";
-            this.birthday.OptionsColumn.AllowEdit = false;
-            this.birthday.Visible = true;
-            this.birthday.VisibleIndex = 1;
-            this.birthday.Width = 85;
+            this.burthday.Caption = "Соли таввалуд";
+            this.burthday.FieldName = "birthday";
+            this.burthday.MinWidth = 85;
+            this.burthday.Name = "burthday";
+            this.burthday.OptionsColumn.AllowEdit = false;
+            this.burthday.Visible = true;
+            this.burthday.VisibleIndex = 1;
+            this.burthday.Width = 85;
             // 
             // sex
             // 
@@ -172,16 +185,16 @@
             this.date_time_end.VisibleIndex = 4;
             this.date_time_end.Width = 130;
             // 
-            // number_money
+            // nuber_money
             // 
-            this.number_money.Caption = "Маблағ";
-            this.number_money.FieldName = "nuber_money";
-            this.number_money.MinWidth = 80;
-            this.number_money.Name = "number_money";
-            this.number_money.OptionsColumn.AllowEdit = false;
-            this.number_money.Visible = true;
-            this.number_money.VisibleIndex = 5;
-            this.number_money.Width = 80;
+            this.nuber_money.Caption = "Маблағ";
+            this.nuber_money.FieldName = "nuber_money";
+            this.nuber_money.MinWidth = 80;
+            this.nuber_money.Name = "nuber_money";
+            this.nuber_money.OptionsColumn.AllowEdit = false;
+            this.nuber_money.Visible = true;
+            this.nuber_money.VisibleIndex = 5;
+            this.nuber_money.Width = 80;
             // 
             // comment_money
             // 
@@ -227,65 +240,50 @@
             this.type_kort.VisibleIndex = 9;
             this.type_kort.Width = 120;
             // 
-            // edit
-            // 
-            this.edit.ColumnEdit = this.btn_edit;
-            this.edit.Fixed = DevExpress.XtraGrid.Columns.FixedStyle.Right;
-            this.edit.MaxWidth = 30;
-            this.edit.MinWidth = 30;
-            this.edit.Name = "edit";
-            this.edit.Visible = true;
-            this.edit.VisibleIndex = 11;
-            this.edit.Width = 30;
-            // 
             // btn_edit
             // 
-            this.btn_edit.AutoHeight = false;
-            editorButtonImageOptions1.Image = global::ObiGarm.Properties.Resources.edit_for_grid_view;
-            this.btn_edit.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions1, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, serializableAppearanceObject2, serializableAppearanceObject3, serializableAppearanceObject4, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            this.btn_edit.ColumnEdit = this.edit;
+            this.btn_edit.Fixed = DevExpress.XtraGrid.Columns.FixedStyle.Right;
+            this.btn_edit.MaxWidth = 32;
+            this.btn_edit.MinWidth = 32;
             this.btn_edit.Name = "btn_edit";
-            this.btn_edit.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
-            this.btn_edit.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.btn_edit_ButtonClick);
-            // 
-            // delete
-            // 
-            this.delete.ColumnEdit = this.btn_delete;
-            this.delete.Fixed = DevExpress.XtraGrid.Columns.FixedStyle.Right;
-            this.delete.MaxWidth = 30;
-            this.delete.MinWidth = 30;
-            this.delete.Name = "delete";
-            this.delete.Visible = true;
-            this.delete.VisibleIndex = 10;
-            this.delete.Width = 30;
+            this.btn_edit.Visible = true;
+            this.btn_edit.VisibleIndex = 11;
+            this.btn_edit.Width = 32;
             // 
             // btn_delete
             // 
-            this.btn_delete.AutoHeight = false;
-            editorButtonImageOptions2.Image = global::ObiGarm.Properties.Resources.delete_for_grid;
-            this.btn_delete.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions2, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject5, serializableAppearanceObject6, serializableAppearanceObject7, serializableAppearanceObject8, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            this.btn_delete.ColumnEdit = this.delete;
+            this.btn_delete.Fixed = DevExpress.XtraGrid.Columns.FixedStyle.Right;
+            this.btn_delete.MaxWidth = 32;
+            this.btn_delete.MinWidth = 32;
             this.btn_delete.Name = "btn_delete";
-            this.btn_delete.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
-            this.btn_delete.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.btn_delete_ButtonClick);
+            this.btn_delete.Visible = true;
+            this.btn_delete.VisibleIndex = 10;
+            this.btn_delete.Width = 32;
             // 
-            // repositoryItemButtonEdit1
+            // grid_control_is_client
             // 
-            this.repositoryItemButtonEdit1.AutoHeight = false;
-            editorButtonImageOptions3.Image = global::ObiGarm.Properties.Resources.edit_for_grid;
-            this.repositoryItemButtonEdit1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions3, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject9, serializableAppearanceObject10, serializableAppearanceObject11, serializableAppearanceObject12, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
-            this.repositoryItemButtonEdit1.Name = "repositoryItemButtonEdit1";
-            this.repositoryItemButtonEdit1.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
-            this.repositoryItemButtonEdit1.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.repositoryItemButtonEdit1_ButtonClick);
+            this.grid_control_is_client.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.grid_control_is_client.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grid_control_is_client.Location = new System.Drawing.Point(20, 20);
+            this.grid_control_is_client.MainView = this.grid_view_is_client;
+            this.grid_control_is_client.Name = "grid_control_is_client";
+            this.grid_control_is_client.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
+            this.edit,
+            this.delete});
+            this.grid_control_is_client.Size = new System.Drawing.Size(941, 541);
+            this.grid_control_is_client.TabIndex = 0;
+            this.grid_control_is_client.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.grid_view_is_client});
             // 
             // IsClient
             // 
             this.Appearance.Options.UseFont = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1417, 493);
-            this.Controls.Add(this.grid_yet_not_client);
+            this.ClientSize = new System.Drawing.Size(981, 581);
+            this.Controls.Add(this.grid_control_is_client);
             this.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -294,11 +292,11 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "IsClient";
             this.Shown += new System.EventHandler(this.IsClient_Shown);
-            ((System.ComponentModel.ISupportInitialize)(this.grid_yet_not_client)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.grid_view_yet_no_client)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_edit)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_delete)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemButtonEdit1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.edit)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.delete)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grid_view_is_client)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grid_control_is_client)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -306,23 +304,23 @@
         #endregion
 
         private DevExpress.XtraBars.FormAssistant formAssistant1;
-        private DevExpress.XtraGrid.GridControl grid_yet_not_client;
-        private DevExpress.XtraGrid.Views.Grid.GridView grid_view_yet_no_client;
+        private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit repositoryItemButtonEdit1;
+        private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit edit;
+        private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit delete;
+        private DevExpress.XtraGrid.Views.Grid.GridView grid_view_is_client;
         private DevExpress.XtraGrid.Columns.GridColumn id;
         private DevExpress.XtraGrid.Columns.GridColumn full_name;
-        private DevExpress.XtraGrid.Columns.GridColumn birthday;
+        private DevExpress.XtraGrid.Columns.GridColumn burthday;
         private DevExpress.XtraGrid.Columns.GridColumn sex;
         private DevExpress.XtraGrid.Columns.GridColumn date_time_start;
         private DevExpress.XtraGrid.Columns.GridColumn date_time_end;
-        private DevExpress.XtraGrid.Columns.GridColumn number_money;
+        private DevExpress.XtraGrid.Columns.GridColumn nuber_money;
         private DevExpress.XtraGrid.Columns.GridColumn comment_money;
         private DevExpress.XtraGrid.Columns.GridColumn vrach;
         private DevExpress.XtraGrid.Columns.GridColumn room;
         private DevExpress.XtraGrid.Columns.GridColumn type_kort;
-        private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit btn_edit;
-        private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit btn_delete;
-        private DevExpress.XtraGrid.Columns.GridColumn edit;
-        private DevExpress.XtraGrid.Columns.GridColumn delete;
-        private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit repositoryItemButtonEdit1;
+        private DevExpress.XtraGrid.Columns.GridColumn btn_edit;
+        private DevExpress.XtraGrid.Columns.GridColumn btn_delete;
+        private DevExpress.XtraGrid.GridControl grid_control_is_client;
     }
 }

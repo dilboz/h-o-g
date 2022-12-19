@@ -76,7 +76,7 @@
             this.panel_form.PanelColor = System.Drawing.Color.Empty;
             this.panel_form.ShadowDept = 2;
             this.panel_form.ShadowTopLeftVisible = false;
-            this.panel_form.Size = new System.Drawing.Size(639, 333);
+            this.panel_form.Size = new System.Drawing.Size(639, 327);
             this.panel_form.TabIndex = 0;
             // 
             // panel_left
@@ -85,7 +85,7 @@
             this.panel_left.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_left.Location = new System.Drawing.Point(0, 62);
             this.panel_left.Name = "panel_left";
-            this.panel_left.Size = new System.Drawing.Size(177, 269);
+            this.panel_left.Size = new System.Drawing.Size(177, 263);
             this.panel_left.TabIndex = 0;
             // 
             // picture_logo
@@ -111,7 +111,7 @@
             this.panel_right.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel_right.Location = new System.Drawing.Point(177, 62);
             this.panel_right.Name = "panel_right";
-            this.panel_right.Size = new System.Drawing.Size(460, 269);
+            this.panel_right.Size = new System.Drawing.Size(460, 263);
             this.panel_right.TabIndex = 0;
             // 
             // check_show_password
@@ -157,7 +157,7 @@
             this.txt_login.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txt_login.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_login.DefaultFont = new System.Drawing.Font("Segoe UI Semibold", 9.75F);
-            this.txt_login.DefaultText = "dilboz_registar";
+            this.txt_login.DefaultText = "admins";
             this.txt_login.FillColor = System.Drawing.Color.White;
             this.txt_login.HideSelection = true;
             this.txt_login.IconLeft = null;
@@ -166,7 +166,7 @@
             this.txt_login.IconRight = null;
             this.txt_login.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_login.Lines = new string[] {
-        "dilboz_registar"};
+        "admins"};
             this.txt_login.Location = new System.Drawing.Point(24, 54);
             this.txt_login.MaxLength = 32767;
             this.txt_login.MinimumSize = new System.Drawing.Size(100, 35);
@@ -241,7 +241,7 @@
             this.txt_password.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txt_password.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_password.DefaultFont = new System.Drawing.Font("Segoe UI Semibold", 9.75F);
-            this.txt_password.DefaultText = "dilboz";
+            this.txt_password.DefaultText = "admins";
             this.txt_password.FillColor = System.Drawing.Color.White;
             this.txt_password.HideSelection = true;
             this.txt_password.IconLeft = null;
@@ -250,7 +250,7 @@
             this.txt_password.IconRight = null;
             this.txt_password.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_password.Lines = new string[] {
-        "dilboz"};
+        "admins"};
             this.txt_password.Location = new System.Drawing.Point(24, 120);
             this.txt_password.MaxLength = 32767;
             this.txt_password.MinimumSize = new System.Drawing.Size(100, 35);
@@ -457,7 +457,7 @@
             this.Appearance.Options.UseFont = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(639, 333);
+            this.ClientSize = new System.Drawing.Size(639, 327);
             this.Controls.Add(this.panel_form);
             this.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderEffect = DevExpress.XtraEditors.FormBorderEffect.None;
