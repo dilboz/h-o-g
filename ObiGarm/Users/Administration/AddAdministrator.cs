@@ -9,28 +9,26 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ObiGarm.Users.Registar
+namespace ObiGarm.Users.Administration
 {
-    public partial class AddRegistar : DevExpress.XtraEditors.XtraForm
+    public partial class AddAdministrator : DevExpress.XtraEditors.XtraForm
     {
 
         SqlConfiguration sqlConfiguration;
 
-
-        private readonly RegistarFormDisplay registarFormDisplay_form ;
+        private readonly ListAdministrator listAdministrator;
         private string id_user;
         private string text_button;
+        
 
-        public AddRegistar(RegistarFormDisplay registarFormDisplay , string id_user, string text_button)
+        public AddAdministrator(ListAdministrator listAdministrator, string id_user, string text_button)
         {
-
+            InitializeComponent();
             sqlConfiguration = new SqlConfiguration();
-            registarFormDisplay_form = registarFormDisplay;
+            this.listAdministrator = listAdministrator;
             this.id_user = id_user;
             this.text_button = text_button;
-            InitializeComponent();
         }
-
 
         private void setTextToTextBoxs(string id)
         {
@@ -58,20 +56,18 @@ namespace ObiGarm.Users.Registar
                 }
             }
         }
-        
 
-
-        private void addRegistar()
+        private void add()
         {
             string name_registar = txt_name.Text;
             string surname_registar = txt_surname.Text;
             string login_registar = txt_login.Text;
-            string password_registar= txt_password.Text;
+            string password_registar = txt_password.Text;
             string check_password_register = txt_cheng_password.Text;
-            string point_register = "4";
+            string point_register = "6";
             string enaled_admin = "1";
 
-            string sql_user_check = "select * from users where login = '" + login_registar + "' and point= '4' and deleted IS NULL";
+            string sql_user_check = "select * from users where login = '" + login_registar + "' and point= '6' and deleted IS NULL";
 
             string sql_add_user = "insert into users (name, surname, login, password, point, enable) values('" +
                 name_registar + "', '" +
@@ -95,7 +91,7 @@ namespace ObiGarm.Users.Registar
                         else
                         {
                             this.Close();
-                            registarFormDisplay_form.display();
+                            listAdministrator.display();
                             //MessageBox.Show("Админ бо муваффакият илова карда шуд!", "Сообщения", MessageBoxButtons.OK, MessageBoxIcon.None);
                         }
                     }
@@ -115,17 +111,17 @@ namespace ObiGarm.Users.Registar
             }
         }
 
-        private void updateRegitar(string id)
+        private void update(string id)
         {
             string name_registar = txt_name.Text;
             string surname_registarn = txt_surname.Text;
             string login_registar = txt_login.Text;
             string password_registar = txt_password.Text;
             string check_password_registarn = txt_cheng_password.Text;
-            string point_registar = "4";
+            string point_registar = "6";
             string enaled_registar = "1";
 
-            string sql_user_check = "select * from users where login = '" + login_registar + "' and point= '4' and deleted IS NULL";
+            string sql_user_check = "select * from users where login = '" + login_registar + "' and point= '6' and deleted IS NULL";
 
             string sql_update_user = "update users set " +
                 "name = '" + name_registar + "', " +
@@ -133,7 +129,7 @@ namespace ObiGarm.Users.Registar
                 "login = '" + login_registar + "', " +
                 "password = '" + password_registar + "', " +
                 "point = '" + point_registar + "', " +
-                "enable = '" + enaled_registar + "' " +
+                "enable = '" + enaled_registar + "'" +
                " where id = '" + id + "'";
 
             if (name_registar.Trim() != "" && surname_registarn.Trim() != "" && login_registar.Trim() != "" && password_registar.Trim() != "" && check_password_registarn.Trim() != "")
@@ -150,7 +146,7 @@ namespace ObiGarm.Users.Registar
                         else
                         {
                             this.Close();
-                            registarFormDisplay_form.display();
+                            listAdministrator.display();
                             //MessageBox.Show("Админ бо муваффакият илова карда шуд!", "Сообщения", MessageBoxButtons.OK, MessageBoxIcon.None);
                         }
                     }
@@ -175,11 +171,11 @@ namespace ObiGarm.Users.Registar
         {
             if (this.id_user == "" && this.text_button == "Сохтан")
             {
-                addRegistar();
+                add();
             }
             else
             {
-                updateRegitar(this.id_user);
+                update(this.id_user);
             }
         }
 
@@ -188,7 +184,7 @@ namespace ObiGarm.Users.Registar
             this.Close();
         }
 
-        private void AddRegistar_Shown(object sender, EventArgs e)
+        private void AddAdministrator_Shown(object sender, EventArgs e)
         {
             if (this.id_user != "" && this.text_button != "Сохтан")
             {

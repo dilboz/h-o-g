@@ -228,7 +228,11 @@ namespace ObiGarm.Services
         {
             loadListSpitsqlist();
             loadListServices();
-            loadListServicesUser(list_sipsalist.SelectedValue.ToString());
+            if (list_sipsalist.ItemCount!=0)
+            {
+                loadListServicesUser(list_sipsalist.SelectedValue.ToString());
+            }
+           
         }
 
         private void delete_service_user_Click(object sender, EventArgs e)
@@ -249,33 +253,45 @@ namespace ObiGarm.Services
 
         private void sevices_to_users_Click(object sender, EventArgs e)
         {
-            string id_services = list_services.SelectedValue.ToString();
-            string id_users = list_sipsalist.SelectedValue.ToString();
 
-            string sql_check_services_user = $"select * from services_users su " +
-                                             $"where service_id = '{id_services}' and user_id = '{id_users}'";
-
-
-            string sql_insert_services_user = "insert into services_users (service_id, user_id) " +
-                                                $"values('{id_services}', '{id_users}'); ";
-
-
-            if (sqlConfiguration.sqlSelectQuery(sql_check_services_user).Rows.Count != 1)
+            if (list_services.ItemCount != 0)
             {
-                int result = sqlConfiguration.sqlQuery(sql_insert_services_user);
-                if (result == 500)
+                //MessageBox.Show(list_services.DisplayMember.Length.ToString());
+                string id_services = list_services.SelectedValue.ToString();
+                string id_users = list_sipsalist.SelectedValue.ToString();
+
+                string sql_check_services_user = $"select * from services_users su " +
+                                                 $"where service_id = '{id_services}' and user_id = '{id_users}'";
+
+
+                string sql_insert_services_user = "insert into services_users (service_id, user_id) " +
+                                                    $"values('{id_services}', '{id_users}'); ";
+                if (sqlConfiguration.sqlSelectQuery(sql_check_services_user).Rows.Count != 1)
                 {
-                    MessageBox.Show("Хатоги ба вучуд омад!", "Сообщения", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    int result = sqlConfiguration.sqlQuery(sql_insert_services_user);
+                    if (result == 500)
+                    {
+                        MessageBox.Show("Хатоги ба вучуд омад!", "Сообщения", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    else
+                    {
+                        allDisplayList();
+                    }
                 }
                 else
                 {
-                    allDisplayList();
+                    MessageBox.Show("Спитсалист чунин хизматрасони доар!", "Сообщения", MessageBoxButtons.OK, MessageBoxIcon.None);
                 }
+
             }
             else
             {
-                MessageBox.Show("Спитсалист чунин хизматрасони доар!", "Сообщения", MessageBoxButtons.OK, MessageBoxIcon.None);
+                MessageBox.Show("Шумо хихматрасони надоред!!");
             }
+            
+           
+
+          
 
         }
 
@@ -309,8 +325,17 @@ namespace ObiGarm.Services
 
         void displayAllInfo()
         {
-            displayInfoUsers(list_sipsalist.SelectedValue.ToString());
-            displayInfoServices(list_services.SelectedValue.ToString());
+            if (list_sipsalist.ItemCount!=0)
+            {
+                displayInfoUsers(list_sipsalist.SelectedValue.ToString());
+            }
+            
+            if (list_services.ItemCount!=0)
+            {
+                
+                displayInfoServices(list_services.SelectedValue.ToString());
+            }
+            
         }
 
         private void list_services_Click(object sender, EventArgs e)

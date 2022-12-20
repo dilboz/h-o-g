@@ -29,6 +29,13 @@ namespace ObiGarm.Users.Spitalists
             this.text_button = text_button;
             InitializeComponent();
         }
+
+        void load_comobo()
+        {
+            string sql = "SELECT * FROM manitor";
+            sqlConfiguration.LoadCombo(sql, "name", "id", combo_manitor);
+        }
+
         public AddSpitalist(ServicesFormDisplay servicesFormDisplay, string id_user, string text_button)
         {
             sqlConfiguration = new SqlConfiguration();
@@ -40,7 +47,10 @@ namespace ObiGarm.Users.Spitalists
         
         private void setTextToTextBoxs(string id)
         {
-            string sql = "select * from users where id = '" + id + "'";
+            string sql = "select users.id, users.name as 'name', users.surname, users.login, users.password, users.room_number, users.work_time_end, users.work_time_start, manitor.name as 'manitor' " +
+                "from users " +
+                "inner join manitor on users.id_manitor = manitor.id " +
+                $"where users.id='{id}'; ";
 
             DataTable dataTable = sqlConfiguration.sqlSelectQuery(sql);
 
@@ -60,6 +70,7 @@ namespace ObiGarm.Users.Spitalists
                     txt_room_number.Value=Convert.ToDecimal(dataTable.Rows[0]["room_number"].ToString());
                     txt_time_start_work.EditValue= dataTable.Rows[0]["work_time_start"].ToString();
                     txt_time_end_work.EditValue= dataTable.Rows[0]["work_time_end"].ToString();
+                    combo_manitor.Text= dataTable.Rows[0]["manitor"].ToString();
                 }
                 else
                 {
@@ -67,10 +78,13 @@ namespace ObiGarm.Users.Spitalists
                 }
             }
         }
-        string str_enbaled_admin;
+
+
+        //string str_enbaled_admin;
         
         private void AddSpitalist_Shown(object sender, EventArgs e)
         {
+            load_comobo();
             if (this.id_user != "" && this.text_button != "Сохтан")
             {
                 setTextToTextBoxs(this.id_user);
@@ -92,23 +106,26 @@ namespace ObiGarm.Users.Spitalists
             string number_room_spitalist = Convert.ToString(txt_room_number.Value);
             string time_start_work =Convert.ToDateTime(txt_time_start_work.Text).ToString("HH:mm");
             string time_end_work = Convert.ToDateTime(txt_time_end_work.Text).ToString("HH:mm");
+            string manitor_id = combo_manitor.SelectedValue.ToString();
             
 
 
             string sql_user_check = "select * from users where login = '" + login_spitalist + "' and point= '2' and deleted is null";
 
-            string sql_add_user = "insert into users (name, surname, login, password, point, room_number, work_time_start, work_time_end) values('" +
+            string sql_add_user = "insert into users (name, surname, login, password, point, room_number, id_manitor, work_time_start, end_date_time_services, work_time_end) values('" +
                 name_spitalist + "', '" +
                 surname_spitalist + "', '" +
                 login_spitalist + "', '" +
                 password_spitalist + "', '" +
                 point_spitalist + "', '" +
                 number_room_spitalist + "', '" +
+                manitor_id + "', '" +
                 time_start_work + "', '" +
+                DateTime.Now.ToString("yyyy-MM-dd ") + time_start_work + "', '" +
                 time_end_work + "');";
 
             if (name_spitalist.Trim() != "" && surname_spitalist.Trim() != "" && login_spitalist.Trim() != "" && password_spitalist.Trim() != "" && check_password_spitalist.Trim() != "" 
-                && (number_room_spitalist.Trim()!="" || number_room_spitalist.Trim()=="0") && time_start_work!="" && time_end_work!="")
+                && (number_room_spitalist.Trim()!="" || number_room_spitalist.Trim()=="0") && time_start_work!="" && time_end_work!="" && manitor_id!="")
             {
                 if (password_spitalist.Trim() == check_password_spitalist.Trim())
                 {
@@ -117,6 +134,7 @@ namespace ObiGarm.Users.Spitalists
                         int result = sqlConfiguration.sqlQuery(sql_add_user);
                         if (result == 500)
                         {
+                            txt_name.Text = sql_add_user;
                             MessageBox.Show("Хатоги ба вучуд омад!", "Сообщения", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
                         else
@@ -163,7 +181,8 @@ namespace ObiGarm.Users.Spitalists
             string number_room_spitalist = Convert.ToString(txt_room_number.Value);
             string time_start_work = Convert.ToDateTime(txt_time_start_work.Text).ToString("HH:mm");
             string time_end_work = Convert.ToDateTime(txt_time_end_work.Text).ToString("HH:mm");
-            
+            string manitor_id = combo_manitor.SelectedValue.ToString();
+
 
 
             string sql_user_check = "select * from users where login = '" + login_spitalist + "' and point= '2' and deleted is null";
@@ -175,17 +194,19 @@ namespace ObiGarm.Users.Spitalists
                "password = '" + password_spitalist + "', " +
                "point = '" + point_spitalist + "', " +
                "room_number = '" + number_room_spitalist + "', " +
+               "id_manitor = '" + manitor_id + "', " +
                "work_time_start = '" + time_start_work + "', " +
+               "end_date_time_services = '" + DateTime.Now.ToString("yyyy-MM-dd ") + time_start_work + "', " +
                "work_time_end = '" + time_end_work +  "' " +
               " where id = '" + id + "'";
 
 
             if (name_spitalist.Trim() != "" && surname_spitalist.Trim() != "" && login_spitalist.Trim() != "" && password_spitalist.Trim() != "" && check_password_spitalist.Trim() != ""
-                && (number_room_spitalist.Trim() != "" || number_room_spitalist.Trim() == "0") && time_start_work != "" && time_end_work != "")
+                && (number_room_spitalist.Trim() != "" || number_room_spitalist.Trim() == "0") && time_start_work != "" && time_end_work != "" && manitor_id!="")
             {
                 if (password_spitalist.Trim() == check_password_spitalist.Trim())
                 {
-                    if (sqlConfiguration.sqlSelectQuery(sql_user_check).Rows.Count >= 1)
+                    if (sqlConfiguration.sqlSelectQuery(sql_user_check).Rows.Count <= 1)
                     {
                         int result = sqlConfiguration.sqlQuery(sql_update_user);
                         if (result == 500)

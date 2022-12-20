@@ -1,5 +1,4 @@
-﻿using ObiGarm.ClassDatabase;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,11 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ObiGarm.Administration
+namespace ObiGarm.Mnitor
 {
-    public partial class ListReportsAllMoney : Form
+    public partial class ManitorForm : DevExpress.XtraEditors.XtraForm
     {
-
-      
+        public ManitorForm()
+        {
+            InitializeComponent();
+        }
     }
 }

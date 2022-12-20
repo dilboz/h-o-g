@@ -283,24 +283,6 @@
     <Compile Include="Administration\InfoReportsFromMoney.Designer.cs">
       <DependentUpon>InfoReportsFromMoney.cs</DependentUpon>
     </Compile>
-    <Compile Include="Administration\ListReportsAllMoney.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Administration\ListReportsAllMoney.Designer.cs">
-      <DependentUpon>ListReportsAllMoney.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Administration\ListReportsIsMoney.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Administration\ListReportsIsMoney.Designer.cs">
-      <DependentUpon>ListReportsIsMoney.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Administration\ListReportsMoney.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Administration\ListReportsMoney.Designer.cs">
-      <DependentUpon>ListReportsMoney.cs</DependentUpon>
-    </Compile>
     <Compile Include="ClassDatabase\SettingsDatabase.cs" />
     <Compile Include="ClassDatabase\SqlConfiguration.cs" />
     <Compile Include="ClassFunction\UsableFunction.cs" />
@@ -316,6 +298,12 @@
     </Compile>
     <Compile Include="LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mnitor\ManitorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mnitor\ManitorForm.Designer.cs">
+      <DependentUpon>ManitorForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -366,6 +354,18 @@
     </Compile>
     <Compile Include="Regisrarura\Ristratura.Designer.cs">
       <DependentUpon>Ristratura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\Administration\AddAdministrator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\Administration\AddAdministrator.Designer.cs">
+      <DependentUpon>AddAdministrator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\Administration\ListAdministrator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\Administration\ListAdministrator.Designer.cs">
+      <DependentUpon>ListAdministrator.cs</DependentUpon>
     </Compile>
     <Compile Include="Users\Bonk\AddBonk.cs">
       <SubType>Form</SubType>
@@ -535,14 +535,14 @@
     <EmbeddedResource Include="Administration\InfoReportsFromMoney.resx">
       <DependentUpon>InfoReportsFromMoney.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Administration\ListReportsAllMoney.resx">
-      <DependentUpon>ListReportsAllMoney.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="loaddingFrom.resx">
       <DependentUpon>loaddingFrom.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mnitor\ManitorForm.resx">
+      <DependentUpon>ManitorForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -578,6 +578,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Regisrarura\Ristratura.resx">
       <DependentUpon>Ristratura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\Administration\AddAdministrator.resx">
+      <DependentUpon>AddAdministrator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\Administration\ListAdministrator.resx">
+      <DependentUpon>ListAdministrator.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Users\Bonk\AddBonk.resx">
       <DependentUpon>AddBonk.cs</DependentUpon>

@@ -80,7 +80,6 @@
             this.panel_for_edit_sort = new System.Windows.Forms.Panel();
             this.panel_edit_sort = new System.Windows.Forms.Panel();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.listBox1 = new System.Windows.Forms.ListBox();
             this.panel_top.SuspendLayout();
             this.panel_grid_control.SuspendLayout();
             this.panel_grid.SuspendLayout();
@@ -128,12 +127,15 @@
             // 
             // label_info_user
             // 
-            this.label_info_user.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.label_info_user.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label_info_user.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(143)))), ((int)(((byte)(78)))));
+            this.label_info_user.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label_info_user.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_info_user.ForeColor = System.Drawing.Color.White;
             this.label_info_user.Location = new System.Drawing.Point(10, 10);
             this.label_info_user.Name = "label_info_user";
-            this.label_info_user.Size = new System.Drawing.Size(323, 18);
+            this.label_info_user.Size = new System.Drawing.Size(1209, 18);
             this.label_info_user.TabIndex = 4;
+            this.label_info_user.Text = "Истифодабаранда: ";
             // 
             // panel_grid_control
             // 
@@ -488,7 +490,6 @@
             // panel_ino_money
             // 
             this.panel_ino_money.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(163)))), ((int)(((byte)(98)))));
-            this.panel_ino_money.Controls.Add(this.listBox1);
             this.panel_ino_money.Controls.Add(this.label_info);
             this.panel_ino_money.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_ino_money.Location = new System.Drawing.Point(0, 74);
@@ -644,14 +645,6 @@
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
-            // listBox1
-            // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(785, 5);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(297, 56);
-            this.listBox1.TabIndex = 5;
-            // 
             // InfoReportsFromMoney
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -664,6 +657,7 @@
             this.IconOptions.ShowIcon = false;
             this.Name = "InfoReportsFromMoney";
             this.Text = "Малумотҳо оиди маблағ";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.InfoReportsFromMoney_FormClosed);
             this.panel_top.ResumeLayout(false);
             this.panel_grid_control.ResumeLayout(false);
             this.panel_grid.ResumeLayout(false);
@@ -746,6 +740,5 @@
         private DevExpress.XtraGrid.Columns.GridColumn bank_name;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.Label label_info;
-        private System.Windows.Forms.ListBox listBox1;
     }
 }

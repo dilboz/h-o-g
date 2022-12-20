@@ -35,6 +35,7 @@
             this.admin_button = new System.Windows.Forms.Button();
             this.panel_user = new System.Windows.Forms.Panel();
             this.panel_user_menu = new System.Windows.Forms.Panel();
+            this.administrator_button = new System.Windows.Forms.Button();
             this.bugalter_button = new System.Windows.Forms.Button();
             this.spitalists_button = new System.Windows.Forms.Button();
             this.registr_button = new System.Windows.Forms.Button();
@@ -79,9 +80,9 @@
             this.actions_button.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold);
             this.actions_button.ForeColor = System.Drawing.Color.White;
             this.actions_button.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.actions_button.Location = new System.Drawing.Point(0, 528);
+            this.actions_button.Location = new System.Drawing.Point(0, 498);
             this.actions_button.Name = "actions_button";
-            this.actions_button.Size = new System.Drawing.Size(206, 40);
+            this.actions_button.Size = new System.Drawing.Size(206, 35);
             this.actions_button.TabIndex = 34;
             this.actions_button.Text = "Амалҳои истифодабарандагон";
             this.actions_button.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -95,9 +96,9 @@
             this.export_database_button.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold);
             this.export_database_button.ForeColor = System.Drawing.Color.White;
             this.export_database_button.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.export_database_button.Location = new System.Drawing.Point(0, 488);
+            this.export_database_button.Location = new System.Drawing.Point(0, 463);
             this.export_database_button.Name = "export_database_button";
-            this.export_database_button.Size = new System.Drawing.Size(206, 40);
+            this.export_database_button.Size = new System.Drawing.Size(206, 35);
             this.export_database_button.TabIndex = 33;
             this.export_database_button.Text = "Сабт кардани базза (Export)";
             this.export_database_button.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -113,7 +114,7 @@
             this.reference_button.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.reference_button.Location = new System.Drawing.Point(0, 284);
             this.reference_button.Name = "reference_button";
-            this.reference_button.Size = new System.Drawing.Size(206, 40);
+            this.reference_button.Size = new System.Drawing.Size(206, 35);
             this.reference_button.TabIndex = 31;
             this.reference_button.Text = "Справочник";
             this.reference_button.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -128,9 +129,9 @@
             this.vrach_button.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold);
             this.vrach_button.ForeColor = System.Drawing.Color.White;
             this.vrach_button.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.vrach_button.Location = new System.Drawing.Point(0, 40);
+            this.vrach_button.Location = new System.Drawing.Point(0, 35);
             this.vrach_button.Name = "vrach_button";
-            this.vrach_button.Size = new System.Drawing.Size(198, 40);
+            this.vrach_button.Size = new System.Drawing.Size(198, 35);
             this.vrach_button.TabIndex = 30;
             this.vrach_button.Text = "Врач";
             this.vrach_button.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -147,7 +148,7 @@
             this.admin_button.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.admin_button.Location = new System.Drawing.Point(0, 0);
             this.admin_button.Name = "admin_button";
-            this.admin_button.Size = new System.Drawing.Size(198, 40);
+            this.admin_button.Size = new System.Drawing.Size(198, 35);
             this.admin_button.TabIndex = 29;
             this.admin_button.Text = "Админ";
             this.admin_button.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -158,14 +159,15 @@
             // 
             this.panel_user.Controls.Add(this.panel_user_menu);
             this.panel_user.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel_user.Location = new System.Drawing.Point(0, 80);
+            this.panel_user.Location = new System.Drawing.Point(0, 70);
             this.panel_user.Name = "panel_user";
-            this.panel_user.Size = new System.Drawing.Size(206, 204);
+            this.panel_user.Size = new System.Drawing.Size(206, 214);
             this.panel_user.TabIndex = 27;
             this.panel_user.Visible = false;
             // 
             // panel_user_menu
             // 
+            this.panel_user_menu.Controls.Add(this.administrator_button);
             this.panel_user_menu.Controls.Add(this.bugalter_button);
             this.panel_user_menu.Controls.Add(this.spitalists_button);
             this.panel_user_menu.Controls.Add(this.registr_button);
@@ -173,8 +175,25 @@
             this.panel_user_menu.Controls.Add(this.admin_button);
             this.panel_user_menu.Location = new System.Drawing.Point(8, 0);
             this.panel_user_menu.Name = "panel_user_menu";
-            this.panel_user_menu.Size = new System.Drawing.Size(198, 204);
+            this.panel_user_menu.Size = new System.Drawing.Size(198, 213);
             this.panel_user_menu.TabIndex = 5;
+            // 
+            // administrator_button
+            // 
+            this.administrator_button.Dock = System.Windows.Forms.DockStyle.Top;
+            this.administrator_button.FlatAppearance.BorderSize = 0;
+            this.administrator_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.administrator_button.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold);
+            this.administrator_button.ForeColor = System.Drawing.Color.White;
+            this.administrator_button.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.administrator_button.Location = new System.Drawing.Point(0, 175);
+            this.administrator_button.Name = "administrator_button";
+            this.administrator_button.Size = new System.Drawing.Size(198, 35);
+            this.administrator_button.TabIndex = 35;
+            this.administrator_button.Text = "Администронт";
+            this.administrator_button.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.administrator_button.UseVisualStyleBackColor = true;
+            this.administrator_button.Click += new System.EventHandler(this.administrator_button_Click);
             // 
             // bugalter_button
             // 
@@ -184,9 +203,9 @@
             this.bugalter_button.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold);
             this.bugalter_button.ForeColor = System.Drawing.Color.White;
             this.bugalter_button.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.bugalter_button.Location = new System.Drawing.Point(0, 160);
+            this.bugalter_button.Location = new System.Drawing.Point(0, 140);
             this.bugalter_button.Name = "bugalter_button";
-            this.bugalter_button.Size = new System.Drawing.Size(198, 40);
+            this.bugalter_button.Size = new System.Drawing.Size(198, 35);
             this.bugalter_button.TabIndex = 34;
             this.bugalter_button.Text = "Бугалтер";
             this.bugalter_button.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -201,9 +220,9 @@
             this.spitalists_button.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold);
             this.spitalists_button.ForeColor = System.Drawing.Color.White;
             this.spitalists_button.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.spitalists_button.Location = new System.Drawing.Point(0, 120);
+            this.spitalists_button.Location = new System.Drawing.Point(0, 105);
             this.spitalists_button.Name = "spitalists_button";
-            this.spitalists_button.Size = new System.Drawing.Size(198, 40);
+            this.spitalists_button.Size = new System.Drawing.Size(198, 35);
             this.spitalists_button.TabIndex = 33;
             this.spitalists_button.Text = "Спицалисты";
             this.spitalists_button.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -218,9 +237,9 @@
             this.registr_button.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold);
             this.registr_button.ForeColor = System.Drawing.Color.White;
             this.registr_button.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.registr_button.Location = new System.Drawing.Point(0, 80);
+            this.registr_button.Location = new System.Drawing.Point(0, 70);
             this.registr_button.Name = "registr_button";
-            this.registr_button.Size = new System.Drawing.Size(198, 40);
+            this.registr_button.Size = new System.Drawing.Size(198, 35);
             this.registr_button.TabIndex = 32;
             this.registr_button.Text = "Бақайдгир";
             this.registr_button.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -235,9 +254,9 @@
             this.user_button.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold);
             this.user_button.ForeColor = System.Drawing.Color.White;
             this.user_button.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.user_button.Location = new System.Drawing.Point(0, 40);
+            this.user_button.Location = new System.Drawing.Point(0, 35);
             this.user_button.Name = "user_button";
-            this.user_button.Size = new System.Drawing.Size(206, 40);
+            this.user_button.Size = new System.Drawing.Size(206, 35);
             this.user_button.TabIndex = 26;
             this.user_button.Text = "Истифодабарандагон";
             this.user_button.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -256,7 +275,7 @@
             this.main_button.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.main_button.Location = new System.Drawing.Point(0, 0);
             this.main_button.Name = "main_button";
-            this.main_button.Size = new System.Drawing.Size(206, 40);
+            this.main_button.Size = new System.Drawing.Size(206, 35);
             this.main_button.TabIndex = 25;
             this.main_button.Text = "Асоси";
             this.main_button.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -284,9 +303,9 @@
             // 
             this.panel_reports.Controls.Add(this.panel_report_menu);
             this.panel_reports.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel_reports.Location = new System.Drawing.Point(0, 608);
+            this.panel_reports.Location = new System.Drawing.Point(0, 568);
             this.panel_reports.Name = "panel_reports";
-            this.panel_reports.Size = new System.Drawing.Size(206, 128);
+            this.panel_reports.Size = new System.Drawing.Size(206, 113);
             this.panel_reports.TabIndex = 36;
             this.panel_reports.Visible = false;
             // 
@@ -297,7 +316,7 @@
             this.panel_report_menu.Controls.Add(this.report_a);
             this.panel_report_menu.Location = new System.Drawing.Point(8, 3);
             this.panel_report_menu.Name = "panel_report_menu";
-            this.panel_report_menu.Size = new System.Drawing.Size(198, 118);
+            this.panel_report_menu.Size = new System.Drawing.Size(198, 109);
             this.panel_report_menu.TabIndex = 5;
             // 
             // report_c
@@ -308,9 +327,9 @@
             this.report_c.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold);
             this.report_c.ForeColor = System.Drawing.Color.White;
             this.report_c.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.report_c.Location = new System.Drawing.Point(0, 80);
+            this.report_c.Location = new System.Drawing.Point(0, 70);
             this.report_c.Name = "report_c";
-            this.report_c.Size = new System.Drawing.Size(198, 40);
+            this.report_c.Size = new System.Drawing.Size(198, 35);
             this.report_c.TabIndex = 31;
             this.report_c.Text = "Ҳисоботи";
             this.report_c.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -325,9 +344,9 @@
             this.report_b.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold);
             this.report_b.ForeColor = System.Drawing.Color.White;
             this.report_b.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.report_b.Location = new System.Drawing.Point(0, 40);
+            this.report_b.Location = new System.Drawing.Point(0, 35);
             this.report_b.Name = "report_b";
-            this.report_b.Size = new System.Drawing.Size(198, 40);
+            this.report_b.Size = new System.Drawing.Size(198, 35);
             this.report_b.TabIndex = 30;
             this.report_b.Text = "Ҳисоботи истифода";
             this.report_b.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -344,7 +363,7 @@
             this.report_a.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.report_a.Location = new System.Drawing.Point(0, 0);
             this.report_a.Name = "report_a";
-            this.report_a.Size = new System.Drawing.Size(198, 40);
+            this.report_a.Size = new System.Drawing.Size(198, 35);
             this.report_a.TabIndex = 29;
             this.report_a.Text = "Ҳисобот оид ба ";
             this.report_a.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -359,9 +378,9 @@
             this.reports_button.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold);
             this.reports_button.ForeColor = System.Drawing.Color.White;
             this.reports_button.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.reports_button.Location = new System.Drawing.Point(0, 568);
+            this.reports_button.Location = new System.Drawing.Point(0, 533);
             this.reports_button.Name = "reports_button";
-            this.reports_button.Size = new System.Drawing.Size(206, 40);
+            this.reports_button.Size = new System.Drawing.Size(206, 35);
             this.reports_button.TabIndex = 35;
             this.reports_button.Text = "Отчеты";
             this.reports_button.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -372,9 +391,9 @@
             // 
             this.servises_frame_panel.Controls.Add(this.panel2);
             this.servises_frame_panel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.servises_frame_panel.Location = new System.Drawing.Point(0, 324);
+            this.servises_frame_panel.Location = new System.Drawing.Point(0, 319);
             this.servises_frame_panel.Name = "servises_frame_panel";
-            this.servises_frame_panel.Size = new System.Drawing.Size(206, 164);
+            this.servises_frame_panel.Size = new System.Drawing.Size(206, 144);
             this.servises_frame_panel.TabIndex = 37;
             this.servises_frame_panel.Visible = false;
             // 
@@ -386,7 +405,7 @@
             this.panel2.Controls.Add(this.frame_and_room);
             this.panel2.Location = new System.Drawing.Point(8, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(198, 164);
+            this.panel2.Size = new System.Drawing.Size(198, 140);
             this.panel2.TabIndex = 5;
             // 
             // bonk_button
@@ -397,9 +416,9 @@
             this.bonk_button.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold);
             this.bonk_button.ForeColor = System.Drawing.Color.White;
             this.bonk_button.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.bonk_button.Location = new System.Drawing.Point(0, 120);
+            this.bonk_button.Location = new System.Drawing.Point(0, 105);
             this.bonk_button.Name = "bonk_button";
-            this.bonk_button.Size = new System.Drawing.Size(198, 40);
+            this.bonk_button.Size = new System.Drawing.Size(198, 35);
             this.bonk_button.TabIndex = 32;
             this.bonk_button.Text = "Банкҳо";
             this.bonk_button.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -414,13 +433,14 @@
             this.btn_kort.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold);
             this.btn_kort.ForeColor = System.Drawing.Color.White;
             this.btn_kort.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btn_kort.Location = new System.Drawing.Point(0, 80);
+            this.btn_kort.Location = new System.Drawing.Point(0, 70);
             this.btn_kort.Name = "btn_kort";
-            this.btn_kort.Size = new System.Drawing.Size(198, 40);
+            this.btn_kort.Size = new System.Drawing.Size(198, 35);
             this.btn_kort.TabIndex = 31;
             this.btn_kort.Text = "Кортхо";
             this.btn_kort.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_kort.UseVisualStyleBackColor = true;
+            this.btn_kort.Click += new System.EventHandler(this.btn_kort_Click);
             // 
             // servicesis_btn
             // 
@@ -430,9 +450,9 @@
             this.servicesis_btn.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold);
             this.servicesis_btn.ForeColor = System.Drawing.Color.White;
             this.servicesis_btn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.servicesis_btn.Location = new System.Drawing.Point(0, 40);
+            this.servicesis_btn.Location = new System.Drawing.Point(0, 35);
             this.servicesis_btn.Name = "servicesis_btn";
-            this.servicesis_btn.Size = new System.Drawing.Size(198, 40);
+            this.servicesis_btn.Size = new System.Drawing.Size(198, 35);
             this.servicesis_btn.TabIndex = 30;
             this.servicesis_btn.Text = "Хизматрасониҳо";
             this.servicesis_btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -449,7 +469,7 @@
             this.frame_and_room.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.frame_and_room.Location = new System.Drawing.Point(0, 0);
             this.frame_and_room.Name = "frame_and_room";
-            this.frame_and_room.Size = new System.Drawing.Size(198, 40);
+            this.frame_and_room.Size = new System.Drawing.Size(198, 35);
             this.frame_and_room.TabIndex = 29;
             this.frame_and_room.Text = "Бино ва ҳучраҳо";
             this.frame_and_room.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -464,7 +484,7 @@
             this.panel_left.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel_left.Location = new System.Drawing.Point(0, 0);
             this.panel_left.Name = "panel_left";
-            this.panel_left.Size = new System.Drawing.Size(216, 811);
+            this.panel_left.Size = new System.Drawing.Size(216, 599);
             this.panel_left.TabIndex = 4;
             // 
             // logo_label
@@ -488,7 +508,7 @@
             this.panel_top.Location = new System.Drawing.Point(216, 0);
             this.panel_top.Name = "panel_top";
             this.panel_top.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.panel_top.Size = new System.Drawing.Size(902, 55);
+            this.panel_top.Size = new System.Drawing.Size(1145, 55);
             this.panel_top.TabIndex = 5;
             // 
             // logout_button
@@ -500,7 +520,7 @@
             this.logout_button.Font = new System.Drawing.Font("Constantia", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.logout_button.ForeColor = System.Drawing.Color.White;
             this.logout_button.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.logout_button.Location = new System.Drawing.Point(764, 12);
+            this.logout_button.Location = new System.Drawing.Point(1007, 12);
             this.logout_button.Name = "logout_button";
             this.logout_button.Size = new System.Drawing.Size(125, 35);
             this.logout_button.TabIndex = 24;
@@ -527,7 +547,7 @@
             this.panel_child_all.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_child_all.Location = new System.Drawing.Point(216, 55);
             this.panel_child_all.Name = "panel_child_all";
-            this.panel_child_all.Size = new System.Drawing.Size(902, 756);
+            this.panel_child_all.Size = new System.Drawing.Size(1145, 544);
             this.panel_child_all.TabIndex = 6;
             // 
             // UserForm
@@ -535,7 +555,7 @@
             this.Appearance.Options.UseFont = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1118, 811);
+            this.ClientSize = new System.Drawing.Size(1361, 599);
             this.Controls.Add(this.panel_child_all);
             this.Controls.Add(this.panel_top);
             this.Controls.Add(this.panel_left);
@@ -594,5 +614,6 @@
         private DevExpress.XtraBars.FormAssistant formAssistant1;
         private System.Windows.Forms.Button bugalter_button;
         private System.Windows.Forms.Button bonk_button;
+        private System.Windows.Forms.Button administrator_button;
     }
 }

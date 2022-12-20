@@ -101,7 +101,7 @@ namespace ObiGarm.Services
 
             if (Name != "")
             {
-                if (sqlConfiguration.sqlSelectQuery(sql_chage_services).Rows.Count >=1)
+                if (sqlConfiguration.sqlSelectQuery(sql_chage_services).Rows.Count <=1)
                 {
                     int result = sqlConfiguration.sqlQuery(sql_update_services);
                     if (result == 500)

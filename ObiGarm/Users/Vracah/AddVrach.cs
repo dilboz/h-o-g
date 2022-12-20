@@ -82,7 +82,7 @@ namespace ObiGarm.Users.Vracah
             
             string sql_user_check = "select * from users where login = '" + login_vrach + "' and point= '3' and deleted is null;";
 
-            string sql_add_user = "insert into users (name, surname, login, password, point, room_number, work_time_start, work_time_end, enable) values('" +
+            string sql_add_user = "insert into users (name, surname, login, password, point, room_number, work_time_start, work_time_end) values('" +
                 name_vrach + "', '" +
                 surname_vrach + "', '" +
                 login_vrach + "', '" +
@@ -102,6 +102,7 @@ namespace ObiGarm.Users.Vracah
                         int result = sqlConfiguration.sqlQuery(sql_add_user);
                         if (result == 500)
                         {
+                            txt_name.Text = sql_add_user;
                             MessageBox.Show("Хатоги ба вучуд омад!", "Сообщения", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
                         else
@@ -159,7 +160,7 @@ namespace ObiGarm.Users.Vracah
             {
                 if (password_vrach.Trim() == check_password_vrach.Trim())
                 {
-                    if (sqlConfiguration.sqlSelectQuery(sql_user_check).Rows.Count != 2 && (sqlConfiguration.sqlSelectQuery(sql_user_check).Rows.Count == 1 || sqlConfiguration.sqlSelectQuery(sql_user_check).Rows.Count == 0))
+                    if (sqlConfiguration.sqlSelectQuery(sql_user_check).Rows.Count <= 1)
                     {
                         int result = sqlConfiguration.sqlQuery(sql_update_user);
                         if (result == 500)
