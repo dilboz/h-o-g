@@ -299,6 +299,12 @@
     <Compile Include="LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Mnitor\ManitorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mnitor\ManitorForm.Designer.cs">
+      <DependentUpon>ManitorForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Regisrarura\AddCllient.cs">
@@ -534,6 +540,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mnitor\ManitorForm.resx">
+      <DependentUpon>ManitorForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">

@@ -232,8 +232,8 @@ namespace ObiGarm.Users
 
         private void logout_button_Click(object sender, EventArgs e)
         {
-            loaddingFrom loaddingFrom = new loaddingFrom();
-            loaddingFrom.Show();
+            LoginForm loginForm = new LoginForm();
+            loginForm.Show();
             this.Hide();
         }
 

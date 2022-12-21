@@ -106,5 +106,12 @@ namespace ObiGarm.Regisrarura
             colorsButton(2);
             openChildForm(new IsClient());
         }
+
+        private void logout_button_Click(object sender, EventArgs e)
+        {
+            LoginForm loginForm = new LoginForm();
+            loginForm.Show();
+            this.Hide();
+        }
     }
 }

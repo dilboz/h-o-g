@@ -16,6 +16,8 @@ namespace ObiGarm.Vrach
         SqlConfiguration sqlConfiguration;
         private bool is_check_kort=false;
 
+        private string id_client;
+
         public MainFormVrach()
         {
             InitializeComponent();
@@ -33,6 +35,17 @@ namespace ObiGarm.Vrach
             combo_client.SelectedIndex = -1;
         }
 
+        void display(string id_client)
+        {
+            string sql = "select services.name as 'name_services', concat(users.surname, ' ', users.name) as 'ful_name_user', services_client.time as 'time' " +
+                "from services_client " +
+                "inner join services on services_client.id_services = services.id  " +
+                "inner join users on services_client.id_users = users.id " +
+                $"where services_client.id_client = '{id_client}' ";
+
+            sqlConfiguration.displayListExpress(sql, grid_contol);
+        }
+
         void check_is_client()
         {
             if (is_check_kort == false)
@@ -47,11 +60,12 @@ namespace ObiGarm.Vrach
             }
         }
 
-        void check_btn_add_services()
+        public void check_btn_add_services()
         {
             if (combo_client.Text!="")
             {
                 btn_add_services.Visible = true;
+                display(combo_client.SelectedValue.ToString());
             }
             else
             {
@@ -78,24 +92,34 @@ namespace ObiGarm.Vrach
         }
 
 
-        private void combo_client_SelectedValueChanged(object sender, EventArgs e)
-        {
-            
-           
-        }
-
-        private void combo_client_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            
-        }
-
         private void combo_client_SelectionChangeCommitted(object sender, EventArgs e)
         {
             if ( combo_client.SelectedValue.ToString()!="")
             {
                 check_btn_add_services();
                 select_info(combo_client.SelectedValue.ToString());
+
+                id_client = combo_client.SelectedValue.ToString();
             }
+        }
+
+
+        private void MainFormVrach_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btn_add_services_Click(object sender, EventArgs e)
+        {
+            AddServicesForClient addServicesForClient = new AddServicesForClient(this, combo_client.SelectedValue.ToString(), "", "");
+            addServicesForClient.ShowDialog();
+        }
+
+        private void logout_button_Click(object sender, EventArgs e)
+        {
+            LoginForm loginForm = new LoginForm();
+            loginForm.Show();
+            this.Hide();
         }
     }
 }

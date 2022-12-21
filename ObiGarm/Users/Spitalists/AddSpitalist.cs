@@ -112,7 +112,9 @@ namespace ObiGarm.Users.Spitalists
 
             string sql_user_check = "select * from users where login = '" + login_spitalist + "' and point= '2' and deleted is null";
 
-            string sql_add_user = "insert into users (name, surname, login, password, point, room_number, id_manitor, work_time_start, work_time_end) values('" +
+
+            string sql_add_user = "insert into users (name, surname, login, password, point, room_number, id_manitor, work_time_start, end_date_time_services, work_time_end) values('" +
+
                 name_spitalist + "', '" +
                 surname_spitalist + "', '" +
                 login_spitalist + "', '" +
@@ -121,6 +123,7 @@ namespace ObiGarm.Users.Spitalists
                 number_room_spitalist + "', '" +
                 manitor_id + "', '" +
                 time_start_work + "', '" +
+                DateTime.Now.ToString("yyyy-MM-dd ") + time_start_work + "', '" +
                 time_end_work + "');";
 
             if (name_spitalist.Trim() != "" && surname_spitalist.Trim() != "" && login_spitalist.Trim() != "" && password_spitalist.Trim() != "" && check_password_spitalist.Trim() != "" 
@@ -133,6 +136,7 @@ namespace ObiGarm.Users.Spitalists
                         int result = sqlConfiguration.sqlQuery(sql_add_user);
                         if (result == 500)
                         {
+                            txt_name.Text = sql_add_user;
                             MessageBox.Show("Хатоги ба вучуд омад!", "Сообщения", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
                         else
@@ -194,6 +198,7 @@ namespace ObiGarm.Users.Spitalists
                "room_number = '" + number_room_spitalist + "', " +
                "id_manitor = '" + manitor_id + "', " +
                "work_time_start = '" + time_start_work + "', " +
+               "end_date_time_services = '" + DateTime.Now.ToString("yyyy-MM-dd ") + time_start_work + "', " +
                "work_time_end = '" + time_end_work +  "' " +
               " where id = '" + id + "'";
 

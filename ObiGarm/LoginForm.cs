@@ -1,6 +1,7 @@
 ﻿using ObiGarm.Accounting;
 using ObiGarm.Administration;
 using ObiGarm.ClassDatabase;
+using ObiGarm.Mnitor;
 using ObiGarm.Regisrarura;
 using ObiGarm.Users;
 using ObiGarm.Vrach;
@@ -208,6 +209,8 @@ namespace ObiGarm
                         if (tabel_select_user.Rows[0]["point"].ToString() == "3")
                         {
                             MainFormVrach mainFormVrach = new MainFormVrach();
+                            ManitorForm manitorForm = new ManitorForm();
+                            manitorForm.Show();
                             mainFormVrach.Show();
                             this.Hide();
                         }

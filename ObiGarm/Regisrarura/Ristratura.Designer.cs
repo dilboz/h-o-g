@@ -158,6 +158,7 @@
             this.logout_button.TabIndex = 24;
             this.logout_button.Text = "Баромадан";
             this.logout_button.UseVisualStyleBackColor = false;
+            this.logout_button.Click += new System.EventHandler(this.logout_button_Click);
             // 
             // user_info_label
             // 
