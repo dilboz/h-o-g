@@ -56,11 +56,10 @@
             this.group_add_get_kort.Controls.Add(this.label_number_kort);
             this.group_add_get_kort.Controls.Add(this.panel_botton);
             this.group_add_get_kort.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.group_add_get_kort.Location = new System.Drawing.Point(12, 12);
-            this.group_add_get_kort.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.group_add_get_kort.Location = new System.Drawing.Point(10, 10);
             this.group_add_get_kort.Name = "group_add_get_kort";
-            this.group_add_get_kort.Padding = new System.Windows.Forms.Padding(6);
-            this.group_add_get_kort.Size = new System.Drawing.Size(625, 228);
+            this.group_add_get_kort.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.group_add_get_kort.Size = new System.Drawing.Size(536, 185);
             this.group_add_get_kort.TabIndex = 1;
             this.group_add_get_kort.Text = "Малумотҳо";
             // 
@@ -76,20 +75,19 @@
             this.combo_type_kort.Font = new System.Drawing.Font("Segoe UI", 8.25F);
             this.combo_type_kort.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.combo_type_kort.ItemHeight = 30;
-            this.combo_type_kort.Location = new System.Drawing.Point(8, 114);
-            this.combo_type_kort.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.combo_type_kort.Location = new System.Drawing.Point(7, 92);
             this.combo_type_kort.Name = "combo_type_kort";
-            this.combo_type_kort.Size = new System.Drawing.Size(609, 36);
+            this.combo_type_kort.Size = new System.Drawing.Size(522, 36);
             this.combo_type_kort.TabIndex = 39;
             // 
             // label_ty_kort
             // 
             this.label_ty_kort.Dock = System.Windows.Forms.DockStyle.Top;
             this.label_ty_kort.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_ty_kort.Location = new System.Drawing.Point(8, 86);
+            this.label_ty_kort.Location = new System.Drawing.Point(7, 69);
             this.label_ty_kort.Name = "label_ty_kort";
-            this.label_ty_kort.Padding = new System.Windows.Forms.Padding(0, 6, 0, 0);
-            this.label_ty_kort.Size = new System.Drawing.Size(609, 28);
+            this.label_ty_kort.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
+            this.label_ty_kort.Size = new System.Drawing.Size(522, 23);
             this.label_ty_kort.TabIndex = 37;
             this.label_ty_kort.Text = "Миқдори маблағ";
             // 
@@ -121,10 +119,9 @@
             this.txt_number_kort.IconRight = null;
             this.txt_number_kort.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_number_kort.Lines = new string[0];
-            this.txt_number_kort.Location = new System.Drawing.Point(8, 53);
-            this.txt_number_kort.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_number_kort.Location = new System.Drawing.Point(7, 44);
             this.txt_number_kort.MaxLength = 32767;
-            this.txt_number_kort.MinimumSize = new System.Drawing.Size(117, 31);
+            this.txt_number_kort.MinimumSize = new System.Drawing.Size(100, 25);
             this.txt_number_kort.Modified = false;
             this.txt_number_kort.Multiline = false;
             this.txt_number_kort.Name = "txt_number_kort";
@@ -157,7 +154,7 @@
             this.txt_number_kort.SelectionLength = 0;
             this.txt_number_kort.SelectionStart = 0;
             this.txt_number_kort.ShortcutsEnabled = true;
-            this.txt_number_kort.Size = new System.Drawing.Size(609, 33);
+            this.txt_number_kort.Size = new System.Drawing.Size(522, 25);
             this.txt_number_kort.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
             this.txt_number_kort.TabIndex = 36;
             this.txt_number_kort.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -173,11 +170,10 @@
             this.label_number_kort.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_number_kort.Appearance.Options.UseFont = true;
             this.label_number_kort.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label_number_kort.Location = new System.Drawing.Point(8, 34);
-            this.label_number_kort.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.label_number_kort.Location = new System.Drawing.Point(7, 28);
             this.label_number_kort.Name = "label_number_kort";
-            this.label_number_kort.Padding = new System.Windows.Forms.Padding(6, 0, 0, 0);
-            this.label_number_kort.Size = new System.Drawing.Size(107, 19);
+            this.label_number_kort.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.label_number_kort.Size = new System.Drawing.Size(85, 16);
             this.label_number_kort.TabIndex = 33;
             this.label_number_kort.Text = "Рамзи корт:";
             // 
@@ -188,11 +184,10 @@
             this.panel_botton.Controls.Add(this.lbl_tab);
             this.panel_botton.Controls.Add(this.btn_creat);
             this.panel_botton.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel_botton.Location = new System.Drawing.Point(8, 173);
-            this.panel_botton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panel_botton.Location = new System.Drawing.Point(7, 140);
             this.panel_botton.Name = "panel_botton";
-            this.panel_botton.Padding = new System.Windows.Forms.Padding(9, 10, 9, 10);
-            this.panel_botton.Size = new System.Drawing.Size(609, 47);
+            this.panel_botton.Padding = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.panel_botton.Size = new System.Drawing.Size(522, 38);
             this.panel_botton.TabIndex = 32;
             // 
             // btn_hide
@@ -203,10 +198,9 @@
             this.btn_hide.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_hide.Font = new System.Drawing.Font("Constantia", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_hide.ForeColor = System.Drawing.Color.White;
-            this.btn_hide.Location = new System.Drawing.Point(305, 10);
-            this.btn_hide.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_hide.Location = new System.Drawing.Point(261, 8);
             this.btn_hide.Name = "btn_hide";
-            this.btn_hide.Size = new System.Drawing.Size(140, 27);
+            this.btn_hide.Size = new System.Drawing.Size(120, 22);
             this.btn_hide.TabIndex = 3;
             this.btn_hide.Text = "Баромадан";
             this.btn_hide.UseVisualStyleBackColor = false;
@@ -215,9 +209,9 @@
             // lbl_tab
             // 
             this.lbl_tab.Dock = System.Windows.Forms.DockStyle.Right;
-            this.lbl_tab.Location = new System.Drawing.Point(445, 10);
+            this.lbl_tab.Location = new System.Drawing.Point(381, 8);
             this.lbl_tab.Name = "lbl_tab";
-            this.lbl_tab.Size = new System.Drawing.Size(15, 27);
+            this.lbl_tab.Size = new System.Drawing.Size(13, 22);
             this.lbl_tab.TabIndex = 2;
             // 
             // btn_creat
@@ -228,10 +222,9 @@
             this.btn_creat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_creat.Font = new System.Drawing.Font("Constantia", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_creat.ForeColor = System.Drawing.Color.White;
-            this.btn_creat.Location = new System.Drawing.Point(460, 10);
-            this.btn_creat.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_creat.Location = new System.Drawing.Point(394, 8);
             this.btn_creat.Name = "btn_creat";
-            this.btn_creat.Size = new System.Drawing.Size(140, 27);
+            this.btn_creat.Size = new System.Drawing.Size(120, 22);
             this.btn_creat.TabIndex = 1;
             this.btn_creat.Text = "Сохтан";
             this.btn_creat.UseVisualStyleBackColor = false;
@@ -239,16 +232,15 @@
             // 
             // AddKort
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(649, 252);
+            this.ClientSize = new System.Drawing.Size(556, 205);
             this.Controls.Add(this.group_add_get_kort);
             this.IconOptions.ShowIcon = false;
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "AddKort";
-            this.Padding = new System.Windows.Forms.Padding(12);
+            this.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Сотани корт";

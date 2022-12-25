@@ -225,6 +225,7 @@ namespace ObiGarm
                     else
                     {
                         MessageBox.Show("рамз ва Логин дакик ворид кунед!", "Сообщения", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        txt_login.Text = select_user;
                     }
 
                 }
