@@ -121,7 +121,7 @@
             this.panel_top.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_top.Location = new System.Drawing.Point(0, 0);
             this.panel_top.Name = "panel_top";
-            this.panel_top.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.panel_top.Padding = new System.Windows.Forms.Padding(10);
             this.panel_top.Size = new System.Drawing.Size(1229, 38);
             this.panel_top.TabIndex = 6;
             // 
@@ -483,7 +483,7 @@
             this.panel_grid_control_and_charts.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_grid_control_and_charts.Location = new System.Drawing.Point(0, 140);
             this.panel_grid_control_and_charts.Name = "panel_grid_control_and_charts";
-            this.panel_grid_control_and_charts.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.panel_grid_control_and_charts.Padding = new System.Windows.Forms.Padding(10);
             this.panel_grid_control_and_charts.Size = new System.Drawing.Size(1229, 491);
             this.panel_grid_control_and_charts.TabIndex = 13;
             // 

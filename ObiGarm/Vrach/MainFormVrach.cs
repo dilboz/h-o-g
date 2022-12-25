@@ -23,17 +23,17 @@ namespace ObiGarm.Vrach
             InitializeComponent();
             sqlConfiguration = new SqlConfiguration();
             user_info_label.Text = "Истифодабаранда: " + SettingsDatabase.name_user + " " + SettingsDatabase.surname_user;
-            display_client();
-            check_is_client();
+            //display_client();
             check_btn_add_services();
+            txt_numeb_kort.Focus();
         }
 
-        void display_client()
-        {
-            string sql = "select id, concat(surname , ' ' , name , ' ' , patromic) as full_name from client where enable=1";
-            sqlConfiguration.LoadCombo(sql, "full_name", "id", combo_client);
-            combo_client.SelectedIndex = -1;
-        }
+        //void display_client()
+        //{
+        //    string sql = "select id, concat(surname , ' ' , name , ' ' , patromic) as full_name from client where enable=1";
+        //    sqlConfiguration.LoadCombo(sql, "full_name", "id", combo_client);
+        //    combo_client.SelectedIndex = -1;
+        //}
 
         void display(string id_client)
         {
@@ -46,19 +46,7 @@ namespace ObiGarm.Vrach
             sqlConfiguration.displayListExpress(sql, grid_contol);
         }
 
-        void check_is_client()
-        {
-            if (is_check_kort == false)
-            {
-                panel_search_client.Visible = true;
-                button_active_kort.BackColor = Color.Red;
-                button_active_kort.Text = "Фаол кардани корт санҷ";
-            }else {
-                panel_search_client.Visible = false;
-                button_active_kort.BackColor = Color.FromArgb(65, 163, 98);
-                button_active_kort.Text = "Хомуш кардани кортсанҷ";
-            }
-        }
+       
 
         public void check_btn_add_services()
         {
@@ -89,6 +77,16 @@ namespace ObiGarm.Vrach
             txt_sex.Text= dataTable.Rows[0]["sex"].ToString();
             txt_time_start.Text= dataTable.Rows[0]["date_time_start"].ToString();
             txt_end_time.Text= dataTable.Rows[0]["date_time_start"].ToString();
+            if (txt_full_name.Text!="")
+            {
+                btn_add_services.Visible = true;
+
+            }
+            else
+            {
+                btn_add_services.Visible = false;
+            }
+
         }
 
 
@@ -111,7 +109,7 @@ namespace ObiGarm.Vrach
 
         private void btn_add_services_Click(object sender, EventArgs e)
         {
-            AddServicesForClient addServicesForClient = new AddServicesForClient(this, combo_client.SelectedValue.ToString(), "", "");
+            AddServicesForClient addServicesForClient = new AddServicesForClient(this, id_client, "", "");
             addServicesForClient.ShowDialog();
         }
 
@@ -120,6 +118,68 @@ namespace ObiGarm.Vrach
             LoginForm loginForm = new LoginForm();
             loginForm.Show();
             this.Hide();
+        }
+
+        private void button_active_kort_Click(object sender, EventArgs e)
+        {
+            txt_full_name.Focus();
+            txt_numeb_kort.Focus();
+        }
+
+        private void txt_numeb_kort_TextChanged(object sender, EventArgs e)
+        {
+            if (txt_numeb_kort.Text.Length == 20)
+            {
+                txt_numeb_kort.Text = txt_numeb_kort.Text.Substring(10, 10);
+                check_klient(txt_numeb_kort.Text);
+                txt_full_name.Focus();
+                txt_numeb_kort.Focus();
+            }
+            if (txt_numeb_kort.Text.Length == 10)
+            {
+                check_klient(txt_numeb_kort.Text);
+                txt_full_name.Focus();
+                txt_numeb_kort.Focus();
+            }
+
+            
+        }
+
+        void check_klient(string kort) {
+
+            try
+            {
+                DataTable dataTable_kort = sqlConfiguration.sqlSelectQuery($"SELECT id, kod_kort FROM obigarm.kort where kod_kort='{kort}';");
+
+                string id_kort;
+                if (dataTable_kort.Rows.Count == 0)
+                {
+                    MessageBox.Show("Чунин корт вучуд надорад!!!"); return;
+                }
+                else
+                {
+                    id_kort = dataTable_kort.Rows[0]["id"].ToString();
+                }
+
+
+                DataTable dataTable_id_client = sqlConfiguration.sqlSelectQuery($"select id, is_for_vrach, id_kort from client where deleted is null and is_for_vrach ='1' and id_kort ='{id_kort}';");
+                select_info(dataTable_id_client.Rows[0]["id"].ToString());
+
+                id_client = dataTable_id_client.Rows[0]["id"].ToString();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+
+           
+        }
+
+        private void MainFormVrach_Shown(object sender, EventArgs e)
+        {
+            txt_numeb_kort.Focus();
+
         }
     }
 }

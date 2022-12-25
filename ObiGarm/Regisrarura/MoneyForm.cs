@@ -76,5 +76,6 @@ namespace ObiGarm.Regisrarura
                 add_money(id_client_me);
             }
         }
+
     }
 }

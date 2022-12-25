@@ -52,9 +52,7 @@ namespace ObiGarm.Regisrarura.Lists
         }
 
         private void btn_inser_vrach_Click(object sender, EventArgs e)
-        {
-            string sql = $"update users SET summa_cliet = summa_cliet + 1 where id = '{id_vrach}';";
-            sqlConfiguration.sqlSelectQuery(sql);
+        {           
             addCllient_.name_doctor = txt_vrach.Text;
             addCllient_.id_vrach = id_vrach;
             this.Close();

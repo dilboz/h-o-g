@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddKort));
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties5 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
             this.view_kort = new DevExpress.XtraBars.FormAssistant();
             this.group_add_get_kort = new DevExpress.XtraEditors.GroupControl();
             this.combo_type_kort = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -58,7 +58,7 @@
             this.group_add_get_kort.Dock = System.Windows.Forms.DockStyle.Fill;
             this.group_add_get_kort.Location = new System.Drawing.Point(10, 10);
             this.group_add_get_kort.Name = "group_add_get_kort";
-            this.group_add_get_kort.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.group_add_get_kort.Padding = new System.Windows.Forms.Padding(5);
             this.group_add_get_kort.Size = new System.Drawing.Size(536, 185);
             this.group_add_get_kort.TabIndex = 1;
             this.group_add_get_kort.Text = "Малумотҳо";
@@ -75,7 +75,7 @@
             this.combo_type_kort.Font = new System.Drawing.Font("Segoe UI", 8.25F);
             this.combo_type_kort.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.combo_type_kort.ItemHeight = 30;
-            this.combo_type_kort.Location = new System.Drawing.Point(7, 92);
+            this.combo_type_kort.Location = new System.Drawing.Point(7, 96);
             this.combo_type_kort.Name = "combo_type_kort";
             this.combo_type_kort.Size = new System.Drawing.Size(522, 36);
             this.combo_type_kort.TabIndex = 39;
@@ -84,12 +84,12 @@
             // 
             this.label_ty_kort.Dock = System.Windows.Forms.DockStyle.Top;
             this.label_ty_kort.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_ty_kort.Location = new System.Drawing.Point(7, 69);
+            this.label_ty_kort.Location = new System.Drawing.Point(7, 73);
             this.label_ty_kort.Name = "label_ty_kort";
             this.label_ty_kort.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
             this.label_ty_kort.Size = new System.Drawing.Size(522, 23);
             this.label_ty_kort.TabIndex = 37;
-            this.label_ty_kort.Text = "Миқдори маблағ";
+            this.label_ty_kort.Text = "Намуди корт";
             // 
             // txt_number_kort
             // 
@@ -125,26 +125,26 @@
             this.txt_number_kort.Modified = false;
             this.txt_number_kort.Multiline = false;
             this.txt_number_kort.Name = "txt_number_kort";
-            stateProperties1.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties1.FillColor = System.Drawing.Color.Empty;
-            stateProperties1.ForeColor = System.Drawing.Color.Empty;
-            stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txt_number_kort.OnActiveState = stateProperties1;
-            stateProperties2.BorderColor = System.Drawing.Color.Empty;
-            stateProperties2.FillColor = System.Drawing.Color.White;
-            stateProperties2.ForeColor = System.Drawing.Color.Empty;
-            stateProperties2.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.txt_number_kort.OnDisabledState = stateProperties2;
-            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties3.FillColor = System.Drawing.Color.Empty;
-            stateProperties3.ForeColor = System.Drawing.Color.Empty;
-            stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txt_number_kort.OnHoverState = stateProperties3;
-            stateProperties4.BorderColor = System.Drawing.Color.Silver;
-            stateProperties4.FillColor = System.Drawing.Color.White;
-            stateProperties4.ForeColor = System.Drawing.Color.Empty;
-            stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txt_number_kort.OnIdleState = stateProperties4;
+            stateProperties5.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties5.FillColor = System.Drawing.Color.Empty;
+            stateProperties5.ForeColor = System.Drawing.Color.Empty;
+            stateProperties5.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txt_number_kort.OnActiveState = stateProperties5;
+            stateProperties6.BorderColor = System.Drawing.Color.Empty;
+            stateProperties6.FillColor = System.Drawing.Color.White;
+            stateProperties6.ForeColor = System.Drawing.Color.Empty;
+            stateProperties6.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.txt_number_kort.OnDisabledState = stateProperties6;
+            stateProperties7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties7.FillColor = System.Drawing.Color.Empty;
+            stateProperties7.ForeColor = System.Drawing.Color.Empty;
+            stateProperties7.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txt_number_kort.OnHoverState = stateProperties7;
+            stateProperties8.BorderColor = System.Drawing.Color.Silver;
+            stateProperties8.FillColor = System.Drawing.Color.White;
+            stateProperties8.ForeColor = System.Drawing.Color.Empty;
+            stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txt_number_kort.OnIdleState = stateProperties8;
             this.txt_number_kort.PasswordChar = '\0';
             this.txt_number_kort.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txt_number_kort.PlaceholderText = "";
@@ -154,7 +154,7 @@
             this.txt_number_kort.SelectionLength = 0;
             this.txt_number_kort.SelectionStart = 0;
             this.txt_number_kort.ShortcutsEnabled = true;
-            this.txt_number_kort.Size = new System.Drawing.Size(522, 25);
+            this.txt_number_kort.Size = new System.Drawing.Size(522, 29);
             this.txt_number_kort.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
             this.txt_number_kort.TabIndex = 36;
             this.txt_number_kort.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -164,6 +164,7 @@
             this.txt_number_kort.TextPlaceholder = "";
             this.txt_number_kort.UseSystemPasswordChar = false;
             this.txt_number_kort.WordWrap = true;
+            this.txt_number_kort.TextChanged += new System.EventHandler(this.txt_number_kort_TextChanged);
             // 
             // label_number_kort
             // 
@@ -186,7 +187,7 @@
             this.panel_botton.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel_botton.Location = new System.Drawing.Point(7, 140);
             this.panel_botton.Name = "panel_botton";
-            this.panel_botton.Padding = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.panel_botton.Padding = new System.Windows.Forms.Padding(8);
             this.panel_botton.Size = new System.Drawing.Size(522, 38);
             this.panel_botton.TabIndex = 32;
             // 
@@ -240,7 +241,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "AddKort";
-            this.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.Padding = new System.Windows.Forms.Padding(10);
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Сотани корт";

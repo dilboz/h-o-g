@@ -205,7 +205,7 @@
             this.panel_btn_kort.Name = "panel_btn_kort";
             this.panel_btn_kort.Padding = new System.Windows.Forms.Padding(5);
             this.panel_btn_kort.Size = new System.Drawing.Size(267, 30);
-            this.panel_btn_kort.TabIndex = 28;
+            this.panel_btn_kort.TabIndex = 30;
             // 
             // btn_clear_kort
             // 
@@ -245,6 +245,7 @@
             this.inser_kort.TabIndex = 1;
             this.inser_kort.Text = "Кротро санҷидан";
             this.inser_kort.UseVisualStyleBackColor = false;
+            this.inser_kort.Click += new System.EventHandler(this.inser_kort_Click);
             // 
             // txt_kort
             // 
@@ -303,7 +304,7 @@
             this.txt_kort.PasswordChar = '\0';
             this.txt_kort.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txt_kort.PlaceholderText = "Корт";
-            this.txt_kort.ReadOnly = true;
+            this.txt_kort.ReadOnly = false;
             this.txt_kort.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txt_kort.SelectedText = "";
             this.txt_kort.SelectionLength = 0;
@@ -311,7 +312,7 @@
             this.txt_kort.ShortcutsEnabled = true;
             this.txt_kort.Size = new System.Drawing.Size(267, 29);
             this.txt_kort.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
-            this.txt_kort.TabIndex = 27;
+            this.txt_kort.TabIndex = 29;
             this.txt_kort.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txt_kort.TextMarginBottom = 0;
             this.txt_kort.TextMarginLeft = 5;
@@ -319,6 +320,7 @@
             this.txt_kort.TextPlaceholder = "Корт";
             this.txt_kort.UseSystemPasswordChar = false;
             this.txt_kort.WordWrap = true;
+            this.txt_kort.TextChanged += new System.EventHandler(this.txt_kort_TextChanged);
             // 
             // lbl_kort
             // 
@@ -1372,12 +1374,12 @@
         private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox txt_room;
         private System.Windows.Forms.Label lbl_room;
         private DevExpress.XtraEditors.GroupControl group_kort;
+        private System.Windows.Forms.Label lbl_kort;
+        private DevExpress.XtraEditors.TimeEdit time_first_dey;
         private System.Windows.Forms.Panel panel_btn_kort;
         private System.Windows.Forms.Button btn_clear_kort;
         private System.Windows.Forms.Label label_tab_2;
         private System.Windows.Forms.Button inser_kort;
         private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox txt_kort;
-        private System.Windows.Forms.Label lbl_kort;
-        private DevExpress.XtraEditors.TimeEdit time_first_dey;
     }
 }

@@ -64,6 +64,19 @@ namespace ObiGarm.Regisrarura
                 money = "0";
                 is_for_vrach = "1";
             }
+
+            DataTable dataTable_kort = sqlConfiguration.sqlSelectQuery($"SELECT id, kod_kort FROM obigarm.kort where kod_kort='{txt_kort.Text}';");
+
+
+            if (dataTable_kort.Rows.Count==0)
+            {
+                msg("Чунин корт вучуд надорад!!!"); return;
+            }
+            else
+            {
+                id_kort = dataTable_kort.Rows[0]["id"].ToString();
+            }
+
             string vrach = id_vrach;
             string room = id_room;
             string kord = id_kort;
@@ -90,6 +103,8 @@ namespace ObiGarm.Regisrarura
                 else
                 {
                     MessageBox.Show("Шумо бо мувафақият муштариро сабт намудед!", "Сообщения", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    string sql = $"update users SET summa_cliet = summa_cliet + 1 where id = '{id_vrach}';";
+                    sqlConfiguration.sqlSelectQuery(sql);                
                     clear_all();
                 }
             }
@@ -107,8 +122,9 @@ namespace ObiGarm.Regisrarura
 
         private void btn_creat_Click(object sender, EventArgs e)
         {
+
             addClient();
-        }
+        } 
 
         private void AddCllient_Shown(object sender, EventArgs e)
         {
@@ -120,14 +136,7 @@ namespace ObiGarm.Regisrarura
 
         private void btn_inser_docrot_Click(object sender, EventArgs e)
         {
-            if (id_vrach != "" && name_doctor != "")
-            {
-                string sql = $"update users SET summa_cliet = summa_cliet - 1 where id = '{id_vrach}';";
-                sqlConfiguration.sqlSelectQuery(sql);
-                id_vrach = "";
-                name_doctor = "";
-                txt_name_doctor.Text = "";
-            }
+            
             ListVrach listVrach = new ListVrach(this);
             listVrach.ShowDialog();
             txt_name_doctor.Text = name_doctor;
@@ -164,23 +173,39 @@ namespace ObiGarm.Regisrarura
         {
             if (id_vrach != "" && name_doctor != "")
             {
-                string sql = $"update users SET summa_cliet = summa_cliet - 1 where id = '{id_vrach}';";
-                sqlConfiguration.sqlSelectQuery(sql);
+               
                 id_vrach = "";
                 name_doctor = "";
                 txt_name_doctor.Text = "";
             }
         }
 
-        private void btn_clear_kort_Click(object sender, EventArgs e)
-        {
-            addClient();
-            MessageBox.Show(sql_add_client);
-        }
 
         private void btn_сlear_Click(object sender, EventArgs e)
         {
             clear_all();
         }
+
+        private void inser_kort_Click(object sender, EventArgs e)
+        {
+            txt_kort.Focus();
+        }
+
+        private void btn_clear_kort_Click(object sender, EventArgs e)
+        {
+            txt_kort.Clear();
+            txt_kort.Focus();
+        }
+
+        private void txt_kort_TextChanged(object sender, EventArgs e)
+        {
+            if (txt_kort.Text.Length == 20)
+            {
+                txt_kort.Text = txt_kort.Text.Substring(10, 10);
+                txt_name.Focus();
+                txt_kort.Focus();
+            }
+        }
+
     }
 }

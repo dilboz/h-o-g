@@ -28,20 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties5 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddServicesForClient));
             Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties5 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
             this.form_view = new DevExpress.XtraBars.FormAssistant();
             this.formAssistant1 = new DevExpress.XtraBars.FormAssistant();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.panel_show_hide = new System.Windows.Forms.Panel();
-            this.time_services_for_client = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
             this.label_time = new System.Windows.Forms.Label();
             this.combo_spitsqlist = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label_spitsqlist = new System.Windows.Forms.Label();
@@ -53,6 +52,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txt_full_name = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
             this.lbl_surname = new System.Windows.Forms.Label();
+            this.time_services_for_client = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             this.panel_show_hide.SuspendLayout();
@@ -86,80 +86,6 @@
             this.panel_show_hide.Name = "panel_show_hide";
             this.panel_show_hide.Size = new System.Drawing.Size(545, 100);
             this.panel_show_hide.TabIndex = 9;
-            // 
-            // time_services_for_client
-            // 
-            this.time_services_for_client.AcceptsReturn = false;
-            this.time_services_for_client.AcceptsTab = false;
-            this.time_services_for_client.AnimationSpeed = 200;
-            this.time_services_for_client.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.time_services_for_client.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.time_services_for_client.BackColor = System.Drawing.Color.Transparent;
-            this.time_services_for_client.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("time_services_for_client.BackgroundImage")));
-            this.time_services_for_client.BorderColorActive = System.Drawing.Color.DodgerBlue;
-            this.time_services_for_client.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(161)))), ((int)(((byte)(161)))));
-            this.time_services_for_client.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.time_services_for_client.BorderColorIdle = System.Drawing.Color.Silver;
-            this.time_services_for_client.BorderRadius = 15;
-            this.time_services_for_client.BorderThickness = 1;
-            this.time_services_for_client.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.time_services_for_client.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.time_services_for_client.DefaultFont = new System.Drawing.Font("Segoe UI Semibold", 9.75F);
-            this.time_services_for_client.DefaultText = "";
-            this.time_services_for_client.Dock = System.Windows.Forms.DockStyle.Top;
-            this.time_services_for_client.FillColor = System.Drawing.Color.White;
-            this.time_services_for_client.HideSelection = true;
-            this.time_services_for_client.IconLeft = null;
-            this.time_services_for_client.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
-            this.time_services_for_client.IconPadding = 10;
-            this.time_services_for_client.IconRight = null;
-            this.time_services_for_client.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
-            this.time_services_for_client.Lines = new string[0];
-            this.time_services_for_client.Location = new System.Drawing.Point(0, 66);
-            this.time_services_for_client.MaxLength = 32767;
-            this.time_services_for_client.MinimumSize = new System.Drawing.Size(100, 25);
-            this.time_services_for_client.Modified = false;
-            this.time_services_for_client.Multiline = false;
-            this.time_services_for_client.Name = "time_services_for_client";
-            stateProperties1.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties1.FillColor = System.Drawing.Color.Empty;
-            stateProperties1.ForeColor = System.Drawing.Color.Empty;
-            stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.time_services_for_client.OnActiveState = stateProperties1;
-            stateProperties2.BorderColor = System.Drawing.Color.Empty;
-            stateProperties2.FillColor = System.Drawing.Color.White;
-            stateProperties2.ForeColor = System.Drawing.Color.Empty;
-            stateProperties2.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.time_services_for_client.OnDisabledState = stateProperties2;
-            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties3.FillColor = System.Drawing.Color.Empty;
-            stateProperties3.ForeColor = System.Drawing.Color.Empty;
-            stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.time_services_for_client.OnHoverState = stateProperties3;
-            stateProperties4.BorderColor = System.Drawing.Color.Silver;
-            stateProperties4.FillColor = System.Drawing.Color.White;
-            stateProperties4.ForeColor = System.Drawing.Color.Empty;
-            stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.time_services_for_client.OnIdleState = stateProperties4;
-            this.time_services_for_client.PasswordChar = '\0';
-            this.time_services_for_client.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.time_services_for_client.PlaceholderText = "Рӯз ва вақти таиншуда";
-            this.time_services_for_client.ReadOnly = true;
-            this.time_services_for_client.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.time_services_for_client.SelectedText = "";
-            this.time_services_for_client.SelectionLength = 0;
-            this.time_services_for_client.SelectionStart = 0;
-            this.time_services_for_client.ShortcutsEnabled = true;
-            this.time_services_for_client.Size = new System.Drawing.Size(545, 29);
-            this.time_services_for_client.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
-            this.time_services_for_client.TabIndex = 10;
-            this.time_services_for_client.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.time_services_for_client.TextMarginBottom = 0;
-            this.time_services_for_client.TextMarginLeft = 5;
-            this.time_services_for_client.TextMarginTop = 0;
-            this.time_services_for_client.TextPlaceholder = "Рӯз ва вақти таиншуда";
-            this.time_services_for_client.UseSystemPasswordChar = false;
-            this.time_services_for_client.WordWrap = true;
             // 
             // label_time
             // 
@@ -370,6 +296,80 @@
             this.lbl_surname.Text = "Номи пурра";
             this.lbl_surname.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // time_services_for_client
+            // 
+            this.time_services_for_client.AcceptsReturn = false;
+            this.time_services_for_client.AcceptsTab = false;
+            this.time_services_for_client.AnimationSpeed = 200;
+            this.time_services_for_client.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.time_services_for_client.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.time_services_for_client.BackColor = System.Drawing.Color.Transparent;
+            this.time_services_for_client.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("time_services_for_client.BackgroundImage")));
+            this.time_services_for_client.BorderColorActive = System.Drawing.Color.DodgerBlue;
+            this.time_services_for_client.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(161)))), ((int)(((byte)(161)))));
+            this.time_services_for_client.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.time_services_for_client.BorderColorIdle = System.Drawing.Color.Silver;
+            this.time_services_for_client.BorderRadius = 15;
+            this.time_services_for_client.BorderThickness = 1;
+            this.time_services_for_client.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.time_services_for_client.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.time_services_for_client.DefaultFont = new System.Drawing.Font("Segoe UI Semibold", 9.75F);
+            this.time_services_for_client.DefaultText = "";
+            this.time_services_for_client.Dock = System.Windows.Forms.DockStyle.Top;
+            this.time_services_for_client.FillColor = System.Drawing.Color.White;
+            this.time_services_for_client.HideSelection = true;
+            this.time_services_for_client.IconLeft = null;
+            this.time_services_for_client.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
+            this.time_services_for_client.IconPadding = 10;
+            this.time_services_for_client.IconRight = null;
+            this.time_services_for_client.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
+            this.time_services_for_client.Lines = new string[0];
+            this.time_services_for_client.Location = new System.Drawing.Point(0, 66);
+            this.time_services_for_client.MaxLength = 32767;
+            this.time_services_for_client.MinimumSize = new System.Drawing.Size(100, 25);
+            this.time_services_for_client.Modified = false;
+            this.time_services_for_client.Multiline = false;
+            this.time_services_for_client.Name = "time_services_for_client";
+            stateProperties1.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties1.FillColor = System.Drawing.Color.Empty;
+            stateProperties1.ForeColor = System.Drawing.Color.Empty;
+            stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.time_services_for_client.OnActiveState = stateProperties1;
+            stateProperties2.BorderColor = System.Drawing.Color.Empty;
+            stateProperties2.FillColor = System.Drawing.Color.White;
+            stateProperties2.ForeColor = System.Drawing.Color.Empty;
+            stateProperties2.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.time_services_for_client.OnDisabledState = stateProperties2;
+            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties3.FillColor = System.Drawing.Color.Empty;
+            stateProperties3.ForeColor = System.Drawing.Color.Empty;
+            stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.time_services_for_client.OnHoverState = stateProperties3;
+            stateProperties4.BorderColor = System.Drawing.Color.Silver;
+            stateProperties4.FillColor = System.Drawing.Color.White;
+            stateProperties4.ForeColor = System.Drawing.Color.Empty;
+            stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.time_services_for_client.OnIdleState = stateProperties4;
+            this.time_services_for_client.PasswordChar = '\0';
+            this.time_services_for_client.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.time_services_for_client.PlaceholderText = "Рӯз ва вақти таиншуда";
+            this.time_services_for_client.ReadOnly = true;
+            this.time_services_for_client.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.time_services_for_client.SelectedText = "";
+            this.time_services_for_client.SelectionLength = 0;
+            this.time_services_for_client.SelectionStart = 0;
+            this.time_services_for_client.ShortcutsEnabled = true;
+            this.time_services_for_client.Size = new System.Drawing.Size(545, 29);
+            this.time_services_for_client.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
+            this.time_services_for_client.TabIndex = 10;
+            this.time_services_for_client.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.time_services_for_client.TextMarginBottom = 0;
+            this.time_services_for_client.TextMarginLeft = 5;
+            this.time_services_for_client.TextMarginTop = 0;
+            this.time_services_for_client.TextPlaceholder = "Рӯз ва вақти таиншуда";
+            this.time_services_for_client.UseSystemPasswordChar = false;
+            this.time_services_for_client.WordWrap = true;
+            // 
             // AddServicesForClient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -407,9 +407,9 @@
         private System.Windows.Forms.Label lbl_tab;
         private System.Windows.Forms.Button btn_creat;
         private System.Windows.Forms.Panel panel_show_hide;
-        private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox time_services_for_client;
         private System.Windows.Forms.Label label_time;
         private Guna.UI2.WinForms.Guna2ComboBox combo_spitsqlist;
         private System.Windows.Forms.Label label_spitsqlist;
+        private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox time_services_for_client;
     }
 }

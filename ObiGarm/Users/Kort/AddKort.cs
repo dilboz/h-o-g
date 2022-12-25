@@ -183,5 +183,15 @@ namespace ObiGarm.Users.Kort
         {
             this.Close();
         }
+
+        private void txt_number_kort_TextChanged(object sender, EventArgs e)
+        {
+            if (txt_number_kort.Text.Length == 20)
+            {
+                txt_number_kort.Text = txt_number_kort.Text.Substring(10, 10);
+                combo_type_kort.Focus();
+                txt_number_kort.Focus();
+            }
+        }
     }
 }
