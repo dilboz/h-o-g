@@ -76,7 +76,7 @@ namespace ObiGarm.Vrach
             txt_birthday.Text= dataTable.Rows[0]["birthday"].ToString();
             txt_sex.Text= dataTable.Rows[0]["sex"].ToString();
             txt_time_start.Text= dataTable.Rows[0]["date_time_start"].ToString();
-            txt_end_time.Text= dataTable.Rows[0]["date_time_start"].ToString();
+            txt_end_time.Text= dataTable.Rows[0]["date_time_end"].ToString();
             if (txt_full_name.Text!="")
             {
                 btn_add_services.Visible = true;

@@ -681,8 +681,6 @@ C:\Users\dilbo\Desktop\OBIGARM\ObiGarm\obj\Debug\ObiGarm.exe
 C:\Users\dilbo\Desktop\OBIGARM\ObiGarm\obj\Debug\ObiGarm.pdb
 C:\Users\dilbo\Desktop\OBIGARM\ObiGarm\obj\Debug\ObiGarm.Users.Administration.AddAdministrator.resources
 C:\Users\dilbo\Desktop\OBIGARM\ObiGarm\obj\Debug\ObiGarm.Users.Administration.ListAdministrator.resources
-<<<<<<< HEAD
-=======
 C:\Users\User\Desktop\OBIGARM-master\ObiGarm\bin\Debug\ObiGarm.exe.config
 C:\Users\User\Desktop\OBIGARM-master\ObiGarm\bin\Debug\ObiGarm.exe
 C:\Users\User\Desktop\OBIGARM-master\ObiGarm\bin\Debug\ObiGarm.pdb
@@ -1025,5 +1023,4 @@ C:\Users\User\Desktop\OBIGARM-master\ObiGarm\obj\Debug\ObiGarm.csproj.CoreCompil
 C:\Users\User\Desktop\OBIGARM-master\ObiGarm\obj\Debug\ObiGarm.csproj.CopyComplete
 C:\Users\User\Desktop\OBIGARM-master\ObiGarm\obj\Debug\ObiGarm.exe
 C:\Users\User\Desktop\OBIGARM-master\ObiGarm\obj\Debug\ObiGarm.pdb
->>>>>>> 602ee3e71e9917747ab48381dde78e27fdbda803
 C:\Users\dilbo\Desktop\OBIGARM\ObiGarm\obj\Debug\ObiGarm.Mnitor.ManitorForm.resources

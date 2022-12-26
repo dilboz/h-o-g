@@ -20,6 +20,17 @@ namespace ObiGarm.Vrach
         private string txt_button;
         private string time_services;
 
+        private string id_spitsalist;
+
+        DateTime time_start_client;
+        DateTime time_end_client;
+
+        DateTime _time_services;
+
+        DateTime time_start_spit;
+        DateTime time_end_spit;
+
+
         public AddServicesForClient(MainFormVrach mainFormVrach, string id_client, string id_services_for_client, string txt_button)
         {
             InitializeComponent();
@@ -30,8 +41,14 @@ namespace ObiGarm.Vrach
             this.id_services_for_client = id_services_for_client;
             this.txt_button = txt_button;
 
-            string select_sql = $"select  client.id, concat(client.surname, ' ', client.name, ' ', client.patromic) as 'full_name' from client where id = '{this.id_client}'";
+            string select_sql = $"select  client.id, date_time_start, date_time_end, concat(client.surname, ' ', client.name, ' ', client.patromic) as 'full_name' from client where id = '{this.id_client}'";
             DataTable dataTable = sqlConfiguration.sqlSelectQuery(select_sql);
+
+            
+
+            time_start_client = Convert.ToDateTime(dataTable.Rows[0]["date_time_start"].ToString());
+            time_end_client = Convert.ToDateTime(dataTable.Rows[0]["date_time_end"].ToString());
+
             txt_full_name.Text = dataTable.Rows[0]["full_name"].ToString();
         }
 
@@ -42,6 +59,8 @@ namespace ObiGarm.Vrach
             combo_services.SelectedIndex = -1;
             panel_show_hide.Visible = false;
             time_services_for_client.Text = "";
+
+            
 
             string select_sql_spitsqlist;
             if (combo_services.Items.Count!=0)
@@ -72,6 +91,8 @@ namespace ObiGarm.Vrach
                 }
                 sqlConfiguration.LoadCombo(select_sql_spitsqlist, "name", "id", combo_spitsqlist);
 
+                id_spitsalist = combo_spitsqlist.SelectedValue.ToString();
+
                 //if (combo_spitsqlist.Items.Count == 0)
                 //{
                 //   // MessageBox.Show("Шумо бо чунин хизматрасонис спитсалист надоред!!");
@@ -94,10 +115,11 @@ namespace ObiGarm.Vrach
 
         private void combo_services_SelectionChangeCommitted(object sender, EventArgs e)
         {
-
-           
             if (combo_services.Items.Count != 0)
             {
+
+
+
                 if (combo_services.SelectedValue.ToString() != "")
                 {
                     string select_sql_spitsqlist = "select services_users.user_id as 'id', users.deleted as 'deleted_users', concat(users.surname, ' ', users.name)as 'name',  users.end_date_time_services as 'time_services_end' " +
@@ -107,6 +129,9 @@ namespace ObiGarm.Vrach
                       $"order by users.end_date_time_services";
                     sqlConfiguration.LoadCombo(select_sql_spitsqlist, "name", "id", combo_spitsqlist);
 
+                    id_services_for_client = combo_services.SelectedValue.ToString();
+
+                    
                 }
                
                
@@ -119,13 +144,20 @@ namespace ObiGarm.Vrach
                 }
                 else
                 {
+                    id_spitsalist = combo_spitsqlist.SelectedValue.ToString();
+
+                    DataTable dataTable_spit = sqlConfiguration.sqlSelectQuery($"SELECT * FROM obigarm.users where id ='{id_spitsalist}';");
+                   
+                    time_start_spit= Convert.ToDateTime(dataTable_spit.Rows[0]["work_time_start"].ToString());
+                    time_end_spit = Convert.ToDateTime(dataTable_spit.Rows[0]["work_time_end"].ToString());
+
                     panel_show_hide.Visible = true;
-                    time_services = DateTime.Parse(add_time(combo_spitsqlist.SelectedValue.ToString(), combo_services.SelectedValue.ToString())).ToString("yyyy-MM-dd hh:mm:ss");
- 
-                     time_services_for_client.Text = DateTime.Parse(add_time(combo_spitsqlist.SelectedValue.ToString(), combo_services.SelectedValue.ToString())).ToString("Рузи dd-MM-yyy соати hh:mm:ss");
+                  
 
 
                 }
+
+                lisе_data(time_start_client, time_end_client);
             }
             else
             {
@@ -135,66 +167,72 @@ namespace ObiGarm.Vrach
         }
 
 
-        private string add_time(string id_users, string services_id)
-        {
-            string sql_select_users = $"select * from users where id = {id_users}";
-            DataTable dataTable_users = sqlConfiguration.sqlSelectQuery(sql_select_users);
+        //private string add_time(string id_users, string services_id)
+        //{
+        //    string sql_select_users = $"select * from users where id = {id_users}";
+        //    DataTable dataTable_users = sqlConfiguration.sqlSelectQuery(sql_select_users);
 
-            string sql_select_serices = $"select * from services where id = {services_id}";
-            DataTable dataTable_services = sqlConfiguration.sqlSelectQuery(sql_select_serices);
+        //    string sql_select_serices = $"select * from services where id = {services_id}";
+        //    DataTable dataTable_services = sqlConfiguration.sqlSelectQuery(sql_select_serices);
 
-            string time_end = dataTable_users.Rows[0]["end_date_time_services"].ToString();
+        //    string time_end = dataTable_users.Rows[0]["end_date_time_services"].ToString();
 
-            double time_services_hh = double.Parse(Convert.ToDateTime(dataTable_services.Rows[0]["time_services"].ToString()).ToString("hh"));
-            double time_services_mm = double.Parse(Convert.ToDateTime(dataTable_services.Rows[0]["time_services"].ToString()).ToString("mm"));
-            double time_services_ss = double.Parse(Convert.ToDateTime(dataTable_services.Rows[0]["time_services"].ToString()).ToString("ss"));
+        //    double time_services_hh = double.Parse(Convert.ToDateTime(dataTable_services.Rows[0]["time_services"].ToString()).ToString("hh"));
+        //    double time_services_mm = double.Parse(Convert.ToDateTime(dataTable_services.Rows[0]["time_services"].ToString()).ToString("mm"));
+        //    double time_services_ss = double.Parse(Convert.ToDateTime(dataTable_services.Rows[0]["time_services"].ToString()).ToString("ss"));
 
-            string new_date;
+        //    string new_date;
 
-            if (Convert.ToDateTime(time_end) > DateTime.Now.Date)
-            {
-                new_date = (Convert.ToDateTime(time_end).AddHours(time_services_hh).AddMinutes(time_services_mm).AddSeconds(time_services_ss)).ToString();
+        //    if (Convert.ToDateTime(time_end) > DateTime.Now.Date)
+        //    {
+        //        new_date = (Convert.ToDateTime(time_end).AddHours(time_services_hh).AddMinutes(time_services_mm).AddSeconds(time_services_ss)).ToString();
 
-                if ((DateTime.Parse(DateTime.Parse("12:00:00").ToString("hh:MM:ss")) >= DateTime.Parse(DateTime.Parse(new_date).ToString("hh:MM:ss"))) && (DateTime.Parse(DateTime.Parse(new_date).ToString("hh:MM:ss")) >= DateTime.Parse(DateTime.Parse("13:00:00").ToString("hh:MM:ss"))))
-                {
-                    new_date = (Convert.ToDateTime(time_end).AddHours(time_services_hh + 1).AddMinutes(time_services_mm).AddSeconds(time_services_ss)).ToString();
-                }
-                else if ((DateTime.Parse(DateTime.Parse("12:00:00").ToString("hh:MM:ss")) <= DateTime.Parse(DateTime.Parse(new_date).ToString("hh:MM:ss"))) && (DateTime.Parse(DateTime.Parse(new_date).ToString("hh:MM:ss")) <= DateTime.Parse(DateTime.Parse("13:00:00").ToString("hh:MM:ss"))))
-                {
-                    new_date = (Convert.ToDateTime(time_end).AddHours(time_services_hh).AddMinutes(time_services_mm).AddSeconds(time_services_ss)).ToString();
-                }
-                else if (DateTime.Parse(DateTime.Parse(new_date).ToString("hh:MM:ss")) > (DateTime.Parse(DateTime.Parse(dataTable_users.Rows[0]["work_time_end"].ToString()).ToString("hh:MM:ss"))))
-                {
-                    time_end = DateTime.Now.ToString("yyyy-MM-dd ") + Convert.ToDateTime(dataTable_users.Rows[0]["work_time_start"].ToString()).ToString("hh:mm:ss");
-                    new_date = (Convert.ToDateTime(time_end).AddDays(1).AddHours(time_services_hh).AddMinutes(time_services_mm).AddSeconds(time_services_ss)).ToString();
-                }
-            }
-            else
-            {
-                time_end = DateTime.Now.ToString("yyyy-MM-dd ") + Convert.ToDateTime(dataTable_users.Rows[0]["work_time_start"].ToString()).ToString("hh:mm:ss");
-                new_date = (Convert.ToDateTime(time_end).AddHours(time_services_hh).AddMinutes(time_services_mm).AddSeconds(time_services_ss)).ToString();
-                if ((DateTime.Parse(DateTime.Parse("12:00:00").ToString("hh:MM:ss")) >= DateTime.Parse(DateTime.Parse(new_date).ToString("hh:MM:ss"))) && (DateTime.Parse(DateTime.Parse(new_date).ToString("hh:MM:ss")) >= DateTime.Parse(DateTime.Parse("13:00:00").ToString("hh:MM:ss"))))
-                {
-                    new_date = (Convert.ToDateTime(time_end).AddHours(time_services_hh + 1).AddMinutes(time_services_mm).AddSeconds(time_services_ss)).ToString();
-                }
-                else if ((DateTime.Parse(DateTime.Parse("12:00:00").ToString("hh:MM:ss")) <= DateTime.Parse(DateTime.Parse(new_date).ToString("hh:MM:ss"))) && (DateTime.Parse(DateTime.Parse(new_date).ToString("hh:MM:ss")) <= DateTime.Parse(DateTime.Parse("13:00:00").ToString("hh:MM:ss"))))
-                {
-                    new_date = (Convert.ToDateTime(time_end).AddHours(time_services_hh).AddMinutes(time_services_mm).AddSeconds(time_services_ss)).ToString();
-                }
-                else if (DateTime.Parse(DateTime.Parse(new_date).ToString("hh:MM:ss")) > (DateTime.Parse(DateTime.Parse(dataTable_users.Rows[0]["work_time_end"].ToString()).ToString("hh:MM:ss"))))
-                {
-                    time_end = DateTime.Now.ToString("yyyy-MM-dd ") + Convert.ToDateTime(dataTable_users.Rows[0]["work_time_start"].ToString()).ToString("hh:mm:ss");
-                    new_date = (Convert.ToDateTime(time_end).AddDays(1).AddHours(time_services_hh).AddMinutes(time_services_mm).AddSeconds(time_services_ss)).ToString();
-                }
-            }
+        //        if ((DateTime.Parse(DateTime.Parse("12:00:00").ToString("hh:MM:ss")) >= DateTime.Parse(DateTime.Parse(new_date).ToString("hh:MM:ss"))) && (DateTime.Parse(DateTime.Parse(new_date).ToString("hh:MM:ss")) >= DateTime.Parse(DateTime.Parse("13:00:00").ToString("hh:MM:ss"))))
+        //        {
+        //            new_date = (Convert.ToDateTime(time_end).AddHours(time_services_hh + 1).AddMinutes(time_services_mm).AddSeconds(time_services_ss)).ToString();
+        //        }
+        //        else if ((DateTime.Parse(DateTime.Parse("12:00:00").ToString("hh:MM:ss")) <= DateTime.Parse(DateTime.Parse(new_date).ToString("hh:MM:ss"))) && (DateTime.Parse(DateTime.Parse(new_date).ToString("hh:MM:ss")) <= DateTime.Parse(DateTime.Parse("13:00:00").ToString("hh:MM:ss"))))
+        //        {
+        //            new_date = (Convert.ToDateTime(time_end).AddHours(time_services_hh).AddMinutes(time_services_mm).AddSeconds(time_services_ss)).ToString();
+        //        }
+        //        else if (DateTime.Parse(DateTime.Parse(new_date).ToString("hh:MM:ss")) > (DateTime.Parse(DateTime.Parse(dataTable_users.Rows[0]["work_time_end"].ToString()).ToString("hh:MM:ss"))))
+        //        {
+        //            time_end = DateTime.Now.ToString("yyyy-MM-dd ") + Convert.ToDateTime(dataTable_users.Rows[0]["work_time_start"].ToString()).ToString("hh:mm:ss");
+        //            new_date = (Convert.ToDateTime(time_end).AddDays(1).AddHours(time_services_hh).AddMinutes(time_services_mm).AddSeconds(time_services_ss)).ToString();
+        //        }
+        //    }
+        //    else
+        //    {
+        //        time_end = DateTime.Now.ToString("yyyy-MM-dd ") + Convert.ToDateTime(dataTable_users.Rows[0]["work_time_start"].ToString()).ToString("hh:mm:ss");
+        //        new_date = (Convert.ToDateTime(time_end).AddHours(time_services_hh).AddMinutes(time_services_mm).AddSeconds(time_services_ss)).ToString();
+        //        if ((DateTime.Parse(DateTime.Parse("12:00:00").ToString("hh:MM:ss")) >= DateTime.Parse(DateTime.Parse(new_date).ToString("hh:MM:ss"))) && (DateTime.Parse(DateTime.Parse(new_date).ToString("hh:MM:ss")) >= DateTime.Parse(DateTime.Parse("13:00:00").ToString("hh:MM:ss"))))
+        //        {
+        //            new_date = (Convert.ToDateTime(time_end).AddHours(time_services_hh + 1).AddMinutes(time_services_mm).AddSeconds(time_services_ss)).ToString();
+        //        }
+        //        else if ((DateTime.Parse(DateTime.Parse("12:00:00").ToString("hh:MM:ss")) <= DateTime.Parse(DateTime.Parse(new_date).ToString("hh:MM:ss"))) && (DateTime.Parse(DateTime.Parse(new_date).ToString("hh:MM:ss")) <= DateTime.Parse(DateTime.Parse("13:00:00").ToString("hh:MM:ss"))))
+        //        {
+        //            new_date = (Convert.ToDateTime(time_end).AddHours(time_services_hh).AddMinutes(time_services_mm).AddSeconds(time_services_ss)).ToString();
+        //        }
+        //        else if (DateTime.Parse(DateTime.Parse(new_date).ToString("hh:MM:ss")) > (DateTime.Parse(DateTime.Parse(dataTable_users.Rows[0]["work_time_end"].ToString()).ToString("hh:MM:ss"))))
+        //        {
+        //            time_end = DateTime.Now.ToString("yyyy-MM-dd ") + Convert.ToDateTime(dataTable_users.Rows[0]["work_time_start"].ToString()).ToString("hh:mm:ss");
+        //            new_date = (Convert.ToDateTime(time_end).AddDays(1).AddHours(time_services_hh).AddMinutes(time_services_mm).AddSeconds(time_services_ss)).ToString();
+        //        }
+        //    }
 
-            return new_date;
-        }
+        //    return new_date;
+        //}
 
         private void combo_spitsqlist_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            time_services = DateTime.Parse(add_time(combo_spitsqlist.SelectedValue.ToString(), combo_services.SelectedValue.ToString())).ToString("yyyy-MM-dd hh:mm:ss");
-            time_services_for_client.Text = DateTime.Parse(add_time(combo_spitsqlist.SelectedValue.ToString(), combo_services.SelectedValue.ToString())).ToString("Рузи dd-MM-yyy соати hh:mm:ss");
+            id_spitsalist = combo_spitsqlist.SelectedValue.ToString();
+            DataTable dataTable_spit = sqlConfiguration.sqlSelectQuery($"SELECT * FROM obigarm.users where id ='{id_spitsalist}';");
+            time_start_spit = Convert.ToDateTime(dataTable_spit.Rows[0]["work_time_start"].ToString());
+            time_end_spit = Convert.ToDateTime(dataTable_spit.Rows[0]["work_time_end"].ToString());
+            //time_services = DateTime.Parse(add_time(combo_spitsqlist.SelectedValue.ToString(), combo_services.SelectedValue.ToString())).ToString("yyyy-MM-dd hh:mm:ss");
+            //time_services_for_client.Text = DateTime.Parse(add_time(combo_spitsqlist.SelectedValue.ToString(), combo_services.SelectedValue.ToString())).ToString("Рузи dd-MM-yyy соати hh:mm:ss");
+            lisе_data(time_start_client, time_end_client);
+
         }
 
 
@@ -245,9 +283,89 @@ namespace ObiGarm.Vrach
 
         }
 
+
+
+        void lisе_data(DateTime start_date, DateTime end_date, DateTime date)
+        {
+            list_date.Items.Clear();
+            while (start_date<= end_date)
+            {
+                list_date.Items.Add(start_date.ToString("D")/*.ToString("dd-MM-yyyy")*/);
+                start_date = start_date.AddDays(1);
+            }
+
+            DataTable time_services_ = sqlConfiguration.sqlSelectQuery($"SELECT * FROM obigarm.services where id = '{id_services_for_client}';");
+
+            DateTime time_serivc = DateTime.Parse(time_services_.Rows[0]["time_services"].ToString());
+            MessageBox.Show(list_date.GetItemText(list_date.SelectedItem));
+            DateTime date_ = date;
+
+            _list_time(date_, time_start_spit, time_end_spit, time_serivc);
+        }
+
+
+        void _list_time(DateTime date, DateTime start_time, DateTime end_time, DateTime time_services)
+        {
+            list_time.Items.Clear();
+            if (date.ToString("d") == time_start_client.ToString("d"))
+            {
+                if (DateTime.Parse(start_time.ToString("HH:mm:ss"))<=DateTime.Parse(time_start_client.ToString("HH:mm:ss")))
+                {
+                    start_time= Convert.ToDateTime(time_start_client.ToString("HH:mm:ss"));
+                }
+                else
+                {
+                    start_time = Convert.ToDateTime(time_start_spit.ToString("HH:mm:ss"));                    
+                }
+                end_time = Convert.ToDateTime(time_end_spit.ToString("HH:mm:ss"));
+            }
+            else 
+            {
+                start_time = Convert.ToDateTime(time_start_spit.ToString("HH:mm:ss"));
+                end_time = Convert.ToDateTime(time_end_spit.ToString("HH:mm:ss"));
+            }
+
+            MessageBox.Show(Convert.ToDateTime(time_services).ToString("HH"));
+
+            double time_services_hh = double.Parse(Convert.ToDateTime(time_services).ToString("HH"));
+            double time_services_mm = double.Parse(Convert.ToDateTime(time_services).ToString("mm"));
+            double time_services_ss = double.Parse(Convert.ToDateTime(time_services).ToString("ss"));
+
+            while (DateTime.Parse(start_time.ToString("HH:mm:ss")) <= DateTime.Parse(end_time.ToString("HH:mm:ss")))
+            {
+                DateTime time_plus_srt_time = start_time;
+                time_plus_srt_time = time_plus_srt_time.AddHours(time_services_hh);
+                time_plus_srt_time = time_plus_srt_time.AddMinutes(time_services_mm);
+                time_plus_srt_time = time_plus_srt_time.AddSeconds(time_services_ss);
+
+                DataTable check_tabel_sevices_client = sqlConfiguration.sqlSelectQuery($"select * from services_client where id_services = '{id_services_for_client}' and id_users = '{id_spitsalist}' and time >= '{date.Year}-{date.Month}-{date.Day} {start_time.Hour}:{start_time.Minute}:{start_time.Second}' " +
+                    $" and time <= '{date.Year}-{date.Month}-{date.Day} {(time_plus_srt_time.Hour)}:{time_plus_srt_time.Minute}:{time_plus_srt_time.Second}'");
+
+                Console.WriteLine($"select * from services_client where id_services = '{id_services_for_client}' and time >= '{date.Year}-{date.Month}-{date.Day} {start_time.Hour}:{start_time.Minute}:{start_time.Second}'+" +
+                    $" and time <= '{date.Year}-{date.Month}-{date.Day} {(time_plus_srt_time.Hour)}:{time_plus_srt_time.Minute}:{time_plus_srt_time.Second}'");
+
+                if (check_tabel_sevices_client.Rows.Count==0)
+                {
+                    list_time.Items.Add(start_time.ToString("HH:mm:ss"));
+
+                }
+                start_time = start_time.AddHours(time_services_hh);
+                start_time = start_time.AddMinutes(time_services_mm);
+                start_time = start_time.AddSeconds(time_services_ss);
+            }
+        }
+
+
+
         private void btn_creat_Click(object sender, EventArgs e)
         {
             add();
         }
+
+        private void list_date_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            lisе_data(time_start_client, time_end_client, DateTime.Parse(list_date.GetItemText(list_date.SelectedItem);
+        }
     }
 }
+
