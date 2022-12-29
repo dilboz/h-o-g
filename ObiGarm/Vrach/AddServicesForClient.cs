@@ -7,6 +7,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Controls;
 using System.Windows.Forms;
 
 namespace ObiGarm.Vrach
@@ -20,12 +21,15 @@ namespace ObiGarm.Vrach
         private string txt_button;
         private string time_services;
 
+        string selected_list_date = "";
+        string selected_list_time = "";
+
         private string id_spitsalist;
 
-        DateTime time_start_client;
-        DateTime time_end_client;
+        DateTime date_;
 
-        DateTime _time_services;
+        DateTime time_start_client;
+        DateTime time_end_client;        
 
         DateTime time_start_spit;
         DateTime time_end_spit;
@@ -117,9 +121,6 @@ namespace ObiGarm.Vrach
         {
             if (combo_services.Items.Count != 0)
             {
-
-
-
                 if (combo_services.SelectedValue.ToString() != "")
                 {
                     string select_sql_spitsqlist = "select services_users.user_id as 'id', users.deleted as 'deleted_users', concat(users.surname, ' ', users.name)as 'name',  users.end_date_time_services as 'time_services_end' " +
@@ -157,7 +158,7 @@ namespace ObiGarm.Vrach
 
                 }
 
-                lisе_data(time_start_client, time_end_client);
+                lisе_data(time_start_client, time_end_client, "");
             }
             else
             {
@@ -231,7 +232,7 @@ namespace ObiGarm.Vrach
             time_end_spit = Convert.ToDateTime(dataTable_spit.Rows[0]["work_time_end"].ToString());
             //time_services = DateTime.Parse(add_time(combo_spitsqlist.SelectedValue.ToString(), combo_services.SelectedValue.ToString())).ToString("yyyy-MM-dd hh:mm:ss");
             //time_services_for_client.Text = DateTime.Parse(add_time(combo_spitsqlist.SelectedValue.ToString(), combo_services.SelectedValue.ToString())).ToString("Рузи dd-MM-yyy соати hh:mm:ss");
-            lisе_data(time_start_client, time_end_client);
+            lisе_data(time_start_client, time_end_client, "");
 
         }
 
@@ -241,7 +242,7 @@ namespace ObiGarm.Vrach
             string id_client = this.id_client;
             string id_services = combo_services.SelectedValue.ToString();
             string id_users = combo_spitsqlist.SelectedValue.ToString();
-            string _time = time_services;
+            string _time = time_services_for_client.Text;
 
             string sql_select = "insert into services_client (id_client, id_services, id_users, time) values('" +
               id_client + "', '" +
@@ -285,7 +286,7 @@ namespace ObiGarm.Vrach
 
 
 
-        void lisе_data(DateTime start_date, DateTime end_date, DateTime date)
+        void lisе_data(DateTime start_date, DateTime end_date, string select_list)
         {
             list_date.Items.Clear();
             while (start_date<= end_date)
@@ -297,8 +298,20 @@ namespace ObiGarm.Vrach
             DataTable time_services_ = sqlConfiguration.sqlSelectQuery($"SELECT * FROM obigarm.services where id = '{id_services_for_client}';");
 
             DateTime time_serivc = DateTime.Parse(time_services_.Rows[0]["time_services"].ToString());
-            MessageBox.Show(list_date.GetItemText(list_date.SelectedItem));
-            DateTime date_ = date;
+
+            
+            
+            if (select_list != "")
+            {
+                 date_ = DateTime.Parse(select_list);
+            }
+            else
+            {
+                
+               
+                date_ = DateTime.Parse(list_date.Items[0].ToString());
+            }
+           
 
             _list_time(date_, time_start_spit, time_end_spit, time_serivc);
         }
@@ -325,10 +338,9 @@ namespace ObiGarm.Vrach
                 end_time = Convert.ToDateTime(time_end_spit.ToString("HH:mm:ss"));
             }
 
-            MessageBox.Show(Convert.ToDateTime(time_services).ToString("HH"));
 
             double time_services_hh = double.Parse(Convert.ToDateTime(time_services).ToString("HH"));
-            double time_services_mm = double.Parse(Convert.ToDateTime(time_services).ToString("mm"));
+            double time_services_mm = double.Parse(Convert.ToDateTime(time_services).ToString("mm")) + 10;
             double time_services_ss = double.Parse(Convert.ToDateTime(time_services).ToString("ss"));
 
             while (DateTime.Parse(start_time.ToString("HH:mm:ss")) <= DateTime.Parse(end_time.ToString("HH:mm:ss")))
@@ -352,6 +364,24 @@ namespace ObiGarm.Vrach
                 start_time = start_time.AddHours(time_services_hh);
                 start_time = start_time.AddMinutes(time_services_mm);
                 start_time = start_time.AddSeconds(time_services_ss);
+
+              
+            }
+            if (selected_list_time != "")
+            {
+                time_services_for_client.Text = date.ToString("yyyy-MM-dd ") + DateTime.Parse(selected_list_time).ToString("HH:mm:ss");
+            }
+            else
+            {
+                if (list_time.Items.Count != 0)
+                {
+                    time_services_for_client.Text = date.ToString("yyyy-MM-dd ") + DateTime.Parse(list_time.Items[0].ToString()).ToString("HH:mm:ss");
+                }
+                else
+                {
+                    MessageBox.Show("Дар чунин руз вақти холи надоред!");
+                }
+
             }
         }
 
@@ -364,7 +394,25 @@ namespace ObiGarm.Vrach
 
         private void list_date_SelectedIndexChanged(object sender, EventArgs e)
         {
-            lisе_data(time_start_client, time_end_client, DateTime.Parse(list_date.GetItemText(list_date.SelectedItem);
+            selected_list_date = list_date.SelectedItem.ToString();
+
+            lisе_data(time_start_client, time_end_client, selected_list_date);
+        }
+
+        private void list_time_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            selected_list_time = list_time.SelectedItem.ToString();
+            lisе_data(time_start_client, time_end_client, selected_list_date);
+        }
+
+        private void AddServicesForClient_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_hide_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

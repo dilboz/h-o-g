@@ -208,7 +208,7 @@
             this.lbl_name.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.lbl_name.Size = new System.Drawing.Size(624, 25);
             this.lbl_name.TabIndex = 2;
-            this.lbl_name.Text = "Номи банк:";
+            this.lbl_name.Text = "Номи бонк:";
             this.lbl_name.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // AddBonk

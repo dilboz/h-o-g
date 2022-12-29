@@ -119,7 +119,7 @@
             this.group_add_vrach.Padding = new System.Windows.Forms.Padding(10);
             this.group_add_vrach.Size = new System.Drawing.Size(552, 512);
             this.group_add_vrach.TabIndex = 0;
-            this.group_add_vrach.Text = "Сохтани врач";
+            this.group_add_vrach.Text = "Сохтани табиб";
             // 
             // panel_time_work
             // 
@@ -754,7 +754,7 @@
             this.Padding = new System.Windows.Forms.Padding(20);
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Сохтани варач";
+            this.Text = "Сохтани табиб";
             this.Shown += new System.EventHandler(this.AddVrach_Shown);
             this.panel_ful.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.group_add_vrach)).EndInit();

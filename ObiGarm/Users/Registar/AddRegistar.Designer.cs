@@ -102,7 +102,7 @@
             this.group_creat_registr.Padding = new System.Windows.Forms.Padding(10);
             this.group_creat_registr.Size = new System.Drawing.Size(656, 346);
             this.group_creat_registr.TabIndex = 13;
-            this.group_creat_registr.Text = "Сохтани бақайдит";
+            this.group_creat_registr.Text = "Сохтани бақайдгиранда";
             // 
             // txt_cheng_password
             // 
@@ -609,7 +609,7 @@
             this.Padding = new System.Windows.Forms.Padding(20);
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Сохтани бақайдгир";
+            this.Text = "Сохтани бақайдгиранда";
             this.Shown += new System.EventHandler(this.AddRegistar_Shown);
             this.panel_full.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.group_creat_registr)).EndInit();

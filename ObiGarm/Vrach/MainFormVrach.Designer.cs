@@ -146,14 +146,14 @@
             // 
             this.user_info_label.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(163)))), ((int)(((byte)(98)))));
             this.user_info_label.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.user_info_label.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.user_info_label.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.user_info_label.ForeColor = System.Drawing.Color.White;
             this.user_info_label.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.user_info_label.Location = new System.Drawing.Point(220, 10);
+            this.user_info_label.Location = new System.Drawing.Point(195, 10);
             this.user_info_label.Name = "user_info_label";
-            this.user_info_label.Size = new System.Drawing.Size(858, 29);
+            this.user_info_label.Size = new System.Drawing.Size(883, 29);
             this.user_info_label.TabIndex = 7;
-            this.user_info_label.Text = "Истифодабаранда: Сафараров Дилбоз";
+            this.user_info_label.Text = "Сафараров Дилбоз";
             this.user_info_label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // logo_label
@@ -164,9 +164,9 @@
             this.logo_label.ForeColor = System.Drawing.Color.White;
             this.logo_label.Location = new System.Drawing.Point(10, 10);
             this.logo_label.Name = "logo_label";
-            this.logo_label.Size = new System.Drawing.Size(210, 29);
+            this.logo_label.Size = new System.Drawing.Size(185, 29);
             this.logo_label.TabIndex = 1;
-            this.logo_label.Text = "ВРАЧ";
+            this.logo_label.Text = "ТАБИБ";
             this.logo_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel_top_info
@@ -189,7 +189,7 @@
             this.panel_info.Location = new System.Drawing.Point(10, 75);
             this.panel_info.Name = "panel_info";
             this.panel_info.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
-            this.panel_info.Size = new System.Drawing.Size(881, 106);
+            this.panel_info.Size = new System.Drawing.Size(943, 106);
             this.panel_info.TabIndex = 34;
             // 
             // layot_top
@@ -205,7 +205,7 @@
             this.layot_top.Padding = new System.Windows.Forms.Padding(5, 5, 5, 0);
             this.layot_top.RowCount = 1;
             this.layot_top.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.layot_top.Size = new System.Drawing.Size(861, 106);
+            this.layot_top.Size = new System.Drawing.Size(923, 106);
             this.layot_top.TabIndex = 1;
             // 
             // panel_info_clients
@@ -215,9 +215,9 @@
             this.panel_info_clients.Controls.Add(this.txt_birthday);
             this.panel_info_clients.Controls.Add(this.label1);
             this.panel_info_clients.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel_info_clients.Location = new System.Drawing.Point(525, 8);
+            this.panel_info_clients.Location = new System.Drawing.Point(563, 8);
             this.panel_info_clients.Name = "panel_info_clients";
-            this.panel_info_clients.Size = new System.Drawing.Size(328, 95);
+            this.panel_info_clients.Size = new System.Drawing.Size(352, 95);
             this.panel_info_clients.TabIndex = 1;
             // 
             // txt_sex
@@ -283,7 +283,7 @@
             this.txt_sex.SelectionLength = 0;
             this.txt_sex.SelectionStart = 0;
             this.txt_sex.ShortcutsEnabled = true;
-            this.txt_sex.Size = new System.Drawing.Size(328, 29);
+            this.txt_sex.Size = new System.Drawing.Size(352, 29);
             this.txt_sex.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
             this.txt_sex.TabIndex = 26;
             this.txt_sex.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -301,7 +301,7 @@
             this.label2.Location = new System.Drawing.Point(0, 44);
             this.label2.Name = "label2";
             this.label2.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.label2.Size = new System.Drawing.Size(328, 15);
+            this.label2.Size = new System.Drawing.Size(352, 15);
             this.label2.TabIndex = 25;
             this.label2.Text = "Ҷинс";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -369,7 +369,7 @@
             this.txt_birthday.SelectionLength = 0;
             this.txt_birthday.SelectionStart = 0;
             this.txt_birthday.ShortcutsEnabled = true;
-            this.txt_birthday.Size = new System.Drawing.Size(328, 29);
+            this.txt_birthday.Size = new System.Drawing.Size(352, 29);
             this.txt_birthday.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
             this.txt_birthday.TabIndex = 24;
             this.txt_birthday.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -387,7 +387,7 @@
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
             this.label1.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.label1.Size = new System.Drawing.Size(328, 15);
+            this.label1.Size = new System.Drawing.Size(352, 15);
             this.label1.TabIndex = 23;
             this.label1.Text = "Соли таввалуд";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -400,7 +400,7 @@
             this.panel_info_client.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_info_client.Location = new System.Drawing.Point(8, 8);
             this.panel_info_client.Name = "panel_info_client";
-            this.panel_info_client.Size = new System.Drawing.Size(511, 95);
+            this.panel_info_client.Size = new System.Drawing.Size(549, 95);
             this.panel_info_client.TabIndex = 0;
             // 
             // tableLayoutPanel1
@@ -415,7 +415,7 @@
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(511, 51);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(549, 51);
             this.tableLayoutPanel1.TabIndex = 23;
             // 
             // panel1
@@ -423,9 +423,9 @@
             this.panel1.Controls.Add(this.txt_end_time);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(258, 3);
+            this.panel1.Location = new System.Drawing.Point(277, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(250, 45);
+            this.panel1.Size = new System.Drawing.Size(269, 45);
             this.panel1.TabIndex = 1;
             // 
             // txt_end_time
@@ -491,7 +491,7 @@
             this.txt_end_time.SelectionLength = 0;
             this.txt_end_time.SelectionStart = 0;
             this.txt_end_time.ShortcutsEnabled = true;
-            this.txt_end_time.Size = new System.Drawing.Size(250, 29);
+            this.txt_end_time.Size = new System.Drawing.Size(269, 29);
             this.txt_end_time.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
             this.txt_end_time.TabIndex = 24;
             this.txt_end_time.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -509,7 +509,7 @@
             this.label4.Location = new System.Drawing.Point(0, 0);
             this.label4.Name = "label4";
             this.label4.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.label4.Size = new System.Drawing.Size(250, 15);
+            this.label4.Size = new System.Drawing.Size(269, 15);
             this.label4.TabIndex = 23;
             this.label4.Text = "То кай";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -521,7 +521,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(3, 3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(249, 45);
+            this.panel2.Size = new System.Drawing.Size(268, 45);
             this.panel2.TabIndex = 0;
             // 
             // txt_time_start
@@ -587,7 +587,7 @@
             this.txt_time_start.SelectionLength = 0;
             this.txt_time_start.SelectionStart = 0;
             this.txt_time_start.ShortcutsEnabled = true;
-            this.txt_time_start.Size = new System.Drawing.Size(249, 29);
+            this.txt_time_start.Size = new System.Drawing.Size(268, 29);
             this.txt_time_start.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
             this.txt_time_start.TabIndex = 22;
             this.txt_time_start.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -605,7 +605,7 @@
             this.label5.Location = new System.Drawing.Point(0, 0);
             this.label5.Name = "label5";
             this.label5.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.label5.Size = new System.Drawing.Size(249, 15);
+            this.label5.Size = new System.Drawing.Size(268, 15);
             this.label5.TabIndex = 21;
             this.label5.Text = "Аз кай";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -673,7 +673,7 @@
             this.txt_full_name.SelectionLength = 0;
             this.txt_full_name.SelectionStart = 0;
             this.txt_full_name.ShortcutsEnabled = true;
-            this.txt_full_name.Size = new System.Drawing.Size(511, 29);
+            this.txt_full_name.Size = new System.Drawing.Size(549, 29);
             this.txt_full_name.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
             this.txt_full_name.TabIndex = 22;
             this.txt_full_name.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -691,7 +691,7 @@
             this.lbl_surname.Location = new System.Drawing.Point(0, 0);
             this.lbl_surname.Name = "lbl_surname";
             this.lbl_surname.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.lbl_surname.Size = new System.Drawing.Size(511, 15);
+            this.lbl_surname.Size = new System.Drawing.Size(549, 15);
             this.lbl_surname.TabIndex = 21;
             this.lbl_surname.Text = "Номи пурра";
             this.lbl_surname.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -704,9 +704,8 @@
             this.panel_search_client.Location = new System.Drawing.Point(10, 10);
             this.panel_search_client.Name = "panel_search_client";
             this.panel_search_client.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
-            this.panel_search_client.Size = new System.Drawing.Size(881, 65);
+            this.panel_search_client.Size = new System.Drawing.Size(943, 65);
             this.panel_search_client.TabIndex = 33;
-            this.panel_search_client.Visible = false;
             // 
             // combo_client
             // 
@@ -722,7 +721,7 @@
             this.combo_client.ItemHeight = 30;
             this.combo_client.Location = new System.Drawing.Point(20, 25);
             this.combo_client.Name = "combo_client";
-            this.combo_client.Size = new System.Drawing.Size(841, 36);
+            this.combo_client.Size = new System.Drawing.Size(903, 36);
             this.combo_client.TabIndex = 30;
             this.combo_client.SelectionChangeCommitted += new System.EventHandler(this.combo_client_SelectionChangeCommitted);
             // 
@@ -733,9 +732,9 @@
             this.lbl_name.Location = new System.Drawing.Point(20, 0);
             this.lbl_name.Name = "lbl_name";
             this.lbl_name.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.lbl_name.Size = new System.Drawing.Size(841, 25);
+            this.lbl_name.Size = new System.Drawing.Size(903, 25);
             this.lbl_name.TabIndex = 29;
-            this.lbl_name.Text = "Интихлби муштари";
+            this.lbl_name.Text = "Интихоби истироҳаткунанда";
             this.lbl_name.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // tableLayoutPanel2
@@ -745,12 +744,12 @@
             this.tableLayoutPanel2.Controls.Add(this.panel_btn_add_services, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.panel_btn_active_kort_check, 0, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(891, 10);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(953, 10);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 2;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(187, 171);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(125, 171);
             this.tableLayoutPanel2.TabIndex = 24;
             // 
             // panel_btn_add_services
@@ -759,7 +758,7 @@
             this.panel_btn_add_services.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_btn_add_services.Location = new System.Drawing.Point(3, 88);
             this.panel_btn_add_services.Name = "panel_btn_add_services";
-            this.panel_btn_add_services.Size = new System.Drawing.Size(181, 80);
+            this.panel_btn_add_services.Size = new System.Drawing.Size(119, 80);
             this.panel_btn_add_services.TabIndex = 1;
             // 
             // btn_add_services
@@ -773,25 +772,25 @@
             this.btn_add_services.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.btn_add_services.Location = new System.Drawing.Point(0, 0);
             this.btn_add_services.Name = "btn_add_services";
-            this.btn_add_services.Size = new System.Drawing.Size(181, 80);
+            this.btn_add_services.Size = new System.Drawing.Size(119, 80);
             this.btn_add_services.TabIndex = 27;
-            this.btn_add_services.Text = "Сотани иматрасони ба муштари";
+            this.btn_add_services.Text = "Иловакунии намуди хизматрасони";
             this.btn_add_services.UseVisualStyleBackColor = false;
             this.btn_add_services.Click += new System.EventHandler(this.btn_add_services_Click);
             // 
             // panel_btn_active_kort_check
             // 
-            this.panel_btn_active_kort_check.Controls.Add(this.txt_numeb_kort);
             this.panel_btn_active_kort_check.Controls.Add(this.button_active_kort);
+            this.panel_btn_active_kort_check.Controls.Add(this.txt_numeb_kort);
             this.panel_btn_active_kort_check.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_btn_active_kort_check.Location = new System.Drawing.Point(3, 3);
             this.panel_btn_active_kort_check.Name = "panel_btn_active_kort_check";
-            this.panel_btn_active_kort_check.Size = new System.Drawing.Size(181, 79);
+            this.panel_btn_active_kort_check.Size = new System.Drawing.Size(119, 79);
             this.panel_btn_active_kort_check.TabIndex = 0;
             // 
             // button_active_kort
             // 
-            this.button_active_kort.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(163)))), ((int)(((byte)(98)))));
+            this.button_active_kort.BackColor = System.Drawing.Color.LightSeaGreen;
             this.button_active_kort.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button_active_kort.FlatAppearance.BorderSize = 0;
             this.button_active_kort.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -800,9 +799,9 @@
             this.button_active_kort.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.button_active_kort.Location = new System.Drawing.Point(0, 0);
             this.button_active_kort.Name = "button_active_kort";
-            this.button_active_kort.Size = new System.Drawing.Size(181, 79);
+            this.button_active_kort.Size = new System.Drawing.Size(119, 79);
             this.button_active_kort.TabIndex = 28;
-            this.button_active_kort.Text = "Хомуш кардани кортсанҷ";
+            this.button_active_kort.Text = "Фаъол намудани корт";
             this.button_active_kort.UseVisualStyleBackColor = false;
             this.button_active_kort.Click += new System.EventHandler(this.button_active_kort_Click);
             // 
@@ -839,6 +838,7 @@
             this.grid_view.GridControl = this.grid_contol;
             this.grid_view.Name = "grid_view";
             this.grid_view.OptionsFind.AlwaysVisible = true;
+            this.grid_view.OptionsView.ShowGroupPanel = false;
             // 
             // id
             // 
@@ -851,7 +851,7 @@
             // 
             // name_services
             // 
-            this.name_services.Caption = "Номи хизматрасони";
+            this.name_services.Caption = "Намуди хизматрасони";
             this.name_services.FieldName = "name_services";
             this.name_services.MinWidth = 230;
             this.name_services.Name = "name_services";
@@ -861,7 +861,7 @@
             // 
             // name_spitsalist
             // 
-            this.name_spitsalist.Caption = "Номи табиб";
+            this.name_spitsalist.Caption = "Номи мутахассис";
             this.name_spitsalist.FieldName = "ful_name_user";
             this.name_spitsalist.MinWidth = 330;
             this.name_spitsalist.Name = "name_spitsalist";

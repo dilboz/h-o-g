@@ -274,7 +274,7 @@
             this.btn_save_data.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(101)))), ((int)(((byte)(48)))));
             this.btn_save_data.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_save_data.BackgroundImage")));
             this.btn_save_data.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btn_save_data.ButtonText = "Сабт кардани\r\nмалмотхо";
+            this.btn_save_data.ButtonText = "Сабт кардани\r\nмаълумотҳо";
             this.btn_save_data.ButtonTextMarginLeft = 0;
             this.btn_save_data.ColorContrastOnClick = 45;
             this.btn_save_data.ColorContrastOnHover = 45;

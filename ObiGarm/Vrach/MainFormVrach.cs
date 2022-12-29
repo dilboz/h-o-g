@@ -22,18 +22,18 @@ namespace ObiGarm.Vrach
         {
             InitializeComponent();
             sqlConfiguration = new SqlConfiguration();
-            user_info_label.Text = "Истифодабаранда: " + SettingsDatabase.name_user + " " + SettingsDatabase.surname_user;
-            //display_client();
+            user_info_label.Text =  SettingsDatabase.name_user + " " + SettingsDatabase.surname_user;
+            display_client();
             check_btn_add_services();
             txt_numeb_kort.Focus();
         }
 
-        //void display_client()
-        //{
-        //    string sql = "select id, concat(surname , ' ' , name , ' ' , patromic) as full_name from client where enable=1";
-        //    sqlConfiguration.LoadCombo(sql, "full_name", "id", combo_client);
-        //    combo_client.SelectedIndex = -1;
-        //}
+        void display_client()
+        {
+            string sql = "select id, concat(surname , ' ' , name , ' ' , patromic) as full_name from client where enable=1 and is_for_vrach= 1 and deleted is null order by id desc ";
+            sqlConfiguration.LoadCombo(sql, "full_name", "id", combo_client);
+            combo_client.SelectedIndex = -1;
+        }
 
         void display(string id_client)
         {
@@ -43,6 +43,8 @@ namespace ObiGarm.Vrach
                 "inner join users on services_client.id_users = users.id " +
                 $"where services_client.id_client = '{id_client}' ";
 
+            
+
             sqlConfiguration.displayListExpress(sql, grid_contol);
         }
 
@@ -50,10 +52,10 @@ namespace ObiGarm.Vrach
 
         public void check_btn_add_services()
         {
-            if (combo_client.Text!="")
+            if (is_check_kort == true && id_client!="")
             {
                 btn_add_services.Visible = true;
-                display(combo_client.SelectedValue.ToString());
+                display(id_client);
             }
             else
             {
@@ -72,6 +74,9 @@ namespace ObiGarm.Vrach
 
             DataTable dataTable = sqlConfiguration.sqlSelectQuery(sql_for_info_client);
 
+            
+
+            combo_client.Text = dataTable.Rows[0]["full_name"].ToString();
             txt_full_name.Text= dataTable.Rows[0]["full_name"].ToString();
             txt_birthday.Text= dataTable.Rows[0]["birthday"].ToString();
             txt_sex.Text= dataTable.Rows[0]["sex"].ToString();
@@ -79,11 +84,13 @@ namespace ObiGarm.Vrach
             txt_end_time.Text= dataTable.Rows[0]["date_time_end"].ToString();
             if (txt_full_name.Text!="")
             {
+                is_check_kort=true;
                 btn_add_services.Visible = true;
 
             }
             else
             {
+                is_check_kort = false;
                 btn_add_services.Visible = false;
             }
 
@@ -166,11 +173,12 @@ namespace ObiGarm.Vrach
                 select_info(dataTable_id_client.Rows[0]["id"].ToString());
 
                 id_client = dataTable_id_client.Rows[0]["id"].ToString();
+                display(id_client);
             }
             catch (Exception)
             {
 
-                throw;
+                MessageBox.Show("Чунин истироҳаткунанда вучуд надорад");
             }
 
            
@@ -181,5 +189,6 @@ namespace ObiGarm.Vrach
             txt_numeb_kort.Focus();
 
         }
+
     }
 }

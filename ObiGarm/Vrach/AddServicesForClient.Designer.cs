@@ -122,7 +122,7 @@
             this.group_time.Padding = new System.Windows.Forms.Padding(5);
             this.group_time.Size = new System.Drawing.Size(405, 159);
             this.group_time.TabIndex = 1;
-            this.group_time.Text = "Соли таввалуд ва ҷинс";
+            this.group_time.Text = "Вақти таъиншаванда";
             // 
             // list_time
             // 
@@ -132,6 +132,7 @@
             this.list_time.Name = "list_time";
             this.list_time.Size = new System.Drawing.Size(391, 124);
             this.list_time.TabIndex = 1;
+            this.list_time.SelectedIndexChanged += new System.EventHandler(this.list_time_SelectedIndexChanged);
             // 
             // groop_data
             // 
@@ -142,7 +143,7 @@
             this.groop_data.Padding = new System.Windows.Forms.Padding(5);
             this.groop_data.Size = new System.Drawing.Size(404, 159);
             this.groop_data.TabIndex = 0;
-            this.groop_data.Text = "Рузхое ки ба муштари дода метавонед";
+            this.groop_data.Text = "Рузи таъиншаванда";
             // 
             // list_date
             // 
@@ -210,7 +211,7 @@
             this.time_services_for_client.OnIdleState = stateProperties4;
             this.time_services_for_client.PasswordChar = '\0';
             this.time_services_for_client.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.time_services_for_client.PlaceholderText = "Рӯз ва вақти таиншуда";
+            this.time_services_for_client.PlaceholderText = "Рӯз ва вақти таъиншуда";
             this.time_services_for_client.ReadOnly = true;
             this.time_services_for_client.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.time_services_for_client.SelectedText = "";
@@ -224,7 +225,7 @@
             this.time_services_for_client.TextMarginBottom = 0;
             this.time_services_for_client.TextMarginLeft = 5;
             this.time_services_for_client.TextMarginTop = 0;
-            this.time_services_for_client.TextPlaceholder = "Рӯз ва вақти таиншуда";
+            this.time_services_for_client.TextPlaceholder = "Рӯз ва вақти таъиншуда";
             this.time_services_for_client.UseSystemPasswordChar = false;
             this.time_services_for_client.WordWrap = true;
             // 
@@ -267,7 +268,7 @@
             this.label_spitsqlist.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.label_spitsqlist.Size = new System.Drawing.Size(821, 15);
             this.label_spitsqlist.TabIndex = 12;
-            this.label_spitsqlist.Text = "Интихоби спитсалист";
+            this.label_spitsqlist.Text = "Интихоби мутахассис";
             this.label_spitsqlist.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // panel_botton
@@ -296,6 +297,7 @@
             this.btn_hide.TabIndex = 1;
             this.btn_hide.Text = "Баромадан";
             this.btn_hide.UseVisualStyleBackColor = false;
+            this.btn_hide.Click += new System.EventHandler(this.btn_hide_Click);
             // 
             // lbl_tab
             // 
@@ -434,7 +436,7 @@
             this.lbl_surname.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.lbl_surname.Size = new System.Drawing.Size(821, 15);
             this.lbl_surname.TabIndex = 7;
-            this.lbl_surname.Text = "Номи пурра";
+            this.lbl_surname.Text = "Ном ва насаби истироҳаткунанда";
             this.lbl_surname.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // AddServicesForClient
@@ -451,7 +453,8 @@
             this.Padding = new System.Windows.Forms.Padding(10);
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Сохтани хизматрасони барои муштари";
+            this.Text = "Иловакунии намуди хизматрасони";
+            this.Load += new System.EventHandler(this.AddServicesForClient_Load);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.panel_show_hide.ResumeLayout(false);

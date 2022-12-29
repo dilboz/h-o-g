@@ -32,7 +32,8 @@ namespace ObiGarm.Regisrarura
                          "inner join frame on room.id_freme = frame.id " +
                          "inner join kort on client.id_kort = kort.id " +
                          "inner join type_kort on kort.id_type_kort = type_kort.id "+
-                         "where client.is_for_vrach=0 and client.enable=1 and client.deleted is null";
+                         "where client.is_for_vrach=0 and client.enable=1 and client.deleted is null " +
+                         "order by id desc  ";
             sqlConfiguration.displayListExpress(sql, grid_yet_not_client);
         }
 

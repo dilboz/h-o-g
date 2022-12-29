@@ -28,7 +28,7 @@ namespace ObiGarm.Users.Frame
 
         public void displayRoom()
         {
-            string select_admin = "select room.id, frame.name 'name_frame', room.name " +
+            string select_admin = "select room.id, frame.name 'name_frame', room.name, room.max_per " +
                 "from room " +
                 "inner join frame on room.id_freme = frame.id";
             sqlConfiguration.displayList(select_admin, datagridview_room);

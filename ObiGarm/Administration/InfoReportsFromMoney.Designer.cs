@@ -258,7 +258,7 @@
             this.label_grid_control_consuption.Name = "label_grid_control_consuption";
             this.label_grid_control_consuption.Size = new System.Drawing.Size(596, 18);
             this.label_grid_control_consuption.TabIndex = 3;
-            this.label_grid_control_consuption.Text = "Намоиши маблағҳои расхошуда";
+            this.label_grid_control_consuption.Text = "Рӯихати маблағҳои сарфшуда";
             // 
             // panel_money_grid
             // 
@@ -346,7 +346,7 @@
             this.label_grid_control_money.Name = "label_grid_control_money";
             this.label_grid_control_money.Size = new System.Drawing.Size(595, 18);
             this.label_grid_control_money.TabIndex = 0;
-            this.label_grid_control_money.Text = "Намоиши маблағҳои гирифташуда";
+            this.label_grid_control_money.Text = "Рӯихати маблағҳои гирифташуда";
             // 
             // chart_control_date
             // 
@@ -560,7 +560,7 @@
             this.label_type_money.Name = "label_type_money";
             this.label_type_money.Size = new System.Drawing.Size(113, 21);
             this.label_type_money.TabIndex = 11;
-            this.label_type_money.Text = "Намуди маблағ";
+            this.label_type_money.Text = "намуди маблағ";
             this.label_type_money.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // date_edit_end
@@ -585,7 +585,7 @@
             this.label_and_date.Name = "label_and_date";
             this.label_and_date.Size = new System.Drawing.Size(52, 21);
             this.label_and_date.TabIndex = 9;
-            this.label_and_date.Text = "Аз кай";
+            this.label_and_date.Text = "то кай";
             this.label_and_date.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // date_edit_start

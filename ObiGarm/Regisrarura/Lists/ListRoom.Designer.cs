@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ListRoom));
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties5 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
             this.formAssistant1 = new DevExpress.XtraBars.FormAssistant();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.list_load_room = new DevExpress.XtraEditors.ListBoxControl();
@@ -42,8 +42,8 @@
             this.btn_clear_doctor = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.btn_inser_docrot = new System.Windows.Forms.Button();
-            this.lbl_room = new System.Windows.Forms.Label();
             this.txt_room = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
+            this.lbl_room = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.list_load_room)).BeginInit();
@@ -74,6 +74,7 @@
             this.list_load_room.Name = "list_load_room";
             this.list_load_room.Size = new System.Drawing.Size(606, 182);
             this.list_load_room.TabIndex = 30;
+            this.list_load_room.Click += new System.EventHandler(this.list_load_room_Click);
             // 
             // search_list_room
             // 
@@ -149,18 +150,6 @@
             this.btn_inser_docrot.UseVisualStyleBackColor = false;
             this.btn_inser_docrot.Click += new System.EventHandler(this.btn_inser_docrot_Click);
             // 
-            // lbl_room
-            // 
-            this.lbl_room.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lbl_room.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_room.Location = new System.Drawing.Point(12, 33);
-            this.lbl_room.Name = "lbl_room";
-            this.lbl_room.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.lbl_room.Size = new System.Drawing.Size(606, 25);
-            this.lbl_room.TabIndex = 21;
-            this.lbl_room.Text = "Бино ва ҳучра";
-            this.lbl_room.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
             // txt_room
             // 
             this.txt_room.AcceptsReturn = false;
@@ -195,26 +184,26 @@
             this.txt_room.Modified = false;
             this.txt_room.Multiline = false;
             this.txt_room.Name = "txt_room";
-            stateProperties5.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties5.FillColor = System.Drawing.Color.Empty;
-            stateProperties5.ForeColor = System.Drawing.Color.Empty;
-            stateProperties5.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txt_room.OnActiveState = stateProperties5;
-            stateProperties6.BorderColor = System.Drawing.Color.Empty;
-            stateProperties6.FillColor = System.Drawing.Color.White;
-            stateProperties6.ForeColor = System.Drawing.Color.Empty;
-            stateProperties6.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.txt_room.OnDisabledState = stateProperties6;
-            stateProperties7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties7.FillColor = System.Drawing.Color.Empty;
-            stateProperties7.ForeColor = System.Drawing.Color.Empty;
-            stateProperties7.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txt_room.OnHoverState = stateProperties7;
-            stateProperties8.BorderColor = System.Drawing.Color.Silver;
-            stateProperties8.FillColor = System.Drawing.Color.White;
-            stateProperties8.ForeColor = System.Drawing.Color.Empty;
-            stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txt_room.OnIdleState = stateProperties8;
+            stateProperties1.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties1.FillColor = System.Drawing.Color.Empty;
+            stateProperties1.ForeColor = System.Drawing.Color.Empty;
+            stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txt_room.OnActiveState = stateProperties1;
+            stateProperties2.BorderColor = System.Drawing.Color.Empty;
+            stateProperties2.FillColor = System.Drawing.Color.White;
+            stateProperties2.ForeColor = System.Drawing.Color.Empty;
+            stateProperties2.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.txt_room.OnDisabledState = stateProperties2;
+            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties3.FillColor = System.Drawing.Color.Empty;
+            stateProperties3.ForeColor = System.Drawing.Color.Empty;
+            stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txt_room.OnHoverState = stateProperties3;
+            stateProperties4.BorderColor = System.Drawing.Color.Silver;
+            stateProperties4.FillColor = System.Drawing.Color.White;
+            stateProperties4.ForeColor = System.Drawing.Color.Empty;
+            stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txt_room.OnIdleState = stateProperties4;
             this.txt_room.PasswordChar = '\0';
             this.txt_room.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txt_room.PlaceholderText = "";
@@ -234,6 +223,18 @@
             this.txt_room.TextPlaceholder = "";
             this.txt_room.UseSystemPasswordChar = false;
             this.txt_room.WordWrap = true;
+            // 
+            // lbl_room
+            // 
+            this.lbl_room.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lbl_room.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_room.Location = new System.Drawing.Point(12, 33);
+            this.lbl_room.Name = "lbl_room";
+            this.lbl_room.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.lbl_room.Size = new System.Drawing.Size(606, 25);
+            this.lbl_room.TabIndex = 21;
+            this.lbl_room.Text = "Бино ва ҳучра";
+            this.lbl_room.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // ListRoom
             // 

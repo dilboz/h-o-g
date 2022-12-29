@@ -33,15 +33,16 @@
             this.create_clieant = new System.Windows.Forms.Button();
             this.panel_menu = new System.Windows.Forms.Panel();
             this.panel_left = new System.Windows.Forms.Panel();
-            this.logo_label = new System.Windows.Forms.Label();
             this.panel_top = new System.Windows.Forms.Panel();
             this.logout_button = new System.Windows.Forms.Button();
             this.user_info_label = new System.Windows.Forms.Label();
             this.panel_child_all = new System.Windows.Forms.Panel();
             this.formAssistant1 = new DevExpress.XtraBars.FormAssistant();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel_menu.SuspendLayout();
             this.panel_left.SuspendLayout();
             this.panel_top.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // acrive_client
@@ -56,7 +57,7 @@
             this.acrive_client.Name = "acrive_client";
             this.acrive_client.Size = new System.Drawing.Size(187, 40);
             this.acrive_client.TabIndex = 31;
-            this.acrive_client.Text = "Хаммаи одамони ба назди табиб фиристода";
+            this.acrive_client.Text = "Ба назди табиб фиристонидашуда";
             this.acrive_client.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.acrive_client.UseVisualStyleBackColor = true;
             this.acrive_client.Click += new System.EventHandler(this.acrive_client_Click);
@@ -73,7 +74,7 @@
             this.client_of_bugalter.Name = "client_of_bugalter";
             this.client_of_bugalter.Size = new System.Drawing.Size(187, 40);
             this.client_of_bugalter.TabIndex = 26;
-            this.client_of_bugalter.Text = "Одамони ба \r\nбугалтерия рафтги";
+            this.client_of_bugalter.Text = "Ба назди хазинадор фиристодашуда";
             this.client_of_bugalter.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.client_of_bugalter.UseVisualStyleBackColor = true;
             this.client_of_bugalter.Click += new System.EventHandler(this.client_of_bugalter_Click);
@@ -111,25 +112,13 @@
             // panel_left
             // 
             this.panel_left.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
-            this.panel_left.Controls.Add(this.logo_label);
+            this.panel_left.Controls.Add(this.pictureBox1);
             this.panel_left.Controls.Add(this.panel_menu);
             this.panel_left.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel_left.Location = new System.Drawing.Point(0, 0);
             this.panel_left.Name = "panel_left";
             this.panel_left.Size = new System.Drawing.Size(216, 450);
             this.panel_left.TabIndex = 4;
-            // 
-            // logo_label
-            // 
-            this.logo_label.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
-            this.logo_label.Dock = System.Windows.Forms.DockStyle.Top;
-            this.logo_label.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.logo_label.ForeColor = System.Drawing.Color.White;
-            this.logo_label.Location = new System.Drawing.Point(0, 0);
-            this.logo_label.Name = "logo_label";
-            this.logo_label.Size = new System.Drawing.Size(216, 55);
-            this.logo_label.TabIndex = 0;
-            this.logo_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel_top
             // 
@@ -184,6 +173,18 @@
             this.panel_child_all.Size = new System.Drawing.Size(836, 395);
             this.panel_child_all.TabIndex = 6;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pictureBox1.Image = global::ObiGarm.Properties.Resources.logo;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(216, 55);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // Ristratura
             // 
             this.Appearance.Options.UseFont = true;
@@ -198,13 +199,14 @@
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Ristratura";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "AdminForm";
+            this.Text = "Бақайдгиранда";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Risrarura_FormClosed);
             this.Load += new System.EventHandler(this.Risrarura_Load);
             this.panel_menu.ResumeLayout(false);
             this.panel_left.ResumeLayout(false);
             this.panel_top.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -215,11 +217,11 @@
         private System.Windows.Forms.Button create_clieant;
         private System.Windows.Forms.Panel panel_menu;
         private System.Windows.Forms.Panel panel_left;
-        private System.Windows.Forms.Label logo_label;
         private System.Windows.Forms.Panel panel_child_all;
         private System.Windows.Forms.Panel panel_top;
         private System.Windows.Forms.Button logout_button;
         private System.Windows.Forms.Label user_info_label;
         private DevExpress.XtraBars.FormAssistant formAssistant1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

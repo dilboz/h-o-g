@@ -208,7 +208,7 @@
             this.lbl_name.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.lbl_name.Size = new System.Drawing.Size(575, 25);
             this.lbl_name.TabIndex = 2;
-            this.lbl_name.Text = "Ном бино:";
+            this.lbl_name.Text = "Номи бино:";
             this.lbl_name.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // AddFrame
@@ -227,7 +227,7 @@
             this.Padding = new System.Windows.Forms.Padding(20);
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "AddFrame";
+            this.Text = "Сохтан";
             this.Shown += new System.EventHandler(this.AddFrame_Shown);
             this.panel_full.ResumeLayout(false);
             this.panel_botton.ResumeLayout(false);

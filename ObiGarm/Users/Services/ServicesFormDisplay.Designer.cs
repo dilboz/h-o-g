@@ -123,7 +123,7 @@
             this.groupControl1.Padding = new System.Windows.Forms.Padding(5);
             this.groupControl1.Size = new System.Drawing.Size(280, 315);
             this.groupControl1.TabIndex = 25;
-            this.groupControl1.Text = "Спитсалистҳо";
+            this.groupControl1.Text = "Мутахассисон";
             // 
             // list_sipsalist
             // 
@@ -189,7 +189,7 @@
             this.btn_hide.Name = "btn_hide";
             this.btn_hide.Size = new System.Drawing.Size(120, 25);
             this.btn_hide.TabIndex = 3;
-            this.btn_hide.Text = "Нест крдан";
+            this.btn_hide.Text = "Нест кардан";
             this.btn_hide.UseVisualStyleBackColor = false;
             this.btn_hide.Click += new System.EventHandler(this.btn_hide_Click);
             // 
@@ -237,7 +237,7 @@
             this.groupControl2.Padding = new System.Windows.Forms.Padding(5);
             this.groupControl2.Size = new System.Drawing.Size(325, 315);
             this.groupControl2.TabIndex = 27;
-            this.groupControl2.Text = "Хизматрасонии спитсалист";
+            this.groupControl2.Text = "Намуди хизматрасонии мутахассис";
             // 
             // list_services_users
             // 
@@ -270,7 +270,7 @@
             this.delete_service_user.Name = "delete_service_user";
             this.delete_service_user.Size = new System.Drawing.Size(120, 25);
             this.delete_service_user.TabIndex = 3;
-            this.delete_service_user.Text = "Нест крдан";
+            this.delete_service_user.Text = "Нест кардан";
             this.delete_service_user.UseVisualStyleBackColor = false;
             this.delete_service_user.Click += new System.EventHandler(this.delete_service_user_Click);
             // 
@@ -283,7 +283,7 @@
             this.groupControl3.Padding = new System.Windows.Forms.Padding(5);
             this.groupControl3.Size = new System.Drawing.Size(480, 315);
             this.groupControl3.TabIndex = 29;
-            this.groupControl3.Text = "Хизматрасонии спитсалист";
+            this.groupControl3.Text = "Намуди хизматрасониҳо";
             // 
             // list_services
             // 
@@ -390,9 +390,9 @@
             this.sevices_to_users.ForeColor = System.Drawing.Color.White;
             this.sevices_to_users.Location = new System.Drawing.Point(8, 8);
             this.sevices_to_users.Name = "sevices_to_users";
-            this.sevices_to_users.Size = new System.Drawing.Size(173, 25);
+            this.sevices_to_users.Size = new System.Drawing.Size(186, 25);
             this.sevices_to_users.TabIndex = 3;
-            this.sevices_to_users.Text = "Ба спитсалист додан";
+            this.sevices_to_users.Text = "Хизматрасонии мутахассис";
             this.sevices_to_users.UseVisualStyleBackColor = false;
             this.sevices_to_users.Click += new System.EventHandler(this.sevices_to_users_Click);
             // 

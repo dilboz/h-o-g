@@ -90,6 +90,7 @@ namespace ObiGarm.Users.Registar
                         int result = sqlConfiguration.sqlQuery(sql_add_user);
                         if (result == 500)
                         {
+                            txt_name.Text = sql_add_user;
                             MessageBox.Show("Хатоги ба вучуд омад!", "Сообщения", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
                         else
@@ -145,6 +146,7 @@ namespace ObiGarm.Users.Registar
                         int result = sqlConfiguration.sqlQuery(sql_update_user);
                         if (result == 500)
                         {
+                            txt_name.Text = sql_update_user;
                             MessageBox.Show("Хатоги ба вучуд омад!", "Сообщения", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
                         else

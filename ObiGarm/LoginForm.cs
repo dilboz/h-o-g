@@ -46,6 +46,10 @@ namespace ObiGarm
                 SettinsForm settinsForm = new SettinsForm();
                 settinsForm.ShowDialog();
             }
+            if (e.KeyCode == Keys.Enter)
+            {
+                LoginFunc();
+            }
         }
 
         private void LoginForm_Load(object sender, EventArgs e)
@@ -99,7 +103,7 @@ namespace ObiGarm
 
         private bool isFirstTime()
         {
-            StreamReader sr = new StreamReader(@"setting\setting_enter.txt");
+            StreamReader sr = new StreamReader(Application.StartupPath + @"\setting\setting_enter.txt");
             while ((l = sr.ReadLine()) != null)
             {
                 res = l;
@@ -248,6 +252,16 @@ namespace ObiGarm
             else
             {
                 MessageBox.Show("Малумотро пурра дохил кунед");
+            }
+        }
+
+
+
+        private void txt_password_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                LoginFunc();
             }
         }
     }

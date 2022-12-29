@@ -171,6 +171,7 @@ namespace ObiGarm.Users.Kort
         private void AddKort_Shown(object sender, EventArgs e)
         {
             loadCombo();
+            txt_number_kort.Focus();
             if (this.id != "" && this.text_button != "Сохтан")
             {
                 setTextToTextBoxs(this.id);
@@ -192,6 +193,11 @@ namespace ObiGarm.Users.Kort
                 combo_type_kort.Focus();
                 txt_number_kort.Focus();
             }
+        }
+
+        private void AddKort_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

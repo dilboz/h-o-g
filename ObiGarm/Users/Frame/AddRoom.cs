@@ -35,7 +35,7 @@ namespace ObiGarm.Users.Frame
 
         private void setTextToTextBoxs(string id)
         {
-            string sql = "select room.id, frame.name 'name_frame', room.name, active " +
+            string sql = "select room.id, frame.name 'name_frame', room.name, room.max_per,  active " +
                 "from room " +
                 "inner join frame on room.id_freme = frame.id "+
                 "where room.id = '" + id + "'";
@@ -51,6 +51,7 @@ namespace ObiGarm.Users.Frame
                 {
                     combo_frame.Text= dataTable.Rows[0]["name_frame"].ToString();
                     txt_name_room.Text = dataTable.Rows[0]["name"].ToString();
+                    txt_max_count.Text = dataTable.Rows[0]["max_per"].ToString();
 
                 }
                 else
@@ -80,10 +81,13 @@ namespace ObiGarm.Users.Frame
             }
             string id_fmame = combo_frame.SelectedValue.ToString();
             string room = txt_name_room.Text;
+            string max_per = txt_max_count.Text;
+
             string sql_check_farme = $"select * from room  where id_freme = ' { id_fmame } ' and name =' { room.Trim() }' and enable ='1';";
 
-            string sql_add_room = "insert into room (id_freme, name) values('" +
+            string sql_add_room = "insert into room (id_freme, max_per, name) values('" +
                id_fmame + "', '"+
+               max_per + "', '" +
                room.Trim()+"');";
 
             if (room.Trim() != "")
@@ -122,12 +126,15 @@ namespace ObiGarm.Users.Frame
             }
             string id_fmame = combo_frame.SelectedValue.ToString();
             string room = txt_name_room.Text;
-            string sql_check_farme = "select * from room  where id_freme = '" + id_fmame + "' and name ='" + room.Trim() + "' deleted is  null;";
+            string max_per = txt_max_count.Text;
+
+            string sql_check_farme = "select * from room  where id_freme = '" + id_fmame + "' and name ='" + room.Trim() + "' and deleted is  null;";
 
 
             string sql_update_frame = "update room set " +
                 "id_freme = '" + id_fmame + "', " +
-                "name = '"+ room.Trim() + "' "+
+                "name = '"+ room.Trim() + "', "+
+                "max_per = '" + max_per + "' " +
                "where id = '" + id + "'";
 
             if (room.Trim() != "")

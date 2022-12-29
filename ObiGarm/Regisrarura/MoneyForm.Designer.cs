@@ -203,7 +203,7 @@
             this.lbl_com_money.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.lbl_com_money.Size = new System.Drawing.Size(343, 25);
             this.lbl_com_money.TabIndex = 27;
-            this.lbl_com_money.Text = "Малумот оиди маблаг";
+            this.lbl_com_money.Text = "Малумот оиди маблағ";
             this.lbl_com_money.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // txt_number_money
@@ -290,7 +290,7 @@
             this.lbl_number_mpney.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.lbl_number_mpney.Size = new System.Drawing.Size(343, 25);
             this.lbl_number_mpney.TabIndex = 25;
-            this.lbl_number_mpney.Text = "Миқдори маблаг";
+            this.lbl_number_mpney.Text = "Миқдори маблағ";
             this.lbl_number_mpney.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // MoneyForm

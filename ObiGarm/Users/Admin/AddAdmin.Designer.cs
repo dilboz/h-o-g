@@ -102,7 +102,7 @@
             this.group_creat_admin.Padding = new System.Windows.Forms.Padding(10);
             this.group_creat_admin.Size = new System.Drawing.Size(656, 370);
             this.group_creat_admin.TabIndex = 13;
-            this.group_creat_admin.Text = "Сохтани амин";
+            this.group_creat_admin.Text = "Сохтани администратор";
             // 
             // txt_cheng_password
             // 
@@ -609,7 +609,7 @@
             this.Padding = new System.Windows.Forms.Padding(20);
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Сохтани админ";
+            this.Text = "Сохтани Администратор";
             this.Shown += new System.EventHandler(this.AddAdmin_Shown);
             this.panel_full.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.group_creat_admin)).EndInit();

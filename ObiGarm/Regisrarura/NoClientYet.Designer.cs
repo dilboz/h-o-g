@@ -81,6 +81,7 @@
             this.grid_view_yet_no_client.GridControl = this.grid_yet_not_client;
             this.grid_view_yet_no_client.Name = "grid_view_yet_no_client";
             this.grid_view_yet_no_client.OptionsFind.AlwaysVisible = true;
+            this.grid_view_yet_no_client.OptionsView.ShowGroupPanel = false;
             // 
             // id
             // 

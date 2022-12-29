@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddRoom));
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties5 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
             this.formAssistant1 = new DevExpress.XtraBars.FormAssistant();
             this.panel_full = new System.Windows.Forms.Panel();
             this.panel_botton = new System.Windows.Forms.Panel();
@@ -44,10 +44,13 @@
             this.lbl_room = new System.Windows.Forms.Label();
             this.combo_frame = new Guna.UI2.WinForms.Guna2ComboBox();
             this.lbl_name = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txt_max_count = new Guna.UI2.WinForms.Guna2NumericUpDown();
             this.panel_full.SuspendLayout();
             this.panel_botton.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.group_name_frame)).BeginInit();
             this.group_name_frame.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_max_count)).BeginInit();
             this.SuspendLayout();
             // 
             // panel_full
@@ -59,7 +62,7 @@
             this.panel_full.Location = new System.Drawing.Point(20, 20);
             this.panel_full.Name = "panel_full";
             this.panel_full.Padding = new System.Windows.Forms.Padding(10);
-            this.panel_full.Size = new System.Drawing.Size(609, 239);
+            this.panel_full.Size = new System.Drawing.Size(609, 292);
             this.panel_full.TabIndex = 0;
             // 
             // panel_botton
@@ -69,7 +72,7 @@
             this.panel_botton.Controls.Add(this.lbl_tab);
             this.panel_botton.Controls.Add(this.btn_creat);
             this.panel_botton.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel_botton.Location = new System.Drawing.Point(10, 185);
+            this.panel_botton.Location = new System.Drawing.Point(10, 238);
             this.panel_botton.Name = "panel_botton";
             this.panel_botton.Padding = new System.Windows.Forms.Padding(8);
             this.panel_botton.Size = new System.Drawing.Size(589, 44);
@@ -117,6 +120,8 @@
             // 
             // group_name_frame
             // 
+            this.group_name_frame.Controls.Add(this.txt_max_count);
+            this.group_name_frame.Controls.Add(this.label1);
             this.group_name_frame.Controls.Add(this.txt_name_room);
             this.group_name_frame.Controls.Add(this.lbl_room);
             this.group_name_frame.Controls.Add(this.combo_frame);
@@ -125,7 +130,7 @@
             this.group_name_frame.Location = new System.Drawing.Point(10, 10);
             this.group_name_frame.Name = "group_name_frame";
             this.group_name_frame.Padding = new System.Windows.Forms.Padding(5);
-            this.group_name_frame.Size = new System.Drawing.Size(589, 162);
+            this.group_name_frame.Size = new System.Drawing.Size(589, 222);
             this.group_name_frame.TabIndex = 1;
             this.group_name_frame.Text = "Сохтани ҳуҷра";
             // 
@@ -163,26 +168,26 @@
             this.txt_name_room.Modified = false;
             this.txt_name_room.Multiline = false;
             this.txt_name_room.Name = "txt_name_room";
-            stateProperties1.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties1.FillColor = System.Drawing.Color.Empty;
-            stateProperties1.ForeColor = System.Drawing.Color.Empty;
-            stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txt_name_room.OnActiveState = stateProperties1;
-            stateProperties2.BorderColor = System.Drawing.Color.Empty;
-            stateProperties2.FillColor = System.Drawing.Color.White;
-            stateProperties2.ForeColor = System.Drawing.Color.Empty;
-            stateProperties2.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.txt_name_room.OnDisabledState = stateProperties2;
-            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties3.FillColor = System.Drawing.Color.Empty;
-            stateProperties3.ForeColor = System.Drawing.Color.Empty;
-            stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txt_name_room.OnHoverState = stateProperties3;
-            stateProperties4.BorderColor = System.Drawing.Color.Silver;
-            stateProperties4.FillColor = System.Drawing.Color.White;
-            stateProperties4.ForeColor = System.Drawing.Color.Empty;
-            stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txt_name_room.OnIdleState = stateProperties4;
+            stateProperties5.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties5.FillColor = System.Drawing.Color.Empty;
+            stateProperties5.ForeColor = System.Drawing.Color.Empty;
+            stateProperties5.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txt_name_room.OnActiveState = stateProperties5;
+            stateProperties6.BorderColor = System.Drawing.Color.Empty;
+            stateProperties6.FillColor = System.Drawing.Color.White;
+            stateProperties6.ForeColor = System.Drawing.Color.Empty;
+            stateProperties6.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.txt_name_room.OnDisabledState = stateProperties6;
+            stateProperties7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties7.FillColor = System.Drawing.Color.Empty;
+            stateProperties7.ForeColor = System.Drawing.Color.Empty;
+            stateProperties7.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txt_name_room.OnHoverState = stateProperties7;
+            stateProperties8.BorderColor = System.Drawing.Color.Silver;
+            stateProperties8.FillColor = System.Drawing.Color.White;
+            stateProperties8.ForeColor = System.Drawing.Color.Empty;
+            stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txt_name_room.OnIdleState = stateProperties8;
             this.txt_name_room.PasswordChar = '\0';
             this.txt_name_room.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txt_name_room.PlaceholderText = "НОМ";
@@ -212,7 +217,7 @@
             this.lbl_room.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.lbl_room.Size = new System.Drawing.Size(575, 25);
             this.lbl_room.TabIndex = 7;
-            this.lbl_room.Text = "Номи ҳуҷра:";
+            this.lbl_room.Text = "Рақами ҳуҷра:";
             this.lbl_room.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // combo_frame
@@ -244,13 +249,53 @@
             this.lbl_name.Text = "Номи бино:";
             this.lbl_name.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // label1
+            // 
+            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(7, 149);
+            this.label1.Name = "label1";
+            this.label1.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.label1.Size = new System.Drawing.Size(575, 25);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "Шумораи истироҳаткунанда:";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // txt_max_count
+            // 
+            this.txt_max_count.BackColor = System.Drawing.Color.Transparent;
+            this.txt_max_count.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(108)))), ((int)(((byte)(59)))));
+            this.txt_max_count.BorderRadius = 10;
+            this.txt_max_count.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_max_count.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txt_max_count.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_max_count.Location = new System.Drawing.Point(7, 174);
+            this.txt_max_count.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.txt_max_count.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.txt_max_count.Name = "txt_max_count";
+            this.txt_max_count.Size = new System.Drawing.Size(575, 30);
+            this.txt_max_count.TabIndex = 40;
+            this.txt_max_count.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
             // AddRoom
             // 
             this.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(649, 279);
+            this.ClientSize = new System.Drawing.Size(649, 332);
             this.Controls.Add(this.panel_full);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.IconOptions.ShowIcon = false;
@@ -260,12 +305,13 @@
             this.Padding = new System.Windows.Forms.Padding(20);
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "AddFrame";
+            this.Text = "Ҳуҷра";
             this.Shown += new System.EventHandler(this.AddRoom_Shown);
             this.panel_full.ResumeLayout(false);
             this.panel_botton.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.group_name_frame)).EndInit();
             this.group_name_frame.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.txt_max_count)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -283,5 +329,7 @@
         private System.Windows.Forms.Label lbl_room;
         private Guna.UI2.WinForms.Guna2ComboBox combo_frame;
         private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox txt_name_room;
+        private System.Windows.Forms.Label label1;
+        private Guna.UI2.WinForms.Guna2NumericUpDown txt_max_count;
     }
 }

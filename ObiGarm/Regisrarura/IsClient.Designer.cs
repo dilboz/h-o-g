@@ -117,6 +117,7 @@
             this.btn_delete});
             this.grid_view_is_client.GridControl = this.grid_control_is_client;
             this.grid_view_is_client.Name = "grid_view_is_client";
+            this.grid_view_is_client.OptionsView.ShowGroupPanel = false;
             // 
             // id
             // 

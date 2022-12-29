@@ -85,6 +85,7 @@ namespace ObiGarm.Users.Bugalter
                         if (result == 500)
                         {
                             MessageBox.Show("Хатоги ба вучуд омад!", "Сообщения", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            txt_name.Text = sql_add_user;
                         }
                         else
                         {
@@ -140,6 +141,7 @@ namespace ObiGarm.Users.Bugalter
                         if (result == 500)
                         {
                             MessageBox.Show("Хатоги ба вучуд омад!", "Сообщения", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            txt_name.Text = sql_update_user;
                         }
                         else
                         {

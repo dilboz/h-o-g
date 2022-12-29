@@ -8,16 +8,24 @@ namespace ObiGarm.Regisrarura.Lists
     {
         SqlConfiguration sqlConfiguration;
         private readonly AddCllient addCllient_;
+        private readonly EdirClient edirClient_;
         public ListRoom(AddCllient addCllient)
         {
             addCllient_ = addCllient;
             InitializeComponent();
             sqlConfiguration = new SqlConfiguration();
         }
+
+        public ListRoom(EdirClient edirClient)
+        {
+            edirClient_ = edirClient;
+            InitializeComponent();
+            sqlConfiguration = new SqlConfiguration();
+        }
         string id_room;
         void dispLay()
         {
-            string sql = "select room.id, concat('Бинои ', frame.name, ' Ҳучраи ',  room.name) as 'name_room' " +
+            string sql = "select room.id, concat('Бинои ', frame.name, ' Ҳучраи ',  room.name, ' (', room.count_per, ')') as 'name_room' " +
                          "from room " +
                          "inner join frame on room.id_freme = frame.id and active =0;";
             sqlConfiguration.LoadList(sql, "name_room", "id", list_load_room);
@@ -44,22 +52,34 @@ namespace ObiGarm.Regisrarura.Lists
 
         private void btn_inser_docrot_Click(object sender, EventArgs e)
         {
-            string sql = $"update room SET active = '1' where id = {id_room}";
-            sqlConfiguration.sqlSelectQuery(sql);
-            addCllient_.name_room = txt_room.Text;
-            addCllient_.id_room = id_room;
+            if (addCllient_!=null)
+            {
+                addCllient_.name_room = txt_room.Text;
+                addCllient_.id_room = id_room;
+
+            }
+            if (edirClient_!=null)
+            {
+                edirClient_.name_room= txt_room.Text;
+                edirClient_.id_room = id_room;
+                edirClient_.set_names_room_();
+            }
+            
+            this.Close();
+        }
+
+
+
+        private void btn_clear_doctor_Click(object sender, EventArgs e)
+        {
             this.Close();
         }
 
         private void list_load_room_Click(object sender, EventArgs e)
         {
+
             id_room = list_load_room.SelectedValue.ToString();
             txt_room.Text = list_load_room.GetDisplayItemValue(list_load_room.SelectedIndex).ToString();
-        }
-
-        private void btn_clear_doctor_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }

@@ -185,6 +185,7 @@
             this.grid_view.GridControl = this.grid_gontrol_list_money;
             this.grid_view.Name = "grid_view";
             this.grid_view.OptionsFind.AlwaysVisible = true;
+            this.grid_view.OptionsView.ShowGroupPanel = false;
             // 
             // id
             // 

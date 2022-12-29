@@ -90,7 +90,7 @@
             // 
             // picture_logo
             // 
-            this.picture_logo.Image = global::ObiGarm.Properties.Resources.login_logo;
+            this.picture_logo.Image = global::ObiGarm.Properties.Resources.logos;
             this.picture_logo.Location = new System.Drawing.Point(17, 50);
             this.picture_logo.Name = "picture_logo";
             this.picture_logo.Size = new System.Drawing.Size(140, 132);
@@ -157,7 +157,7 @@
             this.txt_login.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txt_login.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_login.DefaultFont = new System.Drawing.Font("Segoe UI Semibold", 9.75F);
-            this.txt_login.DefaultText = "vrach";
+            this.txt_login.DefaultText = "";
             this.txt_login.FillColor = System.Drawing.Color.White;
             this.txt_login.HideSelection = true;
             this.txt_login.IconLeft = null;
@@ -165,8 +165,7 @@
             this.txt_login.IconPadding = 10;
             this.txt_login.IconRight = null;
             this.txt_login.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_login.Lines = new string[] {
-        "vrach"};
+            this.txt_login.Lines = new string[0];
             this.txt_login.Location = new System.Drawing.Point(24, 54);
             this.txt_login.MaxLength = 32767;
             this.txt_login.MinimumSize = new System.Drawing.Size(100, 35);
@@ -241,7 +240,7 @@
             this.txt_password.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txt_password.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_password.DefaultFont = new System.Drawing.Font("Segoe UI Semibold", 9.75F);
-            this.txt_password.DefaultText = "vrach";
+            this.txt_password.DefaultText = "";
             this.txt_password.FillColor = System.Drawing.Color.White;
             this.txt_password.HideSelection = true;
             this.txt_password.IconLeft = null;
@@ -249,8 +248,7 @@
             this.txt_password.IconPadding = 10;
             this.txt_password.IconRight = null;
             this.txt_password.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_password.Lines = new string[] {
-        "vrach"};
+            this.txt_password.Lines = new string[0];
             this.txt_password.Location = new System.Drawing.Point(24, 120);
             this.txt_password.MaxLength = 32767;
             this.txt_password.MinimumSize = new System.Drawing.Size(100, 35);
@@ -296,6 +294,7 @@
             this.txt_password.TextPlaceholder = "Рамз";
             this.txt_password.UseSystemPasswordChar = false;
             this.txt_password.WordWrap = true;
+            this.txt_password.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_password_KeyDown);
             // 
             // btn_exit
             // 
@@ -468,7 +467,7 @@
             this.Name = "LoginForm";
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "LoginForm";
+            this.Text = "Воридшавӣ";
             this.Load += new System.EventHandler(this.LoginForm_Load);
             this.panel_form.ResumeLayout(false);
             this.panel_left.ResumeLayout(false);

@@ -40,12 +40,12 @@
             this.btn_get_money_in_bank = new System.Windows.Forms.Button();
             this.btn_get_money_in_kassa = new System.Windows.Forms.Button();
             this.panel_left = new System.Windows.Forms.Panel();
-            this.logo_label = new System.Windows.Forms.Label();
             this.panel_top = new System.Windows.Forms.Panel();
             this.logout_button = new System.Windows.Forms.Button();
             this.user_info_label = new System.Windows.Forms.Label();
             this.panel_child_all = new System.Windows.Forms.Panel();
             this.formAssistant1 = new DevExpress.XtraBars.FormAssistant();
+            this.picture_logo = new System.Windows.Forms.PictureBox();
             this.panel_menu.SuspendLayout();
             this.panel_consumption.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -53,6 +53,7 @@
             this.panel_user_menu.SuspendLayout();
             this.panel_left.SuspendLayout();
             this.panel_top.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picture_logo)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_get_money
@@ -67,7 +68,7 @@
             this.btn_get_money.Name = "btn_get_money";
             this.btn_get_money.Size = new System.Drawing.Size(212, 40);
             this.btn_get_money.TabIndex = 26;
-            this.btn_get_money.Text = "Маблағҳо";
+            this.btn_get_money.Text = "Воридоти";
             this.btn_get_money.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_get_money.UseVisualStyleBackColor = true;
             this.btn_get_money.Click += new System.EventHandler(this.btn_get_money_Click);
@@ -115,7 +116,7 @@
             this.btn_consuption_money_in_bank.Name = "btn_consuption_money_in_bank";
             this.btn_consuption_money_in_bank.Size = new System.Drawing.Size(196, 40);
             this.btn_consuption_money_in_bank.TabIndex = 30;
-            this.btn_consuption_money_in_bank.Text = "Харидҳо аз пулҳои дар банк буда";
+            this.btn_consuption_money_in_bank.Text = "Маблағҳои гайринақдии бонкӣ";
             this.btn_consuption_money_in_bank.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_consuption_money_in_bank.UseVisualStyleBackColor = true;
             this.btn_consuption_money_in_bank.Click += new System.EventHandler(this.btn_consuption_money_in_bank_Click);
@@ -132,7 +133,7 @@
             this.btn_consuption_money_in_kassa.Name = "btn_consuption_money_in_kassa";
             this.btn_consuption_money_in_kassa.Size = new System.Drawing.Size(196, 40);
             this.btn_consuption_money_in_kassa.TabIndex = 29;
-            this.btn_consuption_money_in_kassa.Text = "Харидҳо аз пулҳои хазина";
+            this.btn_consuption_money_in_kassa.Text = "Маблағҳои нақдии хазина";
             this.btn_consuption_money_in_kassa.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_consuption_money_in_kassa.UseVisualStyleBackColor = true;
             this.btn_consuption_money_in_kassa.Click += new System.EventHandler(this.btn_consuption_money_in_kassa_Click);
@@ -149,7 +150,7 @@
             this.btn_consuption_money.Name = "btn_consuption_money";
             this.btn_consuption_money.Size = new System.Drawing.Size(212, 40);
             this.btn_consuption_money.TabIndex = 29;
-            this.btn_consuption_money.Text = "Харидҳо";
+            this.btn_consuption_money.Text = "Содироти";
             this.btn_consuption_money.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_consuption_money.UseVisualStyleBackColor = true;
             this.btn_consuption_money.Click += new System.EventHandler(this.btn_consuption_money_Click);
@@ -187,7 +188,7 @@
             this.btn_get_money_in_bank.Name = "btn_get_money_in_bank";
             this.btn_get_money_in_bank.Size = new System.Drawing.Size(199, 40);
             this.btn_get_money_in_bank.TabIndex = 30;
-            this.btn_get_money_in_bank.Text = "Пулҳои банк буда";
+            this.btn_get_money_in_bank.Text = "Маблағҳои гайринақдии бонкӣ";
             this.btn_get_money_in_bank.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_get_money_in_bank.UseVisualStyleBackColor = true;
             this.btn_get_money_in_bank.Click += new System.EventHandler(this.btn_get_money_in_bank_Click);
@@ -205,7 +206,7 @@
             this.btn_get_money_in_kassa.Name = "btn_get_money_in_kassa";
             this.btn_get_money_in_kassa.Size = new System.Drawing.Size(199, 40);
             this.btn_get_money_in_kassa.TabIndex = 29;
-            this.btn_get_money_in_kassa.Text = "Пулҳои аз хазина гирифташуд";
+            this.btn_get_money_in_kassa.Text = "Маблағҳои нақдии хазина";
             this.btn_get_money_in_kassa.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_get_money_in_kassa.UseVisualStyleBackColor = true;
             this.btn_get_money_in_kassa.Click += new System.EventHandler(this.btn_get_money_in_kassa_Click);
@@ -213,26 +214,13 @@
             // panel_left
             // 
             this.panel_left.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
-            this.panel_left.Controls.Add(this.logo_label);
+            this.panel_left.Controls.Add(this.picture_logo);
             this.panel_left.Controls.Add(this.panel_menu);
             this.panel_left.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel_left.Location = new System.Drawing.Point(0, 0);
             this.panel_left.Name = "panel_left";
             this.panel_left.Size = new System.Drawing.Size(230, 492);
             this.panel_left.TabIndex = 4;
-            // 
-            // logo_label
-            // 
-            this.logo_label.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
-            this.logo_label.Dock = System.Windows.Forms.DockStyle.Top;
-            this.logo_label.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.logo_label.ForeColor = System.Drawing.Color.White;
-            this.logo_label.Location = new System.Drawing.Point(0, 0);
-            this.logo_label.Name = "logo_label";
-            this.logo_label.Size = new System.Drawing.Size(230, 55);
-            this.logo_label.TabIndex = 0;
-            this.logo_label.Text = "ОБИ ГАРМ";
-            this.logo_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel_top
             // 
@@ -286,6 +274,18 @@
             this.panel_child_all.Size = new System.Drawing.Size(868, 437);
             this.panel_child_all.TabIndex = 6;
             // 
+            // picture_logo
+            // 
+            this.picture_logo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.picture_logo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.picture_logo.Image = global::ObiGarm.Properties.Resources.logo;
+            this.picture_logo.Location = new System.Drawing.Point(0, 0);
+            this.picture_logo.Name = "picture_logo";
+            this.picture_logo.Size = new System.Drawing.Size(230, 69);
+            this.picture_logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picture_logo.TabIndex = 0;
+            this.picture_logo.TabStop = false;
+            // 
             // AccountingForm
             // 
             this.Appearance.Options.UseFont = true;
@@ -311,6 +311,7 @@
             this.panel_user_menu.ResumeLayout(false);
             this.panel_left.ResumeLayout(false);
             this.panel_top.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picture_logo)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -319,7 +320,6 @@
         private System.Windows.Forms.Button btn_get_money;
         private System.Windows.Forms.Panel panel_menu;
         private System.Windows.Forms.Panel panel_left;
-        private System.Windows.Forms.Label logo_label;
         private System.Windows.Forms.Panel panel_child_all;
         private System.Windows.Forms.Panel panel_top;
         private System.Windows.Forms.Button logout_button;
@@ -334,5 +334,6 @@
         private System.Windows.Forms.Panel panel_user_menu;
         private System.Windows.Forms.Button btn_get_money_in_bank;
         private System.Windows.Forms.Button btn_get_money_in_kassa;
+        private System.Windows.Forms.PictureBox picture_logo;
     }
 }

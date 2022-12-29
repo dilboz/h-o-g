@@ -34,7 +34,7 @@ namespace ObiGarm.Regisrarura
                              "inner join kort on client.id_kort = kort.id " +
                              "inner join type_kort on kort.id_type_kort = type_kort.id " +
                              "where client.is_for_vrach=1 and client.enable=1 and client.deleted is null "+
-                             "order by id desc";
+                             "order by id desc ";
             sqlConfiguration.displayListExpress(sql, grid_control_is_client);
         }
 

@@ -101,7 +101,7 @@
             this.label_date.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
             this.label_date.Size = new System.Drawing.Size(590, 23);
             this.label_date.TabIndex = 46;
-            this.label_date.Text = "Тарихи рӯз";
+            this.label_date.Text = "Таърихи рӯз";
             // 
             // txt_number_money
             // 

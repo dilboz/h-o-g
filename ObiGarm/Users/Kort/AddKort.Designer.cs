@@ -245,6 +245,7 @@
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Сотани корт";
+            this.Load += new System.EventHandler(this.AddKort_Load);
             this.Shown += new System.EventHandler(this.AddKort_Shown);
             ((System.ComponentModel.ISupportInitialize)(this.group_add_get_kort)).EndInit();
             this.group_add_get_kort.ResumeLayout(false);

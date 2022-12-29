@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace ObiGarm.ClassDatabase
 {
@@ -15,7 +16,7 @@ namespace ObiGarm.ClassDatabase
 
         /// <path_name>
         /// path file setting tadabse format *.txt
-        public string path_name = @"setting\setting_db.txt";
+        public string path_name =Application.StartupPath +  @"\setting\setting_db.txt";
         /// </path_name>
         /// 
 
