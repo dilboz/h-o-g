@@ -1,4 +1,5 @@
 ﻿using ObiGarm.ClassDatabase;
+using ObiGarm.Regisrarura.Arkhiv;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -25,21 +26,30 @@ namespace ObiGarm.Regisrarura
 
         private void colorsButton(int index)
         {
-            Button[] bunifuButtons = new Button[] { create_clieant, client_of_bugalter, acrive_client};
+            Button[] buttons = new Button[] { btn_home, btn_not_order, btn_block_client, btn_archive, };
 
-            for (var i = 0; i < bunifuButtons.Length; i++)
+            Label[] label_left = new Label[] { left_labl_home, lbl_left_not_order, lbl_left_block_client, lbl_left_archive };
+
+
+            for (var i = 0; i < buttons.Length; i++)
             {
-                bunifuButtons[i].BackColor = Color.FromArgb(70, 70, 70);
+                buttons[i].BackColor = Color.White;
+                buttons[i].ForeColor = Color.FromArgb(118, 120, 124);
+                buttons[i].Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                label_left[i].Hide();
             }
 
-            bunifuButtons[index].BackColor = Color.FromArgb(100, 100, 100);
+            buttons[index].BackColor = Color.FromArgb(200, 232, 225);
+            buttons[index].ForeColor = Color.FromArgb(52, 127, 96);
+            buttons[index].Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            label_left[index].Show();
         }
 
         public void setNameAndType()
         {
             check_type_user();
-            user_info_label.Text = "Истифодабаранда: " + SettingsDatabase.name_user + " " + SettingsDatabase.surname_user +
-                "\nНамуди истифодабаранда: " + type_user;
+            user_info_label.Text =  SettingsDatabase.name_user + " " + SettingsDatabase.surname_user +
+                "\n" + type_user;
         }
         void check_type_user()
         {
@@ -81,7 +91,7 @@ namespace ObiGarm.Regisrarura
         private void Risrarura_Load(object sender, EventArgs e)
         {
             colorsButton(0);
-            openChildForm(new AddCllient());
+            openChildForm(new IsClient());
         }
 
         private void Risrarura_FormClosed(object sender, FormClosedEventArgs e)
@@ -89,25 +99,33 @@ namespace ObiGarm.Regisrarura
             Application.Exit();
         }
 
-        private void client_of_bugalter_Click(object sender, EventArgs e)
+
+        private void btn_not_order_Click(object sender, EventArgs e)
         {
             colorsButton(1);
-            openChildForm(new NoClientYet());
         }
 
-        private void create_clieant_Click(object sender, EventArgs e)
+        private void btn_home_Click(object sender, EventArgs e)
         {
             colorsButton(0);
-            openChildForm(new AddCllient());
         }
 
-        private void acrive_client_Click(object sender, EventArgs e)
+        private void btn_block_client_Click(object sender, EventArgs e)
         {
             colorsButton(2);
-            openChildForm(new IsClient());
         }
 
-        private void logout_button_Click(object sender, EventArgs e)
+        private void btn_archive_Click(object sender, EventArgs e)
+        {
+            colorsButton(3);
+        }
+
+        private void panel_child_all_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btn_logut_Click(object sender, EventArgs e)
         {
             LoginForm loginForm = new LoginForm();
             loginForm.Show();

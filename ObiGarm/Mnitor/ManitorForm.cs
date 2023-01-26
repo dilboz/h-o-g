@@ -15,11 +15,15 @@ namespace ObiGarm.Mnitor
     {
 
         SqlConfiguration sqlConfiguration;
+
+        //public static ManitorForm manitorForm;
         public ManitorForm()
         {
             InitializeComponent();
             sqlConfiguration = new SqlConfiguration();
-            new_client(DateTime.Now);
+            //manitorForm = this;
+
+            MessageBox.Show("shows");
         }
 
 
@@ -30,6 +34,7 @@ namespace ObiGarm.Mnitor
 
         private void timer_select_Tick(object sender, EventArgs e)
         {
+            new_client(DateTime.Now);
             label_info_top.Text = $"НИЗОМИ НАВБАТИ ИДОРАКУНИИ ЭЛЕКТРОНӢ: ИМРУЗ {DateTime.Now.ToString("D")} СОАТ {DateTime.Now.ToString("T")}";
             label_info_botton.Text = $"Мизоҷони муҳтарам навбати худро интизор шавед!";
             Label[] label_full_name = { label_full_name_client_quer_1, label_full_name_client_quer_2, label_full_name_client_quer_3,
@@ -58,8 +63,9 @@ namespace ObiGarm.Mnitor
             }
         }
 
-        void new_client(DateTime date)
+        public void new_client(DateTime date)
         {
+
             Label[] label_full_name = { label_full_name_client_quer_1, label_full_name_client_quer_2, label_full_name_client_quer_3,
                 label_full_name_client_quer_4, label_full_name_client_quer_5, label_full_name_client_quer_6, label_full_name_client_quer_7,
             label_full_name_client_quer_8, label_full_name_client_quer_9, label_full_name_client_quer_10, label_full_name_client_quer_11,
@@ -75,6 +81,8 @@ namespace ObiGarm.Mnitor
                 "inner join users on services_client.id_users=users.id " +
                 $"where str_to_date(time, '%Y-%m-%d')='{date.ToString("yyyy-MM-dd")}'  and services_client.enable= '1' and services_client.deleted is null and users.id_manitor='{id_manitor}' " +
                 $"ORDER BY services_client.time; ";
+
+            //textBox1.Text = sql_select;
 
             DataTable data_table_services = sqlConfiguration.sqlSelectQuery(sql_select);
 
@@ -160,11 +168,11 @@ namespace ObiGarm.Mnitor
         {
             int id_services = int.Parse(top_16_client[int.Parse(row_index)].id_client_services);
 
-            DataTable dataTable_sevices_client = sqlConfiguration.sqlSelectQuery($"SELECT * FROM obigarm.services_client where id = '{id_services}'; ");
+            DataTable dataTable_sevices_client = sqlConfiguration.sqlSelectQuery($"SELECT * FROM services_client where id = '{id_services}'; ");
 
             int id_services_ = int.Parse(dataTable_sevices_client.Rows[0]["id_services"].ToString());
 
-            DataTable dataTable_services = sqlConfiguration.sqlSelectQuery($"SELECT * FROM obigarm.services where id = '{id_services_}'; ");
+            DataTable dataTable_services = sqlConfiguration.sqlSelectQuery($"SELECT * FROM services where id = '{id_services_}'; ");
 
             string time_services = dataTable_services.Rows[0]["time_services"].ToString();
             double time_services_hh = double.Parse(Convert.ToDateTime(time_services).ToString("HH"));
@@ -183,6 +191,11 @@ namespace ObiGarm.Mnitor
                 Console.WriteLine(time_check_.ToString());
 
                 _client_services_deleted(row_index);
+            }
+            else
+            {
+                new_client(DateTime.Now);
+                Console.WriteLine(DateTime.Now.ToString());
             }
         }
         void _client_services_deleted(string id)
@@ -224,10 +237,8 @@ namespace ObiGarm.Mnitor
             }
         }
         int animated = 0;
-      
 
-            
-        
+       
     }
 
 

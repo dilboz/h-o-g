@@ -2,6 +2,7 @@
 using ObiGarm.Administration;
 using ObiGarm.ClassDatabase;
 using ObiGarm.Mnitor;
+using ObiGarm.Restorant;
 using ObiGarm.Regisrarura;
 using ObiGarm.Users;
 using ObiGarm.Vrach;
@@ -189,12 +190,18 @@ namespace ObiGarm
                         SettingsDatabase.surname_user = tabel_select_user.Rows[0]["surname"].ToString();
                         SettingsDatabase.type_user = tabel_select_user.Rows[0]["point"].ToString();
 
+                        if (tabel_select_user.Rows[0]["point"].ToString() == "7")
+                        {
+                            RestorantForm restorantForm = new RestorantForm();
+                            restorantForm.Show();
+                            this.Hide();
+                        }
+
                         if (tabel_select_user.Rows[0]["point"].ToString() == "6")
                         {
                             InfoReportsFromMoney infoReportsFromMoney = new InfoReportsFromMoney();
                             infoReportsFromMoney.Show();
-                            this.Hide();
-                            
+                            this.Hide();                            
                         }
 
                         if (tabel_select_user.Rows[0]["point"].ToString() == "5")
@@ -213,8 +220,10 @@ namespace ObiGarm
                         if (tabel_select_user.Rows[0]["point"].ToString() == "3")
                         {
                             MainFormVrach mainFormVrach = new MainFormVrach();
+                            
                             ManitorForm manitorForm = new ManitorForm();
                             manitorForm.Show();
+                            //manitors.Show();
                             mainFormVrach.Show();
                             this.Hide();
                         }

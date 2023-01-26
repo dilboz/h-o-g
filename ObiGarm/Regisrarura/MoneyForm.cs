@@ -22,34 +22,58 @@ namespace ObiGarm.Regisrarura
             sqlConfiguration = new SqlConfiguration();
             noClientYet_from = noClientYet;
             id_client_me = id_client;
+            setTextTotextboxs(id_client);
+        }
+
+        void setTextTotextboxs(string id)
+        {
+            DataTable table_selecte_client = sqlConfiguration.sqlSelectQuery($"select * from client where id = '{id}';");
+
+            if (table_selecte_client.Rows.Count!=0)
+            {
+                txt_nuber_order.Text = table_selecte_client.Rows[0]["number_order"].ToString();
+                txt_number_money.Text = table_selecte_client.Rows[0]["nuber_money"].ToString();
+            }
+            else
+            {
+                MessageBox.Show("Ханоги ҳангоми ёфтани текст");
+            }
         }
 
         void add_money(string id)
         {
             string number_money = txt_number_money.Text.Trim();
-            string comment_money = txt_commen_money.Text.Trim();
+            string nuber_order = txt_nuber_order.Text.Trim();
 
-            string sql = $"UPDATE client SET nuber_money = '{number_money}', comment_money = '{comment_money}', is_for_vrach = '1' WHERE id = '{id}'";
+            string sql = $"UPDATE client SET nuber_money = '{number_money}', number_order = '{nuber_order}' WHERE id = '{id}'";
 
-            if (number_money!="" && comment_money!="")
+            if (nuber_order!="")
             {
-                int result = sqlConfiguration.sqlQuery(sql);
-                if (result == 500)
+                if (number_money != "")
                 {
-                    MessageBox.Show("Хатоги ба вучуд омад!", "Сообщения", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    int result = sqlConfiguration.sqlQuery(sql);
+                    if (result == 500)
+                    {
+                        MessageBox.Show("Хатоги ба вучуд омад!", "Сообщения", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    else
+                    {
+                        noClientYet_from.display();
+                        this.Close();
+                    }
                 }
                 else
                 {
-                    noClientYet_from.display();
-                    this.Close();
+                    MessageBox.Show("Дохил кардани миқдори маблағ хатмӣ аст!", "Сообщения", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             else
             {
-                MessageBox.Show("Дохил кардани миқдори маблағ ва шарҳи маблағ хатмӣ аст!", "Сообщения", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Шумо рақами ОРДЕР- ро дохил накардед!", "Сообщения", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
-           
+
+
         }
 
         private void txt_number_money_KeyPress(object sender, KeyPressEventArgs e)
@@ -77,5 +101,12 @@ namespace ObiGarm.Regisrarura
             }
         }
 
+        private void bunifuTextBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+        }
     }
 }

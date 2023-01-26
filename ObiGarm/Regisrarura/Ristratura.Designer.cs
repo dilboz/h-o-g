@@ -28,200 +28,337 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.acrive_client = new System.Windows.Forms.Button();
-            this.client_of_bugalter = new System.Windows.Forms.Button();
-            this.create_clieant = new System.Windows.Forms.Button();
-            this.panel_menu = new System.Windows.Forms.Panel();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Ristratura));
             this.panel_left = new System.Windows.Forms.Panel();
+            this.panel_menu = new System.Windows.Forms.Panel();
+            this.panel_archve = new System.Windows.Forms.Panel();
+            this.btn_archive = new System.Windows.Forms.Button();
+            this.lbl_left_archive = new System.Windows.Forms.Label();
+            this.panel_block_client = new System.Windows.Forms.Panel();
+            this.btn_block_client = new System.Windows.Forms.Button();
+            this.lbl_left_block_client = new System.Windows.Forms.Label();
+            this.panel_not_order = new System.Windows.Forms.Panel();
+            this.btn_not_order = new System.Windows.Forms.Button();
+            this.lbl_left_not_order = new System.Windows.Forms.Label();
+            this.panel_home = new System.Windows.Forms.Panel();
+            this.btn_home = new System.Windows.Forms.Button();
+            this.left_labl_home = new System.Windows.Forms.Label();
+            this.picture_logo = new System.Windows.Forms.PictureBox();
             this.panel_top = new System.Windows.Forms.Panel();
-            this.logout_button = new System.Windows.Forms.Button();
             this.user_info_label = new System.Windows.Forms.Label();
+            this.btn_logut = new DevExpress.XtraEditors.SimpleButton();
             this.panel_child_all = new System.Windows.Forms.Panel();
-            this.formAssistant1 = new DevExpress.XtraBars.FormAssistant();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel_menu.SuspendLayout();
             this.panel_left.SuspendLayout();
+            this.panel_menu.SuspendLayout();
+            this.panel_archve.SuspendLayout();
+            this.panel_block_client.SuspendLayout();
+            this.panel_not_order.SuspendLayout();
+            this.panel_home.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picture_logo)).BeginInit();
             this.panel_top.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // acrive_client
-            // 
-            this.acrive_client.Dock = System.Windows.Forms.DockStyle.Top;
-            this.acrive_client.FlatAppearance.BorderSize = 0;
-            this.acrive_client.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.acrive_client.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold);
-            this.acrive_client.ForeColor = System.Drawing.Color.White;
-            this.acrive_client.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.acrive_client.Location = new System.Drawing.Point(0, 80);
-            this.acrive_client.Name = "acrive_client";
-            this.acrive_client.Size = new System.Drawing.Size(187, 40);
-            this.acrive_client.TabIndex = 31;
-            this.acrive_client.Text = "Ба назди табиб фиристонидашуда";
-            this.acrive_client.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.acrive_client.UseVisualStyleBackColor = true;
-            this.acrive_client.Click += new System.EventHandler(this.acrive_client_Click);
-            // 
-            // client_of_bugalter
-            // 
-            this.client_of_bugalter.Dock = System.Windows.Forms.DockStyle.Top;
-            this.client_of_bugalter.FlatAppearance.BorderSize = 0;
-            this.client_of_bugalter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.client_of_bugalter.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold);
-            this.client_of_bugalter.ForeColor = System.Drawing.Color.White;
-            this.client_of_bugalter.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.client_of_bugalter.Location = new System.Drawing.Point(0, 40);
-            this.client_of_bugalter.Name = "client_of_bugalter";
-            this.client_of_bugalter.Size = new System.Drawing.Size(187, 40);
-            this.client_of_bugalter.TabIndex = 26;
-            this.client_of_bugalter.Text = "Ба назди хазинадор фиристодашуда";
-            this.client_of_bugalter.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.client_of_bugalter.UseVisualStyleBackColor = true;
-            this.client_of_bugalter.Click += new System.EventHandler(this.client_of_bugalter_Click);
-            // 
-            // create_clieant
-            // 
-            this.create_clieant.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
-            this.create_clieant.Dock = System.Windows.Forms.DockStyle.Top;
-            this.create_clieant.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.create_clieant.FlatAppearance.BorderSize = 0;
-            this.create_clieant.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.create_clieant.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold);
-            this.create_clieant.ForeColor = System.Drawing.Color.White;
-            this.create_clieant.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.create_clieant.Location = new System.Drawing.Point(0, 0);
-            this.create_clieant.Name = "create_clieant";
-            this.create_clieant.Size = new System.Drawing.Size(187, 40);
-            this.create_clieant.TabIndex = 25;
-            this.create_clieant.Text = "Сохтан";
-            this.create_clieant.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.create_clieant.UseVisualStyleBackColor = false;
-            this.create_clieant.Click += new System.EventHandler(this.create_clieant_Click);
-            // 
-            // panel_menu
-            // 
-            this.panel_menu.AutoScroll = true;
-            this.panel_menu.Controls.Add(this.acrive_client);
-            this.panel_menu.Controls.Add(this.client_of_bugalter);
-            this.panel_menu.Controls.Add(this.create_clieant);
-            this.panel_menu.Location = new System.Drawing.Point(12, 75);
-            this.panel_menu.Name = "panel_menu";
-            this.panel_menu.Size = new System.Drawing.Size(187, 509);
-            this.panel_menu.TabIndex = 3;
             // 
             // panel_left
             // 
-            this.panel_left.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
-            this.panel_left.Controls.Add(this.pictureBox1);
+            this.panel_left.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel_left.Controls.Add(this.panel_menu);
+            this.panel_left.Controls.Add(this.picture_logo);
             this.panel_left.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel_left.Location = new System.Drawing.Point(0, 0);
             this.panel_left.Name = "panel_left";
-            this.panel_left.Size = new System.Drawing.Size(216, 450);
+            this.panel_left.Size = new System.Drawing.Size(357, 687);
             this.panel_left.TabIndex = 4;
+            // 
+            // panel_menu
+            // 
+            this.panel_menu.BackColor = System.Drawing.Color.White;
+            this.panel_menu.Controls.Add(this.panel_archve);
+            this.panel_menu.Controls.Add(this.panel_block_client);
+            this.panel_menu.Controls.Add(this.panel_not_order);
+            this.panel_menu.Controls.Add(this.panel_home);
+            this.panel_menu.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel_menu.Location = new System.Drawing.Point(0, 70);
+            this.panel_menu.Name = "panel_menu";
+            this.panel_menu.Padding = new System.Windows.Forms.Padding(10);
+            this.panel_menu.Size = new System.Drawing.Size(357, 617);
+            this.panel_menu.TabIndex = 0;
+            // 
+            // panel_archve
+            // 
+            this.panel_archve.Controls.Add(this.btn_archive);
+            this.panel_archve.Controls.Add(this.lbl_left_archive);
+            this.panel_archve.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel_archve.Location = new System.Drawing.Point(10, 190);
+            this.panel_archve.Name = "panel_archve";
+            this.panel_archve.Padding = new System.Windows.Forms.Padding(0, 2, 0, 2);
+            this.panel_archve.Size = new System.Drawing.Size(337, 60);
+            this.panel_archve.TabIndex = 10;
+            // 
+            // btn_archive
+            // 
+            this.btn_archive.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn_archive.FlatAppearance.BorderSize = 0;
+            this.btn_archive.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_archive.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_archive.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(120)))), ((int)(((byte)(124)))));
+            this.btn_archive.Image = global::ObiGarm.Properties.Resources.binder;
+            this.btn_archive.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_archive.Location = new System.Drawing.Point(10, 2);
+            this.btn_archive.Name = "btn_archive";
+            this.btn_archive.Size = new System.Drawing.Size(327, 56);
+            this.btn_archive.TabIndex = 10;
+            this.btn_archive.Text = "Архив";
+            this.btn_archive.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_archive.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_archive.UseVisualStyleBackColor = true;
+            this.btn_archive.Click += new System.EventHandler(this.btn_archive_Click);
+            // 
+            // lbl_left_archive
+            // 
+            this.lbl_left_archive.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(123)))), ((int)(((byte)(84)))));
+            this.lbl_left_archive.Dock = System.Windows.Forms.DockStyle.Left;
+            this.lbl_left_archive.Location = new System.Drawing.Point(0, 2);
+            this.lbl_left_archive.Name = "lbl_left_archive";
+            this.lbl_left_archive.Size = new System.Drawing.Size(10, 56);
+            this.lbl_left_archive.TabIndex = 7;
+            // 
+            // panel_block_client
+            // 
+            this.panel_block_client.Controls.Add(this.btn_block_client);
+            this.panel_block_client.Controls.Add(this.lbl_left_block_client);
+            this.panel_block_client.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel_block_client.Location = new System.Drawing.Point(10, 130);
+            this.panel_block_client.Name = "panel_block_client";
+            this.panel_block_client.Padding = new System.Windows.Forms.Padding(0, 2, 0, 2);
+            this.panel_block_client.Size = new System.Drawing.Size(337, 60);
+            this.panel_block_client.TabIndex = 9;
+            // 
+            // btn_block_client
+            // 
+            this.btn_block_client.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn_block_client.FlatAppearance.BorderSize = 0;
+            this.btn_block_client.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_block_client.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_block_client.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(120)))), ((int)(((byte)(124)))));
+            this.btn_block_client.Image = global::ObiGarm.Properties.Resources.padlock;
+            this.btn_block_client.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_block_client.Location = new System.Drawing.Point(10, 2);
+            this.btn_block_client.Name = "btn_block_client";
+            this.btn_block_client.Size = new System.Drawing.Size(327, 56);
+            this.btn_block_client.TabIndex = 10;
+            this.btn_block_client.Text = "Истироҳаткунандагоне ки\r\nрузи боқимонда доранд";
+            this.btn_block_client.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_block_client.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_block_client.UseVisualStyleBackColor = true;
+            this.btn_block_client.Click += new System.EventHandler(this.btn_block_client_Click);
+            // 
+            // lbl_left_block_client
+            // 
+            this.lbl_left_block_client.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(123)))), ((int)(((byte)(84)))));
+            this.lbl_left_block_client.Dock = System.Windows.Forms.DockStyle.Left;
+            this.lbl_left_block_client.Location = new System.Drawing.Point(0, 2);
+            this.lbl_left_block_client.Name = "lbl_left_block_client";
+            this.lbl_left_block_client.Size = new System.Drawing.Size(10, 56);
+            this.lbl_left_block_client.TabIndex = 7;
+            // 
+            // panel_not_order
+            // 
+            this.panel_not_order.Controls.Add(this.btn_not_order);
+            this.panel_not_order.Controls.Add(this.lbl_left_not_order);
+            this.panel_not_order.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel_not_order.Location = new System.Drawing.Point(10, 70);
+            this.panel_not_order.Name = "panel_not_order";
+            this.panel_not_order.Padding = new System.Windows.Forms.Padding(0, 2, 0, 2);
+            this.panel_not_order.Size = new System.Drawing.Size(337, 60);
+            this.panel_not_order.TabIndex = 7;
+            // 
+            // btn_not_order
+            // 
+            this.btn_not_order.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn_not_order.FlatAppearance.BorderSize = 0;
+            this.btn_not_order.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_not_order.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_not_order.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(120)))), ((int)(((byte)(124)))));
+            this.btn_not_order.Image = global::ObiGarm.Properties.Resources.is_not_oreder;
+            this.btn_not_order.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_not_order.Location = new System.Drawing.Point(10, 2);
+            this.btn_not_order.Name = "btn_not_order";
+            this.btn_not_order.Size = new System.Drawing.Size(327, 56);
+            this.btn_not_order.TabIndex = 8;
+            this.btn_not_order.Text = "Истироҳаткунандагон\r\nордер надошта";
+            this.btn_not_order.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_not_order.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_not_order.UseVisualStyleBackColor = true;
+            this.btn_not_order.Click += new System.EventHandler(this.btn_not_order_Click);
+            // 
+            // lbl_left_not_order
+            // 
+            this.lbl_left_not_order.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(123)))), ((int)(((byte)(84)))));
+            this.lbl_left_not_order.Dock = System.Windows.Forms.DockStyle.Left;
+            this.lbl_left_not_order.Location = new System.Drawing.Point(0, 2);
+            this.lbl_left_not_order.Name = "lbl_left_not_order";
+            this.lbl_left_not_order.Size = new System.Drawing.Size(10, 56);
+            this.lbl_left_not_order.TabIndex = 7;
+            // 
+            // panel_home
+            // 
+            this.panel_home.Controls.Add(this.btn_home);
+            this.panel_home.Controls.Add(this.left_labl_home);
+            this.panel_home.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel_home.Location = new System.Drawing.Point(10, 10);
+            this.panel_home.Name = "panel_home";
+            this.panel_home.Padding = new System.Windows.Forms.Padding(0, 2, 0, 2);
+            this.panel_home.Size = new System.Drawing.Size(337, 60);
+            this.panel_home.TabIndex = 6;
+            // 
+            // btn_home
+            // 
+            this.btn_home.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn_home.FlatAppearance.BorderSize = 0;
+            this.btn_home.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_home.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_home.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(120)))), ((int)(((byte)(124)))));
+            this.btn_home.Image = global::ObiGarm.Properties.Resources.home;
+            this.btn_home.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_home.Location = new System.Drawing.Point(10, 2);
+            this.btn_home.Name = "btn_home";
+            this.btn_home.Size = new System.Drawing.Size(327, 56);
+            this.btn_home.TabIndex = 0;
+            this.btn_home.Text = "Асосӣ";
+            this.btn_home.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_home.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_home.UseVisualStyleBackColor = true;
+            this.btn_home.Click += new System.EventHandler(this.btn_home_Click);
+            // 
+            // left_labl_home
+            // 
+            this.left_labl_home.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(123)))), ((int)(((byte)(84)))));
+            this.left_labl_home.Dock = System.Windows.Forms.DockStyle.Left;
+            this.left_labl_home.Location = new System.Drawing.Point(0, 2);
+            this.left_labl_home.Name = "left_labl_home";
+            this.left_labl_home.Size = new System.Drawing.Size(10, 56);
+            this.left_labl_home.TabIndex = 7;
+            // 
+            // picture_logo
+            // 
+            this.picture_logo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(141)))), ((int)(((byte)(95)))));
+            this.picture_logo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.picture_logo.Image = global::ObiGarm.Properties.Resources.logo_hobg;
+            this.picture_logo.Location = new System.Drawing.Point(0, 0);
+            this.picture_logo.Name = "picture_logo";
+            this.picture_logo.Size = new System.Drawing.Size(357, 70);
+            this.picture_logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picture_logo.TabIndex = 0;
+            this.picture_logo.TabStop = false;
             // 
             // panel_top
             // 
-            this.panel_top.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(143)))), ((int)(((byte)(78)))));
-            this.panel_top.Controls.Add(this.logout_button);
+            this.panel_top.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(141)))), ((int)(((byte)(95)))));
             this.panel_top.Controls.Add(this.user_info_label);
+            this.panel_top.Controls.Add(this.btn_logut);
             this.panel_top.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel_top.Location = new System.Drawing.Point(216, 0);
+            this.panel_top.Location = new System.Drawing.Point(357, 0);
             this.panel_top.Name = "panel_top";
-            this.panel_top.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.panel_top.Size = new System.Drawing.Size(836, 55);
+            this.panel_top.Padding = new System.Windows.Forms.Padding(10);
+            this.panel_top.Size = new System.Drawing.Size(1109, 70);
             this.panel_top.TabIndex = 5;
-            // 
-            // logout_button
-            // 
-            this.logout_button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.logout_button.BackColor = System.Drawing.Color.Red;
-            this.logout_button.FlatAppearance.BorderSize = 0;
-            this.logout_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.logout_button.Font = new System.Drawing.Font("Constantia", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.logout_button.ForeColor = System.Drawing.Color.White;
-            this.logout_button.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.logout_button.Location = new System.Drawing.Point(698, 12);
-            this.logout_button.Name = "logout_button";
-            this.logout_button.Size = new System.Drawing.Size(125, 35);
-            this.logout_button.TabIndex = 24;
-            this.logout_button.Text = "Баромадан";
-            this.logout_button.UseVisualStyleBackColor = false;
-            this.logout_button.Click += new System.EventHandler(this.logout_button_Click);
             // 
             // user_info_label
             // 
-            this.user_info_label.Dock = System.Windows.Forms.DockStyle.Left;
+            this.user_info_label.Dock = System.Windows.Forms.DockStyle.Right;
             this.user_info_label.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
             this.user_info_label.ForeColor = System.Drawing.Color.White;
             this.user_info_label.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.user_info_label.Location = new System.Drawing.Point(10, 0);
+            this.user_info_label.Location = new System.Drawing.Point(375, 10);
             this.user_info_label.Name = "user_info_label";
-            this.user_info_label.Size = new System.Drawing.Size(557, 55);
-            this.user_info_label.TabIndex = 6;
+            this.user_info_label.Padding = new System.Windows.Forms.Padding(0, 0, 20, 0);
+            this.user_info_label.Size = new System.Drawing.Size(557, 50);
+            this.user_info_label.TabIndex = 8;
             this.user_info_label.Text = "Истифодабаранда: Сафараров Дилбоз\r\nНамуди Истифодабаранда: Админ";
-            this.user_info_label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.user_info_label.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // btn_logut
+            // 
+            this.btn_logut.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.btn_logut.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.btn_logut.Appearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.btn_logut.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_logut.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.btn_logut.Appearance.Options.UseBackColor = true;
+            this.btn_logut.Appearance.Options.UseBorderColor = true;
+            this.btn_logut.Appearance.Options.UseFont = true;
+            this.btn_logut.Appearance.Options.UseForeColor = true;
+            this.btn_logut.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btn_logut.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_logut.ImageOptions.Image")));
+            this.btn_logut.Location = new System.Drawing.Point(932, 10);
+            this.btn_logut.Name = "btn_logut";
+            this.btn_logut.Size = new System.Drawing.Size(167, 50);
+            this.btn_logut.TabIndex = 7;
+            this.btn_logut.Text = "БАРОМАД";
+            this.btn_logut.Click += new System.EventHandler(this.btn_logut_Click);
             // 
             // panel_child_all
             // 
             this.panel_child_all.AllowDrop = true;
             this.panel_child_all.AutoScroll = true;
-            this.panel_child_all.BackColor = System.Drawing.SystemColors.Control;
+            this.panel_child_all.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(250)))));
             this.panel_child_all.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel_child_all.Location = new System.Drawing.Point(216, 55);
+            this.panel_child_all.Location = new System.Drawing.Point(357, 70);
             this.panel_child_all.Name = "panel_child_all";
-            this.panel_child_all.Size = new System.Drawing.Size(836, 395);
+            this.panel_child_all.Size = new System.Drawing.Size(1109, 617);
             this.panel_child_all.TabIndex = 6;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pictureBox1.Image = global::ObiGarm.Properties.Resources.logo;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(216, 55);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.panel_child_all.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_child_all_Paint);
             // 
             // Ristratura
             // 
             this.Appearance.Options.UseFont = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1052, 450);
+            this.ClientSize = new System.Drawing.Size(1466, 687);
             this.Controls.Add(this.panel_child_all);
             this.Controls.Add(this.panel_top);
             this.Controls.Add(this.panel_left);
             this.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.IconOptions.ShowIcon = false;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.MinimumSize = new System.Drawing.Size(1468, 719);
             this.Name = "Ristratura";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Бақайдгиранда";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Risrarura_FormClosed);
             this.Load += new System.EventHandler(this.Risrarura_Load);
-            this.panel_menu.ResumeLayout(false);
             this.panel_left.ResumeLayout(false);
+            this.panel_menu.ResumeLayout(false);
+            this.panel_archve.ResumeLayout(false);
+            this.panel_block_client.ResumeLayout(false);
+            this.panel_not_order.ResumeLayout(false);
+            this.panel_home.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picture_logo)).EndInit();
             this.panel_top.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.Button acrive_client;
-        private System.Windows.Forms.Button client_of_bugalter;
-        private System.Windows.Forms.Button create_clieant;
-        private System.Windows.Forms.Panel panel_menu;
         private System.Windows.Forms.Panel panel_left;
         private System.Windows.Forms.Panel panel_child_all;
         private System.Windows.Forms.Panel panel_top;
-        private System.Windows.Forms.Button logout_button;
         private System.Windows.Forms.Label user_info_label;
-        private DevExpress.XtraBars.FormAssistant formAssistant1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private DevExpress.XtraEditors.SimpleButton btn_logut;
+        private System.Windows.Forms.PictureBox picture_logo;
+        private System.Windows.Forms.Panel panel_menu;
+        private System.Windows.Forms.Panel panel_not_order;
+        private System.Windows.Forms.Label lbl_left_not_order;
+        private System.Windows.Forms.Panel panel_home;
+        private System.Windows.Forms.Label left_labl_home;
+        private System.Windows.Forms.Button btn_not_order;
+        private System.Windows.Forms.Button btn_home;
+        private System.Windows.Forms.Panel panel_archve;
+        private System.Windows.Forms.Button btn_archive;
+        private System.Windows.Forms.Label lbl_left_archive;
+        private System.Windows.Forms.Panel panel_block_client;
+        private System.Windows.Forms.Button btn_block_client;
+        private System.Windows.Forms.Label lbl_left_block_client;
     }
 }

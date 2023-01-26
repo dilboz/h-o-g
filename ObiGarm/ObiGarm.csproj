@@ -316,11 +316,23 @@
     <Compile Include="Regisrarura\AddCllient.Designer.cs">
       <DependentUpon>AddCllient.cs</DependentUpon>
     </Compile>
-    <Compile Include="Regisrarura\EdirClient.cs">
+    <Compile Include="Regisrarura\Arkhiv\AddArchiv.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Regisrarura\EdirClient.Designer.cs">
-      <DependentUpon>EdirClient.cs</DependentUpon>
+    <Compile Include="Regisrarura\Arkhiv\AddArchiv.Designer.cs">
+      <DependentUpon>AddArchiv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Regisrarura\Arkhiv\EditIsArkhiv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Regisrarura\Arkhiv\EditIsArkhiv.Designer.cs">
+      <DependentUpon>EditIsArkhiv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Regisrarura\Arkhiv\ListArkhiv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Regisrarura\Arkhiv\ListArkhiv.Designer.cs">
+      <DependentUpon>ListArkhiv.cs</DependentUpon>
     </Compile>
     <Compile Include="Regisrarura\IsClient.cs">
       <SubType>Form</SubType>
@@ -357,6 +369,12 @@
     </Compile>
     <Compile Include="Regisrarura\Ristratura.Designer.cs">
       <DependentUpon>Ristratura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Restorant\RestorantForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Restorant\RestorantForm.Designer.cs">
+      <DependentUpon>RestorantForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Users\Administration\AddAdministrator.cs">
       <SubType>Form</SubType>
@@ -405,6 +423,18 @@
     </Compile>
     <Compile Include="Users\Kort\ListKort.Designer.cs">
       <DependentUpon>ListKort.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\Restorant\AddResrorant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\Restorant\AddResrorant.Designer.cs">
+      <DependentUpon>AddResrorant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\Restorant\ListRestorant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\Restorant\ListRestorant.Designer.cs">
+      <DependentUpon>ListRestorant.cs</DependentUpon>
     </Compile>
     <Compile Include="Users\Services\AddServices.cs">
       <SubType>Form</SubType>
@@ -561,8 +591,14 @@
     <EmbeddedResource Include="Regisrarura\AddCllient.resx">
       <DependentUpon>AddCllient.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Regisrarura\EdirClient.resx">
-      <DependentUpon>EdirClient.cs</DependentUpon>
+    <EmbeddedResource Include="Regisrarura\Arkhiv\AddArchiv.resx">
+      <DependentUpon>AddArchiv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Regisrarura\Arkhiv\EditIsArkhiv.resx">
+      <DependentUpon>EditIsArkhiv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Regisrarura\Arkhiv\ListArkhiv.resx">
+      <DependentUpon>ListArkhiv.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Regisrarura\IsClient.resx">
       <DependentUpon>IsClient.cs</DependentUpon>
@@ -581,6 +617,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Regisrarura\Ristratura.resx">
       <DependentUpon>Ristratura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Restorant\RestorantForm.resx">
+      <DependentUpon>RestorantForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Users\Administration\AddAdministrator.resx">
       <DependentUpon>AddAdministrator.cs</DependentUpon>
@@ -605,6 +644,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Users\Kort\ListKort.resx">
       <DependentUpon>ListKort.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\Restorant\AddResrorant.resx">
+      <DependentUpon>AddResrorant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\Restorant\ListRestorant.resx">
+      <DependentUpon>ListRestorant.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Users\Services\AddServices.resx">
       <DependentUpon>AddServices.cs</DependentUpon>
@@ -736,10 +781,28 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="logos.ico" />
+    <None Include="Resources\hospital-bed.png" />
+    <None Include="Resources\add-contact.png" />
+    <None Include="Resources\printer.png" />
+    <None Include="Resources\logout.png" />
+    <None Include="Resources\eraser.png" />
+    <None Include="Resources\close.png" />
+    <None Include="Resources\plus-button.png" />
+    <None Include="Resources\order24x24.png" />
+    <None Include="Resources\order.png" />
+    <None Include="Resources\order-now.png" />
+    <None Include="Resources\padlock1.png" />
+    <None Include="Resources\delete1.png" />
+    <None Include="Resources\write.png" />
+    <None Include="Resources\padlock.png" />
+    <None Include="Resources\plus.png" />
+    <None Include="Resources\add.png" />
+    <None Include="Resources\binder.png" />
+    <None Include="Resources\is_not_oreder.png" />
+    <None Include="Resources\home.png" />
+    <None Include="Resources\logo_hobg.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Restorant\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

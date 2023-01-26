@@ -52,20 +52,20 @@
             this.formAssistant1 = new DevExpress.XtraBars.FormAssistant();
             this.panel_full = new System.Windows.Forms.Panel();
             this.group_creat_admin = new DevExpress.XtraEditors.GroupControl();
-            this.txt_cheng_password = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
-            this.lbl_change_password = new System.Windows.Forms.Label();
-            this.txt_password = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
-            this.lbl_password = new System.Windows.Forms.Label();
-            this.txt_login = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
-            this.lbl_login = new System.Windows.Forms.Label();
-            this.txt_surname = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
-            this.lbl_surname = new System.Windows.Forms.Label();
-            this.txt_name = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
             this.lbl_name = new System.Windows.Forms.Label();
-            this.panel_botton = new System.Windows.Forms.Panel();
-            this.btn_hide = new System.Windows.Forms.Button();
+            this.lbl_surname = new System.Windows.Forms.Label();
+            this.lbl_login = new System.Windows.Forms.Label();
+            this.lbl_password = new System.Windows.Forms.Label();
+            this.lbl_change_password = new System.Windows.Forms.Label();
             this.lbl_tab = new System.Windows.Forms.Label();
+            this.panel_botton = new System.Windows.Forms.Panel();
             this.btn_creat = new System.Windows.Forms.Button();
+            this.btn_hide = new System.Windows.Forms.Button();
+            this.txt_cheng_password = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
+            this.txt_password = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
+            this.txt_login = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
+            this.txt_surname = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
+            this.txt_name = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
             this.panel_full.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.group_creat_admin)).BeginInit();
             this.group_creat_admin.SuspendLayout();
@@ -81,7 +81,7 @@
             this.panel_full.Location = new System.Drawing.Point(20, 20);
             this.panel_full.Name = "panel_full";
             this.panel_full.Padding = new System.Windows.Forms.Padding(10);
-            this.panel_full.Size = new System.Drawing.Size(676, 446);
+            this.panel_full.Size = new System.Drawing.Size(676, 423);
             this.panel_full.TabIndex = 0;
             // 
             // group_creat_admin
@@ -100,9 +100,125 @@
             this.group_creat_admin.Location = new System.Drawing.Point(10, 10);
             this.group_creat_admin.Name = "group_creat_admin";
             this.group_creat_admin.Padding = new System.Windows.Forms.Padding(10);
-            this.group_creat_admin.Size = new System.Drawing.Size(656, 370);
+            this.group_creat_admin.Size = new System.Drawing.Size(656, 345);
             this.group_creat_admin.TabIndex = 13;
             this.group_creat_admin.Text = "Сохтани администратор";
+            // 
+            // lbl_name
+            // 
+            this.lbl_name.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lbl_name.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_name.Location = new System.Drawing.Point(12, 33);
+            this.lbl_name.Name = "lbl_name";
+            this.lbl_name.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.lbl_name.Size = new System.Drawing.Size(632, 25);
+            this.lbl_name.TabIndex = 11;
+            this.lbl_name.Text = "Ном:";
+            this.lbl_name.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbl_surname
+            // 
+            this.lbl_surname.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lbl_surname.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_surname.Location = new System.Drawing.Point(12, 93);
+            this.lbl_surname.Name = "lbl_surname";
+            this.lbl_surname.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.lbl_surname.Size = new System.Drawing.Size(632, 25);
+            this.lbl_surname.TabIndex = 13;
+            this.lbl_surname.Text = "Насаб:";
+            this.lbl_surname.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbl_login
+            // 
+            this.lbl_login.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lbl_login.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_login.Location = new System.Drawing.Point(12, 153);
+            this.lbl_login.Margin = new System.Windows.Forms.Padding(0);
+            this.lbl_login.Name = "lbl_login";
+            this.lbl_login.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.lbl_login.Size = new System.Drawing.Size(632, 25);
+            this.lbl_login.TabIndex = 15;
+            this.lbl_login.Text = "Login:";
+            this.lbl_login.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbl_password
+            // 
+            this.lbl_password.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lbl_password.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_password.Location = new System.Drawing.Point(12, 213);
+            this.lbl_password.Margin = new System.Windows.Forms.Padding(0);
+            this.lbl_password.Name = "lbl_password";
+            this.lbl_password.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.lbl_password.Size = new System.Drawing.Size(632, 25);
+            this.lbl_password.TabIndex = 17;
+            this.lbl_password.Text = "Рамз:";
+            this.lbl_password.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbl_change_password
+            // 
+            this.lbl_change_password.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lbl_change_password.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_change_password.Location = new System.Drawing.Point(12, 273);
+            this.lbl_change_password.Margin = new System.Windows.Forms.Padding(0);
+            this.lbl_change_password.Name = "lbl_change_password";
+            this.lbl_change_password.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.lbl_change_password.Size = new System.Drawing.Size(632, 25);
+            this.lbl_change_password.TabIndex = 19;
+            this.lbl_change_password.Text = "Тасдиқи рамз:";
+            this.lbl_change_password.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbl_tab
+            // 
+            this.lbl_tab.Dock = System.Windows.Forms.DockStyle.Right;
+            this.lbl_tab.Location = new System.Drawing.Point(509, 8);
+            this.lbl_tab.Name = "lbl_tab";
+            this.lbl_tab.Size = new System.Drawing.Size(19, 28);
+            this.lbl_tab.TabIndex = 2;
+            // 
+            // panel_botton
+            // 
+            this.panel_botton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.panel_botton.Controls.Add(this.btn_hide);
+            this.panel_botton.Controls.Add(this.lbl_tab);
+            this.panel_botton.Controls.Add(this.btn_creat);
+            this.panel_botton.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel_botton.Location = new System.Drawing.Point(10, 369);
+            this.panel_botton.Name = "panel_botton";
+            this.panel_botton.Padding = new System.Windows.Forms.Padding(8);
+            this.panel_botton.Size = new System.Drawing.Size(656, 44);
+            this.panel_botton.TabIndex = 12;
+            // 
+            // btn_creat
+            // 
+            this.btn_creat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(108)))), ((int)(((byte)(59)))));
+            this.btn_creat.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btn_creat.FlatAppearance.BorderSize = 0;
+            this.btn_creat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_creat.Font = new System.Drawing.Font("Constantia", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_creat.ForeColor = System.Drawing.Color.White;
+            this.btn_creat.Location = new System.Drawing.Point(528, 8);
+            this.btn_creat.Name = "btn_creat";
+            this.btn_creat.Size = new System.Drawing.Size(120, 28);
+            this.btn_creat.TabIndex = 1;
+            this.btn_creat.Text = "Сохтан";
+            this.btn_creat.UseVisualStyleBackColor = false;
+            this.btn_creat.Click += new System.EventHandler(this.btn_creat_Click);
+            // 
+            // btn_hide
+            // 
+            this.btn_hide.BackColor = System.Drawing.Color.Red;
+            this.btn_hide.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btn_hide.FlatAppearance.BorderSize = 0;
+            this.btn_hide.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_hide.Font = new System.Drawing.Font("Constantia", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_hide.ForeColor = System.Drawing.Color.White;
+            this.btn_hide.Location = new System.Drawing.Point(389, 8);
+            this.btn_hide.Name = "btn_hide";
+            this.btn_hide.Size = new System.Drawing.Size(120, 28);
+            this.btn_hide.TabIndex = 3;
+            this.btn_hide.Text = "Баромадан";
+            this.btn_hide.UseVisualStyleBackColor = false;
+            this.btn_hide.Click += new System.EventHandler(this.btn_hide_Click);
             // 
             // txt_cheng_password
             // 
@@ -178,19 +294,6 @@
             this.txt_cheng_password.UseSystemPasswordChar = false;
             this.txt_cheng_password.WordWrap = true;
             // 
-            // lbl_change_password
-            // 
-            this.lbl_change_password.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lbl_change_password.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_change_password.Location = new System.Drawing.Point(12, 273);
-            this.lbl_change_password.Margin = new System.Windows.Forms.Padding(0);
-            this.lbl_change_password.Name = "lbl_change_password";
-            this.lbl_change_password.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.lbl_change_password.Size = new System.Drawing.Size(632, 25);
-            this.lbl_change_password.TabIndex = 19;
-            this.lbl_change_password.Text = "Тасдиқи рамз:";
-            this.lbl_change_password.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
             // txt_password
             // 
             this.txt_password.AcceptsReturn = false;
@@ -264,19 +367,6 @@
             this.txt_password.TextPlaceholder = "Рамз";
             this.txt_password.UseSystemPasswordChar = false;
             this.txt_password.WordWrap = true;
-            // 
-            // lbl_password
-            // 
-            this.lbl_password.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lbl_password.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_password.Location = new System.Drawing.Point(12, 213);
-            this.lbl_password.Margin = new System.Windows.Forms.Padding(0);
-            this.lbl_password.Name = "lbl_password";
-            this.lbl_password.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.lbl_password.Size = new System.Drawing.Size(632, 25);
-            this.lbl_password.TabIndex = 17;
-            this.lbl_password.Text = "Рамз:";
-            this.lbl_password.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // txt_login
             // 
@@ -352,19 +442,6 @@
             this.txt_login.UseSystemPasswordChar = false;
             this.txt_login.WordWrap = true;
             // 
-            // lbl_login
-            // 
-            this.lbl_login.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lbl_login.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_login.Location = new System.Drawing.Point(12, 153);
-            this.lbl_login.Margin = new System.Windows.Forms.Padding(0);
-            this.lbl_login.Name = "lbl_login";
-            this.lbl_login.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.lbl_login.Size = new System.Drawing.Size(632, 25);
-            this.lbl_login.TabIndex = 15;
-            this.lbl_login.Text = "Login:";
-            this.lbl_login.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
             // txt_surname
             // 
             this.txt_surname.AcceptsReturn = false;
@@ -438,18 +515,6 @@
             this.txt_surname.TextPlaceholder = "Насаб";
             this.txt_surname.UseSystemPasswordChar = false;
             this.txt_surname.WordWrap = true;
-            // 
-            // lbl_surname
-            // 
-            this.lbl_surname.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lbl_surname.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_surname.Location = new System.Drawing.Point(12, 93);
-            this.lbl_surname.Name = "lbl_surname";
-            this.lbl_surname.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.lbl_surname.Size = new System.Drawing.Size(632, 25);
-            this.lbl_surname.TabIndex = 13;
-            this.lbl_surname.Text = "Насаб:";
-            this.lbl_surname.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // txt_name
             // 
@@ -525,71 +590,6 @@
             this.txt_name.UseSystemPasswordChar = false;
             this.txt_name.WordWrap = true;
             // 
-            // lbl_name
-            // 
-            this.lbl_name.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lbl_name.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_name.Location = new System.Drawing.Point(12, 33);
-            this.lbl_name.Name = "lbl_name";
-            this.lbl_name.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.lbl_name.Size = new System.Drawing.Size(632, 25);
-            this.lbl_name.TabIndex = 11;
-            this.lbl_name.Text = "Ном:";
-            this.lbl_name.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel_botton
-            // 
-            this.panel_botton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.panel_botton.Controls.Add(this.btn_hide);
-            this.panel_botton.Controls.Add(this.lbl_tab);
-            this.panel_botton.Controls.Add(this.btn_creat);
-            this.panel_botton.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel_botton.Location = new System.Drawing.Point(10, 392);
-            this.panel_botton.Name = "panel_botton";
-            this.panel_botton.Padding = new System.Windows.Forms.Padding(8);
-            this.panel_botton.Size = new System.Drawing.Size(656, 44);
-            this.panel_botton.TabIndex = 12;
-            // 
-            // btn_hide
-            // 
-            this.btn_hide.BackColor = System.Drawing.Color.Red;
-            this.btn_hide.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btn_hide.FlatAppearance.BorderSize = 0;
-            this.btn_hide.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_hide.Font = new System.Drawing.Font("Constantia", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_hide.ForeColor = System.Drawing.Color.White;
-            this.btn_hide.Location = new System.Drawing.Point(389, 8);
-            this.btn_hide.Name = "btn_hide";
-            this.btn_hide.Size = new System.Drawing.Size(120, 28);
-            this.btn_hide.TabIndex = 3;
-            this.btn_hide.Text = "Баромадан";
-            this.btn_hide.UseVisualStyleBackColor = false;
-            this.btn_hide.Click += new System.EventHandler(this.btn_hide_Click);
-            // 
-            // lbl_tab
-            // 
-            this.lbl_tab.Dock = System.Windows.Forms.DockStyle.Right;
-            this.lbl_tab.Location = new System.Drawing.Point(509, 8);
-            this.lbl_tab.Name = "lbl_tab";
-            this.lbl_tab.Size = new System.Drawing.Size(19, 28);
-            this.lbl_tab.TabIndex = 2;
-            // 
-            // btn_creat
-            // 
-            this.btn_creat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(108)))), ((int)(((byte)(59)))));
-            this.btn_creat.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btn_creat.FlatAppearance.BorderSize = 0;
-            this.btn_creat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_creat.Font = new System.Drawing.Font("Constantia", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_creat.ForeColor = System.Drawing.Color.White;
-            this.btn_creat.Location = new System.Drawing.Point(528, 8);
-            this.btn_creat.Name = "btn_creat";
-            this.btn_creat.Size = new System.Drawing.Size(120, 28);
-            this.btn_creat.TabIndex = 1;
-            this.btn_creat.Text = "Сохтан";
-            this.btn_creat.UseVisualStyleBackColor = false;
-            this.btn_creat.Click += new System.EventHandler(this.btn_creat_Click);
-            // 
             // AddAdmin
             // 
             this.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -597,7 +597,7 @@
             this.Appearance.Options.UseFont = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(716, 486);
+            this.ClientSize = new System.Drawing.Size(716, 463);
             this.Controls.Add(this.panel_full);
             this.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;

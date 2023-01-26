@@ -117,24 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="formAssistant1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
+  <metadata name="messDilalog.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>23, 18</value>
   </metadata>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="txt_room.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAl4AAAAeCAYAAAD95hDDAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJBSURBVHhe7d2xaxNRAMfxGzs6Ojr6J/gn+E8ILoKjo27+
-        AQ7i4N65s6vX5t6lJUMdSkshJCAlhBo1whljCeW8lz6HUq1K0nP5fOA33UvnL8lLmgEA8B/leb7R7GFR
-        FK/Lsny3vb1dm5mZmdnvF5sphLDZNNTjZrdSVl2vOXiveeH7o6Oj6uTkpJ5OpzUAANeLzTQajerj4+NZ
-        01Ifmqa6n/Lq14qieNbr9aaz2Sz9CQAA/tXZ2Vm9v78/7Xa7L1NmXRbf6YrRlc4DALCig4ODz51O50HK
-        rQtNdG2EEMbz+TwdAwBgVYvFIt79+ti01u2UXcvwetLv97+nMwAArEm8Mx+/sJiyK8tCCFvj8Tg9BgBg
-        XeKl+/iNx5Rdy/AaVlWVHgMAsC7x48adnZ1vKbuyLP72BAAANyO2Vsou4QUAcJOEFwBAS4QXAEBLhBcA
-        QEuEFwBAS4QXAEBLhBcAQEuEFwBAS4QXAEBLhBcAQEuEFwBASy6FV1EUk/l8nh4BALAu5+fn8Z9kL1J2
-        ZVlZlm8nk0l6DADAulRVVYcQhim7sizP86eDwWCRngMAsCaj0SiG12bKrmV43el2u9P4VhgAAOvT6/Wm
-        TWvdS9l1odPpPDo8PPySzgAAsKLBYFCFEF6k3Los3vXq9/tfvfMFALCa4XA4393d7eZ5vpFS66qiKJ7v
-        7e19Go/Hy8tgAAD8ndlsVp+eni4/XizL8tW10fVTc+huCGEr3sCPvzthZmZmZn9eURSjJrjeXLnTBQBA
-        m7LsB94p8t0wOx6QAAAAAElFTkSuQmCC
-</value>
-  </data>
 </root>

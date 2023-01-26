@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions1 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(IsClient));
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
@@ -44,29 +45,33 @@
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject10 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject11 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject12 = new DevExpress.Utils.SerializableAppearanceObject();
-            this.formAssistant1 = new DevExpress.XtraBars.FormAssistant();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions4 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject13 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject14 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject15 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject16 = new DevExpress.Utils.SerializableAppearanceObject();
             this.repositoryItemButtonEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
             this.edit = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
             this.delete = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
             this.grid_view_is_client = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.number_order = new DevExpress.XtraGrid.Columns.GridColumn();
             this.id = new DevExpress.XtraGrid.Columns.GridColumn();
             this.full_name = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.burthday = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.sex = new DevExpress.XtraGrid.Columns.GridColumn();
             this.date_time_start = new DevExpress.XtraGrid.Columns.GridColumn();
             this.date_time_end = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.nuber_money = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.comment_money = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.vrach = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.room = new DevExpress.XtraGrid.Columns.GridColumn();
             this.type_kort = new DevExpress.XtraGrid.Columns.GridColumn();
             this.btn_edit = new DevExpress.XtraGrid.Columns.GridColumn();
             this.btn_delete = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.btn_pause = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.pause_btn = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
             this.grid_control_is_client = new DevExpress.XtraGrid.GridControl();
+            this.btn_home = new System.Windows.Forms.Button();
+            this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemButtonEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.edit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.delete)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grid_view_is_client)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pause_btn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grid_control_is_client)).BeginInit();
             this.SuspendLayout();
             // 
@@ -82,7 +87,7 @@
             // edit
             // 
             this.edit.AutoHeight = false;
-            editorButtonImageOptions2.Image = global::ObiGarm.Properties.Resources.edit_for_grid_view;
+            editorButtonImageOptions2.Image = global::ObiGarm.Properties.Resources.write;
             this.edit.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions2, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject5, serializableAppearanceObject6, serializableAppearanceObject7, serializableAppearanceObject8, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.edit.Name = "edit";
@@ -92,7 +97,7 @@
             // delete
             // 
             this.delete.AutoHeight = false;
-            editorButtonImageOptions3.Image = global::ObiGarm.Properties.Resources.delete_for_grid;
+            editorButtonImageOptions3.Image = global::ObiGarm.Properties.Resources.delete1;
             this.delete.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions3, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject9, serializableAppearanceObject10, serializableAppearanceObject11, serializableAppearanceObject12, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.delete.Name = "delete";
@@ -102,25 +107,43 @@
             // grid_view_is_client
             // 
             this.grid_view_is_client.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.number_order,
             this.id,
             this.full_name,
-            this.burthday,
-            this.sex,
             this.date_time_start,
             this.date_time_end,
-            this.nuber_money,
-            this.comment_money,
-            this.vrach,
-            this.room,
             this.type_kort,
             this.btn_edit,
-            this.btn_delete});
+            this.btn_delete,
+            this.btn_pause});
             this.grid_view_is_client.GridControl = this.grid_control_is_client;
             this.grid_view_is_client.Name = "grid_view_is_client";
+            this.grid_view_is_client.OptionsFind.AlwaysVisible = true;
             this.grid_view_is_client.OptionsView.ShowGroupPanel = false;
+            // 
+            // number_order
+            // 
+            this.number_order.AppearanceCell.Font = new System.Drawing.Font("Times New Roman", 8.25F);
+            this.number_order.AppearanceCell.Options.UseFont = true;
+            this.number_order.AppearanceHeader.Font = new System.Drawing.Font("Times New Roman", 8.25F);
+            this.number_order.AppearanceHeader.Options.UseFont = true;
+            this.number_order.Caption = "ОРДЕР";
+            this.number_order.FieldName = "number_order";
+            this.number_order.Fixed = DevExpress.XtraGrid.Columns.FixedStyle.Left;
+            this.number_order.MaxWidth = 150;
+            this.number_order.MinWidth = 80;
+            this.number_order.Name = "number_order";
+            this.number_order.OptionsColumn.AllowEdit = false;
+            this.number_order.Visible = true;
+            this.number_order.VisibleIndex = 0;
+            this.number_order.Width = 80;
             // 
             // id
             // 
+            this.id.AppearanceCell.Font = new System.Drawing.Font("Times New Roman", 8.25F);
+            this.id.AppearanceCell.Options.UseFont = true;
+            this.id.AppearanceHeader.Font = new System.Drawing.Font("Times New Roman", 8.25F);
+            this.id.AppearanceHeader.Options.UseFont = true;
             this.id.Caption = "ID";
             this.id.FieldName = "id";
             this.id.MinWidth = 25;
@@ -130,166 +153,173 @@
             // 
             // full_name
             // 
+            this.full_name.AppearanceCell.Font = new System.Drawing.Font("Times New Roman", 8.25F);
+            this.full_name.AppearanceCell.Options.UseFont = true;
+            this.full_name.AppearanceHeader.Font = new System.Drawing.Font("Times New Roman", 8.25F);
+            this.full_name.AppearanceHeader.Options.UseFont = true;
             this.full_name.Caption = "Номи пурра";
             this.full_name.FieldName = "full_name";
-            this.full_name.Fixed = DevExpress.XtraGrid.Columns.FixedStyle.Left;
-            this.full_name.MinWidth = 200;
             this.full_name.Name = "full_name";
             this.full_name.OptionsColumn.AllowEdit = false;
             this.full_name.Visible = true;
-            this.full_name.VisibleIndex = 0;
-            this.full_name.Width = 250;
-            // 
-            // burthday
-            // 
-            this.burthday.Caption = "Соли таввалуд";
-            this.burthday.FieldName = "birthday";
-            this.burthday.MinWidth = 85;
-            this.burthday.Name = "burthday";
-            this.burthday.OptionsColumn.AllowEdit = false;
-            this.burthday.Visible = true;
-            this.burthday.VisibleIndex = 1;
-            this.burthday.Width = 85;
-            // 
-            // sex
-            // 
-            this.sex.Caption = "Ҷинс";
-            this.sex.FieldName = "sex";
-            this.sex.MinWidth = 50;
-            this.sex.Name = "sex";
-            this.sex.OptionsColumn.AllowEdit = false;
-            this.sex.Visible = true;
-            this.sex.VisibleIndex = 2;
-            this.sex.Width = 50;
+            this.full_name.VisibleIndex = 1;
+            this.full_name.Width = 322;
             // 
             // date_time_start
             // 
+            this.date_time_start.AppearanceCell.Font = new System.Drawing.Font("Times New Roman", 8.25F);
+            this.date_time_start.AppearanceCell.Options.UseFont = true;
+            this.date_time_start.AppearanceHeader.Font = new System.Drawing.Font("Times New Roman", 8.25F);
+            this.date_time_start.AppearanceHeader.Options.UseFont = true;
             this.date_time_start.Caption = "Аз кай";
             this.date_time_start.DisplayFormat.FormatString = "D";
             this.date_time_start.FieldName = "date_time_start";
+            this.date_time_start.MaxWidth = 150;
             this.date_time_start.MinWidth = 130;
             this.date_time_start.Name = "date_time_start";
             this.date_time_start.OptionsColumn.AllowEdit = false;
             this.date_time_start.Visible = true;
-            this.date_time_start.VisibleIndex = 3;
+            this.date_time_start.VisibleIndex = 2;
             this.date_time_start.Width = 130;
             // 
             // date_time_end
             // 
+            this.date_time_end.AppearanceCell.Font = new System.Drawing.Font("Times New Roman", 8.25F);
+            this.date_time_end.AppearanceCell.Options.UseFont = true;
+            this.date_time_end.AppearanceHeader.Font = new System.Drawing.Font("Times New Roman", 8.25F);
+            this.date_time_end.AppearanceHeader.Options.UseFont = true;
             this.date_time_end.Caption = "То кай";
             this.date_time_end.DisplayFormat.FormatString = "D";
             this.date_time_end.FieldName = "date_time_end";
+            this.date_time_end.MaxWidth = 150;
             this.date_time_end.MinWidth = 130;
             this.date_time_end.Name = "date_time_end";
             this.date_time_end.OptionsColumn.AllowEdit = false;
             this.date_time_end.Visible = true;
-            this.date_time_end.VisibleIndex = 4;
+            this.date_time_end.VisibleIndex = 3;
             this.date_time_end.Width = 130;
-            // 
-            // nuber_money
-            // 
-            this.nuber_money.Caption = "Маблағ";
-            this.nuber_money.FieldName = "nuber_money";
-            this.nuber_money.MinWidth = 80;
-            this.nuber_money.Name = "nuber_money";
-            this.nuber_money.OptionsColumn.AllowEdit = false;
-            this.nuber_money.Visible = true;
-            this.nuber_money.VisibleIndex = 5;
-            this.nuber_money.Width = 80;
-            // 
-            // comment_money
-            // 
-            this.comment_money.Caption = "Шарҳи маблағ";
-            this.comment_money.FieldName = "comment_money";
-            this.comment_money.MinWidth = 150;
-            this.comment_money.Name = "comment_money";
-            this.comment_money.OptionsColumn.AllowEdit = false;
-            this.comment_money.Visible = true;
-            this.comment_money.VisibleIndex = 6;
-            this.comment_money.Width = 150;
-            // 
-            // vrach
-            // 
-            this.vrach.Caption = "Табиб";
-            this.vrach.FieldName = "vrach";
-            this.vrach.MinWidth = 150;
-            this.vrach.Name = "vrach";
-            this.vrach.OptionsColumn.AllowEdit = false;
-            this.vrach.Visible = true;
-            this.vrach.VisibleIndex = 7;
-            this.vrach.Width = 164;
-            // 
-            // room
-            // 
-            this.room.Caption = "Ҳуҷра";
-            this.room.FieldName = "room";
-            this.room.MinWidth = 100;
-            this.room.Name = "room";
-            this.room.OptionsColumn.AllowEdit = false;
-            this.room.Visible = true;
-            this.room.VisibleIndex = 8;
-            this.room.Width = 111;
             // 
             // type_kort
             // 
+            this.type_kort.AppearanceCell.Font = new System.Drawing.Font("Times New Roman", 8.25F);
+            this.type_kort.AppearanceCell.Options.UseFont = true;
+            this.type_kort.AppearanceHeader.Font = new System.Drawing.Font("Times New Roman", 8.25F);
+            this.type_kort.AppearanceHeader.Options.UseFont = true;
             this.type_kort.Caption = "Намуди корт";
             this.type_kort.FieldName = "type_kort";
-            this.type_kort.MinWidth = 100;
+            this.type_kort.MaxWidth = 150;
+            this.type_kort.MinWidth = 130;
             this.type_kort.Name = "type_kort";
             this.type_kort.OptionsColumn.AllowEdit = false;
             this.type_kort.Visible = true;
-            this.type_kort.VisibleIndex = 9;
-            this.type_kort.Width = 120;
+            this.type_kort.VisibleIndex = 4;
+            this.type_kort.Width = 130;
             // 
             // btn_edit
             // 
+            this.btn_edit.AppearanceCell.Font = new System.Drawing.Font("Times New Roman", 8.25F);
+            this.btn_edit.AppearanceCell.Options.UseFont = true;
+            this.btn_edit.AppearanceHeader.Font = new System.Drawing.Font("Times New Roman", 8.25F);
+            this.btn_edit.AppearanceHeader.Options.UseFont = true;
             this.btn_edit.ColumnEdit = this.edit;
             this.btn_edit.Fixed = DevExpress.XtraGrid.Columns.FixedStyle.Right;
             this.btn_edit.MaxWidth = 32;
             this.btn_edit.MinWidth = 32;
             this.btn_edit.Name = "btn_edit";
             this.btn_edit.Visible = true;
-            this.btn_edit.VisibleIndex = 11;
+            this.btn_edit.VisibleIndex = 6;
             this.btn_edit.Width = 32;
             // 
             // btn_delete
             // 
+            this.btn_delete.AppearanceCell.Font = new System.Drawing.Font("Times New Roman", 8.25F);
+            this.btn_delete.AppearanceCell.Options.UseFont = true;
+            this.btn_delete.AppearanceHeader.Font = new System.Drawing.Font("Times New Roman", 8.25F);
+            this.btn_delete.AppearanceHeader.Options.UseFont = true;
             this.btn_delete.ColumnEdit = this.delete;
             this.btn_delete.Fixed = DevExpress.XtraGrid.Columns.FixedStyle.Right;
             this.btn_delete.MaxWidth = 32;
             this.btn_delete.MinWidth = 32;
             this.btn_delete.Name = "btn_delete";
             this.btn_delete.Visible = true;
-            this.btn_delete.VisibleIndex = 10;
+            this.btn_delete.VisibleIndex = 7;
             this.btn_delete.Width = 32;
+            // 
+            // btn_pause
+            // 
+            this.btn_pause.AppearanceCell.Font = new System.Drawing.Font("Times New Roman", 8.25F);
+            this.btn_pause.AppearanceCell.Options.UseFont = true;
+            this.btn_pause.AppearanceHeader.Font = new System.Drawing.Font("Times New Roman", 8.25F);
+            this.btn_pause.AppearanceHeader.Options.UseFont = true;
+            this.btn_pause.ColumnEdit = this.pause_btn;
+            this.btn_pause.Fixed = DevExpress.XtraGrid.Columns.FixedStyle.Right;
+            this.btn_pause.MaxWidth = 32;
+            this.btn_pause.MinWidth = 32;
+            this.btn_pause.Name = "btn_pause";
+            this.btn_pause.Visible = true;
+            this.btn_pause.VisibleIndex = 5;
+            this.btn_pause.Width = 32;
+            // 
+            // pause_btn
+            // 
+            this.pause_btn.AutoHeight = false;
+            editorButtonImageOptions4.Image = global::ObiGarm.Properties.Resources.padlock1;
+            this.pause_btn.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions4, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject13, serializableAppearanceObject14, serializableAppearanceObject15, serializableAppearanceObject16, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            this.pause_btn.Name = "pause_btn";
+            this.pause_btn.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
+            this.pause_btn.Click += new System.EventHandler(this.pause_btn_Click);
             // 
             // grid_control_is_client
             // 
             this.grid_control_is_client.Dock = System.Windows.Forms.DockStyle.Fill;
             this.grid_control_is_client.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.grid_control_is_client.Location = new System.Drawing.Point(20, 20);
+            this.grid_control_is_client.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grid_control_is_client.Location = new System.Drawing.Point(10, 10);
             this.grid_control_is_client.MainView = this.grid_view_is_client;
             this.grid_control_is_client.Name = "grid_control_is_client";
             this.grid_control_is_client.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.edit,
-            this.delete});
-            this.grid_control_is_client.Size = new System.Drawing.Size(941, 541);
+            this.delete,
+            this.pause_btn});
+            this.grid_control_is_client.Size = new System.Drawing.Size(1263, 580);
             this.grid_control_is_client.TabIndex = 0;
             this.grid_control_is_client.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.grid_view_is_client});
+            // 
+            // btn_home
+            // 
+            this.btn_home.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_home.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(141)))), ((int)(((byte)(95)))));
+            this.btn_home.FlatAppearance.BorderSize = 0;
+            this.btn_home.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_home.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_home.ForeColor = System.Drawing.Color.White;
+            this.btn_home.Image = global::ObiGarm.Properties.Resources.plus;
+            this.btn_home.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_home.Location = new System.Drawing.Point(1159, 13);
+            this.btn_home.Name = "btn_home";
+            this.btn_home.Size = new System.Drawing.Size(111, 41);
+            this.btn_home.TabIndex = 1;
+            this.btn_home.Text = "Сохтан";
+            this.btn_home.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_home.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_home.UseVisualStyleBackColor = false;
+            this.btn_home.Click += new System.EventHandler(this.btn_home_Click);
             // 
             // IsClient
             // 
             this.Appearance.Options.UseFont = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(981, 581);
+            this.ClientSize = new System.Drawing.Size(1283, 600);
+            this.Controls.Add(this.btn_home);
             this.Controls.Add(this.grid_control_is_client);
             this.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "IsClient";
-            this.Padding = new System.Windows.Forms.Padding(20);
+            this.Padding = new System.Windows.Forms.Padding(10);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "IsClient";
             this.Shown += new System.EventHandler(this.IsClient_Shown);
@@ -297,31 +327,29 @@
             ((System.ComponentModel.ISupportInitialize)(this.edit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.delete)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grid_view_is_client)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pause_btn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grid_control_is_client)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private DevExpress.XtraBars.FormAssistant formAssistant1;
         private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit repositoryItemButtonEdit1;
         private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit edit;
         private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit delete;
         private DevExpress.XtraGrid.Views.Grid.GridView grid_view_is_client;
         private DevExpress.XtraGrid.Columns.GridColumn id;
         private DevExpress.XtraGrid.Columns.GridColumn full_name;
-        private DevExpress.XtraGrid.Columns.GridColumn burthday;
-        private DevExpress.XtraGrid.Columns.GridColumn sex;
         private DevExpress.XtraGrid.Columns.GridColumn date_time_start;
         private DevExpress.XtraGrid.Columns.GridColumn date_time_end;
-        private DevExpress.XtraGrid.Columns.GridColumn nuber_money;
-        private DevExpress.XtraGrid.Columns.GridColumn comment_money;
-        private DevExpress.XtraGrid.Columns.GridColumn vrach;
-        private DevExpress.XtraGrid.Columns.GridColumn room;
         private DevExpress.XtraGrid.Columns.GridColumn type_kort;
         private DevExpress.XtraGrid.Columns.GridColumn btn_edit;
         private DevExpress.XtraGrid.Columns.GridColumn btn_delete;
         private DevExpress.XtraGrid.GridControl grid_control_is_client;
+        private DevExpress.XtraGrid.Columns.GridColumn number_order;
+        private DevExpress.XtraGrid.Columns.GridColumn btn_pause;
+        private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit pause_btn;
+        private System.Windows.Forms.Button btn_home;
+        private Guna.UI2.WinForms.Guna2AnimateWindow guna2AnimateWindow1;
     }
 }

@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddRoom));
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties5 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
             this.formAssistant1 = new DevExpress.XtraBars.FormAssistant();
             this.panel_full = new System.Windows.Forms.Panel();
             this.panel_botton = new System.Windows.Forms.Panel();
@@ -40,17 +40,35 @@
             this.lbl_tab = new System.Windows.Forms.Label();
             this.btn_creat = new System.Windows.Forms.Button();
             this.group_name_frame = new DevExpress.XtraEditors.GroupControl();
+            this.txt_max_count = new Guna.UI2.WinForms.Guna2NumericUpDown();
+            this.label1 = new System.Windows.Forms.Label();
             this.txt_name_room = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
             this.lbl_room = new System.Windows.Forms.Label();
             this.combo_frame = new Guna.UI2.WinForms.Guna2ComboBox();
             this.lbl_name = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txt_max_count = new Guna.UI2.WinForms.Guna2NumericUpDown();
+            this.label2 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txt_time_breakfast = new DevExpress.XtraEditors.TimeEdit();
+            this.txt_time_lunch = new DevExpress.XtraEditors.TimeEdit();
+            this.txt_time_dinner = new DevExpress.XtraEditors.TimeEdit();
             this.panel_full.SuspendLayout();
             this.panel_botton.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.group_name_frame)).BeginInit();
             this.group_name_frame.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txt_max_count)).BeginInit();
+            this.tableLayoutPanel1.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_time_breakfast.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_time_lunch.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_time_dinner.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // panel_full
@@ -62,7 +80,7 @@
             this.panel_full.Location = new System.Drawing.Point(20, 20);
             this.panel_full.Name = "panel_full";
             this.panel_full.Padding = new System.Windows.Forms.Padding(10);
-            this.panel_full.Size = new System.Drawing.Size(609, 292);
+            this.panel_full.Size = new System.Drawing.Size(609, 358);
             this.panel_full.TabIndex = 0;
             // 
             // panel_botton
@@ -72,7 +90,7 @@
             this.panel_botton.Controls.Add(this.lbl_tab);
             this.panel_botton.Controls.Add(this.btn_creat);
             this.panel_botton.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel_botton.Location = new System.Drawing.Point(10, 238);
+            this.panel_botton.Location = new System.Drawing.Point(10, 304);
             this.panel_botton.Name = "panel_botton";
             this.panel_botton.Padding = new System.Windows.Forms.Padding(8);
             this.panel_botton.Size = new System.Drawing.Size(589, 44);
@@ -120,6 +138,8 @@
             // 
             // group_name_frame
             // 
+            this.group_name_frame.Controls.Add(this.tableLayoutPanel1);
+            this.group_name_frame.Controls.Add(this.label2);
             this.group_name_frame.Controls.Add(this.txt_max_count);
             this.group_name_frame.Controls.Add(this.label1);
             this.group_name_frame.Controls.Add(this.txt_name_room);
@@ -130,9 +150,49 @@
             this.group_name_frame.Location = new System.Drawing.Point(10, 10);
             this.group_name_frame.Name = "group_name_frame";
             this.group_name_frame.Padding = new System.Windows.Forms.Padding(5);
-            this.group_name_frame.Size = new System.Drawing.Size(589, 222);
+            this.group_name_frame.Size = new System.Drawing.Size(589, 285);
             this.group_name_frame.TabIndex = 1;
             this.group_name_frame.Text = "Сохтани ҳуҷра";
+            // 
+            // txt_max_count
+            // 
+            this.txt_max_count.BackColor = System.Drawing.Color.Transparent;
+            this.txt_max_count.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(108)))), ((int)(((byte)(59)))));
+            this.txt_max_count.BorderRadius = 10;
+            this.txt_max_count.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_max_count.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txt_max_count.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_max_count.Location = new System.Drawing.Point(7, 174);
+            this.txt_max_count.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.txt_max_count.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.txt_max_count.Name = "txt_max_count";
+            this.txt_max_count.Size = new System.Drawing.Size(575, 30);
+            this.txt_max_count.TabIndex = 40;
+            this.txt_max_count.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // label1
+            // 
+            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(7, 149);
+            this.label1.Name = "label1";
+            this.label1.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.label1.Size = new System.Drawing.Size(575, 25);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "Шумораи истироҳаткунанда:";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // txt_name_room
             // 
@@ -168,26 +228,26 @@
             this.txt_name_room.Modified = false;
             this.txt_name_room.Multiline = false;
             this.txt_name_room.Name = "txt_name_room";
-            stateProperties5.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties5.FillColor = System.Drawing.Color.Empty;
-            stateProperties5.ForeColor = System.Drawing.Color.Empty;
-            stateProperties5.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txt_name_room.OnActiveState = stateProperties5;
-            stateProperties6.BorderColor = System.Drawing.Color.Empty;
-            stateProperties6.FillColor = System.Drawing.Color.White;
-            stateProperties6.ForeColor = System.Drawing.Color.Empty;
-            stateProperties6.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.txt_name_room.OnDisabledState = stateProperties6;
-            stateProperties7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties7.FillColor = System.Drawing.Color.Empty;
-            stateProperties7.ForeColor = System.Drawing.Color.Empty;
-            stateProperties7.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txt_name_room.OnHoverState = stateProperties7;
-            stateProperties8.BorderColor = System.Drawing.Color.Silver;
-            stateProperties8.FillColor = System.Drawing.Color.White;
-            stateProperties8.ForeColor = System.Drawing.Color.Empty;
-            stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txt_name_room.OnIdleState = stateProperties8;
+            stateProperties1.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties1.FillColor = System.Drawing.Color.Empty;
+            stateProperties1.ForeColor = System.Drawing.Color.Empty;
+            stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txt_name_room.OnActiveState = stateProperties1;
+            stateProperties2.BorderColor = System.Drawing.Color.Empty;
+            stateProperties2.FillColor = System.Drawing.Color.White;
+            stateProperties2.ForeColor = System.Drawing.Color.Empty;
+            stateProperties2.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.txt_name_room.OnDisabledState = stateProperties2;
+            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties3.FillColor = System.Drawing.Color.Empty;
+            stateProperties3.ForeColor = System.Drawing.Color.Empty;
+            stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txt_name_room.OnHoverState = stateProperties3;
+            stateProperties4.BorderColor = System.Drawing.Color.Silver;
+            stateProperties4.FillColor = System.Drawing.Color.White;
+            stateProperties4.ForeColor = System.Drawing.Color.Empty;
+            stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txt_name_room.OnIdleState = stateProperties4;
             this.txt_name_room.PasswordChar = '\0';
             this.txt_name_room.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txt_name_room.PlaceholderText = "НОМ";
@@ -249,45 +309,145 @@
             this.lbl_name.Text = "Номи бино:";
             this.lbl_name.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label1
+            // label2
             // 
-            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(7, 149);
-            this.label1.Name = "label1";
-            this.label1.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.label1.Size = new System.Drawing.Size(575, 25);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "Шумораи истироҳаткунанда:";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label2.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(7, 204);
+            this.label2.Name = "label2";
+            this.label2.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.label2.Size = new System.Drawing.Size(575, 25);
+            this.label2.TabIndex = 41;
+            this.label2.Text = "Вақти хурокҳо:";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // txt_max_count
+            // tableLayoutPanel1
             // 
-            this.txt_max_count.BackColor = System.Drawing.Color.Transparent;
-            this.txt_max_count.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(108)))), ((int)(((byte)(59)))));
-            this.txt_max_count.BorderRadius = 10;
-            this.txt_max_count.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_max_count.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txt_max_count.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_max_count.Location = new System.Drawing.Point(7, 174);
-            this.txt_max_count.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.txt_max_count.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.txt_max_count.Name = "txt_max_count";
-            this.txt_max_count.Size = new System.Drawing.Size(575, 30);
-            this.txt_max_count.TabIndex = 40;
-            this.txt_max_count.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
+            this.tableLayoutPanel1.ColumnCount = 3;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel1.Controls.Add(this.panel3, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.panel2, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.panel1, 1, 0);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(7, 229);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 1;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(575, 52);
+            this.tableLayoutPanel1.TabIndex = 42;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.txt_time_lunch);
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(194, 3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(185, 46);
+            this.panel1.TabIndex = 0;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.txt_time_breakfast);
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(3, 3);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(185, 46);
+            this.panel2.TabIndex = 1;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.txt_time_dinner);
+            this.panel3.Controls.Add(this.label5);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Location = new System.Drawing.Point(385, 3);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(187, 46);
+            this.panel3.TabIndex = 2;
+            // 
+            // label3
+            // 
+            this.label3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label3.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(0, 0);
+            this.label3.Name = "label3";
+            this.label3.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.label3.Size = new System.Drawing.Size(185, 20);
+            this.label3.TabIndex = 42;
+            this.label3.Text = "Наҳорӣ";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label4
+            // 
+            this.label4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label4.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(0, 0);
+            this.label4.Name = "label4";
+            this.label4.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.label4.Size = new System.Drawing.Size(185, 20);
+            this.label4.TabIndex = 42;
+            this.label4.Text = "Хуроки нисфирӯзӣ";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label5
+            // 
+            this.label5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label5.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(0, 0);
+            this.label5.Name = "label5";
+            this.label5.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.label5.Size = new System.Drawing.Size(187, 20);
+            this.label5.TabIndex = 42;
+            this.label5.Text = "Ҳуроки бегоҳрӯзӣ";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // txt_time_breakfast
+            // 
+            this.txt_time_breakfast.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txt_time_breakfast.EditValue = new System.DateTime(2022, 10, 28, 12, 0, 0, 0);
+            this.txt_time_breakfast.Location = new System.Drawing.Point(0, 20);
+            this.txt_time_breakfast.Name = "txt_time_breakfast";
+            this.txt_time_breakfast.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_time_breakfast.Properties.Appearance.Options.UseFont = true;
+            this.txt_time_breakfast.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.txt_time_breakfast.Properties.TimeEditStyle = DevExpress.XtraEditors.Repository.TimeEditStyle.TouchUI;
+            this.txt_time_breakfast.Properties.TouchUIMaxValue = new System.DateTime(9999, 12, 31, 11, 59, 0, 0);
+            this.txt_time_breakfast.Size = new System.Drawing.Size(185, 26);
+            this.txt_time_breakfast.TabIndex = 43;
+            // 
+            // txt_time_lunch
+            // 
+            this.txt_time_lunch.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txt_time_lunch.EditValue = new System.DateTime(2022, 10, 28, 12, 0, 0, 0);
+            this.txt_time_lunch.Location = new System.Drawing.Point(0, 20);
+            this.txt_time_lunch.Name = "txt_time_lunch";
+            this.txt_time_lunch.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_time_lunch.Properties.Appearance.Options.UseFont = true;
+            this.txt_time_lunch.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.txt_time_lunch.Properties.TimeEditStyle = DevExpress.XtraEditors.Repository.TimeEditStyle.TouchUI;
+            this.txt_time_lunch.Properties.TouchUIMaxValue = new System.DateTime(9999, 12, 31, 11, 59, 0, 0);
+            this.txt_time_lunch.Size = new System.Drawing.Size(185, 26);
+            this.txt_time_lunch.TabIndex = 43;
+            // 
+            // txt_time_dinner
+            // 
+            this.txt_time_dinner.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txt_time_dinner.EditValue = new System.DateTime(2022, 10, 28, 12, 0, 0, 0);
+            this.txt_time_dinner.Location = new System.Drawing.Point(0, 20);
+            this.txt_time_dinner.Name = "txt_time_dinner";
+            this.txt_time_dinner.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_time_dinner.Properties.Appearance.Options.UseFont = true;
+            this.txt_time_dinner.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.txt_time_dinner.Properties.TimeEditStyle = DevExpress.XtraEditors.Repository.TimeEditStyle.TouchUI;
+            this.txt_time_dinner.Properties.TouchUIMaxValue = new System.DateTime(9999, 12, 31, 11, 59, 0, 0);
+            this.txt_time_dinner.Size = new System.Drawing.Size(187, 26);
+            this.txt_time_dinner.TabIndex = 43;
             // 
             // AddRoom
             // 
@@ -295,7 +455,7 @@
             this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(649, 332);
+            this.ClientSize = new System.Drawing.Size(649, 398);
             this.Controls.Add(this.panel_full);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.IconOptions.ShowIcon = false;
@@ -312,6 +472,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.group_name_frame)).EndInit();
             this.group_name_frame.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.txt_max_count)).EndInit();
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.txt_time_breakfast.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_time_lunch.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_time_dinner.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -331,5 +498,16 @@
         private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox txt_name_room;
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2NumericUpDown txt_max_count;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label2;
+        private DevExpress.XtraEditors.TimeEdit txt_time_dinner;
+        private DevExpress.XtraEditors.TimeEdit txt_time_breakfast;
+        private DevExpress.XtraEditors.TimeEdit txt_time_lunch;
     }
 }

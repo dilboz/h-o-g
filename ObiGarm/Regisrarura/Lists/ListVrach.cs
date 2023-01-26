@@ -6,10 +6,8 @@ namespace ObiGarm.Regisrarura.Lists
 {
     public partial class ListVrach : DevExpress.XtraEditors.XtraForm
     {
-
         SqlConfiguration sqlConfiguration;
         private readonly AddCllient addCllient_;
-        private readonly EdirClient edirClient_;
         public ListVrach(AddCllient addCllient)
         {
             addCllient_ = addCllient;
@@ -17,12 +15,6 @@ namespace ObiGarm.Regisrarura.Lists
             sqlConfiguration = new SqlConfiguration();
         }
 
-        public ListVrach(EdirClient edirClient)
-        {
-            edirClient_ = edirClient;
-            InitializeComponent();
-            sqlConfiguration = new SqlConfiguration();
-        }
         string id_vrach;
         void dispLay()
         {
@@ -46,15 +38,10 @@ namespace ObiGarm.Regisrarura.Lists
         private void ListVrach_Shown(object sender, EventArgs e)
         {
             dispLay();
-            if (list_load_vrach.ItemCount == 0)
-            {
-                MessageBox.Show("Дар система табиб", "Хатоги");
-            }
+            if (list_load_vrach.ItemCount == 0) MessageBox.Show("Дар система табиб", "Хатоги");
             else
             {
-
                 id_vrach = list_load_vrach.SelectedValue.ToString();
-
                 txt_vrach.Text = list_load_vrach.GetDisplayItemValue(0).ToString();
             }
         }
@@ -66,14 +53,7 @@ namespace ObiGarm.Regisrarura.Lists
             {
                 addCllient_.name_doctor = txt_vrach.Text;
                 addCllient_.id_vrach = id_vrach;
-            }
-            if (edirClient_!=null)
-            {
-                edirClient_.name_vrach_ = txt_vrach.Text;
-                edirClient_.id_vrach_me = id_vrach;
-                edirClient_.set_names_varch_();
-            }
-            
+            }            
             this.Close();
         }
 

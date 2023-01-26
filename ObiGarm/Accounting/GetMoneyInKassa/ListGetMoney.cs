@@ -24,7 +24,7 @@ namespace ObiGarm.Accounting.GetMoneyInKassa
 
         public void display()
         {
-            string sql = "SELECT * FROM obigarm.list_money where enable = 1 "+
+            string sql = "SELECT * FROM list_money where enable = 1 "+
                          "order by id desc";
             sqlConfiguration.displayListExpress(sql, grid_gontrol_list_money);
 

@@ -1,0 +1,61 @@
+﻿using ObiGarm.ClassDatabase;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace ObiGarm.Regisrarura.Arkhiv
+{
+    public partial class ListArkhiv : DevExpress.XtraEditors.XtraForm
+    {
+        SqlConfiguration sqlConfiguration;
+
+        public ListArkhiv()
+        {
+            InitializeComponent();
+            sqlConfiguration = new SqlConfiguration();
+
+        }
+
+        public void display()
+        {
+            string sql = "select client.id, concat(client.surname, ' ', client.name, ' ', client.patromic) as 'full_name', client.year_birthday, sex.name as 'sex', client.date_time_start, client.date_time_end, concat(users.surname, ' ', users.name) as 'vrach', concat('бинои ', frame.name, ' ҳуҷраи ', room.name) as room, type_kort.name as 'type_kort' " +
+                         "from client " +
+                         "inner join sex on client.id_sex = sex.id " +
+                         "inner join users on client.id_varch = users.id " +
+                         "inner join room  on client.id_room = room.id " +
+                         "inner join frame on room.id_freme = frame.id " +
+                         "inner join kort on client.id_kort = kort.id " +
+                         "inner join type_kort on kort.id_type_kort = type_kort.id " +
+                         "where client.is_for_vrach=0 and client.enable=1 and client.deleted is null and client.is_arkhiv='1' " +
+                         "order by id desc  ";
+            sqlConfiguration.displayListExpress(sql, grid_yet_not_client);
+        }
+
+        private void ListArkhiv_Shown(object sender, EventArgs e)
+        {
+            MessageBox.Show("");
+            display();
+        }
+
+        private void to_vrach_ButtonPressed(object sender, DevExpress.XtraEditors.Controls.ButtonPressedEventArgs e)
+        {
+            string id_client = grid_view_yet_no_client.GetRowCellValue(grid_view_yet_no_client.FocusedRowHandle, grid_view_yet_no_client.Columns["id"]).ToString();
+
+            if (id_client == null)
+            {
+                MessageBox.Show("Шумо ба врач равон карда наметавонд");
+            }
+            else
+            {
+                EditIsArkhiv editIsArkhiv = new EditIsArkhiv(this, id_client);
+                editIsArkhiv.ShowDialog();
+            }
+        }
+    }
+}

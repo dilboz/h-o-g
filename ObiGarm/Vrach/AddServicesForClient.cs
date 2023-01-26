@@ -1,4 +1,5 @@
 ﻿using ObiGarm.ClassDatabase;
+using ObiGarm.Mnitor;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -62,9 +63,7 @@ namespace ObiGarm.Vrach
             sqlConfiguration.LoadCombo(select_sql_services, "name","id", combo_services);
             combo_services.SelectedIndex = -1;
             panel_show_hide.Visible = false;
-            time_services_for_client.Text = "";
-
-            
+            time_services_for_client.Text = "";       
 
             string select_sql_spitsqlist;
             if (combo_services.Items.Count!=0)
@@ -130,12 +129,8 @@ namespace ObiGarm.Vrach
                       $"order by users.end_date_time_services";
                     sqlConfiguration.LoadCombo(select_sql_spitsqlist, "name", "id", combo_spitsqlist);
 
-                    id_services_for_client = combo_services.SelectedValue.ToString();
-
-                    
-                }
-               
-               
+                    id_services_for_client = combo_services.SelectedValue.ToString();                    
+                }                      
 
                 if (combo_spitsqlist.Items.Count == 0)
                 {
@@ -147,7 +142,7 @@ namespace ObiGarm.Vrach
                 {
                     id_spitsalist = combo_spitsqlist.SelectedValue.ToString();
 
-                    DataTable dataTable_spit = sqlConfiguration.sqlSelectQuery($"SELECT * FROM obigarm.users where id ='{id_spitsalist}';");
+                    DataTable dataTable_spit = sqlConfiguration.sqlSelectQuery($"SELECT * FROM users where id ='{id_spitsalist}';");
                    
                     time_start_spit= Convert.ToDateTime(dataTable_spit.Rows[0]["work_time_start"].ToString());
                     time_end_spit = Convert.ToDateTime(dataTable_spit.Rows[0]["work_time_end"].ToString());
@@ -227,7 +222,7 @@ namespace ObiGarm.Vrach
         private void combo_spitsqlist_SelectionChangeCommitted(object sender, EventArgs e)
         {
             id_spitsalist = combo_spitsqlist.SelectedValue.ToString();
-            DataTable dataTable_spit = sqlConfiguration.sqlSelectQuery($"SELECT * FROM obigarm.users where id ='{id_spitsalist}';");
+            DataTable dataTable_spit = sqlConfiguration.sqlSelectQuery($"SELECT * FROM users where id ='{id_spitsalist}';");
             time_start_spit = Convert.ToDateTime(dataTable_spit.Rows[0]["work_time_start"].ToString());
             time_end_spit = Convert.ToDateTime(dataTable_spit.Rows[0]["work_time_end"].ToString());
             //time_services = DateTime.Parse(add_time(combo_spitsqlist.SelectedValue.ToString(), combo_services.SelectedValue.ToString())).ToString("yyyy-MM-dd hh:mm:ss");
@@ -271,8 +266,8 @@ namespace ObiGarm.Vrach
                         mainFormVrach.check_btn_add_services();
                         this.Close();
                     }
-                   
-                    
+
+
 
                     //MessageBox.Show("Админ бо муваффакият илова карда шуд!", "Сообщения", MessageBoxButtons.OK, MessageBoxIcon.None);
                 }
@@ -295,7 +290,7 @@ namespace ObiGarm.Vrach
                 start_date = start_date.AddDays(1);
             }
 
-            DataTable time_services_ = sqlConfiguration.sqlSelectQuery($"SELECT * FROM obigarm.services where id = '{id_services_for_client}';");
+            DataTable time_services_ = sqlConfiguration.sqlSelectQuery($"SELECT * FROM services where id = '{id_services_for_client}';");
 
             DateTime time_serivc = DateTime.Parse(time_services_.Rows[0]["time_services"].ToString());
 
@@ -390,6 +385,7 @@ namespace ObiGarm.Vrach
         private void btn_creat_Click(object sender, EventArgs e)
         {
             add();
+            
         }
 
         private void list_date_SelectedIndexChanged(object sender, EventArgs e)

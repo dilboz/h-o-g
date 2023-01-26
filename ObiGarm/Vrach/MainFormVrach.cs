@@ -45,7 +45,7 @@ namespace ObiGarm.Vrach
 
             
 
-            sqlConfiguration.displayListExpress(sql, grid_contol);
+            //sqlConfiguration.displayListExpress(sql, grid_contol);
         }
 
        
@@ -54,12 +54,12 @@ namespace ObiGarm.Vrach
         {
             if (is_check_kort == true && id_client!="")
             {
-                btn_add_services.Visible = true;
+                //btn_add_services.Visible = true;
                 display(id_client);
             }
             else
             {
-                btn_add_services.Visible = false;
+                //btn_add_services.Visible = false;
 
             }
         }
@@ -67,7 +67,7 @@ namespace ObiGarm.Vrach
 
         void select_info(string id)
         {
-            string sql_for_info_client = "select client.id, concat(client.surname, ' ', client.name, ' ', client.patromic) as 'full_name', client.birthday, sex.name as 'sex', client.date_time_start, client.date_time_end "
+            string sql_for_info_client = "select client.id, concat(client.surname, ' ', client.name, ' ', client.patromic) as 'full_name', client.year_birthday, sex.name as 'sex', client.date_time_start, client.date_time_end "
                                         + "from client "
                                         + "inner join sex on client.id_sex = sex.id "
                                         + $"where client.enable = 1 and client.deleted is null and client.id='{id}'";
@@ -77,22 +77,22 @@ namespace ObiGarm.Vrach
             
 
             combo_client.Text = dataTable.Rows[0]["full_name"].ToString();
-            txt_full_name.Text= dataTable.Rows[0]["full_name"].ToString();
-            txt_birthday.Text= dataTable.Rows[0]["birthday"].ToString();
-            txt_sex.Text= dataTable.Rows[0]["sex"].ToString();
-            txt_time_start.Text= dataTable.Rows[0]["date_time_start"].ToString();
-            txt_end_time.Text= dataTable.Rows[0]["date_time_end"].ToString();
-            if (txt_full_name.Text!="")
-            {
-                is_check_kort=true;
-                btn_add_services.Visible = true;
+            //txt_full_name.Text= dataTable.Rows[0]["full_name"].ToString();
+            //txt_birthday.Text= dataTable.Rows[0]["year_birthday"].ToString();
+            //txt_sex.Text= dataTable.Rows[0]["sex"].ToString();
+            //txt_time_start.Text= dataTable.Rows[0]["date_time_start"].ToString();
+            //txt_end_time.Text= dataTable.Rows[0]["date_time_end"].ToString();
+            //if (txt_full_name.Text!="")
+            //{
+            //    is_check_kort=true;
+            //    //btn_add_services.Visible = true;
 
-            }
-            else
-            {
-                is_check_kort = false;
-                btn_add_services.Visible = false;
-            }
+            //}
+            //else
+            //{
+            //    is_check_kort = false;
+            //    //btn_add_services.Visible = false;
+            //}
 
         }
 
@@ -120,16 +120,10 @@ namespace ObiGarm.Vrach
             addServicesForClient.ShowDialog();
         }
 
-        private void logout_button_Click(object sender, EventArgs e)
-        {
-            LoginForm loginForm = new LoginForm();
-            loginForm.Show();
-            this.Hide();
-        }
 
         private void button_active_kort_Click(object sender, EventArgs e)
         {
-            txt_full_name.Focus();
+            //txt_full_name.Focus();
             txt_numeb_kort.Focus();
         }
 
@@ -139,13 +133,13 @@ namespace ObiGarm.Vrach
             {
                 txt_numeb_kort.Text = txt_numeb_kort.Text.Substring(10, 10);
                 check_klient(txt_numeb_kort.Text);
-                txt_full_name.Focus();
+                //txt_full_name.Focus();
                 txt_numeb_kort.Focus();
             }
             if (txt_numeb_kort.Text.Length == 10)
             {
                 check_klient(txt_numeb_kort.Text);
-                txt_full_name.Focus();
+                //txt_full_name.Focus();
                 txt_numeb_kort.Focus();
             }
 
@@ -156,7 +150,7 @@ namespace ObiGarm.Vrach
 
             try
             {
-                DataTable dataTable_kort = sqlConfiguration.sqlSelectQuery($"SELECT id, kod_kort FROM obigarm.kort where kod_kort='{kort}';");
+                DataTable dataTable_kort = sqlConfiguration.sqlSelectQuery($"SELECT id, kod_kort FROM kort where kod_kort='{kort}';");
 
                 string id_kort;
                 if (dataTable_kort.Rows.Count == 0)
@@ -190,5 +184,11 @@ namespace ObiGarm.Vrach
 
         }
 
+        private void btn_logut_Click(object sender, EventArgs e)
+        {
+            LoginForm loginForm = new LoginForm();
+            loginForm.Show();
+            this.Hide();
+        }
     }
 }

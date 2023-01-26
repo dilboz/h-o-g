@@ -35,7 +35,7 @@ namespace ObiGarm.Users.Frame
 
         private void setTextToTextBoxs(string id)
         {
-            string sql = "select room.id, frame.name 'name_frame', room.name, room.max_per,  active " +
+            string sql = "select room.id, frame.name 'name_frame', room.name, room.max_per, room.breakfast ,room.lunch ,room.dinner ,  active " +
                 "from room " +
                 "inner join frame on room.id_freme = frame.id "+
                 "where room.id = '" + id + "'";
@@ -52,6 +52,10 @@ namespace ObiGarm.Users.Frame
                     combo_frame.Text= dataTable.Rows[0]["name_frame"].ToString();
                     txt_name_room.Text = dataTable.Rows[0]["name"].ToString();
                     txt_max_count.Text = dataTable.Rows[0]["max_per"].ToString();
+
+                    txt_time_breakfast.EditValue = dataTable.Rows[0]["breakfast"].ToString();
+                    txt_time_lunch.EditValue = dataTable.Rows[0]["lunch"].ToString();
+                    txt_time_dinner.EditValue = dataTable.Rows[0]["dinner"].ToString();
 
                 }
                 else
@@ -82,12 +86,18 @@ namespace ObiGarm.Users.Frame
             string id_fmame = combo_frame.SelectedValue.ToString();
             string room = txt_name_room.Text;
             string max_per = txt_max_count.Text;
+            string breakfast = Convert.ToDateTime(txt_time_breakfast.Text).ToString("HH:mm"); 
+            string lunch = Convert.ToDateTime(txt_time_lunch.Text).ToString("HH:mm");
+            string dinner = Convert.ToDateTime(txt_time_dinner.Text).ToString("HH:mm");
 
             string sql_check_farme = $"select * from room  where id_freme = ' { id_fmame } ' and name =' { room.Trim() }' and enable ='1';";
 
-            string sql_add_room = "insert into room (id_freme, max_per, name) values('" +
+            string sql_add_room = "insert into room (id_freme, max_per, breakfast, lunch, dinner, name) values('" +
                id_fmame + "', '"+
                max_per + "', '" +
+               breakfast + "', '" +
+               lunch + "', '" +
+               dinner + "', '" +
                room.Trim()+"');";
 
             if (room.Trim() != "")
@@ -128,12 +138,19 @@ namespace ObiGarm.Users.Frame
             string room = txt_name_room.Text;
             string max_per = txt_max_count.Text;
 
+            string breakfast = Convert.ToDateTime(txt_time_breakfast.Text).ToString("HH:mm");
+            string lunch = Convert.ToDateTime(txt_time_lunch.Text).ToString("HH:mm");
+            string dinner = Convert.ToDateTime(txt_time_dinner.Text).ToString("HH:mm");
+
             string sql_check_farme = "select * from room  where id_freme = '" + id_fmame + "' and name ='" + room.Trim() + "' and deleted is  null;";
 
 
             string sql_update_frame = "update room set " +
                 "id_freme = '" + id_fmame + "', " +
                 "name = '"+ room.Trim() + "', "+
+                "breakfast = '" + breakfast + "', " +
+                "lunch = '" + lunch + "', " +
+                "dinner = '" + dinner + "', " +
                 "max_per = '" + max_per + "' " +
                "where id = '" + id + "'";
 

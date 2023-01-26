@@ -8,6 +8,7 @@ using ObiGarm.Users.Bugalter;
 using ObiGarm.Users.Frame;
 using ObiGarm.Users.Kort;
 using ObiGarm.Users.Registar;
+using ObiGarm.Users.Restorant;
 using ObiGarm.Users.Spitalists;
 using ObiGarm.Users.Vracah;
 using System;
@@ -103,14 +104,14 @@ namespace ObiGarm.Users
         {
             Button[] bunifuButtons = new Button[] { main_button, user_button, admin_button, vrach_button,
             registr_button, spitalists_button, bugalter_button, reference_button, frame_and_room, servicesis_btn, btn_kort, bonk_button, 
-                export_database_button, actions_button, reports_button, administrator_button};
+                export_database_button, actions_button, reports_button, administrator_button, restotonant_and_oshkhina};
 
             for (var i = 0; i < bunifuButtons.Length; i++)
             {
                 bunifuButtons[i].BackColor = Color.FromArgb(70, 70, 70);
             }
 
-            if (index==2 || index==3 || index==4 || index==5 || index==6 || index == 15)
+            if (index==2 || index==3 || index==4 || index==5 || index==6 || index == 15 || index == 16)
             {
                 bunifuButtons[1].BackColor = Color.FromArgb(100, 100, 100);
                 bunifuButtons[index].BackColor = Color.FromArgb(100, 100, 100);
@@ -156,34 +157,15 @@ namespace ObiGarm.Users
             colorsButton(0);
         }
 
-        private void admin_button_Click(object sender, EventArgs e)
-        {
-            colorsButton(2);
-            openChildForm(new AdminFormDisplay());
-        }
 
-        private void vrach_button_Click(object sender, EventArgs e)
-        {
-            colorsButton(3);
-            openChildForm(new VrachFormDisplay());
-        }
 
-        private void registr_button_Click(object sender, EventArgs e)
-        {
-            colorsButton(4);
-            openChildForm(new RegistarFormDisplay());
-        }
 
         private void UserForm_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
         }
 
-        private void spitalists_button_Click(object sender, EventArgs e)
-        {
-            colorsButton(5);
-            openChildForm(new SpitalistFormDisplay());
-        }
+
 
         private void service_button_Click(object sender, EventArgs e)
         {
@@ -203,11 +185,7 @@ namespace ObiGarm.Users
             openChildForm(new ServicesFormDisplay());
         }
 
-        private void bugalter_button_Click(object sender, EventArgs e)
-        {
-            colorsButton(6);
-            openChildForm(new ListBugalter());
-        }
+
 
         private void report_a_Click(object sender, EventArgs e)
         {
@@ -237,17 +215,53 @@ namespace ObiGarm.Users
             this.Hide();
         }
 
-        private void administrator_button_Click(object sender, EventArgs e)
-        {
-            colorsButton(15);
-            openChildForm(new ListAdministrator());
-             
-        }
-
         private void btn_kort_Click(object sender, EventArgs e)
         {
             colorsButton(10);
             openChildForm(new ListKort());
+        }
+
+        private void admin_button_Click(object sender, EventArgs e)
+        {
+            colorsButton(2);
+            openChildForm(new AdminFormDisplay());
+        }
+
+        private void vrach_button_Click(object sender, EventArgs e)
+        {
+            colorsButton(3);
+            openChildForm(new VrachFormDisplay());
+        }
+
+        private void registr_button_Click(object sender, EventArgs e)
+        {
+            colorsButton(4);
+            openChildForm(new RegistarFormDisplay());
+        }
+
+        private void spitalists_button_Click(object sender, EventArgs e)
+        {
+            colorsButton(5);
+            openChildForm(new SpitalistFormDisplay());
+        }
+
+        private void bugalter_button_Click(object sender, EventArgs e)
+        {
+            colorsButton(6);
+            openChildForm(new ListBugalter());
+        }
+
+        private void administrator_button_Click(object sender, EventArgs e)
+        {
+            colorsButton(15);
+            openChildForm(new ListAdministrator());
+
+        }
+
+        private void restotonant_and_oshkhina_Click(object sender, EventArgs e)
+        {
+            colorsButton(16);
+            openChildForm(new ListRestorant());
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using ObiGarm.ClassDatabase;
+using ObiGarm.Regisrarura.Arkhiv;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -25,16 +26,13 @@ namespace ObiGarm.Regisrarura
 
         public void display()
         {
-                string sql = "select client.id, concat(client.surname, ' ', client.name, ' ', client.patromic) as 'full_name', client.birthday, sex.name as 'sex', client.date_time_start, client.date_time_end, client.nuber_money, client.comment_money, concat(users.surname, ' ', users.name) as 'vrach', concat('бинои ', frame.name, ' ҳуҷраи ', room.name) as room, type_kort.name as 'type_kort' " +
+                string sql = "select client.id, client.number_order, concat(client.surname, ' ', client.name, ' ', client.patromic) as 'full_name', client.date_time_start, client.date_time_end, type_kort.name as 'type_kort' " +
                              "from client " +
-                             "inner join sex on client.id_sex = sex.id " +
-                             "inner join users on client.id_varch = users.id " +
-                             "inner join room  on client.id_room = room.id " +
-                             "inner join frame on room.id_freme = frame.id " +
                              "inner join kort on client.id_kort = kort.id " +
                              "inner join type_kort on kort.id_type_kort = type_kort.id " +
-                             "where client.is_for_vrach=1 and client.enable=1 and client.deleted is null "+
+                             "where  client.enable=1 and client.deleted is null " +
                              "order by id desc ";
+
             sqlConfiguration.displayListExpress(sql, grid_control_is_client);
         }
 
@@ -54,8 +52,8 @@ namespace ObiGarm.Regisrarura
             }
             else
             {
-                EdirClient edirClient = new EdirClient(this, id_client);
-                edirClient.ShowDialog();
+                AddCllient addCllient = new AddCllient(this, id_client, "Иваз кардан");
+                addCllient.ShowDialog();
             }
         }
 
@@ -77,6 +75,26 @@ namespace ObiGarm.Regisrarura
                     MessageBox.Show("Хатоги хангоми нест кардани Админ!", "Сообщения", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+        }
+
+        private void pause_btn_Click(object sender, EventArgs e)
+        {
+            string id = grid_view_is_client.GetRowCellValue(grid_view_is_client.FocusedRowHandle, grid_view_is_client.Columns["id"]).ToString();
+            if (id == null)
+            {
+                MessageBox.Show("Шумо ба врач равон карда наметавонд");
+            }
+            else
+            {
+                AddArchiv addArchiv = new AddArchiv(this, id);
+                addArchiv.ShowDialog();
+            }
+        }
+
+        private void btn_home_Click(object sender, EventArgs e)
+        {
+            AddCllient addCllient = new AddCllient();
+            addCllient.ShowDialog();
         }
     }
 }

@@ -29,38 +29,38 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties5 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties9 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties10 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties11 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties12 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties13 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties14 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties15 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties16 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties17 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties18 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties19 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties20 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties21 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties22 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties23 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties24 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
             this.panel_form = new Bunifu.UI.WinForm.BunifuShadowPanel.BunifuShadowPanel();
             this.panel_left = new System.Windows.Forms.Panel();
-            this.picture_logo = new System.Windows.Forms.PictureBox();
             this.panel_right = new System.Windows.Forms.Panel();
             this.check_show_password = new Bunifu.Framework.UI.BunifuCheckbox();
             this.lbl_login = new System.Windows.Forms.Label();
-            this.txt_login = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
             this.lbl_password = new System.Windows.Forms.Label();
-            this.txt_password = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
-            this.btn_exit = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.btn_login = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.lbl_show_password = new System.Windows.Forms.LinkLabel();
             this.label3 = new System.Windows.Forms.Label();
             this.formAssistant1 = new DevExpress.XtraBars.FormAssistant();
+            this.picture_logo = new System.Windows.Forms.PictureBox();
+            this.txt_login = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
+            this.txt_password = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
+            this.btn_exit = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.btn_login = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.panel_form.SuspendLayout();
             this.panel_left.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picture_logo)).BeginInit();
             this.panel_right.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picture_logo)).BeginInit();
             this.SuspendLayout();
             // 
             // panel_form
@@ -87,16 +87,6 @@
             this.panel_left.Name = "panel_left";
             this.panel_left.Size = new System.Drawing.Size(177, 263);
             this.panel_left.TabIndex = 0;
-            // 
-            // picture_logo
-            // 
-            this.picture_logo.Image = global::ObiGarm.Properties.Resources.logos;
-            this.picture_logo.Location = new System.Drawing.Point(17, 50);
-            this.picture_logo.Name = "picture_logo";
-            this.picture_logo.Size = new System.Drawing.Size(140, 132);
-            this.picture_logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picture_logo.TabIndex = 19;
-            this.picture_logo.TabStop = false;
             // 
             // panel_right
             // 
@@ -139,6 +129,52 @@
             this.lbl_login.TabIndex = 0;
             this.lbl_login.Text = "&LOGIN:";
             // 
+            // lbl_password
+            // 
+            this.lbl_password.AutoSize = true;
+            this.lbl_password.Location = new System.Drawing.Point(37, 101);
+            this.lbl_password.Name = "lbl_password";
+            this.lbl_password.Size = new System.Drawing.Size(45, 16);
+            this.lbl_password.TabIndex = 0;
+            this.lbl_password.Text = "&РАМЗ:";
+            // 
+            // lbl_show_password
+            // 
+            this.lbl_show_password.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(101)))), ((int)(((byte)(48)))));
+            this.lbl_show_password.AutoSize = true;
+            this.lbl_show_password.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
+            this.lbl_show_password.LinkColor = System.Drawing.Color.Black;
+            this.lbl_show_password.Location = new System.Drawing.Point(60, 164);
+            this.lbl_show_password.Name = "lbl_show_password";
+            this.lbl_show_password.Size = new System.Drawing.Size(84, 16);
+            this.lbl_show_password.TabIndex = 0;
+            this.lbl_show_password.TabStop = true;
+            this.lbl_show_password.Text = "&Дидани рамз";
+            this.lbl_show_password.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lbl_show_password_LinkClicked);
+            // 
+            // label3
+            // 
+            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(143)))), ((int)(((byte)(78)))));
+            this.label3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label3.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(0, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(637, 62);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "ВОРИДШАВӢ";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // picture_logo
+            // 
+            this.picture_logo.Image = global::ObiGarm.Properties.Resources.logos;
+            this.picture_logo.Location = new System.Drawing.Point(17, 50);
+            this.picture_logo.Name = "picture_logo";
+            this.picture_logo.Size = new System.Drawing.Size(140, 132);
+            this.picture_logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picture_logo.TabIndex = 19;
+            this.picture_logo.TabStop = false;
+            // 
             // txt_login
             // 
             this.txt_login.AcceptsReturn = false;
@@ -172,26 +208,26 @@
             this.txt_login.Modified = false;
             this.txt_login.Multiline = false;
             this.txt_login.Name = "txt_login";
-            stateProperties1.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties1.FillColor = System.Drawing.Color.Empty;
-            stateProperties1.ForeColor = System.Drawing.Color.Empty;
-            stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txt_login.OnActiveState = stateProperties1;
-            stateProperties2.BorderColor = System.Drawing.Color.Empty;
-            stateProperties2.FillColor = System.Drawing.Color.White;
-            stateProperties2.ForeColor = System.Drawing.Color.Empty;
-            stateProperties2.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.txt_login.OnDisabledState = stateProperties2;
-            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties3.FillColor = System.Drawing.Color.Empty;
-            stateProperties3.ForeColor = System.Drawing.Color.Empty;
-            stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txt_login.OnHoverState = stateProperties3;
-            stateProperties4.BorderColor = System.Drawing.Color.Silver;
-            stateProperties4.FillColor = System.Drawing.Color.White;
-            stateProperties4.ForeColor = System.Drawing.Color.Empty;
-            stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txt_login.OnIdleState = stateProperties4;
+            stateProperties13.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties13.FillColor = System.Drawing.Color.Empty;
+            stateProperties13.ForeColor = System.Drawing.Color.Empty;
+            stateProperties13.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txt_login.OnActiveState = stateProperties13;
+            stateProperties14.BorderColor = System.Drawing.Color.Empty;
+            stateProperties14.FillColor = System.Drawing.Color.White;
+            stateProperties14.ForeColor = System.Drawing.Color.Empty;
+            stateProperties14.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.txt_login.OnDisabledState = stateProperties14;
+            stateProperties15.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties15.FillColor = System.Drawing.Color.Empty;
+            stateProperties15.ForeColor = System.Drawing.Color.Empty;
+            stateProperties15.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txt_login.OnHoverState = stateProperties15;
+            stateProperties16.BorderColor = System.Drawing.Color.Silver;
+            stateProperties16.FillColor = System.Drawing.Color.White;
+            stateProperties16.ForeColor = System.Drawing.Color.Empty;
+            stateProperties16.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txt_login.OnIdleState = stateProperties16;
             this.txt_login.PasswordChar = '\0';
             this.txt_login.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txt_login.PlaceholderText = "Login";
@@ -212,15 +248,6 @@
             this.txt_login.UseSystemPasswordChar = false;
             this.txt_login.WordWrap = true;
             this.txt_login.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_login_KeyDown);
-            // 
-            // lbl_password
-            // 
-            this.lbl_password.AutoSize = true;
-            this.lbl_password.Location = new System.Drawing.Point(37, 101);
-            this.lbl_password.Name = "lbl_password";
-            this.lbl_password.Size = new System.Drawing.Size(45, 16);
-            this.lbl_password.TabIndex = 0;
-            this.lbl_password.Text = "&РАМЗ:";
             // 
             // txt_password
             // 
@@ -255,26 +282,26 @@
             this.txt_password.Modified = false;
             this.txt_password.Multiline = false;
             this.txt_password.Name = "txt_password";
-            stateProperties5.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties5.FillColor = System.Drawing.Color.Empty;
-            stateProperties5.ForeColor = System.Drawing.Color.Empty;
-            stateProperties5.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txt_password.OnActiveState = stateProperties5;
-            stateProperties6.BorderColor = System.Drawing.Color.Empty;
-            stateProperties6.FillColor = System.Drawing.Color.White;
-            stateProperties6.ForeColor = System.Drawing.Color.Empty;
-            stateProperties6.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.txt_password.OnDisabledState = stateProperties6;
-            stateProperties7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties7.FillColor = System.Drawing.Color.Empty;
-            stateProperties7.ForeColor = System.Drawing.Color.Empty;
-            stateProperties7.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txt_password.OnHoverState = stateProperties7;
-            stateProperties8.BorderColor = System.Drawing.Color.Silver;
-            stateProperties8.FillColor = System.Drawing.Color.White;
-            stateProperties8.ForeColor = System.Drawing.Color.Empty;
-            stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txt_password.OnIdleState = stateProperties8;
+            stateProperties17.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties17.FillColor = System.Drawing.Color.Empty;
+            stateProperties17.ForeColor = System.Drawing.Color.Empty;
+            stateProperties17.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txt_password.OnActiveState = stateProperties17;
+            stateProperties18.BorderColor = System.Drawing.Color.Empty;
+            stateProperties18.FillColor = System.Drawing.Color.White;
+            stateProperties18.ForeColor = System.Drawing.Color.Empty;
+            stateProperties18.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.txt_password.OnDisabledState = stateProperties18;
+            stateProperties19.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties19.FillColor = System.Drawing.Color.Empty;
+            stateProperties19.ForeColor = System.Drawing.Color.Empty;
+            stateProperties19.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txt_password.OnHoverState = stateProperties19;
+            stateProperties20.BorderColor = System.Drawing.Color.Silver;
+            stateProperties20.FillColor = System.Drawing.Color.White;
+            stateProperties20.ForeColor = System.Drawing.Color.Empty;
+            stateProperties20.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txt_password.OnIdleState = stateProperties20;
             this.txt_password.PasswordChar = '\0';
             this.txt_password.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txt_password.PlaceholderText = "Рамз";
@@ -310,11 +337,11 @@
             this.btn_exit.ColorContrastOnClick = 45;
             this.btn_exit.ColorContrastOnHover = 45;
             this.btn_exit.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges1.BottomLeft = true;
-            borderEdges1.BottomRight = true;
-            borderEdges1.TopLeft = true;
-            borderEdges1.TopRight = true;
-            this.btn_exit.CustomizableEdges = borderEdges1;
+            borderEdges3.BottomLeft = true;
+            borderEdges3.BottomRight = true;
+            borderEdges3.TopLeft = true;
+            borderEdges3.TopRight = true;
+            this.btn_exit.CustomizableEdges = borderEdges3;
             this.btn_exit.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_exit.DisabledBorderColor = System.Drawing.Color.Empty;
             this.btn_exit.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -335,24 +362,24 @@
             this.btn_exit.IndicateFocus = false;
             this.btn_exit.Location = new System.Drawing.Point(24, 194);
             this.btn_exit.Name = "btn_exit";
-            stateProperties9.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(178)))), ((int)(((byte)(97)))));
-            stateProperties9.BorderRadius = 15;
-            stateProperties9.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            stateProperties9.BorderThickness = 1;
-            stateProperties9.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(200)))), ((int)(((byte)(120)))));
-            stateProperties9.ForeColor = System.Drawing.Color.White;
-            stateProperties9.IconLeftImage = null;
-            stateProperties9.IconRightImage = null;
-            this.btn_exit.onHoverState = stateProperties9;
-            stateProperties10.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(165)))), ((int)(((byte)(88)))));
-            stateProperties10.BorderRadius = 15;
-            stateProperties10.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            stateProperties10.BorderThickness = 1;
-            stateProperties10.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(143)))), ((int)(((byte)(78)))));
-            stateProperties10.ForeColor = System.Drawing.Color.White;
-            stateProperties10.IconLeftImage = null;
-            stateProperties10.IconRightImage = null;
-            this.btn_exit.OnPressedState = stateProperties10;
+            stateProperties21.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(178)))), ((int)(((byte)(97)))));
+            stateProperties21.BorderRadius = 15;
+            stateProperties21.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            stateProperties21.BorderThickness = 1;
+            stateProperties21.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(200)))), ((int)(((byte)(120)))));
+            stateProperties21.ForeColor = System.Drawing.Color.White;
+            stateProperties21.IconLeftImage = null;
+            stateProperties21.IconRightImage = null;
+            this.btn_exit.onHoverState = stateProperties21;
+            stateProperties22.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(165)))), ((int)(((byte)(88)))));
+            stateProperties22.BorderRadius = 15;
+            stateProperties22.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            stateProperties22.BorderThickness = 1;
+            stateProperties22.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(143)))), ((int)(((byte)(78)))));
+            stateProperties22.ForeColor = System.Drawing.Color.White;
+            stateProperties22.IconLeftImage = null;
+            stateProperties22.IconRightImage = null;
+            this.btn_exit.OnPressedState = stateProperties22;
             this.btn_exit.Size = new System.Drawing.Size(193, 45);
             this.btn_exit.TabIndex = 4;
             this.btn_exit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -374,11 +401,11 @@
             this.btn_login.ColorContrastOnClick = 45;
             this.btn_login.ColorContrastOnHover = 45;
             this.btn_login.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges2.BottomLeft = true;
-            borderEdges2.BottomRight = true;
-            borderEdges2.TopLeft = true;
-            borderEdges2.TopRight = true;
-            this.btn_login.CustomizableEdges = borderEdges2;
+            borderEdges4.BottomLeft = true;
+            borderEdges4.BottomRight = true;
+            borderEdges4.TopLeft = true;
+            borderEdges4.TopRight = true;
+            this.btn_login.CustomizableEdges = borderEdges4;
             this.btn_login.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_login.DisabledBorderColor = System.Drawing.Color.Empty;
             this.btn_login.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -399,57 +426,30 @@
             this.btn_login.IndicateFocus = false;
             this.btn_login.Location = new System.Drawing.Point(249, 194);
             this.btn_login.Name = "btn_login";
-            stateProperties11.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(178)))), ((int)(((byte)(97)))));
-            stateProperties11.BorderRadius = 15;
-            stateProperties11.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            stateProperties11.BorderThickness = 1;
-            stateProperties11.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(200)))), ((int)(((byte)(120)))));
-            stateProperties11.ForeColor = System.Drawing.Color.White;
-            stateProperties11.IconLeftImage = null;
-            stateProperties11.IconRightImage = null;
-            this.btn_login.onHoverState = stateProperties11;
-            stateProperties12.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(165)))), ((int)(((byte)(88)))));
-            stateProperties12.BorderRadius = 15;
-            stateProperties12.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            stateProperties12.BorderThickness = 1;
-            stateProperties12.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(143)))), ((int)(((byte)(78)))));
-            stateProperties12.ForeColor = System.Drawing.Color.White;
-            stateProperties12.IconLeftImage = null;
-            stateProperties12.IconRightImage = null;
-            this.btn_login.OnPressedState = stateProperties12;
+            stateProperties23.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(178)))), ((int)(((byte)(97)))));
+            stateProperties23.BorderRadius = 15;
+            stateProperties23.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            stateProperties23.BorderThickness = 1;
+            stateProperties23.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(200)))), ((int)(((byte)(120)))));
+            stateProperties23.ForeColor = System.Drawing.Color.White;
+            stateProperties23.IconLeftImage = null;
+            stateProperties23.IconRightImage = null;
+            this.btn_login.onHoverState = stateProperties23;
+            stateProperties24.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(165)))), ((int)(((byte)(88)))));
+            stateProperties24.BorderRadius = 15;
+            stateProperties24.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            stateProperties24.BorderThickness = 1;
+            stateProperties24.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(143)))), ((int)(((byte)(78)))));
+            stateProperties24.ForeColor = System.Drawing.Color.White;
+            stateProperties24.IconLeftImage = null;
+            stateProperties24.IconRightImage = null;
+            this.btn_login.OnPressedState = stateProperties24;
             this.btn_login.Size = new System.Drawing.Size(193, 45);
             this.btn_login.TabIndex = 3;
             this.btn_login.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn_login.TextMarginLeft = 0;
             this.btn_login.UseDefaultRadiusAndThickness = true;
             this.btn_login.Click += new System.EventHandler(this.btn_login_Click);
-            // 
-            // lbl_show_password
-            // 
-            this.lbl_show_password.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(101)))), ((int)(((byte)(48)))));
-            this.lbl_show_password.AutoSize = true;
-            this.lbl_show_password.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
-            this.lbl_show_password.LinkColor = System.Drawing.Color.Black;
-            this.lbl_show_password.Location = new System.Drawing.Point(60, 164);
-            this.lbl_show_password.Name = "lbl_show_password";
-            this.lbl_show_password.Size = new System.Drawing.Size(84, 16);
-            this.lbl_show_password.TabIndex = 0;
-            this.lbl_show_password.TabStop = true;
-            this.lbl_show_password.Text = "&Дидани рамз";
-            this.lbl_show_password.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lbl_show_password_LinkClicked);
-            // 
-            // label3
-            // 
-            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(143)))), ((int)(((byte)(78)))));
-            this.label3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label3.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(0, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(637, 62);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "ВОРИДШАВӢ";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // LoginForm
             // 
@@ -471,9 +471,9 @@
             this.Load += new System.EventHandler(this.LoginForm_Load);
             this.panel_form.ResumeLayout(false);
             this.panel_left.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.picture_logo)).EndInit();
             this.panel_right.ResumeLayout(false);
             this.panel_right.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picture_logo)).EndInit();
             this.ResumeLayout(false);
 
         }

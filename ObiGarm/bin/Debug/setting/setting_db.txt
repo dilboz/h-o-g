@@ -1,4 +1,4 @@
-192.168.1.72
-user_hob
-user_hob
+localhost
+root
+root
 obigarm
