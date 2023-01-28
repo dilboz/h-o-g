@@ -31,118 +31,100 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainFormVrach));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.form_view = new DevExpress.XtraBars.FormAssistant();
             this.panel_top = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.btn_chek_kort = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.user_info_label = new System.Windows.Forms.Label();
+            this.print_btn = new Guna.UI2.WinForms.Guna2Button();
             this.combo_client = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.check_kort_btn = new Guna.UI2.WinForms.Guna2Button();
+            this.txt_numeb_kort = new Guna.UI2.WinForms.Guna2TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.btn_logut = new Guna.UI2.WinForms.Guna2Button();
             this.tab_menu = new Guna.UI2.WinForms.Guna2TabControl();
             this.tab_info_all = new System.Windows.Forms.TabPage();
-            this.tab_tainot_dukhtur = new System.Windows.Forms.TabPage();
-            this.tab_antrometri = new System.Windows.Forms.TabPage();
-            this.tab_qabuliilovagii_dukhtur = new System.Windows.Forms.TabPage();
-            this.tartibi_ruz = new System.Windows.Forms.TabPage();
-            this.label2 = new System.Windows.Forms.Label();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.guna2TextBox4 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.guna2TextBox5 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.guna2TextBox6 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txt_room = new Guna.UI2.WinForms.Guna2TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label8 = new System.Windows.Forms.Label();
+            this.txt_name_doctor = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.time_end_time = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txt_start_time = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txt_year_burhhday = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txt_full_name = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.tab_hujrai_tashkhisi = new System.Windows.Forms.TabPage();
+            this.com_nishonahoi_tabobat = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.label24 = new System.Windows.Forms.Label();
+            this.txt_ultarasado = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label25 = new System.Windows.Forms.Label();
+            this.txt_sanjishi_nasoji = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label26 = new System.Windows.Forms.Label();
+            this.txt_sanjishi_peshob = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label27 = new System.Windows.Forms.Label();
+            this.txt_tarkibi_hun = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label28 = new System.Windows.Forms.Label();
+            this.txt_EKG = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label29 = new System.Windows.Forms.Label();
+            this.tab_tainot_dukhtur = new System.Windows.Forms.TabPage();
             this.datagridview_admin = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.label10 = new System.Windows.Forms.Label();
-            this.guna2TextBox9 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.guna2TextBox10 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.guna2TextBox11 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.guna2TextBox12 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.guna2TextBox7 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label16 = new System.Windows.Forms.Label();
             this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.surname = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.login = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
             this.edit = new System.Windows.Forms.DataGridViewImageColumn();
             this.delete = new System.Windows.Forms.DataGridViewImageColumn();
-            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_logut = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
-            this.label17 = new System.Windows.Forms.Label();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewImageColumn3 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.dataGridViewImageColumn4 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.guna2TextBox8 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.panel_top_tainoti_dukhtur = new System.Windows.Forms.Panel();
+            this.btn_add_services = new Guna.UI2.WinForms.Guna2Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.tab_antrometri = new System.Windows.Forms.TabPage();
+            this.txt_harorat = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.txt_nabz = new System.Windows.Forms.MaskedTextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.txt_fishori_hun = new System.Windows.Forms.MaskedTextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txt_quvai_bozuho = new System.Windows.Forms.MaskedTextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txt_qobiliyati_nafaskashi = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.txt_hajmi_qafasi_sina = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.txt_vazn = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.txt_qad = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.tartibi_ruz = new System.Windows.Forms.TabPage();
+            this.txt_time_hob = new Guna.UI2.WinForms.Guna2TextBox();
             this.label18 = new System.Windows.Forms.Label();
-            this.guna2TextBox13 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txt_hurok_begohruzi = new Guna.UI2.WinForms.Guna2TextBox();
             this.label19 = new System.Windows.Forms.Label();
-            this.guna2TextBox14 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txt_time_tabobathoi_gunogun = new Guna.UI2.WinForms.Guna2TextBox();
             this.label20 = new System.Windows.Forms.Label();
-            this.guna2TextBox15 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txt_time_nahory = new Guna.UI2.WinForms.Guna2TextBox();
             this.label21 = new System.Windows.Forms.Label();
-            this.guna2TextBox16 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txt_time_varzishi_pagohi = new Guna.UI2.WinForms.Guna2TextBox();
             this.label22 = new System.Windows.Forms.Label();
-            this.guna2TextBox17 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txt_az_hob_hestan = new Guna.UI2.WinForms.Guna2TextBox();
             this.label23 = new System.Windows.Forms.Label();
-            this.tab_hujrai_tashkhisi = new System.Windows.Forms.TabPage();
-            this.label24 = new System.Windows.Forms.Label();
-            this.guna2TextBox19 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label25 = new System.Windows.Forms.Label();
-            this.guna2TextBox20 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label26 = new System.Windows.Forms.Label();
-            this.guna2TextBox21 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label27 = new System.Windows.Forms.Label();
-            this.guna2TextBox22 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label28 = new System.Windows.Forms.Label();
-            this.guna2TextBox23 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label29 = new System.Windows.Forms.Label();
-            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.txt_numeb_kort = new Guna.UI2.WinForms.Guna2TextBox();
+            this.edit_btn = new System.Windows.Forms.DataGridViewImageColumn();
+            this.deleted_btn = new System.Windows.Forms.DataGridViewImageColumn();
             this.panel_top.SuspendLayout();
             this.btn_chek_kort.SuspendLayout();
             this.tab_menu.SuspendLayout();
             this.tab_info_all.SuspendLayout();
-            this.tab_tainot_dukhtur.SuspendLayout();
-            this.tab_antrometri.SuspendLayout();
-            this.tab_qabuliilovagii_dukhtur.SuspendLayout();
-            this.tartibi_ruz.SuspendLayout();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.datagridview_admin)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
-            this.panel2.SuspendLayout();
             this.tab_hujrai_tashkhisi.SuspendLayout();
+            this.tab_tainot_dukhtur.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.datagridview_admin)).BeginInit();
+            this.panel_top_tainoti_dukhtur.SuspendLayout();
+            this.tab_antrometri.SuspendLayout();
+            this.tartibi_ruz.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel_top
@@ -162,9 +144,9 @@
             this.btn_chek_kort.BackColor = System.Drawing.Color.White;
             this.btn_chek_kort.BorderRadius = 15;
             this.btn_chek_kort.Controls.Add(this.user_info_label);
-            this.btn_chek_kort.Controls.Add(this.guna2Button2);
+            this.btn_chek_kort.Controls.Add(this.print_btn);
             this.btn_chek_kort.Controls.Add(this.combo_client);
-            this.btn_chek_kort.Controls.Add(this.guna2Button1);
+            this.btn_chek_kort.Controls.Add(this.check_kort_btn);
             this.btn_chek_kort.Controls.Add(this.txt_numeb_kort);
             this.btn_chek_kort.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(249)))), ((int)(((byte)(252)))));
             this.btn_chek_kort.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -190,6 +172,26 @@
             this.user_info_label.Text = "Истироҳаткунандагон";
             this.user_info_label.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // print_btn
+            // 
+            this.print_btn.BackColor = System.Drawing.Color.Transparent;
+            this.print_btn.BorderColor = System.Drawing.Color.White;
+            this.print_btn.BorderRadius = 10;
+            this.print_btn.BorderThickness = 1;
+            this.print_btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.print_btn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.print_btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.print_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.print_btn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(124)))), ((int)(((byte)(84)))));
+            this.print_btn.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.print_btn.ForeColor = System.Drawing.Color.White;
+            this.print_btn.Image = global::ObiGarm.Properties.Resources.printer;
+            this.print_btn.Location = new System.Drawing.Point(8, 7);
+            this.print_btn.Name = "print_btn";
+            this.print_btn.Size = new System.Drawing.Size(127, 33);
+            this.print_btn.TabIndex = 2;
+            this.print_btn.Text = "чоп кардан";
+            // 
             // combo_client
             // 
             this.combo_client.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -209,6 +211,47 @@
             this.combo_client.Size = new System.Drawing.Size(279, 26);
             this.combo_client.TabIndex = 31;
             // 
+            // check_kort_btn
+            // 
+            this.check_kort_btn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.check_kort_btn.BackColor = System.Drawing.Color.Transparent;
+            this.check_kort_btn.BorderColor = System.Drawing.Color.White;
+            this.check_kort_btn.BorderRadius = 10;
+            this.check_kort_btn.BorderThickness = 1;
+            this.check_kort_btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.check_kort_btn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.check_kort_btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.check_kort_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.check_kort_btn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(124)))), ((int)(((byte)(84)))));
+            this.check_kort_btn.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.check_kort_btn.ForeColor = System.Drawing.Color.White;
+            this.check_kort_btn.Image = global::ObiGarm.Properties.Resources.logout;
+            this.check_kort_btn.Location = new System.Drawing.Point(597, 8);
+            this.check_kort_btn.Name = "check_kort_btn";
+            this.check_kort_btn.Size = new System.Drawing.Size(158, 33);
+            this.check_kort_btn.TabIndex = 3;
+            this.check_kort_btn.Text = "Корро санчидан";
+            // 
+            // txt_numeb_kort
+            // 
+            this.txt_numeb_kort.BorderRadius = 3;
+            this.txt_numeb_kort.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_numeb_kort.DefaultText = "";
+            this.txt_numeb_kort.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_numeb_kort.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_numeb_kort.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_numeb_kort.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_numeb_kort.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_numeb_kort.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_numeb_kort.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_numeb_kort.Location = new System.Drawing.Point(636, 12);
+            this.txt_numeb_kort.Name = "txt_numeb_kort";
+            this.txt_numeb_kort.PasswordChar = '\0';
+            this.txt_numeb_kort.PlaceholderText = "";
+            this.txt_numeb_kort.SelectedText = "";
+            this.txt_numeb_kort.Size = new System.Drawing.Size(76, 25);
+            this.txt_numeb_kort.TabIndex = 24;
+            // 
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.White;
@@ -222,6 +265,25 @@
             this.label1.Text = "Дилбоз Сафаров\r\nТабиб";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // btn_logut
+            // 
+            this.btn_logut.BackColor = System.Drawing.Color.White;
+            this.btn_logut.BorderRadius = 15;
+            this.btn_logut.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_logut.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_logut.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_logut.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_logut.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btn_logut.FillColor = System.Drawing.Color.Red;
+            this.btn_logut.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_logut.ForeColor = System.Drawing.Color.White;
+            this.btn_logut.Image = global::ObiGarm.Properties.Resources.logout;
+            this.btn_logut.Location = new System.Drawing.Point(1016, 10);
+            this.btn_logut.Name = "btn_logut";
+            this.btn_logut.Size = new System.Drawing.Size(132, 46);
+            this.btn_logut.TabIndex = 0;
+            this.btn_logut.Text = "Баромад";
+            // 
             // tab_menu
             // 
             this.tab_menu.Alignment = System.Windows.Forms.TabAlignment.Left;
@@ -229,7 +291,6 @@
             this.tab_menu.Controls.Add(this.tab_hujrai_tashkhisi);
             this.tab_menu.Controls.Add(this.tab_tainot_dukhtur);
             this.tab_menu.Controls.Add(this.tab_antrometri);
-            this.tab_menu.Controls.Add(this.tab_qabuliilovagii_dukhtur);
             this.tab_menu.Controls.Add(this.tartibi_ruz);
             this.tab_menu.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tab_menu.ItemSize = new System.Drawing.Size(220, 40);
@@ -261,17 +322,17 @@
             // tab_info_all
             // 
             this.tab_info_all.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(250)))));
-            this.tab_info_all.Controls.Add(this.guna2TextBox6);
+            this.tab_info_all.Controls.Add(this.txt_room);
             this.tab_info_all.Controls.Add(this.label7);
-            this.tab_info_all.Controls.Add(this.guna2TextBox5);
+            this.tab_info_all.Controls.Add(this.txt_name_doctor);
             this.tab_info_all.Controls.Add(this.label6);
-            this.tab_info_all.Controls.Add(this.guna2TextBox4);
+            this.tab_info_all.Controls.Add(this.time_end_time);
             this.tab_info_all.Controls.Add(this.label5);
-            this.tab_info_all.Controls.Add(this.guna2TextBox3);
+            this.tab_info_all.Controls.Add(this.txt_start_time);
             this.tab_info_all.Controls.Add(this.label4);
-            this.tab_info_all.Controls.Add(this.guna2TextBox2);
+            this.tab_info_all.Controls.Add(this.txt_year_burhhday);
             this.tab_info_all.Controls.Add(this.label3);
-            this.tab_info_all.Controls.Add(this.guna2TextBox1);
+            this.tab_info_all.Controls.Add(this.txt_full_name);
             this.tab_info_all.Controls.Add(this.label2);
             this.tab_info_all.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tab_info_all.Location = new System.Drawing.Point(224, 4);
@@ -281,263 +342,26 @@
             this.tab_info_all.TabIndex = 0;
             this.tab_info_all.Text = "Истироҳаткунанда";
             // 
-            // tab_tainot_dukhtur
+            // txt_room
             // 
-            this.tab_tainot_dukhtur.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(250)))));
-            this.tab_tainot_dukhtur.Controls.Add(this.datagridview_admin);
-            this.tab_tainot_dukhtur.Controls.Add(this.panel1);
-            this.tab_tainot_dukhtur.Location = new System.Drawing.Point(224, 4);
-            this.tab_tainot_dukhtur.Name = "tab_tainot_dukhtur";
-            this.tab_tainot_dukhtur.Padding = new System.Windows.Forms.Padding(10);
-            this.tab_tainot_dukhtur.Size = new System.Drawing.Size(930, 420);
-            this.tab_tainot_dukhtur.TabIndex = 1;
-            this.tab_tainot_dukhtur.Text = "Таъиноти духтур";
-            // 
-            // tab_antrometri
-            // 
-            this.tab_antrometri.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(250)))));
-            this.tab_antrometri.Controls.Add(this.guna2TextBox7);
-            this.tab_antrometri.Controls.Add(this.label16);
-            this.tab_antrometri.Controls.Add(this.maskedTextBox3);
-            this.tab_antrometri.Controls.Add(this.label15);
-            this.tab_antrometri.Controls.Add(this.maskedTextBox2);
-            this.tab_antrometri.Controls.Add(this.label9);
-            this.tab_antrometri.Controls.Add(this.maskedTextBox1);
-            this.tab_antrometri.Controls.Add(this.label10);
-            this.tab_antrometri.Controls.Add(this.guna2TextBox9);
-            this.tab_antrometri.Controls.Add(this.label11);
-            this.tab_antrometri.Controls.Add(this.guna2TextBox10);
-            this.tab_antrometri.Controls.Add(this.label12);
-            this.tab_antrometri.Controls.Add(this.guna2TextBox11);
-            this.tab_antrometri.Controls.Add(this.label13);
-            this.tab_antrometri.Controls.Add(this.guna2TextBox12);
-            this.tab_antrometri.Controls.Add(this.label14);
-            this.tab_antrometri.ForeColor = System.Drawing.Color.Black;
-            this.tab_antrometri.Location = new System.Drawing.Point(224, 4);
-            this.tab_antrometri.Name = "tab_antrometri";
-            this.tab_antrometri.Padding = new System.Windows.Forms.Padding(10);
-            this.tab_antrometri.Size = new System.Drawing.Size(930, 420);
-            this.tab_antrometri.TabIndex = 2;
-            this.tab_antrometri.Text = "Ченаки антрометрӣ";
-            // 
-            // tab_qabuliilovagii_dukhtur
-            // 
-            this.tab_qabuliilovagii_dukhtur.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(250)))));
-            this.tab_qabuliilovagii_dukhtur.Controls.Add(this.guna2DataGridView1);
-            this.tab_qabuliilovagii_dukhtur.Controls.Add(this.panel2);
-            this.tab_qabuliilovagii_dukhtur.Location = new System.Drawing.Point(224, 4);
-            this.tab_qabuliilovagii_dukhtur.Name = "tab_qabuliilovagii_dukhtur";
-            this.tab_qabuliilovagii_dukhtur.Size = new System.Drawing.Size(930, 420);
-            this.tab_qabuliilovagii_dukhtur.TabIndex = 3;
-            this.tab_qabuliilovagii_dukhtur.Text = "Қабули иловагии духтур";
-            // 
-            // tartibi_ruz
-            // 
-            this.tartibi_ruz.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(250)))));
-            this.tartibi_ruz.Controls.Add(this.guna2TextBox8);
-            this.tartibi_ruz.Controls.Add(this.label18);
-            this.tartibi_ruz.Controls.Add(this.guna2TextBox13);
-            this.tartibi_ruz.Controls.Add(this.label19);
-            this.tartibi_ruz.Controls.Add(this.guna2TextBox14);
-            this.tartibi_ruz.Controls.Add(this.label20);
-            this.tartibi_ruz.Controls.Add(this.guna2TextBox15);
-            this.tartibi_ruz.Controls.Add(this.label21);
-            this.tartibi_ruz.Controls.Add(this.guna2TextBox16);
-            this.tartibi_ruz.Controls.Add(this.label22);
-            this.tartibi_ruz.Controls.Add(this.guna2TextBox17);
-            this.tartibi_ruz.Controls.Add(this.label23);
-            this.tartibi_ruz.Location = new System.Drawing.Point(224, 4);
-            this.tartibi_ruz.Name = "tartibi_ruz";
-            this.tartibi_ruz.Padding = new System.Windows.Forms.Padding(10);
-            this.tartibi_ruz.Size = new System.Drawing.Size(930, 420);
-            this.tartibi_ruz.TabIndex = 4;
-            this.tartibi_ruz.Text = "Тартиби рӯз";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(10, 10);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(37, 15);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "ННН:";
-            // 
-            // guna2TextBox1
-            // 
-            this.guna2TextBox1.BorderRadius = 3;
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Location = new System.Drawing.Point(10, 25);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderText = "";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.Size = new System.Drawing.Size(910, 28);
-            this.guna2TextBox1.TabIndex = 1;
-            // 
-            // guna2TextBox2
-            // 
-            this.guna2TextBox2.BorderRadius = 3;
-            this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox2.DefaultText = "";
-            this.guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.Location = new System.Drawing.Point(10, 68);
-            this.guna2TextBox2.Name = "guna2TextBox2";
-            this.guna2TextBox2.PasswordChar = '\0';
-            this.guna2TextBox2.PlaceholderText = "";
-            this.guna2TextBox2.SelectedText = "";
-            this.guna2TextBox2.Size = new System.Drawing.Size(910, 28);
-            this.guna2TextBox2.TabIndex = 3;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(10, 53);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(88, 15);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Соли таввалуд:";
-            // 
-            // guna2TextBox3
-            // 
-            this.guna2TextBox3.BorderRadius = 3;
-            this.guna2TextBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox3.DefaultText = "";
-            this.guna2TextBox3.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox3.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2TextBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox3.Location = new System.Drawing.Point(10, 111);
-            this.guna2TextBox3.Name = "guna2TextBox3";
-            this.guna2TextBox3.PasswordChar = '\0';
-            this.guna2TextBox3.PlaceholderText = "";
-            this.guna2TextBox3.SelectedText = "";
-            this.guna2TextBox3.Size = new System.Drawing.Size(910, 28);
-            this.guna2TextBox3.TabIndex = 5;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label4.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(10, 96);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(47, 15);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "Аз кай:";
-            // 
-            // guna2TextBox4
-            // 
-            this.guna2TextBox4.BorderRadius = 3;
-            this.guna2TextBox4.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox4.DefaultText = "";
-            this.guna2TextBox4.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox4.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2TextBox4.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox4.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox4.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox4.Location = new System.Drawing.Point(10, 154);
-            this.guna2TextBox4.Name = "guna2TextBox4";
-            this.guna2TextBox4.PasswordChar = '\0';
-            this.guna2TextBox4.PlaceholderText = "";
-            this.guna2TextBox4.SelectedText = "";
-            this.guna2TextBox4.Size = new System.Drawing.Size(910, 28);
-            this.guna2TextBox4.TabIndex = 7;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label5.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(10, 139);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(46, 15);
-            this.label5.TabIndex = 6;
-            this.label5.Text = "То кай:";
-            // 
-            // guna2TextBox5
-            // 
-            this.guna2TextBox5.BorderRadius = 3;
-            this.guna2TextBox5.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox5.DefaultText = "";
-            this.guna2TextBox5.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox5.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2TextBox5.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox5.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox5.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox5.Location = new System.Drawing.Point(10, 197);
-            this.guna2TextBox5.Name = "guna2TextBox5";
-            this.guna2TextBox5.PasswordChar = '\0';
-            this.guna2TextBox5.PlaceholderText = "";
-            this.guna2TextBox5.SelectedText = "";
-            this.guna2TextBox5.Size = new System.Drawing.Size(910, 28);
-            this.guna2TextBox5.TabIndex = 9;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label6.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(10, 182);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(71, 15);
-            this.label6.TabIndex = 8;
-            this.label6.Text = "Духтур таб.";
-            // 
-            // guna2TextBox6
-            // 
-            this.guna2TextBox6.BorderRadius = 3;
-            this.guna2TextBox6.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox6.DefaultText = "";
-            this.guna2TextBox6.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox6.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox6.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox6.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2TextBox6.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox6.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox6.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox6.Location = new System.Drawing.Point(10, 240);
-            this.guna2TextBox6.Name = "guna2TextBox6";
-            this.guna2TextBox6.PasswordChar = '\0';
-            this.guna2TextBox6.PlaceholderText = "";
-            this.guna2TextBox6.SelectedText = "";
-            this.guna2TextBox6.Size = new System.Drawing.Size(910, 28);
-            this.guna2TextBox6.TabIndex = 11;
+            this.txt_room.BorderRadius = 3;
+            this.txt_room.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_room.DefaultText = "";
+            this.txt_room.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_room.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_room.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_room.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_room.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txt_room.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_room.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_room.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_room.Location = new System.Drawing.Point(10, 240);
+            this.txt_room.Name = "txt_room";
+            this.txt_room.PasswordChar = '\0';
+            this.txt_room.PlaceholderText = "";
+            this.txt_room.SelectedText = "";
+            this.txt_room.Size = new System.Drawing.Size(910, 28);
+            this.txt_room.TabIndex = 11;
             // 
             // label7
             // 
@@ -551,29 +375,398 @@
             this.label7.TabIndex = 10;
             this.label7.Text = "Биноб Ҳуҷра:";
             // 
-            // panel1
+            // txt_name_doctor
             // 
-            this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.guna2Button3);
-            this.panel1.Controls.Add(this.label8);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(10, 10);
-            this.panel1.Name = "panel1";
-            this.panel1.Padding = new System.Windows.Forms.Padding(5);
-            this.panel1.Size = new System.Drawing.Size(910, 45);
-            this.panel1.TabIndex = 0;
+            this.txt_name_doctor.BorderRadius = 3;
+            this.txt_name_doctor.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_name_doctor.DefaultText = "";
+            this.txt_name_doctor.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_name_doctor.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_name_doctor.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_name_doctor.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_name_doctor.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txt_name_doctor.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_name_doctor.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_name_doctor.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_name_doctor.Location = new System.Drawing.Point(10, 197);
+            this.txt_name_doctor.Name = "txt_name_doctor";
+            this.txt_name_doctor.PasswordChar = '\0';
+            this.txt_name_doctor.PlaceholderText = "";
+            this.txt_name_doctor.SelectedText = "";
+            this.txt_name_doctor.Size = new System.Drawing.Size(910, 28);
+            this.txt_name_doctor.TabIndex = 9;
             // 
-            // label8
+            // label6
             // 
-            this.label8.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label8.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(5, 5);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(277, 35);
-            this.label8.TabIndex = 1;
-            this.label8.Text = "Қабули дуҳтур ва таъиноти табобат:";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label6.AutoSize = true;
+            this.label6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label6.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Black;
+            this.label6.Location = new System.Drawing.Point(10, 182);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(71, 15);
+            this.label6.TabIndex = 8;
+            this.label6.Text = "Духтур таб.";
+            // 
+            // time_end_time
+            // 
+            this.time_end_time.BorderRadius = 3;
+            this.time_end_time.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.time_end_time.DefaultText = "";
+            this.time_end_time.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.time_end_time.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.time_end_time.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.time_end_time.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.time_end_time.Dock = System.Windows.Forms.DockStyle.Top;
+            this.time_end_time.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.time_end_time.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.time_end_time.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.time_end_time.Location = new System.Drawing.Point(10, 154);
+            this.time_end_time.Name = "time_end_time";
+            this.time_end_time.PasswordChar = '\0';
+            this.time_end_time.PlaceholderText = "";
+            this.time_end_time.SelectedText = "";
+            this.time_end_time.Size = new System.Drawing.Size(910, 28);
+            this.time_end_time.TabIndex = 7;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label5.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Black;
+            this.label5.Location = new System.Drawing.Point(10, 139);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(46, 15);
+            this.label5.TabIndex = 6;
+            this.label5.Text = "То кай:";
+            // 
+            // txt_start_time
+            // 
+            this.txt_start_time.BorderRadius = 3;
+            this.txt_start_time.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_start_time.DefaultText = "";
+            this.txt_start_time.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_start_time.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_start_time.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_start_time.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_start_time.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txt_start_time.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_start_time.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_start_time.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_start_time.Location = new System.Drawing.Point(10, 111);
+            this.txt_start_time.Name = "txt_start_time";
+            this.txt_start_time.PasswordChar = '\0';
+            this.txt_start_time.PlaceholderText = "";
+            this.txt_start_time.SelectedText = "";
+            this.txt_start_time.Size = new System.Drawing.Size(910, 28);
+            this.txt_start_time.TabIndex = 5;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(10, 96);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(47, 15);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "Аз кай:";
+            // 
+            // txt_year_burhhday
+            // 
+            this.txt_year_burhhday.BorderRadius = 3;
+            this.txt_year_burhhday.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_year_burhhday.DefaultText = "";
+            this.txt_year_burhhday.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_year_burhhday.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_year_burhhday.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_year_burhhday.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_year_burhhday.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txt_year_burhhday.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_year_burhhday.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_year_burhhday.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_year_burhhday.Location = new System.Drawing.Point(10, 68);
+            this.txt_year_burhhday.Name = "txt_year_burhhday";
+            this.txt_year_burhhday.PasswordChar = '\0';
+            this.txt_year_burhhday.PlaceholderText = "";
+            this.txt_year_burhhday.SelectedText = "";
+            this.txt_year_burhhday.Size = new System.Drawing.Size(910, 28);
+            this.txt_year_burhhday.TabIndex = 3;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(10, 53);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(88, 15);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Соли таввалуд:";
+            // 
+            // txt_full_name
+            // 
+            this.txt_full_name.BorderRadius = 3;
+            this.txt_full_name.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_full_name.DefaultText = "";
+            this.txt_full_name.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_full_name.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_full_name.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_full_name.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_full_name.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txt_full_name.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_full_name.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_full_name.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_full_name.Location = new System.Drawing.Point(10, 25);
+            this.txt_full_name.Name = "txt_full_name";
+            this.txt_full_name.PasswordChar = '\0';
+            this.txt_full_name.PlaceholderText = "";
+            this.txt_full_name.SelectedText = "";
+            this.txt_full_name.Size = new System.Drawing.Size(910, 28);
+            this.txt_full_name.TabIndex = 1;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(10, 10);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(37, 15);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "ННН:";
+            // 
+            // tab_hujrai_tashkhisi
+            // 
+            this.tab_hujrai_tashkhisi.Controls.Add(this.com_nishonahoi_tabobat);
+            this.tab_hujrai_tashkhisi.Controls.Add(this.label24);
+            this.tab_hujrai_tashkhisi.Controls.Add(this.txt_ultarasado);
+            this.tab_hujrai_tashkhisi.Controls.Add(this.label25);
+            this.tab_hujrai_tashkhisi.Controls.Add(this.txt_sanjishi_nasoji);
+            this.tab_hujrai_tashkhisi.Controls.Add(this.label26);
+            this.tab_hujrai_tashkhisi.Controls.Add(this.txt_sanjishi_peshob);
+            this.tab_hujrai_tashkhisi.Controls.Add(this.label27);
+            this.tab_hujrai_tashkhisi.Controls.Add(this.txt_tarkibi_hun);
+            this.tab_hujrai_tashkhisi.Controls.Add(this.label28);
+            this.tab_hujrai_tashkhisi.Controls.Add(this.txt_EKG);
+            this.tab_hujrai_tashkhisi.Controls.Add(this.label29);
+            this.tab_hujrai_tashkhisi.Location = new System.Drawing.Point(224, 4);
+            this.tab_hujrai_tashkhisi.Name = "tab_hujrai_tashkhisi";
+            this.tab_hujrai_tashkhisi.Padding = new System.Windows.Forms.Padding(10);
+            this.tab_hujrai_tashkhisi.Size = new System.Drawing.Size(930, 420);
+            this.tab_hujrai_tashkhisi.TabIndex = 5;
+            this.tab_hujrai_tashkhisi.Text = "Ҳураи ташхисӣ";
+            this.tab_hujrai_tashkhisi.UseVisualStyleBackColor = true;
+            // 
+            // com_nishonahoi_tabobat
+            // 
+            this.com_nishonahoi_tabobat.BackColor = System.Drawing.Color.Transparent;
+            this.com_nishonahoi_tabobat.BorderRadius = 2;
+            this.com_nishonahoi_tabobat.Dock = System.Windows.Forms.DockStyle.Top;
+            this.com_nishonahoi_tabobat.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.com_nishonahoi_tabobat.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.com_nishonahoi_tabobat.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.com_nishonahoi_tabobat.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.com_nishonahoi_tabobat.Font = new System.Drawing.Font("Segoe UI", 8.25F);
+            this.com_nishonahoi_tabobat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.com_nishonahoi_tabobat.ItemHeight = 25;
+            this.com_nishonahoi_tabobat.Location = new System.Drawing.Point(10, 240);
+            this.com_nishonahoi_tabobat.Name = "com_nishonahoi_tabobat";
+            this.com_nishonahoi_tabobat.Size = new System.Drawing.Size(910, 31);
+            this.com_nishonahoi_tabobat.TabIndex = 32;
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label24.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.ForeColor = System.Drawing.Color.Black;
+            this.label24.Location = new System.Drawing.Point(10, 225);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(121, 15);
+            this.label24.TabIndex = 22;
+            this.label24.Text = "Нишонаҳои табобат:";
+            // 
+            // txt_ultarasado
+            // 
+            this.txt_ultarasado.BorderRadius = 3;
+            this.txt_ultarasado.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_ultarasado.DefaultText = "";
+            this.txt_ultarasado.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_ultarasado.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_ultarasado.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_ultarasado.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_ultarasado.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txt_ultarasado.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_ultarasado.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_ultarasado.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_ultarasado.Location = new System.Drawing.Point(10, 197);
+            this.txt_ultarasado.Name = "txt_ultarasado";
+            this.txt_ultarasado.PasswordChar = '\0';
+            this.txt_ultarasado.PlaceholderText = "";
+            this.txt_ultarasado.SelectedText = "";
+            this.txt_ultarasado.Size = new System.Drawing.Size(910, 28);
+            this.txt_ultarasado.TabIndex = 21;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label25.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.ForeColor = System.Drawing.Color.Black;
+            this.label25.Location = new System.Drawing.Point(10, 182);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(120, 15);
+            this.label25.TabIndex = 20;
+            this.label25.Text = "Санҷиши ултрасадо.";
+            // 
+            // txt_sanjishi_nasoji
+            // 
+            this.txt_sanjishi_nasoji.BorderRadius = 3;
+            this.txt_sanjishi_nasoji.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_sanjishi_nasoji.DefaultText = "";
+            this.txt_sanjishi_nasoji.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_sanjishi_nasoji.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_sanjishi_nasoji.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_sanjishi_nasoji.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_sanjishi_nasoji.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txt_sanjishi_nasoji.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_sanjishi_nasoji.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_sanjishi_nasoji.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_sanjishi_nasoji.Location = new System.Drawing.Point(10, 154);
+            this.txt_sanjishi_nasoji.Name = "txt_sanjishi_nasoji";
+            this.txt_sanjishi_nasoji.PasswordChar = '\0';
+            this.txt_sanjishi_nasoji.PlaceholderText = "";
+            this.txt_sanjishi_nasoji.SelectedText = "";
+            this.txt_sanjishi_nasoji.Size = new System.Drawing.Size(910, 28);
+            this.txt_sanjishi_nasoji.TabIndex = 19;
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label26.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.ForeColor = System.Drawing.Color.Black;
+            this.label26.Location = new System.Drawing.Point(10, 139);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(109, 15);
+            this.label26.TabIndex = 18;
+            this.label26.Text = "Санҷиши наҷосат:";
+            // 
+            // txt_sanjishi_peshob
+            // 
+            this.txt_sanjishi_peshob.BorderRadius = 3;
+            this.txt_sanjishi_peshob.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_sanjishi_peshob.DefaultText = "";
+            this.txt_sanjishi_peshob.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_sanjishi_peshob.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_sanjishi_peshob.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_sanjishi_peshob.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_sanjishi_peshob.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txt_sanjishi_peshob.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_sanjishi_peshob.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_sanjishi_peshob.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_sanjishi_peshob.Location = new System.Drawing.Point(10, 111);
+            this.txt_sanjishi_peshob.Name = "txt_sanjishi_peshob";
+            this.txt_sanjishi_peshob.PasswordChar = '\0';
+            this.txt_sanjishi_peshob.PlaceholderText = "";
+            this.txt_sanjishi_peshob.SelectedText = "";
+            this.txt_sanjishi_peshob.Size = new System.Drawing.Size(910, 28);
+            this.txt_sanjishi_peshob.TabIndex = 17;
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label27.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.ForeColor = System.Drawing.Color.Black;
+            this.label27.Location = new System.Drawing.Point(10, 96);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(102, 15);
+            this.label27.TabIndex = 16;
+            this.label27.Text = "Санҷиши пешоб:";
+            // 
+            // txt_tarkibi_hun
+            // 
+            this.txt_tarkibi_hun.BorderRadius = 3;
+            this.txt_tarkibi_hun.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_tarkibi_hun.DefaultText = "";
+            this.txt_tarkibi_hun.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_tarkibi_hun.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_tarkibi_hun.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_tarkibi_hun.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_tarkibi_hun.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txt_tarkibi_hun.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_tarkibi_hun.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_tarkibi_hun.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_tarkibi_hun.Location = new System.Drawing.Point(10, 68);
+            this.txt_tarkibi_hun.Name = "txt_tarkibi_hun";
+            this.txt_tarkibi_hun.PasswordChar = '\0';
+            this.txt_tarkibi_hun.PlaceholderText = "";
+            this.txt_tarkibi_hun.SelectedText = "";
+            this.txt_tarkibi_hun.Size = new System.Drawing.Size(910, 28);
+            this.txt_tarkibi_hun.TabIndex = 15;
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label28.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.ForeColor = System.Drawing.Color.Black;
+            this.label28.Location = new System.Drawing.Point(10, 53);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(132, 15);
+            this.label28.TabIndex = 14;
+            this.label28.Text = "Санҷиши таркиби хун:";
+            // 
+            // txt_EKG
+            // 
+            this.txt_EKG.BorderRadius = 3;
+            this.txt_EKG.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_EKG.DefaultText = "";
+            this.txt_EKG.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_EKG.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_EKG.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_EKG.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_EKG.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txt_EKG.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_EKG.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_EKG.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_EKG.Location = new System.Drawing.Point(10, 25);
+            this.txt_EKG.Name = "txt_EKG";
+            this.txt_EKG.PasswordChar = '\0';
+            this.txt_EKG.PlaceholderText = "";
+            this.txt_EKG.SelectedText = "";
+            this.txt_EKG.Size = new System.Drawing.Size(910, 28);
+            this.txt_EKG.TabIndex = 13;
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label29.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.ForeColor = System.Drawing.Color.Black;
+            this.label29.Location = new System.Drawing.Point(10, 10);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(127, 15);
+            this.label29.TabIndex = 12;
+            this.label29.Text = "Санҷиши барқии дил:";
+            // 
+            // tab_tainot_dukhtur
+            // 
+            this.tab_tainot_dukhtur.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(250)))));
+            this.tab_tainot_dukhtur.Controls.Add(this.datagridview_admin);
+            this.tab_tainot_dukhtur.Controls.Add(this.panel_top_tainoti_dukhtur);
+            this.tab_tainot_dukhtur.Location = new System.Drawing.Point(224, 4);
+            this.tab_tainot_dukhtur.Name = "tab_tainot_dukhtur";
+            this.tab_tainot_dukhtur.Padding = new System.Windows.Forms.Padding(10);
+            this.tab_tainot_dukhtur.Size = new System.Drawing.Size(930, 420);
+            this.tab_tainot_dukhtur.TabIndex = 1;
+            this.tab_tainot_dukhtur.Text = "Таъиноти духтур";
             // 
             // datagridview_admin
             // 
@@ -636,246 +829,6 @@
             this.datagridview_admin.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.datagridview_admin.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
-            // label10
-            // 
-            this.label10.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label10.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(10, 202);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(910, 20);
-            this.label10.TabIndex = 20;
-            this.label10.Text = "Санҷиши кувваи бозуҳ:";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
-            // 
-            // guna2TextBox9
-            // 
-            this.guna2TextBox9.BorderRadius = 3;
-            this.guna2TextBox9.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox9.DefaultText = "";
-            this.guna2TextBox9.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox9.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox9.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox9.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2TextBox9.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox9.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox9.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox9.Location = new System.Drawing.Point(10, 174);
-            this.guna2TextBox9.Name = "guna2TextBox9";
-            this.guna2TextBox9.PasswordChar = '\0';
-            this.guna2TextBox9.PlaceholderText = "";
-            this.guna2TextBox9.SelectedText = "";
-            this.guna2TextBox9.Size = new System.Drawing.Size(910, 28);
-            this.guna2TextBox9.TabIndex = 19;
-            // 
-            // label11
-            // 
-            this.label11.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label11.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(10, 154);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(910, 20);
-            this.label11.TabIndex = 18;
-            this.label11.Text = "Қобилияти нафаскашӣ:";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
-            // 
-            // guna2TextBox10
-            // 
-            this.guna2TextBox10.BorderRadius = 3;
-            this.guna2TextBox10.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox10.DefaultText = "";
-            this.guna2TextBox10.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox10.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox10.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox10.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox10.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2TextBox10.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox10.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox10.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox10.Location = new System.Drawing.Point(10, 126);
-            this.guna2TextBox10.Name = "guna2TextBox10";
-            this.guna2TextBox10.PasswordChar = '\0';
-            this.guna2TextBox10.PlaceholderText = "";
-            this.guna2TextBox10.SelectedText = "";
-            this.guna2TextBox10.Size = new System.Drawing.Size(910, 28);
-            this.guna2TextBox10.TabIndex = 17;
-            // 
-            // label12
-            // 
-            this.label12.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label12.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.Black;
-            this.label12.Location = new System.Drawing.Point(10, 106);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(910, 20);
-            this.label12.TabIndex = 16;
-            this.label12.Text = "Ҳаҷми қафаси сина:";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
-            // 
-            // guna2TextBox11
-            // 
-            this.guna2TextBox11.BorderRadius = 3;
-            this.guna2TextBox11.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox11.DefaultText = "";
-            this.guna2TextBox11.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox11.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox11.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox11.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox11.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2TextBox11.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox11.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox11.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox11.Location = new System.Drawing.Point(10, 78);
-            this.guna2TextBox11.Name = "guna2TextBox11";
-            this.guna2TextBox11.PasswordChar = '\0';
-            this.guna2TextBox11.PlaceholderText = "";
-            this.guna2TextBox11.SelectedText = "";
-            this.guna2TextBox11.Size = new System.Drawing.Size(910, 28);
-            this.guna2TextBox11.TabIndex = 15;
-            // 
-            // label13
-            // 
-            this.label13.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label13.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.Black;
-            this.label13.Location = new System.Drawing.Point(10, 58);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(910, 20);
-            this.label13.TabIndex = 14;
-            this.label13.Text = "Вазн:";
-            this.label13.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
-            // 
-            // guna2TextBox12
-            // 
-            this.guna2TextBox12.BorderRadius = 3;
-            this.guna2TextBox12.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox12.DefaultText = "";
-            this.guna2TextBox12.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox12.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox12.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox12.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox12.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2TextBox12.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox12.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox12.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox12.Location = new System.Drawing.Point(10, 30);
-            this.guna2TextBox12.Name = "guna2TextBox12";
-            this.guna2TextBox12.PasswordChar = '\0';
-            this.guna2TextBox12.PlaceholderText = "";
-            this.guna2TextBox12.SelectedText = "";
-            this.guna2TextBox12.Size = new System.Drawing.Size(910, 28);
-            this.guna2TextBox12.TabIndex = 13;
-            // 
-            // label14
-            // 
-            this.label14.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label14.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.Black;
-            this.label14.Location = new System.Drawing.Point(10, 10);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(910, 20);
-            this.label14.TabIndex = 12;
-            this.label14.Text = "Қад:";
-            this.label14.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
-            // 
-            // maskedTextBox1
-            // 
-            this.maskedTextBox1.BackColor = System.Drawing.Color.White;
-            this.maskedTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.maskedTextBox1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.maskedTextBox1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox1.Location = new System.Drawing.Point(10, 222);
-            this.maskedTextBox1.Mask = "000/000";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.PromptChar = '0';
-            this.maskedTextBox1.Size = new System.Drawing.Size(910, 20);
-            this.maskedTextBox1.TabIndex = 24;
-            // 
-            // maskedTextBox2
-            // 
-            this.maskedTextBox2.BackColor = System.Drawing.Color.White;
-            this.maskedTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.maskedTextBox2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.maskedTextBox2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox2.Location = new System.Drawing.Point(10, 262);
-            this.maskedTextBox2.Mask = "000/000";
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.PromptChar = '0';
-            this.maskedTextBox2.Size = new System.Drawing.Size(910, 20);
-            this.maskedTextBox2.TabIndex = 26;
-            // 
-            // label9
-            // 
-            this.label9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label9.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(10, 242);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(910, 20);
-            this.label9.TabIndex = 25;
-            this.label9.Text = "Фишори хун:";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
-            // 
-            // maskedTextBox3
-            // 
-            this.maskedTextBox3.BackColor = System.Drawing.Color.White;
-            this.maskedTextBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.maskedTextBox3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.maskedTextBox3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox3.Location = new System.Drawing.Point(10, 302);
-            this.maskedTextBox3.Mask = "000/000";
-            this.maskedTextBox3.Name = "maskedTextBox3";
-            this.maskedTextBox3.PromptChar = '0';
-            this.maskedTextBox3.Size = new System.Drawing.Size(910, 20);
-            this.maskedTextBox3.TabIndex = 28;
-            // 
-            // label15
-            // 
-            this.label15.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label15.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.Color.Black;
-            this.label15.Location = new System.Drawing.Point(10, 282);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(910, 20);
-            this.label15.TabIndex = 27;
-            this.label15.Text = "Набз:";
-            this.label15.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
-            // 
-            // guna2TextBox7
-            // 
-            this.guna2TextBox7.BorderRadius = 3;
-            this.guna2TextBox7.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox7.DefaultText = "";
-            this.guna2TextBox7.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox7.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox7.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox7.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2TextBox7.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox7.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox7.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox7.Location = new System.Drawing.Point(10, 342);
-            this.guna2TextBox7.Name = "guna2TextBox7";
-            this.guna2TextBox7.PasswordChar = '\0';
-            this.guna2TextBox7.PlaceholderText = "";
-            this.guna2TextBox7.SelectedText = "";
-            this.guna2TextBox7.Size = new System.Drawing.Size(910, 28);
-            this.guna2TextBox7.TabIndex = 30;
-            // 
-            // label16
-            // 
-            this.label16.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label16.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.Color.Black;
-            this.label16.Location = new System.Drawing.Point(10, 322);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(910, 20);
-            this.label16.TabIndex = 29;
-            this.label16.Text = "Ҳарорат:";
-            this.label16.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
-            // 
             // name
             // 
             this.name.DataPropertyName = "name";
@@ -899,36 +852,6 @@
             this.login.HeaderText = "Ном ва насаби хизматрасони сохта";
             this.login.Name = "login";
             this.login.ReadOnly = true;
-            // 
-            // dataGridViewImageColumn1
-            // 
-            this.dataGridViewImageColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle11.NullValue = ((object)(resources.GetObject("dataGridViewCellStyle11.NullValue")));
-            dataGridViewCellStyle11.Padding = new System.Windows.Forms.Padding(4);
-            this.dataGridViewImageColumn1.DefaultCellStyle = dataGridViewCellStyle11;
-            this.dataGridViewImageColumn1.FillWeight = 50F;
-            this.dataGridViewImageColumn1.HeaderText = "";
-            this.dataGridViewImageColumn1.Image = global::ObiGarm.Properties.Resources.icons8_edit_26px;
-            this.dataGridViewImageColumn1.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.dataGridViewImageColumn1.MinimumWidth = 50;
-            this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
-            this.dataGridViewImageColumn1.Width = 50;
-            // 
-            // dataGridViewImageColumn2
-            // 
-            this.dataGridViewImageColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle12.NullValue = ((object)(resources.GetObject("dataGridViewCellStyle12.NullValue")));
-            this.dataGridViewImageColumn2.DefaultCellStyle = dataGridViewCellStyle12;
-            this.dataGridViewImageColumn2.FillWeight = 50F;
-            this.dataGridViewImageColumn2.HeaderText = "";
-            this.dataGridViewImageColumn2.Image = global::ObiGarm.Properties.Resources.delete_96px;
-            this.dataGridViewImageColumn2.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.dataGridViewImageColumn2.MinimumWidth = 50;
-            this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
-            this.dataGridViewImageColumn2.Visible = false;
-            this.dataGridViewImageColumn2.Width = 50;
             // 
             // edit
             // 
@@ -962,269 +885,360 @@
             this.delete.Visible = false;
             this.delete.Width = 50;
             // 
-            // guna2Button3
+            // panel_top_tainoti_dukhtur
             // 
-            this.guna2Button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2Button3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(124)))), ((int)(((byte)(84)))));
-            this.guna2Button3.BorderRadius = 10;
-            this.guna2Button3.BorderThickness = 1;
-            this.guna2Button3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button3.FillColor = System.Drawing.Color.White;
-            this.guna2Button3.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(124)))), ((int)(((byte)(84)))));
-            this.guna2Button3.Image = global::ObiGarm.Properties.Resources.hospital_bed;
-            this.guna2Button3.Location = new System.Drawing.Point(709, 8);
-            this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.Size = new System.Drawing.Size(194, 31);
-            this.guna2Button3.TabIndex = 3;
-            this.guna2Button3.Text = "Сохтани хизматрасонӣ";
+            this.panel_top_tainoti_dukhtur.BackColor = System.Drawing.Color.White;
+            this.panel_top_tainoti_dukhtur.Controls.Add(this.btn_add_services);
+            this.panel_top_tainoti_dukhtur.Controls.Add(this.label8);
+            this.panel_top_tainoti_dukhtur.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel_top_tainoti_dukhtur.Location = new System.Drawing.Point(10, 10);
+            this.panel_top_tainoti_dukhtur.Name = "panel_top_tainoti_dukhtur";
+            this.panel_top_tainoti_dukhtur.Padding = new System.Windows.Forms.Padding(5);
+            this.panel_top_tainoti_dukhtur.Size = new System.Drawing.Size(910, 45);
+            this.panel_top_tainoti_dukhtur.TabIndex = 0;
             // 
-            // guna2Button1
+            // btn_add_services
             // 
-            this.guna2Button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2Button1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button1.BorderColor = System.Drawing.Color.White;
-            this.guna2Button1.BorderRadius = 10;
-            this.guna2Button1.BorderThickness = 1;
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(124)))), ((int)(((byte)(84)))));
-            this.guna2Button1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Image = global::ObiGarm.Properties.Resources.logout;
-            this.guna2Button1.Location = new System.Drawing.Point(597, 8);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(158, 33);
-            this.guna2Button1.TabIndex = 3;
-            this.guna2Button1.Text = "Корро санчидан";
+            this.btn_add_services.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_add_services.BackColor = System.Drawing.Color.Transparent;
+            this.btn_add_services.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(124)))), ((int)(((byte)(84)))));
+            this.btn_add_services.BorderRadius = 10;
+            this.btn_add_services.BorderThickness = 1;
+            this.btn_add_services.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_add_services.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_add_services.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_add_services.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_add_services.FillColor = System.Drawing.Color.White;
+            this.btn_add_services.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_add_services.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(124)))), ((int)(((byte)(84)))));
+            this.btn_add_services.Image = global::ObiGarm.Properties.Resources.hospital_bed;
+            this.btn_add_services.Location = new System.Drawing.Point(709, 8);
+            this.btn_add_services.Name = "btn_add_services";
+            this.btn_add_services.Size = new System.Drawing.Size(194, 31);
+            this.btn_add_services.TabIndex = 3;
+            this.btn_add_services.Text = "Сохтани хизматрасонӣ";
             // 
-            // guna2Button2
+            // label8
             // 
-            this.guna2Button2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button2.BorderColor = System.Drawing.Color.White;
-            this.guna2Button2.BorderRadius = 10;
-            this.guna2Button2.BorderThickness = 1;
-            this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(124)))), ((int)(((byte)(84)))));
-            this.guna2Button2.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button2.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.Image = global::ObiGarm.Properties.Resources.printer;
-            this.guna2Button2.Location = new System.Drawing.Point(8, 7);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.Size = new System.Drawing.Size(127, 33);
-            this.guna2Button2.TabIndex = 2;
-            this.guna2Button2.Text = "чоп кардан";
+            this.label8.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label8.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Black;
+            this.label8.Location = new System.Drawing.Point(5, 5);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(277, 35);
+            this.label8.TabIndex = 1;
+            this.label8.Text = "Қабули дуҳтур ва таъиноти табобат:";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // btn_logut
+            // tab_antrometri
             // 
-            this.btn_logut.BackColor = System.Drawing.Color.White;
-            this.btn_logut.BorderRadius = 15;
-            this.btn_logut.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_logut.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_logut.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_logut.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_logut.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btn_logut.FillColor = System.Drawing.Color.Red;
-            this.btn_logut.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_logut.ForeColor = System.Drawing.Color.White;
-            this.btn_logut.Image = global::ObiGarm.Properties.Resources.logout;
-            this.btn_logut.Location = new System.Drawing.Point(1016, 10);
-            this.btn_logut.Name = "btn_logut";
-            this.btn_logut.Size = new System.Drawing.Size(132, 46);
-            this.btn_logut.TabIndex = 0;
-            this.btn_logut.Text = "Баромад";
+            this.tab_antrometri.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(250)))));
+            this.tab_antrometri.Controls.Add(this.txt_harorat);
+            this.tab_antrometri.Controls.Add(this.label16);
+            this.tab_antrometri.Controls.Add(this.txt_nabz);
+            this.tab_antrometri.Controls.Add(this.label15);
+            this.tab_antrometri.Controls.Add(this.txt_fishori_hun);
+            this.tab_antrometri.Controls.Add(this.label9);
+            this.tab_antrometri.Controls.Add(this.txt_quvai_bozuho);
+            this.tab_antrometri.Controls.Add(this.label10);
+            this.tab_antrometri.Controls.Add(this.txt_qobiliyati_nafaskashi);
+            this.tab_antrometri.Controls.Add(this.label11);
+            this.tab_antrometri.Controls.Add(this.txt_hajmi_qafasi_sina);
+            this.tab_antrometri.Controls.Add(this.label12);
+            this.tab_antrometri.Controls.Add(this.txt_vazn);
+            this.tab_antrometri.Controls.Add(this.label13);
+            this.tab_antrometri.Controls.Add(this.txt_qad);
+            this.tab_antrometri.Controls.Add(this.label14);
+            this.tab_antrometri.ForeColor = System.Drawing.Color.Black;
+            this.tab_antrometri.Location = new System.Drawing.Point(224, 4);
+            this.tab_antrometri.Name = "tab_antrometri";
+            this.tab_antrometri.Padding = new System.Windows.Forms.Padding(10);
+            this.tab_antrometri.Size = new System.Drawing.Size(930, 420);
+            this.tab_antrometri.TabIndex = 2;
+            this.tab_antrometri.Text = "Ченаки антрометрӣ";
             // 
-            // guna2DataGridView1
+            // txt_harorat
             // 
-            this.guna2DataGridView1.AllowUserToAddRows = false;
-            this.guna2DataGridView1.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
-            this.guna2DataGridView1.BackgroundColor = System.Drawing.Color.Gainsboro;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(108)))), ((int)(((byte)(59)))));
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Tahoma", 8.25F);
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(108)))), ((int)(((byte)(59)))));
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
-            this.guna2DataGridView1.ColumnHeadersHeight = 30;
-            this.guna2DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.guna2DataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewImageColumn3,
-            this.dataGridViewImageColumn4});
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Tahoma", 8.25F);
-            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(70)))), ((int)(((byte)(68)))));
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle10;
-            this.guna2DataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.Location = new System.Drawing.Point(0, 45);
-            this.guna2DataGridView1.Name = "guna2DataGridView1";
-            this.guna2DataGridView1.ReadOnly = true;
-            this.guna2DataGridView1.RowHeadersVisible = false;
-            this.guna2DataGridView1.Size = new System.Drawing.Size(930, 375);
-            this.guna2DataGridView1.TabIndex = 3;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.BackColor = System.Drawing.Color.Gainsboro;
-            this.guna2DataGridView1.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 30;
-            this.guna2DataGridView1.ThemeStyle.ReadOnly = true;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.Height = 22;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.txt_harorat.BorderRadius = 3;
+            this.txt_harorat.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_harorat.DefaultText = "";
+            this.txt_harorat.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_harorat.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_harorat.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_harorat.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_harorat.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txt_harorat.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_harorat.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_harorat.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_harorat.Location = new System.Drawing.Point(10, 342);
+            this.txt_harorat.Name = "txt_harorat";
+            this.txt_harorat.PasswordChar = '\0';
+            this.txt_harorat.PlaceholderText = "";
+            this.txt_harorat.SelectedText = "";
+            this.txt_harorat.Size = new System.Drawing.Size(910, 28);
+            this.txt_harorat.TabIndex = 30;
             // 
-            // panel2
+            // label16
             // 
-            this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.guna2Button4);
-            this.panel2.Controls.Add(this.label17);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Padding = new System.Windows.Forms.Padding(5);
-            this.panel2.Size = new System.Drawing.Size(930, 45);
-            this.panel2.TabIndex = 2;
+            this.label16.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label16.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.Black;
+            this.label16.Location = new System.Drawing.Point(10, 322);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(910, 20);
+            this.label16.TabIndex = 29;
+            this.label16.Text = "Ҳарорат:";
+            this.label16.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
             // 
-            // guna2Button4
+            // txt_nabz
             // 
-            this.guna2Button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2Button4.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(124)))), ((int)(((byte)(84)))));
-            this.guna2Button4.BorderRadius = 10;
-            this.guna2Button4.BorderThickness = 1;
-            this.guna2Button4.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button4.FillColor = System.Drawing.Color.White;
-            this.guna2Button4.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(124)))), ((int)(((byte)(84)))));
-            this.guna2Button4.Image = global::ObiGarm.Properties.Resources.hospital_bed;
-            this.guna2Button4.Location = new System.Drawing.Point(803, 8);
-            this.guna2Button4.Name = "guna2Button4";
-            this.guna2Button4.Size = new System.Drawing.Size(115, 31);
-            this.guna2Button4.TabIndex = 3;
-            this.guna2Button4.Text = "Сохтани ";
+            this.txt_nabz.BackColor = System.Drawing.Color.White;
+            this.txt_nabz.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_nabz.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txt_nabz.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_nabz.Location = new System.Drawing.Point(10, 302);
+            this.txt_nabz.Mask = "000/000";
+            this.txt_nabz.Name = "txt_nabz";
+            this.txt_nabz.PromptChar = '0';
+            this.txt_nabz.Size = new System.Drawing.Size(910, 20);
+            this.txt_nabz.TabIndex = 28;
             // 
-            // label17
+            // label15
             // 
-            this.label17.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label17.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.Color.Black;
-            this.label17.Location = new System.Drawing.Point(5, 5);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(277, 35);
-            this.label17.TabIndex = 1;
-            this.label17.Text = "Қабули иловагии дуҳтур:";
-            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label15.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label15.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.Color.Black;
+            this.label15.Location = new System.Drawing.Point(10, 282);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(910, 20);
+            this.label15.TabIndex = 27;
+            this.label15.Text = "Набз:";
+            this.label15.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
             // 
-            // dataGridViewTextBoxColumn1
+            // txt_fishori_hun
             // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "name";
-            this.dataGridViewTextBoxColumn1.FillWeight = 39.37896F;
-            this.dataGridViewTextBoxColumn1.HeaderText = "Сана";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.txt_fishori_hun.BackColor = System.Drawing.Color.White;
+            this.txt_fishori_hun.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_fishori_hun.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txt_fishori_hun.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_fishori_hun.Location = new System.Drawing.Point(10, 262);
+            this.txt_fishori_hun.Mask = "000/000";
+            this.txt_fishori_hun.Name = "txt_fishori_hun";
+            this.txt_fishori_hun.PromptChar = '0';
+            this.txt_fishori_hun.Size = new System.Drawing.Size(910, 20);
+            this.txt_fishori_hun.TabIndex = 26;
             // 
-            // dataGridViewTextBoxColumn2
+            // label9
             // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "surname";
-            this.dataGridViewTextBoxColumn2.FillWeight = 39.37896F;
-            this.dataGridViewTextBoxColumn2.HeaderText = "Фишори хун";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            this.label9.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label9.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.Black;
+            this.label9.Location = new System.Drawing.Point(10, 242);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(910, 20);
+            this.label9.TabIndex = 25;
+            this.label9.Text = "Фишори хун:";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
             // 
-            // dataGridViewTextBoxColumn3
+            // txt_quvai_bozuho
             // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "login";
-            this.dataGridViewTextBoxColumn3.FillWeight = 39.37896F;
-            this.dataGridViewTextBoxColumn3.HeaderText = "Набз";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            this.txt_quvai_bozuho.BackColor = System.Drawing.Color.White;
+            this.txt_quvai_bozuho.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_quvai_bozuho.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txt_quvai_bozuho.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_quvai_bozuho.Location = new System.Drawing.Point(10, 222);
+            this.txt_quvai_bozuho.Mask = "000/000";
+            this.txt_quvai_bozuho.Name = "txt_quvai_bozuho";
+            this.txt_quvai_bozuho.PromptChar = '0';
+            this.txt_quvai_bozuho.Size = new System.Drawing.Size(910, 20);
+            this.txt_quvai_bozuho.TabIndex = 24;
             // 
-            // dataGridViewImageColumn3
+            // label10
             // 
-            this.dataGridViewImageColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle8.NullValue = ((object)(resources.GetObject("dataGridViewCellStyle8.NullValue")));
-            dataGridViewCellStyle8.Padding = new System.Windows.Forms.Padding(4);
-            this.dataGridViewImageColumn3.DefaultCellStyle = dataGridViewCellStyle8;
-            this.dataGridViewImageColumn3.FillWeight = 50F;
-            this.dataGridViewImageColumn3.HeaderText = "";
-            this.dataGridViewImageColumn3.Image = global::ObiGarm.Properties.Resources.icons8_edit_26px;
-            this.dataGridViewImageColumn3.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.dataGridViewImageColumn3.MinimumWidth = 50;
-            this.dataGridViewImageColumn3.Name = "dataGridViewImageColumn3";
-            this.dataGridViewImageColumn3.ReadOnly = true;
-            this.dataGridViewImageColumn3.Width = 50;
+            this.label10.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label10.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.Black;
+            this.label10.Location = new System.Drawing.Point(10, 202);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(910, 20);
+            this.label10.TabIndex = 20;
+            this.label10.Text = "Санҷиши кувваи бозуҳ:";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
             // 
-            // dataGridViewImageColumn4
+            // txt_qobiliyati_nafaskashi
             // 
-            this.dataGridViewImageColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle9.NullValue = ((object)(resources.GetObject("dataGridViewCellStyle9.NullValue")));
-            this.dataGridViewImageColumn4.DefaultCellStyle = dataGridViewCellStyle9;
-            this.dataGridViewImageColumn4.FillWeight = 50F;
-            this.dataGridViewImageColumn4.HeaderText = "";
-            this.dataGridViewImageColumn4.Image = global::ObiGarm.Properties.Resources.delete_96px;
-            this.dataGridViewImageColumn4.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.dataGridViewImageColumn4.MinimumWidth = 50;
-            this.dataGridViewImageColumn4.Name = "dataGridViewImageColumn4";
-            this.dataGridViewImageColumn4.ReadOnly = true;
-            this.dataGridViewImageColumn4.Visible = false;
-            this.dataGridViewImageColumn4.Width = 50;
+            this.txt_qobiliyati_nafaskashi.BorderRadius = 3;
+            this.txt_qobiliyati_nafaskashi.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_qobiliyati_nafaskashi.DefaultText = "";
+            this.txt_qobiliyati_nafaskashi.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_qobiliyati_nafaskashi.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_qobiliyati_nafaskashi.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_qobiliyati_nafaskashi.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_qobiliyati_nafaskashi.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txt_qobiliyati_nafaskashi.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_qobiliyati_nafaskashi.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_qobiliyati_nafaskashi.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_qobiliyati_nafaskashi.Location = new System.Drawing.Point(10, 174);
+            this.txt_qobiliyati_nafaskashi.Name = "txt_qobiliyati_nafaskashi";
+            this.txt_qobiliyati_nafaskashi.PasswordChar = '\0';
+            this.txt_qobiliyati_nafaskashi.PlaceholderText = "";
+            this.txt_qobiliyati_nafaskashi.SelectedText = "";
+            this.txt_qobiliyati_nafaskashi.Size = new System.Drawing.Size(910, 28);
+            this.txt_qobiliyati_nafaskashi.TabIndex = 19;
             // 
-            // guna2TextBox8
+            // label11
             // 
-            this.guna2TextBox8.BorderRadius = 3;
-            this.guna2TextBox8.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox8.DefaultText = "";
-            this.guna2TextBox8.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox8.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox8.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox8.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2TextBox8.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox8.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox8.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox8.Location = new System.Drawing.Point(10, 240);
-            this.guna2TextBox8.Name = "guna2TextBox8";
-            this.guna2TextBox8.PasswordChar = '\0';
-            this.guna2TextBox8.PlaceholderText = "";
-            this.guna2TextBox8.SelectedText = "";
-            this.guna2TextBox8.Size = new System.Drawing.Size(910, 28);
-            this.guna2TextBox8.TabIndex = 23;
+            this.label11.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label11.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.Black;
+            this.label11.Location = new System.Drawing.Point(10, 154);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(910, 20);
+            this.label11.TabIndex = 18;
+            this.label11.Text = "Қобилияти нафаскашӣ:";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            // 
+            // txt_hajmi_qafasi_sina
+            // 
+            this.txt_hajmi_qafasi_sina.BorderRadius = 3;
+            this.txt_hajmi_qafasi_sina.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_hajmi_qafasi_sina.DefaultText = "";
+            this.txt_hajmi_qafasi_sina.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_hajmi_qafasi_sina.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_hajmi_qafasi_sina.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_hajmi_qafasi_sina.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_hajmi_qafasi_sina.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txt_hajmi_qafasi_sina.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_hajmi_qafasi_sina.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_hajmi_qafasi_sina.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_hajmi_qafasi_sina.Location = new System.Drawing.Point(10, 126);
+            this.txt_hajmi_qafasi_sina.Name = "txt_hajmi_qafasi_sina";
+            this.txt_hajmi_qafasi_sina.PasswordChar = '\0';
+            this.txt_hajmi_qafasi_sina.PlaceholderText = "";
+            this.txt_hajmi_qafasi_sina.SelectedText = "";
+            this.txt_hajmi_qafasi_sina.Size = new System.Drawing.Size(910, 28);
+            this.txt_hajmi_qafasi_sina.TabIndex = 17;
+            // 
+            // label12
+            // 
+            this.label12.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label12.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.Black;
+            this.label12.Location = new System.Drawing.Point(10, 106);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(910, 20);
+            this.label12.TabIndex = 16;
+            this.label12.Text = "Ҳаҷми қафаси сина:";
+            this.label12.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            // 
+            // txt_vazn
+            // 
+            this.txt_vazn.BorderRadius = 3;
+            this.txt_vazn.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_vazn.DefaultText = "";
+            this.txt_vazn.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_vazn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_vazn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_vazn.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_vazn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txt_vazn.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_vazn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_vazn.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_vazn.Location = new System.Drawing.Point(10, 78);
+            this.txt_vazn.Name = "txt_vazn";
+            this.txt_vazn.PasswordChar = '\0';
+            this.txt_vazn.PlaceholderText = "";
+            this.txt_vazn.SelectedText = "";
+            this.txt_vazn.Size = new System.Drawing.Size(910, 28);
+            this.txt_vazn.TabIndex = 15;
+            // 
+            // label13
+            // 
+            this.label13.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label13.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.Black;
+            this.label13.Location = new System.Drawing.Point(10, 58);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(910, 20);
+            this.label13.TabIndex = 14;
+            this.label13.Text = "Вазн:";
+            this.label13.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            // 
+            // txt_qad
+            // 
+            this.txt_qad.BorderRadius = 3;
+            this.txt_qad.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_qad.DefaultText = "";
+            this.txt_qad.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_qad.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_qad.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_qad.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_qad.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txt_qad.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_qad.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_qad.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_qad.Location = new System.Drawing.Point(10, 30);
+            this.txt_qad.Name = "txt_qad";
+            this.txt_qad.PasswordChar = '\0';
+            this.txt_qad.PlaceholderText = "";
+            this.txt_qad.SelectedText = "";
+            this.txt_qad.Size = new System.Drawing.Size(910, 28);
+            this.txt_qad.TabIndex = 13;
+            // 
+            // label14
+            // 
+            this.label14.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label14.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.Black;
+            this.label14.Location = new System.Drawing.Point(10, 10);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(910, 20);
+            this.label14.TabIndex = 12;
+            this.label14.Text = "Қад:";
+            this.label14.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            // 
+            // tartibi_ruz
+            // 
+            this.tartibi_ruz.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(250)))));
+            this.tartibi_ruz.Controls.Add(this.txt_time_hob);
+            this.tartibi_ruz.Controls.Add(this.label18);
+            this.tartibi_ruz.Controls.Add(this.txt_hurok_begohruzi);
+            this.tartibi_ruz.Controls.Add(this.label19);
+            this.tartibi_ruz.Controls.Add(this.txt_time_tabobathoi_gunogun);
+            this.tartibi_ruz.Controls.Add(this.label20);
+            this.tartibi_ruz.Controls.Add(this.txt_time_nahory);
+            this.tartibi_ruz.Controls.Add(this.label21);
+            this.tartibi_ruz.Controls.Add(this.txt_time_varzishi_pagohi);
+            this.tartibi_ruz.Controls.Add(this.label22);
+            this.tartibi_ruz.Controls.Add(this.txt_az_hob_hestan);
+            this.tartibi_ruz.Controls.Add(this.label23);
+            this.tartibi_ruz.Location = new System.Drawing.Point(224, 4);
+            this.tartibi_ruz.Name = "tartibi_ruz";
+            this.tartibi_ruz.Padding = new System.Windows.Forms.Padding(10);
+            this.tartibi_ruz.Size = new System.Drawing.Size(930, 420);
+            this.tartibi_ruz.TabIndex = 4;
+            this.tartibi_ruz.Text = "Тартиби рӯз";
+            // 
+            // txt_time_hob
+            // 
+            this.txt_time_hob.BorderRadius = 3;
+            this.txt_time_hob.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_time_hob.DefaultText = "";
+            this.txt_time_hob.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_time_hob.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_time_hob.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_time_hob.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_time_hob.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txt_time_hob.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_time_hob.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_time_hob.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_time_hob.Location = new System.Drawing.Point(10, 240);
+            this.txt_time_hob.Name = "txt_time_hob";
+            this.txt_time_hob.PasswordChar = '\0';
+            this.txt_time_hob.PlaceholderText = "";
+            this.txt_time_hob.SelectedText = "";
+            this.txt_time_hob.Size = new System.Drawing.Size(910, 28);
+            this.txt_time_hob.TabIndex = 23;
             // 
             // label18
             // 
@@ -1238,26 +1252,26 @@
             this.label18.TabIndex = 22;
             this.label18.Text = "Ҳоб рафтан:";
             // 
-            // guna2TextBox13
+            // txt_hurok_begohruzi
             // 
-            this.guna2TextBox13.BorderRadius = 3;
-            this.guna2TextBox13.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox13.DefaultText = "";
-            this.guna2TextBox13.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox13.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox13.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox13.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox13.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2TextBox13.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox13.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox13.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox13.Location = new System.Drawing.Point(10, 197);
-            this.guna2TextBox13.Name = "guna2TextBox13";
-            this.guna2TextBox13.PasswordChar = '\0';
-            this.guna2TextBox13.PlaceholderText = "";
-            this.guna2TextBox13.SelectedText = "";
-            this.guna2TextBox13.Size = new System.Drawing.Size(910, 28);
-            this.guna2TextBox13.TabIndex = 21;
+            this.txt_hurok_begohruzi.BorderRadius = 3;
+            this.txt_hurok_begohruzi.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_hurok_begohruzi.DefaultText = "";
+            this.txt_hurok_begohruzi.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_hurok_begohruzi.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_hurok_begohruzi.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_hurok_begohruzi.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_hurok_begohruzi.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txt_hurok_begohruzi.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_hurok_begohruzi.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_hurok_begohruzi.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_hurok_begohruzi.Location = new System.Drawing.Point(10, 197);
+            this.txt_hurok_begohruzi.Name = "txt_hurok_begohruzi";
+            this.txt_hurok_begohruzi.PasswordChar = '\0';
+            this.txt_hurok_begohruzi.PlaceholderText = "";
+            this.txt_hurok_begohruzi.SelectedText = "";
+            this.txt_hurok_begohruzi.Size = new System.Drawing.Size(910, 28);
+            this.txt_hurok_begohruzi.TabIndex = 21;
             // 
             // label19
             // 
@@ -1271,26 +1285,26 @@
             this.label19.TabIndex = 20;
             this.label19.Text = "Хӯроки бегоҳрӯзӣ.";
             // 
-            // guna2TextBox14
+            // txt_time_tabobathoi_gunogun
             // 
-            this.guna2TextBox14.BorderRadius = 3;
-            this.guna2TextBox14.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox14.DefaultText = "";
-            this.guna2TextBox14.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox14.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox14.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox14.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox14.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2TextBox14.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox14.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox14.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox14.Location = new System.Drawing.Point(10, 154);
-            this.guna2TextBox14.Name = "guna2TextBox14";
-            this.guna2TextBox14.PasswordChar = '\0';
-            this.guna2TextBox14.PlaceholderText = "";
-            this.guna2TextBox14.SelectedText = "";
-            this.guna2TextBox14.Size = new System.Drawing.Size(910, 28);
-            this.guna2TextBox14.TabIndex = 19;
+            this.txt_time_tabobathoi_gunogun.BorderRadius = 3;
+            this.txt_time_tabobathoi_gunogun.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_time_tabobathoi_gunogun.DefaultText = "";
+            this.txt_time_tabobathoi_gunogun.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_time_tabobathoi_gunogun.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_time_tabobathoi_gunogun.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_time_tabobathoi_gunogun.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_time_tabobathoi_gunogun.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txt_time_tabobathoi_gunogun.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_time_tabobathoi_gunogun.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_time_tabobathoi_gunogun.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_time_tabobathoi_gunogun.Location = new System.Drawing.Point(10, 154);
+            this.txt_time_tabobathoi_gunogun.Name = "txt_time_tabobathoi_gunogun";
+            this.txt_time_tabobathoi_gunogun.PasswordChar = '\0';
+            this.txt_time_tabobathoi_gunogun.PlaceholderText = "";
+            this.txt_time_tabobathoi_gunogun.SelectedText = "";
+            this.txt_time_tabobathoi_gunogun.Size = new System.Drawing.Size(910, 28);
+            this.txt_time_tabobathoi_gunogun.TabIndex = 19;
             // 
             // label20
             // 
@@ -1304,26 +1318,26 @@
             this.label20.TabIndex = 18;
             this.label20.Text = "Табобатҳои гуногун:";
             // 
-            // guna2TextBox15
+            // txt_time_nahory
             // 
-            this.guna2TextBox15.BorderRadius = 3;
-            this.guna2TextBox15.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox15.DefaultText = "";
-            this.guna2TextBox15.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox15.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox15.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox15.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox15.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2TextBox15.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox15.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox15.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox15.Location = new System.Drawing.Point(10, 111);
-            this.guna2TextBox15.Name = "guna2TextBox15";
-            this.guna2TextBox15.PasswordChar = '\0';
-            this.guna2TextBox15.PlaceholderText = "";
-            this.guna2TextBox15.SelectedText = "";
-            this.guna2TextBox15.Size = new System.Drawing.Size(910, 28);
-            this.guna2TextBox15.TabIndex = 17;
+            this.txt_time_nahory.BorderRadius = 3;
+            this.txt_time_nahory.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_time_nahory.DefaultText = "";
+            this.txt_time_nahory.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_time_nahory.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_time_nahory.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_time_nahory.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_time_nahory.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txt_time_nahory.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_time_nahory.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_time_nahory.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_time_nahory.Location = new System.Drawing.Point(10, 111);
+            this.txt_time_nahory.Name = "txt_time_nahory";
+            this.txt_time_nahory.PasswordChar = '\0';
+            this.txt_time_nahory.PlaceholderText = "";
+            this.txt_time_nahory.SelectedText = "";
+            this.txt_time_nahory.Size = new System.Drawing.Size(910, 28);
+            this.txt_time_nahory.TabIndex = 17;
             // 
             // label21
             // 
@@ -1337,26 +1351,26 @@
             this.label21.TabIndex = 16;
             this.label21.Text = "Наҳорӣ:";
             // 
-            // guna2TextBox16
+            // txt_time_varzishi_pagohi
             // 
-            this.guna2TextBox16.BorderRadius = 3;
-            this.guna2TextBox16.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox16.DefaultText = "";
-            this.guna2TextBox16.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox16.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox16.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox16.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox16.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2TextBox16.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox16.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox16.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox16.Location = new System.Drawing.Point(10, 68);
-            this.guna2TextBox16.Name = "guna2TextBox16";
-            this.guna2TextBox16.PasswordChar = '\0';
-            this.guna2TextBox16.PlaceholderText = "";
-            this.guna2TextBox16.SelectedText = "";
-            this.guna2TextBox16.Size = new System.Drawing.Size(910, 28);
-            this.guna2TextBox16.TabIndex = 15;
+            this.txt_time_varzishi_pagohi.BorderRadius = 3;
+            this.txt_time_varzishi_pagohi.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_time_varzishi_pagohi.DefaultText = "";
+            this.txt_time_varzishi_pagohi.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_time_varzishi_pagohi.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_time_varzishi_pagohi.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_time_varzishi_pagohi.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_time_varzishi_pagohi.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txt_time_varzishi_pagohi.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_time_varzishi_pagohi.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_time_varzishi_pagohi.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_time_varzishi_pagohi.Location = new System.Drawing.Point(10, 68);
+            this.txt_time_varzishi_pagohi.Name = "txt_time_varzishi_pagohi";
+            this.txt_time_varzishi_pagohi.PasswordChar = '\0';
+            this.txt_time_varzishi_pagohi.PlaceholderText = "";
+            this.txt_time_varzishi_pagohi.SelectedText = "";
+            this.txt_time_varzishi_pagohi.Size = new System.Drawing.Size(910, 28);
+            this.txt_time_varzishi_pagohi.TabIndex = 15;
             // 
             // label22
             // 
@@ -1370,26 +1384,26 @@
             this.label22.TabIndex = 14;
             this.label22.Text = "Варзиши пагоҳӣ:";
             // 
-            // guna2TextBox17
+            // txt_az_hob_hestan
             // 
-            this.guna2TextBox17.BorderRadius = 3;
-            this.guna2TextBox17.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox17.DefaultText = "";
-            this.guna2TextBox17.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox17.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox17.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox17.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox17.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2TextBox17.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox17.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox17.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox17.Location = new System.Drawing.Point(10, 25);
-            this.guna2TextBox17.Name = "guna2TextBox17";
-            this.guna2TextBox17.PasswordChar = '\0';
-            this.guna2TextBox17.PlaceholderText = "";
-            this.guna2TextBox17.SelectedText = "";
-            this.guna2TextBox17.Size = new System.Drawing.Size(910, 28);
-            this.guna2TextBox17.TabIndex = 13;
+            this.txt_az_hob_hestan.BorderRadius = 3;
+            this.txt_az_hob_hestan.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_az_hob_hestan.DefaultText = "";
+            this.txt_az_hob_hestan.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_az_hob_hestan.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_az_hob_hestan.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_az_hob_hestan.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_az_hob_hestan.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txt_az_hob_hestan.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_az_hob_hestan.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_az_hob_hestan.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_az_hob_hestan.Location = new System.Drawing.Point(10, 25);
+            this.txt_az_hob_hestan.Name = "txt_az_hob_hestan";
+            this.txt_az_hob_hestan.PasswordChar = '\0';
+            this.txt_az_hob_hestan.PlaceholderText = "";
+            this.txt_az_hob_hestan.SelectedText = "";
+            this.txt_az_hob_hestan.Size = new System.Drawing.Size(910, 28);
+            this.txt_az_hob_hestan.TabIndex = 13;
             // 
             // label23
             // 
@@ -1403,241 +1417,35 @@
             this.label23.TabIndex = 12;
             this.label23.Text = "Аз хоб хестан:";
             // 
-            // tab_hujrai_tashkhisi
+            // edit_btn
             // 
-            this.tab_hujrai_tashkhisi.Controls.Add(this.guna2ComboBox1);
-            this.tab_hujrai_tashkhisi.Controls.Add(this.label24);
-            this.tab_hujrai_tashkhisi.Controls.Add(this.guna2TextBox19);
-            this.tab_hujrai_tashkhisi.Controls.Add(this.label25);
-            this.tab_hujrai_tashkhisi.Controls.Add(this.guna2TextBox20);
-            this.tab_hujrai_tashkhisi.Controls.Add(this.label26);
-            this.tab_hujrai_tashkhisi.Controls.Add(this.guna2TextBox21);
-            this.tab_hujrai_tashkhisi.Controls.Add(this.label27);
-            this.tab_hujrai_tashkhisi.Controls.Add(this.guna2TextBox22);
-            this.tab_hujrai_tashkhisi.Controls.Add(this.label28);
-            this.tab_hujrai_tashkhisi.Controls.Add(this.guna2TextBox23);
-            this.tab_hujrai_tashkhisi.Controls.Add(this.label29);
-            this.tab_hujrai_tashkhisi.Location = new System.Drawing.Point(224, 4);
-            this.tab_hujrai_tashkhisi.Name = "tab_hujrai_tashkhisi";
-            this.tab_hujrai_tashkhisi.Padding = new System.Windows.Forms.Padding(10);
-            this.tab_hujrai_tashkhisi.Size = new System.Drawing.Size(930, 420);
-            this.tab_hujrai_tashkhisi.TabIndex = 5;
-            this.tab_hujrai_tashkhisi.Text = "Ҳураи ташхисӣ";
-            this.tab_hujrai_tashkhisi.UseVisualStyleBackColor = true;
+            this.edit_btn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.NullValue = ((object)(resources.GetObject("dataGridViewCellStyle6.NullValue")));
+            dataGridViewCellStyle6.Padding = new System.Windows.Forms.Padding(4);
+            this.edit_btn.DefaultCellStyle = dataGridViewCellStyle6;
+            this.edit_btn.FillWeight = 50F;
+            this.edit_btn.HeaderText = "";
+            this.edit_btn.Image = global::ObiGarm.Properties.Resources.icons8_edit_26px;
+            this.edit_btn.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.edit_btn.MinimumWidth = 50;
+            this.edit_btn.Name = "edit_btn";
+            this.edit_btn.Width = 50;
             // 
-            // label24
+            // deleted_btn
             // 
-            this.label24.AutoSize = true;
-            this.label24.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label24.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.ForeColor = System.Drawing.Color.Black;
-            this.label24.Location = new System.Drawing.Point(10, 225);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(121, 15);
-            this.label24.TabIndex = 22;
-            this.label24.Text = "Нишонаҳои табобат:";
-            // 
-            // guna2TextBox19
-            // 
-            this.guna2TextBox19.BorderRadius = 3;
-            this.guna2TextBox19.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox19.DefaultText = "";
-            this.guna2TextBox19.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox19.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox19.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox19.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox19.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2TextBox19.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox19.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox19.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox19.Location = new System.Drawing.Point(10, 197);
-            this.guna2TextBox19.Name = "guna2TextBox19";
-            this.guna2TextBox19.PasswordChar = '\0';
-            this.guna2TextBox19.PlaceholderText = "";
-            this.guna2TextBox19.SelectedText = "";
-            this.guna2TextBox19.Size = new System.Drawing.Size(910, 28);
-            this.guna2TextBox19.TabIndex = 21;
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label25.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.ForeColor = System.Drawing.Color.Black;
-            this.label25.Location = new System.Drawing.Point(10, 182);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(120, 15);
-            this.label25.TabIndex = 20;
-            this.label25.Text = "Санҷиши ултрасадо.";
-            // 
-            // guna2TextBox20
-            // 
-            this.guna2TextBox20.BorderRadius = 3;
-            this.guna2TextBox20.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox20.DefaultText = "";
-            this.guna2TextBox20.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox20.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox20.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox20.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox20.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2TextBox20.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox20.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox20.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox20.Location = new System.Drawing.Point(10, 154);
-            this.guna2TextBox20.Name = "guna2TextBox20";
-            this.guna2TextBox20.PasswordChar = '\0';
-            this.guna2TextBox20.PlaceholderText = "";
-            this.guna2TextBox20.SelectedText = "";
-            this.guna2TextBox20.Size = new System.Drawing.Size(910, 28);
-            this.guna2TextBox20.TabIndex = 19;
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label26.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.ForeColor = System.Drawing.Color.Black;
-            this.label26.Location = new System.Drawing.Point(10, 139);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(109, 15);
-            this.label26.TabIndex = 18;
-            this.label26.Text = "Санҷиши наҷосат:";
-            // 
-            // guna2TextBox21
-            // 
-            this.guna2TextBox21.BorderRadius = 3;
-            this.guna2TextBox21.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox21.DefaultText = "";
-            this.guna2TextBox21.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox21.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox21.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox21.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox21.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2TextBox21.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox21.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox21.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox21.Location = new System.Drawing.Point(10, 111);
-            this.guna2TextBox21.Name = "guna2TextBox21";
-            this.guna2TextBox21.PasswordChar = '\0';
-            this.guna2TextBox21.PlaceholderText = "";
-            this.guna2TextBox21.SelectedText = "";
-            this.guna2TextBox21.Size = new System.Drawing.Size(910, 28);
-            this.guna2TextBox21.TabIndex = 17;
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label27.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.ForeColor = System.Drawing.Color.Black;
-            this.label27.Location = new System.Drawing.Point(10, 96);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(102, 15);
-            this.label27.TabIndex = 16;
-            this.label27.Text = "Санҷиши пешоб:";
-            // 
-            // guna2TextBox22
-            // 
-            this.guna2TextBox22.BorderRadius = 3;
-            this.guna2TextBox22.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox22.DefaultText = "";
-            this.guna2TextBox22.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox22.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox22.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox22.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox22.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2TextBox22.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox22.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox22.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox22.Location = new System.Drawing.Point(10, 68);
-            this.guna2TextBox22.Name = "guna2TextBox22";
-            this.guna2TextBox22.PasswordChar = '\0';
-            this.guna2TextBox22.PlaceholderText = "";
-            this.guna2TextBox22.SelectedText = "";
-            this.guna2TextBox22.Size = new System.Drawing.Size(910, 28);
-            this.guna2TextBox22.TabIndex = 15;
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label28.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.ForeColor = System.Drawing.Color.Black;
-            this.label28.Location = new System.Drawing.Point(10, 53);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(132, 15);
-            this.label28.TabIndex = 14;
-            this.label28.Text = "Санҷиши таркиби хун:";
-            // 
-            // guna2TextBox23
-            // 
-            this.guna2TextBox23.BorderRadius = 3;
-            this.guna2TextBox23.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox23.DefaultText = "";
-            this.guna2TextBox23.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox23.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox23.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox23.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox23.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2TextBox23.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox23.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox23.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox23.Location = new System.Drawing.Point(10, 25);
-            this.guna2TextBox23.Name = "guna2TextBox23";
-            this.guna2TextBox23.PasswordChar = '\0';
-            this.guna2TextBox23.PlaceholderText = "";
-            this.guna2TextBox23.SelectedText = "";
-            this.guna2TextBox23.Size = new System.Drawing.Size(910, 28);
-            this.guna2TextBox23.TabIndex = 13;
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label29.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.ForeColor = System.Drawing.Color.Black;
-            this.label29.Location = new System.Drawing.Point(10, 10);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(127, 15);
-            this.label29.TabIndex = 12;
-            this.label29.Text = "Санҷиши барқии дил:";
-            // 
-            // guna2ComboBox1
-            // 
-            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox1.BorderRadius = 2;
-            this.guna2ComboBox1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 8.25F);
-            this.guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox1.ItemHeight = 25;
-            this.guna2ComboBox1.Location = new System.Drawing.Point(10, 240);
-            this.guna2ComboBox1.Name = "guna2ComboBox1";
-            this.guna2ComboBox1.Size = new System.Drawing.Size(910, 31);
-            this.guna2ComboBox1.TabIndex = 32;
-            // 
-            // txt_numeb_kort
-            // 
-            this.txt_numeb_kort.BorderRadius = 3;
-            this.txt_numeb_kort.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_numeb_kort.DefaultText = "";
-            this.txt_numeb_kort.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txt_numeb_kort.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txt_numeb_kort.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_numeb_kort.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_numeb_kort.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_numeb_kort.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_numeb_kort.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_numeb_kort.Location = new System.Drawing.Point(636, 12);
-            this.txt_numeb_kort.Name = "txt_numeb_kort";
-            this.txt_numeb_kort.PasswordChar = '\0';
-            this.txt_numeb_kort.PlaceholderText = "";
-            this.txt_numeb_kort.SelectedText = "";
-            this.txt_numeb_kort.Size = new System.Drawing.Size(76, 25);
-            this.txt_numeb_kort.TabIndex = 24;
+            this.deleted_btn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.NullValue = ((object)(resources.GetObject("dataGridViewCellStyle7.NullValue")));
+            this.deleted_btn.DefaultCellStyle = dataGridViewCellStyle7;
+            this.deleted_btn.FillWeight = 50F;
+            this.deleted_btn.HeaderText = "";
+            this.deleted_btn.Image = global::ObiGarm.Properties.Resources.delete_96px;
+            this.deleted_btn.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.deleted_btn.MinimumWidth = 50;
+            this.deleted_btn.Name = "deleted_btn";
+            this.deleted_btn.Visible = false;
+            this.deleted_btn.Width = 50;
             // 
             // MainFormVrach
             // 
@@ -1660,18 +1468,15 @@
             this.tab_menu.ResumeLayout(false);
             this.tab_info_all.ResumeLayout(false);
             this.tab_info_all.PerformLayout();
-            this.tab_tainot_dukhtur.ResumeLayout(false);
-            this.tab_antrometri.ResumeLayout(false);
-            this.tab_antrometri.PerformLayout();
-            this.tab_qabuliilovagii_dukhtur.ResumeLayout(false);
-            this.tartibi_ruz.ResumeLayout(false);
-            this.tartibi_ruz.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.datagridview_admin)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
-            this.panel2.ResumeLayout(false);
             this.tab_hujrai_tashkhisi.ResumeLayout(false);
             this.tab_hujrai_tashkhisi.PerformLayout();
+            this.tab_tainot_dukhtur.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.datagridview_admin)).EndInit();
+            this.panel_top_tainoti_dukhtur.ResumeLayout(false);
+            this.tab_antrometri.ResumeLayout(false);
+            this.tab_antrometri.PerformLayout();
+            this.tartibi_ruz.ResumeLayout(false);
+            this.tartibi_ruz.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1689,24 +1494,23 @@
         private System.Windows.Forms.TabPage tab_info_all;
         private System.Windows.Forms.TabPage tab_tainot_dukhtur;
         private System.Windows.Forms.TabPage tab_antrometri;
-        private System.Windows.Forms.TabPage tab_qabuliilovagii_dukhtur;
         private System.Windows.Forms.TabPage tartibi_ruz;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox6;
+        private Guna.UI2.WinForms.Guna2Button print_btn;
+        private Guna.UI2.WinForms.Guna2Button check_kort_btn;
+        private Guna.UI2.WinForms.Guna2TextBox txt_room;
         private System.Windows.Forms.Label label7;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox5;
+        private Guna.UI2.WinForms.Guna2TextBox txt_name_doctor;
         private System.Windows.Forms.Label label6;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox4;
+        private Guna.UI2.WinForms.Guna2TextBox time_end_time;
         private System.Windows.Forms.Label label5;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox3;
+        private Guna.UI2.WinForms.Guna2TextBox txt_start_time;
         private System.Windows.Forms.Label label4;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
+        private Guna.UI2.WinForms.Guna2TextBox txt_year_burhhday;
         private System.Windows.Forms.Label label3;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+        private Guna.UI2.WinForms.Guna2TextBox txt_full_name;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Panel panel1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button3;
+        private System.Windows.Forms.Panel panel_top_tainoti_dukhtur;
+        private Guna.UI2.WinForms.Guna2Button btn_add_services;
         private System.Windows.Forms.Label label8;
         private Guna.UI2.WinForms.Guna2DataGridView datagridview_admin;
         private System.Windows.Forms.DataGridViewTextBoxColumn name;
@@ -1714,57 +1518,48 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn login;
         private System.Windows.Forms.DataGridViewImageColumn edit;
         private System.Windows.Forms.DataGridViewImageColumn delete;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox7;
+        private Guna.UI2.WinForms.Guna2TextBox txt_harorat;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox3;
+        private System.Windows.Forms.MaskedTextBox txt_nabz;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
+        private System.Windows.Forms.MaskedTextBox txt_fishori_hun;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.MaskedTextBox txt_quvai_bozuho;
         private System.Windows.Forms.Label label10;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox9;
+        private Guna.UI2.WinForms.Guna2TextBox txt_qobiliyati_nafaskashi;
         private System.Windows.Forms.Label label11;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox10;
+        private Guna.UI2.WinForms.Guna2TextBox txt_hajmi_qafasi_sina;
         private System.Windows.Forms.Label label12;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox11;
+        private Guna.UI2.WinForms.Guna2TextBox txt_vazn;
         private System.Windows.Forms.Label label13;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox12;
+        private Guna.UI2.WinForms.Guna2TextBox txt_qad;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.TabPage tab_hujrai_tashkhisi;
-        private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn3;
-        private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn4;
-        private System.Windows.Forms.Panel panel2;
-        private Guna.UI2.WinForms.Guna2Button guna2Button4;
-        private System.Windows.Forms.Label label17;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox8;
+        private Guna.UI2.WinForms.Guna2TextBox txt_time_hob;
         private System.Windows.Forms.Label label18;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox13;
+        private Guna.UI2.WinForms.Guna2TextBox txt_hurok_begohruzi;
         private System.Windows.Forms.Label label19;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox14;
+        private Guna.UI2.WinForms.Guna2TextBox txt_time_tabobathoi_gunogun;
         private System.Windows.Forms.Label label20;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox15;
+        private Guna.UI2.WinForms.Guna2TextBox txt_time_nahory;
         private System.Windows.Forms.Label label21;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox16;
+        private Guna.UI2.WinForms.Guna2TextBox txt_time_varzishi_pagohi;
         private System.Windows.Forms.Label label22;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox17;
+        private Guna.UI2.WinForms.Guna2TextBox txt_az_hob_hestan;
         private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
-        private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn2;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
+        private System.Windows.Forms.DataGridViewImageColumn edit_btn;
+        private System.Windows.Forms.DataGridViewImageColumn deleted_btn;
+        private Guna.UI2.WinForms.Guna2ComboBox com_nishonahoi_tabobat;
         private System.Windows.Forms.Label label24;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox19;
+        private Guna.UI2.WinForms.Guna2TextBox txt_ultarasado;
         private System.Windows.Forms.Label label25;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox20;
+        private Guna.UI2.WinForms.Guna2TextBox txt_sanjishi_nasoji;
         private System.Windows.Forms.Label label26;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox21;
+        private Guna.UI2.WinForms.Guna2TextBox txt_sanjishi_peshob;
         private System.Windows.Forms.Label label27;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox22;
+        private Guna.UI2.WinForms.Guna2TextBox txt_tarkibi_hun;
         private System.Windows.Forms.Label label28;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox23;
+        private Guna.UI2.WinForms.Guna2TextBox txt_EKG;
         private System.Windows.Forms.Label label29;
         private Guna.UI2.WinForms.Guna2TextBox txt_numeb_kort;
     }

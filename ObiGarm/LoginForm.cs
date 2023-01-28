@@ -221,7 +221,7 @@ namespace ObiGarm
                         {
                             MainFormVrach mainFormVrach = new MainFormVrach();
                             
-                            ManitorForm manitorForm = new ManitorForm();
+                            ManitorForm manitorForm = new ManitorForm("2");
                             manitorForm.Show();
                             //manitors.Show();
                             mainFormVrach.Show();

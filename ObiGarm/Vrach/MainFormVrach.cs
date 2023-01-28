@@ -181,7 +181,6 @@ namespace ObiGarm.Vrach
         private void MainFormVrach_Shown(object sender, EventArgs e)
         {
             txt_numeb_kort.Focus();
-
         }
 
         private void btn_logut_Click(object sender, EventArgs e)
