@@ -219,9 +219,9 @@ namespace ObiGarm
                         }
                         if (tabel_select_user.Rows[0]["point"].ToString() == "3")
                         {
-                            MainFormVrach mainFormVrach = new MainFormVrach();
+                            MainFormVrach mainFormVrach = new MainFormVrach(tabel_select_user.Rows[0]["id"].ToString());
                             
-                            ManitorForm manitorForm = new ManitorForm("2");
+                            ManitorForm manitorForm = new ManitorForm(tabel_select_user.Rows[0]["id_manitor"].ToString());
                             manitorForm.Show();
                             //manitors.Show();
                             mainFormVrach.Show();

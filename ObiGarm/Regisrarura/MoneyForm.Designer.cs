@@ -271,6 +271,7 @@
             this.btn_save_money.TabIndex = 0;
             this.btn_save_money.Text = "Сабт кардан";
             this.btn_save_money.UseVisualStyleBackColor = false;
+            this.btn_save_money.Click += new System.EventHandler(this.btn_save_money_Click_1);
             // 
             // MoneyForm
             // 

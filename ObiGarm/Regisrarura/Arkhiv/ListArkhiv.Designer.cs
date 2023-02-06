@@ -35,7 +35,7 @@ namespace ObiGarm.Regisrarura.Arkhiv
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject3 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject4 = new DevExpress.Utils.SerializableAppearanceObject();
             this.grid_yet_not_client = new DevExpress.XtraGrid.GridControl();
-            this.grid_view_yet_no_client = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.grid_view_client = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.number_order = new DevExpress.XtraGrid.Columns.GridColumn();
             this.id = new DevExpress.XtraGrid.Columns.GridColumn();
             this.full_name = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -44,7 +44,7 @@ namespace ObiGarm.Regisrarura.Arkhiv
             this.to_vrach_column = new DevExpress.XtraGrid.Columns.GridColumn();
             this.to_vrach = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
             ((System.ComponentModel.ISupportInitialize)(this.grid_yet_not_client)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.grid_view_yet_no_client)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grid_view_client)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.to_vrach)).BeginInit();
             this.SuspendLayout();
             // 
@@ -52,28 +52,28 @@ namespace ObiGarm.Regisrarura.Arkhiv
             // 
             this.grid_yet_not_client.Dock = System.Windows.Forms.DockStyle.Fill;
             this.grid_yet_not_client.Location = new System.Drawing.Point(10, 10);
-            this.grid_yet_not_client.MainView = this.grid_view_yet_no_client;
+            this.grid_yet_not_client.MainView = this.grid_view_client;
             this.grid_yet_not_client.Name = "grid_yet_not_client";
             this.grid_yet_not_client.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.to_vrach});
-            this.grid_yet_not_client.Size = new System.Drawing.Size(1253, 523);
+            this.grid_yet_not_client.Size = new System.Drawing.Size(1370, 582);
             this.grid_yet_not_client.TabIndex = 1;
             this.grid_yet_not_client.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.grid_view_yet_no_client});
+            this.grid_view_client});
             // 
-            // grid_view_yet_no_client
+            // grid_view_client
             // 
-            this.grid_view_yet_no_client.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.grid_view_client.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.number_order,
             this.id,
             this.full_name,
             this.date_time_start,
             this.date_time_end,
             this.to_vrach_column});
-            this.grid_view_yet_no_client.GridControl = this.grid_yet_not_client;
-            this.grid_view_yet_no_client.Name = "grid_view_yet_no_client";
-            this.grid_view_yet_no_client.OptionsFind.AlwaysVisible = true;
-            this.grid_view_yet_no_client.OptionsView.ShowGroupPanel = false;
+            this.grid_view_client.GridControl = this.grid_yet_not_client;
+            this.grid_view_client.Name = "grid_view_client";
+            this.grid_view_client.OptionsFind.AlwaysVisible = true;
+            this.grid_view_client.OptionsView.ShowGroupPanel = false;
             // 
             // number_order
             // 
@@ -201,18 +201,18 @@ namespace ObiGarm.Regisrarura.Arkhiv
             // to_vrach
             // 
             this.to_vrach.AutoHeight = false;
-            editorButtonImageOptions1.Image = global::ObiGarm.Properties.Resources.add_contact;
+            editorButtonImageOptions1.Image = global::ObiGarm.Properties.Resources.order;
             this.to_vrach.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions1, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, serializableAppearanceObject2, serializableAppearanceObject3, serializableAppearanceObject4, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.to_vrach.Name = "to_vrach";
             this.to_vrach.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
-            this.to_vrach.ButtonPressed += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.to_vrach_ButtonPressed);
+            this.to_vrach.Click += new System.EventHandler(this.to_vrach_Click);
             // 
             // ListArkhiv
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1273, 543);
+            this.ClientSize = new System.Drawing.Size(1390, 602);
             this.Controls.Add(this.grid_yet_not_client);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.IconOptions.ShowIcon = false;
@@ -222,7 +222,7 @@ namespace ObiGarm.Regisrarura.Arkhiv
             this.Text = "ListArkhiv";
             this.Shown += new System.EventHandler(this.ListArkhiv_Shown);
             ((System.ComponentModel.ISupportInitialize)(this.grid_yet_not_client)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.grid_view_yet_no_client)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grid_view_client)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.to_vrach)).EndInit();
             this.ResumeLayout(false);
 
@@ -231,7 +231,7 @@ namespace ObiGarm.Regisrarura.Arkhiv
         #endregion
 
         private DevExpress.XtraGrid.GridControl grid_yet_not_client;
-        private DevExpress.XtraGrid.Views.Grid.GridView grid_view_yet_no_client;
+        private DevExpress.XtraGrid.Views.Grid.GridView grid_view_client;
         private DevExpress.XtraGrid.Columns.GridColumn number_order;
         private DevExpress.XtraGrid.Columns.GridColumn id;
         private DevExpress.XtraGrid.Columns.GridColumn full_name;

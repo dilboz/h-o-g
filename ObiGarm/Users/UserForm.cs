@@ -5,6 +5,7 @@ using ObiGarm.Users.Admin;
 using ObiGarm.Users.Administration;
 using ObiGarm.Users.Bonk;
 using ObiGarm.Users.Bugalter;
+using ObiGarm.Users.Countr_Pr;
 using ObiGarm.Users.Frame;
 using ObiGarm.Users.Kort;
 using ObiGarm.Users.Registar;
@@ -104,14 +105,14 @@ namespace ObiGarm.Users
         {
             Button[] bunifuButtons = new Button[] { main_button, user_button, admin_button, vrach_button,
             registr_button, spitalists_button, bugalter_button, reference_button, frame_and_room, servicesis_btn, btn_kort, bonk_button, 
-                export_database_button, actions_button, reports_button, administrator_button, restotonant_and_oshkhina};
+                export_database_button, actions_button, reports_button, administrator_button, restotonant_and_oshkhina, button_country};
 
             for (var i = 0; i < bunifuButtons.Length; i++)
             {
                 bunifuButtons[i].BackColor = Color.FromArgb(70, 70, 70);
             }
 
-            if (index==2 || index==3 || index==4 || index==5 || index==6 || index == 15 || index == 16)
+            if (index==2 || index==3 || index==4 || index==5 || index==6 || index == 15 || index == 16 || index == 17)
             {
                 bunifuButtons[1].BackColor = Color.FromArgb(100, 100, 100);
                 bunifuButtons[index].BackColor = Color.FromArgb(100, 100, 100);
@@ -262,6 +263,12 @@ namespace ObiGarm.Users
         {
             colorsButton(16);
             openChildForm(new ListRestorant());
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            colorsButton(17);
+            openChildForm(new CountryRro()); 
         }
     }
 }

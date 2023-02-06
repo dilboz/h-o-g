@@ -27,11 +27,24 @@ namespace ObiGarm.Users.Vracah
             InitializeComponent();
         }
 
+        void load_comobo()
+        {
+            string sql = "SELECT * FROM manitor";
+            sqlConfiguration.LoadCombo(sql, "name", "id", combo_manitor);
+        }
+
         private void setTextToTextBoxs(string id)
         {
             string sql = "select * from users where id = '" + id + "'";
 
             DataTable dataTable = sqlConfiguration.sqlSelectQuery(sql);
+
+            string sql_maniror = "select manitor.name as 'manitor' " +
+                 "from users " +
+                 "inner join manitor on users.id_manitor = manitor.id " +
+                 $"where users.id='{id}'; ";
+
+            DataTable dataTable_maniror = sqlConfiguration.sqlSelectQuery(sql_maniror);
 
             if (dataTable == null)
             {
@@ -49,6 +62,7 @@ namespace ObiGarm.Users.Vracah
                     txt_room_number.Value = Convert.ToDecimal(dataTable.Rows[0]["room_number"].ToString());
                     txt_time_start_work.EditValue = dataTable.Rows[0]["work_time_start"].ToString();
                     txt_time_end_work.EditValue = dataTable.Rows[0]["work_time_end"].ToString();
+                    combo_manitor.Text = dataTable_maniror.Rows[0]["manitor"].ToString();
                 }
                 else
                 {
@@ -59,6 +73,7 @@ namespace ObiGarm.Users.Vracah
 
         private void AddVrach_Shown(object sender, EventArgs e)
         {
+            load_comobo();
             if (this.id_user != "" && this.text_button != "Сохтан")
             {
                 setTextToTextBoxs(this.id_user);
@@ -79,10 +94,11 @@ namespace ObiGarm.Users.Vracah
             string number_room_vrach = Convert.ToString(txt_room_number.Value);
             string time_start_work =Convert.ToDateTime(txt_time_start_work.Text).ToString("HH:mm");
             string time_end_work = Convert.ToDateTime(txt_time_end_work.Text).ToString("HH:mm");
-            
+            string manitor_id = combo_manitor.SelectedValue.ToString();
+
             string sql_user_check = "select * from users where login = '" + login_vrach + "' and point= '3' and deleted is null;";
 
-            string sql_add_user = "insert into users (name, surname, login, password, point, room_number, work_time_start, work_time_end) values('" +
+            string sql_add_user = "insert into users (name, surname, login, password, point, room_number, work_time_start, id_manitor, work_time_end) values('" +
                 name_vrach + "', '" +
                 surname_vrach + "', '" +
                 login_vrach + "', '" +
@@ -90,6 +106,7 @@ namespace ObiGarm.Users.Vracah
                 point_vrach + "', '" +
                 number_room_vrach + "', '" +
                 time_start_work + "', '" +
+                manitor_id + "', '" +
                 time_end_work +"');";
 
             if (name_vrach.Trim() != "" && surname_vrach.Trim() != "" && login_vrach.Trim() != "" && password_vrach.Trim() != "" && check_password_vrach.Trim() != ""
@@ -139,8 +156,8 @@ namespace ObiGarm.Users.Vracah
             string number_room_vrach = Convert.ToString(txt_room_number.Value);
             string time_start_work = Convert.ToDateTime(txt_time_start_work.Text).ToString("HH:mm");
             string time_end_work = Convert.ToDateTime(txt_time_end_work.Text).ToString("HH:mm");
+            string manitor_id = combo_manitor.SelectedValue.ToString();
 
-            
             string sql_user_check = "select * from users where login = '" + login_vrach + "' and point= '3' and deleted is null;";
 
             string sql_update_user = "update users set " +
@@ -151,7 +168,8 @@ namespace ObiGarm.Users.Vracah
                "point = '" + point_vrach + "', " +
                "room_number = '" + number_room_vrach + "', " +
                "work_time_start = '" + time_start_work + "', " +
-               "work_time_end = '" + time_end_work +  "' " +
+               "work_time_end = '" + time_end_work +  "', " +
+               "id_manitor = '" + manitor_id + "' " +
               " where id = '" + id + "'";
 
 

@@ -18,8 +18,7 @@ namespace ObiGarm.Vrach
         SqlConfiguration sqlConfiguration;
         private readonly MainFormVrach mainFormVrach;
         private string id_client;
-        private string id_main_vrach;
-        private string txt_button;
+        private bool id_main_vrach;
 
         private string prv_id_services;
         private string prv_id_spitsalist;
@@ -30,15 +29,16 @@ namespace ObiGarm.Vrach
         private DateTime ptv_select_time_for_services;
         private string prv_full_time_for_client;
 
+        private DateTime prv_client_start_work_spit;
+        private DateTime prv_client_end_work_spit;
 
-        public AddServicesForClient(MainFormVrach mainFormVrach, string id_client, string id_main_spitsalist, string txt_button)
+        public AddServicesForClient(MainFormVrach mainFormVrach, string id_client, bool id_main_spitsalist)
         {
             InitializeComponent();
             sqlConfiguration = new SqlConfiguration();
             this.mainFormVrach = mainFormVrach;
             this.id_client = id_client;
             this.id_main_vrach = id_main_spitsalist;
-            this.txt_button = txt_button;
 
             load_time_start_and_end_ClientWork(this.id_client);
             dispaly_services_to_selected_client(this.id_client);
@@ -63,7 +63,7 @@ namespace ObiGarm.Vrach
 
         void disolay_vrach_from_id_services(string id_services)
         {
-            string select_sql_spitsqlist = "select services_users.user_id as 'id', concat(users.surname, ' ', users.name)as 'name' " +
+            string select_sql_spitsqlist = "select services_users.user_id as 'id', concat(users.surname, ' ', users.name) as 'name' " +
                       "from services_users " +
                       "inner join users on services_users.user_id=users.id " +
                       $"where services_users.service_id = '{id_services}' and users.deleted  is null " +
@@ -73,11 +73,11 @@ namespace ObiGarm.Vrach
 
         void free_date_spitsalist(string id_spitsalist)
         {
-            DataTable dataTable_spit = sqlConfiguration.sqlSelectQuery($"SELECT * FROM users where id ='{id_spitsalist}';");
-            prv_time_start_work_spit = Convert.ToDateTime(dataTable_spit.Rows[0]["work_time_start"].ToString());
-            prv_time_end_work_spit = Convert.ToDateTime(dataTable_spit.Rows[0]["work_time_end"].ToString());
+            DataTable dataTable_spit = sqlConfiguration.sqlSelectQuery($"SELECT * FROM client where id ='{id_spitsalist}';");
+            prv_client_start_work_spit = Convert.ToDateTime(dataTable_spit.Rows[0]["date_time_start"].ToString());
+            prv_client_end_work_spit = Convert.ToDateTime(dataTable_spit.Rows[0]["date_time_end"].ToString());
 
-            list_data(prv_time_start_work_spit, prv_time_end_work_spit);
+            list_data(prv_client_start_work_spit, prv_client_end_work_spit);
         }
 
         void list_data(DateTime start_date, DateTime end_date)
@@ -155,12 +155,13 @@ namespace ObiGarm.Vrach
         void adding_services(DateTime time_selected)
         {
             string date = ptv_select_date_for_services.ToString("yyyy-MM-dd");
-            string time = time_selected.ToString("hh:mm:ss");
+            string time = time_selected.ToString("HH:mm:ss");
 
             prv_full_time_for_client = string.Concat(date, " ", time);
             add(prv_full_time_for_client);
 
             dispaly_services_to_selected_client(this.id_client);
+            mainFormVrach.display_services_client(this.id_client);
         }
 
         void add(string date_time_services_forclient)
@@ -197,8 +198,9 @@ namespace ObiGarm.Vrach
                     }
                     else
                     {
-                        mainFormVrach.check_btn_add_services();
-                        this.Close();
+                        free_time_spitsalist(ptv_select_date_for_services);
+                        //mainFormVrach.check_btn_add_services();
+                        //this.Close();
                     }
                 }
             }
@@ -210,7 +212,7 @@ namespace ObiGarm.Vrach
 
         void dispaly_services_to_selected_client(string id_client)
         {
-            string display = "SELECT services_client.id, services.name as 'name_services', concat(users.surname, ' ', users.name) as 'name_spitsalist',  services_client.time as 'time_services' " +
+            string display = "SELECT services_client.id, concat(users.surname, ' ', users.name) as 'name_spitsalist', services.name as 'name_services', services_client.time as 'time_services' " +
                 "FROM services_client " +
                 "inner join services on services_client.id_services = services.id " +
                 "inner join users on services_client.id_users = users.id " +
@@ -248,6 +250,57 @@ namespace ObiGarm.Vrach
             else msg("Хизматрасонӣ интихоб нашудааст!");
         }
 
+        private void datagridview_vrach_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            prv_id_spitsalist = datagridview_vrach.Rows[e.RowIndex].Cells[0].Value.ToString();
+
+            if (prv_id_services != "")
+            {
+                if (prv_id_spitsalist != "")
+                {
+                    free_date_spitsalist(id_client);
+                }
+                else msg("Мутахассис интихоб нашудааст!");
+            }
+            else msg("Хизматрасонӣ интихоб нашудааст!");
+        }
+
+        private void datagridview_services_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            prv_id_services = datagridview_services.Rows[e.RowIndex].Cells[0].Value.ToString();
+
+            if (prv_id_services != "") disolay_vrach_from_id_services(prv_id_services);
+            else msg("Хизматрасонӣ интихоб нашудааст!");
+        }
+
+        private void btn_creat_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void datagridview_allServicesClient_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex == delete.Index)
+            {
+                string id = datagridview_allServicesClient.Rows[e.RowIndex].Cells[3].Value.ToString();
+                DialogResult dialogResult = MessageBox.Show("Шумо дар хакикат " + datagridview_allServicesClient.Rows[e.RowIndex].Cells[4].Value + " - " + datagridview_allServicesClient.Rows[e.RowIndex].Cells[5].Value + " - "+ datagridview_allServicesClient.Rows[e.RowIndex].Cells[6].Value + " - ро нест кардан мехохед?", "Сообщения", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (dialogResult == DialogResult.Yes)
+                {
+                    string sqlDeleteAdmin = $"update services_client set deleted = '{DateTime.Now.ToString("yyyy'-'MM'-'dd'_'HH':'mm':'ss")}',  enable='0' where id = '" + id + "'";
+                    int res2 = sqlConfiguration.sqlQuery(sqlDeleteAdmin);
+                    if (res2 == 1)
+                    {
+                        dispaly_services_to_selected_client(this.id_client);
+                        mainFormVrach.display_services_client(this.id_client);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Хатоги хангоми нест кардани Админ!", "Сообщения", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+            }
+        }
+
         private void datagridview_time_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             ptv_select_time_for_services = DateTime.Parse(datagridview_time.Rows[e.RowIndex].Cells[0].Value.ToString());
@@ -263,29 +316,6 @@ namespace ObiGarm.Vrach
                 }
                 else msg("Мутахассис интихоб нашудааст!");
             }
-            else msg("Хизматрасонӣ интихоб нашудааст!");
-        }
-
-        private void datagridview_vrach_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            prv_id_spitsalist = datagridview_vrach.Rows[e.RowIndex].Cells[0].Value.ToString();
-
-            if (prv_id_services != "")
-            {
-                if (prv_id_spitsalist != "")
-                {
-                    free_date_spitsalist(prv_id_spitsalist);
-                }
-                else msg("Мутахассис интихоб нашудааст!");
-            }
-            else msg("Хизматрасонӣ интихоб нашудааст!");
-        }
-
-        private void datagridview_services_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            prv_id_services = datagridview_services.Rows[e.RowIndex].Cells[0].Value.ToString();
-            msg(prv_id_services);
-            if (prv_id_services != "") disolay_vrach_from_id_services(prv_id_services);
             else msg("Хизматрасонӣ интихоб нашудааст!");
         }
     }

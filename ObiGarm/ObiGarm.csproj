@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="..\packages\Syncfusion.Blazor.20.3.0.52\build\Syncfusion.Blazor.props" Condition="Exists('..\packages\Syncfusion.Blazor.20.3.0.52\build\Syncfusion.Blazor.props')" />
+  <Import Project="..\packages\Syncfusion.Blazor.20.4.0.44\build\Syncfusion.Blazor.props" Condition="Exists('..\packages\Syncfusion.Blazor.20.4.0.44\build\Syncfusion.Blazor.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -94,12 +94,12 @@
       <HintPath>C:\Users\User\Desktop\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_v1.5.3.dll</HintPath>
     </Reference>
     <Reference Include="CairoSharp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\DevExpress.CrossPlatform.Printing.DrawingEngine.1.0.13\lib\netstandard2.0\CairoSharp.dll</HintPath>
+      <HintPath>..\packages\DevExpress.CrossPlatform.Printing.DrawingEngine.1.0.14\lib\netstandard2.0\CairoSharp.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Charts.v20.1.Core, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.CodeParser.v20.1, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.CrossPlatform.Printing.DrawingEngine, Version=1.0.13.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\DevExpress.CrossPlatform.Printing.DrawingEngine.1.0.13\lib\netstandard2.0\DevExpress.CrossPlatform.Printing.DrawingEngine.dll</HintPath>
+    <Reference Include="DevExpress.CrossPlatform.Printing.DrawingEngine, Version=1.0.14.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.CrossPlatform.Printing.DrawingEngine.1.0.14\lib\netstandard2.0\DevExpress.CrossPlatform.Printing.DrawingEngine.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Dashboard.v20.1.Core, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Dashboard.v20.1.Win, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
@@ -133,6 +133,7 @@
     </Reference>
     <Reference Include="DevExpress.XtraBars.v20.1, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraCharts.v20.1, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v20.1.Extensions, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraCharts.v20.1.UI, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraCharts.v20.1.Wizard, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraEditors.v20.1, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
@@ -146,6 +147,7 @@
     <Reference Include="DevExpress.XtraPivotGrid.v20.1, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraPrinting.v20.1, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraReports.v20.1, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v20.1.Extensions, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraRichEdit.v20.1, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraScheduler.v20.1, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraScheduler.v20.1.Core, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
@@ -154,7 +156,7 @@
     <Reference Include="DevExpress.XtraTreeMap.v20.1, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraVerticalGrid.v20.1, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="GLibSharp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\DevExpress.CrossPlatform.Printing.DrawingEngine.1.0.13\lib\netstandard2.0\GLibSharp.dll</HintPath>
+      <HintPath>..\packages\DevExpress.CrossPlatform.Printing.DrawingEngine.1.0.14\lib\netstandard2.0\GLibSharp.dll</HintPath>
     </Reference>
     <Reference Include="Google.Protobuf, Version=3.19.4.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
       <HintPath>..\packages\Google.Protobuf.3.19.4\lib\net45\Google.Protobuf.dll</HintPath>
@@ -174,11 +176,26 @@
     <Reference Include="K4os.Hash.xxHash, Version=1.0.6.0, Culture=neutral, PublicKeyToken=32cd54395057cec3, processorArchitecture=MSIL">
       <HintPath>..\packages\K4os.Hash.xxHash.1.0.6\lib\net46\K4os.Hash.xxHash.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1537.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1537.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1537.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1537.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1537.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
     <Reference Include="MySql.Data, Version=8.0.31.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <HintPath>..\packages\MySql.Data.8.0.31\lib\net452\MySql.Data.dll</HintPath>
     </Reference>
     <Reference Include="PangoSharp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\DevExpress.CrossPlatform.Printing.DrawingEngine.1.0.13\lib\netstandard2.0\PangoSharp.dll</HintPath>
+      <HintPath>..\packages\DevExpress.CrossPlatform.Printing.DrawingEngine.1.0.14\lib\netstandard2.0\PangoSharp.dll</HintPath>
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
@@ -191,23 +208,26 @@
     <Reference Include="System.Configuration.Install" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Data.OracleClient" />
     <Reference Include="System.Design" />
-    <Reference Include="System.Drawing.Common, Version=4.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.Drawing.Common.4.7.0\lib\net461\System.Drawing.Common.dll</HintPath>
+    <Reference Include="System.Drawing.Common, Version=7.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Drawing.Common.7.0.0\lib\net462\System.Drawing.Common.dll</HintPath>
     </Reference>
+    <Reference Include="System.Drawing.Design" />
     <Reference Include="System.Management" />
-    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
     </Reference>
     <Reference Include="System.Numerics" />
     <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
     </Reference>
-    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.5.0.0\lib\net45\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
     <Reference Include="System.Security" />
     <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -280,6 +300,7 @@
     <Compile Include="Accounting\GetMoneyInKassa\ListGetMoney.Designer.cs">
       <DependentUpon>ListGetMoney.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddInfoTable.cs" />
     <Compile Include="Administration\InfoReportsFromMoney.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -322,11 +343,11 @@
     <Compile Include="Regisrarura\Arkhiv\AddArchiv.Designer.cs">
       <DependentUpon>AddArchiv.cs</DependentUpon>
     </Compile>
-    <Compile Include="Regisrarura\Arkhiv\EditIsArkhiv.cs">
+    <Compile Include="Regisrarura\Arkhiv\ArkhivForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Regisrarura\Arkhiv\EditIsArkhiv.Designer.cs">
-      <DependentUpon>EditIsArkhiv.cs</DependentUpon>
+    <Compile Include="Regisrarura\Arkhiv\ArkhivForm.Designer.cs">
+      <DependentUpon>ArkhivForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Regisrarura\Arkhiv\ListArkhiv.cs">
       <SubType>Form</SubType>
@@ -376,6 +397,7 @@
     <Compile Include="Restorant\RestorantForm.Designer.cs">
       <DependentUpon>RestorantForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
     <Compile Include="Users\Administration\AddAdministrator.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -411,6 +433,24 @@
     </Compile>
     <Compile Include="Users\Bugalter\ListBugalter.Designer.cs">
       <DependentUpon>ListBugalter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\Countr_Pr\addCountry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\Countr_Pr\addCountry.Designer.cs">
+      <DependentUpon>addCountry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\Countr_Pr\addPr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\Countr_Pr\addPr.Designer.cs">
+      <DependentUpon>addPr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\Countr_Pr\CountryRro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\Countr_Pr\CountryRro.Designer.cs">
+      <DependentUpon>CountryRro.cs</DependentUpon>
     </Compile>
     <Compile Include="Users\Kort\AddKort.cs">
       <SubType>Form</SubType>
@@ -532,11 +572,25 @@
     <Compile Include="Vrach\AddServicesForClient.Designer.cs">
       <DependentUpon>AddServicesForClient.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vrach\DataTableInfoServoces.cs">
+      <DependentUpon>DataTableInfoServoces.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Vrach\DataTableInfoServoces.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataTableInfoServoces.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Vrach\MainFormVrach.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Vrach\MainFormVrach.Designer.cs">
       <DependentUpon>MainFormVrach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vrach\PrintForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vrach\PrintForm.Designer.cs">
+      <DependentUpon>PrintForm.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Accounting\AccountingForm.resx">
       <DependentUpon>AccountingForm.cs</DependentUpon>
@@ -594,8 +648,8 @@
     <EmbeddedResource Include="Regisrarura\Arkhiv\AddArchiv.resx">
       <DependentUpon>AddArchiv.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Regisrarura\Arkhiv\EditIsArkhiv.resx">
-      <DependentUpon>EditIsArkhiv.cs</DependentUpon>
+    <EmbeddedResource Include="Regisrarura\Arkhiv\ArkhivForm.resx">
+      <DependentUpon>ArkhivForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Regisrarura\Arkhiv\ListArkhiv.resx">
       <DependentUpon>ListArkhiv.cs</DependentUpon>
@@ -638,6 +692,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Users\Bugalter\ListBugalter.resx">
       <DependentUpon>ListBugalter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\Countr_Pr\addCountry.resx">
+      <DependentUpon>addCountry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\Countr_Pr\addPr.resx">
+      <DependentUpon>addPr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\Countr_Pr\CountryRro.resx">
+      <DependentUpon>CountryRro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Users\Kort\AddKort.resx">
       <DependentUpon>AddKort.cs</DependentUpon>
@@ -702,7 +765,20 @@
     <EmbeddedResource Include="Vrach\MainFormVrach.resx">
       <DependentUpon>MainFormVrach.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vrach\newPrintReport.rdlc" />
+    <EmbeddedResource Include="Vrach\PrintForm.resx">
+      <DependentUpon>PrintForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vrach\ReportPrintFormVrach.rdlc" />
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\AddInfoTable.datasource" />
+    <None Include="Properties\DataSources\loaddingFrom.datasource" />
+    <None Include="Properties\DataSources\LoginForm.datasource" />
+    <None Include="Properties\DataSources\ObiGarm.ClassDatabase.PrintReportTable.datasource" />
+    <None Include="Properties\DataSources\ObiGarm.ClassDatabase.SettingsDatabase.datasource" />
+    <None Include="Properties\DataSources\ObiGarm.Vrach.MainFormVrach.datasource" />
+    <None Include="Properties\DataSources\Program.datasource" />
+    <None Include="Properties\DataSources\SettinsForm.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -712,6 +788,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Vrach\DataTableInfoServoces.xsc">
+      <DependentUpon>DataTableInfoServoces.xsd</DependentUpon>
+    </None>
+    <None Include="Vrach\DataTableInfoServoces.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataTableInfoServoces.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Vrach\DataTableInfoServoces.xss">
+      <DependentUpon>DataTableInfoServoces.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -781,6 +868,22 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="logos.ico" />
+    <None Include="Resources\no.png" />
+    <None Include="Resources\tome_out.png" />
+    <None Include="Resources\yes.png" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <None Include="Resources\hospital-bed.png" />
     <None Include="Resources\add-contact.png" />
     <None Include="Resources\printer.png" />
@@ -802,12 +905,14 @@
     <None Include="Resources\home.png" />
     <None Include="Resources\logo_hobg.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\packages\Syncfusion.Blazor.20.3.0.52\build\Syncfusion.Blazor.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Syncfusion.Blazor.20.3.0.52\build\Syncfusion.Blazor.props'))" />
+    <Error Condition="!Exists('..\packages\Syncfusion.Blazor.20.4.0.44\build\Syncfusion.Blazor.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Syncfusion.Blazor.20.4.0.44\build\Syncfusion.Blazor.props'))" />
   </Target>
 </Project>

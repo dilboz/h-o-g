@@ -1,5 +1,6 @@
 ﻿using InventorySystem1._0.Includes;
 using ObiGarm.ClassDatabase;
+using ObiGarm.Regisrarura.Arkhiv;
 using ObiGarm.Regisrarura.Lists;
 using System;
 using System.Collections.Generic;
@@ -27,14 +28,20 @@ namespace ObiGarm.Regisrarura
         private string id_kort;
 
         private readonly IsClient isClient;
+        private readonly ListArkhiv listArkhiv;
+        private readonly ArkhivForm arkhivForm;
         private string id_client;
         private string txt_button;
 
-        bool erors = false;
+       
 
-        public AddCllient()
+        public AddCllient(ArkhivForm arkhivForm, string id_client, string txt_button)
         {
             InitializeComponent();
+
+            this.arkhivForm = arkhivForm;
+            this.id_client = id_client;
+            this.txt_button = txt_button;
 
             date_first_dey.Value = DateTime.Now;
             date_end_dey.Value = DateTime.Now;
@@ -53,66 +60,201 @@ namespace ObiGarm.Regisrarura
 
         }
 
+        public AddCllient(ListArkhiv listArkhiv, string id_client, string txt_button)
+        {
+            InitializeComponent();
+
+            this.listArkhiv = listArkhiv;
+            this.id_client = id_client;
+            this.txt_button = txt_button;
+
+            date_first_dey.Value = DateTime.Now;
+            date_end_dey.Value = DateTime.Now;
+
+        }
+
         void setTextTotextbox(string id)
         {
             DataTable table_selecte_client = sqlConfiguration.sqlSelectQuery($"select * from client where id = '{id}';");
 
-            if (table_selecte_client.Rows.Count != 0)
+            if (listArkhiv!=null)
             {
-                txt_full_name.Text = table_selecte_client.Rows[0]["surname"].ToString() + " " + table_selecte_client.Rows[0]["name"].ToString() + " " + table_selecte_client.Rows[0]["patromic"].ToString();
-                txt_year_burthday.Value = Decimal.Parse( table_selecte_client.Rows[0]["nuber_money"].ToString());
-                txt_year_burthday.Value = Decimal.Parse(table_selecte_client.Rows[0]["nuber_money"].ToString());
-
-                if (table_selecte_client.Rows[0]["id_sex"].ToString() != "")
+                if (table_selecte_client.Rows.Count != 0)
                 {
-                    com_sex.Text = SettingsDatabase.setNmaeSexToTextbox(table_selecte_client.Rows[0]["id_sex"].ToString());
-                }
+                    txt_full_name.Text = table_selecte_client.Rows[0]["surname"].ToString() + " " + table_selecte_client.Rows[0]["name"].ToString() + " " + table_selecte_client.Rows[0]["patromic"].ToString();
+                    txt_year_burthday.Value = Decimal.Parse(table_selecte_client.Rows[0]["year_birthday"].ToString());
 
-                if (table_selecte_client.Rows[0]["id_county"].ToString()!="")
+                    if (table_selecte_client.Rows[0]["id_sex"].ToString() != "")
+                    {
+                        com_sex.Text = SettingsDatabase.setNmaeSexToTextbox(table_selecte_client.Rows[0]["id_sex"].ToString());
+                    }
+
+                    if (table_selecte_client.Rows[0]["id_county"].ToString() != "")
+                    {
+                        combo_country.Text = SettingsDatabase.setNmaeCountryToTextbox(table_selecte_client.Rows[0]["id_county"].ToString());
+                    }
+                    if (table_selecte_client.Rows[0]["id_province"].ToString() != "")
+                    {
+                        combo_province.Text = SettingsDatabase.setNmaeProvinceToTextbox(table_selecte_client.Rows[0]["id_province"].ToString());
+                    }
+
+                    txt_count_dey.Text = table_selecte_client.Rows[0]["count_day_to_arkhiv"].ToString();
+                    txt_count_dey.Enabled = false;
+
+                    //date_end_dey.Value = DateTime.Parse(table_selecte_client.Rows[0]["date_time_start"].ToString());
+                    date_end_dey.Value = DateTime.Parse(table_selecte_client.Rows[0]["date_time_end"].ToString()).AddDays(double.Parse(txt_count_dey.Text)-1);                    
+
+                    //txt_count_dey.Text = (date_end_dey.Value - date_end_dey.Value).TotalDays.ToString();
+
+                    //if (table_selecte_client.Rows[0]["id_varch"].ToString() != "")
+                    //{
+                    //    id_vrach = table_selecte_client.Rows[0]["id_varch"].ToString();
+                    //    name_doctor = txt_name_doctor.Text = SettingsDatabase.setNmaeVrachToTextbox(table_selecte_client.Rows[0]["id_varch"].ToString());
+                    //}
+
+                    //if (table_selecte_client.Rows[0]["id_room"].ToString() != "")
+                    //{
+                    //    id_room = table_selecte_client.Rows[0]["id_room"].ToString();
+                    //    name_room = txt_room.Text = SettingsDatabase.setNmaeRoomToTextbox(table_selecte_client.Rows[0]["id_room"].ToString());
+                    //}
+
+                    //if (table_selecte_client.Rows[0]["id_type_money"].ToString() != "")
+                    //{
+                    //    combo_country.Text = SettingsDatabase.setNmaeTypeMoneyToTextbox(table_selecte_client.Rows[0]["id_type_money"].ToString());
+                    //}
+
+                    txt_number_money.Text = table_selecte_client.Rows[0]["nuber_money"].ToString();
+                    //txt_number_order.Text = table_selecte_client.Rows[0]["number_order"].ToString();
+
+                    //if (table_selecte_client.Rows[0]["id_kort"].ToString() != "")
+                    //{
+                    //    id_kort = table_selecte_client.Rows[0]["id_kort"].ToString();
+                    //    txt_kort.Text = SettingsDatabase.setNmaeKodKortToTextbox(table_selecte_client.Rows[0]["id_kort"].ToString());
+                    //}
+                }
+                else
                 {
-                    combo_country.Text = SettingsDatabase.setNmaeCountryToTextbox(table_selecte_client.Rows[0]["id_county"].ToString());
+                    MessageBox.Show("Ханоги ҳангоми ёфтани текст");
                 }
-                if (table_selecte_client.Rows[0]["id_province"].ToString() != "")
-                {
-                    combo_province.Text = SettingsDatabase.setNmaeProvinceToTextbox(table_selecte_client.Rows[0]["id_province"].ToString());
-                }
-
-                date_end_dey.Value = DateTime.Parse(table_selecte_client.Rows[0]["date_time_start"].ToString());
-                date_end_dey.Value = DateTime.Parse(table_selecte_client.Rows[0]["date_time_end"].ToString());
-
-                txt_count_dey.Text = (date_end_dey.Value- date_end_dey.Value).TotalDays.ToString();
-
-                if (table_selecte_client.Rows[0]["id_varch"].ToString() != "")
-                {
-                   id_vrach = table_selecte_client.Rows[0]["id_varch"].ToString();
-                   name_doctor = txt_name_doctor.Text = SettingsDatabase.setNmaeVrachToTextbox(table_selecte_client.Rows[0]["id_varch"].ToString());
-                }
-
-                if (table_selecte_client.Rows[0]["id_room"].ToString() != "")
-                {
-                   id_room = table_selecte_client.Rows[0]["id_room"].ToString();
-                   name_room = txt_room.Text = SettingsDatabase.setNmaeRoomToTextbox(table_selecte_client.Rows[0]["id_room"].ToString());
-                }
-
-                if (table_selecte_client.Rows[0]["id_type_money"].ToString() != "")
-                {
-                    combo_country.Text = SettingsDatabase.setNmaeTypeMoneyToTextbox(table_selecte_client.Rows[0]["id_type_money"].ToString());
-                }
-
-                txt_number_money.Text = table_selecte_client.Rows[0]["nuber_money"].ToString();
-                txt_number_order.Text = table_selecte_client.Rows[0]["number_order"].ToString();
-
-                if (table_selecte_client.Rows[0]["id_kort"].ToString() != "")
-                {
-                    id_kort = table_selecte_client.Rows[0]["id_kort"].ToString();
-                    txt_kort.Text = SettingsDatabase.setNmaeKodKortToTextbox(table_selecte_client.Rows[0]["id_kort"].ToString());
-                }
-                msg(name_doctor);
             }
-            else
+            if (arkhivForm != null)
             {
-                MessageBox.Show("Ханоги ҳангоми ёфтани текст");
+                if (table_selecte_client.Rows.Count != 0)
+                {
+                    txt_full_name.Text = table_selecte_client.Rows[0]["surname"].ToString() + " " + table_selecte_client.Rows[0]["name"].ToString() + " " + table_selecte_client.Rows[0]["patromic"].ToString();
+                    txt_year_burthday.Value = Decimal.Parse(table_selecte_client.Rows[0]["year_birthday"].ToString());
+
+                    if (table_selecte_client.Rows[0]["id_sex"].ToString() != "")
+                    {
+                        com_sex.Text = SettingsDatabase.setNmaeSexToTextbox(table_selecte_client.Rows[0]["id_sex"].ToString());
+                    }
+
+                    if (table_selecte_client.Rows[0]["id_county"].ToString() != "")
+                    {
+                        combo_country.Text = SettingsDatabase.setNmaeCountryToTextbox(table_selecte_client.Rows[0]["id_county"].ToString());
+                    }
+                    if (table_selecte_client.Rows[0]["id_province"].ToString() != "")
+                    {
+                        combo_province.Text = SettingsDatabase.setNmaeProvinceToTextbox(table_selecte_client.Rows[0]["id_province"].ToString());
+                    }
+
+                    //txt_count_dey.Text = table_selecte_client.Rows[0]["count_day_to_arkhiv"].ToString();
+                    //txt_count_dey.Enabled = false;
+
+                    //date_end_dey.Value = DateTime.Parse(table_selecte_client.Rows[0]["date_time_start"].ToString());
+                    //date_end_dey.Value = DateTime.Parse(table_selecte_client.Rows[0]["date_time_end"].ToString()).AddDays(double.Parse(txt_count_dey.Text) - 1);
+
+                    //txt_count_dey.Text = (date_end_dey.Value - date_end_dey.Value).TotalDays.ToString();
+
+                    //if (table_selecte_client.Rows[0]["id_varch"].ToString() != "")
+                    //{
+                    //    id_vrach = table_selecte_client.Rows[0]["id_varch"].ToString();
+                    //    name_doctor = txt_name_doctor.Text = SettingsDatabase.setNmaeVrachToTextbox(table_selecte_client.Rows[0]["id_varch"].ToString());
+                    //}
+
+                    //if (table_selecte_client.Rows[0]["id_room"].ToString() != "")
+                    //{
+                    //    id_room = table_selecte_client.Rows[0]["id_room"].ToString();
+                    //    name_room = txt_room.Text = SettingsDatabase.setNmaeRoomToTextbox(table_selecte_client.Rows[0]["id_room"].ToString());
+                    //}
+
+                    //if (table_selecte_client.Rows[0]["id_type_money"].ToString() != "")
+                    //{
+                    //    combo_country.Text = SettingsDatabase.setNmaeTypeMoneyToTextbox(table_selecte_client.Rows[0]["id_type_money"].ToString());
+                    //}
+
+                    txt_number_money.Text = table_selecte_client.Rows[0]["nuber_money"].ToString();
+                    txt_number_order.Text = table_selecte_client.Rows[0]["number_order"].ToString();
+
+                    //if (table_selecte_client.Rows[0]["id_kort"].ToString() != "")
+                    //{
+                    //    id_kort = table_selecte_client.Rows[0]["id_kort"].ToString();
+                    //    txt_kort.Text = SettingsDatabase.setNmaeKodKortToTextbox(table_selecte_client.Rows[0]["id_kort"].ToString());
+                    //}
+                }
+                else
+                {
+                    MessageBox.Show("Ханоги ҳангоми ёфтани текст");
+                }
             }
+            if (isClient!=null)
+            {
+                if (table_selecte_client.Rows.Count != 0)
+                {
+                    txt_full_name.Text = table_selecte_client.Rows[0]["surname"].ToString() + " " + table_selecte_client.Rows[0]["name"].ToString() + " " + table_selecte_client.Rows[0]["patromic"].ToString();
+                    txt_year_burthday.Value = Decimal.Parse(table_selecte_client.Rows[0]["year_birthday"].ToString());
+
+                    if (table_selecte_client.Rows[0]["id_sex"].ToString() != "")
+                    {
+                        com_sex.Text = SettingsDatabase.setNmaeSexToTextbox(table_selecte_client.Rows[0]["id_sex"].ToString());
+                    }
+
+                    if (table_selecte_client.Rows[0]["id_county"].ToString() != "")
+                    {
+                        combo_country.Text = SettingsDatabase.setNmaeCountryToTextbox(table_selecte_client.Rows[0]["id_county"].ToString());
+                    }
+                    if (table_selecte_client.Rows[0]["id_province"].ToString() != "")
+                    {
+                        combo_province.Text = SettingsDatabase.setNmaeProvinceToTextbox(table_selecte_client.Rows[0]["id_province"].ToString());
+                    }
+
+                    date_end_dey.Value = DateTime.Parse(table_selecte_client.Rows[0]["date_time_start"].ToString());
+                    date_end_dey.Value = DateTime.Parse(table_selecte_client.Rows[0]["date_time_end"].ToString());
+
+                    txt_count_dey.Text =Convert.ToString(Convert.ToInt32((date_end_dey.Value - date_first_dey.Value).TotalDays));
+
+                    if (table_selecte_client.Rows[0]["id_varch"].ToString() != "")
+                    {
+                        id_vrach = table_selecte_client.Rows[0]["id_varch"].ToString();
+                        name_doctor = txt_name_doctor.Text = SettingsDatabase.setNmaeVrachToTextbox(table_selecte_client.Rows[0]["id_varch"].ToString());
+                    }
+
+                    if (table_selecte_client.Rows[0]["id_room"].ToString() != "")
+                    {
+                        id_room = table_selecte_client.Rows[0]["id_room"].ToString();
+                        name_room = txt_room.Text = SettingsDatabase.setNmaeRoomToTextbox(table_selecte_client.Rows[0]["id_room"].ToString());
+                    }
+
+                    if (table_selecte_client.Rows[0]["id_type_money"].ToString() != "")
+                    {
+                        combo_country.Text = SettingsDatabase.setNmaeTypeMoneyToTextbox(table_selecte_client.Rows[0]["id_type_money"].ToString());
+                    }
+
+                    txt_number_money.Text = table_selecte_client.Rows[0]["nuber_money"].ToString();
+                    txt_number_order.Text = table_selecte_client.Rows[0]["number_order"].ToString();
+
+                    if (table_selecte_client.Rows[0]["id_kort"].ToString() != "")
+                    {
+                        id_kort = table_selecte_client.Rows[0]["id_kort"].ToString();
+                        txt_kort.Text = SettingsDatabase.setNmaeKodKortToTextbox(table_selecte_client.Rows[0]["id_kort"].ToString());
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Ханоги ҳангоми ёфтани текст");
+                }
+            }
+            
         }
 
         void loadItemsCombos()
@@ -159,18 +301,33 @@ namespace ObiGarm.Regisrarura
             string year_birthday = txt_year_burthday.Value.ToString();
             string id_sex = com_sex.SelectedValue.ToString();
             string id_country = combo_country.SelectedValue.ToString();
-            string id_province = combo_province.SelectedValue.ToString();
+
+            string id_province;
+            if (combo_province.Text!="")
+            {
+                id_province = combo_province.SelectedValue.ToString();
+
+            }
+            else
+            {
+                id_province = "9";
+            }
 
             string datetime_start = date_first_dey.Value.ToString("MM-dd-yyyy") + " " + Convert.ToDateTime("09:00").ToString("H:mm");
             string datetime_end = date_end_dey.Value.ToString("MM-dd-yyyy") + " " + Convert.ToDateTime("18:00").ToString("H:mm");
 
+
             string vrach_id = id_vrach;
             string room_id = id_room;
 
-            string type_money = combo_country.SelectedValue.ToString();
+            string type_money = combo_type_money.SelectedValue.ToString();
             string number_money = txt_number_money.Text;
             string number_order = txt_number_order.Text;
 
+            if (number_order == "" || number_order == null)
+            {
+                number_order = "0";
+            }
             string kord = id_kort;
 
             DataTable dataTable_kort = sqlConfiguration.sqlSelectQuery($"SELECT * FROM kort where kod_kort='{txt_kort.Text}' and active ='0' and enable ='1';");
@@ -190,11 +347,140 @@ namespace ObiGarm.Regisrarura
                                                          $"values('{surname}', '{name}', '{patramic}', '{year_birthday}', '{id_sex}', '{id_country}', '{id_province}',  str_to_date('{datetime_start}', '%m-%d-%Y %H:%i'), str_to_date('{datetime_end}', '%m-%d-%Y %H:%i'), '{vrach_id}', '{room_id}', '{type_money}', '{number_money}', '{number_order}', '{id_kort}', '{DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")}');";
 
 
+            if (listArkhiv!=null)
+            {
+                int count =Convert.ToInt32((date_end_dey.Value - date_first_dey.Value).TotalDays)+1;
+                if (txt_count_dey.Text!= count.ToString())
+                {
+                    MessageBox.Show("Шумо наметавонед муштариро кушоед \nШумо рузро хато интихоб кардед!");
+                    return;
+                }
+            }
+
+            //txt_kort.Text = sql_add_client;
+            if (surname == "" ) { msg("Шумо насаби муштариро дохил накардед!"); return; }
+            else if (name == "" ) { msg("Шумо номи муштариро дохил накардед!"); return; }
+            else if (vrach_id == "" || vrach_id == null) { msg("Шумо ба муштари табиб интихоб накардед!"); return; }
+            else if (room_id == "" || room_id == null) { msg("Шумо ба муштари хучра интихоб накардед!"); return; }
+            else if (number_money == null || number_money == "") { number_money = "0"; }
+            else if (kord == "" ) { msg("Шумо ба муштари корт интихоб накардед!"); return; }
+
+            else if (surname != "" && name != "" && id_sex != "" && type_money != "" && vrach_id != "" && room_id != "" && kord != "")
+            {
+                int result = sqlConfiguration.sqlQuery(sql_add_client);
+                if (result == 500)
+                {
+                    msg("Хатоги ба вучуд омад!");
+
+                    txt_full_name.Text = sql_add_client;
+                }
+                else
+                {
+                    msg("Шумо бо мувафақият муштариро сабт намудед!");
+
+                    string sql_plus_room = $"update room SET count_per = count_per +1  where id = '{id_room}' ";
+                    sqlConfiguration.sqlSelectQuery(sql_plus_room);
+
+                    string sql_check_active = $"SELECT * FROM room where id = '{id_room}'; ";
+                    DataTable data_table_check = sqlConfiguration.sqlSelectQuery(sql_check_active);
+
+
+                    if (data_table_check.Rows[0]["max_per"].ToString() == data_table_check.Rows[0]["count_per"].ToString())
+                    {
+                        string _room_sql = $"update room SET active = '1' where id = {id_room}";
+                        sqlConfiguration.sqlSelectQuery(_room_sql);
+                    }
+
+                    string _kort_sql = $"update kort SET active = '1' where id = {id_kort}";
+                    sqlConfiguration.sqlSelectQuery(_kort_sql);
+
+                    string sql = $"update users SET summa_cliet = summa_cliet + 1 where id = '{id_vrach}';";
+                    sqlConfiguration.sqlSelectQuery(sql);
+                    
+                    if (isClient!=null)
+                    {
+                        //txt_full_name.Text = sql_add_client;
+                        this.isClient.display();
+                        this.Close();
+                    }
+
+                    if (listArkhiv != null)
+                    {
+                        string sqlDeleteAdmin = $"update client set deleted= '{DateTime.Now.ToString("yyyy'-'MM'-'dd'_'HH':'mm':'ss")}',  enable='0' where id = '" + id_client + "'";
+                        int res2 = sqlConfiguration.sqlQuery(sqlDeleteAdmin);
+                        listArkhiv.click_home();
+                        this.Close();
+                    }
+
+                    if (arkhivForm != null)
+                    {
+                        arkhivForm.click_home();
+                        this.Close();
+                    }
+
+                    clear_all();
+                }
+            }
+        }
+
+        void editClient(string id_client)
+        {
+            
+
+            string name = "", surname = "", patramic = "";
+            string[] split_full_name = txt_full_name.Text.Split(new char[] { ' ' });
+
+            for (int i = 0; i < split_full_name.Length; i++)
+            {
+                if (i == 0) surname = split_full_name[i];
+                if (i == 1) name = split_full_name[i];
+                if (i == 3) patramic = split_full_name[i];
+            }
+
+            string year_birthday = txt_year_burthday.Value.ToString();
+            string id_sex = com_sex.SelectedValue.ToString();
+            string id_country = combo_country.SelectedValue.ToString();
+            string id_province;
+            if (combo_province.Text != "")
+            {
+                id_province = combo_province.SelectedValue.ToString();
+
+            }
+            else
+            {
+                id_province = "9";
+            }
+
+            string datetime_start = date_first_dey.Value.ToString("MM-dd-yyyy") + " " + Convert.ToDateTime("09:00").ToString("H:mm");
+            string datetime_end = date_end_dey.Value.ToString("MM-dd-yyyy") + " " + Convert.ToDateTime("18:00").ToString("H:mm");
+
+
+            string vrach_id = id_vrach;
+            string room_id = id_room;
+
+            string type_money = combo_country.SelectedValue.ToString();
+
+            string number_money = txt_number_money.Text;
+            string number_order = txt_number_order.Text;
+
+            string kord = id_kort;
+
+            if (number_order == "" || number_order == null)
+            {
+                number_order = "0";
+            }
+
+            txt_kort.Enabled = false;
+
+            string sql_add_client = "UPDATE client SET " +
+              $"surname='{surname}', name='{name}', patromic='{patramic}', year_birthday='{year_birthday}', id_sex='{id_sex}', id_county='{id_country}', id_province='{id_province}', date_time_start=str_to_date('{datetime_start}', '%m-%d-%Y %H:%i'), date_time_end=str_to_date('{datetime_end}', '%m-%d-%Y %H:%i'), id_varch='{vrach_id}', id_room='{room_id}', id_type_money={type_money}, nuber_money='{number_money}', number_order='{number_order}', id_kort='{id_kort}' WHERE id = '{id_client}';  "; 
+
+
             //txt_kort.Text = sql_add_client;
             if (surname == "") { msg("Шумо насаби муштариро дохил накардед!"); return; }
             else if (name == "") { msg("Шумо номи муштариро дохил накардед!"); return; }
-            else if (vrach_id == "") { msg("Шумо ба муштари табиб интихоб накардед!"); return; }
-            else if (room_id == "") { msg("Шумо ба муштари хучра интихоб накардед!"); return; }
+            else if (vrach_id == "" )  { msg("Шумо ба муштари табиб интихоб накардед!"); return; }
+            else if (room_id == "" ) { msg("Шумо ба муштари хучра интихоб накардед!"); return; }
             else if (kord == "") { msg("Шумо ба муштари корт интихоб накардед!"); return; }
 
             else if (surname != "" && name != "" && id_sex != "" && type_money != "" && vrach_id != "" && room_id != "" && kord != "")
@@ -228,11 +514,34 @@ namespace ObiGarm.Regisrarura
 
                     string sql = $"update users SET summa_cliet = summa_cliet + 1 where id = '{id_vrach}';";
                     sqlConfiguration.sqlSelectQuery(sql);
+
+                    if (isClient != null)
+                    {
+                        txt_full_name.Text = sql_add_client;
+                        this.isClient.display();
+                        this.Close();
+                    }
                     clear_all();
                 }
             }
         }
 
+        void check_kort(string txt_kod_kort)
+        {
+            DataTable dataTable_kort = sqlConfiguration.sqlSelectQuery($"SELECT * FROM kort where kod_kort='{txt_kod_kort}' and active ='0' and enable ='1';");
+
+            if (dataTable_kort.Rows.Count == 0)
+            {
+                label_info_for_kort.BackColor = Color.Red;
+                label_info_for_kort.Text = "Чунин корт вучуд надорад!!!";
+            }
+            else
+            {
+                label_info_for_kort.BackColor = Color.Green;
+                label_info_for_kort.Text = "Чунин корт вучуд дорад!!!";
+
+            }
+        }
         void clear_all()
         {
             txt_full_name.Clear();
@@ -245,17 +554,33 @@ namespace ObiGarm.Regisrarura
 
         private void btn_creat_Click(object sender, EventArgs e)
         {
-           addClient();
+            if (btn_creat.Text=="Сохтан")
+            {
+                addClient();
+            }
+            if (btn_creat.Text == "Иваз кардан")
+            {
+                editClient(id_client);
+            }
         }
 
         private void AddCllient_Shown(object sender, EventArgs e)
         {
             sqlConfiguration = new SqlConfiguration();
+
             loadItemsCombos();
 
-            if (id_client!="" && txt_button=="Иваз кардан")
+            if (id_client!="" && txt_button== "Иваз кардан")
             {
                 setTextTotextbox(id_client);
+                btn_creat.Text = "Иваз кардан";
+                return;
+            }
+            if (id_client != "")
+            {
+                setTextTotextbox(id_client);
+                btn_creat.Text = "Сохтан";
+                return;
             }
         }
         public static string CapitalizeFirstLetters(string sValue)
@@ -288,25 +613,6 @@ namespace ObiGarm.Regisrarura
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar)) e.Handled = true; 
         }
 
-
-        private void radio_is_money_CheckedChanged(object sender, EventArgs e)
-        {
-            btn_creat.Text = "Ба хазинадор фиристондан";
-            txt_number_order.Enabled = false;
-            txt_number_order.Text = "";
-        }
-
-        private void radio_no_money_CheckedChanged(object sender, EventArgs e)
-        {
-            btn_creat.Text = "Ба табиб фиристондан";
-            txt_number_order.Enabled = true;
-          
-        }
-
-        private void combo_country_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            displayItemComboPtovince(combo_country.SelectedValue.ToString());
-        }
 
         private void date_end_dey_ValueChanged(object sender, EventArgs e)
         {
@@ -387,11 +693,13 @@ namespace ObiGarm.Regisrarura
 
         private void txt_kort_TextChange(object sender, EventArgs e)
         {
+            check_kort(txt_kort.Text);
             if (txt_kort.Text.Length == 20)
             {
                 txt_kort.Text = txt_kort.Text.Substring(10, 10);
                 txt_full_name.Focus();
                 txt_kort.Focus();
+                check_kort(txt_kort.Text);
             }
         }
 
@@ -406,11 +714,20 @@ namespace ObiGarm.Regisrarura
         {
             if (txt_count_dey.Text!="")
             {
-                if (date_first_dey.Value >= date_end_dey.Value.AddDays(double.Parse(txt_count_dey.Text))) msg("Шумо аз рузи авалла хурд ё баробар интихоб карда наметавонед!");
+                if (date_first_dey.Value > date_first_dey.Value.AddDays(double.Parse(txt_count_dey.Text) - 1))
+                {
+                    msg("Шумо аз рузи авалла хурд ё баробар интихоб карда наметавонед!");
+                    return;
+                }
 
-                else date_end_dey.Value = date_end_dey.Value.AddDays(double.Parse(txt_count_dey.Text));
+                else date_end_dey.Value = date_first_dey.Value.AddDays(double.Parse(txt_count_dey.Text) - 1);
             }
             
+        }
+
+        private void combo_country_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            displayItemComboPtovince(combo_country.SelectedValue.ToString());
         }
     }
 }

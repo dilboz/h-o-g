@@ -47,7 +47,7 @@ namespace ObiGarm.Regisrarura
 
             string sql = $"UPDATE client SET nuber_money = '{number_money}', number_order = '{nuber_order}' WHERE id = '{id}'";
 
-            if (nuber_order!="")
+            if (nuber_order!="" || nuber_order != "0")
             {
                 if (number_money != "")
                 {
@@ -106,6 +106,15 @@ namespace ObiGarm.Regisrarura
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
             {
                 e.Handled = true;
+            }
+        }
+
+        private void btn_save_money_Click_1(object sender, EventArgs e)
+        {
+            if (txt_number_money.Text!="0" || txt_number_money.Text!="")
+            {
+                add_money(id_client_me);
+                noClientYet_from.display();
             }
         }
     }

@@ -48,7 +48,7 @@ namespace ObiGarm.Regisrarura
 
             if (id_client == null)
             {
-                MessageBox.Show("Шумо ба врач равон карда наметавонд");
+                MessageBox.Show("Шумо иваз карда наметавнонед!!");
             }
             else
             {
@@ -93,8 +93,22 @@ namespace ObiGarm.Regisrarura
 
         private void btn_home_Click(object sender, EventArgs e)
         {
-            AddCllient addCllient = new AddCllient();
+            AddCllient addCllient = new AddCllient(this, "","");
             addCllient.ShowDialog();
+        }
+
+        private void grid_view_is_client_RowStyle(object sender, DevExpress.XtraGrid.Views.Grid.RowStyleEventArgs e)
+        {
+            DateTime datetime_clients = Convert.ToDateTime(grid_view_is_client.GetRowCellValue(e.RowHandle, "date_time_end"));
+
+            if (DateTime.Now >= datetime_clients)
+            {
+                e.Appearance.BackColor = Color.FromArgb(255, 165, 175);
+            }
+            else
+            {
+                e.Appearance.BackColor = Color.White;
+            }
         }
     }
 }

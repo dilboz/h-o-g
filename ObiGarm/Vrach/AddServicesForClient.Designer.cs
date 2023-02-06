@@ -54,23 +54,27 @@
             this.label_date = new System.Windows.Forms.Label();
             this.date = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label_services = new System.Windows.Forms.Label();
-            this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.id_services = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.datagridview_services = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.id_services = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label_vrach = new System.Windows.Forms.Label();
-            this.name_spit = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel_time = new System.Windows.Forms.Panel();
             this.datagridview_time = new Guna.UI2.WinForms.Guna2DataGridView();
             this.time = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label_time = new System.Windows.Forms.Label();
             this.datagridview_vrach = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.name_spit = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel_spitsalist = new System.Windows.Forms.Panel();
             this.datagridview_date = new Guna.UI2.WinForms.Guna2DataGridView();
             this.tableLayoutPanel_full = new System.Windows.Forms.TableLayoutPanel();
             this.panel_services_for_client = new System.Windows.Forms.Panel();
             this.datagridview_allServicesClient = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.name_spitsalist = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.name_services = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.time_services = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.enable = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.edit = new System.Windows.Forms.DataGridViewImageColumn();
             this.delete = new System.Windows.Forms.DataGridViewImageColumn();
             this.label_allServicesClient = new System.Windows.Forms.Label();
@@ -122,6 +126,7 @@
             this.btn_creat.TabIndex = 1;
             this.btn_creat.Text = "Сохтан";
             this.btn_creat.UseVisualStyleBackColor = false;
+            this.btn_creat.Click += new System.EventHandler(this.btn_creat_Click);
             // 
             // panel_botton
             // 
@@ -182,26 +187,6 @@
             this.label_services.TabIndex = 2;
             this.label_services.Text = "Хизматрасонӣ";
             // 
-            // name
-            // 
-            this.name.DataPropertyName = "name";
-            this.name.FillWeight = 39.37896F;
-            this.name.HeaderText = "Номи хизматрасони";
-            this.name.Name = "name";
-            this.name.ReadOnly = true;
-            // 
-            // id_services
-            // 
-            this.id_services.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.id_services.DataPropertyName = "id";
-            this.id_services.FillWeight = 50F;
-            this.id_services.HeaderText = "ID";
-            this.id_services.MinimumWidth = 50;
-            this.id_services.Name = "id_services";
-            this.id_services.ReadOnly = true;
-            this.id_services.Visible = false;
-            this.id_services.Width = 50;
-            // 
             // datagridview_services
             // 
             this.datagridview_services.AllowUserToAddRows = false;
@@ -261,6 +246,22 @@
             this.datagridview_services.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.White;
             this.datagridview_services.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.datagridview_services_CellClick);
             // 
+            // id_services
+            // 
+            this.id_services.DataPropertyName = "id";
+            this.id_services.HeaderText = "id";
+            this.id_services.Name = "id_services";
+            this.id_services.ReadOnly = true;
+            this.id_services.Visible = false;
+            // 
+            // name
+            // 
+            this.name.DataPropertyName = "name";
+            this.name.FillWeight = 39.37896F;
+            this.name.HeaderText = "Номи хизматрасони";
+            this.name.Name = "name";
+            this.name.ReadOnly = true;
+            // 
             // label_vrach
             // 
             this.label_vrach.Dock = System.Windows.Forms.DockStyle.Top;
@@ -271,14 +272,6 @@
             this.label_vrach.Size = new System.Drawing.Size(305, 18);
             this.label_vrach.TabIndex = 2;
             this.label_vrach.Text = "Табибон";
-            // 
-            // name_spit
-            // 
-            this.name_spit.DataPropertyName = "name";
-            this.name_spit.FillWeight = 39.37896F;
-            this.name_spit.HeaderText = "Насаб ва номи табиб";
-            this.name_spit.Name = "name_spit";
-            this.name_spit.ReadOnly = true;
             // 
             // panel_time
             // 
@@ -385,6 +378,7 @@
             this.datagridview_vrach.ColumnHeadersHeight = 30;
             this.datagridview_vrach.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.datagridview_vrach.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.id,
             this.name_spit});
             dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle11.BackColor = System.Drawing.Color.White;
@@ -424,6 +418,22 @@
             this.datagridview_vrach.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(108)))), ((int)(((byte)(59)))));
             this.datagridview_vrach.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.White;
             this.datagridview_vrach.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.datagridview_vrach_CellClick);
+            // 
+            // id
+            // 
+            this.id.DataPropertyName = "id";
+            this.id.HeaderText = "id";
+            this.id.Name = "id";
+            this.id.ReadOnly = true;
+            this.id.Visible = false;
+            // 
+            // name_spit
+            // 
+            this.name_spit.DataPropertyName = "name";
+            this.name_spit.FillWeight = 39.37896F;
+            this.name_spit.HeaderText = "Насаб ва номи табиб";
+            this.name_spit.Name = "name_spit";
+            this.name_spit.ReadOnly = true;
             // 
             // panel_spitsalist
             // 
@@ -537,8 +547,11 @@
             this.datagridview_allServicesClient.ColumnHeadersHeight = 30;
             this.datagridview_allServicesClient.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.datagridview_allServicesClient.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
             this.name_spitsalist,
             this.name_services,
+            this.time_services,
+            this.enable,
             this.edit,
             this.delete});
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -556,12 +569,12 @@
             this.datagridview_allServicesClient.ReadOnly = true;
             this.datagridview_allServicesClient.RowHeadersVisible = false;
             this.datagridview_allServicesClient.Size = new System.Drawing.Size(1247, 289);
-            this.datagridview_allServicesClient.TabIndex = 3;
+            this.datagridview_allServicesClient.TabIndex = 6;
             this.datagridview_allServicesClient.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.datagridview_allServicesClient.ThemeStyle.AlternatingRowsStyle.Font = null;
             this.datagridview_allServicesClient.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.datagridview_allServicesClient.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(108)))), ((int)(((byte)(59)))));
-            this.datagridview_allServicesClient.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.datagridview_allServicesClient.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.datagridview_allServicesClient.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
             this.datagridview_allServicesClient.ThemeStyle.BackColor = System.Drawing.Color.White;
             this.datagridview_allServicesClient.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.datagridview_allServicesClient.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
@@ -576,14 +589,27 @@
             this.datagridview_allServicesClient.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.datagridview_allServicesClient.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.datagridview_allServicesClient.ThemeStyle.RowsStyle.Height = 22;
-            this.datagridview_allServicesClient.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(108)))), ((int)(((byte)(59)))));
-            this.datagridview_allServicesClient.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.datagridview_allServicesClient.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.datagridview_allServicesClient.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.datagridview_allServicesClient.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.datagridview_allServicesClient_CellContentClick);
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "id";
+            this.dataGridViewTextBoxColumn1.FillWeight = 50F;
+            this.dataGridViewTextBoxColumn1.HeaderText = "ID";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 50;
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Visible = false;
+            this.dataGridViewTextBoxColumn1.Width = 50;
             // 
             // name_spitsalist
             // 
             this.name_spitsalist.DataPropertyName = "name_spitsalist";
             this.name_spitsalist.FillWeight = 39.37896F;
-            this.name_spitsalist.HeaderText = "Насаб ва номи табиб";
+            this.name_spitsalist.HeaderText = "Мутахасис";
             this.name_spitsalist.Name = "name_spitsalist";
             this.name_spitsalist.ReadOnly = true;
             // 
@@ -594,6 +620,22 @@
             this.name_services.HeaderText = "Хизматрасони";
             this.name_services.Name = "name_services";
             this.name_services.ReadOnly = true;
+            // 
+            // time_services
+            // 
+            this.time_services.DataPropertyName = "time_services";
+            this.time_services.FillWeight = 39.37896F;
+            this.time_services.HeaderText = "Вақт";
+            this.time_services.Name = "time_services";
+            this.time_services.ReadOnly = true;
+            // 
+            // enable
+            // 
+            this.enable.DataPropertyName = "enable";
+            this.enable.HeaderText = "";
+            this.enable.Name = "enable";
+            this.enable.ReadOnly = true;
+            this.enable.Visible = false;
             // 
             // edit
             // 
@@ -609,6 +651,7 @@
             this.edit.MinimumWidth = 50;
             this.edit.Name = "edit";
             this.edit.ReadOnly = true;
+            this.edit.Visible = false;
             this.edit.Width = 50;
             // 
             // delete
@@ -624,7 +667,6 @@
             this.delete.MinimumWidth = 50;
             this.delete.Name = "delete";
             this.delete.ReadOnly = true;
-            this.delete.Visible = false;
             this.delete.Width = 50;
             // 
             // label_allServicesClient
@@ -720,11 +762,6 @@
         private Guna.UI2.WinForms.Guna2MessageDialog messDilalog;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel_full;
         private System.Windows.Forms.Panel panel_services_for_client;
-        private Guna.UI2.WinForms.Guna2DataGridView datagridview_allServicesClient;
-        private System.Windows.Forms.DataGridViewTextBoxColumn name_spitsalist;
-        private System.Windows.Forms.DataGridViewTextBoxColumn name_services;
-        private System.Windows.Forms.DataGridViewImageColumn edit;
-        private System.Windows.Forms.DataGridViewImageColumn delete;
         private System.Windows.Forms.Label label_allServicesClient;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel_top;
         private System.Windows.Forms.Panel panel_time;
@@ -733,16 +770,25 @@
         private System.Windows.Forms.Label label_time;
         private System.Windows.Forms.Panel panel_spitsalist;
         private Guna.UI2.WinForms.Guna2DataGridView datagridview_vrach;
-        private System.Windows.Forms.DataGridViewTextBoxColumn name_spit;
         private System.Windows.Forms.Label label_vrach;
         private System.Windows.Forms.Panel panel_services;
         private Guna.UI2.WinForms.Guna2DataGridView datagridview_services;
-        private System.Windows.Forms.DataGridViewTextBoxColumn id_services;
-        private System.Windows.Forms.DataGridViewTextBoxColumn name;
         private System.Windows.Forms.Label label_services;
         private System.Windows.Forms.Panel panel_date;
         private Guna.UI2.WinForms.Guna2DataGridView datagridview_date;
         private System.Windows.Forms.DataGridViewTextBoxColumn date;
         private System.Windows.Forms.Label label_date;
+        private System.Windows.Forms.DataGridViewTextBoxColumn id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn name_spit;
+        private System.Windows.Forms.DataGridViewTextBoxColumn id_services;
+        private System.Windows.Forms.DataGridViewTextBoxColumn name;
+        private Guna.UI2.WinForms.Guna2DataGridView datagridview_allServicesClient;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn name_spitsalist;
+        private System.Windows.Forms.DataGridViewTextBoxColumn name_services;
+        private System.Windows.Forms.DataGridViewTextBoxColumn time_services;
+        private System.Windows.Forms.DataGridViewTextBoxColumn enable;
+        private System.Windows.Forms.DataGridViewImageColumn edit;
+        private System.Windows.Forms.DataGridViewImageColumn delete;
     }
 }

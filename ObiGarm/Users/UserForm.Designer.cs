@@ -50,17 +50,18 @@
             this.reports_button = new System.Windows.Forms.Button();
             this.servises_frame_panel = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.button_country = new System.Windows.Forms.Button();
             this.bonk_button = new System.Windows.Forms.Button();
             this.btn_kort = new System.Windows.Forms.Button();
             this.servicesis_btn = new System.Windows.Forms.Button();
             this.frame_and_room = new System.Windows.Forms.Button();
             this.panel_left = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel_top = new System.Windows.Forms.Panel();
             this.logout_button = new System.Windows.Forms.Button();
             this.user_info_label = new System.Windows.Forms.Label();
             this.panel_child_all = new System.Windows.Forms.Panel();
             this.formAssistant1 = new DevExpress.XtraBars.FormAssistant();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel_user.SuspendLayout();
             this.panel_menu.SuspendLayout();
             this.panel_reports.SuspendLayout();
@@ -68,8 +69,8 @@
             this.servises_frame_panel.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel_left.SuspendLayout();
-            this.panel_top.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel_top.SuspendLayout();
             this.SuspendLayout();
             // 
             // actions_button
@@ -80,7 +81,7 @@
             this.actions_button.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold);
             this.actions_button.ForeColor = System.Drawing.Color.White;
             this.actions_button.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.actions_button.Location = new System.Drawing.Point(0, 534);
+            this.actions_button.Location = new System.Drawing.Point(0, 568);
             this.actions_button.Name = "actions_button";
             this.actions_button.Size = new System.Drawing.Size(258, 35);
             this.actions_button.TabIndex = 34;
@@ -96,7 +97,7 @@
             this.export_database_button.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold);
             this.export_database_button.ForeColor = System.Drawing.Color.White;
             this.export_database_button.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.export_database_button.Location = new System.Drawing.Point(0, 499);
+            this.export_database_button.Location = new System.Drawing.Point(0, 533);
             this.export_database_button.Name = "export_database_button";
             this.export_database_button.Size = new System.Drawing.Size(258, 35);
             this.export_database_button.TabIndex = 33;
@@ -307,14 +308,14 @@
             this.panel_menu.Controls.Add(this.main_button);
             this.panel_menu.Location = new System.Drawing.Point(4, 75);
             this.panel_menu.Name = "panel_menu";
-            this.panel_menu.Size = new System.Drawing.Size(258, 739);
+            this.panel_menu.Size = new System.Drawing.Size(258, 756);
             this.panel_menu.TabIndex = 3;
             // 
             // panel_reports
             // 
             this.panel_reports.Controls.Add(this.panel_report_menu);
             this.panel_reports.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel_reports.Location = new System.Drawing.Point(0, 604);
+            this.panel_reports.Location = new System.Drawing.Point(0, 638);
             this.panel_reports.Name = "panel_reports";
             this.panel_reports.Size = new System.Drawing.Size(258, 113);
             this.panel_reports.TabIndex = 36;
@@ -389,7 +390,7 @@
             this.reports_button.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold);
             this.reports_button.ForeColor = System.Drawing.Color.White;
             this.reports_button.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.reports_button.Location = new System.Drawing.Point(0, 569);
+            this.reports_button.Location = new System.Drawing.Point(0, 603);
             this.reports_button.Name = "reports_button";
             this.reports_button.Size = new System.Drawing.Size(258, 35);
             this.reports_button.TabIndex = 35;
@@ -404,20 +405,40 @@
             this.servises_frame_panel.Dock = System.Windows.Forms.DockStyle.Top;
             this.servises_frame_panel.Location = new System.Drawing.Point(0, 355);
             this.servises_frame_panel.Name = "servises_frame_panel";
-            this.servises_frame_panel.Size = new System.Drawing.Size(258, 144);
+            this.servises_frame_panel.Size = new System.Drawing.Size(258, 178);
             this.servises_frame_panel.TabIndex = 37;
             this.servises_frame_panel.Visible = false;
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.button_country);
             this.panel2.Controls.Add(this.bonk_button);
             this.panel2.Controls.Add(this.btn_kort);
             this.panel2.Controls.Add(this.servicesis_btn);
             this.panel2.Controls.Add(this.frame_and_room);
-            this.panel2.Location = new System.Drawing.Point(8, 0);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(198, 140);
+            this.panel2.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.panel2.Size = new System.Drawing.Size(258, 178);
             this.panel2.TabIndex = 5;
+            // 
+            // button_country
+            // 
+            this.button_country.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button_country.FlatAppearance.BorderSize = 0;
+            this.button_country.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_country.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold);
+            this.button_country.ForeColor = System.Drawing.Color.White;
+            this.button_country.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.button_country.Location = new System.Drawing.Point(5, 140);
+            this.button_country.Name = "button_country";
+            this.button_country.Size = new System.Drawing.Size(253, 35);
+            this.button_country.TabIndex = 34;
+            this.button_country.Text = "Кишвархо ва шаҳрҳо";
+            this.button_country.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button_country.UseVisualStyleBackColor = true;
+            this.button_country.Click += new System.EventHandler(this.button1_Click);
             // 
             // bonk_button
             // 
@@ -427,9 +448,9 @@
             this.bonk_button.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold);
             this.bonk_button.ForeColor = System.Drawing.Color.White;
             this.bonk_button.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.bonk_button.Location = new System.Drawing.Point(0, 105);
+            this.bonk_button.Location = new System.Drawing.Point(5, 105);
             this.bonk_button.Name = "bonk_button";
-            this.bonk_button.Size = new System.Drawing.Size(198, 35);
+            this.bonk_button.Size = new System.Drawing.Size(253, 35);
             this.bonk_button.TabIndex = 32;
             this.bonk_button.Text = "Бонкҳо";
             this.bonk_button.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -444,9 +465,9 @@
             this.btn_kort.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold);
             this.btn_kort.ForeColor = System.Drawing.Color.White;
             this.btn_kort.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btn_kort.Location = new System.Drawing.Point(0, 70);
+            this.btn_kort.Location = new System.Drawing.Point(5, 70);
             this.btn_kort.Name = "btn_kort";
-            this.btn_kort.Size = new System.Drawing.Size(198, 35);
+            this.btn_kort.Size = new System.Drawing.Size(253, 35);
             this.btn_kort.TabIndex = 31;
             this.btn_kort.Text = "Кортхо";
             this.btn_kort.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -461,9 +482,9 @@
             this.servicesis_btn.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold);
             this.servicesis_btn.ForeColor = System.Drawing.Color.White;
             this.servicesis_btn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.servicesis_btn.Location = new System.Drawing.Point(0, 35);
+            this.servicesis_btn.Location = new System.Drawing.Point(5, 35);
             this.servicesis_btn.Name = "servicesis_btn";
-            this.servicesis_btn.Size = new System.Drawing.Size(198, 35);
+            this.servicesis_btn.Size = new System.Drawing.Size(253, 35);
             this.servicesis_btn.TabIndex = 30;
             this.servicesis_btn.Text = "Намуди хизматрасониҳо";
             this.servicesis_btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -478,9 +499,9 @@
             this.frame_and_room.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold);
             this.frame_and_room.ForeColor = System.Drawing.Color.White;
             this.frame_and_room.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.frame_and_room.Location = new System.Drawing.Point(0, 0);
+            this.frame_and_room.Location = new System.Drawing.Point(5, 0);
             this.frame_and_room.Name = "frame_and_room";
-            this.frame_and_room.Size = new System.Drawing.Size(198, 35);
+            this.frame_and_room.Size = new System.Drawing.Size(253, 35);
             this.frame_and_room.TabIndex = 29;
             this.frame_and_room.Text = "Биноҳо ва ҳучраҳо";
             this.frame_and_room.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -495,8 +516,20 @@
             this.panel_left.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel_left.Location = new System.Drawing.Point(0, 0);
             this.panel_left.Name = "panel_left";
-            this.panel_left.Size = new System.Drawing.Size(268, 780);
+            this.panel_left.Size = new System.Drawing.Size(268, 843);
             this.panel_left.TabIndex = 4;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pictureBox1.Image = global::ObiGarm.Properties.Resources.logo;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(268, 69);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // panel_top
             // 
@@ -546,27 +579,15 @@
             this.panel_child_all.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_child_all.Location = new System.Drawing.Point(268, 55);
             this.panel_child_all.Name = "panel_child_all";
-            this.panel_child_all.Size = new System.Drawing.Size(1093, 725);
+            this.panel_child_all.Size = new System.Drawing.Size(1093, 788);
             this.panel_child_all.TabIndex = 6;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pictureBox1.Image = global::ObiGarm.Properties.Resources.logo;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(268, 69);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // UserForm
             // 
             this.Appearance.Options.UseFont = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1361, 780);
+            this.ClientSize = new System.Drawing.Size(1361, 843);
             this.Controls.Add(this.panel_child_all);
             this.Controls.Add(this.panel_top);
             this.Controls.Add(this.panel_left);
@@ -586,8 +607,8 @@
             this.servises_frame_panel.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel_left.ResumeLayout(false);
-            this.panel_top.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel_top.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -626,5 +647,6 @@
         private System.Windows.Forms.Button registr_button;
         private System.Windows.Forms.Button vrach_button;
         private System.Windows.Forms.Button admin_button;
+        private System.Windows.Forms.Button button_country;
     }
 }

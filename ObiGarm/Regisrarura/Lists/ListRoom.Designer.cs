@@ -142,12 +142,14 @@
             // 
             // search_list_room
             // 
+            this.search_list_room.Client = this.list_load_room;
             this.search_list_room.Dock = System.Windows.Forms.DockStyle.Top;
             this.search_list_room.Location = new System.Drawing.Point(15, 81);
             this.search_list_room.Name = "search_list_room";
             this.search_list_room.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Repository.ClearButton(),
             new DevExpress.XtraEditors.Repository.SearchButton()});
+            this.search_list_room.Properties.Client = this.list_load_room;
             this.search_list_room.Size = new System.Drawing.Size(630, 20);
             this.search_list_room.TabIndex = 37;
             // 

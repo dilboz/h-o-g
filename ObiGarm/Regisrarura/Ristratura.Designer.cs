@@ -107,7 +107,7 @@
             this.btn_archive.Name = "btn_archive";
             this.btn_archive.Size = new System.Drawing.Size(327, 56);
             this.btn_archive.TabIndex = 10;
-            this.btn_archive.Text = "Архив";
+            this.btn_archive.Text = "Бойгонӣ (Архив)";
             this.btn_archive.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_archive.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_archive.UseVisualStyleBackColor = true;
@@ -146,7 +146,7 @@
             this.btn_block_client.Name = "btn_block_client";
             this.btn_block_client.Size = new System.Drawing.Size(327, 56);
             this.btn_block_client.TabIndex = 10;
-            this.btn_block_client.Text = "Истироҳаткунандагоне ки\r\nрузи боқимонда доранд";
+            this.btn_block_client.Text = "Истироҳаткунандагоне, ки\r\nрузҳои боқимонда доранд";
             this.btn_block_client.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_block_client.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_block_client.UseVisualStyleBackColor = true;
@@ -185,7 +185,7 @@
             this.btn_not_order.Name = "btn_not_order";
             this.btn_not_order.Size = new System.Drawing.Size(327, 56);
             this.btn_not_order.TabIndex = 8;
-            this.btn_not_order.Text = "Истироҳаткунандагон\r\nордер надошта";
+            this.btn_not_order.Text = "Истироҳаткунандагоне, ки\r\nбе ордер сабт шудаанд";
             this.btn_not_order.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_not_order.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_not_order.UseVisualStyleBackColor = true;

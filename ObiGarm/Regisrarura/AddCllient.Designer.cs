@@ -861,7 +861,7 @@
             this.label4.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.label4.Size = new System.Drawing.Size(258, 15);
             this.label4.TabIndex = 30;
-            this.label4.Text = "Аз кай";
+            this.label4.Text = "То кай";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // panel2
@@ -1087,6 +1087,7 @@
             this.combo_country.Name = "combo_country";
             this.combo_country.Size = new System.Drawing.Size(755, 26);
             this.combo_country.TabIndex = 3;
+            this.combo_country.SelectedIndexChanged += new System.EventHandler(this.combo_country_SelectedIndexChanged);
             // 
             // label1
             // 

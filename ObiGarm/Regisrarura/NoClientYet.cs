@@ -45,7 +45,7 @@ namespace ObiGarm.Regisrarura
             string id = grid_view_yet_no_client.GetRowCellValue(grid_view_yet_no_client.FocusedRowHandle, grid_view_yet_no_client.Columns["id"]).ToString();
             if (id == null)
             {
-                MessageBox.Show("Шумо ба врач ордер монда наметонед");
+                MessageBox.Show("Шумо ба истирҳаткунанда ордер монда наметонед");
             }
             else
             {

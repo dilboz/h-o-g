@@ -60,7 +60,7 @@
             this.grid_yet_not_client.Name = "grid_yet_not_client";
             this.grid_yet_not_client.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.to_vrach});
-            this.grid_yet_not_client.Size = new System.Drawing.Size(1185, 472);
+            this.grid_yet_not_client.Size = new System.Drawing.Size(1359, 526);
             this.grid_yet_not_client.TabIndex = 0;
             this.grid_yet_not_client.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.grid_view_yet_no_client});
@@ -236,7 +236,7 @@
             this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1205, 492);
+            this.ClientSize = new System.Drawing.Size(1379, 546);
             this.Controls.Add(this.grid_yet_not_client);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.IconOptions.ShowIcon = false;

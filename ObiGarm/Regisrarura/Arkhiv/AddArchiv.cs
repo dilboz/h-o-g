@@ -17,9 +17,9 @@ namespace ObiGarm.Regisrarura.Arkhiv
         SqlConfiguration sqlConfiguration;
 
         private readonly IsClient isClient;
-        string id_client;
-
-        DateTime cur_start_time, cur_end_time;
+        private string id_client;
+        private int full_day;
+        private bool set;
 
         public AddArchiv(IsClient isClient, string client_id)
         {
@@ -31,50 +31,21 @@ namespace ObiGarm.Regisrarura.Arkhiv
 
         void set_info(string id)
         {
-            string select_sql = "select concat(client.surname, ' ', client.name, ' ', client.patromic ) as 'full_name',  client.count_day, client.date_time_start, client.date_time_end " +
+            string select_sql = "select concat(client.surname, ' ', client.name, ' ', client.patromic ) as 'full_name',  client.date_time_start, client.date_time_end " +
                 "from client " +
                 $"where client.id='{id}';";
 
             DataTable dataTable_info = sqlConfiguration.sqlSelectQuery(select_sql);
 
             txt_full_name.Text = dataTable_info.Rows[0]["full_name"].ToString();
-            txt_count_day.Text = dataTable_info.Rows[0]["count_day"].ToString();
 
-           cur_start_time = date_first_dey.Value = Convert.ToDateTime(dataTable_info.Rows[0]["date_time_start"].ToString());
-           cur_end_time = date_end_dey.Value = Convert.ToDateTime(dataTable_info.Rows[0]["date_time_end"].ToString());
+            date_first_dey.Value = DateTime.Parse(dataTable_info.Rows[0]["date_time_start"].ToString()) ;
+            date_end_dey.Value = DateTime.Parse(dataTable_info.Rows[0]["date_time_end"].ToString());
+            full_day = Convert.ToInt32((date_end_dey.Value - date_first_dey.Value).TotalDays);
 
-            count_day_for_arkhiv(date_first_dey.Value, date_end_dey.Value);
+            //MessageBox.Show(full_day.ToString());
         }
 
-        void count_day_for_arkhiv(DateTime strt_time, DateTime end_time)
-        {
-            DateTime start_date = strt_time;
-            DateTime end_date = end_time; ;
-
-            int count = 0;
-            while (start_date <= end_date)
-            {
-                count++;
-                start_date = start_date.AddDays(1);
-            }
-
-            if ((int.Parse(txt_count_day.Text) - count)<0)
-            {
-                MessageBox.Show("Шумо рузҳоро зиёд карда истодаед!");
-                date_first_dey.Value = cur_start_time;
-                date_end_dey.Value = cur_end_time;
-            }
-            else
-            {
-                txt_day_to_arkhiv.Text = (int.Parse(txt_count_day.Text) - count).ToString();
-            }
-            
-        }
-
-        private void date_end_dey_ValueChanged(object sender, EventArgs e)
-        {
-            count_day_for_arkhiv(date_first_dey.Value, date_end_dey.Value);
-        }
 
         void edit_for_arkhiv(string id)
         {
@@ -85,30 +56,63 @@ namespace ObiGarm.Regisrarura.Arkhiv
             string up_date_client = "UPDATE client SET " +
                 $"date_time_start =  str_to_date('{datetime_start}', '%m.%d.%Y %H:%i'), " +
                 $"date_time_end = str_to_date('{datetime_end}', '%m.%d.%Y %H:%i'), " +
-                $"dey_is_arkhiv = '{day_to_arkhiv}', " +
-                $"is_for_vrach = '0', " +
-                $"is_arkhiv = '1' " +
+                $"count_day_to_arkhiv = '{day_to_arkhiv}', " +
+                $"enable = '0' " +
                 $"WHERE id = '{id}'";
-
-
-            if (day_to_arkhiv != "0")
+            if (set==true)
             {
-                int result = sqlConfiguration.sqlQuery(up_date_client);
-                if (result == 500)
+                if (day_to_arkhiv != "0")
                 {
-                    txt_full_name.Text = up_date_client;
-                    MessageBox.Show("Хатоги ба вучуд омад!", "Сообщения", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    int result = sqlConfiguration.sqlQuery(up_date_client);
+                    if (result == 500)
+                    {
+                        txt_full_name.Text = up_date_client;
+                        MessageBox.Show("Хатоги ба вучуд омад!", "Сообщения", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    else
+                    {
+                        this.Close();
+                        isClient.display();
+                    }
                 }
                 else
                 {
-                    this.Close();
-                    isClient.display();
+                    MessageBox.Show("Шумо бо 0 руз махкам карда наметавонед!");
                 }
             }
             else
             {
-                MessageBox.Show("Шумо бо 0 руз махкам карда наметавонед!");
+                MessageBox.Show("Шумо наметавонед муштариро махкам кунед \nШумо рузро хато интихоб кардед!");
             }
+           
+        }
+
+
+        private void AddArchiv_Shown(object sender, EventArgs e)
+        {
+            set_info(this.id_client);
+        }
+
+
+        private void btn_save_money_Click(object sender, EventArgs e)
+        {
+            edit_for_arkhiv(this.id_client);
+        }
+
+        private void date_end_dey_ValueChanged(object sender, EventArgs e)
+        {
+            int count_day_maq = Convert.ToInt32((date_end_dey.Value - date_first_dey.Value).TotalDays);
+
+            if (full_day - count_day_maq < 0 || full_day - count_day_maq > full_day)
+            {
+                MessageBox.Show("Шумо наметавонед муштариро махкам кунед \nШумо рузро хато интихоб кардед!");
+                set = false;
+            }
+            else{
+                txt_day_to_arkhiv.Text = Convert.ToString(full_day - count_day_maq);
+                set = true;
+            }
+            
         }
 
         private void btn_exit_Click(object sender, EventArgs e)
@@ -116,14 +120,6 @@ namespace ObiGarm.Regisrarura.Arkhiv
             this.Close();
         }
 
-        private void AddArchiv_Shown(object sender, EventArgs e)
-        {
-            set_info(this.id_client);
-        }
 
-        private void btn_save_money_Click(object sender, EventArgs e)
-        {
-            edit_for_arkhiv(this.id_client);
-        }
     }
 }

@@ -103,26 +103,35 @@ namespace ObiGarm.Regisrarura
         private void btn_not_order_Click(object sender, EventArgs e)
         {
             colorsButton(1);
+            openChildForm(new NoClientYet());
         }
 
         private void btn_home_Click(object sender, EventArgs e)
         {
             colorsButton(0);
+            openChildForm(new IsClient());
         }
 
         private void btn_block_client_Click(object sender, EventArgs e)
         {
             colorsButton(2);
+            openChildForm(new ListArkhiv(this));
         }
 
         private void btn_archive_Click(object sender, EventArgs e)
         {
             colorsButton(3);
+            openChildForm(new ArkhivForm(this));
         }
 
         private void panel_child_all_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+        public void click_home()
+        {
+            colorsButton(0);
+            openChildForm(new IsClient());
         }
 
         private void btn_logut_Click(object sender, EventArgs e)

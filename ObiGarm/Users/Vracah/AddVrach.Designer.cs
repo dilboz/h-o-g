@@ -75,6 +75,8 @@
             this.lbl_surname = new System.Windows.Forms.Label();
             this.txt_name = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
             this.lbl_name = new System.Windows.Forms.Label();
+            this.combo_manitor = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.label_manitor = new System.Windows.Forms.Label();
             this.panel_ful.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.group_add_vrach)).BeginInit();
             this.group_add_vrach.SuspendLayout();
@@ -94,11 +96,13 @@
             this.panel_ful.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_ful.Location = new System.Drawing.Point(20, 20);
             this.panel_ful.Name = "panel_ful";
-            this.panel_ful.Size = new System.Drawing.Size(552, 512);
+            this.panel_ful.Size = new System.Drawing.Size(552, 577);
             this.panel_ful.TabIndex = 0;
             // 
             // group_add_vrach
             // 
+            this.group_add_vrach.Controls.Add(this.combo_manitor);
+            this.group_add_vrach.Controls.Add(this.label_manitor);
             this.group_add_vrach.Controls.Add(this.panel_time_work);
             this.group_add_vrach.Controls.Add(this.txt_room_number);
             this.group_add_vrach.Controls.Add(this.lbl_room_number);
@@ -117,7 +121,7 @@
             this.group_add_vrach.Location = new System.Drawing.Point(0, 0);
             this.group_add_vrach.Name = "group_add_vrach";
             this.group_add_vrach.Padding = new System.Windows.Forms.Padding(10);
-            this.group_add_vrach.Size = new System.Drawing.Size(552, 512);
+            this.group_add_vrach.Size = new System.Drawing.Size(552, 577);
             this.group_add_vrach.TabIndex = 0;
             this.group_add_vrach.Text = "Сохтани табиб";
             // 
@@ -256,7 +260,7 @@
             this.panel_botton.Controls.Add(this.lbl_tab);
             this.panel_botton.Controls.Add(this.btn_creat);
             this.panel_botton.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel_botton.Location = new System.Drawing.Point(12, 456);
+            this.panel_botton.Location = new System.Drawing.Point(12, 521);
             this.panel_botton.Name = "panel_botton";
             this.panel_botton.Padding = new System.Windows.Forms.Padding(8);
             this.panel_botton.Size = new System.Drawing.Size(528, 44);
@@ -735,6 +739,36 @@
             this.lbl_name.Text = "Ном:";
             this.lbl_name.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // combo_manitor
+            // 
+            this.combo_manitor.BackColor = System.Drawing.Color.Transparent;
+            this.combo_manitor.BorderRadius = 10;
+            this.combo_manitor.Dock = System.Windows.Forms.DockStyle.Top;
+            this.combo_manitor.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.combo_manitor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.combo_manitor.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.combo_manitor.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.combo_manitor.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.combo_manitor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.combo_manitor.ItemHeight = 30;
+            this.combo_manitor.Location = new System.Drawing.Point(12, 465);
+            this.combo_manitor.Name = "combo_manitor";
+            this.combo_manitor.Size = new System.Drawing.Size(528, 36);
+            this.combo_manitor.TabIndex = 38;
+            // 
+            // label_manitor
+            // 
+            this.label_manitor.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label_manitor.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_manitor.Location = new System.Drawing.Point(12, 450);
+            this.label_manitor.Margin = new System.Windows.Forms.Padding(0);
+            this.label_manitor.Name = "label_manitor";
+            this.label_manitor.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.label_manitor.Size = new System.Drawing.Size(528, 15);
+            this.label_manitor.TabIndex = 37;
+            this.label_manitor.Text = "Экрани намоиш:";
+            this.label_manitor.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // AddVrach
             // 
             this.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -742,7 +776,7 @@
             this.Appearance.Options.UseFont = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(592, 552);
+            this.ClientSize = new System.Drawing.Size(592, 617);
             this.Controls.Add(this.panel_ful);
             this.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -798,5 +832,7 @@
         private System.Windows.Forms.Panel panel_start_work;
         private DevExpress.XtraEditors.TimeEdit txt_time_start_work;
         private System.Windows.Forms.Label lbl_start_work;
+        private Guna.UI2.WinForms.Guna2ComboBox combo_manitor;
+        private System.Windows.Forms.Label label_manitor;
     }
 }

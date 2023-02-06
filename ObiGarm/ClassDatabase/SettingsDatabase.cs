@@ -29,13 +29,13 @@ namespace ObiGarm.ClassDatabase
 
         public static string setNmaeCountryToTextbox(string id)
         {
-            DataTable dataTable_sex = sqlConfiguration.sqlSelectQuery($"select * from sex where id= '{id}';");
+            DataTable dataTable_sex = sqlConfiguration.sqlSelectQuery($"select * from country where id= '{id}';");
             return dataTable_sex.Rows[0]["name"].ToString();
         }
 
         public static string setNmaeSexToTextbox(string id)
         {
-            DataTable dataTable_sex = sqlConfiguration.sqlSelectQuery($"select * from country where id= '{id}';");
+            DataTable dataTable_sex = sqlConfiguration.sqlSelectQuery($"select * from sex where id= '{id}';");
             return dataTable_sex.Rows[0]["name"].ToString();
         }
 
