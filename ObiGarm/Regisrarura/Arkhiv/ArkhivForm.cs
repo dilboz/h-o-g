@@ -47,12 +47,10 @@ namespace ObiGarm.Regisrarura.Arkhiv
             string id_client = grid_view_client.GetRowCellValue(grid_view_client.FocusedRowHandle, grid_view_client.Columns["id"]).ToString();
 
             if (id_client == null)
-            {
                 MessageBox.Show("Шумо иваз карда наметавнонед!!");
-            }
             else
             {
-                AddCllient addCllient = new AddCllient(this, id_client, "");
+                AddCllient addCllient = new AddCllient(this, id_client, "Сабт кардан");
                 addCllient.ShowDialog();
             }
         }

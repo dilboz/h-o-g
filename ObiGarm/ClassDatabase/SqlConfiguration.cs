@@ -198,6 +198,47 @@ namespace ObiGarm.ClassDatabase
             }
         }
 
+        public void LoadComboDE(string sql, string name_collum, string valus_colum, DevExpress.XtraEditors.LookUpEdit combo)
+        {
+            try
+            {
+                openConnection();
+                cmd = new MySqlCommand();
+                dataAdapter = new MySqlDataAdapter();
+                dataTable = new DataTable();
+
+
+                cmd.Connection = connection;
+                cmd.CommandText = sql;
+                dataAdapter.SelectCommand = cmd;
+                dataAdapter.Fill(dataTable);
+
+                if (dataTable.Rows.Count != null || dataTable.Rows.Count != null)
+                {
+
+                    combo.Properties.DataSource= dataTable;
+
+                    combo.Properties.DisplayMember = name_collum;
+                    combo.Properties.ValueMember = valus_colum;
+
+                }
+
+
+            }
+
+            catch (Exception ex)
+            {
+
+            }
+            finally
+            {
+                closeConnection();
+                cmd = null;
+                dataAdapter = null;
+                dataTable = null;
+            }
+        }
+
         public void LoadCombo(string sql, string name_collum, string valus_colum, Guna.UI2.WinForms.Guna2ComboBox combo)
         {
             try
@@ -273,6 +314,22 @@ namespace ObiGarm.ClassDatabase
                 dataAdapter = null;
                 dataTable = null;
             }
+        }
+    }
+    public class PersonInfo
+    {
+        private string _id;
+        private string _name;
+
+        public PersonInfo(string id, string name)
+        {
+            _id = id;
+            _name = name;
+        }
+
+        public override string ToString()
+        {
+            return _id + " " + _name;
         }
     }
 }

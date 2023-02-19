@@ -137,9 +137,9 @@
             </Paragraphs>
             <rd:DefaultName>Textbox3</rd:DefaultName>
             <Top>0.27652in</Top>
-            <Left>0.10851in</Left>
+            <Left>0.10847in</Left>
             <Height>0.25in</Height>
-            <Width>7.81144in</Width>
+            <Width>5.35074in</Width>
             <ZIndex>2</ZIndex>
             <Style>
               <Border>
@@ -500,7 +500,7 @@
             <Top>2.02652in</Top>
             <Left>0.10852in</Left>
             <Height>0.25in</Height>
-            <Width>4.29859in</Width>
+            <Width>4.06947in</Width>
             <ZIndex>9</ZIndex>
             <Style>
               <Border>
@@ -598,7 +598,7 @@
             <Top>2.52652in</Top>
             <Left>0.10852in</Left>
             <Height>0.27042in</Height>
-            <Width>4.29859in</Width>
+            <Width>4.06947in</Width>
             <ZIndex>11</ZIndex>
             <Style>
               <Border>
@@ -644,10 +644,10 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox3</rd:DefaultName>
-            <Top>2.79694in</Top>
-            <Left>0.10852in</Left>
+            <Top>3.04694in</Top>
+            <Left>0.10857in</Left>
             <Height>0.25in</Height>
-            <Width>4.29859in</Width>
+            <Width>4.06947in</Width>
             <ZIndex>12</ZIndex>
             <Style>
               <Border>
@@ -693,10 +693,10 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox3</rd:DefaultName>
-            <Top>3.04694in</Top>
-            <Left>0.10852in</Left>
+            <Top>3.29694in</Top>
+            <Left>0.10857in</Left>
             <Height>0.26389in</Height>
-            <Width>4.29859in</Width>
+            <Width>4.06947in</Width>
             <ZIndex>13</ZIndex>
             <Style>
               <Border>
@@ -742,10 +742,10 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox3</rd:DefaultName>
-            <Top>3.31083in</Top>
-            <Left>0.1085in</Left>
+            <Top>3.56083in</Top>
+            <Left>0.10852in</Left>
             <Height>0.25653in</Height>
-            <Width>4.29861in</Width>
+            <Width>4.06952in</Width>
             <ZIndex>14</ZIndex>
             <Style>
               <Border>
@@ -791,10 +791,10 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox3</rd:DefaultName>
-            <Top>3.31736in</Top>
-            <Left>4.40708in</Left>
+            <Top>2.79694in</Top>
+            <Left>0.10857in</Left>
             <Height>0.25in</Height>
-            <Width>3.51287in</Width>
+            <Width>4.06947in</Width>
             <ZIndex>15</ZIndex>
             <Style>
               <Border>
@@ -814,227 +814,41 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Нишонахои табобат</Value>
+                    <Value>Нишонахои табобат: </Value>
                     <Style>
                       <FontStyle>Normal</FontStyle>
                       <FontFamily>Palatino Linotype</FontFamily>
                       <FontWeight>Bold</FontWeight>
                       <TextDecoration>None</TextDecoration>
-                      <Color>#000000</Color>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value>=Parameters!nishonai_tabobat.Value</Value>
+                    <Style>
+                      <FontStyle>Normal</FontStyle>
+                      <FontFamily>Palatino Linotype</FontFamily>
+                      <FontWeight>Bold</FontWeight>
+                      <TextDecoration>None</TextDecoration>
                     </Style>
                   </TextRun>
                 </TextRuns>
                 <Style>
-                  <TextAlign>Center</TextAlign>
+                  <TextAlign>Left</TextAlign>
                 </Style>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox3</rd:DefaultName>
             <Top>2.02652in</Top>
-            <Left>4.40708in</Left>
-            <Height>0.23611in</Height>
-            <Width>3.51283in</Width>
+            <Left>4.17794in</Left>
+            <Height>0.25in</Height>
+            <Width>3.74202in</Width>
             <ZIndex>16</ZIndex>
             <Style>
               <Border>
-                <Style>None</Style>
-              </Border>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
-            </Style>
-          </Textbox>
-          <Textbox Name="Textbox19">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>Хуб: </Value>
-                    <Style>
-                      <FontStyle>Normal</FontStyle>
-                      <FontFamily>Palatino Linotype</FontFamily>
-                      <FontWeight>Normal</FontWeight>
-                      <TextDecoration>None</TextDecoration>
-                      <Color>#000000</Color>
-                    </Style>
-                  </TextRun>
-                  <TextRun>
-                    <Value>_________________</Value>
-                    <Style>
-                      <FontStyle>Normal</FontStyle>
-                      <FontFamily>Palatino Linotype</FontFamily>
-                      <FontWeight>Bold</FontWeight>
-                      <TextDecoration>None</TextDecoration>
-                      <Color>#000000</Color>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style>
-                  <TextAlign>Left</TextAlign>
-                </Style>
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>Textbox3</rd:DefaultName>
-            <Top>2.27652in</Top>
-            <Left>4.40708in</Left>
-            <Height>0.25in</Height>
-            <Width>3.51287in</Width>
-            <ZIndex>17</ZIndex>
-            <Style>
-              <Border>
                 <Color>DimGray</Color>
                 <Style>Solid</Style>
               </Border>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
-            </Style>
-          </Textbox>
-          <Textbox Name="Textbox20">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>Бехбуди:</Value>
-                    <Style>
-                      <FontStyle>Normal</FontStyle>
-                      <FontFamily>Palatino Linotype</FontFamily>
-                      <FontWeight>Normal</FontWeight>
-                      <TextDecoration>None</TextDecoration>
-                      <Color>#000000</Color>
-                    </Style>
-                  </TextRun>
-                  <TextRun>
-                    <Value>______________</Value>
-                    <Style>
-                      <FontStyle>Normal</FontStyle>
-                      <FontFamily>Palatino Linotype</FontFamily>
-                      <FontWeight>Bold</FontWeight>
-                      <TextDecoration>None</TextDecoration>
-                      <Color>#000000</Color>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style>
-                  <TextAlign>Left</TextAlign>
-                </Style>
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>Textbox3</rd:DefaultName>
-            <Top>2.52652in</Top>
-            <Left>4.40708in</Left>
-            <Height>0.27042in</Height>
-            <Width>3.51287in</Width>
-            <ZIndex>18</ZIndex>
-            <Style>
-              <Border>
-                <Color>DimGray</Color>
-                <Style>Solid</Style>
-              </Border>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
-            </Style>
-          </Textbox>
-          <Textbox Name="Textbox21">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>Бетагир:</Value>
-                    <Style>
-                      <FontStyle>Normal</FontStyle>
-                      <FontFamily>Palatino Linotype</FontFamily>
-                      <FontWeight>Normal</FontWeight>
-                      <TextDecoration>None</TextDecoration>
-                      <Color>#000000</Color>
-                    </Style>
-                  </TextRun>
-                  <TextRun>
-                    <Value>_________</Value>
-                    <Style>
-                      <FontStyle>Normal</FontStyle>
-                      <FontFamily>Palatino Linotype</FontFamily>
-                      <FontWeight>Bold</FontWeight>
-                      <TextDecoration>None</TextDecoration>
-                      <Color>#000000</Color>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style>
-                  <TextAlign>Left</TextAlign>
-                </Style>
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>Textbox3</rd:DefaultName>
-            <Top>2.79694in</Top>
-            <Left>4.40708in</Left>
-            <Height>0.25in</Height>
-            <Width>3.51287in</Width>
-            <ZIndex>19</ZIndex>
-            <Style>
-              <Border>
-                <Color>DimGray</Color>
-                <Style>Solid</Style>
-              </Border>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
-            </Style>
-          </Textbox>
-          <Textbox Name="Textbox22">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>Холати бад: </Value>
-                    <Style>
-                      <FontStyle>Normal</FontStyle>
-                      <FontFamily>Palatino Linotype</FontFamily>
-                      <FontWeight>Normal</FontWeight>
-                      <TextDecoration>None</TextDecoration>
-                      <Color>#000000</Color>
-                    </Style>
-                  </TextRun>
-                  <TextRun>
-                    <Value>______</Value>
-                    <Style>
-                      <FontStyle>Normal</FontStyle>
-                      <FontFamily>Palatino Linotype</FontFamily>
-                      <FontWeight>Bold</FontWeight>
-                      <TextDecoration>None</TextDecoration>
-                      <Color>#000000</Color>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style>
-                  <TextAlign>Left</TextAlign>
-                </Style>
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>Textbox3</rd:DefaultName>
-            <Top>3.04694in</Top>
-            <Left>4.40708in</Left>
-            <Height>0.27042in</Height>
-            <Width>3.51287in</Width>
-            <ZIndex>20</ZIndex>
-            <Style>
-              <Border>
-                <Color>DimGray</Color>
-                <Style>Solid</Style>
-              </Border>
+              <BackgroundColor>Silver</BackgroundColor>
               <PaddingLeft>2pt</PaddingLeft>
               <PaddingRight>2pt</PaddingRight>
               <PaddingTop>2pt</PaddingTop>
@@ -1074,11 +888,11 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox3</rd:DefaultName>
-            <Top>3.56736in</Top>
-            <Left>0.1085in</Left>
-            <Height>0.25in</Height>
-            <Width>2.5243in</Width>
-            <ZIndex>21</ZIndex>
+            <Top>3.04694in</Top>
+            <Left>4.17794in</Left>
+            <Height>0.26389in</Height>
+            <Width>3.74207in</Width>
+            <ZIndex>17</ZIndex>
             <Style>
               <Border>
                 <Color>DimGray</Color>
@@ -1123,11 +937,11 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox3</rd:DefaultName>
-            <Top>3.56736in</Top>
-            <Left>2.6328in</Left>
-            <Height>0.25in</Height>
-            <Width>3.19791in</Width>
-            <ZIndex>22</ZIndex>
+            <Top>3.31083in</Top>
+            <Left>4.17794in</Left>
+            <Height>0.25653in</Height>
+            <Width>3.74197in</Width>
+            <ZIndex>18</ZIndex>
             <Style>
               <Border>
                 <Color>DimGray</Color>
@@ -1172,11 +986,11 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox3</rd:DefaultName>
-            <Top>3.81736in</Top>
-            <Left>0.10852in</Left>
+            <Top>2.27652in</Top>
+            <Left>4.17799in</Left>
             <Height>0.25in</Height>
-            <Width>2.01407in</Width>
-            <ZIndex>23</ZIndex>
+            <Width>3.74202in</Width>
+            <ZIndex>19</ZIndex>
             <Style>
               <Border>
                 <Color>DimGray</Color>
@@ -1222,11 +1036,11 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox3</rd:DefaultName>
-            <Top>3.81736in</Top>
-            <Left>2.12259in</Left>
-            <Height>0.25in</Height>
-            <Width>2.64215in</Width>
-            <ZIndex>24</ZIndex>
+            <Top>2.52652in</Top>
+            <Left>4.17799in</Left>
+            <Height>0.27042in</Height>
+            <Width>3.74197in</Width>
+            <ZIndex>20</ZIndex>
             <Style>
               <Border>
                 <Color>DimGray</Color>
@@ -1272,11 +1086,11 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox3</rd:DefaultName>
-            <Top>3.81736in</Top>
-            <Left>4.76474in</Left>
-            <Height>0.25083in</Height>
-            <Width>3.15521in</Width>
-            <ZIndex>25</ZIndex>
+            <Top>2.79694in</Top>
+            <Left>4.17799in</Left>
+            <Height>0.25in</Height>
+            <Width>3.74197in</Width>
+            <ZIndex>21</ZIndex>
             <Style>
               <Border>
                 <Color>DimGray</Color>
@@ -1313,10 +1127,10 @@
             </Paragraphs>
             <rd:DefaultName>Textbox3</rd:DefaultName>
             <Top>3.56736in</Top>
-            <Left>5.83071in</Left>
+            <Left>4.17794in</Left>
             <Height>0.25in</Height>
-            <Width>2.0892in</Width>
-            <ZIndex>26</ZIndex>
+            <Width>3.74197in</Width>
+            <ZIndex>22</ZIndex>
             <Style>
               <Border>
                 <Color>DimGray</Color>
@@ -1335,7 +1149,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Хамрадиф:_________________________________</Value>
+                    <Value>Хамрадиф:_______________________________________________________________________________________________</Value>
                     <Style>
                       <FontStyle>Normal</FontStyle>
                       <FontFamily>Palatino Linotype</FontFamily>
@@ -1351,11 +1165,11 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox3</rd:DefaultName>
-            <Top>4.06819in</Top>
-            <Left>4.39319in</Left>
-            <Height>0.26389in</Height>
-            <Width>3.52676in</Width>
-            <ZIndex>27</ZIndex>
+            <Top>4.08208in</Top>
+            <Left>0.10847in</Left>
+            <Height>0.25in</Height>
+            <Width>7.81144in</Width>
+            <ZIndex>23</ZIndex>
             <Style>
               <Border>
                 <Color>DimGray</Color>
@@ -1374,7 +1188,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Ташхиси асоси: __________________________________</Value>
+                    <Value>Ташхиси асоси: ___________________________________________________________________________________________</Value>
                     <Style>
                       <FontStyle>Normal</FontStyle>
                       <FontFamily>Palatino Linotype</FontFamily>
@@ -1390,11 +1204,11 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox3</rd:DefaultName>
-            <Top>4.06736in</Top>
-            <Left>0.10851in</Left>
+            <Top>3.81736in</Top>
+            <Left>0.10847in</Left>
             <Height>0.26472in</Height>
-            <Width>4.2847in</Width>
-            <ZIndex>28</ZIndex>
+            <Width>7.81144in</Width>
+            <ZIndex>24</ZIndex>
             <Style>
               <Border>
                 <Color>DimGray</Color>
@@ -1443,7 +1257,7 @@
             <Left>5.08766in</Left>
             <Height>0.25in</Height>
             <Width>2.83226in</Width>
-            <ZIndex>29</ZIndex>
+            <ZIndex>25</ZIndex>
             <Style>
               <Border>
                 <Color>DimGray</Color>
@@ -1491,8 +1305,8 @@
             <Top>2.27652in</Top>
             <Left>1.98005in</Left>
             <Height>0.25in</Height>
-            <Width>2.42706in</Width>
-            <ZIndex>30</ZIndex>
+            <Width>2.19794in</Width>
+            <ZIndex>26</ZIndex>
             <Style>
               <Border>
                 <Color>DimGray</Color>
@@ -1561,7 +1375,7 @@
             <Left>0.1085in</Left>
             <Height>0.23611in</Height>
             <Width>7.81146in</Width>
-            <ZIndex>31</ZIndex>
+            <ZIndex>27</ZIndex>
             <Style>
               <Border>
                 <Color>DimGray</Color>
@@ -1610,7 +1424,7 @@
             <Left>5.45919in</Left>
             <Height>0.25in</Height>
             <Width>2.46074in</Width>
-            <ZIndex>32</ZIndex>
+            <ZIndex>28</ZIndex>
             <Style>
               <Border>
                 <Color>DimGray</Color>
@@ -1627,7 +1441,7 @@
             <Left>0.10851in</Left>
             <Height>0in</Height>
             <Width>7.81141in</Width>
-            <ZIndex>33</ZIndex>
+            <ZIndex>29</ZIndex>
             <Style>
               <Border>
                 <Style>Solid</Style>
@@ -1875,8 +1689,8 @@
             <Top>4.6793in</Top>
             <Left>0.10851in</Left>
             <Height>0.5in</Height>
-            <Width>7.95035in</Width>
-            <ZIndex>34</ZIndex>
+            <Width>7.95034in</Width>
+            <ZIndex>30</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -1884,6 +1698,66 @@
               <Color>DimGray</Color>
             </Style>
           </Tablix>
+          <Textbox Name="Textbox34">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Ордер</Value>
+                    <Style>
+                      <FontStyle>Normal</FontStyle>
+                      <FontFamily>Palatino Linotype</FontFamily>
+                      <FontWeight>Bold</FontWeight>
+                      <TextDecoration>None</TextDecoration>
+                      <Color>#000000</Color>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value>: </Value>
+                    <Style>
+                      <FontStyle>Normal</FontStyle>
+                      <FontFamily>Palatino Linotype</FontFamily>
+                      <FontWeight>Normal</FontWeight>
+                      <TextDecoration>None</TextDecoration>
+                      <Color>#000000</Color>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value>=Parameters!order.Value</Value>
+                    <Style>
+                      <FontStyle>Normal</FontStyle>
+                      <FontFamily>Palatino Linotype</FontFamily>
+                      <FontWeight>Normal</FontWeight>
+                      <TextDecoration>None</TextDecoration>
+                      <Color>#000000</Color>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Left</TextAlign>
+                </Style>
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox3</rd:DefaultName>
+            <Top>0.27652in</Top>
+            <Left>5.45917in</Left>
+            <Height>0.25in</Height>
+            <Width>2.46074in</Width>
+            <ZIndex>31</ZIndex>
+            <Style>
+              <Border>
+                <Color>DimGray</Color>
+                <Style>Solid</Style>
+              </Border>
+              <BackgroundColor>Silver</BackgroundColor>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
         </ReportItems>
         <Height>5.1793in</Height>
         <Style>
@@ -1985,11 +1859,19 @@
       <DataType>String</DataType>
       <Prompt>ReportParameter1</Prompt>
     </ReportParameter>
+    <ReportParameter Name="nishonai_tabobat">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="order">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
   </ReportParameters>
   <ReportParametersLayout>
     <GridLayoutDefinition>
       <NumberOfColumns>4</NumberOfColumns>
-      <NumberOfRows>6</NumberOfRows>
+      <NumberOfRows>7</NumberOfRows>
       <CellDefinitions>
         <CellDefinition>
           <ColumnIndex>3</ColumnIndex>
@@ -2090,6 +1972,16 @@
           <ColumnIndex>2</ColumnIndex>
           <RowIndex>5</RowIndex>
           <ParameterName>doctor</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>3</ColumnIndex>
+          <RowIndex>5</RowIndex>
+          <ParameterName>nishonai_tabobat</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>6</RowIndex>
+          <ParameterName>order</ParameterName>
         </CellDefinition>
       </CellDefinitions>
     </GridLayoutDefinition>

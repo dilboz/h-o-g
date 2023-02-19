@@ -27,6 +27,32 @@ namespace ObiGarm.ClassDatabase
             sqlConfiguration = new SqlConfiguration();
         }
 
+        public static bool setFaleActiveKort(string id)
+        {
+            string query = $"UPDATE kort SET active = '0' WHERE id = '{id}';";
+            sqlConfiguration.sqlQuery(query);
+            return false;
+        }
+
+        public static bool DeletedClient(string id)
+        {
+            DataTable dataTable = sqlConfiguration.sqlSelectQuery( $"select id_kort from client where  id ='{id}'");
+            setFaleActiveKort(dataTable.Rows[0]["id_kort"].ToString());
+            string query = $"UPDATE client SET enable = '0', deleted = '{DateTime.Now.ToString("yyyy'-'MM'-'dd'_'HH':'mm':'ss")}' WHERE id = '{id}';";
+            sqlConfiguration.sqlQuery(query);
+
+            Console.WriteLine(query);
+
+            return false;
+        }
+
+        public static bool setTrueActiveKort(string id)
+        {
+            string query = $"UPDATE kort SET active = '1' WHERE id = '{id}';";
+            sqlConfiguration.sqlQuery(query);
+            return false;
+        }
+
         public static string setNmaeCountryToTextbox(string id)
         {
             DataTable dataTable_sex = sqlConfiguration.sqlSelectQuery($"select * from country where id= '{id}';");
@@ -47,14 +73,21 @@ namespace ObiGarm.ClassDatabase
 
         public static string setNmaeVrachToTextbox(string id)
         {
-            DataTable dataTable_sex = sqlConfiguration.sqlSelectQuery($"select concat(surname, ' ', name) as 'name'  from users where id= '{id}';");
+            DataTable dataTable_sex = sqlConfiguration.sqlSelectQuery(
+                $"select users.id, concat(users.name, ' ', users.surname, ' (',count(client.id), ')') as name " +
+                $"from users " +
+                $"left join client on client.id_varch= users.id " +
+                $"where users.point=3 and client.deleted is null and users.id = '{id}' " +
+                $"group by users.id " +
+                $"order by count(client.id); ");
             return dataTable_sex.Rows[0]["name"].ToString();
         }
 
         public static string setNmaeRoomToTextbox(string id)
         {
-            DataTable dataTable_sex = sqlConfiguration.sqlSelectQuery($"select concat('Бинои ', frame.name , ' ҳуҷраи ', room.name) as 'name'  from room inner join frame on room.id_freme = frame.id where room.id= '{id}';");
-            return dataTable_sex.Rows[0]["name"].ToString();
+            DataTable dataTable_sex = sqlConfiguration.sqlSelectQuery(
+                $"select r.id, concat(f.name, ' ', r.name) as 'name_room' from room r join frame f on (r.id_freme  = f.id) where r.id ='{id}'");
+            return dataTable_sex.Rows[0]["name_room"].ToString();
         }
 
         public static string setNmaeTypeMoneyToTextbox(string id)

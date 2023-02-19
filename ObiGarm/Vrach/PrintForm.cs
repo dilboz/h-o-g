@@ -33,11 +33,14 @@ namespace ObiGarm.Vrach
         private string nisfiruzi;
         private string begohi;
         private string doctor;
+        private string nishonai_tabobat;
+        private string order;
+
 
         public PrintForm(DataTable datatable, string name_client, string soli_t, string jins, string muhlati_tabobat, string qad,
             string vazn, string hqsina, string qobiliyati_nafaskashi, string sanji_bozuho, string tarkibi_hun,
             string nabz, string harorat, string ekg,
-            string peshob, string najosat, string uzi, string nahory, string nisfiruzi, string begohi, string doctor)
+            string peshob, string najosat, string uzi, string nahory, string nisfiruzi, string begohi, string doctor, string nishonai_tabobat, string order)
         {
             InitializeComponent();
             this.datatabel = datatable;
@@ -61,6 +64,8 @@ namespace ObiGarm.Vrach
             this.nisfiruzi = nisfiruzi == "" ? " " : nisfiruzi;
             this.begohi = begohi == "" ? " " : begohi;
             this.doctor = doctor == "" ? " " : doctor;
+            this.nishonai_tabobat = nishonai_tabobat == "" ? " " : nishonai_tabobat;
+            this.order = order == "" ? " " : order;
         }
 
         private void PrintForm_Load(object sender, EventArgs e)
@@ -109,7 +114,9 @@ namespace ObiGarm.Vrach
                 new Microsoft.Reporting.WinForms.ReportParameter("nahori",  nahory),
                 new Microsoft.Reporting.WinForms.ReportParameter("h_nisfiruzi",  nisfiruzi),
                 new Microsoft.Reporting.WinForms.ReportParameter("h_begohruzi",  begohi),
-                new Microsoft.Reporting.WinForms.ReportParameter("doctor",  doctor)
+                new Microsoft.Reporting.WinForms.ReportParameter("doctor",  doctor),
+                new Microsoft.Reporting.WinForms.ReportParameter("nishonai_tabobat",  nishonai_tabobat),
+                new Microsoft.Reporting.WinForms.ReportParameter("order",  order)
 
            };
             this.reoportviewPrint.LocalReport.SetParameters(p);

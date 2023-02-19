@@ -8,6 +8,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.UI.WebControls;
 using System.Windows.Forms;
 
 namespace ObiGarm.Regisrarura
@@ -63,37 +64,31 @@ namespace ObiGarm.Regisrarura
             DialogResult dialogResult = MessageBox.Show("Шумо дар хакикат " + grid_view_is_client.GetRowCellValue(grid_view_is_client.FocusedRowHandle, grid_view_is_client.Columns["full_name"]).ToString() + " - ро нест кардан мехохед?", "Сообщения", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
             if (dialogResult == DialogResult.Yes)
             {
-                string sqlDeleteAdmin = $"update client set deleted= '{DateTime.Now.ToString("yyyy'-'MM'-'dd'_'HH':'mm':'ss")}',  enable='0' where id = '" + id + "'";
-                int res2 = sqlConfiguration.sqlQuery(sqlDeleteAdmin);
-                if (res2 == 1)
-                {
-                    display();
-
-                }
-                else
-                {
-                    MessageBox.Show("Хатоги хангоми нест кардани Админ!", "Сообщения", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
+                SettingsDatabase.DeletedClient(id);
+                display();
             }
+               
         }
 
         private void pause_btn_Click(object sender, EventArgs e)
         {
-            string id = grid_view_is_client.GetRowCellValue(grid_view_is_client.FocusedRowHandle, grid_view_is_client.Columns["id"]).ToString();
-            if (id == null)
+            string id_client = grid_view_is_client.GetRowCellValue(grid_view_is_client.FocusedRowHandle, grid_view_is_client.Columns["id"]).ToString();
+
+            if (id_client == null)
             {
-                MessageBox.Show("Шумо ба врач равон карда наметавонд");
+                MessageBox.Show("Шумо рузми мондаро махкам карда наметавонед наметавнонед!!");
             }
             else
             {
-                AddArchiv addArchiv = new AddArchiv(this, id);
-                addArchiv.ShowDialog();
+                AddCllient addCllient = new AddCllient(this, id_client, "Махкамкунии руз");
+                addCllient.ShowDialog();
             }
         }
 
         private void btn_home_Click(object sender, EventArgs e)
         {
-            AddCllient addCllient = new AddCllient(this, "","");
+            AddCllient addCllient = new AddCllient(this, "", "Сохтан");
+            
             addCllient.ShowDialog();
         }
 
@@ -101,13 +96,20 @@ namespace ObiGarm.Regisrarura
         {
             DateTime datetime_clients = Convert.ToDateTime(grid_view_is_client.GetRowCellValue(e.RowHandle, "date_time_end"));
 
-            if (DateTime.Now >= datetime_clients)
+            if (DateTime.Now.AddDays(-1) >= datetime_clients)
+            {
+                e.Appearance.BackColor = Color.FromArgb(191, 102, 94);
+                e.HighPriority = true;
+            }
+            else if (DateTime.Now >= datetime_clients)
             {
                 e.Appearance.BackColor = Color.FromArgb(255, 165, 175);
+                e.HighPriority = true;
             }
             else
             {
                 e.Appearance.BackColor = Color.White;
+                e.HighPriority = false;
             }
         }
     }

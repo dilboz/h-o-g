@@ -46,7 +46,7 @@ namespace ObiGarm.Regisrarura.Arkhiv
             }
             else
             {
-                AddCllient addCllient = new AddCllient(this, id_client, "Сохтан");
+                AddCllient addCllient = new AddCllient(this, id_client, "Кушодани руз");
                 addCllient.ShowDialog();
             }
         }

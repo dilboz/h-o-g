@@ -38,6 +38,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel_top = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.btn_chek_kort = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.label1 = new System.Windows.Forms.Label();
             this.print_btn = new Guna.UI2.WinForms.Guna2Button();
             this.combo_client = new Guna.UI2.WinForms.Guna2ComboBox();
             this.check_kort_btn = new Guna.UI2.WinForms.Guna2Button();
@@ -119,7 +120,6 @@
             this.label23 = new System.Windows.Forms.Label();
             this.edit_btn = new System.Windows.Forms.DataGridViewImageColumn();
             this.deleted_btn = new System.Windows.Forms.DataGridViewImageColumn();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel_top.SuspendLayout();
             this.btn_chek_kort.SuspendLayout();
             this.tab_menu.SuspendLayout();
@@ -163,6 +163,18 @@
             this.btn_chek_kort.Name = "btn_chek_kort";
             this.btn_chek_kort.Size = new System.Drawing.Size(1072, 46);
             this.btn_chek_kort.TabIndex = 42;
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(141, 12);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(171, 25);
+            this.label1.TabIndex = 43;
+            this.label1.Text = "Истироҳаткунандагон";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // print_btn
             // 
@@ -575,10 +587,16 @@
             this.com_nishonahoi_tabobat.Font = new System.Drawing.Font("Segoe UI", 8.25F);
             this.com_nishonahoi_tabobat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.com_nishonahoi_tabobat.ItemHeight = 25;
+            this.com_nishonahoi_tabobat.Items.AddRange(new object[] {
+            "Хуб",
+            "Беҳбудӣ",
+            "Бетағйир",
+            "Ҳолати бад"});
             this.com_nishonahoi_tabobat.Location = new System.Drawing.Point(10, 240);
             this.com_nishonahoi_tabobat.Name = "com_nishonahoi_tabobat";
             this.com_nishonahoi_tabobat.Size = new System.Drawing.Size(1221, 31);
             this.com_nishonahoi_tabobat.TabIndex = 32;
+            this.com_nishonahoi_tabobat.SelectionChangeCommitted += new System.EventHandler(this.com_nishonahoi_tabobat_SelectionChangeCommitted);
             // 
             // label24
             // 
@@ -1593,18 +1611,6 @@
             this.deleted_btn.Name = "deleted_btn";
             this.deleted_btn.Visible = false;
             this.deleted_btn.Width = 50;
-            // 
-            // label1
-            // 
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(141, 12);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(171, 25);
-            this.label1.TabIndex = 43;
-            this.label1.Text = "Истироҳаткунандагон";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // MainFormVrach
             // 

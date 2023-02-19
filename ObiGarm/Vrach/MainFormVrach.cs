@@ -19,6 +19,7 @@ namespace ObiGarm.Vrach
         public static bool edit_services_client;
         private string id_client;
         private string name_jins="";
+        private string order = "";
 
         private DataSet dataSet_fro_print;
         public MainFormVrach(string id_vrach)
@@ -40,7 +41,7 @@ namespace ObiGarm.Vrach
 
         void dispaly_info_clients(string id_clients)
         {
-            string sql_query = "select client.id, client.id_varch, sex.name as 'sex', concat(client.surname, ' ', client.name, ' ', client.patromic) as 'full_name',  " +
+            string sql_query = "select client.id, client.number_order, client.id_varch, sex.name as 'sex', concat(client.surname, ' ', client.name, ' ', client.patromic) as 'full_name',  " +
                 "client.year_birthday, client.date_time_start, " +
                 "client.date_time_end, concat(users.surname, ' ', users.name)  as 'name_vrach', concat('Бинои ', frame.name, ' Ҳуҷраи ', room.name) as 'room', " +
                 "room.breakfast, room.lunch, room.dinner  " +
@@ -66,7 +67,7 @@ namespace ObiGarm.Vrach
                 txt_nisfiruzi.Text = _info1.Rows[0]["lunch"].ToString();
                 txt_hurok_begohruzi.Text = _info1.Rows[0]["dinner"].ToString();
                 name_jins = _info1.Rows[0]["sex"].ToString();
-
+                order = _info1.Rows[0]["number_order"].ToString();
                 if (this.id_vrach == _info1.Rows[0]["id_varch"].ToString()) 
                     edit_services_client = true;
                 else edit_services_client = false;
@@ -88,6 +89,7 @@ namespace ObiGarm.Vrach
             DataTable _info2 = sqlConfiguration.sqlSelectQuery(sql_query);
             if (_info2.Rows.Count != 0)
             {
+                com_nishonahoi_tabobat.SelectedIndex = -1;
                 txt_EKG.Text = _info2.Rows[0]["sanjishi_barqii_dil"].ToString();
                 txt_tarkibi_hun.Text = _info2.Rows[0]["sanjishi_tarkibi_hun"].ToString();
                 txt_sanjishi_peshob.Text = _info2.Rows[0]["sanjishi_peshob"].ToString();
@@ -101,6 +103,7 @@ namespace ObiGarm.Vrach
                 txt_fishori_hun.Text = _info2.Rows[0]["fishori_hun"].ToString();
                 txt_nabz.Text = _info2.Rows[0]["nabz"].ToString();
                 txt_harorat.Text = _info2.Rows[0]["harorat"].ToString();
+                com_nishonahoi_tabobat.Text = _info2.Rows[0]["nishonahoi_tabobat"].ToString();
             }
             else
             {
@@ -118,6 +121,7 @@ namespace ObiGarm.Vrach
                 txt_fishori_hun.Text = "";
                 txt_nabz.Text = "";
                 txt_harorat.Text = "";
+                com_nishonahoi_tabobat.SelectedIndex = -1;
             }
 
         }
@@ -310,6 +314,7 @@ namespace ObiGarm.Vrach
             txt_fishori_hun.Enabled = false;
             txt_nabz.Enabled = false;
             txt_harorat.Enabled = false;
+            com_nishonahoi_tabobat.Enabled = false;
         }
 
         void enbled_true()
@@ -327,6 +332,7 @@ namespace ObiGarm.Vrach
             txt_fishori_hun.Enabled = true;
             txt_nabz.Enabled = true;
             txt_harorat.Enabled = true;
+            com_nishonahoi_tabobat.Enabled = true;
         }
 
         private void print_btn_Click(object sender, EventArgs e)
@@ -384,7 +390,7 @@ namespace ObiGarm.Vrach
             
 
             PrintForm printForm  = new PrintForm(dataTable, txt_full_name.Text, txt_year_burhhday.Text, name_jins, string.Concat(txt_start_time.Text, " - ", time_end_time.Text), txt_qad.Text, txt_vazn.Text, txt_hajmi_qafasi_sina.Text, txt_qobiliyati_nafaskashi.Text,
-                txt_quvai_bozuho.Text, txt_tarkibi_hun.Text, txt_nabz.Text, txt_harorat.Text, txt_EKG.Text, txt_sanjishi_peshob.Text, txt_sanjishi_nasoji.Text, txt_ultarasado.Text, txt_time_nahory.Text, txt_nisfiruzi.Text, txt_hurok_begohruzi.Text, txt_name_doctor.Text);
+                txt_quvai_bozuho.Text, txt_tarkibi_hun.Text, txt_nabz.Text, txt_harorat.Text, txt_EKG.Text, txt_sanjishi_peshob.Text, txt_sanjishi_nasoji.Text, txt_ultarasado.Text, txt_time_nahory.Text, txt_nisfiruzi.Text, txt_hurok_begohruzi.Text, txt_name_doctor.Text, com_nishonahoi_tabobat.Text, order );
             printForm.ShowDialog();
         }
 
@@ -420,6 +426,13 @@ namespace ObiGarm.Vrach
         {
             check_id(id_client);
             string sql_query = $"UPDATE info_table_clients SET najsoat = '{txt_sanjishi_nasoji.Text}' WHERE id_clients = '{id_client}';";
+            sqlConfiguration.sqlQuery(sql_query);
+        }
+
+        private void com_nishonahoi_tabobat_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            check_id(id_client);
+            string sql_query = $"UPDATE info_table_clients SET nishonahoi_tabobat = '{com_nishonahoi_tabobat.Text}' WHERE id_clients = '{id_client}';";
             sqlConfiguration.sqlQuery(sql_query);
         }
     }

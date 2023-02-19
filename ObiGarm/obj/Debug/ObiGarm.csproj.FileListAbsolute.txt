@@ -2494,3 +2494,9 @@ D:\git_clone\OBIGARM\ObiGarm\obj\Debug\ObiGarm.Regisrarura.Arkhiv.ArkhivForm.res
 D:\git_clone\OBIGARM\ObiGarm\obj\Debug\ObiGarm.Users.Countr_Pr.addCountry.resources
 D:\git_clone\OBIGARM\ObiGarm\obj\Debug\ObiGarm.Users.Countr_Pr.addPr.resources
 D:\git_clone\OBIGARM\ObiGarm\obj\Debug\ObiGarm.Users.Countr_Pr.CountryRro.resources
+D:\git_clone\OBIGARM\ObiGarm\bin\Debug\DevExpress.XtraWizard.v20.1.dll
+D:\git_clone\OBIGARM\ObiGarm\bin\Debug\DevExpress.XtraWizard.v20.1.xml
+D:\git_clone\OBIGARM\ObiGarm\bin\Debug\de\DevExpress.XtraWizard.v20.1.resources.dll
+D:\git_clone\OBIGARM\ObiGarm\bin\Debug\es\DevExpress.XtraWizard.v20.1.resources.dll
+D:\git_clone\OBIGARM\ObiGarm\bin\Debug\ja\DevExpress.XtraWizard.v20.1.resources.dll
+D:\git_clone\OBIGARM\ObiGarm\bin\Debug\ru\DevExpress.XtraWizard.v20.1.resources.dll
