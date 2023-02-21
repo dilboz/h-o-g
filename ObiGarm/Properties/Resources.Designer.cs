@@ -263,6 +263,26 @@ namespace ObiGarm.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap isEat {
+            get {
+                object obj = ResourceManager.GetObject("isEat", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap isNotMyKort {
+            get {
+                object obj = ResourceManager.GetObject("isNotMyKort", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap login_logo {
             get {
                 object obj = ResourceManager.GetObject("login_logo", resourceCulture);

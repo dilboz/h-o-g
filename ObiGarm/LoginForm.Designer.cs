@@ -157,7 +157,7 @@
             this.txt_login.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txt_login.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_login.DefaultFont = new System.Drawing.Font("Segoe UI Semibold", 9.75F);
-            this.txt_login.DefaultText = "regis";
+            this.txt_login.DefaultText = "tugral90";
             this.txt_login.FillColor = System.Drawing.Color.White;
             this.txt_login.HideSelection = true;
             this.txt_login.IconLeft = null;
@@ -166,7 +166,7 @@
             this.txt_login.IconRight = null;
             this.txt_login.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_login.Lines = new string[] {
-        "regis"};
+        "tugral90"};
             this.txt_login.Location = new System.Drawing.Point(24, 54);
             this.txt_login.MaxLength = 32767;
             this.txt_login.MinimumSize = new System.Drawing.Size(100, 35);
@@ -200,7 +200,7 @@
             this.txt_login.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txt_login.SelectedText = "";
             this.txt_login.SelectionLength = 0;
-            this.txt_login.SelectionStart = 5;
+            this.txt_login.SelectionStart = 0;
             this.txt_login.ShortcutsEnabled = true;
             this.txt_login.Size = new System.Drawing.Size(418, 35);
             this.txt_login.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
@@ -241,7 +241,7 @@
             this.txt_password.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txt_password.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_password.DefaultFont = new System.Drawing.Font("Segoe UI Semibold", 9.75F);
-            this.txt_password.DefaultText = "regis";
+            this.txt_password.DefaultText = "tugral90";
             this.txt_password.FillColor = System.Drawing.Color.White;
             this.txt_password.HideSelection = true;
             this.txt_password.IconLeft = null;
@@ -250,7 +250,7 @@
             this.txt_password.IconRight = null;
             this.txt_password.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_password.Lines = new string[] {
-        "regis"};
+        "tugral90"};
             this.txt_password.Location = new System.Drawing.Point(24, 120);
             this.txt_password.MaxLength = 32767;
             this.txt_password.MinimumSize = new System.Drawing.Size(100, 35);
@@ -284,7 +284,7 @@
             this.txt_password.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txt_password.SelectedText = "";
             this.txt_password.SelectionLength = 0;
-            this.txt_password.SelectionStart = 5;
+            this.txt_password.SelectionStart = 0;
             this.txt_password.ShortcutsEnabled = true;
             this.txt_password.Size = new System.Drawing.Size(418, 35);
             this.txt_password.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;

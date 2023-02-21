@@ -350,10 +350,6 @@ namespace ObiGarm.Vrach
             {   int count_row = 0;
                 foreach (DataGridViewRow row in datagridview_allServicesClient.Rows)
                 {
-                    if (count_row==18)
-                    {
-                        break;
-                    }
                     DataRow dr = dataTable.NewRow();
                     dr[0] = row.Cells["name_spitsalist"].Value.ToString();
                     dr[1] = row.Cells["name_services"].Value.ToString();

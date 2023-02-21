@@ -37,13 +37,14 @@ namespace ObiGarm.Users.Restorant
         {
             string sql = "select users.id, users.name as 'name', users.surname, users.login, users.password, type_kort.name as 'type_kort' " +
                 "from users " +
-                "inner join type_kort on users.type_kort = type_restorant.id " +
+                "inner join type_kort on users.type_kort = type_kort.id " +
                 $"where users.id='{id}'; ";
 
             DataTable dataTable = sqlConfiguration.sqlSelectQuery(sql);
 
             if (dataTable == null)
             {
+                Console.WriteLine(sql);
                 MessageBox.Show("Хатоги ба вучуд омад!!!", "Сообщения", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else

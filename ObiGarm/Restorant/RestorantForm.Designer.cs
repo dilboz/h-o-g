@@ -30,22 +30,13 @@ namespace ObiGarm.Restorant
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RestorantForm));
             this.panel_top = new System.Windows.Forms.Panel();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.labelCountToDay = new System.Windows.Forms.Label();
             this.label_info_user = new System.Windows.Forms.Label();
-            this.panel_button_ans = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
-            this.lbl_info_day = new DevExpress.XtraEditors.LabelControl();
-            this.lbl_info_today = new DevExpress.XtraEditors.LabelControl();
-            this.label_info = new DevExpress.XtraEditors.LabelControl();
+            this.reflashInfo = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.btn_ansver = new DevExpress.XtraEditors.SimpleButton();
-            this.panel_edit_sort = new System.Windows.Forms.Panel();
-            this.txt_kort = new DevExpress.XtraEditors.TextEdit();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
             this.grid_control_is_client = new DevExpress.XtraGrid.GridControl();
             this.grid_view_is_client = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.number_order = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -54,136 +45,76 @@ namespace ObiGarm.Restorant
             this.date_time_start = new DevExpress.XtraGrid.Columns.GridColumn();
             this.date_time_end = new DevExpress.XtraGrid.Columns.GridColumn();
             this.type_kort = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.breakfast = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.lunch = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.dinner = new DevExpress.XtraGrid.Columns.GridColumn();
             this.timer_select_picture = new System.Windows.Forms.Timer(this.components);
+            this.lbl_infoTomorrow = new System.Windows.Forms.Label();
+            this.lbl_info_today = new System.Windows.Forms.Label();
+            this.panelInfoKort = new System.Windows.Forms.Panel();
+            this.pictureInfoKort = new System.Windows.Forms.PictureBox();
+            this.txt_kort = new DevExpress.XtraEditors.TextEdit();
+            this.label_info = new System.Windows.Forms.Label();
             this.panel_top.SuspendLayout();
-            this.panel_button_ans.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel_edit_sort.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_kort.Properties)).BeginInit();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grid_control_is_client)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grid_view_is_client)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panelInfoKort.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureInfoKort)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_kort.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // panel_top
             // 
             this.panel_top.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(143)))), ((int)(((byte)(78)))));
-            this.panel_top.Controls.Add(this.simpleButton1);
+            this.panel_top.Controls.Add(this.labelCountToDay);
             this.panel_top.Controls.Add(this.label_info_user);
             this.panel_top.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_top.Location = new System.Drawing.Point(0, 0);
             this.panel_top.Name = "panel_top";
             this.panel_top.Padding = new System.Windows.Forms.Padding(10);
-            this.panel_top.Size = new System.Drawing.Size(1352, 38);
+            this.panel_top.Size = new System.Drawing.Size(1402, 38);
             this.panel_top.TabIndex = 7;
             // 
-            // simpleButton1
+            // labelCountToDay
             // 
-            this.simpleButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.simpleButton1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(143)))), ((int)(((byte)(78)))));
-            this.simpleButton1.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.simpleButton1.Appearance.ForeColor = System.Drawing.Color.White;
-            this.simpleButton1.Appearance.Options.UseBackColor = true;
-            this.simpleButton1.Appearance.Options.UseFont = true;
-            this.simpleButton1.Appearance.Options.UseForeColor = true;
-            this.simpleButton1.Location = new System.Drawing.Point(1204, 4);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(138, 28);
-            this.simpleButton1.TabIndex = 14;
-            this.simpleButton1.Text = "Аз нав дидан";
-            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
+            this.labelCountToDay.AutoSize = true;
+            this.labelCountToDay.Dock = System.Windows.Forms.DockStyle.Right;
+            this.labelCountToDay.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelCountToDay.ForeColor = System.Drawing.Color.White;
+            this.labelCountToDay.Location = new System.Drawing.Point(1151, 10);
+            this.labelCountToDay.Name = "labelCountToDay";
+            this.labelCountToDay.Size = new System.Drawing.Size(241, 19);
+            this.labelCountToDay.TabIndex = 18;
+            this.labelCountToDay.Text = "Одамони ируз меомада: 0 нафар";
             // 
             // label_info_user
             // 
             this.label_info_user.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(143)))), ((int)(((byte)(78)))));
-            this.label_info_user.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label_info_user.Dock = System.Windows.Forms.DockStyle.Left;
             this.label_info_user.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_info_user.ForeColor = System.Drawing.Color.White;
             this.label_info_user.Location = new System.Drawing.Point(10, 10);
             this.label_info_user.Name = "label_info_user";
-            this.label_info_user.Size = new System.Drawing.Size(1332, 18);
+            this.label_info_user.Size = new System.Drawing.Size(814, 18);
             this.label_info_user.TabIndex = 4;
             this.label_info_user.Text = "Истифодабаранда: ";
             // 
-            // panel_button_ans
+            // reflashInfo
             // 
-            this.panel_button_ans.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(163)))), ((int)(((byte)(98)))));
-            this.panel_button_ans.Controls.Add(this.panel3);
-            this.panel_button_ans.Controls.Add(this.label_info);
-            this.panel_button_ans.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel_button_ans.Location = new System.Drawing.Point(20, 10);
-            this.panel_button_ans.Name = "panel_button_ans";
-            this.panel_button_ans.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.panel_button_ans.Size = new System.Drawing.Size(1322, 68);
-            this.panel_button_ans.TabIndex = 1;
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.labelControl3);
-            this.panel3.Controls.Add(this.lbl_info_day);
-            this.panel3.Controls.Add(this.lbl_info_today);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel3.Location = new System.Drawing.Point(863, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(459, 68);
-            this.panel3.TabIndex = 16;
-            // 
-            // labelControl3
-            // 
-            this.labelControl3.Appearance.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelControl3.Appearance.ForeColor = System.Drawing.Color.White;
-            this.labelControl3.Appearance.Options.UseFont = true;
-            this.labelControl3.Appearance.Options.UseForeColor = true;
-            this.labelControl3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.labelControl3.Location = new System.Drawing.Point(0, 44);
-            this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Padding = new System.Windows.Forms.Padding(0, 0, 40, 0);
-            this.labelControl3.Size = new System.Drawing.Size(448, 22);
-            this.labelControl3.TabIndex = 6;
-            this.labelControl3.Text = "Миқдори одамони имруз қабул карда: 0 нафар";
-            // 
-            // lbl_info_day
-            // 
-            this.lbl_info_day.Appearance.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lbl_info_day.Appearance.ForeColor = System.Drawing.Color.White;
-            this.lbl_info_day.Appearance.Options.UseFont = true;
-            this.lbl_info_day.Appearance.Options.UseForeColor = true;
-            this.lbl_info_day.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lbl_info_day.Location = new System.Drawing.Point(0, 22);
-            this.lbl_info_day.Name = "lbl_info_day";
-            this.lbl_info_day.Size = new System.Drawing.Size(458, 22);
-            this.lbl_info_day.TabIndex = 5;
-            this.lbl_info_day.Text = "Миқдори одамони фардо меомада меомада: 0 нафар";
-            // 
-            // lbl_info_today
-            // 
-            this.lbl_info_today.Appearance.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lbl_info_today.Appearance.ForeColor = System.Drawing.Color.White;
-            this.lbl_info_today.Appearance.Options.UseFont = true;
-            this.lbl_info_today.Appearance.Options.UseForeColor = true;
-            this.lbl_info_today.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lbl_info_today.Location = new System.Drawing.Point(0, 0);
-            this.lbl_info_today.Name = "lbl_info_today";
-            this.lbl_info_today.Size = new System.Drawing.Size(376, 22);
-            this.lbl_info_today.TabIndex = 4;
-            this.lbl_info_today.Text = "Миқдори одамони имруз меомада: 0 нафар";
-            // 
-            // label_info
-            // 
-            this.label_info.Appearance.Font = new System.Drawing.Font("Times New Roman", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label_info.Appearance.ForeColor = System.Drawing.Color.White;
-            this.label_info.Appearance.Options.UseFont = true;
-            this.label_info.Appearance.Options.UseForeColor = true;
-            this.label_info.Location = new System.Drawing.Point(10, 6);
-            this.label_info.Name = "label_info";
-            this.label_info.Padding = new System.Windows.Forms.Padding(0, 0, 40, 0);
-            this.label_info.Size = new System.Drawing.Size(421, 55);
-            this.label_info.TabIndex = 15;
-            this.label_info.Text = "ХУШ ОМАДЕД!!";
+            this.reflashInfo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.reflashInfo.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(143)))), ((int)(((byte)(78)))));
+            this.reflashInfo.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.reflashInfo.Appearance.ForeColor = System.Drawing.Color.White;
+            this.reflashInfo.Appearance.Options.UseBackColor = true;
+            this.reflashInfo.Appearance.Options.UseFont = true;
+            this.reflashInfo.Appearance.Options.UseForeColor = true;
+            this.reflashInfo.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("reflashInfo.ImageOptions.Image")));
+            this.reflashInfo.Location = new System.Drawing.Point(1228, 44);
+            this.reflashInfo.Name = "reflashInfo";
+            this.reflashInfo.Size = new System.Drawing.Size(162, 36);
+            this.reflashInfo.TabIndex = 14;
+            this.reflashInfo.Text = "Аз нав дидан";
+            this.reflashInfo.Click += new System.EventHandler(this.reflashInfo_Click);
             // 
             // labelControl1
             // 
@@ -199,83 +130,31 @@ namespace ObiGarm.Restorant
             // 
             // btn_ansver
             // 
+            this.btn_ansver.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_ansver.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(143)))), ((int)(((byte)(78)))));
-            this.btn_ansver.Appearance.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btn_ansver.Appearance.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btn_ansver.Appearance.ForeColor = System.Drawing.Color.White;
             this.btn_ansver.Appearance.Options.UseBackColor = true;
             this.btn_ansver.Appearance.Options.UseFont = true;
             this.btn_ansver.Appearance.Options.UseForeColor = true;
-            this.btn_ansver.Location = new System.Drawing.Point(512, 8);
+            this.btn_ansver.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_ansver.ImageOptions.Image")));
+            this.btn_ansver.Location = new System.Drawing.Point(992, 44);
             this.btn_ansver.Name = "btn_ansver";
-            this.btn_ansver.Size = new System.Drawing.Size(155, 58);
+            this.btn_ansver.Size = new System.Drawing.Size(230, 37);
             this.btn_ansver.TabIndex = 13;
-            this.btn_ansver.Text = "Фаъол кардани \r\nкорт санҷ";
+            this.btn_ansver.Text = "Фаъол кардани корт санҷ";
             this.btn_ansver.Click += new System.EventHandler(this.btn_ansver_Click);
-            // 
-            // panel_edit_sort
-            // 
-            this.panel_edit_sort.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(163)))), ((int)(((byte)(98)))));
-            this.panel_edit_sort.Controls.Add(this.panel_button_ans);
-            this.panel_edit_sort.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel_edit_sort.Location = new System.Drawing.Point(0, 38);
-            this.panel_edit_sort.Name = "panel_edit_sort";
-            this.panel_edit_sort.Padding = new System.Windows.Forms.Padding(20, 10, 10, 5);
-            this.panel_edit_sort.Size = new System.Drawing.Size(1352, 83);
-            this.panel_edit_sort.TabIndex = 12;
-            // 
-            // txt_kort
-            // 
-            this.txt_kort.Location = new System.Drawing.Point(8, 20);
-            this.txt_kort.Name = "txt_kort";
-            this.txt_kort.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.txt_kort.Properties.Appearance.Options.UseFont = true;
-            this.txt_kort.Size = new System.Drawing.Size(498, 32);
-            this.txt_kort.TabIndex = 1;
-            this.txt_kort.EditValueChanged += new System.EventHandler(this.txt_kort_EditValueChanged);
-            this.txt_kort.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_kort_KeyDown);
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(163)))), ((int)(((byte)(98)))));
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 121);
-            this.panel1.Name = "panel1";
-            this.panel1.Padding = new System.Windows.Forms.Padding(20, 10, 10, 5);
-            this.panel1.Size = new System.Drawing.Size(1352, 86);
-            this.panel1.TabIndex = 15;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(163)))), ((int)(((byte)(98)))));
-            this.panel2.Controls.Add(this.textEdit1);
-            this.panel2.Controls.Add(this.txt_kort);
-            this.panel2.Controls.Add(this.btn_ansver);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(20, 10);
-            this.panel2.Name = "panel2";
-            this.panel2.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.panel2.Size = new System.Drawing.Size(1322, 71);
-            this.panel2.TabIndex = 1;
-            // 
-            // textEdit1
-            // 
-            this.textEdit1.Location = new System.Drawing.Point(1031, 20);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textEdit1.Properties.Appearance.Options.UseFont = true;
-            this.textEdit1.Size = new System.Drawing.Size(288, 32);
-            this.textEdit1.TabIndex = 14;
-            this.textEdit1.Visible = false;
             // 
             // grid_control_is_client
             // 
-            this.grid_control_is_client.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.grid_control_is_client.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.grid_control_is_client.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.grid_control_is_client.Location = new System.Drawing.Point(0, 207);
+            this.grid_control_is_client.Location = new System.Drawing.Point(13, 86);
             this.grid_control_is_client.MainView = this.grid_view_is_client;
             this.grid_control_is_client.Name = "grid_control_is_client";
-            this.grid_control_is_client.Size = new System.Drawing.Size(1352, 445);
+            this.grid_control_is_client.Size = new System.Drawing.Size(1377, 603);
             this.grid_control_is_client.TabIndex = 16;
             this.grid_control_is_client.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.grid_view_is_client});
@@ -288,7 +167,10 @@ namespace ObiGarm.Restorant
             this.full_name,
             this.date_time_start,
             this.date_time_end,
-            this.type_kort});
+            this.type_kort,
+            this.breakfast,
+            this.lunch,
+            this.dinner});
             this.grid_view_is_client.GridControl = this.grid_control_is_client;
             this.grid_view_is_client.Name = "grid_view_is_client";
             this.grid_view_is_client.OptionsFind.AlwaysVisible = true;
@@ -297,7 +179,13 @@ namespace ObiGarm.Restorant
             // number_order
             // 
             this.number_order.AppearanceCell.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.number_order.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             this.number_order.AppearanceCell.Options.UseFont = true;
+            this.number_order.AppearanceCell.Options.UseForeColor = true;
+            this.number_order.AppearanceHeader.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.number_order.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
+            this.number_order.AppearanceHeader.Options.UseFont = true;
+            this.number_order.AppearanceHeader.Options.UseForeColor = true;
             this.number_order.Caption = "ОРДЕР";
             this.number_order.FieldName = "number_order";
             this.number_order.Fixed = DevExpress.XtraGrid.Columns.FixedStyle.Left;
@@ -312,7 +200,13 @@ namespace ObiGarm.Restorant
             // id
             // 
             this.id.AppearanceCell.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.id.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             this.id.AppearanceCell.Options.UseFont = true;
+            this.id.AppearanceCell.Options.UseForeColor = true;
+            this.id.AppearanceHeader.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.id.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
+            this.id.AppearanceHeader.Options.UseFont = true;
+            this.id.AppearanceHeader.Options.UseForeColor = true;
             this.id.Caption = "ID";
             this.id.FieldName = "id";
             this.id.MinWidth = 25;
@@ -323,7 +217,13 @@ namespace ObiGarm.Restorant
             // full_name
             // 
             this.full_name.AppearanceCell.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.full_name.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             this.full_name.AppearanceCell.Options.UseFont = true;
+            this.full_name.AppearanceCell.Options.UseForeColor = true;
+            this.full_name.AppearanceHeader.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.full_name.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
+            this.full_name.AppearanceHeader.Options.UseFont = true;
+            this.full_name.AppearanceHeader.Options.UseForeColor = true;
             this.full_name.Caption = "Номи пурра";
             this.full_name.FieldName = "full_name";
             this.full_name.Fixed = DevExpress.XtraGrid.Columns.FixedStyle.Left;
@@ -337,71 +237,218 @@ namespace ObiGarm.Restorant
             // date_time_start
             // 
             this.date_time_start.AppearanceCell.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.date_time_start.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             this.date_time_start.AppearanceCell.Options.UseFont = true;
+            this.date_time_start.AppearanceCell.Options.UseForeColor = true;
+            this.date_time_start.AppearanceHeader.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.date_time_start.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
+            this.date_time_start.AppearanceHeader.Options.UseFont = true;
+            this.date_time_start.AppearanceHeader.Options.UseForeColor = true;
             this.date_time_start.Caption = "Аз кай";
             this.date_time_start.DisplayFormat.FormatString = "D";
-            this.date_time_start.FieldName = "date_time_start";
+            this.date_time_start.FieldName = "start_date";
+            this.date_time_start.MaxWidth = 150;
             this.date_time_start.MinWidth = 130;
             this.date_time_start.Name = "date_time_start";
             this.date_time_start.OptionsColumn.AllowEdit = false;
             this.date_time_start.Visible = true;
             this.date_time_start.VisibleIndex = 2;
-            this.date_time_start.Width = 301;
+            this.date_time_start.Width = 130;
             // 
             // date_time_end
             // 
             this.date_time_end.AppearanceCell.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.date_time_end.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             this.date_time_end.AppearanceCell.Options.UseFont = true;
+            this.date_time_end.AppearanceCell.Options.UseForeColor = true;
+            this.date_time_end.AppearanceHeader.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.date_time_end.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
+            this.date_time_end.AppearanceHeader.Options.UseFont = true;
+            this.date_time_end.AppearanceHeader.Options.UseForeColor = true;
             this.date_time_end.Caption = "То кай";
             this.date_time_end.DisplayFormat.FormatString = "D";
-            this.date_time_end.FieldName = "date_time_end";
+            this.date_time_end.FieldName = "end_date";
+            this.date_time_end.MaxWidth = 150;
             this.date_time_end.MinWidth = 130;
             this.date_time_end.Name = "date_time_end";
             this.date_time_end.OptionsColumn.AllowEdit = false;
             this.date_time_end.Visible = true;
             this.date_time_end.VisibleIndex = 3;
-            this.date_time_end.Width = 301;
+            this.date_time_end.Width = 130;
             // 
             // type_kort
             // 
             this.type_kort.AppearanceCell.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.type_kort.AppearanceCell.ForeColor = System.Drawing.Color.Black;
             this.type_kort.AppearanceCell.Options.UseFont = true;
+            this.type_kort.AppearanceCell.Options.UseForeColor = true;
+            this.type_kort.AppearanceHeader.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.type_kort.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
+            this.type_kort.AppearanceHeader.Options.UseFont = true;
+            this.type_kort.AppearanceHeader.Options.UseForeColor = true;
             this.type_kort.Caption = "Намуди корт";
             this.type_kort.FieldName = "type_kort";
-            this.type_kort.MinWidth = 100;
+            this.type_kort.MaxWidth = 150;
+            this.type_kort.MinWidth = 130;
             this.type_kort.Name = "type_kort";
             this.type_kort.OptionsColumn.AllowEdit = false;
             this.type_kort.Visible = true;
             this.type_kort.VisibleIndex = 4;
-            this.type_kort.Width = 282;
+            this.type_kort.Width = 140;
             // 
-            // pictureBox1
+            // breakfast
             // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox1.Image = global::ObiGarm.Properties.Resources.yes;
-            this.pictureBox1.Location = new System.Drawing.Point(1035, 324);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(307, 316);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 17;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Visible = false;
+            this.breakfast.AppearanceCell.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.breakfast.AppearanceCell.ForeColor = System.Drawing.Color.Black;
+            this.breakfast.AppearanceCell.Options.UseFont = true;
+            this.breakfast.AppearanceCell.Options.UseForeColor = true;
+            this.breakfast.AppearanceHeader.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.breakfast.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
+            this.breakfast.AppearanceHeader.Options.UseFont = true;
+            this.breakfast.AppearanceHeader.Options.UseForeColor = true;
+            this.breakfast.Caption = "Наҳорӣ";
+            this.breakfast.FieldName = "breakfast";
+            this.breakfast.MaxWidth = 200;
+            this.breakfast.MinWidth = 190;
+            this.breakfast.Name = "breakfast";
+            this.breakfast.OptionsColumn.AllowEdit = false;
+            this.breakfast.Visible = true;
+            this.breakfast.VisibleIndex = 5;
+            this.breakfast.Width = 190;
+            // 
+            // lunch
+            // 
+            this.lunch.AppearanceCell.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lunch.AppearanceCell.ForeColor = System.Drawing.Color.Black;
+            this.lunch.AppearanceCell.Options.UseFont = true;
+            this.lunch.AppearanceCell.Options.UseForeColor = true;
+            this.lunch.AppearanceHeader.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lunch.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
+            this.lunch.AppearanceHeader.Options.UseFont = true;
+            this.lunch.AppearanceHeader.Options.UseForeColor = true;
+            this.lunch.Caption = "Хуроки нисфирузи";
+            this.lunch.FieldName = "lunch";
+            this.lunch.MaxWidth = 200;
+            this.lunch.MinWidth = 190;
+            this.lunch.Name = "lunch";
+            this.lunch.OptionsColumn.AllowEdit = false;
+            this.lunch.Visible = true;
+            this.lunch.VisibleIndex = 6;
+            this.lunch.Width = 190;
+            // 
+            // dinner
+            // 
+            this.dinner.AppearanceCell.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.dinner.AppearanceCell.ForeColor = System.Drawing.Color.Black;
+            this.dinner.AppearanceCell.Options.UseFont = true;
+            this.dinner.AppearanceCell.Options.UseForeColor = true;
+            this.dinner.AppearanceHeader.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.dinner.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
+            this.dinner.AppearanceHeader.Options.UseFont = true;
+            this.dinner.AppearanceHeader.Options.UseForeColor = true;
+            this.dinner.Caption = "Хуроки бегоҳрузӣ";
+            this.dinner.FieldName = "dinner";
+            this.dinner.MaxWidth = 200;
+            this.dinner.MinWidth = 190;
+            this.dinner.Name = "dinner";
+            this.dinner.OptionsColumn.AllowEdit = false;
+            this.dinner.Visible = true;
+            this.dinner.VisibleIndex = 7;
+            this.dinner.Width = 190;
             // 
             // timer_select_picture
             // 
             this.timer_select_picture.Tick += new System.EventHandler(this.timer_select_picture_Tick);
             // 
+            // lbl_infoTomorrow
+            // 
+            this.lbl_infoTomorrow.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbl_infoTomorrow.AutoSize = true;
+            this.lbl_infoTomorrow.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbl_infoTomorrow.ForeColor = System.Drawing.Color.Black;
+            this.lbl_infoTomorrow.Location = new System.Drawing.Point(1093, 109);
+            this.lbl_infoTomorrow.Name = "lbl_infoTomorrow";
+            this.lbl_infoTomorrow.Size = new System.Drawing.Size(254, 19);
+            this.lbl_infoTomorrow.TabIndex = 19;
+            this.lbl_infoTomorrow.Text = "Одамони фардо меомада: 0 нафар";
+            // 
+            // lbl_info_today
+            // 
+            this.lbl_info_today.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbl_info_today.AutoSize = true;
+            this.lbl_info_today.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbl_info_today.ForeColor = System.Drawing.Color.Black;
+            this.lbl_info_today.Location = new System.Drawing.Point(1105, 89);
+            this.lbl_info_today.Name = "lbl_info_today";
+            this.lbl_info_today.Size = new System.Drawing.Size(242, 19);
+            this.lbl_info_today.TabIndex = 20;
+            this.lbl_info_today.Text = "Одамони имруз омадан: 0 нафар";
+            // 
+            // panelInfoKort
+            // 
+            this.panelInfoKort.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelInfoKort.Controls.Add(this.pictureInfoKort);
+            this.panelInfoKort.Location = new System.Drawing.Point(1005, 333);
+            this.panelInfoKort.Name = "panelInfoKort";
+            this.panelInfoKort.Padding = new System.Windows.Forms.Padding(10);
+            this.panelInfoKort.Size = new System.Drawing.Size(385, 356);
+            this.panelInfoKort.TabIndex = 21;
+            this.panelInfoKort.Visible = false;
+            // 
+            // pictureInfoKort
+            // 
+            this.pictureInfoKort.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureInfoKort.Image = global::ObiGarm.Properties.Resources.isEat;
+            this.pictureInfoKort.Location = new System.Drawing.Point(10, 10);
+            this.pictureInfoKort.Name = "pictureInfoKort";
+            this.pictureInfoKort.Size = new System.Drawing.Size(365, 336);
+            this.pictureInfoKort.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureInfoKort.TabIndex = 20;
+            this.pictureInfoKort.TabStop = false;
+            // 
+            // txt_kort
+            // 
+            this.txt_kort.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txt_kort.Location = new System.Drawing.Point(1015, 44);
+            this.txt_kort.Name = "txt_kort";
+            this.txt_kort.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.txt_kort.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.txt_kort.Properties.Appearance.Options.UseFont = true;
+            this.txt_kort.Properties.Appearance.Options.UseForeColor = true;
+            this.txt_kort.Properties.ContextImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("txt_kort.Properties.ContextImageOptions.Image")));
+            this.txt_kort.Properties.Mask.BeepOnError = true;
+            this.txt_kort.Properties.Mask.EditMask = "0000000000";
+            this.txt_kort.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
+            this.txt_kort.Properties.Mask.PlaceHolder = '0';
+            this.txt_kort.Size = new System.Drawing.Size(186, 26);
+            this.txt_kort.TabIndex = 85;
+            this.txt_kort.EditValueChanged += new System.EventHandler(this.txt_kort_EditValueChanged_1);
+            // 
+            // label_info
+            // 
+            this.label_info.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label_info.ForeColor = System.Drawing.Color.Black;
+            this.label_info.Location = new System.Drawing.Point(12, 41);
+            this.label_info.Name = "label_info";
+            this.label_info.Size = new System.Drawing.Size(959, 42);
+            this.label_info.TabIndex = 86;
+            this.label_info.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // RestorantForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1352, 652);
-            this.Controls.Add(this.pictureBox1);
+            this.ClientSize = new System.Drawing.Size(1402, 701);
+            this.Controls.Add(this.label_info);
+            this.Controls.Add(this.panelInfoKort);
+            this.Controls.Add(this.lbl_info_today);
+            this.Controls.Add(this.lbl_infoTomorrow);
+            this.Controls.Add(this.reflashInfo);
             this.Controls.Add(this.grid_control_is_client);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.panel_edit_sort);
             this.Controls.Add(this.labelControl1);
             this.Controls.Add(this.panel_top);
+            this.Controls.Add(this.btn_ansver);
+            this.Controls.Add(this.txt_kort);
             this.IconOptions.ShowIcon = false;
             this.Name = "RestorantForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -410,18 +457,12 @@ namespace ObiGarm.Restorant
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.RestorantForm_FormClosed);
             this.Shown += new System.EventHandler(this.RestorantForm_Shown);
             this.panel_top.ResumeLayout(false);
-            this.panel_button_ans.ResumeLayout(false);
-            this.panel_button_ans.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            this.panel_edit_sort.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.txt_kort.Properties)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
+            this.panel_top.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grid_control_is_client)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grid_view_is_client)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panelInfoKort.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureInfoKort)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_kort.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -430,14 +471,9 @@ namespace ObiGarm.Restorant
         #endregion
         private System.Windows.Forms.Panel panel_top;
         private System.Windows.Forms.Label label_info_user;
-        private System.Windows.Forms.Panel panel_button_ans;
         private DevExpress.XtraEditors.SimpleButton btn_ansver;
-        private DevExpress.XtraEditors.TextEdit txt_kort;
         private DevExpress.XtraEditors.LabelControl labelControl1;
-        private DevExpress.XtraEditors.SimpleButton simpleButton1;
-        private System.Windows.Forms.Panel panel_edit_sort;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
+        private DevExpress.XtraEditors.SimpleButton reflashInfo;
         private DevExpress.XtraGrid.GridControl grid_control_is_client;
         private DevExpress.XtraGrid.Views.Grid.GridView grid_view_is_client;
         private DevExpress.XtraGrid.Columns.GridColumn number_order;
@@ -446,13 +482,16 @@ namespace ObiGarm.Restorant
         private DevExpress.XtraGrid.Columns.GridColumn date_time_start;
         private DevExpress.XtraGrid.Columns.GridColumn date_time_end;
         private DevExpress.XtraGrid.Columns.GridColumn type_kort;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Timer timer_select_picture;
-        private DevExpress.XtraEditors.LabelControl label_info;
-        private DevExpress.XtraEditors.TextEdit textEdit1;
-        private System.Windows.Forms.Panel panel3;
-        private DevExpress.XtraEditors.LabelControl lbl_info_day;
-        private DevExpress.XtraEditors.LabelControl lbl_info_today;
-        private DevExpress.XtraEditors.LabelControl labelControl3;
+        private System.Windows.Forms.Label labelCountToDay;
+        private System.Windows.Forms.Label lbl_infoTomorrow;
+        private System.Windows.Forms.Label lbl_info_today;
+        private System.Windows.Forms.Panel panelInfoKort;
+        private System.Windows.Forms.PictureBox pictureInfoKort;
+        private DevExpress.XtraGrid.Columns.GridColumn breakfast;
+        private DevExpress.XtraGrid.Columns.GridColumn lunch;
+        private DevExpress.XtraGrid.Columns.GridColumn dinner;
+        private DevExpress.XtraEditors.TextEdit txt_kort;
+        private System.Windows.Forms.Label label_info;
     }
 }

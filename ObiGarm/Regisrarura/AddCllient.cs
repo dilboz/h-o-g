@@ -521,10 +521,7 @@ namespace ObiGarm.Regisrarura
                 else
                 {
 
-                    if (id_kort != currentIDKort) { SettingsDatabase.setFaleActiveKort(currentIDKort); Console.WriteLine("kort ba yakdigar monand nabudan!"); }                        
-
-                    string _room_sql = $"update room SET active = '1' where id = {id_room}";
-                    sqlConfiguration.sqlSelectQuery(_room_sql); Console.WriteLine($"Ҳуҷра бан шуд бо раками  {id_room}");
+                    if (id_kort != currentIDKort) { SettingsDatabase.setFaleActiveKort(currentIDKort); Console.WriteLine("kort ba yakdigar monand nabudan!"); }                 
 
                     string _kort_sql = $"update kort SET active = '1' where id = {id_kort}";
                     sqlConfiguration.sqlSelectQuery(_kort_sql); Console.WriteLine($"Корт бан шуд бо раками  {id_kort}");

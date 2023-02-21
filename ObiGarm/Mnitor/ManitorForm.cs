@@ -29,14 +29,17 @@ namespace ObiGarm.Mnitor
         public void new_client(DateTime date)
         {
 
-            string sql_select = "SELECT services_client.id, services_client.id_services, concat(client.surname, ' ', client.name, ' ', client.patromic) as 'name_clients', date_format(services_client.time,'%H:%i') as 'time_services_clirnts', users.room_number as 'room_spitsalist' " +
+            string sql_select = "SELECT services_client.id, services_client.id_services, concat(client.surname, ' ', client.name, ' ', client.patromic) as 'name_clients', date_format(services_client.time,'%H:%i') as 'time_services_clirnts', concat(services.name, ' (', users.surname , ' ', substr(users.name, 1, 1), '..)') as 'users'  " +
                 "FROM services_client " +
                 "inner join client on services_client.id_client=client.id " +
                 "inner join users on services_client.id_users=users.id " +
+                "inner join services on services_client.id_services= services.id " +
                 $"where str_to_date(time, '%Y-%m-%d')='{date.ToString("yyyy-MM-dd")}'  and services_client.enable= '1' and services_client.deleted is null and users.id_manitor='{id_manitor}' " +
                 $"ORDER BY services_client.time; ";
 
-            to_labels(sqlConfiguration.sqlSelectQuery(sql_select));
+            //Console.WriteLine(sql_select);
+
+            sqlConfiguration.displayListExpress(sql_select, gridControl);
 
         }
 
@@ -96,107 +99,26 @@ namespace ObiGarm.Mnitor
             label_info_top.Text = $"Имруз {DateTime.Now.ToString("D")}, соат {DateTime.Now.ToString("HH:mm:ss")}";
         }
 
-        void to_labels(DataTable dataTable)
+        private void gridViewQueryClient_RowStyle(object sender, DevExpress.XtraGrid.Views.Grid.RowStyleEventArgs e)
         {
-            Label[] labels_name_client = new Label[] { label_client1, label_client2, label_client3, label_client4, label_client5,
-                label_client6, label_client7, label_client8, label_client9, label_client10, label_client11, label_client12, label_client13, label_client14,
-                label_client15, label_client16, label_client17, label_client18, label_client19, label_client20};
+            DateTime time = Convert.ToDateTime(gridViewQueryClient.GetRowCellValue(e.RowHandle, "time_services_clirnts"));
+            string id = Convert.ToString(gridViewQueryClient.GetRowCellValue(e.RowHandle, "id"));
+            string id_services = Convert.ToString(gridViewQueryClient.GetRowCellValue(e.RowHandle, "id_services"));
 
-            Label[] time_selected = new Label[] { time_select_client1, time_select_client2, time_select_client3, time_select_client4, time_select_client5,
-                time_select_client6, time_select_client7, time_select_client8, time_select_client9, time_select_client10, time_select_client11, time_select_client12, time_select_client13, time_select_client4,
-                time_select_client15, time_select_client16, time_select_client17, time_select_client18, time_select_client19, time_select_client20};
-
-            Label[] room_selected = new Label[] { room_select_client1, room_select_client2, room_select_client3, room_select_client4, room_select_client5,
-                room_select_client6, room_select_client7, room_select_client8, room_select_client9, room_select_client10, room_select_client11, room_select_client12, room_select_client13, room_select_client14,
-                room_select_client15, room_select_client16, room_select_client17, room_select_client18, room_select_client19, room_select_client20};
-
-            clear_all_label();
-
-            int index = 0;
-
-            foreach (DataRow row in dataTable.Rows)
+            if (DateTime.Parse(DateTime.Now.ToString("HH:mm")) >= DateTime.Parse(time.ToString("HH:mm")))
             {
-                
-                if (index!=20)
-                {
-                    //MessageBox.Show(row["time_services_clirnts"].ToString());
-                    if (DateTime.Parse(DateTime.Now.ToString("HH:mm")) >= DateTime.Parse(row["time_services_clirnts"].ToString()))
-                    {
-                        id_client[index] = row["id"].ToString();
-                        id_services[index] = row["id_services"].ToString();
-
-                        labels_name_client[index].Text = row["name_clients"].ToString();
-                        labels_name_client[index].BackColor=Color.Red; labels_name_client[index].ForeColor = Color.White;
-
-                        time_selected[index].Text = row["time_services_clirnts"].ToString();
-                        time_selected[index].BackColor = Color.Red; time_selected[index].ForeColor = Color.White;
-
-                        room_selected[index].Text = row["room_spitsalist"].ToString();
-                        room_selected[index].BackColor = Color.Red; room_selected[index].ForeColor = Color.White;
-
-                        check_is_deleted(id_client[index], id_services[index], time_selected[index].Text);
-
-                        index++;
-                    }
-                    else
-                    {
-                        id_client[index] = row["id"].ToString();
-                        id_services[index] = row["id_services"].ToString();
-
-                        labels_name_client[index].Text = row["name_clients"].ToString();
-                        labels_name_client[index].BackColor = Color.White; labels_name_client[index].ForeColor = Color.Black;
-
-                        time_selected[index].Text = row["time_services_clirnts"].ToString();
-                        time_selected[index].BackColor = Color.White; time_selected[index].ForeColor = Color.Black;
-
-                        room_selected[index].Text = row["room_spitsalist"].ToString();
-                        room_selected[index].BackColor = Color.White; room_selected[index].ForeColor = Color.Black;
-                        index++;
-                    }
-
-                }
-                else
-                {
-                    break;
-                }
+                e.Appearance.BackColor = Color.Red;
+                e.Appearance.ForeColor = Color.White;
+                e.HighPriority = true;
+                check_is_deleted(id, id_services, time.ToString("HH:mm"));
             }
-        }
-
-        void clear_all_label()
-        {
-            Label[] labels_name_client = new Label[] { label_client1, label_client2, label_client3, label_client4, label_client5,
-                label_client6, label_client7, label_client8, label_client9, label_client10, label_client11, label_client12, label_client13, label_client14,
-                label_client15, label_client16, label_client17, label_client18, label_client19, label_client20};
-
-            Label[] time_selected = new Label[] { time_select_client1, time_select_client2, time_select_client3, time_select_client4, time_select_client5,
-                time_select_client6, time_select_client7, time_select_client8, time_select_client9, time_select_client10, time_select_client11, time_select_client12, time_select_client13, time_select_client4,
-                time_select_client15, time_select_client16, time_select_client17, time_select_client18, time_select_client19, time_select_client20};
-
-            Label[] room_selected = new Label[] { room_select_client1, room_select_client2, room_select_client3, room_select_client4, room_select_client5,
-                room_select_client6, room_select_client7, room_select_client8, room_select_client9, room_select_client10, room_select_client11, room_select_client12, room_select_client13, room_select_client14,
-                room_select_client15, room_select_client16, room_select_client17, room_select_client18, room_select_client19, room_select_client20};
-
-            for (int i = 0; i < 20; i++)
-            {
-                labels_name_client[i].Text = "";
-                labels_name_client[i].BackColor = Color.White; labels_name_client[i].ForeColor = Color.Black;
-
-                time_selected[i].Text = "";
-                time_selected[i].BackColor = Color.White; time_selected[i].ForeColor = Color.Black;
-
-                room_selected[i].Text = "";
-                room_selected[i].BackColor = Color.White; room_selected[i].ForeColor = Color.Black;
-            }
-        }
-
-        private void ManitorForm_Shown(object sender, EventArgs e)
-        {
             
-        }
-
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
+            else
+            {
+                e.Appearance.BackColor = Color.White;
+                e.Appearance.ForeColor = Color.Black;
+                e.HighPriority = true;
+            }
         }
     }
 }

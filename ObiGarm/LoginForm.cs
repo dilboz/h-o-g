@@ -222,8 +222,10 @@ namespace ObiGarm
                             MainFormVrach mainFormVrach = new MainFormVrach(tabel_select_user.Rows[0]["id"].ToString());
                             
                             ManitorForm manitorForm = new ManitorForm(tabel_select_user.Rows[0]["id_manitor"].ToString());
-                            manitorForm.Show();
-                            //manitors.Show();
+
+                            if (tabel_select_user.Rows[0]["id_manitor"].ToString()!="3")
+                                manitorForm.Show();
+
                             mainFormVrach.Show();
                             this.Hide();
                         }
