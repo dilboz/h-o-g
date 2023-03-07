@@ -296,10 +296,9 @@
             this.txt_number_order.Properties.Appearance.Options.UseFont = true;
             this.txt_number_order.Properties.Appearance.Options.UseForeColor = true;
             this.txt_number_order.Properties.ContextImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("txt_number_order.Properties.ContextImageOptions.Image")));
-            this.txt_number_order.Properties.Mask.EditMask = "d";
-            this.txt_number_order.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txt_number_order.Size = new System.Drawing.Size(476, 26);
             this.txt_number_order.TabIndex = 68;
+            this.txt_number_order.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_number_order_KeyPress);
             // 
             // lbl_order
             // 
@@ -329,6 +328,7 @@
             this.txt_number_money.Size = new System.Drawing.Size(476, 26);
             this.txt_number_money.TabIndex = 66;
             this.txt_number_money.TabStop = false;
+            this.txt_number_money.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_number_money_KeyPress);
             // 
             // lbl_money
             // 
@@ -346,7 +346,7 @@
             // txt_money_for_one_day
             // 
             this.txt_money_for_one_day.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txt_money_for_one_day.EditValue = "200";
+            this.txt_money_for_one_day.EditValue = "";
             this.txt_money_for_one_day.Location = new System.Drawing.Point(12, 72);
             this.txt_money_for_one_day.Name = "txt_money_for_one_day";
             this.txt_money_for_one_day.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -427,6 +427,7 @@
             this.txt_full_name.Properties.ContextImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("txt_full_name.Properties.ContextImageOptions.Image")));
             this.txt_full_name.Size = new System.Drawing.Size(476, 26);
             this.txt_full_name.TabIndex = 2;
+            this.txt_full_name.Leave += new System.EventHandler(this.txt_full_name_Leave);
             // 
             // lbl_birthday
             // 

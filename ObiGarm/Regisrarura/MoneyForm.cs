@@ -32,7 +32,7 @@ namespace ObiGarm.Regisrarura
             if (table_selecte_client.Rows.Count!=0)
             {
                 txt_nuber_order.Text = table_selecte_client.Rows[0]["number_order"].ToString();
-                txt_number_money.Text = table_selecte_client.Rows[0]["nuber_money"].ToString();
+                lbl_number_mpney.Text = $"Миқдори маблағ {table_selecte_client.Rows[0]["nuber_money"].ToString()} сомнӣ";
             }
             else
             {
@@ -42,15 +42,13 @@ namespace ObiGarm.Regisrarura
 
         void add_money(string id)
         {
-            string number_money = txt_number_money.Text.Trim();
             string nuber_order = txt_nuber_order.Text.Trim();
 
-            string sql = $"UPDATE client SET nuber_money = '{number_money}', number_order = '{nuber_order}' WHERE id = '{id}'";
+            string sql = $"UPDATE client SET  number_order = '{nuber_order}' WHERE id = '{id}'";
 
             if (nuber_order!="" || nuber_order != "0")
             {
-                if (number_money != "")
-                {
+                
                     int result = sqlConfiguration.sqlQuery(sql);
                     if (result == 500)
                     {
@@ -61,11 +59,6 @@ namespace ObiGarm.Regisrarura
                         noClientYet_from.display();
                         this.Close();
                     }
-                }
-                else
-                {
-                    MessageBox.Show("Дохил кардани миқдори маблағ хатмӣ аст!", "Сообщения", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
             }
             else
             {
@@ -111,7 +104,7 @@ namespace ObiGarm.Regisrarura
 
         private void btn_save_money_Click_1(object sender, EventArgs e)
         {
-            if (txt_number_money.Text!="0" || txt_number_money.Text!="")
+            if (txt_nuber_order.Text!="0" || txt_nuber_order.Text!="")
             {
                 add_money(id_client_me);
                 noClientYet_from.display();

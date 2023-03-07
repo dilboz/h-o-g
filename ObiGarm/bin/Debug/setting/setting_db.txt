@@ -1,4 +1,4 @@
-localhost
-root
-root
+100.70.71.230
+hog_2002
+hog@$2002
 obigarm

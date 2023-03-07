@@ -33,14 +33,9 @@
             Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties5 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
             this.formAssistant1 = new DevExpress.XtraBars.FormAssistant();
             this.txt_nuber_order = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.txt_number_money = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
             this.lbl_number_mpney = new System.Windows.Forms.Label();
             this.panel_btn_room = new System.Windows.Forms.Panel();
             this.btn_exit = new System.Windows.Forms.Button();
@@ -77,7 +72,7 @@
             this.txt_nuber_order.IconRight = null;
             this.txt_nuber_order.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_nuber_order.Lines = new string[0];
-            this.txt_nuber_order.Location = new System.Drawing.Point(10, 90);
+            this.txt_nuber_order.Location = new System.Drawing.Point(10, 60);
             this.txt_nuber_order.MaxLength = 32767;
             this.txt_nuber_order.MinimumSize = new System.Drawing.Size(100, 30);
             this.txt_nuber_order.Modified = false;
@@ -127,87 +122,13 @@
             // 
             this.label1.Dock = System.Windows.Forms.DockStyle.Top;
             this.label1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(10, 65);
+            this.label1.Location = new System.Drawing.Point(10, 35);
             this.label1.Name = "label1";
             this.label1.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.label1.Size = new System.Drawing.Size(377, 25);
             this.label1.TabIndex = 36;
             this.label1.Text = "Рақами ордер";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // txt_number_money
-            // 
-            this.txt_number_money.AcceptsReturn = false;
-            this.txt_number_money.AcceptsTab = false;
-            this.txt_number_money.AnimationSpeed = 200;
-            this.txt_number_money.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.txt_number_money.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.txt_number_money.BackColor = System.Drawing.Color.Transparent;
-            this.txt_number_money.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txt_number_money.BackgroundImage")));
-            this.txt_number_money.BorderColorActive = System.Drawing.Color.DodgerBlue;
-            this.txt_number_money.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(161)))), ((int)(((byte)(161)))));
-            this.txt_number_money.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.txt_number_money.BorderColorIdle = System.Drawing.Color.Silver;
-            this.txt_number_money.BorderRadius = 10;
-            this.txt_number_money.BorderThickness = 1;
-            this.txt_number_money.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txt_number_money.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_number_money.DefaultFont = new System.Drawing.Font("Segoe UI Semibold", 9.75F);
-            this.txt_number_money.DefaultText = "";
-            this.txt_number_money.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txt_number_money.FillColor = System.Drawing.Color.White;
-            this.txt_number_money.HideSelection = true;
-            this.txt_number_money.IconLeft = null;
-            this.txt_number_money.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_number_money.IconPadding = 10;
-            this.txt_number_money.IconRight = null;
-            this.txt_number_money.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_number_money.Lines = new string[0];
-            this.txt_number_money.Location = new System.Drawing.Point(10, 35);
-            this.txt_number_money.MaxLength = 32767;
-            this.txt_number_money.MinimumSize = new System.Drawing.Size(100, 30);
-            this.txt_number_money.Modified = false;
-            this.txt_number_money.Multiline = false;
-            this.txt_number_money.Name = "txt_number_money";
-            stateProperties5.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties5.FillColor = System.Drawing.Color.Empty;
-            stateProperties5.ForeColor = System.Drawing.Color.Empty;
-            stateProperties5.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txt_number_money.OnActiveState = stateProperties5;
-            stateProperties6.BorderColor = System.Drawing.Color.Empty;
-            stateProperties6.FillColor = System.Drawing.Color.White;
-            stateProperties6.ForeColor = System.Drawing.Color.Empty;
-            stateProperties6.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.txt_number_money.OnDisabledState = stateProperties6;
-            stateProperties7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties7.FillColor = System.Drawing.Color.Empty;
-            stateProperties7.ForeColor = System.Drawing.Color.Empty;
-            stateProperties7.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txt_number_money.OnHoverState = stateProperties7;
-            stateProperties8.BorderColor = System.Drawing.Color.Silver;
-            stateProperties8.FillColor = System.Drawing.Color.White;
-            stateProperties8.ForeColor = System.Drawing.Color.Empty;
-            stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txt_number_money.OnIdleState = stateProperties8;
-            this.txt_number_money.PasswordChar = '\0';
-            this.txt_number_money.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.txt_number_money.PlaceholderText = "0";
-            this.txt_number_money.ReadOnly = false;
-            this.txt_number_money.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txt_number_money.SelectedText = "";
-            this.txt_number_money.SelectionLength = 0;
-            this.txt_number_money.SelectionStart = 0;
-            this.txt_number_money.ShortcutsEnabled = true;
-            this.txt_number_money.Size = new System.Drawing.Size(377, 30);
-            this.txt_number_money.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
-            this.txt_number_money.TabIndex = 31;
-            this.txt_number_money.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txt_number_money.TextMarginBottom = 0;
-            this.txt_number_money.TextMarginLeft = 5;
-            this.txt_number_money.TextMarginTop = 0;
-            this.txt_number_money.TextPlaceholder = "0";
-            this.txt_number_money.UseSystemPasswordChar = false;
-            this.txt_number_money.WordWrap = true;
             // 
             // lbl_number_mpney
             // 
@@ -281,7 +202,6 @@
             this.Controls.Add(this.panel_btn_room);
             this.Controls.Add(this.txt_nuber_order);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.txt_number_money);
             this.Controls.Add(this.lbl_number_mpney);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.IconOptions.ShowIcon = false;
@@ -302,7 +222,6 @@
         private DevExpress.XtraBars.FormAssistant formAssistant1;
         private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox txt_nuber_order;
         private System.Windows.Forms.Label label1;
-        private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox txt_number_money;
         private System.Windows.Forms.Label lbl_number_mpney;
         private System.Windows.Forms.Panel panel_btn_room;
         private System.Windows.Forms.Button btn_exit;

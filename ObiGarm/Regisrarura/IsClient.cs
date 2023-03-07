@@ -80,8 +80,9 @@ namespace ObiGarm.Regisrarura
             }
             else
             {
-                AddCllient addCllient = new AddCllient(this, id_client, "Махкамкунии руз");
-                addCllient.ShowDialog();
+                //AddCllient addCllient = new AddCllient(this, id_client, "Махкамкунии руз");
+                AddArchiv addArchiv = new AddArchiv(this, id_client);
+                addArchiv.ShowDialog();
             }
         }
 

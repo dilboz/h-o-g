@@ -32,12 +32,13 @@ namespace ObiGarm.Mnitor
             string sql_select = "SELECT services_client.id, services_client.id_services, concat(client.surname, ' ', client.name, ' ', client.patromic) as 'name_clients', date_format(services_client.time,'%H:%i') as 'time_services_clirnts', concat(services.name, ' (', users.surname , ' ', substr(users.name, 1, 1), '..)') as 'users'  " +
                 "FROM services_client " +
                 "inner join client on services_client.id_client=client.id " +
-                "inner join users on services_client.id_users=users.id " +
+                "inner join services_users  on services_client.id_services = services_users.service_id " +
+                "inner join users on services_users.user_id=users.id  " +
                 "inner join services on services_client.id_services= services.id " +
-                $"where str_to_date(time, '%Y-%m-%d')='{date.ToString("yyyy-MM-dd")}'  and services_client.enable= '1' and services_client.deleted is null and users.id_manitor='{id_manitor}' " +
+                $"where str_to_date(time, '%Y-%m-%d')='{date.ToString("yyyy-MM-dd")}'  and services_client.enable= '1' and services_client.deleted is null and users.id_manitor='{id_manitor}' and client.deleted is null  and client.enable = 1 " +
                 $"ORDER BY services_client.time; ";
 
-            //Console.WriteLine(sql_select);
+            Console.WriteLine(sql_select);
 
             sqlConfiguration.displayListExpress(sql_select, gridControl);
 
@@ -89,9 +90,20 @@ namespace ObiGarm.Mnitor
             }
         }
 
+        
+        
+
         private void timer_select_Tick(object sender, EventArgs e)
         {
-            new_client(DateTime.Now);
+            if (SettingsDatabase.pinHost())
+            {
+                new_client(DateTime.Now);
+                pictureBoxTatusIp.Visible = false;
+            }
+            else
+            {
+                pictureBoxTatusIp.Visible = true;
+            }
         }
 
         private void timer_select_time_now_Tick(object sender, EventArgs e)

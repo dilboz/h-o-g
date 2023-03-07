@@ -52,7 +52,6 @@
             this.lbl_tab = new System.Windows.Forms.Label();
             this.messDilalog = new Guna.UI2.WinForms.Guna2MessageDialog();
             this.label_date = new System.Windows.Forms.Label();
-            this.date = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label_services = new System.Windows.Forms.Label();
             this.datagridview_services = new Guna.UI2.WinForms.Guna2DataGridView();
             this.id_services = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -67,6 +66,7 @@
             this.name_spit = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel_spitsalist = new System.Windows.Forms.Panel();
             this.datagridview_date = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.date = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tableLayoutPanel_full = new System.Windows.Forms.TableLayoutPanel();
             this.panel_services_for_client = new System.Windows.Forms.Panel();
             this.datagridview_allServicesClient = new Guna.UI2.WinForms.Guna2DataGridView();
@@ -167,14 +167,6 @@
             this.label_date.Size = new System.Drawing.Size(305, 18);
             this.label_date.TabIndex = 4;
             this.label_date.Text = "Рузи қабул";
-            // 
-            // date
-            // 
-            this.date.DataPropertyName = "date";
-            this.date.FillWeight = 39.37896F;
-            this.date.HeaderText = "Рӯзҳо";
-            this.date.Name = "date";
-            this.date.ReadOnly = true;
             // 
             // label_services
             // 
@@ -504,6 +496,14 @@
             this.datagridview_date.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.White;
             this.datagridview_date.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.datagridview_date_CellClick);
             // 
+            // date
+            // 
+            this.date.DataPropertyName = "date";
+            this.date.FillWeight = 39.37896F;
+            this.date.HeaderText = "Рӯзҳо";
+            this.date.Name = "date";
+            this.date.ReadOnly = true;
+            // 
             // tableLayoutPanel_full
             // 
             this.tableLayoutPanel_full.ColumnCount = 1;
@@ -766,7 +766,6 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel_top;
         private System.Windows.Forms.Panel panel_time;
         private Guna.UI2.WinForms.Guna2DataGridView datagridview_time;
-        private System.Windows.Forms.DataGridViewTextBoxColumn time;
         private System.Windows.Forms.Label label_time;
         private System.Windows.Forms.Panel panel_spitsalist;
         private Guna.UI2.WinForms.Guna2DataGridView datagridview_vrach;
@@ -776,12 +775,7 @@
         private System.Windows.Forms.Label label_services;
         private System.Windows.Forms.Panel panel_date;
         private Guna.UI2.WinForms.Guna2DataGridView datagridview_date;
-        private System.Windows.Forms.DataGridViewTextBoxColumn date;
         private System.Windows.Forms.Label label_date;
-        private System.Windows.Forms.DataGridViewTextBoxColumn id;
-        private System.Windows.Forms.DataGridViewTextBoxColumn name_spit;
-        private System.Windows.Forms.DataGridViewTextBoxColumn id_services;
-        private System.Windows.Forms.DataGridViewTextBoxColumn name;
         private Guna.UI2.WinForms.Guna2DataGridView datagridview_allServicesClient;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn name_spitsalist;
@@ -790,5 +784,11 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn enable;
         private System.Windows.Forms.DataGridViewImageColumn edit;
         private System.Windows.Forms.DataGridViewImageColumn delete;
+        private System.Windows.Forms.DataGridViewTextBoxColumn time;
+        private System.Windows.Forms.DataGridViewTextBoxColumn id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn name_spit;
+        private System.Windows.Forms.DataGridViewTextBoxColumn id_services;
+        private System.Windows.Forms.DataGridViewTextBoxColumn name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn date;
     }
 }

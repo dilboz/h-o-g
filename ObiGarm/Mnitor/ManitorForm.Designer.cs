@@ -41,9 +41,11 @@
             this.id = new DevExpress.XtraGrid.Columns.GridColumn();
             this.idServices = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridControl = new DevExpress.XtraGrid.GridControl();
+            this.pictureBoxTatusIp = new System.Windows.Forms.PictureBox();
             this.panel__top.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewQueryClient)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTatusIp)).BeginInit();
             this.SuspendLayout();
             // 
             // timer_select
@@ -121,7 +123,7 @@
             this.nameClient.OptionsFilter.AllowAutoFilter = false;
             this.nameClient.Visible = true;
             this.nameClient.VisibleIndex = 0;
-            this.nameClient.Width = 686;
+            this.nameClient.Width = 479;
             // 
             // nameDoctor
             // 
@@ -141,7 +143,7 @@
             this.nameDoctor.OptionsFilter.AllowAutoFilter = false;
             this.nameDoctor.Visible = true;
             this.nameDoctor.VisibleIndex = 1;
-            this.nameDoctor.Width = 573;
+            this.nameDoctor.Width = 780;
             // 
             // timeServices
             // 
@@ -196,11 +198,24 @@
             this.gridControl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridViewQueryClient});
             // 
+            // pictureBoxTatusIp
+            // 
+            this.pictureBoxTatusIp.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBoxTatusIp.Image = global::ObiGarm.Properties.Resources._77124_nointernet;
+            this.pictureBoxTatusIp.Location = new System.Drawing.Point(0, 52);
+            this.pictureBoxTatusIp.Name = "pictureBoxTatusIp";
+            this.pictureBoxTatusIp.Size = new System.Drawing.Size(1484, 702);
+            this.pictureBoxTatusIp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxTatusIp.TabIndex = 6;
+            this.pictureBoxTatusIp.TabStop = false;
+            this.pictureBoxTatusIp.Visible = false;
+            // 
             // ManitorForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1484, 754);
+            this.Controls.Add(this.pictureBoxTatusIp);
             this.Controls.Add(this.gridControl);
             this.Controls.Add(this.panel__top);
             this.IconOptions.ShowIcon = false;
@@ -214,6 +229,7 @@
             this.panel__top.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridViewQueryClient)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTatusIp)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -230,5 +246,6 @@
         private DevExpress.XtraGrid.GridControl gridControl;
         private DevExpress.XtraGrid.Columns.GridColumn id;
         private DevExpress.XtraGrid.Columns.GridColumn idServices;
+        private System.Windows.Forms.PictureBox pictureBoxTatusIp;
     }
 }

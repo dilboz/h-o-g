@@ -140,9 +140,12 @@ namespace ObiGarm.Regisrarura
 
                     txt_count_dey.Text = countDay.ToString();
                    
+                    txt_number_money.Text = table_selecte_client.Rows[0]["nuber_money"].ToString();
 
-                    if (double.Parse(txt_count_dey.Text) > 0)
-                        txt_number_money.Text = (double.Parse(txt_count_dey.Text) * double.Parse(txt_money_for_one_day.Text)).ToString();
+                    txt_money_for_one_day.Text = (int.Parse(txt_number_money.Text) / countDay).ToString();
+
+                    //if (double.Parse(txt_count_dey.Text) > 0)
+                    //    txt_number_money.Text = (double.Parse(txt_count_dey.Text) * double.Parse(txt_money_for_one_day.Text)).ToString();
 
                     txt_number_fon.Text = table_selecte_client.Rows[0]["nuber_phon"].ToString();
 
@@ -163,7 +166,6 @@ namespace ObiGarm.Regisrarura
                         combo_type_money.Text = SettingsDatabase.setNmaeTypeMoneyToTextbox(table_selecte_client.Rows[0]["id_type_money"].ToString());
                     }
 
-                    txt_number_money.Text = table_selecte_client.Rows[0]["nuber_money"].ToString();
                     txt_number_order.Text = table_selecte_client.Rows[0]["number_order"].ToString();
 
                     if (table_selecte_client.Rows[0]["id_kort"].ToString() != "")
@@ -301,24 +303,23 @@ namespace ObiGarm.Regisrarura
             string sql_type_money = "select * from type_money";
             sqlConfiguration.LoadComboDE(sql_type_money, "name", "id", combo_type_money);
 
-            string sql_doctor = "select users.id, concat(users.name, ' ', users.surname, ' (',count(client.id), ')') as name " +
+            string sql_doctor = "select users.id, concat(users.name, ' ', users.surname, ' (', case when client.enable = 1 and client.deleted is null then 1 else 0 end, ')' ) as name  " +
                 "from users " +
                 "left join client on client.id_varch= users.id " +
-                "where users.point=3 and client.deleted is null " +
+                "where users.point=3 and users.enable=1 and users.deleted is null " +
                 "group by users.id " +
                 "order by count(client.id);";
             sqlConfiguration.LoadComboDE(sql_doctor, "name", "id", combo_doctor);
 
             string sql_room = "select r.id, concat(f.name, ' ', r.name) as 'name_room', " +
-                "concat(sum(case when c.enable = 1 and c.deleted is null then 1 else 0 end),'/', r.max_per, ' (', sum(case when c.id_sex = 1 then 1 else 0 end), '-мард,',' ',  sum(case when c.id_sex = 2 then 1 else 0 end),'-зан', ')', " +
+                "concat(sum(case when c.enable = 1 and c.deleted is null then 1 else 0 end),'/', r.max_per, ' (', sum(case when c.id_sex = 1 and c.enable = 1 and c.deleted is null then 1 else 0 end), '-мард,',' ',  sum(case when c.id_sex = 2 and c.enable = 1 and c.deleted is null then 1 else 0 end),'-зан', ')', " +
                 "' (Наҳорӣ -', TIME_FORMAT(r.breakfast, '%h:%i') , ' Нисфирӯзӣ -', TIME_FORMAT(r.lunch, '%h:%i'), ' Бегоҳрӯзӣ -', time_format(r.dinner, '%h:%i'), ' )'  ) as 'info_for_per' , sum(case when c.enable = 1 and c.deleted is null then 1 else 0 end) as count_clients, r.max_per as max_per " +
                 "from room r " +
                 "left join client c on (c.id_room = r.id) " +
                 "join frame f on (r.id_freme  = f.id) " +
                 "left join sex s on (c.id_sex = s.id) " +
                 "group by r.id, r.name, f.name " +
-                "having count_clients != max_per " +
-                "order by count(c.id);";
+                "order by count_clients;";
             sqlConfiguration.LoadComboDE(sql_room, "name_room", "id", combo_room);
         }
 
@@ -883,9 +884,9 @@ namespace ObiGarm.Regisrarura
             combo_province.EditValue = null;
             txt_number_fon.EditValue = null;
             txt_count_dey.Text = "1";
-            date_first_dey.EditValue = null;
-            date_end_dey.EditValue = null;
-            combo_type_money.Text = "200";
+            date_first_dey.EditValue = DateTime.Now.ToString("dd/MM/yyyy");
+            date_end_dey.EditValue = DateTime.Now.ToString("dd/MM/yyyy");
+            combo_type_money.EditValue = null;
             txt_money_for_one_day.EditValue = null;
             txt_number_money.EditValue = null;
             txt_number_order.EditValue = null;
@@ -962,7 +963,8 @@ namespace ObiGarm.Regisrarura
 
         private void combo_country_EditValueChanged(object sender, EventArgs e)
         {
-            displayItemComboPtovince(combo_country.EditValue.ToString());
+            if (combo_country.EditValue!=null)            
+                displayItemComboPtovince(combo_country.EditValue.ToString());
         }
 
         private void txt_count_dey_EditValueChanged(object sender, EventArgs e)
@@ -1005,9 +1007,8 @@ namespace ObiGarm.Regisrarura
         private void combo_type_money_EditValueChanged(object sender, EventArgs e)
         {
             if (combo_type_money.Text == "Бо маблағ"
-                || combo_type_money.EditValue == "1")
+                || combo_type_money.EditValue.ToString() == "1")
             {
-                txt_money_for_one_day.Text = "200";
                 txt_money_for_one_day.TabStop = true;
             }
             else
@@ -1049,15 +1050,41 @@ namespace ObiGarm.Regisrarura
 
         private void txt_money_for_one_day_EditValueChanged(object sender, EventArgs e)
         {
-            if(txt_button != "Кушодани руз")
+            
+            if (txt_button != "Кушодани руз")
                 if (txt_count_dey.Text != null)
                     if (txt_count_dey.Text != "")
                         if (double.Parse(txt_count_dey.Text) > 0)
                         {
-                            AddDay(DateTime.Parse(date_first_dey.Text), double.Parse(txt_count_dey.Text) - 1);
-                            if (txt_money_for_one_day.Text != null && txt_money_for_one_day.Text != "")
-                                txt_number_money.Text = (double.Parse(txt_count_dey.Text) * double.Parse(txt_money_for_one_day.Text)).ToString();
+                            if (txt_count_dey.EditValue != null && date_first_dey.EditValue!=null)
+                            {
+                                AddDay(DateTime.Parse(date_first_dey.Text), double.Parse(txt_count_dey.Text) - 1);
+                                if (txt_money_for_one_day.Text != null && txt_money_for_one_day.Text != "")
+                                    txt_number_money.Text = (double.Parse(txt_count_dey.Text) * double.Parse(txt_money_for_one_day.Text)).ToString();
+                            }
+                              
                         }
+        }
+
+        private void txt_full_name_Leave(object sender, EventArgs e)
+        {
+            txt_full_name.Text = CapitalizeFirstLetters(txt_full_name.Text);
+        }
+
+        private void txt_number_money_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txt_number_order_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
         }
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -120,6 +121,7 @@
             this.label23 = new System.Windows.Forms.Label();
             this.edit_btn = new System.Windows.Forms.DataGridViewImageColumn();
             this.deleted_btn = new System.Windows.Forms.DataGridViewImageColumn();
+            this.timerForOnem = new System.Windows.Forms.Timer(this.components);
             this.panel_top.SuspendLayout();
             this.btn_chek_kort.SuspendLayout();
             this.tab_menu.SuspendLayout();
@@ -211,6 +213,7 @@
             this.combo_client.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.combo_client.ItemHeight = 20;
             this.combo_client.Location = new System.Drawing.Point(312, 12);
+            this.combo_client.MaxDropDownItems = 5;
             this.combo_client.Name = "combo_client";
             this.combo_client.Size = new System.Drawing.Size(590, 26);
             this.combo_client.TabIndex = 31;
@@ -1612,6 +1615,11 @@
             this.deleted_btn.Visible = false;
             this.deleted_btn.Width = 50;
             // 
+            // timerForOnem
+            // 
+            this.timerForOnem.Interval = 60000;
+            this.timerForOnem.Tick += new System.EventHandler(this.timerForOnem_Tick);
+            // 
             // MainFormVrach
             // 
             this.Appearance.BackColor = System.Drawing.Color.White;
@@ -1729,5 +1737,6 @@
         private System.Windows.Forms.Label label9;
         private Guna.UI2.WinForms.Guna2TextBox txt_quvai_bozuho;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Timer timerForOnem;
     }
 }

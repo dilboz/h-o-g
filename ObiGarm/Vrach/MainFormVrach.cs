@@ -58,9 +58,9 @@ namespace ObiGarm.Vrach
             if (_info1.Rows.Count != 0)
             {
                 txt_full_name.Text = _info1.Rows[0]["full_name"].ToString();
-                txt_year_burhhday.Text = _info1.Rows[0]["year_birthday"].ToString();
-                txt_start_time.Text = _info1.Rows[0]["date_time_start"].ToString();
-                time_end_time.Text = _info1.Rows[0]["date_time_end"].ToString();
+                txt_year_burhhday.Text = DateTime.Parse( _info1.Rows[0]["year_birthday"].ToString()).ToString("dd.MM.yyyy");
+                txt_start_time.Text = DateTime.Parse(_info1.Rows[0]["date_time_start"].ToString()).ToString("dd.MM.yyyy");
+                time_end_time.Text = DateTime.Parse(_info1.Rows[0]["date_time_end"].ToString()).ToString("dd.MM.yyyy");
                 txt_name_doctor.Text = _info1.Rows[0]["name_vrach"].ToString();
                 txt_room.Text = _info1.Rows[0]["room"].ToString();
                 txt_time_nahory.Text = _info1.Rows[0]["breakfast"].ToString();
@@ -227,10 +227,10 @@ namespace ObiGarm.Vrach
 
         private void btn_add_services_Click(object sender, EventArgs e)
         {
-            AddServicesForClient addServicesForClient = new AddServicesForClient(this, id_client, edit_services_client);
+            AddServicesForClient addServicesForClient = new AddServicesForClient(this, id_client, id_vrach);
             addServicesForClient.ShowDialog();
         }
-
+         
         void check_id(string id_client)
         {
             string sql_query = $"select * from info_table_clients where id_clients = '{id_client}';";
@@ -346,6 +346,8 @@ namespace ObiGarm.Vrach
 
             dc = new DataColumn("time_services", typeof(String));
             dataTable.Columns.Add(dc);
+
+
             if (datagridview_allServicesClient.Rows.Count!=0)
             {   int count_row = 0;
                 foreach (DataGridViewRow row in datagridview_allServicesClient.Rows)
@@ -382,11 +384,10 @@ namespace ObiGarm.Vrach
                     dataTable.Rows.Add(dr);
                 }
               
-            }
-            
+            }            
 
             PrintForm printForm  = new PrintForm(dataTable, txt_full_name.Text, txt_year_burhhday.Text, name_jins, string.Concat(txt_start_time.Text, " - ", time_end_time.Text), txt_qad.Text, txt_vazn.Text, txt_hajmi_qafasi_sina.Text, txt_qobiliyati_nafaskashi.Text,
-                txt_quvai_bozuho.Text, txt_tarkibi_hun.Text, txt_nabz.Text, txt_harorat.Text, txt_EKG.Text, txt_sanjishi_peshob.Text, txt_sanjishi_nasoji.Text, txt_ultarasado.Text, txt_time_nahory.Text, txt_nisfiruzi.Text, txt_hurok_begohruzi.Text, txt_name_doctor.Text, com_nishonahoi_tabobat.Text, order );
+                txt_quvai_bozuho.Text, txt_tarkibi_hun.Text, txt_nabz.Text, txt_harorat.Text, txt_EKG.Text, txt_sanjishi_peshob.Text, txt_sanjishi_nasoji.Text, txt_ultarasado.Text, txt_time_nahory.Text, txt_nisfiruzi.Text, txt_hurok_begohruzi.Text, txt_name_doctor.Text, com_nishonahoi_tabobat.Text, order, txt_fishori_hun.Text );
             printForm.ShowDialog();
         }
 
@@ -430,6 +431,11 @@ namespace ObiGarm.Vrach
             check_id(id_client);
             string sql_query = $"UPDATE info_table_clients SET nishonahoi_tabobat = '{com_nishonahoi_tabobat.Text}' WHERE id_clients = '{id_client}';";
             sqlConfiguration.sqlQuery(sql_query);
+        }
+
+        private void timerForOnem_Tick(object sender, EventArgs e)
+        {
+            display_comboclients();
         }
     }
 }

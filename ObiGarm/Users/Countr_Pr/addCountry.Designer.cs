@@ -141,7 +141,7 @@ namespace ObiGarm.Users.Countr_Pr
             this.txt_name.BorderColorIdle = System.Drawing.Color.Silver;
             this.txt_name.BorderRadius = 15;
             this.txt_name.BorderThickness = 1;
-            this.txt_name.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txt_name.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txt_name.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_name.DefaultFont = new System.Drawing.Font("Segoe UI Semibold", 9.75F);
             this.txt_name.DefaultText = "";
@@ -182,7 +182,7 @@ namespace ObiGarm.Users.Countr_Pr
             this.txt_name.OnIdleState = stateProperties4;
             this.txt_name.PasswordChar = '\0';
             this.txt_name.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.txt_name.PlaceholderText = "НОМ";
+            this.txt_name.PlaceholderText = "Ном";
             this.txt_name.ReadOnly = false;
             this.txt_name.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txt_name.SelectedText = "";
@@ -196,7 +196,7 @@ namespace ObiGarm.Users.Countr_Pr
             this.txt_name.TextMarginBottom = 0;
             this.txt_name.TextMarginLeft = 5;
             this.txt_name.TextMarginTop = 0;
-            this.txt_name.TextPlaceholder = "НОМ";
+            this.txt_name.TextPlaceholder = "Ном";
             this.txt_name.UseSystemPasswordChar = false;
             this.txt_name.WordWrap = true;
             // 

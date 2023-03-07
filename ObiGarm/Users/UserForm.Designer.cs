@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.actions_button = new System.Windows.Forms.Button();
             this.export_database_button = new System.Windows.Forms.Button();
             this.reference_button = new System.Windows.Forms.Button();
             this.panel_user = new System.Windows.Forms.Panel();
@@ -56,12 +55,13 @@
             this.servicesis_btn = new System.Windows.Forms.Button();
             this.frame_and_room = new System.Windows.Forms.Button();
             this.panel_left = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel_top = new System.Windows.Forms.Panel();
             this.logout_button = new System.Windows.Forms.Button();
             this.user_info_label = new System.Windows.Forms.Label();
             this.panel_child_all = new System.Windows.Forms.Panel();
             this.formAssistant1 = new DevExpress.XtraBars.FormAssistant();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.report_d = new System.Windows.Forms.Button();
             this.panel_user.SuspendLayout();
             this.panel_menu.SuspendLayout();
             this.panel_reports.SuspendLayout();
@@ -69,25 +69,9 @@
             this.servises_frame_panel.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel_left.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel_top.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // actions_button
-            // 
-            this.actions_button.Dock = System.Windows.Forms.DockStyle.Top;
-            this.actions_button.FlatAppearance.BorderSize = 0;
-            this.actions_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.actions_button.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold);
-            this.actions_button.ForeColor = System.Drawing.Color.White;
-            this.actions_button.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.actions_button.Location = new System.Drawing.Point(0, 568);
-            this.actions_button.Name = "actions_button";
-            this.actions_button.Size = new System.Drawing.Size(258, 35);
-            this.actions_button.TabIndex = 34;
-            this.actions_button.Text = "Амалҳои истифодабарандагон";
-            this.actions_button.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.actions_button.UseVisualStyleBackColor = true;
             // 
             // export_database_button
             // 
@@ -299,7 +283,6 @@
             this.panel_menu.AutoScroll = true;
             this.panel_menu.Controls.Add(this.panel_reports);
             this.panel_menu.Controls.Add(this.reports_button);
-            this.panel_menu.Controls.Add(this.actions_button);
             this.panel_menu.Controls.Add(this.export_database_button);
             this.panel_menu.Controls.Add(this.servises_frame_panel);
             this.panel_menu.Controls.Add(this.reference_button);
@@ -308,27 +291,28 @@
             this.panel_menu.Controls.Add(this.main_button);
             this.panel_menu.Location = new System.Drawing.Point(4, 75);
             this.panel_menu.Name = "panel_menu";
-            this.panel_menu.Size = new System.Drawing.Size(258, 756);
+            this.panel_menu.Size = new System.Drawing.Size(258, 780);
             this.panel_menu.TabIndex = 3;
             // 
             // panel_reports
             // 
             this.panel_reports.Controls.Add(this.panel_report_menu);
             this.panel_reports.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel_reports.Location = new System.Drawing.Point(0, 638);
+            this.panel_reports.Location = new System.Drawing.Point(0, 603);
             this.panel_reports.Name = "panel_reports";
-            this.panel_reports.Size = new System.Drawing.Size(258, 113);
+            this.panel_reports.Size = new System.Drawing.Size(258, 149);
             this.panel_reports.TabIndex = 36;
             this.panel_reports.Visible = false;
             // 
             // panel_report_menu
             // 
+            this.panel_report_menu.Controls.Add(this.report_d);
             this.panel_report_menu.Controls.Add(this.report_c);
             this.panel_report_menu.Controls.Add(this.report_b);
             this.panel_report_menu.Controls.Add(this.report_a);
             this.panel_report_menu.Location = new System.Drawing.Point(8, 3);
             this.panel_report_menu.Name = "panel_report_menu";
-            this.panel_report_menu.Size = new System.Drawing.Size(198, 109);
+            this.panel_report_menu.Size = new System.Drawing.Size(198, 130);
             this.panel_report_menu.TabIndex = 5;
             // 
             // report_c
@@ -390,7 +374,7 @@
             this.reports_button.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold);
             this.reports_button.ForeColor = System.Drawing.Color.White;
             this.reports_button.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.reports_button.Location = new System.Drawing.Point(0, 603);
+            this.reports_button.Location = new System.Drawing.Point(0, 568);
             this.reports_button.Name = "reports_button";
             this.reports_button.Size = new System.Drawing.Size(258, 35);
             this.reports_button.TabIndex = 35;
@@ -516,20 +500,8 @@
             this.panel_left.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel_left.Location = new System.Drawing.Point(0, 0);
             this.panel_left.Name = "panel_left";
-            this.panel_left.Size = new System.Drawing.Size(268, 843);
+            this.panel_left.Size = new System.Drawing.Size(268, 867);
             this.panel_left.TabIndex = 4;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pictureBox1.Image = global::ObiGarm.Properties.Resources.logo;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(268, 69);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // panel_top
             // 
@@ -579,15 +551,43 @@
             this.panel_child_all.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_child_all.Location = new System.Drawing.Point(268, 55);
             this.panel_child_all.Name = "panel_child_all";
-            this.panel_child_all.Size = new System.Drawing.Size(1093, 788);
+            this.panel_child_all.Size = new System.Drawing.Size(1093, 812);
             this.panel_child_all.TabIndex = 6;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pictureBox1.Image = global::ObiGarm.Properties.Resources.logo;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(268, 69);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // report_d
+            // 
+            this.report_d.Dock = System.Windows.Forms.DockStyle.Top;
+            this.report_d.FlatAppearance.BorderSize = 0;
+            this.report_d.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.report_d.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold);
+            this.report_d.ForeColor = System.Drawing.Color.White;
+            this.report_d.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.report_d.Location = new System.Drawing.Point(0, 105);
+            this.report_d.Name = "report_d";
+            this.report_d.Size = new System.Drawing.Size(198, 35);
+            this.report_d.TabIndex = 32;
+            this.report_d.Text = "Ҳисоботи 4";
+            this.report_d.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.report_d.UseVisualStyleBackColor = true;
             // 
             // UserForm
             // 
             this.Appearance.Options.UseFont = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1361, 843);
+            this.ClientSize = new System.Drawing.Size(1361, 867);
             this.Controls.Add(this.panel_child_all);
             this.Controls.Add(this.panel_top);
             this.Controls.Add(this.panel_left);
@@ -607,14 +607,13 @@
             this.servises_frame_panel.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel_left.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel_top.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.Button actions_button;
         private System.Windows.Forms.Button export_database_button;
         private System.Windows.Forms.Button reference_button;
         private System.Windows.Forms.Panel panel_user;
@@ -648,5 +647,6 @@
         private System.Windows.Forms.Button vrach_button;
         private System.Windows.Forms.Button admin_button;
         private System.Windows.Forms.Button button_country;
+        private System.Windows.Forms.Button report_d;
     }
 }

@@ -40,35 +40,35 @@
             this.lbl_tab = new System.Windows.Forms.Label();
             this.btn_creat = new System.Windows.Forms.Button();
             this.group_name_frame = new DevExpress.XtraEditors.GroupControl();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.txt_time_dinner = new DevExpress.XtraEditors.TimeEdit();
+            this.label5 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.txt_time_breakfast = new DevExpress.XtraEditors.TimeEdit();
+            this.label3 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.txt_time_lunch = new DevExpress.XtraEditors.TimeEdit();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.txt_max_count = new Guna.UI2.WinForms.Guna2NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
             this.txt_name_room = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
             this.lbl_room = new System.Windows.Forms.Label();
             this.combo_frame = new Guna.UI2.WinForms.Guna2ComboBox();
             this.lbl_name = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txt_time_breakfast = new DevExpress.XtraEditors.TimeEdit();
-            this.txt_time_lunch = new DevExpress.XtraEditors.TimeEdit();
-            this.txt_time_dinner = new DevExpress.XtraEditors.TimeEdit();
             this.panel_full.SuspendLayout();
             this.panel_botton.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.group_name_frame)).BeginInit();
             this.group_name_frame.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_max_count)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_time_breakfast.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_time_lunch.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_time_dinner.Properties)).BeginInit();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_time_breakfast.Properties)).BeginInit();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_time_lunch.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_max_count)).BeginInit();
             this.SuspendLayout();
             // 
             // panel_full
@@ -153,6 +153,146 @@
             this.group_name_frame.Size = new System.Drawing.Size(589, 285);
             this.group_name_frame.TabIndex = 1;
             this.group_name_frame.Text = "Сохтани ҳуҷра";
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 3;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel1.Controls.Add(this.panel3, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.panel2, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.panel1, 1, 0);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(7, 229);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 1;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(575, 52);
+            this.tableLayoutPanel1.TabIndex = 42;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.txt_time_dinner);
+            this.panel3.Controls.Add(this.label5);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Location = new System.Drawing.Point(385, 3);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(187, 46);
+            this.panel3.TabIndex = 2;
+            // 
+            // txt_time_dinner
+            // 
+            this.txt_time_dinner.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txt_time_dinner.EditValue = new System.DateTime(2022, 10, 28, 18, 0, 0, 0);
+            this.txt_time_dinner.Location = new System.Drawing.Point(0, 20);
+            this.txt_time_dinner.Name = "txt_time_dinner";
+            this.txt_time_dinner.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_time_dinner.Properties.Appearance.Options.UseFont = true;
+            this.txt_time_dinner.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.txt_time_dinner.Properties.TimeEditStyle = DevExpress.XtraEditors.Repository.TimeEditStyle.TouchUI;
+            this.txt_time_dinner.Properties.TouchUIMaxValue = new System.DateTime(9999, 12, 31, 11, 59, 0, 0);
+            this.txt_time_dinner.Size = new System.Drawing.Size(187, 26);
+            this.txt_time_dinner.TabIndex = 43;
+            // 
+            // label5
+            // 
+            this.label5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label5.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(0, 0);
+            this.label5.Name = "label5";
+            this.label5.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.label5.Size = new System.Drawing.Size(187, 20);
+            this.label5.TabIndex = 42;
+            this.label5.Text = "Ҳуроки бегоҳрӯзӣ";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.txt_time_breakfast);
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(3, 3);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(185, 46);
+            this.panel2.TabIndex = 1;
+            // 
+            // txt_time_breakfast
+            // 
+            this.txt_time_breakfast.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txt_time_breakfast.EditValue = new System.DateTime(2022, 10, 28, 8, 0, 0, 0);
+            this.txt_time_breakfast.Location = new System.Drawing.Point(0, 20);
+            this.txt_time_breakfast.Name = "txt_time_breakfast";
+            this.txt_time_breakfast.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_time_breakfast.Properties.Appearance.Options.UseFont = true;
+            this.txt_time_breakfast.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.txt_time_breakfast.Properties.TimeEditStyle = DevExpress.XtraEditors.Repository.TimeEditStyle.TouchUI;
+            this.txt_time_breakfast.Properties.TouchUIMaxValue = new System.DateTime(9999, 12, 31, 11, 59, 0, 0);
+            this.txt_time_breakfast.Size = new System.Drawing.Size(185, 26);
+            this.txt_time_breakfast.TabIndex = 43;
+            // 
+            // label3
+            // 
+            this.label3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label3.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(0, 0);
+            this.label3.Name = "label3";
+            this.label3.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.label3.Size = new System.Drawing.Size(185, 20);
+            this.label3.TabIndex = 42;
+            this.label3.Text = "Наҳорӣ";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.txt_time_lunch);
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(194, 3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(185, 46);
+            this.panel1.TabIndex = 0;
+            // 
+            // txt_time_lunch
+            // 
+            this.txt_time_lunch.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txt_time_lunch.EditValue = new System.DateTime(2022, 10, 28, 13, 0, 0, 0);
+            this.txt_time_lunch.Location = new System.Drawing.Point(0, 20);
+            this.txt_time_lunch.Name = "txt_time_lunch";
+            this.txt_time_lunch.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_time_lunch.Properties.Appearance.Options.UseFont = true;
+            this.txt_time_lunch.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.txt_time_lunch.Properties.TimeEditStyle = DevExpress.XtraEditors.Repository.TimeEditStyle.TouchUI;
+            this.txt_time_lunch.Properties.TouchUIMaxValue = new System.DateTime(9999, 12, 31, 11, 59, 0, 0);
+            this.txt_time_lunch.Size = new System.Drawing.Size(185, 26);
+            this.txt_time_lunch.TabIndex = 43;
+            // 
+            // label4
+            // 
+            this.label4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label4.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(0, 0);
+            this.label4.Name = "label4";
+            this.label4.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.label4.Size = new System.Drawing.Size(185, 20);
+            this.label4.TabIndex = 42;
+            this.label4.Text = "Хуроки нисфирӯзӣ";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label2
+            // 
+            this.label2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label2.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(7, 204);
+            this.label2.Name = "label2";
+            this.label2.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.label2.Size = new System.Drawing.Size(575, 25);
+            this.label2.TabIndex = 41;
+            this.label2.Text = "Вақти хурокҳо:";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // txt_max_count
             // 
@@ -309,146 +449,6 @@
             this.lbl_name.Text = "Номи бино:";
             this.lbl_name.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label2
-            // 
-            this.label2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label2.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(7, 204);
-            this.label2.Name = "label2";
-            this.label2.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.label2.Size = new System.Drawing.Size(575, 25);
-            this.label2.TabIndex = 41;
-            this.label2.Text = "Вақти хурокҳо:";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // tableLayoutPanel1
-            // 
-            this.tableLayoutPanel1.ColumnCount = 3;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.Controls.Add(this.panel3, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.panel2, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.panel1, 1, 0);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(7, 229);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 1;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(575, 52);
-            this.tableLayoutPanel1.TabIndex = 42;
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.txt_time_lunch);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(194, 3);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(185, 46);
-            this.panel1.TabIndex = 0;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.txt_time_breakfast);
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(3, 3);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(185, 46);
-            this.panel2.TabIndex = 1;
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.txt_time_dinner);
-            this.panel3.Controls.Add(this.label5);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(385, 3);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(187, 46);
-            this.panel3.TabIndex = 2;
-            // 
-            // label3
-            // 
-            this.label3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label3.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(0, 0);
-            this.label3.Name = "label3";
-            this.label3.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.label3.Size = new System.Drawing.Size(185, 20);
-            this.label3.TabIndex = 42;
-            this.label3.Text = "Наҳорӣ";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label4
-            // 
-            this.label4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label4.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(0, 0);
-            this.label4.Name = "label4";
-            this.label4.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.label4.Size = new System.Drawing.Size(185, 20);
-            this.label4.TabIndex = 42;
-            this.label4.Text = "Хуроки нисфирӯзӣ";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label5
-            // 
-            this.label5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label5.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(0, 0);
-            this.label5.Name = "label5";
-            this.label5.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.label5.Size = new System.Drawing.Size(187, 20);
-            this.label5.TabIndex = 42;
-            this.label5.Text = "Ҳуроки бегоҳрӯзӣ";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // txt_time_breakfast
-            // 
-            this.txt_time_breakfast.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txt_time_breakfast.EditValue = new System.DateTime(2022, 10, 28, 12, 0, 0, 0);
-            this.txt_time_breakfast.Location = new System.Drawing.Point(0, 20);
-            this.txt_time_breakfast.Name = "txt_time_breakfast";
-            this.txt_time_breakfast.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_time_breakfast.Properties.Appearance.Options.UseFont = true;
-            this.txt_time_breakfast.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.txt_time_breakfast.Properties.TimeEditStyle = DevExpress.XtraEditors.Repository.TimeEditStyle.TouchUI;
-            this.txt_time_breakfast.Properties.TouchUIMaxValue = new System.DateTime(9999, 12, 31, 11, 59, 0, 0);
-            this.txt_time_breakfast.Size = new System.Drawing.Size(185, 26);
-            this.txt_time_breakfast.TabIndex = 43;
-            // 
-            // txt_time_lunch
-            // 
-            this.txt_time_lunch.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txt_time_lunch.EditValue = new System.DateTime(2022, 10, 28, 12, 0, 0, 0);
-            this.txt_time_lunch.Location = new System.Drawing.Point(0, 20);
-            this.txt_time_lunch.Name = "txt_time_lunch";
-            this.txt_time_lunch.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_time_lunch.Properties.Appearance.Options.UseFont = true;
-            this.txt_time_lunch.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.txt_time_lunch.Properties.TimeEditStyle = DevExpress.XtraEditors.Repository.TimeEditStyle.TouchUI;
-            this.txt_time_lunch.Properties.TouchUIMaxValue = new System.DateTime(9999, 12, 31, 11, 59, 0, 0);
-            this.txt_time_lunch.Size = new System.Drawing.Size(185, 26);
-            this.txt_time_lunch.TabIndex = 43;
-            // 
-            // txt_time_dinner
-            // 
-            this.txt_time_dinner.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txt_time_dinner.EditValue = new System.DateTime(2022, 10, 28, 12, 0, 0, 0);
-            this.txt_time_dinner.Location = new System.Drawing.Point(0, 20);
-            this.txt_time_dinner.Name = "txt_time_dinner";
-            this.txt_time_dinner.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_time_dinner.Properties.Appearance.Options.UseFont = true;
-            this.txt_time_dinner.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.txt_time_dinner.Properties.TimeEditStyle = DevExpress.XtraEditors.Repository.TimeEditStyle.TouchUI;
-            this.txt_time_dinner.Properties.TouchUIMaxValue = new System.DateTime(9999, 12, 31, 11, 59, 0, 0);
-            this.txt_time_dinner.Size = new System.Drawing.Size(187, 26);
-            this.txt_time_dinner.TabIndex = 43;
-            // 
             // AddRoom
             // 
             this.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -471,14 +471,14 @@
             this.panel_botton.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.group_name_frame)).EndInit();
             this.group_name_frame.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.txt_max_count)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.txt_time_breakfast.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_time_lunch.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_time_dinner.Properties)).EndInit();
+            this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.txt_time_breakfast.Properties)).EndInit();
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.txt_time_lunch.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_max_count)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -18,7 +18,7 @@ namespace ObiGarm.Vrach
         SqlConfiguration sqlConfiguration;
         private readonly MainFormVrach mainFormVrach;
         private string id_client;
-        private bool id_main_vrach;
+        private string id_main_vrach;
 
         private string prv_id_services;
         private string prv_id_spitsalist;
@@ -32,7 +32,7 @@ namespace ObiGarm.Vrach
         private DateTime prv_client_start_work_spit;
         private DateTime prv_client_end_work_spit;
 
-        public AddServicesForClient(MainFormVrach mainFormVrach, string id_client, bool id_main_spitsalist)
+        public AddServicesForClient(MainFormVrach mainFormVrach, string id_client, string id_main_spitsalist)
         {
             InitializeComponent();
             sqlConfiguration = new SqlConfiguration();
@@ -77,7 +77,7 @@ namespace ObiGarm.Vrach
             prv_client_start_work_spit = Convert.ToDateTime(dataTable_spit.Rows[0]["date_time_start"].ToString());
             prv_client_end_work_spit = Convert.ToDateTime(dataTable_spit.Rows[0]["date_time_end"].ToString());
 
-            list_data(prv_client_start_work_spit, prv_client_end_work_spit);
+            list_data(DateTime.Now, prv_client_end_work_spit);
         }
 
         void list_data(DateTime start_date, DateTime end_date)
@@ -85,14 +85,14 @@ namespace ObiGarm.Vrach
             datagridview_date.Rows.Clear();
             while (start_date <= end_date)
             {
-                datagridview_date.Rows.Add(start_date.ToString("D"));/*.ToString("dd-MM-yyyy")*/
+                datagridview_date.Rows.Add(start_date.ToString("D")); /*.ToString("dd-MM-yyyy")*/
                 start_date = start_date.AddDays(1);
             }
         }
 
         void free_time_spitsalist(DateTime seleted_date)
         {
-            DataTable time_services_ = sqlConfiguration.sqlSelectQuery($"SELECT * FROM services where id = '{prv_id_services}';");
+            DataTable time_services_ = sqlConfiguration.sqlSelectQuery($"SELECT * FROM services where id = '{prv_id_services}' ;");
             DateTime time_seleted_serivces = DateTime.Parse(time_services_.Rows[0]["time_services"].ToString());
 
             list_time(seleted_date, prv_time_start_work_spit, prv_time_end_work_spit, time_seleted_serivces);
@@ -101,53 +101,55 @@ namespace ObiGarm.Vrach
         void list_time(DateTime date_selected, DateTime start_time_spitsalist_work, DateTime end_time_spitsalist_work, DateTime time_services_selected)
         {
             datagridview_time.Rows.Clear();
+
             if (date_selected.ToString("d") == prv_time_start_work_spit.ToString("d"))
             {
-                if (DateTime.Parse(start_time_spitsalist_work.ToString("HH:mm:ss")) <= DateTime.Parse(prv_time_start_work_spit.ToString("HH:mm:ss")))
+                if (DateTime.Parse(start_time_spitsalist_work.ToString("HH:mm")) <= DateTime.Parse(prv_time_start_work_spit.ToString("HH:mm")))
                 {
-                    start_time_spitsalist_work = Convert.ToDateTime(prv_time_start_work_spit.ToString("HH:mm:ss"));
+                    start_time_spitsalist_work = Convert.ToDateTime(prv_time_start_work_spit.ToString("HH:mm"));
                 }
                 else
                 {
-                    start_time_spitsalist_work = Convert.ToDateTime(prv_time_start_work_spit.ToString("HH:mm:ss"));
+                    start_time_spitsalist_work = Convert.ToDateTime(prv_time_start_work_spit.ToString("HH:mm"));
                 }
-                end_time_spitsalist_work = Convert.ToDateTime(prv_time_end_work_spit.ToString("HH:mm:ss"));
+                end_time_spitsalist_work = Convert.ToDateTime(prv_time_end_work_spit.ToString("HH:mm"));
             }
             else
             {
-                start_time_spitsalist_work = Convert.ToDateTime(prv_time_start_work_spit.ToString("HH:mm:ss"));
-                end_time_spitsalist_work = Convert.ToDateTime(prv_time_end_work_spit.ToString("HH:mm:ss"));
+                start_time_spitsalist_work = Convert.ToDateTime(prv_time_start_work_spit.ToString("HH:mm"));
+                end_time_spitsalist_work = Convert.ToDateTime(prv_time_end_work_spit.ToString("HH:mm"));
             }
 
 
             double time_services_hh = double.Parse(Convert.ToDateTime(time_services_selected).ToString("HH"));
-            double time_services_mm = double.Parse(Convert.ToDateTime(time_services_selected).ToString("mm")) + 10;
-            double time_services_ss = double.Parse(Convert.ToDateTime(time_services_selected).ToString("ss"));
+            double time_services_mm = double.Parse(Convert.ToDateTime(time_services_selected).ToString("mm"));
 
             datagridview_time.Rows.Clear();
 
-            while (DateTime.Parse(start_time_spitsalist_work.ToString("HH:mm:ss")) <= DateTime.Parse(end_time_spitsalist_work.ToString("HH:mm:ss")))
+            Console.WriteLine(date_selected.ToString("yyyy-MM-dd") + "\n" + DateTime.Now.ToString("yyyy-MM-dd"));
+            
+            if (DateTime.Parse(start_time_spitsalist_work.ToString("HH:mm")) <= DateTime.Parse(DateTime.Now.ToString("HH:mm")) && DateTime.Parse(date_selected.ToString("yyyy-MM-dd")) == DateTime.Parse(DateTime.Now.ToString("yyyy-MM-dd")))
+                start_time_spitsalist_work = DateTime.Parse(DateTime.Now.ToString("HH:mm"));
+
+            while (DateTime.Parse(start_time_spitsalist_work.ToString("HH:mm")) <= DateTime.Parse(end_time_spitsalist_work.ToString("HH:mm")))
             {
                 DateTime time_plus_srt_time = start_time_spitsalist_work;
                 time_plus_srt_time = time_plus_srt_time.AddHours(time_services_hh);
                 time_plus_srt_time = time_plus_srt_time.AddMinutes(time_services_mm);
-                time_plus_srt_time = time_plus_srt_time.AddSeconds(time_services_ss);
 
-                DataTable check_tabel_sevices_client = sqlConfiguration.sqlSelectQuery($"select * from services_client where id_services = '{prv_id_services}' and id_users = '{prv_id_spitsalist}' and time >= '{date_selected.Year}-{date_selected.Month}-{date_selected.Day} {start_time_spitsalist_work.Hour}:{start_time_spitsalist_work.Minute}:{start_time_spitsalist_work.Second}' " +
-                    $" and time <= '{date_selected.Year}-{date_selected.Month}-{date_selected.Day} {(time_plus_srt_time.Hour)}:{time_plus_srt_time.Minute}:{time_plus_srt_time.Second}'");
+                DataTable check_tabel_sevices_client = sqlConfiguration.sqlSelectQuery($"select * from services_client where id_services = '{prv_id_services}' and id_users = '{prv_id_spitsalist}' and time >= '{date_selected.Year}-{date_selected.Month}-{date_selected.Day} {start_time_spitsalist_work.Hour}:{start_time_spitsalist_work.Minute}' " +
+                    $" and time <= '{date_selected.Year}-{date_selected.Month}-{date_selected.Day} {(time_plus_srt_time.Hour)}:{time_plus_srt_time.Minute}' and deleted is null; ");
 
-                Console.WriteLine($"select * from services_client where id_services = '{prv_id_services}' and time >= '{date_selected.Year}-{date_selected.Month}-{date_selected.Day} {start_time_spitsalist_work.Hour}:{start_time_spitsalist_work.Minute}:{start_time_spitsalist_work.Second}'+" +
-                    $" and time <= '{date_selected.Year}-{date_selected.Month}-{date_selected.Day} {(time_plus_srt_time.Hour)}:{time_plus_srt_time.Minute}:{time_plus_srt_time.Second}'");
-
+                /*Console.WriteLine($"select * from services_client where id_services = '{prv_id_services}' and id_users = '{prv_id_spitsalist}' and time >= '{date_selected.Year}-{date_selected.Month}-{date_selected.Day} {start_time_spitsalist_work.Hour}:{start_time_spitsalist_work.Minute}:{start_time_spitsalist_work.Second}' " +
+                    $" and time <= '{date_selected.Year}-{date_selected.Month}-{date_selected.Day} {(time_plus_srt_time.Hour)}:{time_plus_srt_time.Minute}' and deleted is null; ");*/
 
                 if (check_tabel_sevices_client.Rows.Count == 0)
                 {
-                    datagridview_time.Rows.Add(start_time_spitsalist_work.ToString("HH:mm:ss"));
+                    datagridview_time.Rows.Add(start_time_spitsalist_work.ToString("HH:mm"));
                 }
+
                 start_time_spitsalist_work = start_time_spitsalist_work.AddHours(time_services_hh);
                 start_time_spitsalist_work = start_time_spitsalist_work.AddMinutes(time_services_mm);
-                start_time_spitsalist_work = start_time_spitsalist_work.AddSeconds(time_services_ss);
-
 
             }
         }
@@ -155,7 +157,7 @@ namespace ObiGarm.Vrach
         void adding_services(DateTime time_selected)
         {
             string date = ptv_select_date_for_services.ToString("yyyy-MM-dd");
-            string time = time_selected.ToString("HH:mm:ss");
+            string time = time_selected.ToString("HH:mm");
 
             prv_full_time_for_client = string.Concat(date, " ", time);
             add(prv_full_time_for_client);
@@ -172,8 +174,24 @@ namespace ObiGarm.Vrach
             string time_services_for_client = date_time_services_forclient;
 
 
-            string chek_sql_query = $"select * from services_client where id_client ='{id_client}' and id_services='{id_services}' and id_users= '{prv_id_spitsalist}' and time = '{time_services_for_client}'";
+            string chek_sql_query = $"select * from services_client where id_client ='{id_client}' and time >= '{time_services_for_client}' and time <= '{DateTime.Parse(time_services_for_client).AddMinutes(50).ToString("yyyy-MM-dd HH:mm")}' and deleted is null ";
+            string chek_sql_query_after = $"select * from services_client where id_client ='{id_client}' and time >= '{DateTime.Parse(time_services_for_client).AddMinutes(-50).ToString("yyyy-MM-dd HH:mm")}' and time <= '{time_services_for_client}' and deleted is null ";
 
+            Console.WriteLine(chek_sql_query);    
+            Console.WriteLine(chek_sql_query_after);    
+
+            if (sqlConfiguration.sqlSelectQuery(chek_sql_query).Rows.Count!=0)
+            {
+                msg("Шумо бояд 1 соат бад ё 1 соат пеш интихоб кунед!!");
+                return;
+            }
+            else if (sqlConfiguration.sqlSelectQuery(chek_sql_query_after).Rows.Count != 0)
+            {
+                msg("Дар чунин вакт хизматрасони дода шудасст!!");
+                return;
+            }
+
+            
             string sql_select = "insert into services_client (id_client, id_services, id_users, time) values('" +
               id_client + "', '" +
               id_services + "', '" +
@@ -283,21 +301,44 @@ namespace ObiGarm.Vrach
             if (e.ColumnIndex == delete.Index)
             {
                 string id = datagridview_allServicesClient.Rows[e.RowIndex].Cells[3].Value.ToString();
-                DialogResult dialogResult = MessageBox.Show("Шумо дар хакикат " + datagridview_allServicesClient.Rows[e.RowIndex].Cells[4].Value + " - " + datagridview_allServicesClient.Rows[e.RowIndex].Cells[5].Value + " - "+ datagridview_allServicesClient.Rows[e.RowIndex].Cells[6].Value + " - ро нест кардан мехохед?", "Сообщения", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-                if (dialogResult == DialogResult.Yes)
+
+                string sqlQueryCheckClient = "select client.id_varch from services_client " +
+                    "inner join client on services_client.id_client = client.id " +
+                    $"where services_client.id = '{id}' ";
+
+                if (sqlConfiguration.sqlSelectQuery(sqlQueryCheckClient).Rows.Count != 0)
                 {
-                    string sqlDeleteAdmin = $"update services_client set deleted = '{DateTime.Now.ToString("yyyy'-'MM'-'dd'_'HH':'mm':'ss")}',  enable='0' where id = '" + id + "'";
-                    int res2 = sqlConfiguration.sqlQuery(sqlDeleteAdmin);
-                    if (res2 == 1)
+                    if (sqlConfiguration.sqlSelectQuery(sqlQueryCheckClient).Rows[0]["id_varch"].ToString() == id_main_vrach)
                     {
-                        dispaly_services_to_selected_client(this.id_client);
-                        mainFormVrach.display_services_client(this.id_client);
+
+                        DialogResult dialogResult = MessageBox.Show("Шумо дар хакикат " + datagridview_allServicesClient.Rows[e.RowIndex].Cells[4].Value + " - " + datagridview_allServicesClient.Rows[e.RowIndex].Cells[5].Value + " - " + datagridview_allServicesClient.Rows[e.RowIndex].Cells[6].Value + " - ро нест кардан мехохед?", "Сообщения", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+                        if (dialogResult == DialogResult.Yes)
+                        {
+
+                            string sqlDeleteAdmin = $"update services_client set deleted = '{DateTime.Now.ToString("yyyy'-'MM'-'dd'_'HH':'mm':'ss")}',  enable='0' where id = '" + id + "'";
+                            int res2 = sqlConfiguration.sqlQuery(sqlDeleteAdmin);
+                            if (res2 == 1)
+                            {
+                                dispaly_services_to_selected_client(this.id_client);
+                                mainFormVrach.display_services_client(this.id_client);
+                            }
+                            else
+                            {
+                                MessageBox.Show("Хатоги хангоми нест кардани хизматрасонӣ!", "Сообщения", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            }
+                        }
                     }
                     else
                     {
-                        MessageBox.Show("Хатоги хангоми нест кардани Админ!", "Сообщения", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        msg("Танҳо табиби истироҳаткунанда хизматрасониро нест карда метавонад!");
                     }
                 }
+
+                    
+                
+                
+                
             }
         }
 

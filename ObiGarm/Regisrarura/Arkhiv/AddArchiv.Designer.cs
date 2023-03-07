@@ -339,7 +339,6 @@ namespace ObiGarm.Regisrarura.Arkhiv
             this.txt_day_to_arkhiv.SelectionStart = 0;
             this.txt_day_to_arkhiv.ShortcutsEnabled = true;
             this.txt_day_to_arkhiv.Size = new System.Drawing.Size(587, 30);
-            this.txt_day_to_arkhiv.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
             this.txt_day_to_arkhiv.TabIndex = 44;
             this.txt_day_to_arkhiv.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txt_day_to_arkhiv.TextMarginBottom = 0;

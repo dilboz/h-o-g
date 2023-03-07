@@ -35,12 +35,13 @@ namespace ObiGarm.Vrach
         private string doctor;
         private string nishonai_tabobat;
         private string order;
+        private string fisori_hun;
 
 
         public PrintForm(DataTable datatable, string name_client, string soli_t, string jins, string muhlati_tabobat, string qad,
             string vazn, string hqsina, string qobiliyati_nafaskashi, string sanji_bozuho, string tarkibi_hun,
             string nabz, string harorat, string ekg,
-            string peshob, string najosat, string uzi, string nahory, string nisfiruzi, string begohi, string doctor, string nishonai_tabobat, string order)
+            string peshob, string najosat, string uzi, string nahory, string nisfiruzi, string begohi, string doctor, string nishonai_tabobat, string order, string fisori_hun)
         {
             InitializeComponent();
             this.datatabel = datatable;
@@ -66,10 +67,12 @@ namespace ObiGarm.Vrach
             this.doctor = doctor == "" ? " " : doctor;
             this.nishonai_tabobat = nishonai_tabobat == "" ? " " : nishonai_tabobat;
             this.order = order == "" ? " " : order;
+            this.fisori_hun = fisori_hun == "" ? " " : fisori_hun;
         }
 
         private void PrintForm_Load(object sender, EventArgs e)
         {
+
             DataTableInfoServoces.ServisessDataTable servisessRows = new DataTableInfoServoces.ServisessDataTable();
 
             //MessageBox.Show(datatabel.Rows.Count.ToString());
@@ -103,7 +106,7 @@ namespace ObiGarm.Vrach
                 new Microsoft.Reporting.WinForms.ReportParameter("vazn",  vazn),
                 new Microsoft.Reporting.WinForms.ReportParameter("hq_sina",  hqsina),
                 new Microsoft.Reporting.WinForms.ReportParameter("qobliyati_nafaskashi",  qobiliyati_nafaskashi),
-                new Microsoft.Reporting.WinForms.ReportParameter("fishori_hun",  sanji_bozuho),
+                new Microsoft.Reporting.WinForms.ReportParameter("fishori_hun",  fisori_hun),
                 new Microsoft.Reporting.WinForms.ReportParameter("tarkibi_hun",  tarkibi_hun),
                 new Microsoft.Reporting.WinForms.ReportParameter("nabz",  nabz),
                 new Microsoft.Reporting.WinForms.ReportParameter("harorat",  harorat),
@@ -116,7 +119,8 @@ namespace ObiGarm.Vrach
                 new Microsoft.Reporting.WinForms.ReportParameter("h_begohruzi",  begohi),
                 new Microsoft.Reporting.WinForms.ReportParameter("doctor",  doctor),
                 new Microsoft.Reporting.WinForms.ReportParameter("nishonai_tabobat",  nishonai_tabobat),
-                new Microsoft.Reporting.WinForms.ReportParameter("order",  order)
+                new Microsoft.Reporting.WinForms.ReportParameter("order",  order),
+                new Microsoft.Reporting.WinForms.ReportParameter("quvai_bozuho",  sanji_bozuho)
 
            };
             this.reoportviewPrint.LocalReport.SetParameters(p);

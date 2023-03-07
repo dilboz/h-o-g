@@ -67,7 +67,7 @@ namespace ObiGarm.Users.Countr_Pr
             string sql_user_farme = "select * from country where name = '" + name_frame + "'";
 
             string sql_add_frame = "insert into country (name) values('" +
-               name_frame.ToUpper() + "');";
+               name_frame + "');";
 
             if (name_frame.Trim() != "")
             {
@@ -103,7 +103,7 @@ namespace ObiGarm.Users.Countr_Pr
 
 
             string sql_update_frame = "update country set " +
-                "name = '" + name_frame.ToUpper() + "' " +
+                "name = '" + name_frame + "' " +
                " where id = '" + id + "'";
 
             if (name_frame.Trim() != "")

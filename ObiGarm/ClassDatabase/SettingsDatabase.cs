@@ -4,6 +4,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Net.NetworkInformation;
 using System.Windows.Forms;
 
 namespace ObiGarm.ClassDatabase
@@ -21,6 +22,24 @@ namespace ObiGarm.ClassDatabase
         public string path_name =Application.StartupPath +  @"\setting\setting_db.txt";
         /// </path_name>
         /// 
+        
+        public static bool pinHost()
+        {
+            Ping p = new Ping();
+            PingReply r;
+
+            if (SqlConfiguration.datasource!= "localhost")            
+                r = p.Send(SqlConfiguration.datasource);
+            else
+                r = p.Send("127.0.0.1");
+
+
+            if (r.Status == IPStatus.Success)
+                return true;
+            else
+                return false;
+            
+        }
 
         public SettingsDatabase()
         {
@@ -32,6 +51,13 @@ namespace ObiGarm.ClassDatabase
             string query = $"UPDATE kort SET active = '0' WHERE id = '{id}';";
             sqlConfiguration.sqlQuery(query);
             return false;
+        }
+
+        public static bool setCurrenEatClient(string id)
+        {
+            string querySql = $"UPDATE client SET date_current_to_restorant = '{DateTime.Now.ToString("yyyy-MM-dd HH-mm-ss")}' WHERE id = '{id}'; ";
+            sqlConfiguration.sqlQuery(querySql);
+            return true;
         }
 
         public static bool DeletedClient(string id)

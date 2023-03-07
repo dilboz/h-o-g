@@ -71,7 +71,7 @@ namespace ObiGarm.Restorant
                 label_info.ForeColor = Color.Green;
                 pictureInfoKort.Image = Properties.Resources.yes;
                 timer_select_picture.Start();
-
+                SettingsDatabase.setCurrenEatClient(sqlConfiguration.sqlSelectQuery(sqlQuery).Rows[0]["id"].ToString());
             }
             else
             {
@@ -103,7 +103,7 @@ namespace ObiGarm.Restorant
                 label_info.ForeColor = Color.Green;
                 pictureInfoKort.Image = Properties.Resources.yes;
                 timer_select_picture.Start();
-
+                SettingsDatabase.setCurrenEatClient(sqlConfiguration.sqlSelectQuery(sqlQuery).Rows[0]["id"].ToString());
             }
             else
             {
@@ -136,8 +136,7 @@ namespace ObiGarm.Restorant
                 label_info.ForeColor = Color.Green;
                 pictureInfoKort.Image = Properties.Resources.yes;
                 timer_select_picture.Start();
-
-
+                SettingsDatabase.setCurrenEatClient(sqlConfiguration.sqlSelectQuery(sqlQuery).Rows[0]["id"].ToString());
             }
             else
             {

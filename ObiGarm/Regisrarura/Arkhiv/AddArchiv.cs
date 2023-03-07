@@ -27,6 +27,7 @@ namespace ObiGarm.Regisrarura.Arkhiv
             this.id_client = client_id;
             sqlConfiguration = new SqlConfiguration();
             InitializeComponent();
+            set = false;
         }
 
         void set_info(string id)
@@ -53,12 +54,18 @@ namespace ObiGarm.Regisrarura.Arkhiv
             string datetime_start = date_first_dey.Value.ToString("MM/dd/yyyy") + " " + Convert.ToDateTime("09:00").ToString("H:mm");
             string datetime_end = date_end_dey.Value.ToString("MM/dd/yyyy") + " " + Convert.ToDateTime("18:00").ToString("H:mm");
 
+            string sele = $"select id_kort  from client where id ='{id}';";
+
             string up_date_client = "UPDATE client SET " +
                 $"date_time_start =  str_to_date('{datetime_start}', '%m.%d.%Y %H:%i'), " +
                 $"date_time_end = str_to_date('{datetime_end}', '%m.%d.%Y %H:%i'), " +
                 $"count_day_to_arkhiv = '{day_to_arkhiv}', " +
                 $"enable = '0' " +
                 $"WHERE id = '{id}'";
+
+            if (sqlConfiguration.sqlSelectQuery(sele).Rows.Count != 0)
+                SettingsDatabase.setFaleActiveKort(sqlConfiguration.sqlSelectQuery(sele).Rows[0]["id_kort"].ToString());
+
             if (set==true)
             {
                 if (day_to_arkhiv != "0")
@@ -103,15 +110,13 @@ namespace ObiGarm.Regisrarura.Arkhiv
         {
             int count_day_maq = Convert.ToInt32((date_end_dey.Value - date_first_dey.Value).TotalDays);
 
-            if (full_day - count_day_maq < 0 || full_day - count_day_maq > full_day)
-            {
-                MessageBox.Show("Шумо наметавонед муштариро махкам кунед \nШумо рузро хато интихоб кардед!");
-                set = false;
-            }
-            else{
-                txt_day_to_arkhiv.Text = Convert.ToString(full_day - count_day_maq);
-                set = true;
-            }
+            if (set)
+                if (full_day - count_day_maq < 0 || full_day - count_day_maq > full_day)
+                    MessageBox.Show("Шумо наметавонед муштариро махкам кунед \nШумо рузро хато интихоб кардед!");
+                else
+                    txt_day_to_arkhiv.Text = Convert.ToString(full_day - count_day_maq);
+            else
+                set = true;           
             
         }
 
