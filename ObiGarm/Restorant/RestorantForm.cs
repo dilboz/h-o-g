@@ -44,13 +44,10 @@ namespace ObiGarm.Restorant
         {
             display();
         }
-
         private void RestorantForm_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit(); 
         }
-
-
         void checkBreakfast(string idKort)
         {
             string sqlQuery = "select client.id " +
@@ -94,6 +91,7 @@ namespace ObiGarm.Restorant
                 $"and kort.id_type_kort= '{id_type_kort}' and kort.kod_kort= '{idKort}' " +
                 $"and client.date_current_to_restorant not between '{DateTime.Now.ToString("yyyy-MM-dd")}' and '{DateTime.Now.ToString("yyyy-MM-dd")}';";
 
+            Console.WriteLine(sqlQuery);
 
             if (sqlConfiguration.sqlSelectQuery(sqlQuery).Rows.Count != 0)
             {
@@ -408,6 +406,7 @@ namespace ObiGarm.Restorant
                 }
 
                 btn_ansver.Focus();
+
                 txt_kort.Focus();
             }
         }

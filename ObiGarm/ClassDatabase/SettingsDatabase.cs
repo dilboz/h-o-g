@@ -100,12 +100,13 @@ namespace ObiGarm.ClassDatabase
         public static string setNmaeVrachToTextbox(string id)
         {
             DataTable dataTable_sex = sqlConfiguration.sqlSelectQuery(
-                $"select users.id, concat(users.name, ' ', users.surname, ' (',count(client.id), ')') as name " +
-                $"from users " +
-                $"left join client on client.id_varch= users.id " +
-                $"where users.point=3 and client.deleted is null and users.id = '{id}' " +
-                $"group by users.id " +
-                $"order by count(client.id); ");
+                "select users.id, concat(users.name, ' ', users.surname, ' (', case when client.enable = 1 and client.deleted is null then 1 else 0 end, ')' ) as name  " +
+                "from users " +
+                "left join client on client.id_varch= users.id " +
+                $"where users.point=3 and users.enable=1 and users.deleted is null and users.id = '{id}' " +
+                "group by users.id " +
+                "order by count(client.id);");
+                
             return dataTable_sex.Rows[0]["name"].ToString();
         }
 

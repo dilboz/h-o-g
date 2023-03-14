@@ -401,8 +401,8 @@ namespace ObiGarm.Regisrarura
             if (dataTable_kort.Rows.Count == 0) { msg("Чунин корт вучуд надорад!!!"); return; }
             else id_kort = dataTable_kort.Rows[0]["id"].ToString();
 
-            sql_add_client = sql_add_client = "insert into client (surname, name, patromic, year_birthday, id_sex, id_county, id_province, nuber_phon, date_time_start, date_time_end, id_varch, id_room, id_type_money, nuber_money, number_order, id_kort, date_registration) " +
-                                                         $"values('{surname}', '{name}', '{patramic}', '{year_birthday}', '{id_sex}', '{id_country}', {id_province}, '{nuber_phon}',  str_to_date('{datetime_start}', '%m-%d-%Y %H:%i'), str_to_date('{datetime_end}', '%m-%d-%Y %H:%i'), '{vrach_id}', '{room_id}', '{type_money}', '{number_money}', '{number_order}', '{id_kort}', '{DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")}');";
+            sql_add_client = sql_add_client = "insert into client (surname, name, patromic, year_birthday, id_sex, id_county, id_province, nuber_phon, date_time_start, date_time_end, id_varch, id_room, id_type_money, nuber_money, number_order, id_kort, date_registration ) " +
+                                                         $"values('{surname}', '{name}', '{patramic}', '{year_birthday}', '{id_sex}', '{id_country}', {id_province}, '{nuber_phon}',  str_to_date('{datetime_start}', '%m-%d-%Y %H:%i'), str_to_date('{datetime_end}', '%m-%d-%Y %H:%i'), '{vrach_id}', '{room_id}', '{type_money}', '{number_money}', '{number_order}', '{id_kort}', '{DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")}' );";
 
 
             if (surname != "" && name != "" && id_sex != "" && type_money != "" && vrach_id != "" && room_id != "" && kord != "")
@@ -1006,7 +1006,7 @@ namespace ObiGarm.Regisrarura
 
         private void combo_type_money_EditValueChanged(object sender, EventArgs e)
         {
-            if (combo_type_money.Text == "Бо маблағ"
+            /*if (combo_type_money.Text == "Бо маблағ"
                 || combo_type_money.EditValue.ToString() == "1")
             {
                 txt_money_for_one_day.TabStop = true;
@@ -1014,8 +1014,8 @@ namespace ObiGarm.Regisrarura
             else
             {
                 txt_money_for_one_day.Text = "0";
-                txt_money_for_one_day.TabStop = false;
-            }
+                txt_money_for_one_day.TabStop = false;*//*
+            }*/
         }
 
         private void btn_creat_Click(object sender, EventArgs e)
