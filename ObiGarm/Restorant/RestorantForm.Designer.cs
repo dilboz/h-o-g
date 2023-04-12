@@ -138,7 +138,7 @@ namespace ObiGarm.Restorant
             this.btn_ansver.Appearance.Options.UseFont = true;
             this.btn_ansver.Appearance.Options.UseForeColor = true;
             this.btn_ansver.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_ansver.ImageOptions.Image")));
-            this.btn_ansver.Location = new System.Drawing.Point(992, 44);
+            this.btn_ansver.Location = new System.Drawing.Point(992, 43);
             this.btn_ansver.Name = "btn_ansver";
             this.btn_ansver.Size = new System.Drawing.Size(230, 37);
             this.btn_ansver.TabIndex = 13;
@@ -439,6 +439,7 @@ namespace ObiGarm.Restorant
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1402, 701);
+            this.Controls.Add(this.btn_ansver);
             this.Controls.Add(this.label_info);
             this.Controls.Add(this.panelInfoKort);
             this.Controls.Add(this.lbl_info_today);
@@ -447,7 +448,6 @@ namespace ObiGarm.Restorant
             this.Controls.Add(this.grid_control_is_client);
             this.Controls.Add(this.labelControl1);
             this.Controls.Add(this.panel_top);
-            this.Controls.Add(this.btn_ansver);
             this.Controls.Add(this.txt_kort);
             this.IconOptions.ShowIcon = false;
             this.Name = "RestorantForm";

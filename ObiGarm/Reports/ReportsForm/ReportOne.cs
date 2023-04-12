@@ -19,6 +19,9 @@ namespace ObiGarm.Reports.ReportsForm
             InitializeComponent();
 
             sqlConfiguration = new SqlConfiguration();
+
+            dateTimePickerStart.Value = DateTime.Now.AddMonths(-1);
+            dateTimePickerEnd.Value = DateTime.Now;
         }
 
         int countClientint=0;
@@ -36,21 +39,21 @@ namespace ObiGarm.Reports.ReportsForm
                 querySql = "select  ROW_NUMBER() OVER(ORDER BY c.id)  as 'number_row', c.number_order as 'order', concat('Бинои ', f.name, '/', r.name) as 'frime_and_room', concat(c.surname,' ',c.name) as 'full_name', c.year_birthday as 'burzday', TIMESTAMPDIFF(YEAR,  c.year_birthday, CURDATE()) AS 'age', date_format(c.date_time_start, '%Y-%m-%d') as 'start_date', date_format(c.date_time_end, '%Y-%m-%d') as 'enb_date', DATEDIFF(c.date_time_end , c.date_time_start)+1 as 'count_day', c.nuber_phon as 'number_phon' from client c " +
                    "inner join room r on c.id_room = r.id " +
                    "inner join frame f on r.id_freme  = f.id " +
-                  $"where date_format(c.date_time_start, '%Y-%m-%d') >= '{dateTimeEnd.ToString("yyyy-MM-dd")}' and  date_format(c.date_time_start, '%Y-%m-%d') <= '{dateTimeEnd.ToString("yyyy-MM-dd")}'; ";
+                  $"where date_format(c.date_time_start, '%Y-%m-%d') >= '{dateTimeStart.ToString("yyyy-MM-dd")}' and  date_format(c.date_time_start, '%Y-%m-%d') <= '{dateTimeEnd.ToString("yyyy-MM-dd")}'; ";
                 
                 countClient = "select count(*) from client c " +
-                        $"where date_format(c.date_time_start, '%Y-%m-%d') >= '{dateTimeEnd.ToString("yyyy-MM-dd")}' and  date_format(c.date_time_start, '%Y-%m-%d') <= '{dateTimeEnd.ToString("yyyy-MM-dd")}'; ";
+                        $"where date_format(c.date_time_start, '%Y-%m-%d') >= '{dateTimeStart.ToString("yyyy-MM-dd")}' and  date_format(c.date_time_start, '%Y-%m-%d') <= '{dateTimeEnd.ToString("yyyy-MM-dd")}'; ";
             }
             else
             {
                 querySql = "select  ROW_NUMBER() OVER(ORDER BY c.id)  as 'number_row', c.number_order as 'order', concat('Бинои ', f.name, '/', r.name) as 'frime_and_room', concat(c.surname,' ',c.name) as 'full_name', c.year_birthday as 'burzday', TIMESTAMPDIFF(YEAR,  c.year_birthday, CURDATE()) AS 'age', date_format(c.date_time_start, '%Y-%m-%d') as 'start_date', date_format(c.date_time_end, '%Y-%m-%d') as 'enb_date', DATEDIFF(c.date_time_end , c.date_time_start)+1 as 'count_day', c.nuber_phon as 'number_phon' from client c " +
                     "inner join room r on c.id_room = r.id " +
                     "inner join frame f on r.id_freme  = f.id " +
-                    $"where date_format(c.date_time_start, '%Y-%m-%d') >= '{dateTimeEnd.ToString("yyyy-MM-dd")}' and  date_format(c.date_time_start, '%Y-%m-%d') <= '{dateTimeEnd.ToString("yyyy-MM-dd")}'; " +
+                    $"where date_format(c.date_time_start, '%Y-%m-%d') >= '{dateTimeStart.ToString("yyyy-MM-dd")}' and  date_format(c.date_time_start, '%Y-%m-%d') <= '{dateTimeEnd.ToString("yyyy-MM-dd")}'; " +
                     $"having age = '{age}' ;";
 
                 countClient = "select count(*), TIMESTAMPDIFF(YEAR,  c.year_birthday from client c " +
-                    $"where date_format(c.date_time_start, '%Y-%m-%d') >= '{dateTimeEnd.ToString("yyyy-MM-dd")}' and  date_format(c.date_time_start, '%Y-%m-%d') <= '{dateTimeEnd.ToString("yyyy-MM-dd")}' " +
+                    $"where date_format(c.date_time_start, '%Y-%m-%d') >= '{dateTimeStart.ToString("yyyy-MM-dd")}' and  date_format(c.date_time_start, '%Y-%m-%d') <= '{dateTimeEnd.ToString("yyyy-MM-dd")}' " +
                     $"having age = '{age}' ;";
             }
 

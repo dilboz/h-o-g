@@ -289,6 +289,8 @@ namespace ObiGarm.Reports.ReportsDate {
             
             private global::System.Data.DataColumn columncount_all;
             
+            private global::System.Data.DataColumn columnid_county;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public FromProvinceDataTable() {
@@ -364,6 +366,14 @@ namespace ObiGarm.Reports.ReportsDate {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn id_countyColumn {
+                get {
+                    return this.columnid_county;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -399,14 +409,15 @@ namespace ObiGarm.Reports.ReportsDate {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public FromProvinceRow AddFromProvinceRow(string row_number, string province, string count_men, string count_woman, string count_all) {
+            public FromProvinceRow AddFromProvinceRow(string row_number, string province, string count_men, string count_woman, string count_all, string id_county) {
                 FromProvinceRow rowFromProvinceRow = ((FromProvinceRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         row_number,
                         province,
                         count_men,
                         count_woman,
-                        count_all};
+                        count_all,
+                        id_county};
                 rowFromProvinceRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowFromProvinceRow);
                 return rowFromProvinceRow;
@@ -434,6 +445,7 @@ namespace ObiGarm.Reports.ReportsDate {
                 this.columncount_men = base.Columns["count_men"];
                 this.columncount_woman = base.Columns["count_woman"];
                 this.columncount_all = base.Columns["count_all"];
+                this.columnid_county = base.Columns["id_county"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -449,6 +461,8 @@ namespace ObiGarm.Reports.ReportsDate {
                 base.Columns.Add(this.columncount_woman);
                 this.columncount_all = new global::System.Data.DataColumn("count_all", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columncount_all);
+                this.columnid_county = new global::System.Data.DataColumn("id_county", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnid_county);
                 this.columnprovince.Caption = "country";
             }
             
@@ -672,6 +686,22 @@ namespace ObiGarm.Reports.ReportsDate {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string id_county {
+                get {
+                    try {
+                        return ((string)(this[this.tableFromProvince.id_countyColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'id_county\' in table \'FromProvince\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableFromProvince.id_countyColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public bool Isrow_numberNull() {
                 return this.IsNull(this.tableFromProvince.row_numberColumn);
             }
@@ -728,6 +758,18 @@ namespace ObiGarm.Reports.ReportsDate {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public void Setcount_allNull() {
                 this[this.tableFromProvince.count_allColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool Isid_countyNull() {
+                return this.IsNull(this.tableFromProvince.id_countyColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void Setid_countyNull() {
+                this[this.tableFromProvince.id_countyColumn] = global::System.Convert.DBNull;
             }
         }
         

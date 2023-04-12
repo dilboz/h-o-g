@@ -404,6 +404,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Report1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Reports\ReportsDate\Report2.cs">
+      <DependentUpon>Report2.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Reports\ReportsDate\Report2.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -417,17 +420,42 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Report2_1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Reports\ReportsDate\Report3.cs">
+      <DependentUpon>Report3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportsDate\Report3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Report3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportsDate\Report3_1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Report3_1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Reports\ReportsForm\PrintRortForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Reports\ReportsForm\PrintRortForm.Designer.cs">
       <DependentUpon>PrintRortForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Reports\ReportsForm\ReportFour.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportsForm\ReportFour.Designer.cs">
+      <DependentUpon>ReportFour.cs</DependentUpon>
+    </Compile>
     <Compile Include="Reports\ReportsForm\ReportOne.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Reports\ReportsForm\ReportOne.Designer.cs">
       <DependentUpon>ReportOne.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportsForm\ReportThree.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportsForm\ReportThree.Designer.cs">
+      <DependentUpon>ReportThree.cs</DependentUpon>
     </Compile>
     <Compile Include="Reports\ReportsForm\ReportTwo.cs">
       <SubType>Form</SubType>
@@ -719,14 +747,22 @@
     <EmbeddedResource Include="Reports\ReportsForm\PrintRortForm.resx">
       <DependentUpon>PrintRortForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportsForm\ReportFour.resx">
+      <DependentUpon>ReportFour.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reports\ReportsForm\ReportOne.resx">
       <DependentUpon>ReportOne.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportsForm\ReportThree.resx">
+      <DependentUpon>ReportThree.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\ReportsForm\ReportTwo.resx">
       <DependentUpon>ReportTwo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\ReportsPrint\Report1.rdlc" />
     <EmbeddedResource Include="Reports\ReportsPrint\Report2.rdlc" />
+    <EmbeddedResource Include="Reports\ReportsPrint\Report3.rdlc" />
+    <EmbeddedResource Include="Reports\ReportsPrint\Report4.rdlc" />
     <EmbeddedResource Include="Restorant\RestorantForm.resx">
       <DependentUpon>RestorantForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -875,6 +911,28 @@
     </None>
     <None Include="Reports\ReportsDate\Report2_1.xss">
       <DependentUpon>Report2_1.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\ReportsDate\Report3.xsc">
+      <DependentUpon>Report3.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\ReportsDate\Report3.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Report3.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reports\ReportsDate\Report3.xss">
+      <DependentUpon>Report3.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\ReportsDate\Report3_1.xsc">
+      <DependentUpon>Report3_1.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\ReportsDate\Report3_1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Report3_1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reports\ReportsDate\Report3_1.xss">
+      <DependentUpon>Report3_1.xsd</DependentUpon>
     </None>
     <None Include="Vrach\DataTableInfoServoces.xsc">
       <DependentUpon>DataTableInfoServoces.xsd</DependentUpon>

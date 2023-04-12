@@ -100,6 +100,7 @@ namespace ObiGarm.Reports.ReportsForm
             this.buttonPrint.TabIndex = 65;
             this.buttonPrint.Text = "Чопкуни";
             this.buttonPrint.UseVisualStyleBackColor = false;
+            this.buttonPrint.Click += new System.EventHandler(this.buttonPrint_Click);
             // 
             // buttonAns
             // 

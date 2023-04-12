@@ -43,6 +43,7 @@
             this.panel_menu = new System.Windows.Forms.Panel();
             this.panel_reports = new System.Windows.Forms.Panel();
             this.panel_report_menu = new System.Windows.Forms.Panel();
+            this.report_d = new System.Windows.Forms.Button();
             this.report_c = new System.Windows.Forms.Button();
             this.report_b = new System.Windows.Forms.Button();
             this.report_a = new System.Windows.Forms.Button();
@@ -55,13 +56,12 @@
             this.servicesis_btn = new System.Windows.Forms.Button();
             this.frame_and_room = new System.Windows.Forms.Button();
             this.panel_left = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel_top = new System.Windows.Forms.Panel();
             this.logout_button = new System.Windows.Forms.Button();
             this.user_info_label = new System.Windows.Forms.Label();
             this.panel_child_all = new System.Windows.Forms.Panel();
             this.formAssistant1 = new DevExpress.XtraBars.FormAssistant();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.report_d = new System.Windows.Forms.Button();
             this.panel_user.SuspendLayout();
             this.panel_menu.SuspendLayout();
             this.panel_reports.SuspendLayout();
@@ -69,8 +69,8 @@
             this.servises_frame_panel.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel_left.SuspendLayout();
-            this.panel_top.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel_top.SuspendLayout();
             this.SuspendLayout();
             // 
             // export_database_button
@@ -315,6 +315,23 @@
             this.panel_report_menu.Size = new System.Drawing.Size(198, 130);
             this.panel_report_menu.TabIndex = 5;
             // 
+            // report_d
+            // 
+            this.report_d.Dock = System.Windows.Forms.DockStyle.Top;
+            this.report_d.FlatAppearance.BorderSize = 0;
+            this.report_d.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.report_d.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold);
+            this.report_d.ForeColor = System.Drawing.Color.White;
+            this.report_d.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.report_d.Location = new System.Drawing.Point(0, 105);
+            this.report_d.Name = "report_d";
+            this.report_d.Size = new System.Drawing.Size(198, 35);
+            this.report_d.TabIndex = 32;
+            this.report_d.Text = "Ҳисоботи 4";
+            this.report_d.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.report_d.UseVisualStyleBackColor = true;
+            this.report_d.Click += new System.EventHandler(this.report_d_Click);
+            // 
             // report_c
             // 
             this.report_c.Dock = System.Windows.Forms.DockStyle.Top;
@@ -503,6 +520,18 @@
             this.panel_left.Size = new System.Drawing.Size(268, 867);
             this.panel_left.TabIndex = 4;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pictureBox1.Image = global::ObiGarm.Properties.Resources.logo;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(268, 69);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // panel_top
             // 
             this.panel_top.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(143)))), ((int)(((byte)(78)))));
@@ -554,34 +583,6 @@
             this.panel_child_all.Size = new System.Drawing.Size(1093, 812);
             this.panel_child_all.TabIndex = 6;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pictureBox1.Image = global::ObiGarm.Properties.Resources.logo;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(268, 69);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // report_d
-            // 
-            this.report_d.Dock = System.Windows.Forms.DockStyle.Top;
-            this.report_d.FlatAppearance.BorderSize = 0;
-            this.report_d.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.report_d.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold);
-            this.report_d.ForeColor = System.Drawing.Color.White;
-            this.report_d.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.report_d.Location = new System.Drawing.Point(0, 105);
-            this.report_d.Name = "report_d";
-            this.report_d.Size = new System.Drawing.Size(198, 35);
-            this.report_d.TabIndex = 32;
-            this.report_d.Text = "Ҳисоботи 4";
-            this.report_d.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.report_d.UseVisualStyleBackColor = true;
-            // 
             // UserForm
             // 
             this.Appearance.Options.UseFont = true;
@@ -607,8 +608,8 @@
             this.servises_frame_panel.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel_left.ResumeLayout(false);
-            this.panel_top.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel_top.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

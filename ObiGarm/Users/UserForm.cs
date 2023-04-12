@@ -106,7 +106,7 @@ namespace ObiGarm.Users
         {
             Button[] bunifuButtons = new Button[] { main_button, user_button, admin_button, vrach_button,
             registr_button, spitalists_button, bugalter_button, report_c, reference_button, frame_and_room, servicesis_btn, btn_kort, bonk_button, 
-                export_database_button, reports_button, administrator_button, restotonant_and_oshkhina, button_country};
+                export_database_button, reports_button, administrator_button, restotonant_and_oshkhina, button_country, };
 
             for (var i = 0; i < bunifuButtons.Length; i++)
             {
@@ -205,6 +205,7 @@ namespace ObiGarm.Users
         private void report_c_Click(object sender, EventArgs e)
         {
             colorsButton(17);
+            openChildForm(new ReportThree());
         }
 
         private void bonk_button_Click(object sender, EventArgs e)
@@ -273,6 +274,13 @@ namespace ObiGarm.Users
         {
             colorsButton(17);
             openChildForm(new CountryRro()); 
+        }
+
+        private void report_d_Click(object sender, EventArgs e)
+        {
+            colorsButton(17);
+            openChildForm(new ReportFour());
+
         }
     }
 }

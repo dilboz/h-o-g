@@ -12,7 +12,7 @@
   <xs:element name="Report2_1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="Report2_1" msprop:Generator_UserDSName="Report2_1">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="FromProvince" msprop:Generator_TableClassName="FromProvinceDataTable" msprop:Generator_TableVarName="tableFromProvince" msprop:Generator_TablePropName="FromProvince" msprop:Generator_RowDeletingName="FromProvinceRowDeleting" msprop:Generator_RowChangingName="FromProvinceRowChanging" msprop:Generator_RowEvHandlerName="FromProvinceRowChangeEventHandler" msprop:Generator_RowDeletedName="FromProvinceRowDeleted" msprop:Generator_UserTableName="FromProvince" msprop:Generator_RowChangedName="FromProvinceRowChanged" msprop:Generator_RowEvArgName="FromProvinceRowChangeEvent" msprop:Generator_RowClassName="FromProvinceRow">
+        <xs:element name="FromProvince" msprop:Generator_TableClassName="FromProvinceDataTable" msprop:Generator_TableVarName="tableFromProvince" msprop:Generator_RowChangedName="FromProvinceRowChanged" msprop:Generator_TablePropName="FromProvince" msprop:Generator_RowDeletingName="FromProvinceRowDeleting" msprop:Generator_RowChangingName="FromProvinceRowChanging" msprop:Generator_RowEvHandlerName="FromProvinceRowChangeEventHandler" msprop:Generator_RowDeletedName="FromProvinceRowDeleted" msprop:Generator_RowClassName="FromProvinceRow" msprop:Generator_UserTableName="FromProvince" msprop:Generator_RowEvArgName="FromProvinceRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="row_number" msprop:nullValue="row_number" msprop:Generator_ColumnPropNameInRow="row_number" msprop:Generator_ColumnVarNameInTable="columnrow_number" msprop:Generator_ColumnPropNameInTable="row_numberColumn" msprop:Generator_UserColumnName="row_number" type="xs:string" minOccurs="0" />
@@ -20,6 +20,7 @@
               <xs:element name="count_men" msprop:Generator_ColumnVarNameInTable="columncount_men" msprop:Generator_ColumnPropNameInRow="count_men" msprop:Generator_ColumnPropNameInTable="count_menColumn" msprop:Generator_UserColumnName="count_men" type="xs:string" minOccurs="0" />
               <xs:element name="count_woman" msprop:Generator_ColumnVarNameInTable="columncount_woman" msprop:Generator_ColumnPropNameInRow="count_woman" msprop:Generator_ColumnPropNameInTable="count_womanColumn" msprop:Generator_UserColumnName="count_woman" type="xs:string" minOccurs="0" />
               <xs:element name="count_all" msprop:Generator_ColumnVarNameInTable="columncount_all" msprop:Generator_ColumnPropNameInRow="count_all" msprop:Generator_ColumnPropNameInTable="count_allColumn" msprop:Generator_UserColumnName="count_all" type="xs:string" minOccurs="0" />
+              <xs:element name="id_county" msprop:Generator_ColumnVarNameInTable="columnid_county" msprop:Generator_ColumnPropNameInRow="id_county" msprop:Generator_ColumnPropNameInTable="id_countyColumn" msprop:Generator_UserColumnName="id_county" type="xs:string" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

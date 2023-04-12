@@ -1,5 +1,6 @@
 ﻿using ObiGarm.ClassDatabase;
 using ObiGarm.Regisrarura.Arkhiv;
+using ObiGarm.Reports.ReportsForm;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -26,9 +27,9 @@ namespace ObiGarm.Regisrarura
 
         private void colorsButton(int index)
         {
-            Button[] buttons = new Button[] { btn_home, btn_not_order, btn_block_client, btn_archive, };
+            Button[] buttons = new Button[] { btn_home, btn_not_order, btn_block_client, btn_archive,button1, button2, button3, button4 };
 
-            Label[] label_left = new Label[] { left_labl_home, lbl_left_not_order, lbl_left_block_client, lbl_left_archive };
+            Label[] label_left = new Label[] { left_labl_home, lbl_left_not_order, lbl_left_block_client, lbl_left_archive, label1, label2, label3, label4 };
 
 
             for (var i = 0; i < buttons.Length; i++)
@@ -139,6 +140,31 @@ namespace ObiGarm.Regisrarura
             LoginForm loginForm = new LoginForm();
             loginForm.Show();
             this.Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            colorsButton(4);
+            openChildForm(new ReportOne());
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            colorsButton(5);
+            openChildForm(new ReportTwo());
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            colorsButton(6);
+            openChildForm(new ReportThree());
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            colorsButton(7);
+            openChildForm(new ReportFour());
         }
     }
 }
