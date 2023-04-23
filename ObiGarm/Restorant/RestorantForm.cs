@@ -58,7 +58,7 @@ namespace ObiGarm.Restorant
                 $"and client.date_time_start <= '{DateTime.Now.AddDays(1).ToString("yyyy-MM-dd")}' and client.date_time_end >= '{DateTime.Now.AddDays(1).ToString("yyyy-MM-dd")}' " +
                 $"and room.breakfast between '06:00' and '09:30' " +
                 $"and kort.id_type_kort= '{id_type_kort}' and kort.kod_kort= '{idKort}' " +
-                $"and client.date_current_to_restorant not between '{DateTime.Now.ToString("yyyy-MM-dd")}' and '{DateTime.Now.ToString("yyyy-MM-dd")}';";
+                $"and client.date_current_to_restorant not between '{DateTime.Now.ToString("yyyy-MM-dd HH:mm")}' and '{DateTime.Now.ToString("yyyy-MM-dd HH:mm")}';";
 
             if (sqlConfiguration.sqlSelectQuery(sqlQuery).Rows.Count!=0)
             {
@@ -72,7 +72,7 @@ namespace ObiGarm.Restorant
             }
             else
             {
-                label_info.Text = "Вақти хурои саҳаррузи наомадаст:!";
+                label_info.Text = "Вақти хуроки саҳаррузи наомадаст:!";
                 label_info.ForeColor = Color.Red;
                 pictureInfoKort.Image = Properties.Resources.no;
                 timer_select_picture.Start();
@@ -87,15 +87,15 @@ namespace ObiGarm.Restorant
                 "inner join room on client.id_room = room.id " +
                 "where client.enable=1 and client.deleted is null " +
                 $"and client.date_time_start <= '{DateTime.Now.AddDays(1).ToString("yyyy-MM-dd")}' and client.date_time_end >= '{DateTime.Now.AddDays(1).ToString("yyyy-MM-dd")}' " +
-                $"and room.lunch between '10:30' and '14:30' " +
+                $"and room.lunch between '10:35' and '14:30' " +
                 $"and kort.id_type_kort= '{id_type_kort}' and kort.kod_kort= '{idKort}' " +
-                $"and client.date_current_to_restorant not between '{DateTime.Now.ToString("yyyy-MM-dd")}' and '{DateTime.Now.ToString("yyyy-MM-dd")}';";
+                $"and client.date_current_to_restorant not between '{DateTime.Now.ToString("yyyy-MM-dd HH:mm")}' and '{DateTime.Now.ToString("yyyy-MM-dd HH:mm")}';";
 
             Console.WriteLine(sqlQuery);
 
             if (sqlConfiguration.sqlSelectQuery(sqlQuery).Rows.Count != 0)
             {
-                labelCountToDay.Text = $"Одамони ируз меомада: {count++} нафар"; count++;
+                count++;
                 labelCountToDay.Text = $"Одамони ируз меомада: {count} нафар";
                 label_info.Text = "Хуш омадед ба хурои нисфирузӣ!";
                 label_info.ForeColor = Color.Green;
@@ -105,7 +105,7 @@ namespace ObiGarm.Restorant
             }
             else
             {
-                label_info.Text = "Вақти хурои нисфирузӣ наомадаст:!";
+                label_info.Text = "Вақти хуроки нисфирузӣ наомадаст:!";
                 label_info.ForeColor = Color.Red;
                 pictureInfoKort.Image = Properties.Resources.no;
                 timer_select_picture.Start();
@@ -122,7 +122,7 @@ namespace ObiGarm.Restorant
                 $"and client.date_time_start <= '{DateTime.Now.AddDays(1).ToString("yyyy-MM-dd")}' and client.date_time_end >= '{DateTime.Now.AddDays(1).ToString("yyyy-MM-dd")}' " +
                 $"and room.dinner between '17:000' and '19:00' " +
                 $"and kort.id_type_kort= '{id_type_kort}' and kort.kod_kort= '{idKort}' " +
-                $"and client.date_current_to_restorant not between '{DateTime.Now.ToString("yyyy-MM-dd")}' and '{DateTime.Now.ToString("yyyy-MM-dd")}';";
+                $"and client.date_current_to_restorant not between '{DateTime.Now.ToString("yyyy-MM-dd HH:mm")}' and '{DateTime.Now.ToString("yyyy-MM-dd HH:mm")}';";
 
             Console.WriteLine(sqlQuery);
 
@@ -138,7 +138,7 @@ namespace ObiGarm.Restorant
             }
             else
             {
-                label_info.Text = "Вақти хурои бегоҳрузӣ наомадаст:!";
+                label_info.Text = "Вақти хуроки бегоҳрузӣ наомадаст:!";
                 label_info.ForeColor = Color.Red;
                 pictureInfoKort.Image = Properties.Resources.no;
                 timer_select_picture.Start();
@@ -228,7 +228,7 @@ namespace ObiGarm.Restorant
                         "from client " +
                         "inner join kort on client.id_kort = kort.id " +
                         $"where client.enable ='1' and client.deleted  is null and  kort.kod_kort= '{txt_kort.Text.Substring(10, 10)}' " +
-                        $"and date_format(client.date_current_to_restorant, '%Y-%m-%d') = '{DateTime.Now.ToString("yyyy-MM-dd")}' and client.date_registration != client.date_current_to_restorant " +
+                        $"and date_format(client.date_current_to_restorant, '%Y-%m-%d') = '{DateTime.Now.ToString("yyyy-MM-dd")}' and date_format(client.date_registration, '%Y-%m-%d %H:%i') != date_format(client.date_current_to_restorant, '%Y-%m-%d %H:%i')  " +
                         $"and time_format(client.date_current_to_restorant, '%H:%i')  between '07:00' and '09:30' ";
 
                     if (sqlConfiguration.sqlSelectQuery(sqlCeckIseat).Rows.Count!=0)
@@ -252,7 +252,7 @@ namespace ObiGarm.Restorant
                         "from client " +
                         "inner join kort on client.id_kort = kort.id " +
                         $"where client.enable ='1' and client.deleted  is null and  kort.kod_kort= '{txt_kort.Text.Substring(10, 10)}' " +
-                        $"and date_format(client.date_current_to_restorant, '%Y-%m-%d') = '{DateTime.Now.ToString("yyyy-MM-dd")}' and client.date_registration != client.date_current_to_restorant " +
+                        $"and date_format(client.date_current_to_restorant, '%Y-%m-%d') = '{DateTime.Now.ToString("yyyy-MM-dd")}' and date_format(client.date_registration, '%Y-%m-%d %H:%i') != date_format(client.date_current_to_restorant, '%Y-%m-%d %H:%i')  " +
                         $"and time_format(client.date_current_to_restorant, '%H:%i')  between '12:00' and '14:30' ";
 
                    
@@ -281,7 +281,7 @@ namespace ObiGarm.Restorant
                         "from client " +
                         "inner join kort on client.id_kort = kort.id " +
                         $"where client.enable ='1' and client.deleted  is null and  kort.kod_kort= '{txt_kort.Text.Substring(10, 10)}' " +
-                        $"and date_format(client.date_current_to_restorant, '%Y-%m-%d') = '{DateTime.Now.ToString("yyyy-MM-dd")}' and client.date_registration != client.date_current_to_restorant " +
+                        $"and date_format(client.date_current_to_restorant, '%Y-%m-%d') = '{DateTime.Now.ToString("yyyy-MM-dd")}' and date_format(client.date_registration, '%Y-%m-%d %H:%i') != date_format(client.date_current_to_restorant, '%Y-%m-%d %H:%i')  " +
                         $"and time_format(client.date_current_to_restorant, '%H:%i')  between '18:00' and '19:30' ";
 
                     if (sqlConfiguration.sqlSelectQuery(sqlCeckIseat).Rows.Count != 0)
@@ -333,7 +333,7 @@ namespace ObiGarm.Restorant
                         "from client " +
                         "inner join kort on client.id_kort = kort.id " +
                         $"where client.enable ='1' and client.deleted  is null and  kort.kod_kort= '{txt_kort.Text}' " +
-                        $"and date_format(client.date_current_to_restorant, '%Y-%m-%d') = '{DateTime.Now.ToString("yyyy-MM-dd")}' and client.date_registration != client.date_current_to_restorant " +
+                        $"and date_format(client.date_current_to_restorant, '%Y-%m-%d') = '{DateTime.Now.ToString("yyyy-MM-dd")}' and date_format(client.date_registration, '%Y-%m-%d %H:%i') != date_format(client.date_current_to_restorant, '%Y-%m-%d %H:%i')  " +
                         $"and time_format(client.date_current_to_restorant, '%H:%i') between '07:00' and '09:30' ";
 
                     if (sqlConfiguration.sqlSelectQuery(sqlCeckIseat).Rows.Count != 0)
@@ -358,7 +358,7 @@ namespace ObiGarm.Restorant
                         "from client " +
                         "inner join kort on client.id_kort = kort.id " +
                         $"where client.enable ='1' and client.deleted  is null and  kort.kod_kort= '{txt_kort.Text}' " +
-                        $"and date_format(client.date_current_to_restorant, '%Y-%m-%d') = '{DateTime.Now.ToString("yyyy-MM-dd")}' and client.date_registration != client.date_current_to_restorant " +
+                        $"and date_format(client.date_current_to_restorant, '%Y-%m-%d') = '{DateTime.Now.ToString("yyyy-MM-dd")}' and date_format(client.date_registration, '%Y-%m-%d %H:%i') != date_format(client.date_current_to_restorant, '%Y-%m-%d %H:%i') " +
                         $"and time_format(client.date_current_to_restorant, '%H:%i')  between '12:00' and '14:30' ";
 
 
@@ -387,7 +387,7 @@ namespace ObiGarm.Restorant
                         "from client " +
                         "inner join kort on client.id_kort = kort.id " +
                         $"where client.enable ='1' and client.deleted  is null and  kort.kod_kort= '{txt_kort.Text}' " +
-                        $"and date_format(client.date_current_to_restorant, '%Y-%m-%d') = '{DateTime.Now.ToString("yyyy-MM-dd")}' and client.date_registration != client.date_current_to_restorant " +
+                        $"and date_format(client.date_current_to_restorant, '%Y-%m-%d') = '{DateTime.Now.ToString("yyyy-MM-dd")}' and date_format(client.date_registration, '%Y-%m-%d %H:%i') != date_format(client.date_current_to_restorant, '%Y-%m-%d %H:%i')  " +
                         $"and time_format(client.date_current_to_restorant, '%H:%i')  between '18:00' and '19:30' ";
 
                     if (sqlConfiguration.sqlSelectQuery(sqlCeckIseat).Rows.Count != 0)
