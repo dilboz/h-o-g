@@ -143,7 +143,7 @@ namespace ObiGarm.Vrach
                 /*Console.WriteLine($"select * from services_client where id_services = '{prv_id_services}' and id_users = '{prv_id_spitsalist}' and time >= '{date_selected.Year}-{date_selected.Month}-{date_selected.Day} {start_time_spitsalist_work.Hour}:{start_time_spitsalist_work.Minute}:{start_time_spitsalist_work.Second}' " +
                     $" and time <= '{date_selected.Year}-{date_selected.Month}-{date_selected.Day} {(time_plus_srt_time.Hour)}:{time_plus_srt_time.Minute}' and deleted is null; ");*/
 
-                if (check_tabel_sevices_client.Rows.Count == 0)
+                if (check_tabel_sevices_client.Rows.Count == 0 && start_time_spitsalist_work.ToString("HH")!="13")
                 {
                     datagridview_time.Rows.Add(start_time_spitsalist_work.ToString("HH:mm"));
                 }

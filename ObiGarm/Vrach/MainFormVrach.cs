@@ -276,7 +276,7 @@ namespace ObiGarm.Vrach
             check_id(id_client);
             string sql_query = $"UPDATE info_table_clients SET qad = '{txt_qad.Text}' WHERE id_clients = '{id_client}';";
             sqlConfiguration.sqlQuery(sql_query);
-        }
+        }   
 
         private void txt_vazn_TextChanged(object sender, EventArgs e)
         {

@@ -223,8 +223,10 @@ namespace ObiGarm
                             
                             ManitorForm manitorForm = new ManitorForm(tabel_select_user.Rows[0]["id_manitor"].ToString());
 
-                            if (tabel_select_user.Rows[0]["id_manitor"].ToString()!="3")
+                            if (tabel_select_user.Rows[0]["id_manitor"].ToString() != "3")
+                            {
                                 manitorForm.Show();
+                            }
 
                             mainFormVrach.Show();
                             this.Hide();
