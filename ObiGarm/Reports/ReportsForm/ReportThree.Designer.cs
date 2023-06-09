@@ -192,10 +192,10 @@ namespace ObiGarm.Reports.ReportsForm
             // gridControlTecket
             // 
             this.gridControlTecket.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControlTecket.Location = new System.Drawing.Point(0, 29);
+            this.gridControlTecket.Location = new System.Drawing.Point(0, 33);
             this.gridControlTecket.MainView = this.gridViewTkect;
             this.gridControlTecket.Name = "gridControlTecket";
-            this.gridControlTecket.Size = new System.Drawing.Size(606, 561);
+            this.gridControlTecket.Size = new System.Drawing.Size(606, 557);
             this.gridControlTecket.TabIndex = 1;
             this.gridControlTecket.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridViewTkect});
@@ -220,7 +220,7 @@ namespace ObiGarm.Reports.ReportsForm
             this.label_country.ForeColor = System.Drawing.Color.Black;
             this.label_country.Location = new System.Drawing.Point(0, 10);
             this.label_country.Name = "label_country";
-            this.label_country.Size = new System.Drawing.Size(58, 19);
+            this.label_country.Size = new System.Drawing.Size(70, 23);
             this.label_country.TabIndex = 0;
             this.label_country.Text = "Роҳхат";
             // 
@@ -233,7 +233,7 @@ namespace ObiGarm.Reports.ReportsForm
             this.label_provice.ForeColor = System.Drawing.Color.Black;
             this.label_provice.Location = new System.Drawing.Point(0, 10);
             this.label_provice.Name = "label_provice";
-            this.label_provice.Size = new System.Drawing.Size(85, 19);
+            this.label_provice.Size = new System.Drawing.Size(107, 23);
             this.label_provice.TabIndex = 1;
             this.label_provice.Text = "Пули нақд";
             // 
@@ -251,10 +251,10 @@ namespace ObiGarm.Reports.ReportsForm
             // gridControlMoney
             // 
             this.gridControlMoney.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControlMoney.Location = new System.Drawing.Point(0, 29);
+            this.gridControlMoney.Location = new System.Drawing.Point(0, 33);
             this.gridControlMoney.MainView = this.gridView1;
             this.gridControlMoney.Name = "gridControlMoney";
-            this.gridControlMoney.Size = new System.Drawing.Size(607, 561);
+            this.gridControlMoney.Size = new System.Drawing.Size(607, 557);
             this.gridControlMoney.TabIndex = 2;
             this.gridControlMoney.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -492,7 +492,7 @@ namespace ObiGarm.Reports.ReportsForm
             // 
             // ReportThree
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1265, 663);
             this.Controls.Add(this.tableLayoutPanelFull);

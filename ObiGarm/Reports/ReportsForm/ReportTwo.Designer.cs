@@ -123,6 +123,9 @@ namespace ObiGarm.Reports.ReportsForm
             this.combo_country.Dock = System.Windows.Forms.DockStyle.Left;
             this.combo_country.Location = new System.Drawing.Point(506, 0);
             this.combo_country.Name = "combo_country";
+            // 
+            // 
+            // 
             this.combo_country.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.combo_country.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
             this.combo_country.Properties.Appearance.Options.UseFont = true;
@@ -143,7 +146,7 @@ namespace ObiGarm.Reports.ReportsForm
             new DevExpress.XtraEditors.Controls.LookUpColumnInfo("name", "Номи кишвар")});
             this.combo_country.Properties.ContextImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("combo_country.Properties.ContextImageOptions.Image")));
             this.combo_country.Properties.NullText = "Кишварро интихоб кунед!";
-            this.combo_country.Size = new System.Drawing.Size(224, 26);
+            this.combo_country.Size = new System.Drawing.Size(224, 28);
             this.combo_country.TabIndex = 63;
             // 
             // label1
@@ -243,10 +246,14 @@ namespace ObiGarm.Reports.ReportsForm
             // gridControlProvince
             // 
             this.gridControlProvince.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControlProvince.Location = new System.Drawing.Point(0, 29);
+            // 
+            // 
+            // 
+            this.gridControlProvince.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.gridControlProvince.Location = new System.Drawing.Point(0, 33);
             this.gridControlProvince.MainView = this.gridViewProvince;
             this.gridControlProvince.Name = "gridControlProvince";
-            this.gridControlProvince.Size = new System.Drawing.Size(493, 521);
+            this.gridControlProvince.Size = new System.Drawing.Size(493, 517);
             this.gridControlProvince.TabIndex = 2;
             this.gridControlProvince.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridViewProvince});
@@ -377,7 +384,7 @@ namespace ObiGarm.Reports.ReportsForm
             this.label_provice.ForeColor = System.Drawing.Color.Black;
             this.label_provice.Location = new System.Drawing.Point(0, 10);
             this.label_provice.Name = "label_provice";
-            this.label_provice.Size = new System.Drawing.Size(79, 19);
+            this.label_provice.Size = new System.Drawing.Size(96, 23);
             this.label_provice.TabIndex = 1;
             this.label_provice.Text = "Вилоятҳо";
             // 
@@ -395,10 +402,14 @@ namespace ObiGarm.Reports.ReportsForm
             // gridControlCountry
             // 
             this.gridControlCountry.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControlCountry.Location = new System.Drawing.Point(0, 29);
+            // 
+            // 
+            // 
+            this.gridControlCountry.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.gridControlCountry.Location = new System.Drawing.Point(0, 33);
             this.gridControlCountry.MainView = this.gridViewCountry;
             this.gridControlCountry.Name = "gridControlCountry";
-            this.gridControlCountry.Size = new System.Drawing.Size(493, 521);
+            this.gridControlCountry.Size = new System.Drawing.Size(493, 517);
             this.gridControlCountry.TabIndex = 1;
             this.gridControlCountry.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridViewCountry});
@@ -529,7 +540,7 @@ namespace ObiGarm.Reports.ReportsForm
             this.label_country.ForeColor = System.Drawing.Color.Black;
             this.label_country.Location = new System.Drawing.Point(0, 10);
             this.label_country.Name = "label_country";
-            this.label_country.Size = new System.Drawing.Size(83, 19);
+            this.label_country.Size = new System.Drawing.Size(105, 23);
             this.label_country.TabIndex = 0;
             this.label_country.Text = "Кишварҳо";
             // 
@@ -545,7 +556,7 @@ namespace ObiGarm.Reports.ReportsForm
             // ReportTwo
             // 
             this.Appearance.Options.UseFont = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1018, 603);
             this.Controls.Add(this.tableLayoutPanelFull);

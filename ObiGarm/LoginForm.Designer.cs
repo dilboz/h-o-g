@@ -76,7 +76,7 @@
             this.panel_form.PanelColor = System.Drawing.Color.Empty;
             this.panel_form.ShadowDept = 2;
             this.panel_form.ShadowTopLeftVisible = false;
-            this.panel_form.Size = new System.Drawing.Size(639, 327);
+            this.panel_form.Size = new System.Drawing.Size(635, 351);
             this.panel_form.TabIndex = 0;
             // 
             // panel_left
@@ -85,7 +85,7 @@
             this.panel_left.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_left.Location = new System.Drawing.Point(0, 62);
             this.panel_left.Name = "panel_left";
-            this.panel_left.Size = new System.Drawing.Size(177, 263);
+            this.panel_left.Size = new System.Drawing.Size(163, 287);
             this.panel_left.TabIndex = 0;
             // 
             // picture_logo
@@ -109,10 +109,11 @@
             this.panel_right.Controls.Add(this.btn_login);
             this.panel_right.Controls.Add(this.lbl_show_password);
             this.panel_right.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel_right.Location = new System.Drawing.Point(177, 62);
+            this.panel_right.Location = new System.Drawing.Point(163, 62);
             this.panel_right.Name = "panel_right";
-            this.panel_right.Size = new System.Drawing.Size(460, 263);
+            this.panel_right.Size = new System.Drawing.Size(470, 287);
             this.panel_right.TabIndex = 0;
+            this.panel_right.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_right_Paint);
             // 
             // check_show_password
             // 
@@ -122,7 +123,7 @@
             this.check_show_password.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(108)))), ((int)(((byte)(59)))));
             this.check_show_password.Cursor = System.Windows.Forms.Cursors.Hand;
             this.check_show_password.ForeColor = System.Drawing.Color.White;
-            this.check_show_password.Location = new System.Drawing.Point(40, 163);
+            this.check_show_password.Location = new System.Drawing.Point(40, 175);
             this.check_show_password.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.check_show_password.Name = "check_show_password";
             this.check_show_password.Size = new System.Drawing.Size(20, 20);
@@ -135,7 +136,7 @@
             this.lbl_login.AutoSize = true;
             this.lbl_login.Location = new System.Drawing.Point(37, 35);
             this.lbl_login.Name = "lbl_login";
-            this.lbl_login.Size = new System.Drawing.Size(48, 16);
+            this.lbl_login.Size = new System.Drawing.Size(64, 21);
             this.lbl_login.TabIndex = 0;
             this.lbl_login.Text = "&LOGIN:";
             // 
@@ -218,7 +219,7 @@
             this.lbl_password.AutoSize = true;
             this.lbl_password.Location = new System.Drawing.Point(37, 101);
             this.lbl_password.Name = "lbl_password";
-            this.lbl_password.Size = new System.Drawing.Size(45, 16);
+            this.lbl_password.Size = new System.Drawing.Size(58, 21);
             this.lbl_password.TabIndex = 0;
             this.lbl_password.Text = "&РАМЗ:";
             // 
@@ -333,7 +334,7 @@
             this.btn_exit.IdleIconLeftImage = null;
             this.btn_exit.IdleIconRightImage = null;
             this.btn_exit.IndicateFocus = false;
-            this.btn_exit.Location = new System.Drawing.Point(24, 194);
+            this.btn_exit.Location = new System.Drawing.Point(24, 206);
             this.btn_exit.Name = "btn_exit";
             stateProperties9.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(178)))), ((int)(((byte)(97)))));
             stateProperties9.BorderRadius = 15;
@@ -397,7 +398,7 @@
             this.btn_login.IdleIconLeftImage = null;
             this.btn_login.IdleIconRightImage = null;
             this.btn_login.IndicateFocus = false;
-            this.btn_login.Location = new System.Drawing.Point(249, 194);
+            this.btn_login.Location = new System.Drawing.Point(249, 206);
             this.btn_login.Name = "btn_login";
             stateProperties11.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(178)))), ((int)(((byte)(97)))));
             stateProperties11.BorderRadius = 15;
@@ -430,9 +431,9 @@
             this.lbl_show_password.AutoSize = true;
             this.lbl_show_password.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
             this.lbl_show_password.LinkColor = System.Drawing.Color.Black;
-            this.lbl_show_password.Location = new System.Drawing.Point(60, 164);
+            this.lbl_show_password.Location = new System.Drawing.Point(60, 176);
             this.lbl_show_password.Name = "lbl_show_password";
-            this.lbl_show_password.Size = new System.Drawing.Size(84, 16);
+            this.lbl_show_password.Size = new System.Drawing.Size(112, 21);
             this.lbl_show_password.TabIndex = 0;
             this.lbl_show_password.TabStop = true;
             this.lbl_show_password.Text = "&Дидани рамз";
@@ -446,7 +447,7 @@
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(0, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(637, 62);
+            this.label3.Size = new System.Drawing.Size(633, 62);
             this.label3.TabIndex = 0;
             this.label3.Text = "ВОРИДШАВӢ";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -454,9 +455,9 @@
             // LoginForm
             // 
             this.Appearance.Options.UseFont = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(639, 327);
+            this.ClientSize = new System.Drawing.Size(635, 351);
             this.Controls.Add(this.panel_form);
             this.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderEffect = DevExpress.XtraEditors.FormBorderEffect.None;

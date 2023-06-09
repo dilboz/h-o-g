@@ -66,10 +66,11 @@ namespace ObiGarm.Reports.ReportsForm
             this.panelBotton.Controls.Add(this.buttonPrint);
             this.panelBotton.Controls.Add(this.labelCountClent);
             this.panelBotton.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelBotton.Location = new System.Drawing.Point(10, 543);
+            this.panelBotton.Location = new System.Drawing.Point(12, 669);
+            this.panelBotton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelBotton.Name = "panelBotton";
-            this.panelBotton.Padding = new System.Windows.Forms.Padding(0, 5, 10, 0);
-            this.panelBotton.Size = new System.Drawing.Size(1224, 36);
+            this.panelBotton.Padding = new System.Windows.Forms.Padding(0, 6, 12, 0);
+            this.panelBotton.Size = new System.Drawing.Size(1427, 44);
             this.panelBotton.TabIndex = 2;
             // 
             // buttonPrint
@@ -80,9 +81,10 @@ namespace ObiGarm.Reports.ReportsForm
             this.buttonPrint.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonPrint.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonPrint.ForeColor = System.Drawing.Color.White;
-            this.buttonPrint.Location = new System.Drawing.Point(1052, 5);
+            this.buttonPrint.Location = new System.Drawing.Point(1226, 6);
+            this.buttonPrint.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonPrint.Name = "buttonPrint";
-            this.buttonPrint.Size = new System.Drawing.Size(162, 31);
+            this.buttonPrint.Size = new System.Drawing.Size(189, 38);
             this.buttonPrint.TabIndex = 6;
             this.buttonPrint.Text = "Чопкуни";
             this.buttonPrint.UseVisualStyleBackColor = false;
@@ -94,10 +96,11 @@ namespace ObiGarm.Reports.ReportsForm
             this.labelCountClent.BackColor = System.Drawing.Color.LightGray;
             this.labelCountClent.Dock = System.Windows.Forms.DockStyle.Left;
             this.labelCountClent.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelCountClent.Location = new System.Drawing.Point(0, 5);
+            this.labelCountClent.Location = new System.Drawing.Point(0, 6);
+            this.labelCountClent.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelCountClent.Name = "labelCountClent";
-            this.labelCountClent.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.labelCountClent.Size = new System.Drawing.Size(170, 31);
+            this.labelCountClent.Padding = new System.Windows.Forms.Padding(23, 0, 0, 0);
+            this.labelCountClent.Size = new System.Drawing.Size(198, 38);
             this.labelCountClent.TabIndex = 5;
             this.labelCountClent.Text = "Ҳамагӣ: 0 нафар";
             this.labelCountClent.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -107,9 +110,10 @@ namespace ObiGarm.Reports.ReportsForm
             this.panelFull.Controls.Add(this.panelTop);
             this.panelFull.Controls.Add(this.gridControlReportOne);
             this.panelFull.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelFull.Location = new System.Drawing.Point(10, 10);
+            this.panelFull.Location = new System.Drawing.Point(12, 12);
+            this.panelFull.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelFull.Name = "panelFull";
-            this.panelFull.Size = new System.Drawing.Size(1224, 533);
+            this.panelFull.Size = new System.Drawing.Size(1427, 657);
             this.panelFull.TabIndex = 4;
             // 
             // panelTop
@@ -122,9 +126,10 @@ namespace ObiGarm.Reports.ReportsForm
             this.panelTop.Controls.Add(this.labelEndDate);
             this.panelTop.Controls.Add(this.dateTimePickerStart);
             this.panelTop.Controls.Add(this.labelStartTime);
-            this.panelTop.Location = new System.Drawing.Point(501, 9);
+            this.panelTop.Location = new System.Drawing.Point(583, 11);
+            this.panelTop.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelTop.Name = "panelTop";
-            this.panelTop.Size = new System.Drawing.Size(720, 26);
+            this.panelTop.Size = new System.Drawing.Size(840, 32);
             this.panelTop.TabIndex = 5;
             // 
             // buttonAns
@@ -135,9 +140,10 @@ namespace ObiGarm.Reports.ReportsForm
             this.buttonAns.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonAns.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonAns.ForeColor = System.Drawing.Color.White;
-            this.buttonAns.Location = new System.Drawing.Point(602, 0);
+            this.buttonAns.Location = new System.Drawing.Point(702, 0);
+            this.buttonAns.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonAns.Name = "buttonAns";
-            this.buttonAns.Size = new System.Drawing.Size(118, 26);
+            this.buttonAns.Size = new System.Drawing.Size(138, 32);
             this.buttonAns.TabIndex = 55;
             this.buttonAns.Text = "Намош";
             this.buttonAns.UseVisualStyleBackColor = false;
@@ -147,10 +153,14 @@ namespace ObiGarm.Reports.ReportsForm
             // 
             this.txtEge.Dock = System.Windows.Forms.DockStyle.Left;
             this.txtEge.EditValue = "0";
-            this.txtEge.Location = new System.Drawing.Point(496, 0);
-            this.txtEge.MaximumSize = new System.Drawing.Size(100, 35);
-            this.txtEge.MinimumSize = new System.Drawing.Size(100, 25);
+            this.txtEge.Location = new System.Drawing.Point(578, 0);
+            this.txtEge.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtEge.MaximumSize = new System.Drawing.Size(117, 43);
+            this.txtEge.MinimumSize = new System.Drawing.Size(117, 31);
             this.txtEge.Name = "txtEge";
+            // 
+            // 
+            // 
             this.txtEge.Properties.Appearance.BackColor = System.Drawing.Color.Gainsboro;
             this.txtEge.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.txtEge.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
@@ -160,7 +170,7 @@ namespace ObiGarm.Reports.ReportsForm
             this.txtEge.Properties.Mask.BeepOnError = true;
             this.txtEge.Properties.Mask.EditMask = "00";
             this.txtEge.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
-            this.txtEge.Size = new System.Drawing.Size(100, 22);
+            this.txtEge.Size = new System.Drawing.Size(117, 31);
             this.txtEge.TabIndex = 54;
             // 
             // label1
@@ -168,9 +178,10 @@ namespace ObiGarm.Reports.ReportsForm
             this.label1.BackColor = System.Drawing.Color.White;
             this.label1.Dock = System.Windows.Forms.DockStyle.Left;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(434, 0);
+            this.label1.Location = new System.Drawing.Point(506, 0);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(62, 26);
+            this.label1.Size = new System.Drawing.Size(72, 32);
             this.label1.TabIndex = 4;
             this.label1.Text = "Сину сол:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -183,11 +194,12 @@ namespace ObiGarm.Reports.ReportsForm
             this.dateTimePickerEnd.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.dateTimePickerEnd.ForeColor = System.Drawing.Color.Black;
             this.dateTimePickerEnd.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.dateTimePickerEnd.Location = new System.Drawing.Point(269, 0);
+            this.dateTimePickerEnd.Location = new System.Drawing.Point(314, 0);
+            this.dateTimePickerEnd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dateTimePickerEnd.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dateTimePickerEnd.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dateTimePickerEnd.Name = "dateTimePickerEnd";
-            this.dateTimePickerEnd.Size = new System.Drawing.Size(165, 26);
+            this.dateTimePickerEnd.Size = new System.Drawing.Size(192, 32);
             this.dateTimePickerEnd.TabIndex = 3;
             this.dateTimePickerEnd.Value = new System.DateTime(2023, 2, 22, 20, 18, 57, 255);
             // 
@@ -196,9 +208,10 @@ namespace ObiGarm.Reports.ReportsForm
             this.labelEndDate.BackColor = System.Drawing.Color.White;
             this.labelEndDate.Dock = System.Windows.Forms.DockStyle.Left;
             this.labelEndDate.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelEndDate.Location = new System.Drawing.Point(210, 0);
+            this.labelEndDate.Location = new System.Drawing.Point(245, 0);
+            this.labelEndDate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelEndDate.Name = "labelEndDate";
-            this.labelEndDate.Size = new System.Drawing.Size(59, 26);
+            this.labelEndDate.Size = new System.Drawing.Size(69, 32);
             this.labelEndDate.TabIndex = 2;
             this.labelEndDate.Text = "то кай:";
             this.labelEndDate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -211,11 +224,12 @@ namespace ObiGarm.Reports.ReportsForm
             this.dateTimePickerStart.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.dateTimePickerStart.ForeColor = System.Drawing.Color.Black;
             this.dateTimePickerStart.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.dateTimePickerStart.Location = new System.Drawing.Point(49, 0);
+            this.dateTimePickerStart.Location = new System.Drawing.Point(57, 0);
+            this.dateTimePickerStart.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dateTimePickerStart.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dateTimePickerStart.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dateTimePickerStart.Name = "dateTimePickerStart";
-            this.dateTimePickerStart.Size = new System.Drawing.Size(161, 26);
+            this.dateTimePickerStart.Size = new System.Drawing.Size(188, 32);
             this.dateTimePickerStart.TabIndex = 1;
             this.dateTimePickerStart.Value = new System.DateTime(2023, 2, 22, 20, 18, 57, 255);
             // 
@@ -225,8 +239,9 @@ namespace ObiGarm.Reports.ReportsForm
             this.labelStartTime.Dock = System.Windows.Forms.DockStyle.Left;
             this.labelStartTime.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelStartTime.Location = new System.Drawing.Point(0, 0);
+            this.labelStartTime.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelStartTime.Name = "labelStartTime";
-            this.labelStartTime.Size = new System.Drawing.Size(49, 26);
+            this.labelStartTime.Size = new System.Drawing.Size(57, 32);
             this.labelStartTime.TabIndex = 0;
             this.labelStartTime.Text = "Аз кай:";
             this.labelStartTime.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -234,17 +249,22 @@ namespace ObiGarm.Reports.ReportsForm
             // gridControlReportOne
             // 
             this.gridControlReportOne.Dock = System.Windows.Forms.DockStyle.Fill;
+            // 
+            // 
+            // 
+            this.gridControlReportOne.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gridControlReportOne.Location = new System.Drawing.Point(0, 0);
             this.gridControlReportOne.MainView = this.gridViewReportOne;
+            this.gridControlReportOne.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gridControlReportOne.Name = "gridControlReportOne";
-            this.gridControlReportOne.Size = new System.Drawing.Size(1224, 533);
+            this.gridControlReportOne.Size = new System.Drawing.Size(1427, 657);
             this.gridControlReportOne.TabIndex = 1;
             this.gridControlReportOne.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridViewReportOne});
             // 
             // gridViewReportOne
             // 
-            this.gridViewReportOne.ColumnPanelRowHeight = 30;
+            this.gridViewReportOne.ColumnPanelRowHeight = 37;
             this.gridViewReportOne.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.numberRow,
             this.order,
@@ -255,6 +275,7 @@ namespace ObiGarm.Reports.ReportsForm
             this.DateEnd,
             this.countDay,
             this.numberPhon});
+            this.gridViewReportOne.DetailHeight = 431;
             this.gridViewReportOne.GridControl = this.gridControlReportOne;
             this.gridViewReportOne.Name = "gridViewReportOne";
             this.gridViewReportOne.OptionsFind.AlwaysVisible = true;
@@ -272,10 +293,11 @@ namespace ObiGarm.Reports.ReportsForm
             this.numberRow.AppearanceHeader.Options.UseForeColor = true;
             this.numberRow.Caption = "№";
             this.numberRow.FieldName = "number_row";
+            this.numberRow.MinWidth = 23;
             this.numberRow.Name = "numberRow";
             this.numberRow.Visible = true;
             this.numberRow.VisibleIndex = 0;
-            this.numberRow.Width = 46;
+            this.numberRow.Width = 54;
             // 
             // order
             // 
@@ -289,10 +311,11 @@ namespace ObiGarm.Reports.ReportsForm
             this.order.AppearanceHeader.Options.UseForeColor = true;
             this.order.Caption = "Ордер";
             this.order.FieldName = "order";
+            this.order.MinWidth = 23;
             this.order.Name = "order";
             this.order.Visible = true;
             this.order.VisibleIndex = 1;
-            this.order.Width = 98;
+            this.order.Width = 114;
             // 
             // frimeAndRoom
             // 
@@ -306,10 +329,11 @@ namespace ObiGarm.Reports.ReportsForm
             this.frimeAndRoom.AppearanceHeader.Options.UseForeColor = true;
             this.frimeAndRoom.Caption = "Бино, ҳуҷра";
             this.frimeAndRoom.FieldName = "frime_and_room";
+            this.frimeAndRoom.MinWidth = 23;
             this.frimeAndRoom.Name = "frimeAndRoom";
             this.frimeAndRoom.Visible = true;
             this.frimeAndRoom.VisibleIndex = 2;
-            this.frimeAndRoom.Width = 162;
+            this.frimeAndRoom.Width = 189;
             // 
             // fullName
             // 
@@ -323,10 +347,11 @@ namespace ObiGarm.Reports.ReportsForm
             this.fullName.AppearanceHeader.Options.UseForeColor = true;
             this.fullName.Caption = "Ном ва насаб";
             this.fullName.FieldName = "full_name";
+            this.fullName.MinWidth = 23;
             this.fullName.Name = "fullName";
             this.fullName.Visible = true;
             this.fullName.VisibleIndex = 3;
-            this.fullName.Width = 162;
+            this.fullName.Width = 189;
             // 
             // burzday
             // 
@@ -340,10 +365,11 @@ namespace ObiGarm.Reports.ReportsForm
             this.burzday.AppearanceHeader.Options.UseForeColor = true;
             this.burzday.Caption = "Соли таввалуд";
             this.burzday.FieldName = "burzday";
+            this.burzday.MinWidth = 23;
             this.burzday.Name = "burzday";
             this.burzday.Visible = true;
             this.burzday.VisibleIndex = 4;
-            this.burzday.Width = 162;
+            this.burzday.Width = 189;
             // 
             // startDate
             // 
@@ -357,10 +383,11 @@ namespace ObiGarm.Reports.ReportsForm
             this.startDate.AppearanceHeader.Options.UseForeColor = true;
             this.startDate.Caption = "Аз кай";
             this.startDate.FieldName = "start_date";
+            this.startDate.MinWidth = 23;
             this.startDate.Name = "startDate";
             this.startDate.Visible = true;
             this.startDate.VisibleIndex = 5;
-            this.startDate.Width = 162;
+            this.startDate.Width = 189;
             // 
             // DateEnd
             // 
@@ -374,10 +401,11 @@ namespace ObiGarm.Reports.ReportsForm
             this.DateEnd.AppearanceHeader.Options.UseForeColor = true;
             this.DateEnd.Caption = "То кай";
             this.DateEnd.FieldName = "enb_date";
+            this.DateEnd.MinWidth = 23;
             this.DateEnd.Name = "DateEnd";
             this.DateEnd.Visible = true;
             this.DateEnd.VisibleIndex = 6;
-            this.DateEnd.Width = 162;
+            this.DateEnd.Width = 189;
             // 
             // countDay
             // 
@@ -391,10 +419,11 @@ namespace ObiGarm.Reports.ReportsForm
             this.countDay.AppearanceHeader.Options.UseForeColor = true;
             this.countDay.Caption = "М/Р";
             this.countDay.FieldName = "count_day";
+            this.countDay.MinWidth = 23;
             this.countDay.Name = "countDay";
             this.countDay.Visible = true;
             this.countDay.VisibleIndex = 7;
-            this.countDay.Width = 162;
+            this.countDay.Width = 189;
             // 
             // numberPhon
             // 
@@ -408,21 +437,23 @@ namespace ObiGarm.Reports.ReportsForm
             this.numberPhon.AppearanceHeader.Options.UseForeColor = true;
             this.numberPhon.Caption = "Рақами телефон";
             this.numberPhon.FieldName = "number_phon";
+            this.numberPhon.MinWidth = 23;
             this.numberPhon.Name = "numberPhon";
             this.numberPhon.Visible = true;
             this.numberPhon.VisibleIndex = 8;
-            this.numberPhon.Width = 162;
+            this.numberPhon.Width = 189;
             // 
             // ReportOne
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1244, 589);
+            this.ClientSize = new System.Drawing.Size(1451, 725);
             this.Controls.Add(this.panelFull);
             this.Controls.Add(this.panelBotton);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "ReportOne";
-            this.Padding = new System.Windows.Forms.Padding(10);
+            this.Padding = new System.Windows.Forms.Padding(12, 12, 12, 12);
             this.Text = "ReportOne";
             this.panelBotton.ResumeLayout(false);
             this.panelFull.ResumeLayout(false);

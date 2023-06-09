@@ -12,6 +12,7 @@ using System.ComponentModel;
 using System.Data;
 using System.IO;
 using System.Windows.Forms;
+using ObiGarm.AdminM;
 
 namespace ObiGarm
 {
@@ -199,8 +200,8 @@ namespace ObiGarm
 
                         if (tabel_select_user.Rows[0]["point"].ToString() == "6")
                         {
-                            InfoReportsFromMoney infoReportsFromMoney = new InfoReportsFromMoney();
-                            infoReportsFromMoney.Show();
+                            AdminM.AdminR adminR  = new AdminM.AdminR();
+                            adminR.Show();
                             this.Hide();                            
                         }
 
@@ -276,6 +277,11 @@ namespace ObiGarm
             {
                 LoginFunc();
             }
+        }
+
+        private void panel_right_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

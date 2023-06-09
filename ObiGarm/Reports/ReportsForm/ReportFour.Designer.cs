@@ -58,7 +58,7 @@ namespace ObiGarm.Reports.ReportsForm
             this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTop.Location = new System.Drawing.Point(20, 20);
             this.panelTop.Name = "panelTop";
-            this.panelTop.Size = new System.Drawing.Size(1312, 29);
+            this.panelTop.Size = new System.Drawing.Size(1049, 29);
             this.panelTop.TabIndex = 1;
             // 
             // buttonPrint
@@ -69,12 +69,13 @@ namespace ObiGarm.Reports.ReportsForm
             this.buttonPrint.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonPrint.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonPrint.ForeColor = System.Drawing.Color.White;
-            this.buttonPrint.Location = new System.Drawing.Point(1197, 0);
+            this.buttonPrint.Location = new System.Drawing.Point(934, 0);
             this.buttonPrint.Name = "buttonPrint";
             this.buttonPrint.Size = new System.Drawing.Size(115, 29);
             this.buttonPrint.TabIndex = 66;
             this.buttonPrint.Text = "Чопкуни";
             this.buttonPrint.UseVisualStyleBackColor = false;
+            this.buttonPrint.Click += new System.EventHandler(this.buttonPrint_Click);
             // 
             // buttonAns
             // 
@@ -84,7 +85,7 @@ namespace ObiGarm.Reports.ReportsForm
             this.buttonAns.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonAns.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonAns.ForeColor = System.Drawing.Color.White;
-            this.buttonAns.Location = new System.Drawing.Point(453, 0);
+            this.buttonAns.Location = new System.Drawing.Point(548, 0);
             this.buttonAns.Name = "buttonAns";
             this.buttonAns.Size = new System.Drawing.Size(118, 29);
             this.buttonAns.TabIndex = 65;
@@ -100,11 +101,11 @@ namespace ObiGarm.Reports.ReportsForm
             this.dateTimePicker.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.dateTimePicker.ForeColor = System.Drawing.Color.Black;
             this.dateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.dateTimePicker.Location = new System.Drawing.Point(292, 0);
+            this.dateTimePicker.Location = new System.Drawing.Point(358, 0);
             this.dateTimePicker.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dateTimePicker.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dateTimePicker.Name = "dateTimePicker";
-            this.dateTimePicker.Size = new System.Drawing.Size(161, 29);
+            this.dateTimePicker.Size = new System.Drawing.Size(190, 29);
             this.dateTimePicker.TabIndex = 63;
             this.dateTimePicker.Value = new System.DateTime(2023, 2, 22, 20, 18, 57, 255);
             // 
@@ -115,7 +116,7 @@ namespace ObiGarm.Reports.ReportsForm
             this.label1.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(292, 22);
+            this.label1.Size = new System.Drawing.Size(358, 27);
             this.label1.TabIndex = 61;
             this.label1.Text = "Ҳисоботи ҷамъбасти дар таърихи ";
             // 
@@ -130,16 +131,16 @@ namespace ObiGarm.Reports.ReportsForm
             this.tableLayoutPanel2.RowCount = 2;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 85F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(891, 455);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(892, 453);
             this.tableLayoutPanel2.TabIndex = 4;
             // 
             // label8
             // 
             this.label8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label8.Location = new System.Drawing.Point(3, 386);
+            this.label8.Location = new System.Drawing.Point(3, 385);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(885, 69);
+            this.label8.Size = new System.Drawing.Size(886, 68);
             this.label8.TabIndex = 5;
             this.label8.Text = "Ҳамаги пагоҳ дар истироҳатгоҳ (0 н.): дар муқарари 0(нафар) ва дар нимаълодараҷа " +
     "0(нафар)";
@@ -161,16 +162,16 @@ namespace ObiGarm.Reports.ReportsForm
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(885, 380);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(885, 379);
             this.tableLayoutPanel1.TabIndex = 4;
             // 
             // label7
             // 
             this.label7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label7.Location = new System.Drawing.Point(445, 285);
+            this.label7.Location = new System.Drawing.Point(445, 283);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(437, 95);
+            this.label7.Size = new System.Drawing.Size(437, 96);
             this.label7.TabIndex = 5;
             this.label7.Text = "Квитансия: 0(руз)";
             // 
@@ -178,9 +179,9 @@ namespace ObiGarm.Reports.ReportsForm
             // 
             this.label6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label6.Location = new System.Drawing.Point(3, 285);
+            this.label6.Location = new System.Drawing.Point(3, 283);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(436, 95);
+            this.label6.Size = new System.Drawing.Size(436, 96);
             this.label6.TabIndex = 4;
             this.label6.Text = "Роҳхат: 0(руз)";
             // 
@@ -188,9 +189,9 @@ namespace ObiGarm.Reports.ReportsForm
             // 
             this.label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label5.Location = new System.Drawing.Point(445, 190);
+            this.label5.Location = new System.Drawing.Point(445, 189);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(437, 95);
+            this.label5.Size = new System.Drawing.Size(437, 94);
             this.label5.TabIndex = 3;
             this.label5.Text = "Шахсонипагоҳмерафтаги (0 н.): аз муқарари 0(нафар) ва аз нимаълодараҷа 0(нафар)";
             // 
@@ -198,9 +199,9 @@ namespace ObiGarm.Reports.ReportsForm
             // 
             this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label4.Location = new System.Drawing.Point(3, 190);
+            this.label4.Location = new System.Drawing.Point(3, 189);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(436, 95);
+            this.label4.Size = new System.Drawing.Size(436, 94);
             this.label4.TabIndex = 2;
             this.label4.Text = "Ҳамагирузҳо: 0";
             // 
@@ -210,7 +211,7 @@ namespace ObiGarm.Reports.ReportsForm
             this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label3.Location = new System.Drawing.Point(445, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(437, 190);
+            this.label3.Size = new System.Drawing.Size(437, 189);
             this.label3.TabIndex = 1;
             this.label3.Text = "Ошхона мерафтагиҳо (0н.): аз муқарари 0(нафар) аз нимаълодараҷа 0(нафар)";
             // 
@@ -220,15 +221,15 @@ namespace ObiGarm.Reports.ReportsForm
             this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label2.Location = new System.Drawing.Point(3, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(436, 190);
+            this.label2.Size = new System.Drawing.Size(436, 189);
             this.label2.TabIndex = 0;
             this.label2.Text = resources.GetString("label2.Text");
             // 
             // ReportFour
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 22F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 27F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1352, 696);
+            this.ClientSize = new System.Drawing.Size(1089, 696);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.panelTop);
             this.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));

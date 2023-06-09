@@ -141,9 +141,10 @@
             this.panel_top.Controls.Add(this.btn_logut);
             this.panel_top.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_top.Location = new System.Drawing.Point(0, 0);
+            this.panel_top.Margin = new System.Windows.Forms.Padding(4);
             this.panel_top.Name = "panel_top";
-            this.panel_top.Padding = new System.Windows.Forms.Padding(10);
-            this.panel_top.Size = new System.Drawing.Size(1469, 66);
+            this.panel_top.Padding = new System.Windows.Forms.Padding(12);
+            this.panel_top.Size = new System.Drawing.Size(1714, 81);
             this.panel_top.TabIndex = 38;
             // 
             // btn_chek_kort
@@ -161,9 +162,10 @@
             this.btn_chek_kort.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(124)))), ((int)(((byte)(84)))));
             this.btn_chek_kort.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(197)))), ((int)(((byte)(115)))));
             this.btn_chek_kort.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(249)))), ((int)(((byte)(252)))));
-            this.btn_chek_kort.Location = new System.Drawing.Point(10, 10);
+            this.btn_chek_kort.Location = new System.Drawing.Point(12, 12);
+            this.btn_chek_kort.Margin = new System.Windows.Forms.Padding(4);
             this.btn_chek_kort.Name = "btn_chek_kort";
-            this.btn_chek_kort.Size = new System.Drawing.Size(1072, 46);
+            this.btn_chek_kort.Size = new System.Drawing.Size(1250, 57);
             this.btn_chek_kort.TabIndex = 42;
             // 
             // label1
@@ -171,9 +173,10 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(141, 12);
+            this.label1.Location = new System.Drawing.Point(164, 15);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(171, 25);
+            this.label1.Size = new System.Drawing.Size(200, 31);
             this.label1.TabIndex = 43;
             this.label1.Text = "Истироҳаткунандагон";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -191,9 +194,10 @@
             this.print_btn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(124)))), ((int)(((byte)(84)))));
             this.print_btn.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.print_btn.ForeColor = System.Drawing.Color.White;
-            this.print_btn.Location = new System.Drawing.Point(8, 7);
+            this.print_btn.Location = new System.Drawing.Point(9, 9);
+            this.print_btn.Margin = new System.Windows.Forms.Padding(4);
             this.print_btn.Name = "print_btn";
-            this.print_btn.Size = new System.Drawing.Size(127, 33);
+            this.print_btn.Size = new System.Drawing.Size(148, 41);
             this.print_btn.TabIndex = 2;
             this.print_btn.Text = "чоп кардан";
             this.print_btn.Click += new System.EventHandler(this.print_btn_Click);
@@ -212,10 +216,11 @@
             this.combo_client.Font = new System.Drawing.Font("Segoe UI", 8.25F);
             this.combo_client.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.combo_client.ItemHeight = 20;
-            this.combo_client.Location = new System.Drawing.Point(312, 12);
+            this.combo_client.Location = new System.Drawing.Point(364, 15);
+            this.combo_client.Margin = new System.Windows.Forms.Padding(4);
             this.combo_client.MaxDropDownItems = 5;
             this.combo_client.Name = "combo_client";
-            this.combo_client.Size = new System.Drawing.Size(590, 26);
+            this.combo_client.Size = new System.Drawing.Size(687, 26);
             this.combo_client.TabIndex = 31;
             this.combo_client.SelectionChangeCommitted += new System.EventHandler(this.combo_client_SelectionChangeCommitted);
             // 
@@ -233,9 +238,10 @@
             this.check_kort_btn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(124)))), ((int)(((byte)(84)))));
             this.check_kort_btn.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.check_kort_btn.ForeColor = System.Drawing.Color.White;
-            this.check_kort_btn.Location = new System.Drawing.Point(908, 8);
+            this.check_kort_btn.Location = new System.Drawing.Point(1058, 10);
+            this.check_kort_btn.Margin = new System.Windows.Forms.Padding(4);
             this.check_kort_btn.Name = "check_kort_btn";
-            this.check_kort_btn.Size = new System.Drawing.Size(158, 33);
+            this.check_kort_btn.Size = new System.Drawing.Size(184, 41);
             this.check_kort_btn.TabIndex = 3;
             this.check_kort_btn.Text = "Корро санчидан";
             this.check_kort_btn.Click += new System.EventHandler(this.check_kort_btn_Click);
@@ -252,12 +258,13 @@
             this.txt_numeb_kort.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_numeb_kort.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_numeb_kort.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_numeb_kort.Location = new System.Drawing.Point(636, 12);
+            this.txt_numeb_kort.Location = new System.Drawing.Point(742, 15);
+            this.txt_numeb_kort.Margin = new System.Windows.Forms.Padding(4);
             this.txt_numeb_kort.Name = "txt_numeb_kort";
             this.txt_numeb_kort.PasswordChar = '\0';
             this.txt_numeb_kort.PlaceholderText = "";
             this.txt_numeb_kort.SelectedText = "";
-            this.txt_numeb_kort.Size = new System.Drawing.Size(76, 25);
+            this.txt_numeb_kort.Size = new System.Drawing.Size(89, 31);
             this.txt_numeb_kort.TabIndex = 24;
             this.txt_numeb_kort.TextChanged += new System.EventHandler(this.txt_numeb_kort_TextChanged);
             // 
@@ -267,9 +274,10 @@
             this.user_info_label.Dock = System.Windows.Forms.DockStyle.Right;
             this.user_info_label.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.user_info_label.ForeColor = System.Drawing.Color.Black;
-            this.user_info_label.Location = new System.Drawing.Point(1082, 10);
+            this.user_info_label.Location = new System.Drawing.Point(1262, 12);
+            this.user_info_label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.user_info_label.Name = "user_info_label";
-            this.user_info_label.Size = new System.Drawing.Size(245, 46);
+            this.user_info_label.Size = new System.Drawing.Size(286, 57);
             this.user_info_label.TabIndex = 41;
             this.user_info_label.Text = "Дилбоз Сафаров\r\nТабиб";
             this.user_info_label.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -286,9 +294,10 @@
             this.btn_logut.FillColor = System.Drawing.Color.Red;
             this.btn_logut.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_logut.ForeColor = System.Drawing.Color.White;
-            this.btn_logut.Location = new System.Drawing.Point(1327, 10);
+            this.btn_logut.Location = new System.Drawing.Point(1548, 12);
+            this.btn_logut.Margin = new System.Windows.Forms.Padding(4);
             this.btn_logut.Name = "btn_logut";
-            this.btn_logut.Size = new System.Drawing.Size(132, 46);
+            this.btn_logut.Size = new System.Drawing.Size(154, 57);
             this.btn_logut.TabIndex = 0;
             this.btn_logut.Text = "Баромад";
             this.btn_logut.Click += new System.EventHandler(this.btn_logut_Click);
@@ -303,10 +312,11 @@
             this.tab_menu.Controls.Add(this.tartibi_ruz);
             this.tab_menu.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tab_menu.ItemSize = new System.Drawing.Size(220, 40);
-            this.tab_menu.Location = new System.Drawing.Point(0, 66);
+            this.tab_menu.Location = new System.Drawing.Point(0, 81);
+            this.tab_menu.Margin = new System.Windows.Forms.Padding(4);
             this.tab_menu.Name = "tab_menu";
             this.tab_menu.SelectedIndex = 0;
-            this.tab_menu.Size = new System.Drawing.Size(1469, 478);
+            this.tab_menu.Size = new System.Drawing.Size(1714, 589);
             this.tab_menu.TabButtonHoverState.BorderColor = System.Drawing.Color.Empty;
             this.tab_menu.TabButtonHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(123)))), ((int)(((byte)(84)))));
             this.tab_menu.TabButtonHoverState.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -345,9 +355,10 @@
             this.tab_info_all.Controls.Add(this.label2);
             this.tab_info_all.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tab_info_all.Location = new System.Drawing.Point(224, 4);
+            this.tab_info_all.Margin = new System.Windows.Forms.Padding(4);
             this.tab_info_all.Name = "tab_info_all";
-            this.tab_info_all.Padding = new System.Windows.Forms.Padding(10);
-            this.tab_info_all.Size = new System.Drawing.Size(1241, 470);
+            this.tab_info_all.Padding = new System.Windows.Forms.Padding(12);
+            this.tab_info_all.Size = new System.Drawing.Size(1486, 581);
             this.tab_info_all.TabIndex = 0;
             this.tab_info_all.Text = "Истироҳаткунанда";
             // 
@@ -364,13 +375,14 @@
             this.txt_room.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_room.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_room.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_room.Location = new System.Drawing.Point(10, 240);
+            this.txt_room.Location = new System.Drawing.Point(12, 296);
+            this.txt_room.Margin = new System.Windows.Forms.Padding(4);
             this.txt_room.Name = "txt_room";
             this.txt_room.PasswordChar = '\0';
             this.txt_room.PlaceholderText = "";
             this.txt_room.ReadOnly = true;
             this.txt_room.SelectedText = "";
-            this.txt_room.Size = new System.Drawing.Size(1221, 28);
+            this.txt_room.Size = new System.Drawing.Size(1462, 34);
             this.txt_room.TabIndex = 11;
             // 
             // label7
@@ -379,9 +391,10 @@
             this.label7.Dock = System.Windows.Forms.DockStyle.Top;
             this.label7.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(10, 225);
+            this.label7.Location = new System.Drawing.Point(12, 277);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(77, 15);
+            this.label7.Size = new System.Drawing.Size(97, 19);
             this.label7.TabIndex = 10;
             this.label7.Text = "Бино Ҳуҷра:";
             // 
@@ -398,13 +411,14 @@
             this.txt_name_doctor.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_name_doctor.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_name_doctor.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_name_doctor.Location = new System.Drawing.Point(10, 197);
+            this.txt_name_doctor.Location = new System.Drawing.Point(12, 243);
+            this.txt_name_doctor.Margin = new System.Windows.Forms.Padding(4);
             this.txt_name_doctor.Name = "txt_name_doctor";
             this.txt_name_doctor.PasswordChar = '\0';
             this.txt_name_doctor.PlaceholderText = "";
             this.txt_name_doctor.ReadOnly = true;
             this.txt_name_doctor.SelectedText = "";
-            this.txt_name_doctor.Size = new System.Drawing.Size(1221, 28);
+            this.txt_name_doctor.Size = new System.Drawing.Size(1462, 34);
             this.txt_name_doctor.TabIndex = 9;
             // 
             // label6
@@ -413,9 +427,10 @@
             this.label6.Dock = System.Windows.Forms.DockStyle.Top;
             this.label6.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(10, 182);
+            this.label6.Location = new System.Drawing.Point(12, 224);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(71, 15);
+            this.label6.Size = new System.Drawing.Size(91, 19);
             this.label6.TabIndex = 8;
             this.label6.Text = "Духтур таб.";
             // 
@@ -432,13 +447,14 @@
             this.time_end_time.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.time_end_time.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.time_end_time.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.time_end_time.Location = new System.Drawing.Point(10, 154);
+            this.time_end_time.Location = new System.Drawing.Point(12, 190);
+            this.time_end_time.Margin = new System.Windows.Forms.Padding(4);
             this.time_end_time.Name = "time_end_time";
             this.time_end_time.PasswordChar = '\0';
             this.time_end_time.PlaceholderText = "";
             this.time_end_time.ReadOnly = true;
             this.time_end_time.SelectedText = "";
-            this.time_end_time.Size = new System.Drawing.Size(1221, 28);
+            this.time_end_time.Size = new System.Drawing.Size(1462, 34);
             this.time_end_time.TabIndex = 7;
             // 
             // label5
@@ -447,9 +463,10 @@
             this.label5.Dock = System.Windows.Forms.DockStyle.Top;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(10, 139);
+            this.label5.Location = new System.Drawing.Point(12, 171);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(46, 15);
+            this.label5.Size = new System.Drawing.Size(58, 19);
             this.label5.TabIndex = 6;
             this.label5.Text = "То кай:";
             // 
@@ -466,13 +483,14 @@
             this.txt_start_time.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_start_time.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_start_time.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_start_time.Location = new System.Drawing.Point(10, 111);
+            this.txt_start_time.Location = new System.Drawing.Point(12, 137);
+            this.txt_start_time.Margin = new System.Windows.Forms.Padding(4);
             this.txt_start_time.Name = "txt_start_time";
             this.txt_start_time.PasswordChar = '\0';
             this.txt_start_time.PlaceholderText = "";
             this.txt_start_time.ReadOnly = true;
             this.txt_start_time.SelectedText = "";
-            this.txt_start_time.Size = new System.Drawing.Size(1221, 28);
+            this.txt_start_time.Size = new System.Drawing.Size(1462, 34);
             this.txt_start_time.TabIndex = 5;
             // 
             // label4
@@ -481,9 +499,10 @@
             this.label4.Dock = System.Windows.Forms.DockStyle.Top;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(10, 96);
+            this.label4.Location = new System.Drawing.Point(12, 118);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(47, 15);
+            this.label4.Size = new System.Drawing.Size(59, 19);
             this.label4.TabIndex = 4;
             this.label4.Text = "Аз кай:";
             // 
@@ -500,13 +519,14 @@
             this.txt_year_burhhday.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_year_burhhday.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_year_burhhday.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_year_burhhday.Location = new System.Drawing.Point(10, 68);
+            this.txt_year_burhhday.Location = new System.Drawing.Point(12, 84);
+            this.txt_year_burhhday.Margin = new System.Windows.Forms.Padding(4);
             this.txt_year_burhhday.Name = "txt_year_burhhday";
             this.txt_year_burhhday.PasswordChar = '\0';
             this.txt_year_burhhday.PlaceholderText = "";
             this.txt_year_burhhday.ReadOnly = true;
             this.txt_year_burhhday.SelectedText = "";
-            this.txt_year_burhhday.Size = new System.Drawing.Size(1221, 28);
+            this.txt_year_burhhday.Size = new System.Drawing.Size(1462, 34);
             this.txt_year_burhhday.TabIndex = 3;
             // 
             // label3
@@ -515,9 +535,10 @@
             this.label3.Dock = System.Windows.Forms.DockStyle.Top;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(10, 53);
+            this.label3.Location = new System.Drawing.Point(12, 65);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(88, 15);
+            this.label3.Size = new System.Drawing.Size(115, 19);
             this.label3.TabIndex = 2;
             this.label3.Text = "Соли таввалуд:";
             // 
@@ -534,13 +555,14 @@
             this.txt_full_name.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_full_name.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_full_name.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_full_name.Location = new System.Drawing.Point(10, 25);
+            this.txt_full_name.Location = new System.Drawing.Point(12, 31);
+            this.txt_full_name.Margin = new System.Windows.Forms.Padding(4);
             this.txt_full_name.Name = "txt_full_name";
             this.txt_full_name.PasswordChar = '\0';
             this.txt_full_name.PlaceholderText = "";
             this.txt_full_name.ReadOnly = true;
             this.txt_full_name.SelectedText = "";
-            this.txt_full_name.Size = new System.Drawing.Size(1221, 28);
+            this.txt_full_name.Size = new System.Drawing.Size(1462, 34);
             this.txt_full_name.TabIndex = 1;
             // 
             // label2
@@ -549,9 +571,10 @@
             this.label2.Dock = System.Windows.Forms.DockStyle.Top;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(10, 10);
+            this.label2.Location = new System.Drawing.Point(12, 12);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(37, 15);
+            this.label2.Size = new System.Drawing.Size(50, 19);
             this.label2.TabIndex = 0;
             this.label2.Text = "ННН:";
             // 
@@ -570,9 +593,10 @@
             this.tab_hujrai_tashkhisi.Controls.Add(this.txt_EKG);
             this.tab_hujrai_tashkhisi.Controls.Add(this.label29);
             this.tab_hujrai_tashkhisi.Location = new System.Drawing.Point(224, 4);
+            this.tab_hujrai_tashkhisi.Margin = new System.Windows.Forms.Padding(4);
             this.tab_hujrai_tashkhisi.Name = "tab_hujrai_tashkhisi";
-            this.tab_hujrai_tashkhisi.Padding = new System.Windows.Forms.Padding(10);
-            this.tab_hujrai_tashkhisi.Size = new System.Drawing.Size(1241, 470);
+            this.tab_hujrai_tashkhisi.Padding = new System.Windows.Forms.Padding(12);
+            this.tab_hujrai_tashkhisi.Size = new System.Drawing.Size(1486, 581);
             this.tab_hujrai_tashkhisi.TabIndex = 5;
             this.tab_hujrai_tashkhisi.Text = "Ҳураи ташхисӣ";
             this.tab_hujrai_tashkhisi.UseVisualStyleBackColor = true;
@@ -595,9 +619,10 @@
             "Беҳбудӣ",
             "Бетағйир",
             "Ҳолати бад"});
-            this.com_nishonahoi_tabobat.Location = new System.Drawing.Point(10, 240);
+            this.com_nishonahoi_tabobat.Location = new System.Drawing.Point(12, 296);
+            this.com_nishonahoi_tabobat.Margin = new System.Windows.Forms.Padding(4);
             this.com_nishonahoi_tabobat.Name = "com_nishonahoi_tabobat";
-            this.com_nishonahoi_tabobat.Size = new System.Drawing.Size(1221, 31);
+            this.com_nishonahoi_tabobat.Size = new System.Drawing.Size(1462, 31);
             this.com_nishonahoi_tabobat.TabIndex = 32;
             this.com_nishonahoi_tabobat.SelectionChangeCommitted += new System.EventHandler(this.com_nishonahoi_tabobat_SelectionChangeCommitted);
             // 
@@ -607,9 +632,10 @@
             this.label24.Dock = System.Windows.Forms.DockStyle.Top;
             this.label24.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label24.ForeColor = System.Drawing.Color.Black;
-            this.label24.Location = new System.Drawing.Point(10, 225);
+            this.label24.Location = new System.Drawing.Point(12, 277);
+            this.label24.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(121, 15);
+            this.label24.Size = new System.Drawing.Size(155, 19);
             this.label24.TabIndex = 22;
             this.label24.Text = "Нишонаҳои табобат:";
             // 
@@ -627,12 +653,13 @@
             this.txt_ultarasado.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_ultarasado.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_ultarasado.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_ultarasado.Location = new System.Drawing.Point(10, 197);
+            this.txt_ultarasado.Location = new System.Drawing.Point(12, 243);
+            this.txt_ultarasado.Margin = new System.Windows.Forms.Padding(4);
             this.txt_ultarasado.Name = "txt_ultarasado";
             this.txt_ultarasado.PasswordChar = '\0';
             this.txt_ultarasado.PlaceholderText = "";
             this.txt_ultarasado.SelectedText = "";
-            this.txt_ultarasado.Size = new System.Drawing.Size(1221, 28);
+            this.txt_ultarasado.Size = new System.Drawing.Size(1462, 34);
             this.txt_ultarasado.TabIndex = 21;
             this.txt_ultarasado.TextChanged += new System.EventHandler(this.txt_ultarasado_TextChanged);
             // 
@@ -642,9 +669,10 @@
             this.label25.Dock = System.Windows.Forms.DockStyle.Top;
             this.label25.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label25.ForeColor = System.Drawing.Color.Black;
-            this.label25.Location = new System.Drawing.Point(10, 182);
+            this.label25.Location = new System.Drawing.Point(12, 224);
+            this.label25.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(120, 15);
+            this.label25.Size = new System.Drawing.Size(151, 19);
             this.label25.TabIndex = 20;
             this.label25.Text = "Санҷиши ултрасадо.";
             // 
@@ -661,12 +689,13 @@
             this.txt_sanjishi_nasoji.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_sanjishi_nasoji.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_sanjishi_nasoji.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_sanjishi_nasoji.Location = new System.Drawing.Point(10, 154);
+            this.txt_sanjishi_nasoji.Location = new System.Drawing.Point(12, 190);
+            this.txt_sanjishi_nasoji.Margin = new System.Windows.Forms.Padding(4);
             this.txt_sanjishi_nasoji.Name = "txt_sanjishi_nasoji";
             this.txt_sanjishi_nasoji.PasswordChar = '\0';
             this.txt_sanjishi_nasoji.PlaceholderText = "";
             this.txt_sanjishi_nasoji.SelectedText = "";
-            this.txt_sanjishi_nasoji.Size = new System.Drawing.Size(1221, 28);
+            this.txt_sanjishi_nasoji.Size = new System.Drawing.Size(1462, 34);
             this.txt_sanjishi_nasoji.TabIndex = 19;
             this.txt_sanjishi_nasoji.TextChanged += new System.EventHandler(this.txt_sanjishi_nasoji_TextChanged);
             // 
@@ -676,9 +705,10 @@
             this.label26.Dock = System.Windows.Forms.DockStyle.Top;
             this.label26.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label26.ForeColor = System.Drawing.Color.Black;
-            this.label26.Location = new System.Drawing.Point(10, 139);
+            this.label26.Location = new System.Drawing.Point(12, 171);
+            this.label26.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(109, 15);
+            this.label26.Size = new System.Drawing.Size(137, 19);
             this.label26.TabIndex = 18;
             this.label26.Text = "Санҷиши наҷосат:";
             // 
@@ -696,12 +726,13 @@
             this.txt_sanjishi_peshob.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_sanjishi_peshob.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_sanjishi_peshob.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_sanjishi_peshob.Location = new System.Drawing.Point(10, 111);
+            this.txt_sanjishi_peshob.Location = new System.Drawing.Point(12, 137);
+            this.txt_sanjishi_peshob.Margin = new System.Windows.Forms.Padding(4);
             this.txt_sanjishi_peshob.Name = "txt_sanjishi_peshob";
             this.txt_sanjishi_peshob.PasswordChar = '\0';
             this.txt_sanjishi_peshob.PlaceholderText = "";
             this.txt_sanjishi_peshob.SelectedText = "";
-            this.txt_sanjishi_peshob.Size = new System.Drawing.Size(1221, 28);
+            this.txt_sanjishi_peshob.Size = new System.Drawing.Size(1462, 34);
             this.txt_sanjishi_peshob.TabIndex = 17;
             this.txt_sanjishi_peshob.TextChanged += new System.EventHandler(this.txt_sanjishi_peshob_TextChanged);
             // 
@@ -711,9 +742,10 @@
             this.label27.Dock = System.Windows.Forms.DockStyle.Top;
             this.label27.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label27.ForeColor = System.Drawing.Color.Black;
-            this.label27.Location = new System.Drawing.Point(10, 96);
+            this.label27.Location = new System.Drawing.Point(12, 118);
+            this.label27.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(102, 15);
+            this.label27.Size = new System.Drawing.Size(129, 19);
             this.label27.TabIndex = 16;
             this.label27.Text = "Санҷиши пешоб:";
             // 
@@ -731,12 +763,13 @@
             this.txt_tarkibi_hun.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_tarkibi_hun.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_tarkibi_hun.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_tarkibi_hun.Location = new System.Drawing.Point(10, 68);
+            this.txt_tarkibi_hun.Location = new System.Drawing.Point(12, 84);
+            this.txt_tarkibi_hun.Margin = new System.Windows.Forms.Padding(4);
             this.txt_tarkibi_hun.Name = "txt_tarkibi_hun";
             this.txt_tarkibi_hun.PasswordChar = '\0';
             this.txt_tarkibi_hun.PlaceholderText = "";
             this.txt_tarkibi_hun.SelectedText = "";
-            this.txt_tarkibi_hun.Size = new System.Drawing.Size(1221, 28);
+            this.txt_tarkibi_hun.Size = new System.Drawing.Size(1462, 34);
             this.txt_tarkibi_hun.TabIndex = 15;
             this.txt_tarkibi_hun.TextChanged += new System.EventHandler(this.txt_tarkibi_hun_TextChanged);
             // 
@@ -746,9 +779,10 @@
             this.label28.Dock = System.Windows.Forms.DockStyle.Top;
             this.label28.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label28.ForeColor = System.Drawing.Color.Black;
-            this.label28.Location = new System.Drawing.Point(10, 53);
+            this.label28.Location = new System.Drawing.Point(12, 65);
+            this.label28.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(132, 15);
+            this.label28.Size = new System.Drawing.Size(164, 19);
             this.label28.TabIndex = 14;
             this.label28.Text = "Санҷиши таркиби хун:";
             // 
@@ -766,12 +800,13 @@
             this.txt_EKG.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_EKG.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_EKG.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_EKG.Location = new System.Drawing.Point(10, 25);
+            this.txt_EKG.Location = new System.Drawing.Point(12, 31);
+            this.txt_EKG.Margin = new System.Windows.Forms.Padding(4);
             this.txt_EKG.Name = "txt_EKG";
             this.txt_EKG.PasswordChar = '\0';
             this.txt_EKG.PlaceholderText = "";
             this.txt_EKG.SelectedText = "";
-            this.txt_EKG.Size = new System.Drawing.Size(1221, 28);
+            this.txt_EKG.Size = new System.Drawing.Size(1462, 34);
             this.txt_EKG.TabIndex = 13;
             this.txt_EKG.TextChanged += new System.EventHandler(this.txt_EKG_TextChanged);
             // 
@@ -781,9 +816,10 @@
             this.label29.Dock = System.Windows.Forms.DockStyle.Top;
             this.label29.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label29.ForeColor = System.Drawing.Color.Black;
-            this.label29.Location = new System.Drawing.Point(10, 10);
+            this.label29.Location = new System.Drawing.Point(12, 12);
+            this.label29.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(127, 15);
+            this.label29.Size = new System.Drawing.Size(159, 19);
             this.label29.TabIndex = 12;
             this.label29.Text = "Санҷиши барқии дил:";
             // 
@@ -793,9 +829,10 @@
             this.tab_tainot_dukhtur.Controls.Add(this.datagridview_allServicesClient);
             this.tab_tainot_dukhtur.Controls.Add(this.panel_top_tainoti_dukhtur);
             this.tab_tainot_dukhtur.Location = new System.Drawing.Point(224, 4);
+            this.tab_tainot_dukhtur.Margin = new System.Windows.Forms.Padding(4);
             this.tab_tainot_dukhtur.Name = "tab_tainot_dukhtur";
-            this.tab_tainot_dukhtur.Padding = new System.Windows.Forms.Padding(10);
-            this.tab_tainot_dukhtur.Size = new System.Drawing.Size(1241, 470);
+            this.tab_tainot_dukhtur.Padding = new System.Windows.Forms.Padding(12);
+            this.tab_tainot_dukhtur.Size = new System.Drawing.Size(1486, 581);
             this.tab_tainot_dukhtur.TabIndex = 1;
             this.tab_tainot_dukhtur.Text = "Таъиноти духтур";
             // 
@@ -807,7 +844,7 @@
             this.datagridview_allServicesClient.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(108)))), ((int)(((byte)(59)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Tahoma", 8.25F);
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Tahoma", 7.8F);
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(108)))), ((int)(((byte)(59)))));
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -825,7 +862,7 @@
             this.delete});
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Tahoma", 8.25F);
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Tahoma", 7.8F);
             dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(70)))), ((int)(((byte)(68)))));
             dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
@@ -833,11 +870,13 @@
             this.datagridview_allServicesClient.DefaultCellStyle = dataGridViewCellStyle5;
             this.datagridview_allServicesClient.Dock = System.Windows.Forms.DockStyle.Fill;
             this.datagridview_allServicesClient.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.datagridview_allServicesClient.Location = new System.Drawing.Point(10, 55);
+            this.datagridview_allServicesClient.Location = new System.Drawing.Point(12, 67);
+            this.datagridview_allServicesClient.Margin = new System.Windows.Forms.Padding(4);
             this.datagridview_allServicesClient.Name = "datagridview_allServicesClient";
             this.datagridview_allServicesClient.ReadOnly = true;
             this.datagridview_allServicesClient.RowHeadersVisible = false;
-            this.datagridview_allServicesClient.Size = new System.Drawing.Size(1221, 405);
+            this.datagridview_allServicesClient.RowHeadersWidth = 51;
+            this.datagridview_allServicesClient.Size = new System.Drawing.Size(1462, 502);
             this.datagridview_allServicesClient.TabIndex = 5;
             this.datagridview_allServicesClient.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.datagridview_allServicesClient.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -878,6 +917,7 @@
             this.name_spitsalist.DataPropertyName = "name_spitsalist";
             this.name_spitsalist.FillWeight = 39.37896F;
             this.name_spitsalist.HeaderText = "Мутахасис";
+            this.name_spitsalist.MinimumWidth = 6;
             this.name_spitsalist.Name = "name_spitsalist";
             this.name_spitsalist.ReadOnly = true;
             // 
@@ -886,6 +926,7 @@
             this.name_services.DataPropertyName = "name_services";
             this.name_services.FillWeight = 39.37896F;
             this.name_services.HeaderText = "Хизматрасони";
+            this.name_services.MinimumWidth = 6;
             this.name_services.Name = "name_services";
             this.name_services.ReadOnly = true;
             // 
@@ -894,6 +935,7 @@
             this.time_services.DataPropertyName = "time_services";
             this.time_services.FillWeight = 39.37896F;
             this.time_services.HeaderText = "Вақт";
+            this.time_services.MinimumWidth = 6;
             this.time_services.Name = "time_services";
             this.time_services.ReadOnly = true;
             // 
@@ -901,6 +943,7 @@
             // 
             this.enable.DataPropertyName = "enable";
             this.enable.HeaderText = "";
+            this.enable.MinimumWidth = 6;
             this.enable.Name = "enable";
             this.enable.ReadOnly = true;
             this.enable.Visible = false;
@@ -942,10 +985,11 @@
             this.panel_top_tainoti_dukhtur.Controls.Add(this.btn_add_services);
             this.panel_top_tainoti_dukhtur.Controls.Add(this.label8);
             this.panel_top_tainoti_dukhtur.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel_top_tainoti_dukhtur.Location = new System.Drawing.Point(10, 10);
+            this.panel_top_tainoti_dukhtur.Location = new System.Drawing.Point(12, 12);
+            this.panel_top_tainoti_dukhtur.Margin = new System.Windows.Forms.Padding(4);
             this.panel_top_tainoti_dukhtur.Name = "panel_top_tainoti_dukhtur";
-            this.panel_top_tainoti_dukhtur.Padding = new System.Windows.Forms.Padding(5);
-            this.panel_top_tainoti_dukhtur.Size = new System.Drawing.Size(1221, 45);
+            this.panel_top_tainoti_dukhtur.Padding = new System.Windows.Forms.Padding(6);
+            this.panel_top_tainoti_dukhtur.Size = new System.Drawing.Size(1462, 55);
             this.panel_top_tainoti_dukhtur.TabIndex = 0;
             // 
             // btn_add_services
@@ -962,9 +1006,10 @@
             this.btn_add_services.FillColor = System.Drawing.Color.White;
             this.btn_add_services.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_add_services.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(124)))), ((int)(((byte)(84)))));
-            this.btn_add_services.Location = new System.Drawing.Point(1020, 8);
+            this.btn_add_services.Location = new System.Drawing.Point(1228, 10);
+            this.btn_add_services.Margin = new System.Windows.Forms.Padding(4);
             this.btn_add_services.Name = "btn_add_services";
-            this.btn_add_services.Size = new System.Drawing.Size(194, 31);
+            this.btn_add_services.Size = new System.Drawing.Size(226, 38);
             this.btn_add_services.TabIndex = 3;
             this.btn_add_services.Text = "Сохтани хизматрасонӣ";
             this.btn_add_services.Visible = false;
@@ -975,9 +1020,10 @@
             this.label8.Dock = System.Windows.Forms.DockStyle.Left;
             this.label8.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(5, 5);
+            this.label8.Location = new System.Drawing.Point(6, 6);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(277, 35);
+            this.label8.Size = new System.Drawing.Size(323, 43);
             this.label8.TabIndex = 1;
             this.label8.Text = "Қабули дуҳтур ва таъиноти табобат:";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1003,9 +1049,10 @@
             this.tab_antrometri.Controls.Add(this.label14);
             this.tab_antrometri.ForeColor = System.Drawing.Color.Black;
             this.tab_antrometri.Location = new System.Drawing.Point(224, 4);
+            this.tab_antrometri.Margin = new System.Windows.Forms.Padding(4);
             this.tab_antrometri.Name = "tab_antrometri";
-            this.tab_antrometri.Padding = new System.Windows.Forms.Padding(10);
-            this.tab_antrometri.Size = new System.Drawing.Size(1241, 470);
+            this.tab_antrometri.Padding = new System.Windows.Forms.Padding(12);
+            this.tab_antrometri.Size = new System.Drawing.Size(1486, 581);
             this.tab_antrometri.TabIndex = 2;
             this.tab_antrometri.Text = "Ченаки антрометрӣ";
             // 
@@ -1023,12 +1070,13 @@
             this.txt_harorat.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_harorat.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_harorat.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_harorat.Location = new System.Drawing.Point(10, 366);
+            this.txt_harorat.Location = new System.Drawing.Point(12, 450);
+            this.txt_harorat.Margin = new System.Windows.Forms.Padding(4);
             this.txt_harorat.Name = "txt_harorat";
             this.txt_harorat.PasswordChar = '\0';
             this.txt_harorat.PlaceholderText = "";
             this.txt_harorat.SelectedText = "";
-            this.txt_harorat.Size = new System.Drawing.Size(1221, 28);
+            this.txt_harorat.Size = new System.Drawing.Size(1462, 34);
             this.txt_harorat.TabIndex = 45;
             this.txt_harorat.TextChanged += new System.EventHandler(this.txt_harorat_TextChanged);
             // 
@@ -1037,9 +1085,10 @@
             this.label16.Dock = System.Windows.Forms.DockStyle.Top;
             this.label16.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.Black;
-            this.label16.Location = new System.Drawing.Point(10, 346);
+            this.label16.Location = new System.Drawing.Point(12, 425);
+            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(1221, 20);
+            this.label16.Size = new System.Drawing.Size(1462, 25);
             this.label16.TabIndex = 44;
             this.label16.Text = "Ҳарорат:";
             this.label16.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -1058,12 +1107,13 @@
             this.txt_nabz.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_nabz.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_nabz.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_nabz.Location = new System.Drawing.Point(10, 318);
+            this.txt_nabz.Location = new System.Drawing.Point(12, 391);
+            this.txt_nabz.Margin = new System.Windows.Forms.Padding(4);
             this.txt_nabz.Name = "txt_nabz";
             this.txt_nabz.PasswordChar = '\0';
             this.txt_nabz.PlaceholderText = "";
             this.txt_nabz.SelectedText = "";
-            this.txt_nabz.Size = new System.Drawing.Size(1221, 28);
+            this.txt_nabz.Size = new System.Drawing.Size(1462, 34);
             this.txt_nabz.TabIndex = 43;
             this.txt_nabz.TextChanged += new System.EventHandler(this.txt_nabz_TextChanged);
             // 
@@ -1072,9 +1122,10 @@
             this.label15.Dock = System.Windows.Forms.DockStyle.Top;
             this.label15.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.Black;
-            this.label15.Location = new System.Drawing.Point(10, 298);
+            this.label15.Location = new System.Drawing.Point(12, 366);
+            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(1221, 20);
+            this.label15.Size = new System.Drawing.Size(1462, 25);
             this.label15.TabIndex = 40;
             this.label15.Text = "Набз:";
             this.label15.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -1093,12 +1144,13 @@
             this.txt_fishori_hun.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_fishori_hun.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_fishori_hun.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_fishori_hun.Location = new System.Drawing.Point(10, 270);
+            this.txt_fishori_hun.Location = new System.Drawing.Point(12, 332);
+            this.txt_fishori_hun.Margin = new System.Windows.Forms.Padding(4);
             this.txt_fishori_hun.Name = "txt_fishori_hun";
             this.txt_fishori_hun.PasswordChar = '\0';
             this.txt_fishori_hun.PlaceholderText = "";
             this.txt_fishori_hun.SelectedText = "";
-            this.txt_fishori_hun.Size = new System.Drawing.Size(1221, 28);
+            this.txt_fishori_hun.Size = new System.Drawing.Size(1462, 34);
             this.txt_fishori_hun.TabIndex = 38;
             this.txt_fishori_hun.TextChanged += new System.EventHandler(this.txt_fishori_hun_TextChanged);
             // 
@@ -1107,9 +1159,10 @@
             this.label9.Dock = System.Windows.Forms.DockStyle.Top;
             this.label9.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(10, 250);
+            this.label9.Location = new System.Drawing.Point(12, 307);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(1221, 20);
+            this.label9.Size = new System.Drawing.Size(1462, 25);
             this.label9.TabIndex = 34;
             this.label9.Text = "Фишори хун:";
             this.label9.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -1128,12 +1181,13 @@
             this.txt_quvai_bozuho.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_quvai_bozuho.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_quvai_bozuho.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_quvai_bozuho.Location = new System.Drawing.Point(10, 222);
+            this.txt_quvai_bozuho.Location = new System.Drawing.Point(12, 273);
+            this.txt_quvai_bozuho.Margin = new System.Windows.Forms.Padding(4);
             this.txt_quvai_bozuho.Name = "txt_quvai_bozuho";
             this.txt_quvai_bozuho.PasswordChar = '\0';
             this.txt_quvai_bozuho.PlaceholderText = "";
             this.txt_quvai_bozuho.SelectedText = "";
-            this.txt_quvai_bozuho.Size = new System.Drawing.Size(1221, 28);
+            this.txt_quvai_bozuho.Size = new System.Drawing.Size(1462, 34);
             this.txt_quvai_bozuho.TabIndex = 31;
             this.txt_quvai_bozuho.TextChanged += new System.EventHandler(this.txt_quvai_bozuho_TextChanged);
             // 
@@ -1142,9 +1196,10 @@
             this.label10.Dock = System.Windows.Forms.DockStyle.Top;
             this.label10.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(10, 202);
+            this.label10.Location = new System.Drawing.Point(12, 248);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(1221, 20);
+            this.label10.Size = new System.Drawing.Size(1462, 25);
             this.label10.TabIndex = 20;
             this.label10.Text = "Санҷиши кувваи бозуҳ:";
             this.label10.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -1163,12 +1218,13 @@
             this.txt_qobiliyati_nafaskashi.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_qobiliyati_nafaskashi.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_qobiliyati_nafaskashi.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_qobiliyati_nafaskashi.Location = new System.Drawing.Point(10, 174);
+            this.txt_qobiliyati_nafaskashi.Location = new System.Drawing.Point(12, 214);
+            this.txt_qobiliyati_nafaskashi.Margin = new System.Windows.Forms.Padding(4);
             this.txt_qobiliyati_nafaskashi.Name = "txt_qobiliyati_nafaskashi";
             this.txt_qobiliyati_nafaskashi.PasswordChar = '\0';
             this.txt_qobiliyati_nafaskashi.PlaceholderText = "";
             this.txt_qobiliyati_nafaskashi.SelectedText = "";
-            this.txt_qobiliyati_nafaskashi.Size = new System.Drawing.Size(1221, 28);
+            this.txt_qobiliyati_nafaskashi.Size = new System.Drawing.Size(1462, 34);
             this.txt_qobiliyati_nafaskashi.TabIndex = 19;
             this.txt_qobiliyati_nafaskashi.TextChanged += new System.EventHandler(this.txt_qobiliyati_nafaskashi_TextChanged);
             // 
@@ -1177,9 +1233,10 @@
             this.label11.Dock = System.Windows.Forms.DockStyle.Top;
             this.label11.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(10, 154);
+            this.label11.Location = new System.Drawing.Point(12, 189);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(1221, 20);
+            this.label11.Size = new System.Drawing.Size(1462, 25);
             this.label11.TabIndex = 18;
             this.label11.Text = "Қобилияти нафаскашӣ:";
             this.label11.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -1198,12 +1255,13 @@
             this.txt_hajmi_qafasi_sina.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_hajmi_qafasi_sina.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_hajmi_qafasi_sina.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_hajmi_qafasi_sina.Location = new System.Drawing.Point(10, 126);
+            this.txt_hajmi_qafasi_sina.Location = new System.Drawing.Point(12, 155);
+            this.txt_hajmi_qafasi_sina.Margin = new System.Windows.Forms.Padding(4);
             this.txt_hajmi_qafasi_sina.Name = "txt_hajmi_qafasi_sina";
             this.txt_hajmi_qafasi_sina.PasswordChar = '\0';
             this.txt_hajmi_qafasi_sina.PlaceholderText = "";
             this.txt_hajmi_qafasi_sina.SelectedText = "";
-            this.txt_hajmi_qafasi_sina.Size = new System.Drawing.Size(1221, 28);
+            this.txt_hajmi_qafasi_sina.Size = new System.Drawing.Size(1462, 34);
             this.txt_hajmi_qafasi_sina.TabIndex = 17;
             this.txt_hajmi_qafasi_sina.TextChanged += new System.EventHandler(this.txt_hajmi_qafasi_sina_TextChanged);
             // 
@@ -1212,9 +1270,10 @@
             this.label12.Dock = System.Windows.Forms.DockStyle.Top;
             this.label12.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.Black;
-            this.label12.Location = new System.Drawing.Point(10, 106);
+            this.label12.Location = new System.Drawing.Point(12, 130);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(1221, 20);
+            this.label12.Size = new System.Drawing.Size(1462, 25);
             this.label12.TabIndex = 16;
             this.label12.Text = "Ҳаҷми қафаси сина:";
             this.label12.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -1233,12 +1292,13 @@
             this.txt_vazn.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_vazn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_vazn.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_vazn.Location = new System.Drawing.Point(10, 78);
+            this.txt_vazn.Location = new System.Drawing.Point(12, 96);
+            this.txt_vazn.Margin = new System.Windows.Forms.Padding(4);
             this.txt_vazn.Name = "txt_vazn";
             this.txt_vazn.PasswordChar = '\0';
             this.txt_vazn.PlaceholderText = "";
             this.txt_vazn.SelectedText = "";
-            this.txt_vazn.Size = new System.Drawing.Size(1221, 28);
+            this.txt_vazn.Size = new System.Drawing.Size(1462, 34);
             this.txt_vazn.TabIndex = 15;
             this.txt_vazn.TextChanged += new System.EventHandler(this.txt_vazn_TextChanged);
             // 
@@ -1247,9 +1307,10 @@
             this.label13.Dock = System.Windows.Forms.DockStyle.Top;
             this.label13.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.Black;
-            this.label13.Location = new System.Drawing.Point(10, 58);
+            this.label13.Location = new System.Drawing.Point(12, 71);
+            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(1221, 20);
+            this.label13.Size = new System.Drawing.Size(1462, 25);
             this.label13.TabIndex = 14;
             this.label13.Text = "Вазн:";
             this.label13.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -1268,12 +1329,13 @@
             this.txt_qad.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_qad.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_qad.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_qad.Location = new System.Drawing.Point(10, 30);
+            this.txt_qad.Location = new System.Drawing.Point(12, 37);
+            this.txt_qad.Margin = new System.Windows.Forms.Padding(4);
             this.txt_qad.Name = "txt_qad";
             this.txt_qad.PasswordChar = '\0';
             this.txt_qad.PlaceholderText = "";
             this.txt_qad.SelectedText = "";
-            this.txt_qad.Size = new System.Drawing.Size(1221, 28);
+            this.txt_qad.Size = new System.Drawing.Size(1462, 34);
             this.txt_qad.TabIndex = 13;
             this.txt_qad.TextChanged += new System.EventHandler(this.txt_qad_TextChanged);
             // 
@@ -1282,9 +1344,10 @@
             this.label14.Dock = System.Windows.Forms.DockStyle.Top;
             this.label14.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.Black;
-            this.label14.Location = new System.Drawing.Point(10, 10);
+            this.label14.Location = new System.Drawing.Point(12, 12);
+            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(1221, 20);
+            this.label14.Size = new System.Drawing.Size(1462, 25);
             this.label14.TabIndex = 12;
             this.label14.Text = "Қад:";
             this.label14.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -1309,9 +1372,10 @@
             this.tartibi_ruz.Controls.Add(this.txt_az_hob_hestan);
             this.tartibi_ruz.Controls.Add(this.label23);
             this.tartibi_ruz.Location = new System.Drawing.Point(224, 4);
+            this.tartibi_ruz.Margin = new System.Windows.Forms.Padding(4);
             this.tartibi_ruz.Name = "tartibi_ruz";
-            this.tartibi_ruz.Padding = new System.Windows.Forms.Padding(10);
-            this.tartibi_ruz.Size = new System.Drawing.Size(1241, 470);
+            this.tartibi_ruz.Padding = new System.Windows.Forms.Padding(12);
+            this.tartibi_ruz.Size = new System.Drawing.Size(1486, 581);
             this.tartibi_ruz.TabIndex = 4;
             this.tartibi_ruz.Text = "Тартиби рӯз";
             // 
@@ -1328,13 +1392,14 @@
             this.txt_time_hob.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_time_hob.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_time_hob.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_time_hob.Location = new System.Drawing.Point(10, 326);
+            this.txt_time_hob.Location = new System.Drawing.Point(12, 402);
+            this.txt_time_hob.Margin = new System.Windows.Forms.Padding(4);
             this.txt_time_hob.Name = "txt_time_hob";
             this.txt_time_hob.PasswordChar = '\0';
             this.txt_time_hob.PlaceholderText = "";
             this.txt_time_hob.ReadOnly = true;
             this.txt_time_hob.SelectedText = "";
-            this.txt_time_hob.Size = new System.Drawing.Size(1221, 28);
+            this.txt_time_hob.Size = new System.Drawing.Size(1462, 34);
             this.txt_time_hob.TabIndex = 35;
             // 
             // label18
@@ -1343,9 +1408,10 @@
             this.label18.Dock = System.Windows.Forms.DockStyle.Top;
             this.label18.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.Color.Black;
-            this.label18.Location = new System.Drawing.Point(10, 311);
+            this.label18.Location = new System.Drawing.Point(12, 383);
+            this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(76, 15);
+            this.label18.Size = new System.Drawing.Size(96, 19);
             this.label18.TabIndex = 34;
             this.label18.Text = "Ҳоб рафтан:";
             // 
@@ -1362,13 +1428,14 @@
             this.txt_hurok_begohruzi.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_hurok_begohruzi.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_hurok_begohruzi.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_hurok_begohruzi.Location = new System.Drawing.Point(10, 283);
+            this.txt_hurok_begohruzi.Location = new System.Drawing.Point(12, 349);
+            this.txt_hurok_begohruzi.Margin = new System.Windows.Forms.Padding(4);
             this.txt_hurok_begohruzi.Name = "txt_hurok_begohruzi";
             this.txt_hurok_begohruzi.PasswordChar = '\0';
             this.txt_hurok_begohruzi.PlaceholderText = "";
             this.txt_hurok_begohruzi.ReadOnly = true;
             this.txt_hurok_begohruzi.SelectedText = "";
-            this.txt_hurok_begohruzi.Size = new System.Drawing.Size(1221, 28);
+            this.txt_hurok_begohruzi.Size = new System.Drawing.Size(1462, 34);
             this.txt_hurok_begohruzi.TabIndex = 33;
             // 
             // label19
@@ -1377,9 +1444,10 @@
             this.label19.Dock = System.Windows.Forms.DockStyle.Top;
             this.label19.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.ForeColor = System.Drawing.Color.Black;
-            this.label19.Location = new System.Drawing.Point(10, 268);
+            this.label19.Location = new System.Drawing.Point(12, 330);
+            this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(112, 15);
+            this.label19.Size = new System.Drawing.Size(142, 19);
             this.label19.TabIndex = 32;
             this.label19.Text = "Хӯроки бегоҳрӯзӣ.";
             // 
@@ -1396,13 +1464,14 @@
             this.txt_tabobat_qunogun.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_tabobat_qunogun.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_tabobat_qunogun.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_tabobat_qunogun.Location = new System.Drawing.Point(10, 240);
+            this.txt_tabobat_qunogun.Location = new System.Drawing.Point(12, 296);
+            this.txt_tabobat_qunogun.Margin = new System.Windows.Forms.Padding(4);
             this.txt_tabobat_qunogun.Name = "txt_tabobat_qunogun";
             this.txt_tabobat_qunogun.PasswordChar = '\0';
             this.txt_tabobat_qunogun.PlaceholderText = "";
             this.txt_tabobat_qunogun.ReadOnly = true;
             this.txt_tabobat_qunogun.SelectedText = "";
-            this.txt_tabobat_qunogun.Size = new System.Drawing.Size(1221, 28);
+            this.txt_tabobat_qunogun.Size = new System.Drawing.Size(1462, 34);
             this.txt_tabobat_qunogun.TabIndex = 31;
             // 
             // label30
@@ -1411,9 +1480,10 @@
             this.label30.Dock = System.Windows.Forms.DockStyle.Top;
             this.label30.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label30.ForeColor = System.Drawing.Color.Black;
-            this.label30.Location = new System.Drawing.Point(10, 225);
+            this.label30.Location = new System.Drawing.Point(12, 277);
+            this.label30.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(123, 15);
+            this.label30.Size = new System.Drawing.Size(155, 19);
             this.label30.TabIndex = 30;
             this.label30.Text = "Табобатҳои гуногун:";
             // 
@@ -1430,13 +1500,14 @@
             this.txt_nisfiruzi.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_nisfiruzi.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_nisfiruzi.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_nisfiruzi.Location = new System.Drawing.Point(10, 197);
+            this.txt_nisfiruzi.Location = new System.Drawing.Point(12, 243);
+            this.txt_nisfiruzi.Margin = new System.Windows.Forms.Padding(4);
             this.txt_nisfiruzi.Name = "txt_nisfiruzi";
             this.txt_nisfiruzi.PasswordChar = '\0';
             this.txt_nisfiruzi.PlaceholderText = "";
             this.txt_nisfiruzi.ReadOnly = true;
             this.txt_nisfiruzi.SelectedText = "";
-            this.txt_nisfiruzi.Size = new System.Drawing.Size(1221, 28);
+            this.txt_nisfiruzi.Size = new System.Drawing.Size(1462, 34);
             this.txt_nisfiruzi.TabIndex = 25;
             // 
             // label17
@@ -1445,9 +1516,10 @@
             this.label17.Dock = System.Windows.Forms.DockStyle.Top;
             this.label17.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.Color.Black;
-            this.label17.Location = new System.Drawing.Point(10, 182);
+            this.label17.Location = new System.Drawing.Point(12, 224);
+            this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(114, 15);
+            this.label17.Size = new System.Drawing.Size(139, 19);
             this.label17.TabIndex = 24;
             this.label17.Text = "Хуроки нисфирузи";
             // 
@@ -1464,13 +1536,14 @@
             this.txt_time_tabobathoi_gunogun.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_time_tabobathoi_gunogun.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_time_tabobathoi_gunogun.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_time_tabobathoi_gunogun.Location = new System.Drawing.Point(10, 154);
+            this.txt_time_tabobathoi_gunogun.Location = new System.Drawing.Point(12, 190);
+            this.txt_time_tabobathoi_gunogun.Margin = new System.Windows.Forms.Padding(4);
             this.txt_time_tabobathoi_gunogun.Name = "txt_time_tabobathoi_gunogun";
             this.txt_time_tabobathoi_gunogun.PasswordChar = '\0';
             this.txt_time_tabobathoi_gunogun.PlaceholderText = "";
             this.txt_time_tabobathoi_gunogun.ReadOnly = true;
             this.txt_time_tabobathoi_gunogun.SelectedText = "";
-            this.txt_time_tabobathoi_gunogun.Size = new System.Drawing.Size(1221, 28);
+            this.txt_time_tabobathoi_gunogun.Size = new System.Drawing.Size(1462, 34);
             this.txt_time_tabobathoi_gunogun.TabIndex = 19;
             // 
             // label20
@@ -1479,9 +1552,10 @@
             this.label20.Dock = System.Windows.Forms.DockStyle.Top;
             this.label20.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.ForeColor = System.Drawing.Color.Black;
-            this.label20.Location = new System.Drawing.Point(10, 139);
+            this.label20.Location = new System.Drawing.Point(12, 171);
+            this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(123, 15);
+            this.label20.Size = new System.Drawing.Size(155, 19);
             this.label20.TabIndex = 18;
             this.label20.Text = "Табобатҳои гуногун:";
             // 
@@ -1498,13 +1572,14 @@
             this.txt_time_nahory.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_time_nahory.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_time_nahory.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_time_nahory.Location = new System.Drawing.Point(10, 111);
+            this.txt_time_nahory.Location = new System.Drawing.Point(12, 137);
+            this.txt_time_nahory.Margin = new System.Windows.Forms.Padding(4);
             this.txt_time_nahory.Name = "txt_time_nahory";
             this.txt_time_nahory.PasswordChar = '\0';
             this.txt_time_nahory.PlaceholderText = "";
             this.txt_time_nahory.ReadOnly = true;
             this.txt_time_nahory.SelectedText = "";
-            this.txt_time_nahory.Size = new System.Drawing.Size(1221, 28);
+            this.txt_time_nahory.Size = new System.Drawing.Size(1462, 34);
             this.txt_time_nahory.TabIndex = 17;
             // 
             // label21
@@ -1513,9 +1588,10 @@
             this.label21.Dock = System.Windows.Forms.DockStyle.Top;
             this.label21.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.ForeColor = System.Drawing.Color.Black;
-            this.label21.Location = new System.Drawing.Point(10, 96);
+            this.label21.Location = new System.Drawing.Point(12, 118);
+            this.label21.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(51, 15);
+            this.label21.Size = new System.Drawing.Size(66, 19);
             this.label21.TabIndex = 16;
             this.label21.Text = "Наҳорӣ:";
             // 
@@ -1532,13 +1608,14 @@
             this.txt_time_varzishi_pagohi.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_time_varzishi_pagohi.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_time_varzishi_pagohi.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_time_varzishi_pagohi.Location = new System.Drawing.Point(10, 68);
+            this.txt_time_varzishi_pagohi.Location = new System.Drawing.Point(12, 84);
+            this.txt_time_varzishi_pagohi.Margin = new System.Windows.Forms.Padding(4);
             this.txt_time_varzishi_pagohi.Name = "txt_time_varzishi_pagohi";
             this.txt_time_varzishi_pagohi.PasswordChar = '\0';
             this.txt_time_varzishi_pagohi.PlaceholderText = "";
             this.txt_time_varzishi_pagohi.ReadOnly = true;
             this.txt_time_varzishi_pagohi.SelectedText = "";
-            this.txt_time_varzishi_pagohi.Size = new System.Drawing.Size(1221, 28);
+            this.txt_time_varzishi_pagohi.Size = new System.Drawing.Size(1462, 34);
             this.txt_time_varzishi_pagohi.TabIndex = 15;
             // 
             // label22
@@ -1547,9 +1624,10 @@
             this.label22.Dock = System.Windows.Forms.DockStyle.Top;
             this.label22.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.ForeColor = System.Drawing.Color.Black;
-            this.label22.Location = new System.Drawing.Point(10, 53);
+            this.label22.Location = new System.Drawing.Point(12, 65);
+            this.label22.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(100, 15);
+            this.label22.Size = new System.Drawing.Size(127, 19);
             this.label22.TabIndex = 14;
             this.label22.Text = "Варзиши пагоҳӣ:";
             // 
@@ -1566,13 +1644,14 @@
             this.txt_az_hob_hestan.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_az_hob_hestan.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_az_hob_hestan.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_az_hob_hestan.Location = new System.Drawing.Point(10, 25);
+            this.txt_az_hob_hestan.Location = new System.Drawing.Point(12, 31);
+            this.txt_az_hob_hestan.Margin = new System.Windows.Forms.Padding(4);
             this.txt_az_hob_hestan.Name = "txt_az_hob_hestan";
             this.txt_az_hob_hestan.PasswordChar = '\0';
             this.txt_az_hob_hestan.PlaceholderText = "";
             this.txt_az_hob_hestan.ReadOnly = true;
             this.txt_az_hob_hestan.SelectedText = "";
-            this.txt_az_hob_hestan.Size = new System.Drawing.Size(1221, 28);
+            this.txt_az_hob_hestan.Size = new System.Drawing.Size(1462, 34);
             this.txt_az_hob_hestan.TabIndex = 13;
             // 
             // label23
@@ -1581,9 +1660,10 @@
             this.label23.Dock = System.Windows.Forms.DockStyle.Top;
             this.label23.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label23.ForeColor = System.Drawing.Color.Black;
-            this.label23.Location = new System.Drawing.Point(10, 10);
+            this.label23.Location = new System.Drawing.Point(12, 12);
+            this.label23.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(85, 15);
+            this.label23.Size = new System.Drawing.Size(111, 19);
             this.label23.TabIndex = 12;
             this.label23.Text = "Аз хоб хестан:";
             // 
@@ -1624,12 +1704,13 @@
             // 
             this.Appearance.BackColor = System.Drawing.Color.White;
             this.Appearance.Options.UseBackColor = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1469, 544);
+            this.ClientSize = new System.Drawing.Size(1714, 670);
             this.Controls.Add(this.tab_menu);
             this.Controls.Add(this.panel_top);
             this.IconOptions.ShowIcon = false;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MainFormVrach";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "MainFormVrach";

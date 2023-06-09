@@ -37,14 +37,14 @@ namespace ObiGarm.Reports.ReportsForm
 
             querySqlTecket = "select row_number() over(order by c.id) as 'row_number', count(*) as 'count_client', " +
                 "sum(datediff(c.date_time_end , c.date_time_start)) as 'count_day', round(c.nuber_money / datediff(c.date_time_end , " +
-                "c.date_time_start),1) as 'money_for_one_day', sum(datediff(c.date_time_end , c.date_time_start) * c.nuber_money / datediff(c.date_time_end , " +
+                "c.date_time_start),0) as 'money_for_one_day', sum(datediff(c.date_time_end , c.date_time_start) * c.nuber_money / datediff(c.date_time_end , " +
                 "c.date_time_start)) as 'sum' from client c " +
                 $"where c.id_type_money = '2' and date_format(c.date_time_start, '%Y-%m-%d') >= '{dateTimeStart.ToString("yyyy-MM-dd")}' and  date_format(c.date_time_start, '%Y-%m-%d') <= '{dateTimeEnd.ToString("yyyy-MM-dd")}' " +
                 "group by c.nuber_money / datediff(c.date_time_end , c.date_time_start);";
 
             querySqlMOney = "select row_number() over(order by c.id) as 'row_number', count(*) as 'count_client', " +
                 "sum(datediff(c.date_time_end , c.date_time_start)) as 'count_day', round(c.nuber_money / datediff(c.date_time_end , " +
-                "c.date_time_start),1) as 'money_for_one_day', sum(datediff(c.date_time_end , c.date_time_start) * c.nuber_money / datediff(c.date_time_end , " +
+                "c.date_time_start),0) as 'money_for_one_day', sum(datediff(c.date_time_end , c.date_time_start) * c.nuber_money / datediff(c.date_time_end , " +
                 "c.date_time_start)) as 'sum' from client c " +
                 $"where c.id_type_money = '1' and date_format(c.date_time_start, '%Y-%m-%d') >= '{dateTimeStart.ToString("yyyy-MM-dd")}' and  date_format(c.date_time_start, '%Y-%m-%d') <= '{dateTimeEnd.ToString("yyyy-MM-dd")}' " +
                 "group by c.nuber_money / datediff(c.date_time_end , c.date_time_start);";

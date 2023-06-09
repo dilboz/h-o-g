@@ -233,6 +233,7 @@
     <Reference Include="System.Security" />
     <Reference Include="System.Transactions" />
     <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -311,6 +312,18 @@
     </Compile>
     <Compile Include="Administration\InfoReportsFromMoney.Designer.cs">
       <DependentUpon>InfoReportsFromMoney.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminM\AdminR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminM\AdminR.Designer.cs">
+      <DependentUpon>AdminR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminM\State.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminM\State.Designer.cs">
+      <DependentUpon>State.cs</DependentUpon>
     </Compile>
     <Compile Include="ClassDatabase\SettingsDatabase.cs" />
     <Compile Include="ClassDatabase\SqlConfiguration.cs" />
@@ -693,6 +706,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Administration\InfoReportsFromMoney.resx">
       <DependentUpon>InfoReportsFromMoney.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminM\AdminR.resx">
+      <DependentUpon>AdminR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminM\State.resx">
+      <DependentUpon>State.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="loaddingFrom.resx">
       <DependentUpon>loaddingFrom.cs</DependentUpon>

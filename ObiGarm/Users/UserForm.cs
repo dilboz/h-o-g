@@ -152,10 +152,12 @@ namespace ObiGarm.Users
         {
             colorsButton(14);
             colorsButton(0);
+            openChildForm(new AdminM.State());
         }
 
         private void main_button_Click(object sender, EventArgs e)
         {
+            openChildForm(new AdminM.State());
             colorsButton(0);
         }
 

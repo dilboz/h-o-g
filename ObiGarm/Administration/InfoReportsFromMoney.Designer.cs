@@ -94,10 +94,10 @@
             this.panel_grid_control_and_charts.SuspendLayout();
             this.panel_ino_money.SuspendLayout();
             this.panel_button_ans.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.date_edit_end.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.date_edit_end.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.date_edit_start.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.date_edit_end.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.date_edit_start.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.date_edit_start.Properties.CalendarTimeProperties)).BeginInit();
             this.panel_for_edit_sort.SuspendLayout();
             this.panel_edit_sort.SuspendLayout();
             this.SuspendLayout();
@@ -108,9 +108,10 @@
             this.panel_top.Controls.Add(this.label_info_user);
             this.panel_top.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_top.Location = new System.Drawing.Point(0, 0);
+            this.panel_top.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel_top.Name = "panel_top";
-            this.panel_top.Padding = new System.Windows.Forms.Padding(10);
-            this.panel_top.Size = new System.Drawing.Size(1498, 38);
+            this.panel_top.Padding = new System.Windows.Forms.Padding(12, 12, 12, 12);
+            this.panel_top.Size = new System.Drawing.Size(950, 47);
             this.panel_top.TabIndex = 6;
             // 
             // label_info_user
@@ -119,9 +120,10 @@
             this.label_info_user.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label_info_user.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_info_user.ForeColor = System.Drawing.Color.White;
-            this.label_info_user.Location = new System.Drawing.Point(10, 10);
+            this.label_info_user.Location = new System.Drawing.Point(12, 12);
+            this.label_info_user.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_info_user.Name = "label_info_user";
-            this.label_info_user.Size = new System.Drawing.Size(1478, 18);
+            this.label_info_user.Size = new System.Drawing.Size(926, 23);
             this.label_info_user.TabIndex = 4;
             this.label_info_user.Text = "Истифодабаранда: ";
             // 
@@ -129,9 +131,10 @@
             // 
             this.panel_grid_control.Controls.Add(this.panel_grid);
             this.panel_grid_control.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel_grid_control.Location = new System.Drawing.Point(3, 3);
+            this.panel_grid_control.Location = new System.Drawing.Point(4, 4);
+            this.panel_grid_control.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel_grid_control.Name = "panel_grid_control";
-            this.panel_grid_control.Size = new System.Drawing.Size(1472, 280);
+            this.panel_grid_control.Size = new System.Drawing.Size(918, 345);
             this.panel_grid_control.TabIndex = 7;
             // 
             // panel_grid
@@ -139,8 +142,9 @@
             this.panel_grid.Controls.Add(this.table_layout_panel_grid);
             this.panel_grid.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_grid.Location = new System.Drawing.Point(0, 0);
+            this.panel_grid.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel_grid.Name = "panel_grid";
-            this.panel_grid.Size = new System.Drawing.Size(1472, 280);
+            this.panel_grid.Size = new System.Drawing.Size(918, 345);
             this.panel_grid.TabIndex = 9;
             // 
             // table_layout_panel_grid
@@ -152,10 +156,11 @@
             this.table_layout_panel_grid.Controls.Add(this.panel_money_grid, 0, 0);
             this.table_layout_panel_grid.Dock = System.Windows.Forms.DockStyle.Fill;
             this.table_layout_panel_grid.Location = new System.Drawing.Point(0, 0);
+            this.table_layout_panel_grid.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.table_layout_panel_grid.Name = "table_layout_panel_grid";
             this.table_layout_panel_grid.RowCount = 1;
             this.table_layout_panel_grid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.table_layout_panel_grid.Size = new System.Drawing.Size(1472, 280);
+            this.table_layout_panel_grid.Size = new System.Drawing.Size(918, 345);
             this.table_layout_panel_grid.TabIndex = 7;
             // 
             // panel_consuton_money
@@ -163,18 +168,24 @@
             this.panel_consuton_money.Controls.Add(this.grid_control_consuption);
             this.panel_consuton_money.Controls.Add(this.label_grid_control_consuption);
             this.panel_consuton_money.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel_consuton_money.Location = new System.Drawing.Point(751, 3);
+            this.panel_consuton_money.Location = new System.Drawing.Point(471, 4);
+            this.panel_consuton_money.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel_consuton_money.Name = "panel_consuton_money";
-            this.panel_consuton_money.Size = new System.Drawing.Size(718, 274);
+            this.panel_consuton_money.Size = new System.Drawing.Size(443, 337);
             this.panel_consuton_money.TabIndex = 7;
             // 
             // grid_control_consuption
             // 
             this.grid_control_consuption.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.grid_control_consuption.Location = new System.Drawing.Point(0, 18);
+            // 
+            // 
+            // 
+            this.grid_control_consuption.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grid_control_consuption.Location = new System.Drawing.Point(0, 22);
             this.grid_control_consuption.MainView = this.grid_view_consuption;
+            this.grid_control_consuption.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.grid_control_consuption.Name = "grid_control_consuption";
-            this.grid_control_consuption.Size = new System.Drawing.Size(718, 256);
+            this.grid_control_consuption.Size = new System.Drawing.Size(443, 315);
             this.grid_control_consuption.TabIndex = 8;
             this.grid_control_consuption.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.grid_view_consuption});
@@ -186,6 +197,7 @@
             this.name_bank,
             this.money_number,
             this.date_consuption});
+            this.grid_view_consuption.DetailHeight = 431;
             this.grid_view_consuption.GridControl = this.grid_control_consuption;
             this.grid_view_consuption.Name = "grid_view_consuption";
             this.grid_view_consuption.OptionsFind.AlwaysVisible = true;
@@ -195,45 +207,47 @@
             // 
             this.name.Caption = "Малумоти оиди маблағ";
             this.name.FieldName = "name";
+            this.name.MinWidth = 23;
             this.name.Name = "name";
             this.name.OptionsColumn.AllowEdit = false;
             this.name.OptionsFilter.AllowAutoFilter = false;
             this.name.Visible = true;
             this.name.VisibleIndex = 0;
-            this.name.Width = 322;
+            this.name.Width = 376;
             // 
             // name_bank
             // 
             this.name_bank.Caption = "Номи бонк";
             this.name_bank.FieldName = "name_bank";
+            this.name_bank.MinWidth = 23;
             this.name_bank.Name = "name_bank";
-            this.name_bank.Width = 382;
+            this.name_bank.Width = 446;
             // 
             // money_number
             // 
             this.money_number.Caption = "Маблағ";
             this.money_number.FieldName = "money_number";
-            this.money_number.MaxWidth = 120;
-            this.money_number.MinWidth = 100;
+            this.money_number.MaxWidth = 140;
+            this.money_number.MinWidth = 117;
             this.money_number.Name = "money_number";
             this.money_number.OptionsColumn.AllowEdit = false;
             this.money_number.OptionsFilter.AllowAutoFilter = false;
             this.money_number.Visible = true;
             this.money_number.VisibleIndex = 1;
-            this.money_number.Width = 103;
+            this.money_number.Width = 120;
             // 
             // date_consuption
             // 
             this.date_consuption.Caption = "Таърихи руз";
             this.date_consuption.FieldName = "date_consuption";
-            this.date_consuption.MaxWidth = 120;
-            this.date_consuption.MinWidth = 110;
+            this.date_consuption.MaxWidth = 140;
+            this.date_consuption.MinWidth = 128;
             this.date_consuption.Name = "date_consuption";
             this.date_consuption.OptionsColumn.AllowEdit = false;
             this.date_consuption.OptionsFilter.AllowAutoFilter = false;
             this.date_consuption.Visible = true;
             this.date_consuption.VisibleIndex = 2;
-            this.date_consuption.Width = 110;
+            this.date_consuption.Width = 128;
             // 
             // label_grid_control_consuption
             // 
@@ -243,8 +257,9 @@
             this.label_grid_control_consuption.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_grid_control_consuption.ForeColor = System.Drawing.Color.White;
             this.label_grid_control_consuption.Location = new System.Drawing.Point(0, 0);
+            this.label_grid_control_consuption.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_grid_control_consuption.Name = "label_grid_control_consuption";
-            this.label_grid_control_consuption.Size = new System.Drawing.Size(718, 18);
+            this.label_grid_control_consuption.Size = new System.Drawing.Size(443, 22);
             this.label_grid_control_consuption.TabIndex = 3;
             this.label_grid_control_consuption.Text = "Рӯихати маблағҳои сарфшуда";
             // 
@@ -253,18 +268,24 @@
             this.panel_money_grid.Controls.Add(this.grid_control);
             this.panel_money_grid.Controls.Add(this.label_grid_control_money);
             this.panel_money_grid.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel_money_grid.Location = new System.Drawing.Point(3, 3);
+            this.panel_money_grid.Location = new System.Drawing.Point(4, 4);
+            this.panel_money_grid.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel_money_grid.Name = "panel_money_grid";
-            this.panel_money_grid.Size = new System.Drawing.Size(742, 274);
+            this.panel_money_grid.Size = new System.Drawing.Size(459, 337);
             this.panel_money_grid.TabIndex = 6;
             // 
             // grid_control
             // 
             this.grid_control.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.grid_control.Location = new System.Drawing.Point(0, 18);
+            // 
+            // 
+            // 
+            this.grid_control.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grid_control.Location = new System.Drawing.Point(0, 22);
             this.grid_control.MainView = this.grid_view;
+            this.grid_control.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.grid_control.Name = "grid_control";
-            this.grid_control.Size = new System.Drawing.Size(742, 256);
+            this.grid_control.Size = new System.Drawing.Size(459, 315);
             this.grid_control.TabIndex = 7;
             this.grid_control.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.grid_view});
@@ -276,6 +297,7 @@
             this.bank_name,
             this.number_money,
             this.date});
+            this.grid_view.DetailHeight = 431;
             this.grid_view.GridControl = this.grid_control;
             this.grid_view.Name = "grid_view";
             this.grid_view.OptionsFind.AlwaysVisible = true;
@@ -285,43 +307,46 @@
             // 
             this.name_money.Caption = "Малумоти оиди маблағ";
             this.name_money.FieldName = "name_money";
+            this.name_money.MinWidth = 23;
             this.name_money.Name = "name_money";
             this.name_money.OptionsColumn.AllowEdit = false;
             this.name_money.OptionsFilter.AllowAutoFilter = false;
             this.name_money.Visible = true;
             this.name_money.VisibleIndex = 0;
-            this.name_money.Width = 171;
+            this.name_money.Width = 199;
             // 
             // bank_name
             // 
             this.bank_name.Caption = "Номи  бонк";
+            this.bank_name.MinWidth = 23;
             this.bank_name.Name = "bank_name";
+            this.bank_name.Width = 87;
             // 
             // number_money
             // 
             this.number_money.Caption = "Маблағ";
             this.number_money.FieldName = "number_money";
-            this.number_money.MaxWidth = 120;
-            this.number_money.MinWidth = 100;
+            this.number_money.MaxWidth = 140;
+            this.number_money.MinWidth = 117;
             this.number_money.Name = "number_money";
             this.number_money.OptionsColumn.AllowEdit = false;
             this.number_money.OptionsFilter.AllowAutoFilter = false;
             this.number_money.Visible = true;
             this.number_money.VisibleIndex = 1;
-            this.number_money.Width = 120;
+            this.number_money.Width = 140;
             // 
             // date
             // 
             this.date.Caption = "Таърихи руз";
             this.date.FieldName = "date";
-            this.date.MaxWidth = 120;
-            this.date.MinWidth = 110;
+            this.date.MaxWidth = 140;
+            this.date.MinWidth = 128;
             this.date.Name = "date";
             this.date.OptionsColumn.AllowEdit = false;
             this.date.OptionsFilter.AllowAutoFilter = false;
             this.date.Visible = true;
             this.date.VisibleIndex = 2;
-            this.date.Width = 120;
+            this.date.Width = 140;
             // 
             // label_grid_control_money
             // 
@@ -331,8 +356,9 @@
             this.label_grid_control_money.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_grid_control_money.ForeColor = System.Drawing.Color.White;
             this.label_grid_control_money.Location = new System.Drawing.Point(0, 0);
+            this.label_grid_control_money.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_grid_control_money.Name = "label_grid_control_money";
-            this.label_grid_control_money.Size = new System.Drawing.Size(742, 18);
+            this.label_grid_control_money.Size = new System.Drawing.Size(459, 22);
             this.label_grid_control_money.TabIndex = 0;
             this.label_grid_control_money.Text = "Рӯихати маблағҳои гирифташуда";
             // 
@@ -343,36 +369,39 @@
             this.table_layout_panel_grid_control.Controls.Add(this.panel_charts, 0, 0);
             this.table_layout_panel_grid_control.Controls.Add(this.panel_grid_control, 0, 0);
             this.table_layout_panel_grid_control.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.table_layout_panel_grid_control.Location = new System.Drawing.Point(10, 10);
+            this.table_layout_panel_grid_control.Location = new System.Drawing.Point(12, 12);
+            this.table_layout_panel_grid_control.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.table_layout_panel_grid_control.Name = "table_layout_panel_grid_control";
             this.table_layout_panel_grid_control.RowCount = 2;
             this.table_layout_panel_grid_control.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.table_layout_panel_grid_control.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.table_layout_panel_grid_control.Size = new System.Drawing.Size(1478, 573);
+            this.table_layout_panel_grid_control.Size = new System.Drawing.Size(926, 706);
             this.table_layout_panel_grid_control.TabIndex = 9;
             // 
             // panel_charts
             // 
             this.panel_charts.Controls.Add(this.table_layout_panel_charts);
             this.panel_charts.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel_charts.Location = new System.Drawing.Point(3, 289);
+            this.panel_charts.Location = new System.Drawing.Point(4, 357);
+            this.panel_charts.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel_charts.Name = "panel_charts";
-            this.panel_charts.Size = new System.Drawing.Size(1472, 281);
+            this.panel_charts.Size = new System.Drawing.Size(918, 345);
             this.panel_charts.TabIndex = 8;
             // 
             // table_layout_panel_charts
             // 
             this.table_layout_panel_charts.ColumnCount = 1;
             this.table_layout_panel_charts.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 65F));
-            this.table_layout_panel_charts.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.table_layout_panel_charts.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 23F));
             this.table_layout_panel_charts.Controls.Add(this.panel_chart_date_sort_money, 0, 0);
             this.table_layout_panel_charts.Dock = System.Windows.Forms.DockStyle.Fill;
             this.table_layout_panel_charts.Location = new System.Drawing.Point(0, 0);
+            this.table_layout_panel_charts.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.table_layout_panel_charts.Name = "table_layout_panel_charts";
             this.table_layout_panel_charts.RowCount = 1;
             this.table_layout_panel_charts.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.table_layout_panel_charts.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 281F));
-            this.table_layout_panel_charts.Size = new System.Drawing.Size(1472, 281);
+            this.table_layout_panel_charts.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 346F));
+            this.table_layout_panel_charts.Size = new System.Drawing.Size(918, 345);
             this.table_layout_panel_charts.TabIndex = 7;
             // 
             // panel_chart_date_sort_money
@@ -380,9 +409,10 @@
             this.panel_chart_date_sort_money.Controls.Add(this.chart_control_date);
             this.panel_chart_date_sort_money.Controls.Add(this.label_for_chart_date_sort);
             this.panel_chart_date_sort_money.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel_chart_date_sort_money.Location = new System.Drawing.Point(3, 3);
+            this.panel_chart_date_sort_money.Location = new System.Drawing.Point(4, 4);
+            this.panel_chart_date_sort_money.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel_chart_date_sort_money.Name = "panel_chart_date_sort_money";
-            this.panel_chart_date_sort_money.Size = new System.Drawing.Size(1466, 275);
+            this.panel_chart_date_sort_money.Size = new System.Drawing.Size(910, 337);
             this.panel_chart_date_sort_money.TabIndex = 6;
             // 
             // chart_control_date
@@ -395,14 +425,15 @@
             this.chart_control_date.Legend.AlignmentVertical = DevExpress.XtraCharts.LegendAlignmentVertical.TopOutside;
             this.chart_control_date.Legend.Name = "Default Legend";
             this.chart_control_date.Legend.TextVisible = false;
-            this.chart_control_date.Location = new System.Drawing.Point(0, 18);
+            this.chart_control_date.Location = new System.Drawing.Point(0, 22);
+            this.chart_control_date.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chart_control_date.Name = "chart_control_date";
             series1.Name = "series_line";
             stackedLineSeriesView1.LineMarkerOptions.Size = 8;
             series1.View = stackedLineSeriesView1;
             this.chart_control_date.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
         series1};
-            this.chart_control_date.Size = new System.Drawing.Size(1466, 257);
+            this.chart_control_date.Size = new System.Drawing.Size(910, 315);
             this.chart_control_date.TabIndex = 1;
             // 
             // label_for_chart_date_sort
@@ -413,8 +444,9 @@
             this.label_for_chart_date_sort.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_for_chart_date_sort.ForeColor = System.Drawing.Color.White;
             this.label_for_chart_date_sort.Location = new System.Drawing.Point(0, 0);
+            this.label_for_chart_date_sort.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_for_chart_date_sort.Name = "label_for_chart_date_sort";
-            this.label_for_chart_date_sort.Size = new System.Drawing.Size(1466, 18);
+            this.label_for_chart_date_sort.Size = new System.Drawing.Size(910, 22);
             this.label_for_chart_date_sort.TabIndex = 0;
             this.label_for_chart_date_sort.Text = "Намоиши маблағҳо бо график";
             // 
@@ -422,10 +454,11 @@
             // 
             this.panel_grid_control_and_charts.Controls.Add(this.table_layout_panel_grid_control);
             this.panel_grid_control_and_charts.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel_grid_control_and_charts.Location = new System.Drawing.Point(0, 140);
+            this.panel_grid_control_and_charts.Location = new System.Drawing.Point(0, 172);
+            this.panel_grid_control_and_charts.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel_grid_control_and_charts.Name = "panel_grid_control_and_charts";
-            this.panel_grid_control_and_charts.Padding = new System.Windows.Forms.Padding(10);
-            this.panel_grid_control_and_charts.Size = new System.Drawing.Size(1498, 593);
+            this.panel_grid_control_and_charts.Padding = new System.Windows.Forms.Padding(12, 12, 12, 12);
+            this.panel_grid_control_and_charts.Size = new System.Drawing.Size(950, 730);
             this.panel_grid_control_and_charts.TabIndex = 13;
             // 
             // panel_ino_money
@@ -433,10 +466,11 @@
             this.panel_ino_money.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(163)))), ((int)(((byte)(98)))));
             this.panel_ino_money.Controls.Add(this.label_info);
             this.panel_ino_money.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel_ino_money.Location = new System.Drawing.Point(0, 74);
+            this.panel_ino_money.Location = new System.Drawing.Point(0, 91);
+            this.panel_ino_money.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel_ino_money.Name = "panel_ino_money";
-            this.panel_ino_money.Padding = new System.Windows.Forms.Padding(20, 5, 10, 0);
-            this.panel_ino_money.Size = new System.Drawing.Size(1498, 66);
+            this.panel_ino_money.Padding = new System.Windows.Forms.Padding(23, 6, 12, 0);
+            this.panel_ino_money.Size = new System.Drawing.Size(950, 81);
             this.panel_ino_money.TabIndex = 12;
             // 
             // label_info
@@ -444,9 +478,10 @@
             this.label_info.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label_info.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_info.ForeColor = System.Drawing.Color.White;
-            this.label_info.Location = new System.Drawing.Point(20, 5);
+            this.label_info.Location = new System.Drawing.Point(23, 6);
+            this.label_info.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_info.Name = "label_info";
-            this.label_info.Size = new System.Drawing.Size(1468, 61);
+            this.label_info.Size = new System.Drawing.Size(915, 75);
             this.label_info.TabIndex = 0;
             this.label_info.Text = "Суммаи ҳаммаи маблағҳо:- 0 сомонӣ- \r\nСуммаи ҳаммаи маблағҳо расходшуда:- 0 сомонӣ" +
     "\r\nСуммаи ҳаммаи маблағҳо боқимонда:- 0 сомонӣ";
@@ -459,9 +494,10 @@
             this.btn_ansver.Appearance.Options.UseBackColor = true;
             this.btn_ansver.Appearance.Options.UseForeColor = true;
             this.btn_ansver.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btn_ansver.Location = new System.Drawing.Point(5, 0);
+            this.btn_ansver.Location = new System.Drawing.Point(6, 0);
+            this.btn_ansver.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_ansver.Name = "btn_ansver";
-            this.btn_ansver.Size = new System.Drawing.Size(150, 21);
+            this.btn_ansver.Size = new System.Drawing.Size(175, 26);
             this.btn_ansver.TabIndex = 12;
             this.btn_ansver.Text = "Намоиш";
             this.btn_ansver.Click += new System.EventHandler(this.btn_ansver_Click);
@@ -471,10 +507,11 @@
             this.panel_button_ans.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(163)))), ((int)(((byte)(98)))));
             this.panel_button_ans.Controls.Add(this.btn_ansver);
             this.panel_button_ans.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel_button_ans.Location = new System.Drawing.Point(1333, 10);
+            this.panel_button_ans.Location = new System.Drawing.Point(757, 12);
+            this.panel_button_ans.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel_button_ans.Name = "panel_button_ans";
-            this.panel_button_ans.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.panel_button_ans.Size = new System.Drawing.Size(155, 21);
+            this.panel_button_ans.Padding = new System.Windows.Forms.Padding(6, 0, 0, 0);
+            this.panel_button_ans.Size = new System.Drawing.Size(181, 26);
             this.panel_button_ans.TabIndex = 1;
             // 
             // combo_type_money
@@ -487,9 +524,10 @@
             "Отчёт дар бораи маблағи нақд",
             "Отчёт дар бораи маблағи ғайринақди",
             "Отчёт дар бораи ҳаммаи  маблағҳо"});
-            this.combo_type_money.Location = new System.Drawing.Point(561, 0);
+            this.combo_type_money.Location = new System.Drawing.Point(655, 0);
+            this.combo_type_money.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.combo_type_money.Name = "combo_type_money";
-            this.combo_type_money.Size = new System.Drawing.Size(752, 21);
+            this.combo_type_money.Size = new System.Drawing.Size(79, 24);
             this.combo_type_money.TabIndex = 41;
             // 
             // label_type_money
@@ -497,9 +535,10 @@
             this.label_type_money.Dock = System.Windows.Forms.DockStyle.Left;
             this.label_type_money.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_type_money.ForeColor = System.Drawing.Color.White;
-            this.label_type_money.Location = new System.Drawing.Point(448, 0);
+            this.label_type_money.Location = new System.Drawing.Point(523, 0);
+            this.label_type_money.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_type_money.Name = "label_type_money";
-            this.label_type_money.Size = new System.Drawing.Size(113, 21);
+            this.label_type_money.Size = new System.Drawing.Size(132, 26);
             this.label_type_money.TabIndex = 11;
             this.label_type_money.Text = "намуди маблағ";
             this.label_type_money.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -508,13 +547,20 @@
             // 
             this.date_edit_end.Dock = System.Windows.Forms.DockStyle.Left;
             this.date_edit_end.EditValue = new System.DateTime(2022, 12, 7, 0, 0, 0, 0);
-            this.date_edit_end.Location = new System.Drawing.Point(291, 0);
+            this.date_edit_end.Location = new System.Drawing.Point(340, 0);
+            this.date_edit_end.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.date_edit_end.Name = "date_edit_end";
+            // 
+            // 
+            // 
             this.date_edit_end.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            // 
+            // 
+            // 
             this.date_edit_end.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.date_edit_end.Size = new System.Drawing.Size(157, 20);
+            this.date_edit_end.Size = new System.Drawing.Size(183, 22);
             this.date_edit_end.TabIndex = 7;
             // 
             // label_and_date
@@ -522,9 +568,10 @@
             this.label_and_date.Dock = System.Windows.Forms.DockStyle.Left;
             this.label_and_date.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_and_date.ForeColor = System.Drawing.Color.White;
-            this.label_and_date.Location = new System.Drawing.Point(239, 0);
+            this.label_and_date.Location = new System.Drawing.Point(279, 0);
+            this.label_and_date.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_and_date.Name = "label_and_date";
-            this.label_and_date.Size = new System.Drawing.Size(52, 21);
+            this.label_and_date.Size = new System.Drawing.Size(61, 26);
             this.label_and_date.TabIndex = 9;
             this.label_and_date.Text = "то кай";
             this.label_and_date.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -533,13 +580,20 @@
             // 
             this.date_edit_start.Dock = System.Windows.Forms.DockStyle.Left;
             this.date_edit_start.EditValue = new System.DateTime(2022, 12, 7, 0, 0, 0, 0);
-            this.date_edit_start.Location = new System.Drawing.Point(52, 0);
+            this.date_edit_start.Location = new System.Drawing.Point(61, 0);
+            this.date_edit_start.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.date_edit_start.Name = "date_edit_start";
+            // 
+            // 
+            // 
             this.date_edit_start.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            // 
+            // 
+            // 
             this.date_edit_start.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.date_edit_start.Size = new System.Drawing.Size(187, 20);
+            this.date_edit_start.Size = new System.Drawing.Size(218, 22);
             this.date_edit_start.TabIndex = 8;
             // 
             // label_start_date
@@ -548,8 +602,9 @@
             this.label_start_date.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_start_date.ForeColor = System.Drawing.Color.White;
             this.label_start_date.Location = new System.Drawing.Point(0, 0);
+            this.label_start_date.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_start_date.Name = "label_start_date";
-            this.label_start_date.Size = new System.Drawing.Size(52, 21);
+            this.label_start_date.Size = new System.Drawing.Size(61, 26);
             this.label_start_date.TabIndex = 10;
             this.label_start_date.Text = "Аз кай";
             this.label_start_date.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -564,9 +619,10 @@
             this.panel_for_edit_sort.Controls.Add(this.date_edit_start);
             this.panel_for_edit_sort.Controls.Add(this.label_start_date);
             this.panel_for_edit_sort.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel_for_edit_sort.Location = new System.Drawing.Point(20, 10);
+            this.panel_for_edit_sort.Location = new System.Drawing.Point(23, 12);
+            this.panel_for_edit_sort.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel_for_edit_sort.Name = "panel_for_edit_sort";
-            this.panel_for_edit_sort.Size = new System.Drawing.Size(1313, 21);
+            this.panel_for_edit_sort.Size = new System.Drawing.Size(734, 26);
             this.panel_for_edit_sort.TabIndex = 2;
             // 
             // panel_edit_sort
@@ -575,10 +631,11 @@
             this.panel_edit_sort.Controls.Add(this.panel_for_edit_sort);
             this.panel_edit_sort.Controls.Add(this.panel_button_ans);
             this.panel_edit_sort.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel_edit_sort.Location = new System.Drawing.Point(0, 38);
+            this.panel_edit_sort.Location = new System.Drawing.Point(0, 47);
+            this.panel_edit_sort.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel_edit_sort.Name = "panel_edit_sort";
-            this.panel_edit_sort.Padding = new System.Windows.Forms.Padding(20, 10, 10, 5);
-            this.panel_edit_sort.Size = new System.Drawing.Size(1498, 36);
+            this.panel_edit_sort.Padding = new System.Windows.Forms.Padding(23, 12, 12, 6);
+            this.panel_edit_sort.Size = new System.Drawing.Size(950, 44);
             this.panel_edit_sort.TabIndex = 11;
             // 
             // contextMenuStrip1
@@ -589,14 +646,15 @@
             // 
             // InfoReportsFromMoney
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1498, 733);
+            this.ClientSize = new System.Drawing.Size(950, 902);
             this.Controls.Add(this.panel_grid_control_and_charts);
             this.Controls.Add(this.panel_ino_money);
             this.Controls.Add(this.panel_edit_sort);
             this.Controls.Add(this.panel_top);
             this.IconOptions.ShowIcon = false;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "InfoReportsFromMoney";
             this.Text = "Малумотҳо оиди маблағ";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.InfoReportsFromMoney_FormClosed);
